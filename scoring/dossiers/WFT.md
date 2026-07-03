@@ -2,7 +2,9 @@
 
 > **PENDING HUMAN SIGN-OFF** — 검증용 1차 대조 자료이며 검증된 사실이 아니다.
 > 선정: 시드 20260703 고정 무작위 4건 중 1건 (선정 코드: COLLECTION 후 `random.Random(20260703).sample(ids, 4)`).
-> 작성: 채점 보조 Claude. AAER 원문은 이 환경에서 직접 열람 불가 — 인용은 원문을 재수록한 도달 가능 소스 기준.
+> 작성: 채점 보조 Claude. AAER 원문은 웹 세션에서 직접 열람 불가였으나(이그레스 차단),
+> **2026-07-03 로컬 세션에서 원문 PDF를 직접 취득·전수 대조 완료** — 사본 `~/aaer-data/WFT/33-10221.pdf`(+`.txt`).
+> 아래 "1차 소스 재검증 결과" 및 `data/candidates/reverification_diff.md` 참조. 서명 주체는 여전히 인간.
 
 기록 요약: 폭로일 **2011-03-01** / 컷오프 2011-02-28 / AAER AAER-3806 (2016-09-27) / scheme liability_understatement, asset_overstatement
 
@@ -54,7 +56,17 @@
 - scheme_summary locus: record says the plug entries were in 'a Bermuda "Eliminations" entity'; the SEC order places the actual plug adjustments in LUXEMBOURG entities within the 'Eliminations region' (paras 30, 39), noting only that E&Y 'proposed reclassifying the [2008] adjustment to a Bermuda entity within the Eliminations region' — quote: 'The improper adjustment was made to different Luxembourg entities within Weatherford's Eliminations region ... Although Ernst & Young repeatedly questioned this adjustment ... and proposed reclassifying the adjustment to a Bermuda entity within the Eliminations region ...' Not a numeric contradiction, but the 'Bermuda entity' characterization is imprecise.
 - manipulation_period nuance (not a contradiction): the tax-fraud 'plug' scheme itself was a 'four-year income tax accounting fraud' covering FY2007-2010 (order paras 2, 23); the recorded 2007-2012 span reflects the broader false-statement/restatement period (three restatements ending Dec 17, 2012).
 
-## 인간 검증 포인터 (sec.gov 접근 환경에서 열 것)
+## 1차 소스 재검증 결과 (2026-07-03 로컬 세션 — 원문 PDF 직접 대조)
+
+도시에가 플래그했던 2건 모두 원문에서 확정, candidates.json에 정정 반영:
+
+1. **'Bermuda 엔티티' 표현 → MISMATCH 확정.** 원문 ¶30(FY2007): "making an unsubstantiated manual $439.7 million post-closing 'plug' adjustment to **two different Weatherford Luxembourg entities within Weatherford's Eliminations region**." ¶39(FY2008): "The improper adjustment was made to **different Luxembourg entities** … and proposed reclassifying the adjustment to **a Bermuda entity** within the Eliminations region." ¶43(FY2009–10): "These plug adjustments, which were made in 2009 and 2010 using **a Bermuda entity** within Weatherford's Eliminations region." ¶44 엔티티 표: WFT Luxembourg SARL·WFT Financing (Luxembourg) SARL (2007), WFT Luxembourg SARL·WFT Investment (Luxembourg) SARL (2008), **WFT Bermuda Ltd. (2009, 2010)**. → 정정문: "룩셈부르크(FY2007-08)·버뮤다(FY2009-10) 엔티티, 모두 'Eliminations region' 내".
+2. **조작기간 2중 구조 확정.** ¶1: "Between 2007 and 2012, Weatherford … issued false financial statements that inflated its earnings by over $900 million." ¶23: "In connection with **fiscal years 2007 through 2010**, Hudgins and Kitay engaged in fraudulent practices relating to income tax accounting." → 기록(2007–2012 전체 기간 + 노트에 플러그 사기 FY2007-10)은 원문 구조와 일치, 변경 없음.
+3. **(신규 발견) 폭로 vehicle: 원문은 8-K.** ¶55: "On March 1, 2011, Weatherford **filed a Form 8-K** with the Commission, in which it made public for the first time that it would be restating its financial results for 2007-2010." 기록의 "Form 12b-25"와 상이 — EDGAR 실측으로는 2011-03-01에 **NT 10-K와 8-K 둘 다** 제출됨(당일 Form 4 다수 제외). revelation_source 정정 반영. ~11%/$2.38 하락(¶3, 2011-03-02 종가 $21.14)·시총 $1.7B 소실 확정.
+4. $100M–$154M/yr·$461M 팬텀 수취채권(¶24), ETR 가이던스 동기(¶25), AAER-3806/2016-09-27 헤더 — 전부 원문 확정.
+5. pre_revelation_quarters_available null → **34** 채움: 버뮤다 전신 CIK 0001170565 27건(2002~2009-02) + 스위스 CIK 0001453090 7건(2009-05~2010-11). FY2007·FY2008 10-K는 버뮤다 CIK 제출 확인(2008-02-21, 2009-02-24) — 도시에 하단의 "전신 CIK 확인" 항목 해소.
+
+## 인간 검증 포인터 (원문 사본 로컬 보유 — 월요일 대조는 아래 로컬 파일/페이지로)
 - Primary order PDF (AAER-3806): https://www.sec.gov/files/litigation/admin/2016/33-10221.pdf — verify paras 1-3 (period/$900M), 23-24 (scheme/$461M), 30-39 (Luxembourg/Bermuda Eliminations), 55-56 (March 1 & March 8, 2011 First Restatement, 11% drop).
 - SEC press release 2016-194: https://www.sec.gov/newsroom/press-releases/2016-194 (and law-firm mirror https://business.cch.com/srd/2016-194-092716.pdf) — $140M penalty, $100M-$154M/yr, ETR.
 - SEC harmed-investors summary page: https://www.sec.gov/enforcement/information-for-harmed-investors/weatherford-international — confirms Rel. No. 33-10221, File No. 3-17582, related E&Y order 34-79109.

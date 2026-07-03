@@ -2,7 +2,10 @@
 
 > **PENDING HUMAN SIGN-OFF** — 검증용 1차 대조 자료이며 검증된 사실이 아니다.
 > 선정: 시드 20260703 고정 무작위 4건 중 1건 (선정 코드: COLLECTION 후 `random.Random(20260703).sample(ids, 4)`).
-> 작성: 채점 보조 Claude. AAER 원문은 이 환경에서 직접 열람 불가 — 인용은 원문을 재수록한 도달 가능 소스 기준.
+> 작성: 채점 보조 Claude. SEC 원문은 웹 세션에서 직접 열람 불가였으나(이그레스 차단),
+> **2026-07-03 로컬 세션에서 LR-24987·보도자료 2020-319·소장 PDF·EDGAR 제출 이력을 직접 취득·대조 완료**
+> — 사본 `~/aaer-data/LK/`. 아래 "1차 소스 재검증 결과" 및 `data/candidates/reverification_diff.md` 참조.
+> 서명 주체는 여전히 인간.
 
 기록 요약: 폭로일 **2020-01-31** / 컷오프 2020-01-30 / AAER 없음(민사소송) (-) / scheme revenue_recognition, related_party, document_forgery
 
@@ -78,7 +81,27 @@
 - pre_revelation_quarters_available: recorded caveat cites 6-K furnishing dates of 2019-08-06 (Q2) and 2019-11-13 (Q3), but EDGAR shows the substantive quarterly-earnings 6-Ks furnished 2019-08-14 and 2019-11-20 (the Aug 6 / Nov 13 dates appear to be the earnings press-release dates, not the EDGAR furnishing dates). Quote: '6-K ... Size: 536 KB | 2019-08-14' and '6-K ... Size: 549 KB | 2019-11-20'. The COUNT (2) is not contradicted; only the exact dates differ.
 - scheme_summary dollar figure: recorded value says fabricated retail sales '>RMB2.12B (~$311M)'; SEC press release/complaint states 'more than $300 million in retail sales' (the RMB2.12B is Luckin's own internal-investigation net-revenue-inflation figure, not the SEC's retail-sales figure). Not a true contradiction but the two figures come from different documents and measure slightly different things — a human should confirm which figure the record intends.
 
-## 인간 검증 포인터 (sec.gov 접근 환경에서 열 것)
+## 1차 소스 재검증 결과 (2026-07-03 로컬 세션 — 원문 직접 대조)
+
+1. **6-K furnish일 — 도시에 발견 확정, candidates.json notes 정정 반영.** EDGAR 제출 이력(data.sec.gov,
+   CIK 0001767582) 실측: Q2 2019 6-K **2019-08-14** (accession 0001104659-19-045718), Q3 2019 6-K
+   **2019-11-20** (accession 0001104659-19-065621). 구기록의 08-06/11-13은 보도자료일. 폭로 전 6-K는
+   총 6건(실적 2 + 2020-01 비실적 4) — count 2 유지.
+2. **RMB2.12B vs >$300M — 도시에 발견 확정, scheme_summary 정정 반영.** LR-24987/PR 2020-319 원문:
+   "intentionally fabricated **more than $300 million** in retail sales … inflating the company's
+   expenses by **more than $190 million** … overstated its reported revenue by approximately **28%**
+   for the period ending June 30, 2019, and by **45%** for the period ending September 30, 2019."
+   RMB2.12B는 Luckin 2020-07-01 특별위 공시의 '2019 순매출 과대계상' 수치로 측정 대상이 다름 —
+   scheme_summary를 SEC 수치 주도 + RMB 병기로 재작성.
+3. no-AAER 확정: LR-24987 페이지에 AAER 줄 무인쇄 (T22/T24/T26과 동일 패턴 — LR-only 케이스도
+   AAER이 인쇄되는 경우(T19 OSIR)가 있으므로 페이지 확인이 유일한 판별법).
+4. $180M 벌금, "from at least April 2019 through January 2020" 기간, 관련당사자 3개 구매 스킴 — 전부
+   LR/PR 원문 축어 확정.
+5. **한계**: 소장 PDF(comp-pr2020-319.pdf, 1.25MB)는 폰트 인코딩 손상으로 기계 추출 불가(pypdf·PyMuPDF
+   모두 실패). 수치 검증은 LR+PR로 완료했으나 소장 문단 번호 인용은 불가 — 월요일 원문 대조 시 PDF를
+   사람 눈으로 직접 열람할 것 (로컬 사본 있음).
+
+## 인간 검증 포인터 (원문 사본 로컬 보유 — 월요일 대조는 아래 로컬 파일/페이지로)
 - SEC complaint PDF (primary, for exact April 2019–January 2020 dates, >$300M / >$190M figures, 28%/45% overstatements): https://www.sec.gov/files/litigation/complaints/2020/comp-pr2020-319.pdf
 - SEC Litigation Release LR-24987 (civil action, confirms no-AAER status): https://www.sec.gov/enforcement-litigation/litigation-releases/lr-24987
 - SEC Press Release 2020-319: https://www.sec.gov/newsroom/press-releases/2020-319

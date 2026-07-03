@@ -2,7 +2,9 @@
 
 > **PENDING HUMAN SIGN-OFF** — 검증용 1차 대조 자료이며 검증된 사실이 아니다.
 > 선정: 시드 20260703 고정 무작위 4건 중 1건 (선정 코드: COLLECTION 후 `random.Random(20260703).sample(ids, 4)`).
-> 작성: 채점 보조 Claude. AAER 원문은 이 환경에서 직접 열람 불가 — 인용은 원문을 재수록한 도달 가능 소스 기준.
+> 작성: 채점 보조 Claude. AAER 원문은 웹 세션에서 직접 열람 불가였으나(이그레스 차단),
+> **2026-07-03 로컬 세션에서 원문 PDF를 직접 취득·전수 대조 완료** — 사본 `~/aaer-data/MRVL/33-10684.pdf`(+`.txt`).
+> 아래 "1차 소스 재검증 결과" 및 `data/candidates/reverification_diff.md` 참조. 서명 주체는 여전히 인간.
 
 기록 요약: 폭로일 **2015-09-11** / 컷오프 2015-09-10 / AAER AAER-4076 (2019-09-16) / scheme revenue_recognition, disclosure_only
 
@@ -59,7 +61,18 @@
 ## 발견된 불일치/뉘앙스 (검증 우선순위)
 - Scope-of-quarters nuance (not a contradiction of the recorded charged period, but worth a human check): Debevoise states 'Marvell pulled in a total of $165 million in revenues across three quarters' and the Nov-2015 8-K (d100954dex991.htm) says the audit-committee revenue review 'has focused on and has been limited to revenue recognized in the first and second quarters of fiscal 2016 and the fourth quarter of fiscal 2015' — i.e., THREE quarters (adds Q2 FY2016, ending Aug 1 2015). The SEC's charged/disclosed pull-in figures, however, cover only TWO quarters: Q4 FY2015 ($24M) and Q1 FY2016 ($64M) = $88M. The recorded manipulation_period_end of 2015-05 captures the two charged quarters but not the Q2 FY2016 investigated quarter; confirm whether the record intends 'charged' vs 'investigated' scope.
 
-## 인간 검증 포인터 (sec.gov 접근 환경에서 열 것)
+## 1차 소스 재검증 결과 (2026-07-03 로컬 세션 — 원문 PDF 직접 대조)
+
+핵심 쟁점(기소 범위 vs 조사 범위)을 원문 문단 번호로 고정 — **판정은 하지 않음, 월요일 원칙 결정 사항**:
+
+1. **기소(charged) 2개 분기 — 원문 확정.** ¶1: "materially misleading public statements … regarding its financial results for the fourth quarter of fiscal year 2015 (Q4 FY2015) and first quarter of fiscal year 2016 (Q1 FY2016)." ¶12: "In Marvell's **Q4 FY2015, which ended January 31, 2015**, Marvell pulled-in **$24 million** of sales originally scheduled for future quarters, of which $20 million came from the storage segment." ¶18: "In Marvell's **Q1 FY2016, which ended May 2, 2015**, Marvell pulled-in **$64 million** of sales scheduled for future quarters, of which $55 million came from the storage segment." 위반 조항 문단(¶40–41)도 FY2015 10-K와 Q1 FY2016 10-Q만 지목.
+2. **풀인 사용 3개 분기 — 원문 확정 (기소와 별개 사실).** ¶10: "Marvell used pull-ins in the following **three quarters**:" ¶21: "In Marvell's **Q2 FY2016, which ended August 1, 2015**, Marvell pulled-in a record amount of **$77 million** … The pull-ins totaled 11% of total revenue for the quarter."
+3. **주의: '$165M'은 원문에 인쇄된 수치가 아님** — ¶12($24M)+¶18($64M)+¶21($77M)의 산술 합. 2차 소스(Debevoise)의 "~$165M across three quarters"는 이 합산을 지칭.
+4. **원문의 자체 정의 기간**: ¶2 "From approximately **January 2015 through July 2015** (the 'Relevant Period')" — 기록된 2014-11~2015-05(기소 2개 분기의 달력 스팬)와도, 조사 3개 분기 스팬과도 다른 제3의 창. 조작기간 확정 시 세 가지 중 어느 정의를 쓸지 원칙 필요.
+5. 폭로일 ¶22 확정: "On September 11, 2015, Marvell announced a delay in filing its Form 10-Q for Q2 FY2016 and the commencement of an internal investigation … Shortly thereafter, Marvell's independent auditor resigned." 이사회/감사인 은폐 ¶37, 벌금 $5.5M(IV.B), AAER-4076/2019-09-16 헤더 — 전부 원문 확정.
+6. pre_revelation_quarters_available null → **60** 채움 (EDGAR 제출 이력 실측; 구추정 ~59에 근사).
+
+## 인간 검증 포인터 (원문 사본 로컬 보유 — 월요일 대조는 아래 로컬 파일/페이지로)
 - https://www.sec.gov/files/litigation/admin/2019/33-10684.pdf — primary SEC order/AAER-4076; verify order caption date (9/16/2019), paras 1 (scheme), 22 (Sept 11 2015 revelation + auditor resignation), 37 (concealment from Board/auditor), 41 (Reg S-K Item 303 / Section 13(a)), penalty section ($5,500,000), and the exact affected-quarter language ($24M Q4 FY2015 / $64M Q1 FY2016).
 - https://www.sec.gov/newsroom/press-releases/2019-175 — SEC press release full text (Bandy quote; $24M/$64M; 5%/16% storage segment).
 - https://www.sec.gov/Archives/edgar/data/1058057/000119312515317843/d10775d8k.htm — 8-K dated 9/11/2015 with Ex-99.1 press release (revelation source).

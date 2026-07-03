@@ -2,7 +2,9 @@
 
 > **PENDING HUMAN SIGN-OFF** — 검증용 1차 대조 자료이며 검증된 사실이 아니다.
 > 선정: 시드 20260703 고정 무작위 4건 중 1건 (선정 코드: COLLECTION 후 `random.Random(20260703).sample(ids, 4)`).
-> 작성: 채점 보조 Claude. AAER 원문은 이 환경에서 직접 열람 불가 — 인용은 원문을 재수록한 도달 가능 소스 기준.
+> 작성: 채점 보조 Claude. AAER 원문은 웹 세션에서 직접 열람 불가였으나(이그레스 차단, 33-10925.pdf 403),
+> **2026-07-03 로컬 세션에서 원문 PDF를 직접 취득·전수 대조 완료** — 사본 `~/aaer-data/WAGE/33-10925.pdf`(+`.txt`).
+> 아래 "1차 소스 재검증 결과" 및 `data/candidates/reverification_diff.md` 참조. 서명 주체는 여전히 인간.
 
 기록 요약: 폭로일 **2018-03-01** / 컷오프 2018-02-28 / AAER AAER-4202 (2021-02-02) / scheme revenue_recognition
 
@@ -59,7 +61,27 @@
 ## 발견된 불일치/뉘앙스 (검증 우선순위)
 - revelation_source / first_revelation_date magnitude: recorded 'stock fell >9%'; contemporaneous class-action alerts (Barrack Rodos & Bacine, Pomerantz) state the March 1, 2018 one-day decline was $9.75/share = 18.6% (close $42.70 from $52.45). Not a contradiction of '>9%' but the recorded figure appears to have transcribed the $9.75/share dollar amount as a '~9%' percentage; true magnitude was ~18.6%.
 
-## 인간 검증 포인터 (sec.gov 접근 환경에서 열 것)
+## 1차 소스 재검증 결과 (2026-07-03 로컬 세션 — 원문 PDF 직접 대조)
+
+1. **도시에 가설 뒤집힘 — '>9%'는 오전사가 아니었다.** 명령문 ¶44 원문: "On March 1 and 2, 2018,
+   WageWorks announced that it would be late in filing its fiscal-year 2017 Form 10-K and that it was
+   conducting an investigation into revenue recognition related to the accounting for a government
+   contract during fiscal 2016. **WageWorks's stock price declined more than 9% on the news.**"
+   → 기록의 '>9%'는 **SEC 명령문 자체의 표현**. 2차 소스(집단소송 alert)의 -$9.75/-18.6%($52.45→$42.70)와
+   병존하는 별개 서술이며, 둘 다 candidates.json notes에 기재함. 이 도시에의 "발견된 불일치" 1번 항목은
+   '기록 오류' 가설로는 **기각**, '명령문 표현이 실제 하락폭을 과소 서술' 관찰로는 유효 — 어느 쪽을
+   기록 기준으로 삼을지도 서명 사항.
+2. 명령 캡션 확정: respondents는 **Jackson과 Callan뿐**, WageWorks는 "Other Relevant Entities"(¶4).
+3. $3.6M Client A: ¶1 "WageWorks improperly recognized $3.6 million worth of revenue in 2016 from
+   Client A that was not realizable and for which collectability was not reasonably assured." + ¶21.
+4. 정정 공시: ¶45 "On March 18, 2019, WageWorks restated its year-end financial results for 2016 and
+   its quarter-end financial results for the second and third quarters of 2016." — 확정.
+5. **기간 뉘앙스(신규)**: ¶8 — Client A의 미지급 입장 인지는 **2016-03-29** ("On March 29, in reply,
+   a Client A employee indicated that Client A would not pay WageWorks for Base Year 1"), 기록된 시작
+   2016-04-01보다 사흘 이름; 수익 인식 개시는 2016-06(¶11). 계약 체결 2016-03-01(¶5) 확정.
+6. AAER-4202 / 2021-02-02 헤더 인쇄 확정. pre_revelation_quarters_available 22 — EDGAR 재계산 완전 일치.
+
+## 인간 검증 포인터 (원문 사본 로컬 보유 — 월요일 대조는 아래 로컬 파일/페이지로)
 - https://www.sec.gov/files/litigation/admin/2021/33-10925.pdf — primary SEC order/AAER-4202 (Order Instituting Proceedings), currently 403 from sec.gov; confirm respondent caption (Jackson & Callan only), the $3.6M/Client A findings, dated April/June 2016 non-payment statements, and 2019-03-18 restatement paragraph (para 45).
 - https://www.sec.gov/Archives/edgar/data/1158863/000119312518068117/d516397dnt10k.htm — WageWorks Form 12b-25 (NT 10-K) filed 2018-03-02, signed by CFO Colm Callan; primary source for the government-contract revenue-recognition investigation disclosure.
 - https://www.sec.gov/Archives/edgar/data/1158863/000119312518108845/d564686d8k.htm — WageWorks 8-K (non-reliance / restatement scope: Q2 & Q3 2016, FY2016, Q1-Q3 2017) for restatement-period confirmation.
