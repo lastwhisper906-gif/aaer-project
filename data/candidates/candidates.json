@@ -42,9 +42,9 @@
       "aaer_url": "https://www.sec.gov/files/litigation/admin/2015/33-9804.pdf",
       "manipulation_period_start": "2009",
       "manipulation_period_end": "2011",
-      "first_revelation_date": "2011-01-28",
-      "revelation_source": "8-K (filed 2011-02-01) disclosing that on 2011-01-28 the SEC commenced a formal civil investigation into CSC's previously-disclosed MSS/Nordic accounting adjustments (https://www.sec.gov/Archives/edgar/data/23082/000002308211000002/form8-k.htm)",
-      "cutoff_date": "2011-01-27",
+      "first_revelation_date": "2010-08-11",
+      "revelation_source": "Q1 FY2011 10-Q (filed 2010-08-11, EDGAR) disclosing Nordic segment adjustments — earliest public accounting-specific signal under the signed revelation principle; SEC-investigation 8-K followed 2011-02-01 (event 2011-01-28)",
+      "cutoff_date": "2010-08-10",
       "scheme_type": [
         "revenue_recognition",
         "reserves_smoothing",
@@ -54,9 +54,9 @@
       "scheme_summary": "Overstated earnings and concealed losses on its UK NHS contract via improper percentage-of-completion models; Australian 'cookie jar' reserves and failure to record expenses; and Nordic misconduct including improper accounting for client disputes, overstated assets and improperly capitalized 'prepaid' costs (per SEC order 33-9804/AAER-3662 para.1, 10-11, 98).",
       "ab_classification": null,
       "ab_signed_off": false,
-      "pre_revelation_quarters_available": 68,
+      "pre_revelation_quarters_available": 66,
       "xbrl_available": true,
-      "notes": "AMBIGUOUS first-revelation date. first_revelation_date set to the firmly-dated SEC formal civil investigation (2011-01-28, disclosed via 8-K filed 2011-02-01). HOWEVER CSC had already disclosed Nordic (MSS) out-of-period accounting adjustments/irregularities in its FY2011 quarterly reports beginning ~Aug 2010 (Q1 FY2011 10-Q, quarter ended 2010-07-02), which the company characterized as immaterial; a human verifier may reasonably push first_revelation into ~Aug-Nov 2010. Order text: 'From 2009 to 2011, CSC engaged in a wide-ranging accounting and disclosure fraud'; restatement covered fiscal 2009-2012. CSC settled 2015-06-05, $190M penalty. CIK 0000023082 (later CSC merged into DXC 2017). pre_revelation_quarters_available null: CSC has a very deep filing history (public filer for decades) and the form[] array could not be reliably extracted from the truncated submissions JSON. XBRL: large accelerated filer, XBRL mandatory for periods ending after 2009-06-15, so pre-revelation FY2010/FY2011 10-K and 10-Qs carry XBRL. [2026-07-03 primary-source recheck] quarters null->68 (EDGAR exact). scheme_summary corrected: order para.1/10 attributes 'cookie jar' reserves to AUSTRALIA only; Nordic conduct = client-dispute accounting, overstated assets, capitalized 'prepaid' costs (para.11, 98) -- the prior wording conflated the two regions. $190M penalty confirmed (sec.IV undertaking R).",
+      "notes": "AMBIGUOUS first-revelation date. first_revelation_date set to the firmly-dated SEC formal civil investigation (2011-01-28, disclosed via 8-K filed 2011-02-01). HOWEVER CSC had already disclosed Nordic (MSS) out-of-period accounting adjustments/irregularities in its FY2011 quarterly reports beginning ~Aug 2010 (Q1 FY2011 10-Q, quarter ended 2010-07-02), which the company characterized as immaterial; a human verifier may reasonably push first_revelation into ~Aug-Nov 2010. Order text: 'From 2009 to 2011, CSC engaged in a wide-ranging accounting and disclosure fraud'; restatement covered fiscal 2009-2012. CSC settled 2015-06-05, $190M penalty. CIK 0000023082 (later CSC merged into DXC 2017). pre_revelation_quarters_available null: CSC has a very deep filing history (public filer for decades) and the form[] array could not be reliably extracted from the truncated submissions JSON. XBRL: large accelerated filer, XBRL mandatory for periods ending after 2009-06-15, so pre-revelation FY2010/FY2011 10-K and 10-Qs carry XBRL. [2026-07-03 primary-source recheck] quarters null->68 (EDGAR exact). scheme_summary corrected: order para.1/10 attributes 'cookie jar' reserves to AUSTRALIA only; Nordic conduct = client-dispute accounting, overstated assets, capitalized 'prepaid' costs (para.11, 98) -- the prior wording conflated the two regions. $190M penalty confirmed (sec.IV undertaking R). | 폭로일 원칙 A(최초 공개·회계특정 신호, 2026-07-05 유도 서명 세션) 적용으로 변경: 구 폭로일 2011-01-28 → 2010-08-11, 구 컷오프 2011-01-27 → 2010-08-10.",
       "cik": "0000023082"
     },
     {
@@ -296,9 +296,9 @@
       "aaer_url": "https://www.sec.gov/files/litigation/admin/2016/34-77644.pdf",
       "manipulation_period_start": "2008-04",
       "manipulation_period_end": "2013-03",
-      "first_revelation_date": "2014-05-21",
-      "revelation_source": "Logitech announcement (2014-05-21) that its Audit Committee, with independent advisors, had begun an independent investigation of certain accounting matters relating to previously issued financial statements (disclosed in FY2014 Form 10-K, R9.htm)",
-      "cutoff_date": "2014-05-20",
+      "first_revelation_date": "2013-08-07",
+      "revelation_source": "Form 10-K/A (filed 2013-08-07, EDGAR) disclosing a material weakness — earliest public accounting-specific signal under the signed principle; audit-committee investigation disclosure followed 2014-05-21",
+      "cutoff_date": "2013-08-06",
       "scheme_type": [
         "inventory",
         "reserves_smoothing",
@@ -307,9 +307,9 @@
       "scheme_summary": "Fraudulently delayed a ~$30.7M lower-of-cost-or-market write-down of discontinued 'Revue' set-top-box inventory to inflate FY2011 operating income ~27% and meet guidance; also understated FY12-13 warranty liabilities, failed to amortize acquired intangibles, and committed FY09 Americas revenue-recognition/controls violations (per SEC AAER-3765 / Release 34-77644).",
       "ab_classification": null,
       "ab_signed_off": false,
-      "pre_revelation_quarters_available": 24,
+      "pre_revelation_quarters_available": 21,
       "xbrl_available": true,
-      "notes": "NASDAQ: LOGI (also SIX: LOGN). Swiss company reporting as a US domestic filer (10-K/10-Q) since FY2010; before mid-2009 it filed Form 20-F (older chunk, 1997-2009), which is excluded from the 10-K/10-Q count. Pre-revelation 10-K/10-Q = 19 (all in recent, back to FY2010 Q1 filed 2009-08-10). first_revelation set to 2014-05-21 (investigation disclosure); note an EARLIER candidate 2013-08-07 FY2013 10-K/A that disclosed a Revue-inventory-valuation material weakness, and the formal Item 4.02 non-reliance came 2014-09-02/03. XBRL mixed across pre-rev filings (several FY2010 and early FY2011/FY2012 filings isXBRL=0; the FY2011 10-K filed 2011-05-27 and most filings from late-2010 onward isXBRL=1), so xbrl_available=true (partial). Individuals Bardman/Wolf charged by district-court complaint (LR-23523); company/Doktorczyk/Bolles settled by order (AAER-3765). [2026-07-03 primary-source recheck] quarters 19->24: LOGI filed domestic 10-K/10-Q from FY2008 (10-K 2008-05-30, rpt 2008-03-31), not FY2010 as assumed. manipulation_period_start 2009-04->2008-04: order 34-77644 covers 'a five-year period' = FY09-FY13 with FY = Apr 1-Mar 31 (fn.2); AMR revenue conduct ran 'from late FY08 through FY09' (para.55, i.e. from ~Jan-Mar 2008 -- even earlier than the corrected month); restatement covered FY09-FY13 (para.54). The prior 2009-04 start mapped 'FY09' to calendar 2009 -- a fiscal-calendar slip.",
+      "notes": "NASDAQ: LOGI (also SIX: LOGN). Swiss company reporting as a US domestic filer (10-K/10-Q) since FY2010; before mid-2009 it filed Form 20-F (older chunk, 1997-2009), which is excluded from the 10-K/10-Q count. Pre-revelation 10-K/10-Q = 19 (all in recent, back to FY2010 Q1 filed 2009-08-10). first_revelation set to 2014-05-21 (investigation disclosure); note an EARLIER candidate 2013-08-07 FY2013 10-K/A that disclosed a Revue-inventory-valuation material weakness, and the formal Item 4.02 non-reliance came 2014-09-02/03. XBRL mixed across pre-rev filings (several FY2010 and early FY2011/FY2012 filings isXBRL=0; the FY2011 10-K filed 2011-05-27 and most filings from late-2010 onward isXBRL=1), so xbrl_available=true (partial). Individuals Bardman/Wolf charged by district-court complaint (LR-23523); company/Doktorczyk/Bolles settled by order (AAER-3765). [2026-07-03 primary-source recheck] quarters 19->24: LOGI filed domestic 10-K/10-Q from FY2008 (10-K 2008-05-30, rpt 2008-03-31), not FY2010 as assumed. manipulation_period_start 2009-04->2008-04: order 34-77644 covers 'a five-year period' = FY09-FY13 with FY = Apr 1-Mar 31 (fn.2); AMR revenue conduct ran 'from late FY08 through FY09' (para.55, i.e. from ~Jan-Mar 2008 -- even earlier than the corrected month); restatement covered FY09-FY13 (para.54). The prior 2009-04 start mapped 'FY09' to calendar 2009 -- a fiscal-calendar slip. | 폭로일 원칙 A(최초 공개·회계특정 신호, 2026-07-05 유도 서명 세션) 적용으로 변경: 구 폭로일 2014-05-21 → 2013-08-07, 구 컷오프 2014-05-20 → 2013-08-06.",
       "cik": "0001032975"
     },
     {
@@ -322,9 +322,9 @@
       "aaer_url": "https://www.sec.gov/files/litigation/admin/2018/33-10601.pdf",
       "manipulation_period_start": "2012-02",
       "manipulation_period_end": "2014-03",
-      "first_revelation_date": "2014-06-06",
-      "revelation_source": "June 6, 2014 Form 8-K (Item 4.02): Audit Committee concluded FY2011 financials should no longer be relied upon and would be restated, with likely further adjustments to 2012-2013. https://www.streetinsider.com/Corporate+News/Hertz+Global+(HTZ)+Discloses+Results+of+Internal+Audit;+Will+Restate+Certain+Financials/10014062.html",
-      "cutoff_date": "2014-06-05",
+      "first_revelation_date": "2014-05-13",
+      "revelation_source": "2014-05-13 public disclosure (order 34-87794 ¶33): inability to timely file Q1 2014 10-Q and possible FY2011 restatement — earliest accounting-specific public signal; no same-day EDGAR filing confirmed in local copy (order-described event). 8-K Item 4.02 followed 2014-06-06",
+      "cutoff_date": "2014-05-12",
       "scheme_type": [
         "reserves_smoothing",
         "expense_capitalization",
@@ -335,7 +335,7 @@
       "ab_signed_off": false,
       "pre_revelation_quarters_available": 29,
       "xbrl_available": true,
-      "notes": "CIK ambiguity for a human to resolve: the AAER respondent 'Hertz Global Holdings, Inc.' at settlement (Dec 2018) is the post-2016-reorg entity CIK 0001657853 (ticker HTZ), reported here. BUT the misstated FY2011-FY2013 10-Ks were filed by the PREDECESSOR issuer, also named Hertz Global Holdings, Inc., CIK 0001364479 (which after the 2016 spin-off was renamed Herc Holdings Inc.). Use CIK 0001364479 to retrieve the pre-revelation (pre-2014-06-06) 10-K/10-Q filings. The Hertz Corporation subsidiary is CIK 0000047129 and was a co-respondent. SEC press release states misstatements 'from February 2012 through March 2014'; the July 2015 restatement also revised FY2011 and identified ~$235M in overstated pre-tax income. Unverified pre-revelation 10-K/10-Q estimate (filer 1364479, before 2014-06-06): ~7 10-Ks (FY2006-FY2012) + ~21 10-Qs = ~28; the FY2013 10-K and Q1-2014 10-Q were delayed by the restatement and not filed before revelation. Could not verify count from data.sec.gov submissions JSON (array truncation via this interface). [2026-07-03 primary-source recheck] quarters null->29 (predecessor CIK 1364479 included). Order caption has TWO respondents: Hertz Global Holdings, Inc. AND The Hertz Corporation. Order para.33 describes an EARLIER public signal: 2014-05-13 announcement of inability to file Q1-2014 10-Q with possible FY2011 restatement -- a first_revelation alternative for the Monday principle decision (para.34 = the recorded June 6 event).",
+      "notes": "CIK ambiguity for a human to resolve: the AAER respondent 'Hertz Global Holdings, Inc.' at settlement (Dec 2018) is the post-2016-reorg entity CIK 0001657853 (ticker HTZ), reported here. BUT the misstated FY2011-FY2013 10-Ks were filed by the PREDECESSOR issuer, also named Hertz Global Holdings, Inc., CIK 0001364479 (which after the 2016 spin-off was renamed Herc Holdings Inc.). Use CIK 0001364479 to retrieve the pre-revelation (pre-2014-06-06) 10-K/10-Q filings. The Hertz Corporation subsidiary is CIK 0000047129 and was a co-respondent. SEC press release states misstatements 'from February 2012 through March 2014'; the July 2015 restatement also revised FY2011 and identified ~$235M in overstated pre-tax income. Unverified pre-revelation 10-K/10-Q estimate (filer 1364479, before 2014-06-06): ~7 10-Ks (FY2006-FY2012) + ~21 10-Qs = ~28; the FY2013 10-K and Q1-2014 10-Q were delayed by the restatement and not filed before revelation. Could not verify count from data.sec.gov submissions JSON (array truncation via this interface). [2026-07-03 primary-source recheck] quarters null->29 (predecessor CIK 1364479 included). Order caption has TWO respondents: Hertz Global Holdings, Inc. AND The Hertz Corporation. Order para.33 describes an EARLIER public signal: 2014-05-13 announcement of inability to file Q1-2014 10-Q with possible FY2011 restatement -- a first_revelation alternative for the Monday principle decision (para.34 = the recorded June 6 event). | 폭로일 원칙 A(최초 공개·회계특정 신호, 2026-07-05 유도 서명 세션) 적용으로 변경: 구 폭로일 2014-06-06 → 2014-05-13, 구 컷오프 2014-06-05 → 2014-05-12.",
       "cik": "0001657853"
     },
     {
@@ -392,7 +392,7 @@
       "ticker": "ICON",
       "company_name": "Iconix Brand Group, Inc.",
       "group": "treatment",
-      "aaer_no": null,
+      "aaer_no": "AAER-4105",
       "aaer_date": "2019-12-05",
       "aaer_url": "https://www.sec.gov/newsroom/press-releases/2019-251",
       "manipulation_period_start": "2013",
@@ -410,7 +410,7 @@
       "ab_signed_off": false,
       "pre_revelation_quarters_available": 73,
       "xbrl_available": true,
-      "notes": "SEC pursued Iconix (the issuer) via a settled path plus federal-court litigation against CEO Cole; the issuer/CFO Clamen matter was resolved by a settled administrative order dated 2019-12-05 (accountant suspension for Clamen) that almost certainly carries an AAER number, but I could not confirm the specific AAER number from reachable sources - do not assume. Iconix agreed to a $5.5M penalty. First-revelation date is judgment-dependent: the 2015-08-10 disclosure of the SEC comment-letter review of the JV accounting is the earliest clearly accounting-specific market signal, but CEO/CFO/COO departures and class actions predate it; see revelation_candidates. pre_revelation_quarters_available left null (countable via data.sec.gov/submissions/CIK0000857737.json but not reliably parseable within tool constraints). [2026-07-03 primary-source recheck] quarters null->73 (EDGAR exact). The 2019-12-05 admin order is 33-10730, respondent Warren Clamen (CPA, ex-CFO) ONLY, and its header prints ACCOUNTING AND AUDITING ENFORCEMENT Release No. 4105 -- the matter thus HAS an AAER, but executives-only (same axis as T27 WAGE). Whether an exec-only AAER counts as the issuer's AAER = Monday inclusion decision; aaer_no left null pending that rule. Company was sued separately: SEC v. Iconix Brand Group, 19-CV-11150 (comp-pr2019-251-iconix), $5.5M penalty per PR 2019-251/LR-24682.",
+      "notes": "SEC pursued Iconix (the issuer) via a settled path plus federal-court litigation against CEO Cole; the issuer/CFO Clamen matter was resolved by a settled administrative order dated 2019-12-05 (accountant suspension for Clamen) that almost certainly carries an AAER number, but I could not confirm the specific AAER number from reachable sources - do not assume. Iconix agreed to a $5.5M penalty. First-revelation date is judgment-dependent: the 2015-08-10 disclosure of the SEC comment-letter review of the JV accounting is the earliest clearly accounting-specific market signal, but CEO/CFO/COO departures and class actions predate it; see revelation_candidates. pre_revelation_quarters_available left null (countable via data.sec.gov/submissions/CIK0000857737.json but not reliably parseable within tool constraints). [2026-07-03 primary-source recheck] quarters null->73 (EDGAR exact). The 2019-12-05 admin order is 33-10730, respondent Warren Clamen (CPA, ex-CFO) ONLY, and its header prints ACCOUNTING AND AUDITING ENFORCEMENT Release No. 4105 -- the matter thus HAS an AAER, but executives-only (same axis as T27 WAGE). Whether an exec-only AAER counts as the issuer's AAER = Monday inclusion decision; aaer_no left null pending that rule. Company was sued separately: SEC v. Iconix Brand Group, 19-CV-11150 (comp-pr2019-251-iconix), $5.5M penalty per PR 2019-251/LR-24682. | AAER-4105는 전 CFO Clamen 단독 행정명령 33-10730(2019-12-05) 헤더 인쇄 — '동일 사건 기준' 귀속(2026-07-05 유도 서명, GP-4b). 발행사 피고 아님을 명기.",
       "cik": "0000857737"
     },
     {
@@ -473,9 +473,9 @@
       "aaer_url": "https://www.sec.gov/enforcement-litigation/litigation-releases/lr-23978",
       "manipulation_period_start": "2014-01",
       "manipulation_period_end": "2015-09",
-      "first_revelation_date": "2015-11-16",
-      "revelation_source": "Q3 2015 Form 10-Q filed 2015-11-16 disclosing an ICFR material weakness and correcting revenue recognition on three distributor contracts (-$1.8M Q1 2015, -$1.0M Q2 2015, +$0.8M Q3 2015, -$1.1M 2014), followed by Form 8-K Item 4.02 filed 2015-11-20 (per SEC complaint 17-cv-03230 para.29 and the 8-K https://www.sec.gov/Archives/edgar/data/1360886/000110465915080467/a15-23865_18k.htm); shares fell ~21.5% on 2015-11-17 (secondary sources)",
-      "cutoff_date": "2015-11-15",
+      "first_revelation_date": "2015-11-06",
+      "revelation_source": "8-K filed 2015-11-06 (Q3 2015 earnings release) first disclosing the distributor-contract accounting review (EDGAR) — chain: NT 10-Q 2015-11-10, Q3 10-Q with corrections 2015-11-16, 8-K Item 4.02 2015-11-20",
+      "cutoff_date": "2015-11-05",
       "scheme_type": [
         "revenue_recognition",
         "document_forgery"
@@ -485,7 +485,7 @@
       "ab_signed_off": false,
       "pre_revelation_quarters_available": 37,
       "xbrl_available": true,
-      "notes": "This was a CIVIL injunctive action (SEC v. Osiris Therapeutics, et al., D. Md. 17-cv-03230), not an administrative order, but it carries AAER-3905 (confirmed via NYU SEED). Osiris settled for a $1.5M penalty (Nov 2017); litigation continued against four former officers (CEO Debrabandere, CFOs Jacoby and Law, CBO Montgomery). aaer_date 2017-11-02 = SEC press release date; litigation release LR-23978 dated Nov 3, 2017; complaint filed ~Nov 1-2, 2017. Fraud period per complaint: all four quarters of 2014 and first three quarters of 2015. Osiris was acquired by Smith & Nephew in 2019 and deregistered. Unverified pre-revelation 10-K/10-Q estimate (before 2015-11-16): ~9 10-Ks (FY2006-FY2014) + ~27-28 10-Qs; Q3-2015 10-Q was delayed. Could not verify count from submissions JSON (truncation). [2026-07-03 primary-source recheck] quarters null->37 (EDGAR exact). aaer_date 2017-11-02->2017-11-03: LR-23978 header prints 'Accounting and Auditing Enforcement Release No. 3905 / November 3, 2017' (the complaint was filed 2017-11-02 -- kept as complaint-date context). revelation_source corrected: no 8-K exists on 2015-11-16 (that day's filing is the Q3 10-Q, accession 0001558370-15-002707); the previously cited URL (0001104659-16-105218) is a LATER 8-K filed 2016-03-15 (Items 3.01/4.02/8.01, complaint para.30). EARLIER public signals exist: 8-K 2015-11-06 (Q3 earnings release disclosing the distributor-contract review) and NT 10-Q 2015-11-10 ('does not expect... material impact') -- which event is 'first revelation' = Monday principle decision.",
+      "notes": "This was a CIVIL injunctive action (SEC v. Osiris Therapeutics, et al., D. Md. 17-cv-03230), not an administrative order, but it carries AAER-3905 (confirmed via NYU SEED). Osiris settled for a $1.5M penalty (Nov 2017); litigation continued against four former officers (CEO Debrabandere, CFOs Jacoby and Law, CBO Montgomery). aaer_date 2017-11-02 = SEC press release date; litigation release LR-23978 dated Nov 3, 2017; complaint filed ~Nov 1-2, 2017. Fraud period per complaint: all four quarters of 2014 and first three quarters of 2015. Osiris was acquired by Smith & Nephew in 2019 and deregistered. Unverified pre-revelation 10-K/10-Q estimate (before 2015-11-16): ~9 10-Ks (FY2006-FY2014) + ~27-28 10-Qs; Q3-2015 10-Q was delayed. Could not verify count from submissions JSON (truncation). [2026-07-03 primary-source recheck] quarters null->37 (EDGAR exact). aaer_date 2017-11-02->2017-11-03: LR-23978 header prints 'Accounting and Auditing Enforcement Release No. 3905 / November 3, 2017' (the complaint was filed 2017-11-02 -- kept as complaint-date context). revelation_source corrected: no 8-K exists on 2015-11-16 (that day's filing is the Q3 10-Q, accession 0001558370-15-002707); the previously cited URL (0001104659-16-105218) is a LATER 8-K filed 2016-03-15 (Items 3.01/4.02/8.01, complaint para.30). EARLIER public signals exist: 8-K 2015-11-06 (Q3 earnings release disclosing the distributor-contract review) and NT 10-Q 2015-11-10 ('does not expect... material impact') -- which event is 'first revelation' = Monday principle decision. | 폭로일 원칙 A(최초 공개·회계특정 신호, 2026-07-05 유도 서명 세션) 적용으로 변경: 구 폭로일 2015-11-16 → 2015-11-06, 구 컷오프 2015-11-15 → 2015-11-05.",
       "cik": "0001360886"
     },
     {
@@ -645,18 +645,18 @@
       "aaer_url": null,
       "manipulation_period_start": "2013-01",
       "manipulation_period_end": "2017-09",
-      "first_revelation_date": "2017-09-20",
-      "revelation_source": "Short-seller reports published Sept 20, 2017 by Aurelius Value ('MiMedx: Flying Too Close To The Sun') and Viceroy Research alleging channel stuffing / improper revenue recognition; MiMedx confirmed it was working with the SEC (subpoena) on Sept 21, 2017 and the stock fell. Source: https://www.aureliusvalue.com/research/mimedx-flying-close-sun/",
-      "cutoff_date": "2017-09-19",
+      "first_revelation_date": "2016-12-15",
+      "revelation_source": "2016-12-15 press coverage of former-employee whistleblower lawsuit first publicly alleging channel-stuffing — earliest public accounting-specific allegation under the signed principle; short-seller reports followed 2017-09-20; SEC complaint ¶9 describes the 2018-02~07 revelation chain",
+      "cutoff_date": "2016-12-14",
       "scheme_type": [
         "revenue_recognition"
       ],
       "scheme_summary": "Prematurely recognized revenue and exaggerated revenue growth through channel-stuffing to distributors and undisclosed side arrangements with five distributors (allowing product returns or conditioning distributors' payment on resale to end users), then concealed the arrangements from accountants, auditors and the audit committee (per SEC complaint, LR-24678).",
       "ab_classification": null,
       "ab_signed_off": false,
-      "pre_revelation_quarters_available": 38,
+      "pre_revelation_quarters_available": 35,
       "xbrl_available": true,
-      "notes": "SEC action against the company was a civil complaint / Litigation Release LR-24678 (Nov 26, 2019, S.D.N.Y.; $1.5M penalty) — NO AAER number: MiMedx does not appear in the SEC AAER index for 2019 and SEED lists no AAER for the company action, so aaer_no null. IMPORTANT first_revelation ambiguity: the earliest PUBLIC allegation of the accounting problem was the Dec 15, 2016 Halunen Law whistleblower lawsuit (press-released, alleging channel stuffing) — if 'earliest public allegation' is preferred, first_revelation_date should be 2016-12-15. I set it to 2017-09-20 because that is the first clearly market-moving public exposé (Aurelius Value + Viceroy short-seller reports; stock dropped; company confirmed SEC subpoena Sept 21, 2017); the audit-committee investigation/delayed 10-K was later (Feb 20, 2018) and restatement June 7, 2018. Human verifier should choose between 2016-12-15 and 2017-09-20. pre_revelation_quarters_available set null: MiMedx became an SEC reporting company via Feb 2008 reverse merger (CIK 1376339, formerly Alynx Co); roughly 9 10-Ks (FY2008-FY2016) + ~29 10-Qs would be available before Sept 20, 2017 (~38 total; ~35 if the earlier Dec 15, 2016 date is used), but exact count not reliably determined from the large submissions history and is date-dependent. XBRL present for filings from ~2011 onward. Later Nasdaq delisting (2018); traded OTC PINK as MDXG. [2026-07-03 primary-source recheck] quarters null->38 (EDGAR exact; estimate matched). Complaint's own disclosure narrative (para.9): fraud 'uncovered and disclosed to the public in a series of announcements from February 2018 through July 2018' (stock -73%, $14.47->$3.93); neither complaint nor LR mentions the Sept 2017 short-seller reports or the Dec 2016 whistleblower suit -- recorded 2017-09-20 rests on non-SEC contemporaneous sources; alternatives (2016-12-15 / 2017-09-20 / 2018-02) = Monday decision.",
+      "notes": "SEC action against the company was a civil complaint / Litigation Release LR-24678 (Nov 26, 2019, S.D.N.Y.; $1.5M penalty) — NO AAER number: MiMedx does not appear in the SEC AAER index for 2019 and SEED lists no AAER for the company action, so aaer_no null. IMPORTANT first_revelation ambiguity: the earliest PUBLIC allegation of the accounting problem was the Dec 15, 2016 Halunen Law whistleblower lawsuit (press-released, alleging channel stuffing) — if 'earliest public allegation' is preferred, first_revelation_date should be 2016-12-15. I set it to 2017-09-20 because that is the first clearly market-moving public exposé (Aurelius Value + Viceroy short-seller reports; stock dropped; company confirmed SEC subpoena Sept 21, 2017); the audit-committee investigation/delayed 10-K was later (Feb 20, 2018) and restatement June 7, 2018. Human verifier should choose between 2016-12-15 and 2017-09-20. pre_revelation_quarters_available set null: MiMedx became an SEC reporting company via Feb 2008 reverse merger (CIK 1376339, formerly Alynx Co); roughly 9 10-Ks (FY2008-FY2016) + ~29 10-Qs would be available before Sept 20, 2017 (~38 total; ~35 if the earlier Dec 15, 2016 date is used), but exact count not reliably determined from the large submissions history and is date-dependent. XBRL present for filings from ~2011 onward. Later Nasdaq delisting (2018); traded OTC PINK as MDXG. [2026-07-03 primary-source recheck] quarters null->38 (EDGAR exact; estimate matched). Complaint's own disclosure narrative (para.9): fraud 'uncovered and disclosed to the public in a series of announcements from February 2018 through July 2018' (stock -73%, $14.47->$3.93); neither complaint nor LR mentions the Sept 2017 short-seller reports or the Dec 2016 whistleblower suit -- recorded 2017-09-20 rests on non-SEC contemporaneous sources; alternatives (2016-12-15 / 2017-09-20 / 2018-02) = Monday decision. | 폭로일 원칙 A(최초 공개·회계특정 신호, 2026-07-05 유도 서명 세션) 적용으로 변경: 구 폭로일 2017-09-20 → 2016-12-15, 구 컷오프 2017-09-19 → 2016-12-14.",
       "cik": "0001376339"
     },
     {
