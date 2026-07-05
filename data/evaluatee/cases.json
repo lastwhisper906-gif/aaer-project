@@ -1,0 +1,219 @@
+{
+  "_meta": {
+    "contract": "schemas/evaluatee_input.json",
+    "warning": "피평가자에게는 이 파일 외의 케이스 메타데이터를 제공하지 않는다 (candidates.json은 ground truth — PROJECT.md §7 역할 분리)",
+    "generated_by": "tools/build_evaluatee_inputs.py (결정론 — 재생성 대조는 CI)"
+  },
+  "cases": [
+    {
+      "case_id": "T01",
+      "ticker": "RINO",
+      "cik": "0001394220",
+      "company_name": "RINO International Corporation",
+      "cutoff_date": "2010-11-09"
+    },
+    {
+      "case_id": "T02",
+      "ticker": "CSC",
+      "cik": "0000023082",
+      "company_name": "Computer Sciences Corporation",
+      "cutoff_date": "2011-01-27"
+    },
+    {
+      "case_id": "T03",
+      "ticker": "CCME",
+      "cik": "0001399067",
+      "company_name": "China MediaExpress Holdings, Inc.",
+      "cutoff_date": "2011-01-29"
+    },
+    {
+      "case_id": "T04",
+      "ticker": "WFT",
+      "cik": "0001453090",
+      "company_name": "Weatherford International Ltd. (Switzerland); n/k/a Weatherford International plc",
+      "cutoff_date": "2011-02-28"
+    },
+    {
+      "case_id": "T05",
+      "ticker": "KEYP",
+      "cik": "0001326396",
+      "company_name": "Keyuan Petrochemicals, Inc.",
+      "cutoff_date": "2011-03-31"
+    },
+    {
+      "case_id": "T06",
+      "ticker": "PUDA",
+      "cik": "0001162747",
+      "company_name": "Puda Coal, Inc.",
+      "cutoff_date": "2011-04-07"
+    },
+    {
+      "case_id": "T07",
+      "ticker": "MON",
+      "cik": "0001110783",
+      "company_name": "Monsanto Company",
+      "cutoff_date": "2011-06-28"
+    },
+    {
+      "case_id": "T08",
+      "ticker": "MILL",
+      "cik": "0000785968",
+      "company_name": "Miller Energy Resources, Inc. (f/k/a Miller Petroleum, Inc.)",
+      "cutoff_date": "2011-07-27"
+    },
+    {
+      "case_id": "T09",
+      "ticker": "FEED",
+      "cik": "0001331427",
+      "company_name": "AgFeed Industries, Inc.",
+      "cutoff_date": "2011-09-28"
+    },
+    {
+      "case_id": "T10",
+      "ticker": "DMND",
+      "cik": "0001320947",
+      "company_name": "Diamond Foods, Inc.",
+      "cutoff_date": "2011-10-31"
+    },
+    {
+      "case_id": "T11",
+      "ticker": "OFIX",
+      "cik": "0000884624",
+      "company_name": "Orthofix International N.V.",
+      "cutoff_date": "2013-07-28"
+    },
+    {
+      "case_id": "T12",
+      "ticker": "LOGI",
+      "cik": "0001032975",
+      "company_name": "Logitech International S.A.",
+      "cutoff_date": "2014-05-20"
+    },
+    {
+      "case_id": "T13",
+      "ticker": "HTZ",
+      "cik": "0001657853",
+      "company_name": "Hertz Global Holdings, Inc.",
+      "cutoff_date": "2014-06-05"
+    },
+    {
+      "case_id": "T14",
+      "ticker": "PWE",
+      "cik": "0001334388",
+      "company_name": "Penn West Petroleum Ltd. (now Obsidian Energy Ltd.)",
+      "cutoff_date": "2014-07-28"
+    },
+    {
+      "case_id": "T15",
+      "ticker": "RATE",
+      "cik": "0001518222",
+      "company_name": "Bankrate, Inc.",
+      "cutoff_date": "2014-09-14"
+    },
+    {
+      "case_id": "T16",
+      "ticker": "ICON",
+      "cik": "0000857737",
+      "company_name": "Iconix Brand Group, Inc.",
+      "cutoff_date": "2015-08-09"
+    },
+    {
+      "case_id": "T17",
+      "ticker": "MRVL",
+      "cik": "0001058057",
+      "company_name": "Marvell Technology Group, Ltd.",
+      "cutoff_date": "2015-09-10"
+    },
+    {
+      "case_id": "T18",
+      "ticker": "VRX",
+      "cik": "0000885590",
+      "company_name": "Valeant Pharmaceuticals International, Inc. (n/k/a Bausch Health Companies Inc.)",
+      "cutoff_date": "2015-10-18"
+    },
+    {
+      "case_id": "T19",
+      "ticker": "OSIR",
+      "cik": "0001360886",
+      "company_name": "Osiris Therapeutics, Inc.",
+      "cutoff_date": "2015-11-15"
+    },
+    {
+      "case_id": "T20",
+      "ticker": "BRX",
+      "cik": "0001581068",
+      "company_name": "Brixmor Property Group Inc.",
+      "cutoff_date": "2016-02-07"
+    },
+    {
+      "case_id": "T21",
+      "ticker": "SCOR",
+      "cik": "0001158172",
+      "company_name": "Comscore, Inc.",
+      "cutoff_date": "2016-02-28"
+    },
+    {
+      "case_id": "T22",
+      "ticker": "TNGO",
+      "cik": "0001182325",
+      "company_name": "Tangoe, Inc.",
+      "cutoff_date": "2016-03-06"
+    },
+    {
+      "case_id": "T23",
+      "ticker": "HAIN",
+      "cik": "0000910406",
+      "company_name": "The Hain Celestial Group, Inc.",
+      "cutoff_date": "2016-08-14"
+    },
+    {
+      "case_id": "T24",
+      "ticker": "CGI",
+      "cik": "0000865941",
+      "company_name": "Celadon Group, Inc.",
+      "cutoff_date": "2017-04-04"
+    },
+    {
+      "case_id": "T25",
+      "ticker": "GE",
+      "cik": "0000040545",
+      "company_name": "General Electric Company",
+      "cutoff_date": "2017-07-20"
+    },
+    {
+      "case_id": "T26",
+      "ticker": "MDXG",
+      "cik": "0001376339",
+      "company_name": "MiMedx Group, Inc.",
+      "cutoff_date": "2017-09-19"
+    },
+    {
+      "case_id": "T27",
+      "ticker": "WAGE",
+      "cik": "0001158863",
+      "company_name": "WageWorks, Inc.",
+      "cutoff_date": "2018-02-28"
+    },
+    {
+      "case_id": "T28",
+      "ticker": "KHC",
+      "cik": "0001637459",
+      "company_name": "The Kraft Heinz Company",
+      "cutoff_date": "2019-02-20"
+    },
+    {
+      "case_id": "T29",
+      "ticker": "UAA/UA",
+      "cik": "0001336917",
+      "company_name": "Under Armour, Inc.",
+      "cutoff_date": "2019-11-02"
+    },
+    {
+      "case_id": "T30",
+      "ticker": "LK",
+      "cik": "0001767582",
+      "company_name": "Luckin Coffee Inc.",
+      "cutoff_date": "2020-01-30"
+    }
+  ]
+}
