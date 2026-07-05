@@ -1,4 +1,4 @@
-# HANDOFF.md — 세션 인수인계 (최종 갱신: 2026-07-05 저녁 세션 종료 시)
+# HANDOFF.md — 세션 인수인계 (최종 갱신: 2026-07-05 심야 세션 — 표본 점검 후속)
 
 > 다음 세션은 CLAUDE.md → PROJECT.md → 이 문서 → REVIEW.md/GATE_PACKAGE.md 순으로 읽을 것.
 
@@ -13,11 +13,25 @@
   **월요일 검토 시작 전에 이걸 먼저 실행할 것** (07-05 조용한 소실 사고의 교훈).
 - **CI**: pytest(15) + validate_schemas + verify_manifest --schema-only (`.github/workflows/ci.yml`).
 
+## 심야 세션 추가분 (표본 점검 후속 — commit `d63c9d8`~)
+
+- **피평가자 입력 v1.1**: 사용자 표본 점검이 값 수준 누출 2건 발견 → 서명 정정.
+  중립 ID(case_NN, 셔플) + 컷오프 시점 사명 + 단일 티커. 매핑은
+  `data/scoring/id_mapping.json` (채점 전용 — 피평가자·pipeline/ 접근 금지).
+  방어 ④(값 수준 스캔) 신설, 총 20 tests. **오버라이드 첫 2건 기록됨**
+  (`scoring/overrides.md` OV-001/OV-002 — §9 지표의 첫 데이터 포인트).
+- 신설 문서: `docs/methodology_limitations.md` (L-1 암기 한계 + memorization_suspect
+  채점 플래그 초안 — 채점 프로토콜 고정 시 편입 여부 서명 필요).
+- GATE_PACKAGE에 GP-8(중국 RTO 군집 매칭 기준)·GP-9(대조군 컷오프 규약 약한 누출) 추가,
+  GP-2에 표본 점검 3건(T25/T07/T18) 보강 — 점검 지시문의 세 날짜는 폭로일이 아니라
+  **컷오프일**이었음(혼동 주의).
+
 ## 월요일 세션이 할 일
 
 1. `python tools/verify_manifest.py` → PASS 확인 (실패 시 fetch_primary_sources.py 재실행 후 재검증)
-2. **GATE_PACKAGE.md의 GP-0 → GP-7 순서대로 검토·서명** (킬 스위치 GP-6은 반드시 마지막).
-   각 항목에 근거·선택지·영향 표가 붙어 있음 — 근거가 부족하면 서명하지 말고 보강 지시.
+2. **GATE_PACKAGE.md의 GP-0 → GP-9 순서대로 검토·서명** (킬 스위치 GP-6은 GP-8·GP-9까지
+   본 뒤 마지막에). 각 항목에 근거·선택지·영향 표가 붙어 있음 — 근거가 부족하면 서명하지
+   말고 보강 지시.
 3. 서명 후: Claude에게 A/B 기준 1차 적용 표(케이스 × 질문 + 인용) 작성 지시 가능 (서명 전 금지).
 4. 오버라이드는 `scoring/overrides.md` OV-NNN, 서명은 GATE_PACKAGE 서명란 + 커밋.
 
