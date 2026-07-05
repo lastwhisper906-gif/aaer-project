@@ -1,0 +1,1135 @@
+{
+  "manifest_version": 1,
+  "root": "~/aaer-data",
+  "generated_at": "2026-07-05T06:57:44+00:00",
+  "generated_by": "tools/verify_manifest.py --write",
+  "file_count": 153,
+  "total_bytes": 24664847,
+  "files": [
+    {
+      "path": "BRX/34-86538.pdf",
+      "size": 501434,
+      "sha256": "54ea9ac54b479937f48e6a1dbcccdfddc4c8a4bee31008b1e1ec65ce2e75f903",
+      "fetched_at": "2026-07-05T06:17:31+00:00",
+      "source_url": "https://www.sec.gov/files/litigation/admin/2019/34-86538.pdf"
+    },
+    {
+      "path": "BRX/34-86538.pdf.txt",
+      "size": 34283,
+      "sha256": "5113318eefc34f8b3897f3ae4f181ac818580dd2c53fce154bd26130c3a98f66",
+      "fetched_at": "2026-07-05T06:17:31+00:00",
+      "source_url": null,
+      "derived_from": "BRX/34-86538.pdf"
+    },
+    {
+      "path": "BRX/edgar/CIK0001581068.json",
+      "size": 151974,
+      "sha256": "bfdd19ed719a5507c113ba2ba2b93ab9707d8e4c5ba1ca975058d48326a97b34",
+      "fetched_at": "2026-07-05T06:17:31+00:00",
+      "source_url": "https://data.sec.gov/submissions/CIK0001581068.json"
+    },
+    {
+      "path": "CCME/comp22731.pdf",
+      "size": 847763,
+      "sha256": "f678d9416c967eb9eee5838f147bb78cc167ff7cec1135a9a31d5b1fe706d852",
+      "fetched_at": "2026-07-05T06:16:42+00:00",
+      "source_url": "https://www.sec.gov/litigation/complaints/2013/comp22731.pdf"
+    },
+    {
+      "path": "CCME/comp22731.pdf.txt",
+      "size": 41879,
+      "sha256": "e464f77ad17d3c3a676e052ffe63fdf94d28b10690360a4b5d5f9897b444672e",
+      "fetched_at": "2026-07-05T06:16:43+00:00",
+      "source_url": null,
+      "derived_from": "CCME/comp22731.pdf"
+    },
+    {
+      "path": "CCME/edgar/CIK0001399067.json",
+      "size": 35629,
+      "sha256": "06d45c283efa3ffee52761f177d76873cc375ebf7bc865c6b78d698d1ae7a134",
+      "fetched_at": "2026-07-05T06:16:43+00:00",
+      "source_url": "https://data.sec.gov/submissions/CIK0001399067.json"
+    },
+    {
+      "path": "CCME/lr-22731.html",
+      "size": 69914,
+      "sha256": "140dbd4ef3713ebdb595eb7547d538704b470f932592f6d837bdae03679a54cc",
+      "fetched_at": "2026-07-05T06:16:39+00:00",
+      "source_url": "https://www.sec.gov/enforcement-litigation/litigation-releases/lr-22731"
+    },
+    {
+      "path": "CCME/lr-22731.html.txt",
+      "size": 11287,
+      "sha256": "98a2a95c5219f4a84c0bd673b792155f4b2140431a839de385bb18dff83bc13e",
+      "fetched_at": "2026-07-05T06:16:39+00:00",
+      "source_url": null,
+      "derived_from": "CCME/lr-22731.html"
+    },
+    {
+      "path": "CGI/comp24459.pdf",
+      "size": 180249,
+      "sha256": "2152c20ae9629a695444281fad66a22cbd2077ed89a8eff00478031843ac6a67",
+      "fetched_at": "2026-07-05T06:17:39+00:00",
+      "source_url": "https://www.sec.gov/litigation/complaints/2019/comp24459.pdf"
+    },
+    {
+      "path": "CGI/comp24459.pdf.txt",
+      "size": 21205,
+      "sha256": "570eda2c0e0913fecd11e1641691cb33b565d3a70765ce811d7377ee874eb1b9",
+      "fetched_at": "2026-07-05T06:17:40+00:00",
+      "source_url": null,
+      "derived_from": "CGI/comp24459.pdf"
+    },
+    {
+      "path": "CGI/edgar/CIK0000865941.json",
+      "size": 147733,
+      "sha256": "c0f5ff089cb9b71e2f6341bc9e3411c399152e5c934759b8c664ce3037152c12",
+      "fetched_at": "2026-07-05T06:17:40+00:00",
+      "source_url": "https://data.sec.gov/submissions/CIK0000865941.json"
+    },
+    {
+      "path": "CGI/lr-24459.html",
+      "size": 67629,
+      "sha256": "a5f7d5a5c50a559d0cc87d9e77056748a8ee1601ae52ba3328a0cc2912db9236",
+      "fetched_at": "2026-07-05T06:17:38+00:00",
+      "source_url": "https://www.sec.gov/enforcement-litigation/litigation-releases/lr-24459"
+    },
+    {
+      "path": "CGI/lr-24459.html.txt",
+      "size": 8935,
+      "sha256": "8655e113043d159bcbc8047a0cb475253e6415a28c3f5be088e032238a044ca0",
+      "fetched_at": "2026-07-05T06:17:38+00:00",
+      "source_url": null,
+      "derived_from": "CGI/lr-24459.html"
+    },
+    {
+      "path": "CSC/33-9804.pdf",
+      "size": 390396,
+      "sha256": "bc2c16443c50b487e13372f7ad2ae66f3453598f30a5577244c13bea434a1bee",
+      "fetched_at": "2026-07-05T06:16:37+00:00",
+      "source_url": "https://www.sec.gov/files/litigation/admin/2015/33-9804.pdf"
+    },
+    {
+      "path": "CSC/33-9804.pdf.txt",
+      "size": 105098,
+      "sha256": "c9eda6848938140b5db277b4f70d31efed0868c1fcff199f825fbd2870768e68",
+      "fetched_at": "2026-07-05T06:16:37+00:00",
+      "source_url": null,
+      "derived_from": "CSC/33-9804.pdf"
+    },
+    {
+      "path": "CSC/edgar/CIK0000023082-submissions-001.json",
+      "size": 93531,
+      "sha256": "35a382f700956da8021a6ae4b85a5e6aa04496dbc32db09d292aedda3917f0c6",
+      "fetched_at": "2026-07-05T06:16:39+00:00",
+      "source_url": "https://data.sec.gov/submissions/CIK0000023082-submissions-001.json"
+    },
+    {
+      "path": "CSC/edgar/CIK0000023082.json",
+      "size": 152892,
+      "sha256": "4d10e8a6e68bca18f8c2f739a11a0b2ebb037260cdb38c95a6ccc24ec683275f",
+      "fetched_at": "2026-07-05T06:16:38+00:00",
+      "source_url": "https://data.sec.gov/submissions/CIK0000023082.json"
+    },
+    {
+      "path": "DMND/33-9508.pdf",
+      "size": 121247,
+      "sha256": "7e465ff6d8f11d5f50b20b59b951a1e18c1778153b313503c1d91b6093018411",
+      "fetched_at": "2026-07-05T06:17:00+00:00",
+      "source_url": "https://www.sec.gov/litigation/admin/2014/33-9508.pdf"
+    },
+    {
+      "path": "DMND/33-9508.pdf.txt",
+      "size": 28499,
+      "sha256": "9561c83f1e50d5e9a46e09017fd0fe2a98631e4318ae3c58af4acd6d34a5fc66",
+      "fetched_at": "2026-07-05T06:17:00+00:00",
+      "source_url": null,
+      "derived_from": "DMND/33-9508.pdf"
+    },
+    {
+      "path": "DMND/comp-pr2014-4-diamond.pdf",
+      "size": 72118,
+      "sha256": "9dbb9123031b1d33641ffe3c22f0b40eaf36f7a494938a1e7b38b0e533edc98c",
+      "fetched_at": "2026-07-05T06:17:01+00:00",
+      "source_url": "https://www.sec.gov/litigation/complaints/2014/comp-pr2014-4-diamond.pdf"
+    },
+    {
+      "path": "DMND/comp-pr2014-4-diamond.pdf.txt",
+      "size": 39116,
+      "sha256": "026d6db3e3a8f451b53c6d1a7f80a70d90056012cec1f4f442375f0b6aa52a5b",
+      "fetched_at": "2026-07-05T06:17:01+00:00",
+      "source_url": null,
+      "derived_from": "DMND/comp-pr2014-4-diamond.pdf"
+    },
+    {
+      "path": "DMND/comp-pr2014-4-neil.pdf",
+      "size": 89132,
+      "sha256": "0997ab82c75cb0e04e148976917cc12fdd601d445e6d299b241f7c66a8ec7314",
+      "fetched_at": "2026-07-05T06:17:01+00:00",
+      "source_url": "https://www.sec.gov/litigation/complaints/2014/comp-pr2014-4-neil.pdf"
+    },
+    {
+      "path": "DMND/comp-pr2014-4-neil.pdf.txt",
+      "size": 53613,
+      "sha256": "1f2d6405de875e7d632ecfc329123ae7ef76311b3a80352bb2ade7632a0f60e9",
+      "fetched_at": "2026-07-05T06:17:01+00:00",
+      "source_url": null,
+      "derived_from": "DMND/comp-pr2014-4-neil.pdf"
+    },
+    {
+      "path": "DMND/edgar/CIK0001320947.json",
+      "size": 139193,
+      "sha256": "538d408a6735af84b184c8ed1ed9e7295b8857d6b84d27e3ec21c8d8245665a4",
+      "fetched_at": "2026-07-05T06:17:02+00:00",
+      "source_url": "https://data.sec.gov/submissions/CIK0001320947.json"
+    },
+    {
+      "path": "DMND/lr-22902.html",
+      "size": 71322,
+      "sha256": "2b439789c3ed6e51e0e97965c36cb23f22f8b46925389cc991957c265ce79b27",
+      "fetched_at": "2026-07-05T06:16:59+00:00",
+      "source_url": "https://www.sec.gov/enforcement-litigation/litigation-releases/lr-22902"
+    },
+    {
+      "path": "DMND/lr-22902.html.txt",
+      "size": 13144,
+      "sha256": "a5ea101fd27826f700867bd35e2ab0511096719e9d0bd6b4aa32cc0448de9e51",
+      "fetched_at": "2026-07-05T06:16:59+00:00",
+      "source_url": null,
+      "derived_from": "DMND/lr-22902.html"
+    },
+    {
+      "path": "FEED/2014-47.html",
+      "size": 70282,
+      "sha256": "14d6353d88d143570d69b047dd193c99a4d3f63b1938e960c5f23efdd2494fc1",
+      "fetched_at": "2026-07-05T06:16:56+00:00",
+      "source_url": "https://www.sec.gov/newsroom/press-releases/2014-47"
+    },
+    {
+      "path": "FEED/2014-47.html.txt",
+      "size": 13350,
+      "sha256": "871bd94f0a98b6d2464e18ee2f47648b4d16c8c6321c75a74dc386c3895f67aa",
+      "fetched_at": "2026-07-05T06:16:56+00:00",
+      "source_url": null,
+      "derived_from": "FEED/2014-47.html"
+    },
+    {
+      "path": "FEED/33-9556.pdf",
+      "size": 105362,
+      "sha256": "e05d8a76cdc6342dbada564cc5c07bc92846d5baae71f9bc12246f1f9df1afb0",
+      "fetched_at": "2026-07-05T06:16:58+00:00",
+      "source_url": "http://www.sec.gov/litigation/admin/2014/33-9556.pdf"
+    },
+    {
+      "path": "FEED/33-9556.pdf.txt",
+      "size": 15487,
+      "sha256": "a6dfd043c5351d2937a08965a084377ed8c84c48032e5f62f31d5e95857089ae",
+      "fetched_at": "2026-07-05T06:16:58+00:00",
+      "source_url": null,
+      "derived_from": "FEED/33-9556.pdf"
+    },
+    {
+      "path": "FEED/33-9557.pdf",
+      "size": 38338,
+      "sha256": "a3001c4dbb88aaea6c02962fbb6070cd7fab2313575fec2a3f4ba7c3e48947d5",
+      "fetched_at": "2026-07-05T06:16:58+00:00",
+      "source_url": "https://www.sec.gov/files/litigation/admin/2014/33-9557.pdf"
+    },
+    {
+      "path": "FEED/33-9557.pdf.txt",
+      "size": 15924,
+      "sha256": "12a1b0859e7685f75a8283ae957a7f8ab6f4ed0d0bb9ff57e806031bc0deca28",
+      "fetched_at": "2026-07-05T06:16:58+00:00",
+      "source_url": null,
+      "derived_from": "FEED/33-9557.pdf"
+    },
+    {
+      "path": "FEED/comp-pr2014-47.pdf",
+      "size": 531717,
+      "sha256": "870eb3b1bfbabc940a2524a5243bd976e18b358be9b3525d4a90310774dec8ef",
+      "fetched_at": "2026-07-05T06:16:57+00:00",
+      "source_url": "http://www.sec.gov/litigation/complaints/2014/comp-pr2014-47.pdf"
+    },
+    {
+      "path": "FEED/comp-pr2014-47.pdf.txt",
+      "size": 63137,
+      "sha256": "4b4091c840dd28b5cbd3552f17ad68e28fef2e9acc0e6f72dfc3e59db069d2f5",
+      "fetched_at": "2026-07-05T06:16:57+00:00",
+      "source_url": null,
+      "derived_from": "FEED/comp-pr2014-47.pdf"
+    },
+    {
+      "path": "FEED/edgar/CIK0001331427.json",
+      "size": 57639,
+      "sha256": "5260bcb9bc647910c3a2edfad6492bcf13467c8a04405376468d847a63d886b7",
+      "fetched_at": "2026-07-05T06:16:59+00:00",
+      "source_url": "https://data.sec.gov/submissions/CIK0001331427.json"
+    },
+    {
+      "path": "GE/33-10899.pdf",
+      "size": 401035,
+      "sha256": "d027aaeeaf4cf56bc6d9a4f0d50424106dc474edb8951a08346468709a7fc7fc",
+      "fetched_at": "2026-07-05T06:17:41+00:00",
+      "source_url": "https://www.sec.gov/files/litigation/admin/2020/33-10899.pdf"
+    },
+    {
+      "path": "GE/33-10899.pdf.txt",
+      "size": 55428,
+      "sha256": "7dc8ff21a68f3a8a07831599a5f328571c9ed3f3a48654b24106e088cf47620f",
+      "fetched_at": "2026-07-05T06:17:41+00:00",
+      "source_url": null,
+      "derived_from": "GE/33-10899.pdf"
+    },
+    {
+      "path": "GE/edgar/CIK0000040545-submissions-001.json",
+      "size": 320362,
+      "sha256": "878388c4f40a32d91978109dcaffe2cbf78e50d32f6cd0b7000f90ad50440b72",
+      "fetched_at": "2026-07-05T06:17:42+00:00",
+      "source_url": "https://data.sec.gov/submissions/CIK0000040545-submissions-001.json"
+    },
+    {
+      "path": "GE/edgar/CIK0000040545-submissions-002.json",
+      "size": 273881,
+      "sha256": "c2a4688585acc8b279281f79517d4f7f35258c40d422fd5e4f77f27074235996",
+      "fetched_at": "2026-07-05T06:17:43+00:00",
+      "source_url": "https://data.sec.gov/submissions/CIK0000040545-submissions-002.json"
+    },
+    {
+      "path": "GE/edgar/CIK0000040545.json",
+      "size": 165599,
+      "sha256": "28e6c5fca3aa3270e4ed6f8259c657b0c74ee9080d7371e0aa3e949d4dfe82e0",
+      "fetched_at": "2026-07-05T06:17:41+00:00",
+      "source_url": "https://data.sec.gov/submissions/CIK0000040545.json"
+    },
+    {
+      "path": "HAIN/34-84781.pdf",
+      "size": 238885,
+      "sha256": "1720ab9953f4ba133b9f6bfe68c9c9179db83ca5be3a071df0f9ba7408c113cf",
+      "fetched_at": "2026-07-05T06:17:37+00:00",
+      "source_url": "https://www.sec.gov/litigation/admin/2018/34-84781.pdf"
+    },
+    {
+      "path": "HAIN/34-84781.pdf.txt",
+      "size": 20578,
+      "sha256": "ecc1cd28e6478aa6e63a7ba120f8d3a4da6188858a4b2e96cb10c1b80bc304c0",
+      "fetched_at": "2026-07-05T06:17:37+00:00",
+      "source_url": null,
+      "derived_from": "HAIN/34-84781.pdf"
+    },
+    {
+      "path": "HAIN/edgar/CIK0000910406-submissions-001.json",
+      "size": 89863,
+      "sha256": "ae78fd904c92cfad39a283b921f5e2b3d150386892cd42e47c784621dd0161c9",
+      "fetched_at": "2026-07-05T06:17:38+00:00",
+      "source_url": "https://data.sec.gov/submissions/CIK0000910406-submissions-001.json"
+    },
+    {
+      "path": "HAIN/edgar/CIK0000910406.json",
+      "size": 165339,
+      "sha256": "d0c12e790112c46a84e8bddac8de0ff42d648ee12a558690c585e84a4c02e268",
+      "fetched_at": "2026-07-05T06:17:38+00:00",
+      "source_url": "https://data.sec.gov/submissions/CIK0000910406.json"
+    },
+    {
+      "path": "HTZ/33-10601.pdf",
+      "size": 344484,
+      "sha256": "5a7b25fe2d1c66af9b96b3346a4b953bec2a858d2bb159d688a1cbc650d459c7",
+      "fetched_at": "2026-07-05T06:17:07+00:00",
+      "source_url": "https://www.sec.gov/files/litigation/admin/2018/33-10601.pdf"
+    },
+    {
+      "path": "HTZ/33-10601.pdf.txt",
+      "size": 36014,
+      "sha256": "58cff46fd5c074115c894f1b5685dc9692262725790043d012a6b9429a3d1a4b",
+      "fetched_at": "2026-07-05T06:17:07+00:00",
+      "source_url": null,
+      "derived_from": "HTZ/33-10601.pdf"
+    },
+    {
+      "path": "HTZ/edgar/CIK0001364479-submissions-001.json",
+      "size": 193262,
+      "sha256": "5c95397797eac84e0fe46523dd0dab5c164ff03f22d7800054047034606134ea",
+      "fetched_at": "2026-07-05T06:17:09+00:00",
+      "source_url": "https://data.sec.gov/submissions/CIK0001364479-submissions-001.json"
+    },
+    {
+      "path": "HTZ/edgar/CIK0001364479.json",
+      "size": 158449,
+      "sha256": "908dc3134c6cac62c87f7de573660a3c60ae2c6841532b2c7f8cc612bd8b91a2",
+      "fetched_at": "2026-07-05T06:17:08+00:00",
+      "source_url": "https://data.sec.gov/submissions/CIK0001364479.json"
+    },
+    {
+      "path": "HTZ/edgar/CIK0001657853.json",
+      "size": 140429,
+      "sha256": "05907b3710d8cd1d7cb27891cb8ad0ae0160dc85ba3a77b34f4b25966d52966c",
+      "fetched_at": "2026-07-05T06:17:08+00:00",
+      "source_url": "https://data.sec.gov/submissions/CIK0001657853.json"
+    },
+    {
+      "path": "ICON/2019-251.html",
+      "size": 65942,
+      "sha256": "3d8b8446bd1ecaeac3c7bf03e32b9a0cb9975ad1db5e114462748881f1f35512",
+      "fetched_at": "2026-07-05T06:17:18+00:00",
+      "source_url": "https://www.sec.gov/newsroom/press-releases/2019-251"
+    },
+    {
+      "path": "ICON/2019-251.html.txt",
+      "size": 9454,
+      "sha256": "28014af9c1c82abba3276844937fe1b0acc5f243f4259ca5da5843ae07fc2cf1",
+      "fetched_at": "2026-07-05T06:17:18+00:00",
+      "source_url": null,
+      "derived_from": "ICON/2019-251.html"
+    },
+    {
+      "path": "ICON/33-10730.pdf",
+      "size": 387710,
+      "sha256": "12466b75be9a1bb646c1b2171f4ad4716bff5595bb007349871b536e1795b927",
+      "fetched_at": "2026-07-05T06:17:24+00:00",
+      "source_url": "https://www.sec.gov/litigation/admin/2019/33-10730.pdf"
+    },
+    {
+      "path": "ICON/33-10730.pdf.txt",
+      "size": 52475,
+      "sha256": "b45aaeb41b5b158058225aa6cb01b1a7668c83a931d0087b188bd9fcd462338f",
+      "fetched_at": "2026-07-05T06:17:24+00:00",
+      "source_url": null,
+      "derived_from": "ICON/33-10730.pdf"
+    },
+    {
+      "path": "ICON/comp-pr2019-251-cole.pdf",
+      "size": 1922597,
+      "sha256": "fc01f75f8d822ea313fadd559c8b553623b3489133527ca4eb675896504a74d6",
+      "fetched_at": "2026-07-05T06:17:24+00:00",
+      "source_url": "https://www.sec.gov/litigation/complaints/2019/comp-pr2019-251-cole.pdf"
+    },
+    {
+      "path": "ICON/comp-pr2019-251-cole.pdf.txt",
+      "size": 76392,
+      "sha256": "6eec637eba768754e4331520c6370b6ae21e7fb28f89865ca32661b5ab0a098f",
+      "fetched_at": "2026-07-05T06:17:24+00:00",
+      "source_url": null,
+      "derived_from": "ICON/comp-pr2019-251-cole.pdf"
+    },
+    {
+      "path": "ICON/comp-pr2019-251-iconix.pdf",
+      "size": 659618,
+      "sha256": "df63ce6744416e5f27f0844609471dd8de62f42aadd0d7a9b198c60ad48dac6c",
+      "fetched_at": "2026-07-05T06:17:23+00:00",
+      "source_url": "https://www.sec.gov/litigation/complaints/2019/comp-pr2019-251-iconix.pdf"
+    },
+    {
+      "path": "ICON/comp-pr2019-251-iconix.pdf.txt",
+      "size": 101554,
+      "sha256": "67bc161923d38d802b8f0116d8a5153cbbdfb6d256bef690ec61106673cbfb65",
+      "fetched_at": "2026-07-05T06:17:23+00:00",
+      "source_url": null,
+      "derived_from": "ICON/comp-pr2019-251-iconix.pdf"
+    },
+    {
+      "path": "ICON/edgar/CIK0000857737-submissions-001.json",
+      "size": 43708,
+      "sha256": "0f1cdffdd49f02acf919c3bb1dc2ad110b30baa6aef265f1015a6a8cea267c9a",
+      "fetched_at": "2026-07-05T06:17:25+00:00",
+      "source_url": "https://data.sec.gov/submissions/CIK0000857737-submissions-001.json"
+    },
+    {
+      "path": "ICON/edgar/CIK0000857737.json",
+      "size": 160581,
+      "sha256": "ba595dd8d70e0cfe312cbbf1f0439427dfd316786d474f483c492b7e8c9dc1cb",
+      "fetched_at": "2026-07-05T06:17:25+00:00",
+      "source_url": "https://data.sec.gov/submissions/CIK0000857737.json"
+    },
+    {
+      "path": "ICON/lr-24682.html",
+      "size": 71158,
+      "sha256": "7d800848aedd07c23c2ac7e51fc66f6041eb7777407096ff72c11e7d730af259",
+      "fetched_at": "2026-07-05T06:17:19+00:00",
+      "source_url": "https://www.sec.gov/enforcement-litigation/litigation-releases/lr-24682"
+    },
+    {
+      "path": "ICON/lr-24682.html.txt",
+      "size": 11656,
+      "sha256": "bc9874b1ff09d82ea8ba0f9a6f26d669c5b4a31194fdcc5aa31a6a8ea2f1bb30",
+      "fetched_at": "2026-07-05T06:17:19+00:00",
+      "source_url": null,
+      "derived_from": "ICON/lr-24682.html"
+    },
+    {
+      "path": "KEYP/comp-pr2013-30.pdf",
+      "size": 174900,
+      "sha256": "0050c06eab829129b3a8693ee52d47f9f6026b7ee5b0cf299450c42efb247d5b",
+      "fetched_at": "2026-07-05T06:16:46+00:00",
+      "source_url": "https://www.sec.gov/litigation/complaints/2013/comp-pr2013-30.pdf"
+    },
+    {
+      "path": "KEYP/comp-pr2013-30.pdf.txt",
+      "size": 31777,
+      "sha256": "efebf05a8d2fd6b2ba813e0ca59eb2f53326cac2a039b322ef301824465ecdbe",
+      "fetched_at": "2026-07-05T06:16:46+00:00",
+      "source_url": null,
+      "derived_from": "KEYP/comp-pr2013-30.pdf"
+    },
+    {
+      "path": "KEYP/edgar/CIK0001326396.json",
+      "size": 44886,
+      "sha256": "061fe1c642785c7bc8028964921f9e7b2862af3daa70f2be3eaa49e0c32e3383",
+      "fetched_at": "2026-07-05T06:16:47+00:00",
+      "source_url": "https://data.sec.gov/submissions/CIK0001326396.json"
+    },
+    {
+      "path": "KEYP/lr-22627.html",
+      "size": 69047,
+      "sha256": "6c929ba2e7cf7b8301a4878ef03486f82f3e08f62c5494b349bb0a2fb002dbd8",
+      "fetched_at": "2026-07-05T06:16:45+00:00",
+      "source_url": "https://www.sec.gov/enforcement-litigation/litigation-releases/lr-22627"
+    },
+    {
+      "path": "KEYP/lr-22627.html.txt",
+      "size": 10453,
+      "sha256": "83fe24ecd39b914e38e2c8d5a8d13b9aa3c2aba719df3ed791f4710475bea0da",
+      "fetched_at": "2026-07-05T06:16:45+00:00",
+      "source_url": null,
+      "derived_from": "KEYP/lr-22627.html"
+    },
+    {
+      "path": "KHC/33-10977.pdf",
+      "size": 239051,
+      "sha256": "6a707435b3af5defab6db83141873339acfe3d1af287fef949ef72b21265df51",
+      "fetched_at": "2026-07-05T06:17:49+00:00",
+      "source_url": "https://www.sec.gov/files/litigation/admin/2021/33-10977.pdf"
+    },
+    {
+      "path": "KHC/33-10977.pdf.txt",
+      "size": 42854,
+      "sha256": "70c6893b179b532f41ac8e40666013e59fb230f7d3ec1b62fc45aecb534bafd8",
+      "fetched_at": "2026-07-05T06:17:49+00:00",
+      "source_url": null,
+      "derived_from": "KHC/33-10977.pdf"
+    },
+    {
+      "path": "KHC/edgar/CIK0001637459.json",
+      "size": 142365,
+      "sha256": "8341101944636194cc3b15e734150223d64287bed235101ddc454e5c41c53959",
+      "fetched_at": "2026-07-05T06:17:50+00:00",
+      "source_url": "https://data.sec.gov/submissions/CIK0001637459.json"
+    },
+    {
+      "path": "LK/comp-pr2020-319.pdf",
+      "size": 1250678,
+      "sha256": "db72ff0a79bbfd4901c05db899fad227c622885ba95a5a34e809d0b59f339686",
+      "fetched_at": "2026-07-05T06:17:53+00:00",
+      "source_url": "https://www.sec.gov/litigation/complaints/2020/comp-pr2020-319.pdf"
+    },
+    {
+      "path": "LK/comp-pr2020-319.pdf.txt",
+      "size": 107600,
+      "sha256": "75b56301e8071863a2bbb95981429db4ced4f9ad57a1014ae14ee2d1af3c3435",
+      "fetched_at": "2026-07-05T06:17:54+00:00",
+      "source_url": null,
+      "derived_from": "LK/comp-pr2020-319.pdf"
+    },
+    {
+      "path": "LK/edgar/CIK0001767582.json",
+      "size": 39736,
+      "sha256": "d4c65254e0eee4c02b4a5135c4af4ff8506b260246d91c05d49bf4f3ce20398a",
+      "fetched_at": "2026-07-05T06:17:54+00:00",
+      "source_url": "https://data.sec.gov/submissions/CIK0001767582.json"
+    },
+    {
+      "path": "LK/lr-24987.html",
+      "size": 68334,
+      "sha256": "91d5ee0d3d0bace4d6575e0705b8c31b56a04080618dc0cc03963c339fdab9ae",
+      "fetched_at": "2026-07-05T06:17:52+00:00",
+      "source_url": "https://www.sec.gov/enforcement-litigation/litigation-releases/lr-24987"
+    },
+    {
+      "path": "LK/lr-24987.html.txt",
+      "size": 9622,
+      "sha256": "fe49d8e68774e8df06a209deb33702378a2e9c1a504133f451ba26b5db6bfa41",
+      "fetched_at": "2026-07-05T06:17:52+00:00",
+      "source_url": null,
+      "derived_from": "LK/lr-24987.html"
+    },
+    {
+      "path": "LOGI/34-77644.pdf",
+      "size": 356721,
+      "sha256": "32755c393e81da2f1a5857ac9685e3eb4423b40219bb4934c878aada75143030",
+      "fetched_at": "2026-07-05T06:17:05+00:00",
+      "source_url": "https://www.sec.gov/files/litigation/admin/2016/34-77644.pdf"
+    },
+    {
+      "path": "LOGI/34-77644.pdf.txt",
+      "size": 47603,
+      "sha256": "01fd7e341e553817ad5f5cca4ae1983b6d7d1c391d331d3ab4d0092c3e8ecbc5",
+      "fetched_at": "2026-07-05T06:17:05+00:00",
+      "source_url": null,
+      "derived_from": "LOGI/34-77644.pdf"
+    },
+    {
+      "path": "LOGI/edgar/CIK0001032975-submissions-001.json",
+      "size": 38691,
+      "sha256": "bb78eb426ea42522f1f9daf62e6e4ab18148ab5dcefc9eb65b129797b99d0495",
+      "fetched_at": "2026-07-05T06:17:06+00:00",
+      "source_url": "https://data.sec.gov/submissions/CIK0001032975-submissions-001.json"
+    },
+    {
+      "path": "LOGI/edgar/CIK0001032975.json",
+      "size": 160849,
+      "sha256": "3cad5bca6e634a5143e90c9c7debe4725dddbc1d92c5292e22dbacc8e055ad4d",
+      "fetched_at": "2026-07-05T06:17:06+00:00",
+      "source_url": "https://data.sec.gov/submissions/CIK0001032975.json"
+    },
+    {
+      "path": "MDXG/comp24678.pdf",
+      "size": 747214,
+      "sha256": "d2bc116c6aa9625ced50996f77450576f6fcc74398415b4f392d40ff3ebab41f",
+      "fetched_at": "2026-07-05T06:17:45+00:00",
+      "source_url": "https://www.sec.gov/litigation/complaints/2019/comp24678.pdf"
+    },
+    {
+      "path": "MDXG/comp24678.pdf.txt",
+      "size": 157594,
+      "sha256": "6ac097e9b7c366e7faa2f67190fdb04f1abb178812dcae51228f48b8f3448939",
+      "fetched_at": "2026-07-05T06:17:46+00:00",
+      "source_url": null,
+      "derived_from": "MDXG/comp24678.pdf"
+    },
+    {
+      "path": "MDXG/edgar/CIK0001376339-submissions-001.json",
+      "size": 40249,
+      "sha256": "0e7f975e652e1c4e9a373c65856edac164609265197e4744391ed4c4e7e4b860",
+      "fetched_at": "2026-07-05T06:17:46+00:00",
+      "source_url": "https://data.sec.gov/submissions/CIK0001376339-submissions-001.json"
+    },
+    {
+      "path": "MDXG/edgar/CIK0001376339.json",
+      "size": 165872,
+      "sha256": "c0ac687b37e1379f094dceb0b9d0f84c4d314e5e9c5ca8ab13e0fc516b102f25",
+      "fetched_at": "2026-07-05T06:17:46+00:00",
+      "source_url": "https://data.sec.gov/submissions/CIK0001376339.json"
+    },
+    {
+      "path": "MDXG/lr-24678.html",
+      "size": 68251,
+      "sha256": "034da8ac6c1d5425b6a99889a919b4bf2685d4498c1fec867da0ceebc94b4e01",
+      "fetched_at": "2026-07-05T06:17:43+00:00",
+      "source_url": "https://www.sec.gov/enforcement-litigation/litigation-releases/lr-24678"
+    },
+    {
+      "path": "MDXG/lr-24678.html.txt",
+      "size": 9567,
+      "sha256": "ca90939e2b252384bc10ddc13eb8a58d15d208cec890ae77c608a2457f3f2615",
+      "fetched_at": "2026-07-05T06:17:43+00:00",
+      "source_url": null,
+      "derived_from": "MDXG/lr-24678.html"
+    },
+    {
+      "path": "MILL/33-10002.pdf",
+      "size": 173429,
+      "sha256": "cab489e1139d0f2105132cb7ffe99b1ddc684cd0a4d5d8dbc65e6844f7715b96",
+      "fetched_at": "2026-07-05T06:16:54+00:00",
+      "source_url": "https://www.sec.gov/files/litigation/admin/2016/33-10002.pdf"
+    },
+    {
+      "path": "MILL/33-10002.pdf.txt",
+      "size": 40005,
+      "sha256": "7943ab805934e19722947441d6199617885938c821d97fe2da99ef3134e54737",
+      "fetched_at": "2026-07-05T06:16:54+00:00",
+      "source_url": null,
+      "derived_from": "MILL/33-10002.pdf"
+    },
+    {
+      "path": "MILL/edgar/CIK0000785968.json",
+      "size": 117743,
+      "sha256": "2d3896282e627d3b8e2a2c914d64c81adfba19ba0901594cacb724dba2bcc7b4",
+      "fetched_at": "2026-07-05T06:16:55+00:00",
+      "source_url": "https://data.sec.gov/submissions/CIK0000785968.json"
+    },
+    {
+      "path": "MON/33-10037.pdf",
+      "size": 240327,
+      "sha256": "a2791f2819d5c3f1334e8ae423ae52b631e25ebff401927befa1ff83471b1ef6",
+      "fetched_at": "2026-07-05T06:16:52+00:00",
+      "source_url": "https://www.sec.gov/files/litigation/admin/2016/33-10037.pdf"
+    },
+    {
+      "path": "MON/33-10037.pdf.txt",
+      "size": 58017,
+      "sha256": "7965c73fcc612ed470cc010643b26c12e1d9408e7c924630090f55df1cfe56f0",
+      "fetched_at": "2026-07-05T06:16:52+00:00",
+      "source_url": null,
+      "derived_from": "MON/33-10037.pdf"
+    },
+    {
+      "path": "MON/edgar/CIK0001110783-submissions-001.json",
+      "size": 225777,
+      "sha256": "ac51cf36a4232bf0db94e2e66601db4cb3496003b4fa8cc3323996c03a3e84f0",
+      "fetched_at": "2026-07-05T06:16:53+00:00",
+      "source_url": "https://data.sec.gov/submissions/CIK0001110783-submissions-001.json"
+    },
+    {
+      "path": "MON/edgar/CIK0001110783.json",
+      "size": 157097,
+      "sha256": "da57b78aff3d298835d4fdc0fdb718b56c7af7c738f240310f84791ce4497ab7",
+      "fetched_at": "2026-07-05T06:16:53+00:00",
+      "source_url": "https://data.sec.gov/submissions/CIK0001110783.json"
+    },
+    {
+      "path": "MRVL/33-10684.pdf",
+      "size": 221667,
+      "sha256": "ffccdf8077a44abbd7dae6d707bcde9628e926b07414d31a9f1c11606eb87e32",
+      "fetched_at": "2026-07-05T06:17:26+00:00",
+      "source_url": "https://www.sec.gov/files/litigation/admin/2019/33-10684.pdf"
+    },
+    {
+      "path": "MRVL/33-10684.pdf.txt",
+      "size": 34460,
+      "sha256": "abeeed39628f85bd83a35b4a114251e74d0bc6895fd2b247d16ec3d683857b35",
+      "fetched_at": "2026-07-05T06:17:26+00:00",
+      "source_url": null,
+      "derived_from": "MRVL/33-10684.pdf"
+    },
+    {
+      "path": "MRVL/edgar/CIK0001058057-submissions-001.json",
+      "size": 124384,
+      "sha256": "c9f060c3f7f119cf768ef6e4291108176ca0ee4561d58302b61ba84933ebe9ad",
+      "fetched_at": "2026-07-05T06:17:27+00:00",
+      "source_url": "https://data.sec.gov/submissions/CIK0001058057-submissions-001.json"
+    },
+    {
+      "path": "MRVL/edgar/CIK0001058057.json",
+      "size": 159739,
+      "sha256": "0dcd85f2bbe380dd3a804d9258906365da96b1c4974b0e3b46eab056b4a49efe",
+      "fetched_at": "2026-07-05T06:17:27+00:00",
+      "source_url": "https://data.sec.gov/submissions/CIK0001058057.json"
+    },
+    {
+      "path": "OFIX/33-10281.pdf",
+      "size": 204905,
+      "sha256": "256367564e1faccb20b9c220bbcfdd9cd61279090ceb0cf640c46ec89f53342f",
+      "fetched_at": "2026-07-05T06:17:02+00:00",
+      "source_url": "https://www.sec.gov/files/litigation/admin/2017/33-10281.pdf"
+    },
+    {
+      "path": "OFIX/33-10281.pdf.txt",
+      "size": 49333,
+      "sha256": "8bade796bf3b54dd6c273c5a9b84478df3deafaf9d1ee7033b6d3f3ff92c44a1",
+      "fetched_at": "2026-07-05T06:17:02+00:00",
+      "source_url": null,
+      "derived_from": "OFIX/33-10281.pdf"
+    },
+    {
+      "path": "OFIX/edgar/CIK0000884624-submissions-001.json",
+      "size": 125030,
+      "sha256": "633af1f19dcc2f4314f3ef3f5ced989c789f97fdf71b479918d9d424cc3b19e6",
+      "fetched_at": "2026-07-05T06:17:04+00:00",
+      "source_url": "https://data.sec.gov/submissions/CIK0000884624-submissions-001.json"
+    },
+    {
+      "path": "OFIX/edgar/CIK0000884624.json",
+      "size": 161205,
+      "sha256": "5e86323511729e8028aa3cc3dca4a7fabc28390ee455c136008b0eb15192040a",
+      "fetched_at": "2026-07-05T06:17:03+00:00",
+      "source_url": "https://data.sec.gov/submissions/CIK0000884624.json"
+    },
+    {
+      "path": "OSIR/edgar/CIK0001360886.json",
+      "size": 86469,
+      "sha256": "805f7707283387169a405ae270de1ccff7c2f89bd5d02c8ed306a8877f2de243",
+      "fetched_at": "2026-07-05T06:17:30+00:00",
+      "source_url": "https://data.sec.gov/submissions/CIK0001360886.json"
+    },
+    {
+      "path": "OSIR/lr-23978.html",
+      "size": 66943,
+      "sha256": "6f17ea3f29dc0f67aa86fad1082b4306478fc911032bbabe84ac4170d44eb16b",
+      "fetched_at": "2026-07-05T06:17:29+00:00",
+      "source_url": "https://www.sec.gov/enforcement-litigation/litigation-releases/lr-23978"
+    },
+    {
+      "path": "OSIR/lr-23978.html.txt",
+      "size": 9190,
+      "sha256": "2937f09890d83568d475399e81d9540e63929540517101f712b40dca635d1ab3",
+      "fetched_at": "2026-07-05T06:17:29+00:00",
+      "source_url": null,
+      "derived_from": "OSIR/lr-23978.html"
+    },
+    {
+      "path": "PUDA/comp22264.pdf",
+      "size": 1446346,
+      "sha256": "5010ed18b7cf01330945e589fc9b15cd0f95ccdf7ccdb4f395ef1652433bff39",
+      "fetched_at": "2026-07-05T06:16:49+00:00",
+      "source_url": "https://www.sec.gov/litigation/complaints/2012/comp22264.pdf"
+    },
+    {
+      "path": "PUDA/comp22264.pdf.txt",
+      "size": 66666,
+      "sha256": "e0e9a4d4935e245e8329f1c129334487495cfc4fe77df0a9f9838eb4728ba575",
+      "fetched_at": "2026-07-05T06:16:51+00:00",
+      "source_url": null,
+      "derived_from": "PUDA/comp22264.pdf"
+    },
+    {
+      "path": "PUDA/edgar/CIK0001162747.json",
+      "size": 42778,
+      "sha256": "bee31a72bd41677129486e57a9724a581c89fe670d6884dfbd2dc6042adad6a9",
+      "fetched_at": "2026-07-05T06:16:51+00:00",
+      "source_url": "https://data.sec.gov/submissions/CIK0001162747.json"
+    },
+    {
+      "path": "PUDA/lr-22264.html",
+      "size": 69704,
+      "sha256": "b34ad37251ec5ffafed80fbd7d55189d6e0cab9e6f7d81b98265a5e3d661d2e2",
+      "fetched_at": "2026-07-05T06:16:47+00:00",
+      "source_url": "https://www.sec.gov/enforcement-litigation/litigation-releases/lr-22264"
+    },
+    {
+      "path": "PUDA/lr-22264.html.txt",
+      "size": 11228,
+      "sha256": "7d387b10ab32f966d2d84eb53b12bfabb37e25d466ad52e101e4ae51e7c80fac",
+      "fetched_at": "2026-07-05T06:16:47+00:00",
+      "source_url": null,
+      "derived_from": "PUDA/lr-22264.html"
+    },
+    {
+      "path": "PWE/34-81544.pdf",
+      "size": 185955,
+      "sha256": "aa7607dedcc73d660509a3f86632ca9393279902f365e1b6c6ab152da04aaa5c",
+      "fetched_at": "2026-07-05T06:17:13+00:00",
+      "source_url": "https://www.sec.gov/litigation/admin/2017/34-81544.pdf"
+    },
+    {
+      "path": "PWE/34-81544.pdf.txt",
+      "size": 5188,
+      "sha256": "46841eb52b86a9403c223fc1e38f42a091ba7b2518705c67d24ad38018823ac3",
+      "fetched_at": "2026-07-05T06:17:13+00:00",
+      "source_url": null,
+      "derived_from": "PWE/34-81544.pdf"
+    },
+    {
+      "path": "PWE/comp24809.pdf",
+      "size": 432016,
+      "sha256": "852ad44ef745ba567490ec585bd92a4234441eb315135243e078865b9eca8ef3",
+      "fetched_at": "2026-07-05T06:17:14+00:00",
+      "source_url": "https://www.sec.gov/litigation/complaints/2020/comp24809.pdf"
+    },
+    {
+      "path": "PWE/comp24809.pdf.txt",
+      "size": 158488,
+      "sha256": "60a30df4f4d476dba8547c6b4b57d2f73297a45a9681796bf119043a4ec6d6fb",
+      "fetched_at": "2026-07-05T06:17:15+00:00",
+      "source_url": null,
+      "derived_from": "PWE/comp24809.pdf"
+    },
+    {
+      "path": "PWE/edgar/CIK0001334388.json",
+      "size": 127889,
+      "sha256": "e590e512db015ed9335cb653d6076e42144626e9bfd61be1e9dd61d4d9c3855c",
+      "fetched_at": "2026-07-05T06:17:17+00:00",
+      "source_url": "https://data.sec.gov/submissions/CIK0001334388.json"
+    },
+    {
+      "path": "PWE/lr-23993.html",
+      "size": 66157,
+      "sha256": "732a2af2be64e0ef2c9d9bb4ebc87122e7a5f31847d0525ea18b57d668abe9b6",
+      "fetched_at": "2026-07-05T06:17:11+00:00",
+      "source_url": "https://www.sec.gov/enforcement-litigation/litigation-releases/lr-23993"
+    },
+    {
+      "path": "PWE/lr-23993.html.txt",
+      "size": 8377,
+      "sha256": "1c739333573fdbac657acfab21e330ef0edd21a253b1db0b20eed2070116eaa6",
+      "fetched_at": "2026-07-05T06:17:11+00:00",
+      "source_url": null,
+      "derived_from": "PWE/lr-23993.html"
+    },
+    {
+      "path": "PWE/lr-24195.html",
+      "size": 68254,
+      "sha256": "3a8a3657ff64d12b2e2958380bf4bd5f1267748ce9a485c6d84a6c803c49a75d",
+      "fetched_at": "2026-07-05T06:17:09+00:00",
+      "source_url": "https://www.sec.gov/enforcement-litigation/litigation-releases/lr-24195"
+    },
+    {
+      "path": "PWE/lr-24195.html.txt",
+      "size": 10370,
+      "sha256": "38ecf579c13e1088efbf4859d8831bccbee10242975c4be570dc1723bac5dfc3",
+      "fetched_at": "2026-07-05T06:17:09+00:00",
+      "source_url": null,
+      "derived_from": "PWE/lr-24195.html"
+    },
+    {
+      "path": "PWE/lr-24809.html",
+      "size": 67860,
+      "sha256": "338246c805c6a5bf464ff333767da6299c0f76d42313d6ccfd014277ff87ecb2",
+      "fetched_at": "2026-07-05T06:17:09+00:00",
+      "source_url": "https://www.sec.gov/enforcement-litigation/litigation-releases/lr-24809"
+    },
+    {
+      "path": "PWE/lr-24809.html.txt",
+      "size": 8949,
+      "sha256": "1a8c88bb427fd72e76e9af1fce4058866db7714df11669fc2c3266d4109e50dd",
+      "fetched_at": "2026-07-05T06:17:09+00:00",
+      "source_url": null,
+      "derived_from": "PWE/lr-24809.html"
+    },
+    {
+      "path": "PWE/lr23993.htm",
+      "size": 66157,
+      "sha256": "732a2af2be64e0ef2c9d9bb4ebc87122e7a5f31847d0525ea18b57d668abe9b6",
+      "fetched_at": "2026-07-05T06:17:12+00:00",
+      "source_url": "https://www.sec.gov/litigation/litreleases/2017/lr23993.htm"
+    },
+    {
+      "path": "PWE/lr23993.htm.txt",
+      "size": 8377,
+      "sha256": "1c739333573fdbac657acfab21e330ef0edd21a253b1db0b20eed2070116eaa6",
+      "fetched_at": "2026-07-05T06:17:12+00:00",
+      "source_url": null,
+      "derived_from": "PWE/lr23993.htm"
+    },
+    {
+      "path": "RATE/33-9901.pdf",
+      "size": 198640,
+      "sha256": "a2698968d4538f047e86fa60623e9652cc151fd01e99c0f24b2a3269be367b61",
+      "fetched_at": "2026-07-05T06:17:18+00:00",
+      "source_url": "https://www.sec.gov/files/litigation/admin/2015/33-9901.pdf"
+    },
+    {
+      "path": "RATE/33-9901.pdf.txt",
+      "size": 30188,
+      "sha256": "a47df12e5c11a9ee138e30f774343ee30c0d2cc620a0b82b76ba56358abd84a7",
+      "fetched_at": "2026-07-05T06:17:18+00:00",
+      "source_url": null,
+      "derived_from": "RATE/33-9901.pdf"
+    },
+    {
+      "path": "RATE/edgar/CIK0001518222.json",
+      "size": 68720,
+      "sha256": "e72cea9a4dce7047cba4defe25931bb90ae00aec6541289a4801c716c92d374f",
+      "fetched_at": "2026-07-05T06:17:18+00:00",
+      "source_url": "https://data.sec.gov/submissions/CIK0001518222.json"
+    },
+    {
+      "path": "RINO/comp-pr2013-87.pdf",
+      "size": 734893,
+      "sha256": "27da06a1e84f848af5f3ff7ca5ecfa385b0f71e748517184ba7214028953ab1b",
+      "fetched_at": "2026-07-05T06:16:36+00:00",
+      "source_url": "https://www.sec.gov/litigation/complaints/2013/comp-pr2013-87.pdf"
+    },
+    {
+      "path": "RINO/comp-pr2013-87.pdf.txt",
+      "size": 28683,
+      "sha256": "07501cd1ce7fbe16597cf7a62b339824fa732a8c409837f5cbd92b9d0b4624b6",
+      "fetched_at": "2026-07-05T06:16:36+00:00",
+      "source_url": null,
+      "derived_from": "RINO/comp-pr2013-87.pdf"
+    },
+    {
+      "path": "RINO/edgar/CIK0001394220.json",
+      "size": 22263,
+      "sha256": "a5db5d11608ec90f3c32d453bb0c1785832d25c505f930e19630731ace606865",
+      "fetched_at": "2026-07-05T06:16:36+00:00",
+      "source_url": "https://data.sec.gov/submissions/CIK0001394220.json"
+    },
+    {
+      "path": "RINO/lr-22699.html",
+      "size": 69317,
+      "sha256": "a32808ea7bc39c847e0dd599b5d5050750f8535239201cd786d0143f9233266a",
+      "fetched_at": "2026-07-05T06:16:35+00:00",
+      "source_url": "https://www.sec.gov/enforcement-litigation/litigation-releases/lr-22699"
+    },
+    {
+      "path": "RINO/lr-22699.html.txt",
+      "size": 10767,
+      "sha256": "b262cc38ab2e4887ff0b070af35bca1d81c6e05842fed068ca2d245c374fd9a4",
+      "fetched_at": "2026-07-05T06:16:35+00:00",
+      "source_url": null,
+      "derived_from": "RINO/lr-22699.html"
+    },
+    {
+      "path": "SCOR/33-10692.pdf",
+      "size": 348293,
+      "sha256": "a8a8e021874a16a5acce7272adf46da6e6ee6909c3511f0d7c42cb9f73dba18a",
+      "fetched_at": "2026-07-05T06:17:32+00:00",
+      "source_url": "https://www.sec.gov/files/litigation/admin/2019/33-10692.pdf"
+    },
+    {
+      "path": "SCOR/33-10692.pdf.txt",
+      "size": 44185,
+      "sha256": "1e46fec2d63f40f7866d213bbfff8da3730808e8f338cc56c1eec55d35b022e1",
+      "fetched_at": "2026-07-05T06:17:32+00:00",
+      "source_url": null,
+      "derived_from": "SCOR/33-10692.pdf"
+    },
+    {
+      "path": "SCOR/edgar/CIK0001158172-submissions-001.json",
+      "size": 163035,
+      "sha256": "e6bc4716f7a61716a3e922a55a6caea9633583758f93b28880f439bdf506595f",
+      "fetched_at": "2026-07-05T06:17:34+00:00",
+      "source_url": "https://data.sec.gov/submissions/CIK0001158172-submissions-001.json"
+    },
+    {
+      "path": "SCOR/edgar/CIK0001158172.json",
+      "size": 166073,
+      "sha256": "9a30654e6d456aa5aa807017e967e25fa520ee1c2218776f63f87c865d7abc46",
+      "fetched_at": "2026-07-05T06:17:33+00:00",
+      "source_url": "https://data.sec.gov/submissions/CIK0001158172.json"
+    },
+    {
+      "path": "TNGO/comp24255.pdf",
+      "size": 249619,
+      "sha256": "c32527bdeb566cabd10628c2f06c5e561058c189fc6dd04fcb76b86037338502",
+      "fetched_at": "2026-07-05T06:17:35+00:00",
+      "source_url": "https://www.sec.gov/litigation/complaints/2018/comp24255.pdf"
+    },
+    {
+      "path": "TNGO/comp24255.pdf.txt",
+      "size": 70683,
+      "sha256": "2b0c75afb1c9be41111338add7ce3df406dbcb8039ecc901d5ffeba7a7ecd6dc",
+      "fetched_at": "2026-07-05T06:17:36+00:00",
+      "source_url": null,
+      "derived_from": "TNGO/comp24255.pdf"
+    },
+    {
+      "path": "TNGO/edgar/CIK0001182325.json",
+      "size": 88374,
+      "sha256": "fdf453ad79b6615e5579bf3edf94333f8ec1a4ce2ceefa192be6ddd8e8aeec03",
+      "fetched_at": "2026-07-05T06:17:36+00:00",
+      "source_url": "https://data.sec.gov/submissions/CIK0001182325.json"
+    },
+    {
+      "path": "TNGO/lr-24255.html",
+      "size": 66855,
+      "sha256": "e428677cc8d0a6699a6cbef6ba6d2bf51dededf26a78831fcc39d264c31bab49",
+      "fetched_at": "2026-07-05T06:17:34+00:00",
+      "source_url": "https://www.sec.gov/enforcement-litigation/litigation-releases/lr-24255"
+    },
+    {
+      "path": "TNGO/lr-24255.html.txt",
+      "size": 8181,
+      "sha256": "2de4a88c11808e4ba1eff4a700a65bdd456d35ae627b5aa07eea14dc371bc032",
+      "fetched_at": "2026-07-05T06:17:34+00:00",
+      "source_url": null,
+      "derived_from": "TNGO/lr-24255.html"
+    },
+    {
+      "path": "UAA/33-10940.pdf",
+      "size": 287112,
+      "sha256": "9cc04d3b74635267ad69d31c905762b30e044fbc393a1a69f716af88332788d7",
+      "fetched_at": "2026-07-05T06:17:51+00:00",
+      "source_url": "https://www.sec.gov/files/litigation/admin/2021/33-10940.pdf"
+    },
+    {
+      "path": "UAA/33-10940.pdf.txt",
+      "size": 34383,
+      "sha256": "60915f98cc6b6c90ddd4deb070bfca03799c0496a8528ea565bf13f89db04f75",
+      "fetched_at": "2026-07-05T06:17:51+00:00",
+      "source_url": null,
+      "derived_from": "UAA/33-10940.pdf"
+    },
+    {
+      "path": "UAA/edgar/CIK0001336917-submissions-001.json",
+      "size": 192150,
+      "sha256": "8af02075cf0c0668712b4f24ead6a3e0339d81163ba395b0b0371234e0b70c23",
+      "fetched_at": "2026-07-05T06:17:52+00:00",
+      "source_url": "https://data.sec.gov/submissions/CIK0001336917-submissions-001.json"
+    },
+    {
+      "path": "UAA/edgar/CIK0001336917.json",
+      "size": 158999,
+      "sha256": "f941b1c69f253e8fe42ba4508ff9dbb23e09e75d082b02f941ff6aa4168d9204",
+      "fetched_at": "2026-07-05T06:17:51+00:00",
+      "source_url": "https://data.sec.gov/submissions/CIK0001336917.json"
+    },
+    {
+      "path": "VRX/33-10809.pdf",
+      "size": 407669,
+      "sha256": "69962391f90d34338604ab2508b854339c891bfe1bf03b0030ff55fbf290198b",
+      "fetched_at": "2026-07-05T06:17:27+00:00",
+      "source_url": "https://www.sec.gov/files/litigation/admin/2020/33-10809.pdf"
+    },
+    {
+      "path": "VRX/33-10809.pdf.txt",
+      "size": 35352,
+      "sha256": "818943cd231212b4bb8485b86f451706f95e3161d52f1f5a4d2fd2c41f5cca00",
+      "fetched_at": "2026-07-05T06:17:28+00:00",
+      "source_url": null,
+      "derived_from": "VRX/33-10809.pdf"
+    },
+    {
+      "path": "VRX/edgar/CIK0000885590-submissions-001.json",
+      "size": 221526,
+      "sha256": "88a10515ced673cb4fd59c63ff2c8e6eb11d6e4a56151d204cc5a834b878bbdd",
+      "fetched_at": "2026-07-05T06:17:29+00:00",
+      "source_url": "https://data.sec.gov/submissions/CIK0000885590-submissions-001.json"
+    },
+    {
+      "path": "VRX/edgar/CIK0000885590.json",
+      "size": 160393,
+      "sha256": "13a7ea0caffdb15d24e9ea307b4fb3f1c7e38e58d3494d5a9f28fb84c40bafbd",
+      "fetched_at": "2026-07-05T06:17:28+00:00",
+      "source_url": "https://data.sec.gov/submissions/CIK0000885590.json"
+    },
+    {
+      "path": "WAGE/2021-23.html",
+      "size": 65439,
+      "sha256": "1f6428c0f6881c7d80a0882582db7bebea481e4f0aee844cc6ea68420c25a276",
+      "fetched_at": "2026-07-05T06:17:48+00:00",
+      "source_url": "https://www.sec.gov/newsroom/press-releases/2021-23"
+    },
+    {
+      "path": "WAGE/2021-23.html.txt",
+      "size": 9336,
+      "sha256": "54ec90af64b2a2923a6878135c161826fd0e6aed2ed835cc56363479b2f23fc4",
+      "fetched_at": "2026-07-05T06:17:48+00:00",
+      "source_url": null,
+      "derived_from": "WAGE/2021-23.html"
+    },
+    {
+      "path": "WAGE/33-10925.pdf",
+      "size": 291773,
+      "sha256": "93c60b9e6413eb941094a4aa5f382dbf4fcd8c1bb40a865b62c6438aa5cd62c1",
+      "fetched_at": "2026-07-05T06:17:48+00:00",
+      "source_url": "https://www.sec.gov/files/litigation/admin/2021/33-10925.pdf"
+    },
+    {
+      "path": "WAGE/33-10925.pdf.txt",
+      "size": 34631,
+      "sha256": "21f728680693a30d109e37fe5261b1aa49518735cc672e6ca5ace73c0c673aed",
+      "fetched_at": "2026-07-05T06:17:48+00:00",
+      "source_url": null,
+      "derived_from": "WAGE/33-10925.pdf"
+    },
+    {
+      "path": "WAGE/edgar/CIK0001158863.json",
+      "size": 93521,
+      "sha256": "2b0fe4b0d4ed7598251c01789c00a6143773540d910c6625c0e00c0d30a0101e",
+      "fetched_at": "2026-07-05T06:17:49+00:00",
+      "source_url": "https://data.sec.gov/submissions/CIK0001158863.json"
+    },
+    {
+      "path": "WFT/33-10221.pdf",
+      "size": 407862,
+      "sha256": "06ece23b0d319dc59084ec1457b478e4e10ca832d479e3457abfc315fcf7a55f",
+      "fetched_at": "2026-07-05T06:16:44+00:00",
+      "source_url": "https://www.sec.gov/files/litigation/admin/2016/33-10221.pdf"
+    },
+    {
+      "path": "WFT/33-10221.pdf.txt",
+      "size": 82263,
+      "sha256": "e0471e0d5d0a4e702ab3cdd00b68a29bfed6a9b025488c58ed6ae7333598f642",
+      "fetched_at": "2026-07-05T06:16:44+00:00",
+      "source_url": null,
+      "derived_from": "WFT/33-10221.pdf"
+    },
+    {
+      "path": "WFT/edgar/CIK0001453090.json",
+      "size": 116372,
+      "sha256": "7ce7304ce95a9ed39269e0518fc576978a4550abc841b3a3ea5baf262066be64",
+      "fetched_at": "2026-07-05T06:16:44+00:00",
+      "source_url": "https://data.sec.gov/submissions/CIK0001453090.json"
+    }
+  ]
+}

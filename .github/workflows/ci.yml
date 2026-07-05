@@ -17,3 +17,5 @@ jobs:
         run: python -m pytest pipeline/ tools/ -q
       - name: 스키마 검증 (candidates.json ↔ case_input, 편차 허용목록)
         run: python tools/validate_schemas.py
+      - name: 매니페스트 자체 정합성 (러너에 ~/aaer-data 원본 없음 → schema-only)
+        run: python tools/verify_manifest.py --schema-only
