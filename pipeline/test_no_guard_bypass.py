@@ -21,6 +21,8 @@ FORBIDDEN_PATTERNS = {
         r"^\s*(import|from)\s+(requests|urllib|http\.client|httpx|aiohttp|socket)\b", re.M
     ),
     "candidates.json direct reference": re.compile(r"candidates\.json"),
+    # 중립 ID ↔ 원본 매핑은 채점 전용(OV-001) — 피평가자 코드가 읽으면 그룹 소속 역산 가능
+    "id_mapping direct reference": re.compile(r"id_mapping\.json"),
 }
 
 

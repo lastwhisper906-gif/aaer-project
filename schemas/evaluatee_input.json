@@ -1,13 +1,13 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "title": "evaluatee_input",
-  "description": "피평가자(파이프라인 Claude)에게 노출 가능한 유일한 케이스 입력 계약. candidates.json은 ground truth(scheme_summary, AAER 링크, 조작기간, group)를 포함하므로 피평가자에게 절대 직접 제공하지 않는다 — 이 스키마를 통과한 data/evaluatee/cases.json만 제공. additionalProperties: false가 핵심 강제점: 화이트리스트 밖 필드는 존재 자체가 검증 실패. status: v1 (2026-07-05 사용자 서명: 분리 방식·화이트리스트 필드 구성 승인)",
+  "description": "피평가자(파이프라인 Claude)에게 노출 가능한 유일한 케이스 입력 계약. candidates.json은 ground truth(scheme_summary, AAER 링크, 조작기간, group)를 포함하므로 피평가자에게 절대 직접 제공하지 않는다 — 이 스키마를 통과한 data/evaluatee/cases.json만 제공. additionalProperties: false가 핵심 강제점: 화이트리스트 밖 필드는 존재 자체가 검증 실패. status: v1.1 (2026-07-05 사용자 서명 — 표본 점검이 잡은 값 수준 누출 2건 정정: case_id 중립화(T/C 접두사가 그룹 소속을 인코딩, OV-001) + company_name 컷오프 시점 사명만(후신 사명은 §5-1 위반, OV-002). v1은 2026-07-05 오전 서명: 분리 방식·화이트리스트 필드 구성 승인)",
   "type": "object",
   "required": ["case_id", "ticker", "cik", "company_name", "cutoff_date"],
   "additionalProperties": false,
   "properties": {
-    "case_id": { "type": "string", "pattern": "^(T|C)[0-9]{2}$" },
-    "ticker": { "type": "string" },
+    "case_id": { "type": "string", "pattern": "^case_[0-9]{2}$", "description": "중립 ID — 그룹 소속(T/C)·순번 상관을 인코딩하지 않는다. 원본 매핑은 채점 전용 data/scoring/id_mapping.json" },
+    "ticker": { "type": "string", "pattern": "^[A-Z][A-Z0-9.-]*$", "description": "주 상장 티커 단일값 — 복합('UAA/UA') 금지" },
     "cik": { "type": "string", "description": "EDGAR CIK — 피평가자가 컷오프 전 공시를 스스로 수집하는 앵커" },
     "company_name": { "type": "string" },
     "cutoff_date": { "type": "string", "format": "date", "description": "파이프라인 입력 허용 상한 — cutoff_guard가 강제. 이 날짜의 유래(폭로일)는 피평가자에게 알리지 않는다" }
