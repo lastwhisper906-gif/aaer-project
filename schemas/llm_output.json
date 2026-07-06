@@ -1,9 +1,15 @@
 {
   "$schema": "http://json-schema.org/draft-07/schema#",
   "title": "llm_output",
-  "description": "피평가자 파이프라인의 케이스당 출력. §5-4 강제: 체크리스트 + 원문 인용. 이 스키마 파싱 실패 = 파이프라인 오류로 귀속. status: v1.1 (2026-07-05 사용자 서명: documents_used를 required로 승격 — 유일한 컷오프 증적이 선택 필드였던 불일치 #2 해소)",
+  "description": "피평가자 파이프라인의 케이스당 출력. §5-4 강제: 체크리스트 + 제공 데이터 인용. 이 스키마 파싱 실패 = 파이프라인 오류로 귀속. status: v1.2 (2026-07-06 GA-001 하 개정, red-team 발견 #1/#2/#5/#6/#10/#12 반영: misstatement_probability + mechanism_hypotheses(maxItems 3, 순위=배열 순서, p>=40이면 minItems 1) 추가, evidence 의미를 '제공된 구조화 데이터 포인트 참조'로 재정의 — D10: 이번 사이클 입력은 서사 텍스트 없음. v1.1: 2026-07-05 documents_used required 승격)",
   "type": "object",
-  "required": ["case_id", "run_id", "model", "pipeline_version", "run_timestamp", "documents_used", "checklist", "overall"],
+  "required": ["case_id", "run_id", "model", "pipeline_version", "run_timestamp", "documents_used", "checklist", "misstatement_probability", "mechanism_hypotheses", "overall"],
+  "allOf": [
+    {
+      "if": { "properties": { "misstatement_probability": { "minimum": 40 } } },
+      "then": { "properties": { "mechanism_hypotheses": { "minItems": 1 } } }
+    }
+  ],
   "properties": {
     "case_id": { "type": "string" },
     "run_id": { "type": "string", "description": "재현용 실행 식별자" },
@@ -40,9 +46,9 @@
               "type": "object",
               "required": ["quote", "source_accession_no", "location"],
               "properties": {
-                "quote": { "type": "string", "description": "공시 원문 인용 (LLM 항목) 또는 Python 계산 결과 참조 (수치 항목)" },
-                "source_accession_no": { "type": "string" },
-                "location": { "type": "string", "description": "섹션/각주 번호/페이지" },
+                "quote": { "type": "string", "description": "v1.2: 제공된 구조화 데이터 포인트의 참조 — '개념=값 (기간)' 형식 (예: 'AccountsReceivableNetCurrent=1,234M (FY2012)') 또는 Python 계산 결과 참조. 이번 사이클 입력에 서사 텍스트 없음(D10) — 문장 인용을 쓰면 날조로 채점(차원 4=0)" },
+                "source_accession_no": { "type": "string", "description": "데이터 포인트를 보고한 제출물 accession (제공 표의 provenance 열) 또는 'computed'" },
+                "location": { "type": "string", "description": "제공 표 내 위치 — 개념 태그·기간 (v1.2: 섹션/각주/페이지 아님)" },
                 "computed_by": { "type": "string", "enum": ["python", "llm"], "default": "llm" }
               }
             },
@@ -51,11 +57,41 @@
         }
       }
     },
+    "misstatement_probability": {
+      "type": "integer", "minimum": 0, "maximum": 100,
+      "description": "제출된 재무제표가 커버 기간 중 중대한 왜곡표시를 포함하(거나 포함했)을 확률 추정 — 피평가자 노출 명칭은 중립(‘misstatement’), fraud 어휘 금지 (red-team #1)"
+    },
+    "mechanism_hypotheses": {
+      "type": "array", "maxItems": 3,
+      "description": "왜곡표시 기제 가설 — 배열 순서 = 확신 순위, 채점은 최상위 가설 기준 (red-team #5/#8). misstatement_probability >= 40이면 최소 1개 필수 (#10)",
+      "items": {
+        "type": "object",
+        "required": ["affected_line_items", "direction", "accounting_treatment", "rationale_evidence"],
+        "properties": {
+          "affected_line_items": { "type": "array", "minItems": 1, "items": { "type": "string" } },
+          "direction": { "type": "string", "enum": ["overstated", "understated", "timing_shift"] },
+          "accounting_treatment": { "type": "string", "description": "어떤 회계 처리를 통해서인지 자유 서술 — 분류 체계 어휘를 스키마가 강제하지 않는다" },
+          "rationale_evidence": {
+            "type": "array", "minItems": 1,
+            "items": {
+              "type": "object",
+              "required": ["quote", "source_accession_no", "location"],
+              "properties": {
+                "quote": { "type": "string" },
+                "source_accession_no": { "type": "string" },
+                "location": { "type": "string" },
+                "computed_by": { "type": "string", "enum": ["python", "llm"], "default": "llm" }
+              }
+            }
+          }
+        }
+      }
+    },
     "overall": {
       "type": "object",
       "required": ["risk_tier", "top_signals"],
       "properties": {
-        "risk_tier": { "type": "string", "enum": ["elevated", "watch", "clear"], "description": "열린 서술 금지, 3단계 강제" },
+        "risk_tier": { "type": "string", "enum": ["elevated", "watch", "clear"], "description": "열린 서술 금지, 3단계 강제. 정합 규칙(red-team #12): p>=70 ⇒ elevated / 40<=p<70 ⇒ watch 또는 elevated / p<40 ⇒ clear 또는 watch — 위반은 차원 4 상한 1로 채점" },
         "top_signals": { "type": "array", "items": { "type": "string" }, "maxItems": 5, "description": "checklist item_id 참조만 허용" }
       }
     }
