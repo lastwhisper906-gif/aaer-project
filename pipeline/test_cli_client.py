@@ -97,6 +97,7 @@ def test_pinned_flags_isolated_cwd_and_config(stub, tmp_path):
                       ("--system-prompt", "SYSTEM PROMPT")]:
         assert argv[argv.index(flag) + 1] == val, flag
     assert json.loads(argv[argv.index("--json-schema") + 1]) == SCHEMA
+    assert "--strict-mcp-config" in argv, "MCP 0개 강제 플래그 누락"
     assert call["stdin"] == '{"case": 1}'
     # 격리: 작업 디렉토리·설정 디렉토리 모두 저장소 밖 + 설정 디렉토리는 호출 후 삭제
     assert not Path(call["cwd"]).resolve().is_relative_to(REPO)

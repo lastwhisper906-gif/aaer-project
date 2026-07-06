@@ -280,6 +280,21 @@ Review Packet 00에 오버라이드 경로와 함께 기재한다.
   수동 격리 경로(임시 작업 디렉토리 + CLAUDE_CONFIG_DIR 격리 + 도구 전면 차단
   플래그) 확정. 종량 자격 증명 부착은 금지 조항이므로 시도하지 않음.
 
+### 격리 기제 실증 조정 (2026-07-06, 파일럿 1차 — J13-b)
+
+- **실증**: `CLAUDE_CONFIG_DIR=<빈 임시 디렉토리>`는 구독 로그인 상태
+  (`~/.claude.json`의 oauthAccount)를 함께 차단 — 파일럿 2건 전부
+  "Not logged in" 실패 (logs/run_20260706T120619Z). 원인 특정 완료:
+  CLI는 로그인 상태 파일을 CLAUDE_CONFIG_DIR 기준으로 찾는다.
+- **조정 (실행층 재량 — 고정 기준 무관)**: 호출별 임시 CLAUDE_CONFIG_DIR에
+  **최소 인증 시드**(.claude.json — oauthAccount/hasCompletedOnboarding/
+  hasAvailableSubscription 3키만, 토큰 무이동·키체인 유지)를 기입.
+  settings·hooks·MCP·memory·projects는 여전히 부재 = 차단 의도 유지.
+  추가 방어: `--strict-mcp-config` (MCP 0개 강제) 플래그 상시 부가.
+- **검증 책임 이전**: 격리 주장 자체는 Phase 4 게이트의 기계 판정
+  (격리 프로브 + verbose 트레이스 grep)이 실증한다 — 기제를 신뢰하지 않고
+  결과를 검사한다.
+
 ### 소유자 지시문 (2026-07-06, verbatim)
 
 ```text
