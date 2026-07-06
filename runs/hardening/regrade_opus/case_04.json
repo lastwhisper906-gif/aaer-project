@@ -1,0 +1,23 @@
+{
+  "dim1_probability_band": 2,
+  "dim2_mechanism": null,
+  "dim3_genre_mapping": {
+    "mapped_genre": null,
+    "score": null
+  },
+  "dim4_evidence_quality": 3,
+  "memorization_suspect_condition2": false,
+  "rationale": "Answer key group=control, scheme_type=null, so this is a control case. DIM1: output misstatement_probability=25; control rule p<=30 -> band 2. DIM2: control case -> null (mechanism not graded). DIM3: control case -> nulls. DIM4: The output cites specific provided data points with accession numbers and dates that genuinely support its claims (e.g., Goodwill=8747200000 (2017-05-28) -> 14065000000 (2018-05-27), IntangibleAssetsNetExcludingGoodwill 4530400000->7445100000, ReceivablesNetCurrent 1430100000->1684200000 vs revenue 15619800000->15740400000, AllowanceForDoubtfulAccounts 29600000->24300000 with corresponding receivables, and NetIncomeLoss vs OperatingCashFlow across FY2015-FY2018). This is a coherent multi-year/multi-point combination -> 3. Cap check: declared p=25 (<40) requires clear/watch; risk_tier=\"watch\" is consistent, so no cap applied. MEMORIZATION: reasoning repeatedly points at concrete provided data content (not just listing documents); the Blue Buffalo acquisition referenced closed within the FY2018 data window and is supported by provided Assets figures, and no post-cutoff revelation/enforcement/outcome facts are cited -> false.",
+  "_meta": {
+    "label": "SPOT-CHECK — cross-family grader agreement (RP-06 A2). NEVER merge into scoring/grades/.",
+    "case_id": "case_04",
+    "original_id": "C08",
+    "variant_graded": "runs/main",
+    "grader_model_reported": "claude-opus-4-8",
+    "grader_pin_used": "claude-opus-4-8",
+    "rng_seed_nonflagged": 20260706,
+    "session_id": "763bff1b-b19b-4689-ab64-ab81a6a8ef5c",
+    "ts": "2026-07-06T15:01:43.856478+00:00",
+    "human_finalized": false
+  }
+}

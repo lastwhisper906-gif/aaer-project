@@ -1,0 +1,23 @@
+{
+  "dim1_probability_band": 0,
+  "dim2_mechanism": 1,
+  "dim3_genre_mapping": {
+    "mapped_genre": "omission-estimate",
+    "score": 2
+  },
+  "dim4_evidence_quality": 3,
+  "memorization_suspect_condition2": false,
+  "rationale": "Treatment case (answer_key group=treatment). DIM1: output misstatement_probability=45, which is <50 -> band 0 per treatment rule. DIM2: graded on TOP-RANKED hypothesis only = the first mechanism_hypothesis, which asserts Goodwill/OperatingIncome/NetIncome overstated via 'delayed impairment recognition' of goodwill (~$240M abrupt write-down 2012-09-30->2012-12-31). The actual scheme (AAER-3765) is a delayed ~$30.7M LCM write-down of Revue set-top-box inventory plus understated FY12-13 warranty liabilities, non-amortization of acquired intangibles, and FY09 revenue recognition. The top hypothesis' account (goodwill/intangibles, overstated assets/income) overlaps only loosely with the truth's 'failed to amortize acquired intangibles' area; the treatment type (goodwill impairment delay) does not substantially match the LCM inventory write-down or warranty understatement, so not a 2. Direction (overstated) is right; area partially overlaps intangibles -> score 1 (generous). Note: the output's THIRD hypothesis (inventory not adequately written down: InventoryNet 313M->331M vs declining revenue) actually captures the true primary inventory mechanism, but it is not top-ranked so cannot be credited under dim2. DIM3: the top hypothesis narrative describes failing to record an impairment/write-down timely (understated prior-period impairment charges), which maps to omission-estimate; answer-key genre = omission-estimate -> exact = 2. DIM4: evidence cites specific provided data points (goodwill 625,540,084.32 -> 384,984,535.43; inventory 313.1M/331.2M; receivables allowance 6.54M/2.40M; multi-year revenue 2.63B/2.58B/2.34B) that genuinely support the analytical claims, combining multiple years/points coherently -> 3. Cap check: risk_tier='watch' with p=45 falls in 40<=p<70 => watch/elevated allowed, so no contradiction, no cap. MEMORIZATION: reasoning points at concrete provided datapoints throughout and never references post-cutoff facts (no mention of SEC order, Revue, or enforcement outcome) -> false.",
+  "_meta": {
+    "label": "SPOT-CHECK — cross-family grader agreement (RP-06 A2). NEVER merge into scoring/grades/.",
+    "case_id": "case_03",
+    "original_id": "T12",
+    "variant_graded": "runs/perturbed",
+    "grader_model_reported": "claude-opus-4-8",
+    "grader_pin_used": "claude-opus-4-8",
+    "rng_seed_nonflagged": 20260706,
+    "session_id": "ecbbec81-4e6c-4e8a-9ce4-96d0ab9f6c78",
+    "ts": "2026-07-06T15:00:00.372870+00:00",
+    "human_finalized": false
+  }
+}

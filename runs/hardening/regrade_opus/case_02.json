@@ -1,0 +1,23 @@
+{
+  "dim1_probability_band": 0,
+  "dim2_mechanism": 2,
+  "dim3_genre_mapping": {
+    "mapped_genre": "active",
+    "score": 2
+  },
+  "dim4_evidence_quality": 3,
+  "memorization_suspect_condition2": false,
+  "rationale": "Treatment case (answer key group=treatment, OFIX, active(revenue) revenue-recognition scheme).\n\ndim1: Output misstatement_probability=45. Treatment banding: p<50 => 0.\n\ndim2 (top-ranked hypothesis = mechanism_hypotheses[0]): p=45>=40 so a hypothesis is required, and one is present, so not the 'no hypothesis' zero. The top hypothesis targets SalesRevenueNet/AccountsReceivable, direction 'overstated', treatment 'premature or aggressive revenue recognition ... sales booked ahead of cash collection.' This matches the answer key's account area (revenue), direction (overstated), and treatment type (improper/aggressive revenue recognition) substantially => 2. It does NOT name any case-specific fact from the key (contingent/return-eligible distributor sales, implants unusable without delayed instruments, price discounts booked as expense), so it does not reach 3. Coverage note: hypotheses 2-3 cover cash-flow timing and inventory, tangential to the true scheme.\n\ndim3: Top hypothesis narrative = premature/aggressive booking of revenue = active(revenue). Answer key genre = active(revenue). Exact => 2.\n\ndim4: Evidence cites specific provided data points (AR 79.7M->90.2M, revenue 282.2M->277.5M, NI vs OCF for FY2011 and FY2012, inventory into Q1 2013) that genuinely support the AR-vs-revenue divergence claim, combining multiple years/points => 3. No cap: risk_tier='watch' with p=45 is consistent with the 40<=p<70 => watch/elevated rule.\n\nmemorization_suspect: reasoning points at concrete numeric data content (not just doc lists) and cites no post-cutoff revelation/enforcement/outcome facts => false.",
+  "_meta": {
+    "label": "SPOT-CHECK — cross-family grader agreement (RP-06 A2). NEVER merge into scoring/grades/.",
+    "case_id": "case_02",
+    "original_id": "T11",
+    "variant_graded": "runs/perturbed",
+    "grader_model_reported": "claude-opus-4-8",
+    "grader_pin_used": "claude-opus-4-8",
+    "rng_seed_nonflagged": 20260706,
+    "session_id": "9bcd9ab0-f170-464a-a996-334959c8134e",
+    "ts": "2026-07-06T14:59:01.590621+00:00",
+    "human_finalized": false
+  }
+}

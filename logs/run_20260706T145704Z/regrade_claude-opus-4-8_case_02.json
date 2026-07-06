@@ -1,0 +1,59 @@
+{
+  "ts": "2026-07-06T14:59:01.543005+00:00",
+  "harness_pin": "2.1.201",
+  "flags": [
+    "claude",
+    "-p",
+    "--model",
+    "claude-opus-4-8",
+    "--output-format",
+    "json",
+    "--max-turns",
+    "2",
+    "--setting-sources",
+    "",
+    "--strict-mcp-config",
+    "--tools",
+    "",
+    "--disallowedTools",
+    "Bash,Read,Edit,Write,Glob,Grep,WebFetch,WebSearch,Task,NotebookEdit",
+    "--system-prompt",
+    "You are grading one output of a financial-analysis pipeline against ground truth, using a fixed 4-dimension rubric. Apply the rubric mechanically; every score must be justified in 'rationale' by point...[1807 chars]",
+    "--json-schema",
+    "{\"type\": \"object\", \"additionalProperties\": false, \"required\": [\"dim1_probability_band\", \"dim2_mechanism\", \"dim3_genre_mapping\", \"dim4_evidence_quality\", \"memorization_suspect_condition2\", \"rationale\"]...[811 chars]"
+  ],
+  "model_requested": "claude-opus-4-8",
+  "served_models": [
+    "claude-opus-4-8"
+  ],
+  "pin_ok": true,
+  "ok": true,
+  "fail_reason": null,
+  "session_id": "9bcd9ab0-f170-464a-a996-334959c8134e",
+  "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 5184,
+    "cache_read_input_tokens": 1400,
+    "output_tokens": 3434,
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 5184,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [],
+    "speed": "standard"
+  },
+  "total_cost_usd_reference_only": 0.1384,
+  "attempts": 1,
+  "wall_seconds": 47.8,
+  "freeze": {
+    "head": "633b3759b651da566a40115ec0cd611444926410",
+    "clean_tree": false
+  },
+  "raw_tail": null
+}

@@ -1,0 +1,23 @@
+{
+  "dim1_probability_band": 0,
+  "dim2_mechanism": null,
+  "dim3_genre_mapping": {
+    "mapped_genre": null,
+    "score": null
+  },
+  "dim4_evidence_quality": 3,
+  "memorization_suspect_condition2": false,
+  "rationale": "Answer key group = \"control\", so dim2 and dim3 are null by rubric. dim1 (control band): output's misstatement_probability=58, which is >=50 -> band 0 (the ideal control answer would be low/<=30; the output wrongly reads this benign auto-rental/leasing peer as suspicious). dim2/dim3 -> null (control). dim4: citations are specific, provided data points (e.g., Goodwill 355,842,000 (2010) vs 216,444,000 (2009) vs Revenues +5.1%; Receivables 754,644,000 vs 615,003,000 with revenue +17.8%; allowance/receivables 2.31%->2.18% across 2009-2013; NI vs CFO with Depreciation 881,216,000). These genuinely support the asserted claims and are combined into coherent multi-year comparisons (2008-2014 span), qualifying for 3. Cap check: declared risk_tier=\"elevated\" with p=58 falls in the 40<=p<70 => watch/elevated band, so no contradiction and no cap to 1. memorization_suspect: reasoning points at concrete numeric data content (not a bare document list) and cites only filings/data within the set (10-K/A 2012-03-19, CORRESP/UPLOAD chronology) without invoking any post-cutoff enforcement/revelation/outcome -> false.",
+  "_meta": {
+    "label": "SPOT-CHECK — cross-family grader agreement (RP-06 A2). NEVER merge into scoring/grades/.",
+    "case_id": "case_10",
+    "original_id": "C04",
+    "variant_graded": "runs/main",
+    "grader_model_reported": "claude-opus-4-8",
+    "grader_pin_used": "claude-opus-4-8",
+    "rng_seed_nonflagged": 20260706,
+    "session_id": "381a9a24-8101-4e3a-9ef0-8a1ce3237f0d",
+    "ts": "2026-07-06T15:01:19.365039+00:00",
+    "human_finalized": false
+  }
+}

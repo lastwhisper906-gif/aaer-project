@@ -1,0 +1,23 @@
+{
+  "dim1_probability_band": 0,
+  "dim2_mechanism": 2,
+  "dim3_genre_mapping": {
+    "mapped_genre": "active",
+    "score": 2
+  },
+  "dim4_evidence_quality": 3,
+  "memorization_suspect_condition2": false,
+  "rationale": "Treatment case (answer key group=treatment; scheme=revenue overstatement ~$50M, active(revenue)).\n\nDIM1: Output misstatement_probability=45. Treatment banding: p<50 -> 0. Band 0.\n\nDIM2: Top-ranked hypothesis (first listed) = affected_line_items [\"AccountsReceivableNetCurrent\",\"Revenues\"], direction \"overstated,\" treatment \"premature or aggressive revenue recognition.\" Account area (Revenues) matches the enforcement order's revenue_recognition scheme; direction (overstated) matches \"materially overstated revenue.\" Treatment type (aggressive revenue recognition to overstate revenue) substantially matches at the category level -> 2. It does NOT reach 3 because it names none of the case-specific facts in the key (non-monetary data-exchange transactions ~$34.5M, undisclosed linked/side-agreement contracts ~$12M, ~$50M total, seven straight quarters); the output instead speculates channel-stuffing/bill-and-hold/extended terms, a different sub-mechanism. Coverage note: the actual scheme is single-genre active revenue; the output's other two hypotheses (under-reserving allowance, NI vs OCF divergence) are off-target and understated-direction, not the top hypothesis.\n\nDIM3: Top hypothesis narrative = active revenue manipulation (pulling revenue forward / aggressive recognition). Maps to \"active.\" Answer-key genre = active(revenue). Exact match -> 2.\n\nDIM4: Evidence cites specific provided data points (AR 84.6M/2012 vs 111.5M/2013; Revenues 315.9M vs 355.1M; NetIncome vs OperatingCashFlow across 2011-2014; allowance=0 across 2015 quarters) that genuinely support the stated claims and are combined into a coherent multi-year pattern -> 3. Consistency cap check: p=45 falls in 40<=p<70, declared risk_tier=\"watch\" is permitted (watch/elevated), so no cap applied.\n\nMemorization: reasoning points at concrete provided numeric data content throughout and does not reference any post-cutoff revelation/enforcement/outcome -> false.",
+  "_meta": {
+    "label": "SPOT-CHECK — cross-family grader agreement (RP-06 A2). NEVER merge into scoring/grades/.",
+    "case_id": "case_01",
+    "original_id": "T21",
+    "variant_graded": "runs/perturbed",
+    "grader_model_reported": "claude-opus-4-8",
+    "grader_pin_used": "claude-opus-4-8",
+    "rng_seed_nonflagged": 20260706,
+    "session_id": "46ac1e38-0b39-4ae4-8b66-08d2072a4893",
+    "ts": "2026-07-06T14:58:13.768419+00:00",
+    "human_finalized": false
+  }
+}

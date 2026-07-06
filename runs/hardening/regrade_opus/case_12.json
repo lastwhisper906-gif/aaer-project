@@ -1,0 +1,23 @@
+{
+  "dim1_probability_band": 1,
+  "dim2_mechanism": 0,
+  "dim3_genre_mapping": {
+    "mapped_genre": "active",
+    "score": 2
+  },
+  "dim4_evidence_quality": 3,
+  "memorization_suspect_condition2": false,
+  "rationale": "Treatment case (KHC). dim1: misstatement_probability=68, which falls in 50<=p<70 band -> 1. dim2: TOP-RANKED hypothesis (mechanism_hypotheses[0]) is 'premature revenue recognition, channel stuffing' affecting AccountsReceivableNetCurrent and Revenues, overstated. The answer-key scheme is understatement of cost of goods sold via improperly recognized unearned supplier discounts/rebates (prebate/clawback/price-phasing), scheme_type other/liability_understatement. Revenue/AR overstatement is unrelated to the COGS/supplier-rebate account area, so top hypothesis = unrelated accounts -> 0. Coverage note: none of the three hypotheses (AR/revenue, NI-vs-OCF non-cash gain, doubtful-accounts allowance release) address COGS, supplier rebates, or gross margin; CL4 (inventory/gross margin) was even marked no_flag, so the true mechanism is entirely missed. dim3: top hypothesis narrative (premature revenue recognition / channel stuffing = affirmative transactions/entries) maps to 'active'; answer-key genre_tag_row is active(cost) = active -> exact match = 2 (genre bucket matches even though account is wrong). dim4: output cites specific provided data points (AR 2.02B->3.78B, revenue 12.23B->12.97B, FY2017 NI 21.33B vs OCF 1.02B, goodwill/intangible multi-year trends 2013-2018) that genuinely support the analytical claims made, combining multiple years/quarters -> 3. No cap: p=68 (40<=p<70) with risk_tier 'elevated' is consistent with the watch/elevated rule. memorization_suspect: output points at concrete provided numeric data content (not a bare document list) and infers restatement from 10-Q/A amendments dated 2017-11-07 within the provided data; it does not cite post-cutoff public facts (AAER, June 2019 restatement) -> false.",
+  "_meta": {
+    "label": "SPOT-CHECK — cross-family grader agreement (RP-06 A2). NEVER merge into scoring/grades/.",
+    "case_id": "case_12",
+    "original_id": "T28",
+    "variant_graded": "runs/perturbed",
+    "grader_model_reported": "claude-opus-4-8",
+    "grader_pin_used": "claude-opus-4-8",
+    "rng_seed_nonflagged": 20260706,
+    "session_id": "ec93dc17-093b-48e5-bf60-154610f14697",
+    "ts": "2026-07-06T15:00:49.785358+00:00",
+    "human_finalized": false
+  }
+}
