@@ -1,0 +1,124 @@
+{
+  "framing": "post-hoc robustness analysis quantifying L-3 — RP-05 §1 pre-registered verdict stands unchanged regardless of outcome",
+  "a1_recognition_redraw": {
+    "per_case": [
+      {
+        "case_id": "case_01",
+        "ticker": "SCOR",
+        "draw1": {
+          "guess": "comScore, Inc.",
+          "confidence": "high",
+          "recognized": true
+        },
+        "draw2": {
+          "guess": "unknown",
+          "confidence": "low",
+          "recognized": false
+        }
+      },
+      {
+        "case_id": "case_02",
+        "ticker": "OFIX",
+        "draw1": {
+          "guess": "unknown",
+          "confidence": "low",
+          "recognized": false
+        },
+        "draw2": {
+          "guess": "Auxilium Pharmaceuticals, Inc.",
+          "confidence": "low",
+          "recognized": false
+        }
+      },
+      {
+        "case_id": "case_03",
+        "ticker": "LOGI",
+        "draw1": {
+          "guess": "Logitech International S.A.",
+          "confidence": "high",
+          "recognized": true
+        },
+        "draw2": {
+          "guess": "Logitech International S.A.",
+          "confidence": "medium",
+          "recognized": true
+        }
+      },
+      {
+        "case_id": "case_06",
+        "ticker": "MON",
+        "draw1": {
+          "guess": "unknown",
+          "confidence": "low",
+          "recognized": false
+        },
+        "draw2": {
+          "guess": "unknown",
+          "confidence": "low",
+          "recognized": false
+        }
+      },
+      {
+        "case_id": "case_08",
+        "ticker": "HTZ",
+        "draw1": {
+          "guess": "Hertz Global Holdings, Inc. (Hertz Corporation)",
+          "confidence": "medium",
+          "recognized": true
+        },
+        "draw2": {
+          "guess": "Hertz Global Holdings, Inc.",
+          "confidence": "medium",
+          "recognized": true
+        }
+      },
+      {
+        "case_id": "case_09",
+        "ticker": "ICON",
+        "draw1": {
+          "guess": "Iconix Brand Group, Inc.",
+          "confidence": "low",
+          "recognized": true
+        },
+        "draw2": {
+          "guess": "Iconix Brand Group, Inc. (formerly Candie's, Inc.)",
+          "confidence": "medium",
+          "recognized": true
+        }
+      },
+      {
+        "case_id": "case_12",
+        "ticker": "KHC",
+        "draw1": {
+          "guess": "The Kraft Heinz Company",
+          "confidence": "high",
+          "recognized": true
+        },
+        "draw2": {
+          "guess": "The Kraft Heinz Company",
+          "confidence": "high",
+          "recognized": true
+        }
+      },
+      {
+        "case_id": "case_13",
+        "ticker": "MRVL",
+        "draw1": {
+          "guess": "Marvell Technology Group Ltd.",
+          "confidence": "medium",
+          "recognized": true
+        },
+        "draw2": {
+          "guess": "Marvell Technology Group Ltd.",
+          "confidence": "medium",
+          "recognized": true
+        }
+      }
+    ],
+    "recognized_draw1": 6,
+    "recognized_draw2": 5,
+    "d7_threshold": 3,
+    "d7_would_fire_draw2": true,
+    "union_recognized": 6
+  }
+}

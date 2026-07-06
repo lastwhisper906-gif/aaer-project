@@ -205,8 +205,8 @@ def main() -> int:
 
     # ---- A3 확장 (RP-06): 통계 파일이 존재할 때만 — 부재는 실패가 아님 ----
     rp06 = REPO / "scoring/rp06_hardening_stats.json"
-    if rp06.is_file():
-        pub6 = json.loads(rp06.read_text(encoding="utf-8"))
+    if rp06.is_file() and "a3_sampling" in json.loads(rp06.read_text(encoding="utf-8")):
+        pub6 = json.loads(rp06.read_text(encoding="utf-8"))["a3_sampling"]
         draws_root = REPO / "runs/hardening/draws"
         draw_p = {1: {**{n: p_pert[n] for n in treat}, **{n: p_orig[n] for n in ctrl}}}
         for i, dname in enumerate(sorted(d.name for d in draws_root.iterdir() if d.is_dir()), start=2):
