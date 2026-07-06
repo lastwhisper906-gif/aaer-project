@@ -190,6 +190,30 @@
 
 ---
 
+## D18 감사 결과 (Phase 0-3, 2026-07-06 git 실측)
+
+D18의 전제("미커밋 서명 결정")를 git 로그로 전수 감사한 결과:
+
+| 결정 | 문서상 결정일 | 커밋 | 커밋 시각 | 판정 |
+|---|---|---|---|---|
+| A/B 기준 v1 서명 + GP-0~5·7~9 | 2026-07-05 | `098e137` | 2026-07-05 16:58 | **커밋 존재 — D18 비해당** |
+| 킬 스위치 1차 표 (A 23/B 5/bl 2) | 2026-07-05 | `d5986ba` | 2026-07-05 17:02 | 커밋 존재 — 비해당 |
+| 킬 스위치 GO + ab_classification 30건 기입 | 2026-07-05 | `599a2e9` | 2026-07-05 17:08 | 커밋 존재 — 비해당 |
+| **실험군 8 확정** | — (07-05는 제안만) | 본 커밋 | 2026-07-06 | **신규 확정 — 아래 기록** |
+
+- 결론: 백데이트가 필요한 항목은 없다. 킬 스위치 GO·ab_classification은 결정 당일
+  커밋되어 있었다. 문서 본문 결정일과 커밋일의 격차는 관찰되지 않음 (동일자).
+- **실험군 8 확정 (2026-07-06, 소유자)**: `scoring/treatment_group_proposal.md`의 제안
+  8건 — **T07 MON / T11 OFIX / T12 LOGI / T13 HTZ / T16 ICON / T17 MRVL / T21 SCOR /
+  T28 KHC** — 을 실험군으로 확정. 근거: 소유자 지시문(2026-07-06)이 이 8건을 실험군으로
+  전제하고 장르 참조 매핑(MON·KHC=active(cost), OFIX·MRVL·SCOR=active(revenue),
+  ICON=active(gains), LOGI·HTZ=omission-estimate — 1차 소스 대조 검증 대상)까지 지정.
+  기각 대안: 스왑 후보 6건(T26/T10/T24/T02/T06/T04 — proposal 문서에 사유 보존).
+  정직 주석 (D18 요구 문언): commit date 2026-07-06 post-dates the decision dates
+  recorded in the document body; original pre-commitment timestamps were not captured.
+  (해당 문언은 07-05 결정 표기 일반에 대한 예방적 기재 — 실측상 07-05 결정들은 당일
+  커밋되어 격차 없음.)
+
 ## 채점자(grader) 모델 선택 기록 (D6 규칙 적용 — Phase 0에서 기입)
 
 (Phase 0-5에서 피평가자 모델 문자열 확인 후 이 절에 추가 기입한다.)
