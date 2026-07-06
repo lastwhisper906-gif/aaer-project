@@ -9,6 +9,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0   # verify_blindness.py의 git 이력 증명(채점 커밋 선행)에 전체 이력 필요
       - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
@@ -19,3 +21,7 @@ jobs:
         run: python tools/validate_schemas.py
       - name: 매니페스트 자체 정합성 (러너에 ~/aaer-data 원본 없음 → schema-only)
         run: python tools/verify_manifest.py --schema-only
+      - name: RP-05 발행 수치 재현 (커밋 산출물만 의존 — skip 금지, RP-06 B2)
+        run: python tools/reproduce_analysis.py
+      - name: 블라인드·카나리·runs 매니페스트 검증 (커밋 산출물만 의존 — skip 금지, RP-06 B3)
+        run: python tools/verify_blindness.py
