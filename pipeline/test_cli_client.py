@@ -138,6 +138,20 @@ def test_rate_limit_raises_for_idempotent_resume(stub, tmp_path):
         _call(tmp_path / "logs")
 
 
+def test_error_response_with_429_status_is_rate_limit(stub, tmp_path):
+    stub.set_responses(json.dumps({"type": "result", "is_error": True,
+                                   "result": "API Error: status 429 too many requests"}))
+    with pytest.raises(cli_client.RateLimitedError):
+        _call(tmp_path / "logs")
+
+
+def test_successful_response_containing_429_number_is_not_rate_limit(stub, tmp_path):
+    """J13-g 회귀: 정상 응답 본문의 재무 수치 '84,429' 등이 레이트 리밋으로 오탐되면 안 된다."""
+    stub.set_responses(good_response({"answer": "Revenues=84,429 (FY2014); limit of detection"}))
+    r = _call(tmp_path / "logs")
+    assert r.ok and "429" in r.structured["answer"]
+
+
 # ⑤ 서빙 모델 핀 불일치
 def test_served_model_pin_mismatch_is_fail(stub, tmp_path):
     stub.set_responses(good_response({"answer": "x"}, model="claude-haiku-4-5"))

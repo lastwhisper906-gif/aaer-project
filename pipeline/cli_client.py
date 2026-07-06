@@ -53,9 +53,11 @@ EVALUATEE_FORBIDDEN_MARKERS = [
     "9fa11f98", "a2d69cfe",  # 카나리 GUID — 페이로드 반입 즉시 누출
 ]
 
+# 주의 (J13-g): 정상 응답 본문의 재무 수치가 '429'를 포함해 오탐된 사례 실증 —
+# 레이트 리밋 판정은 (a) 오류 응답에서만 수행하고 (b) 429는 HTTP 문맥을 요구한다.
 RATE_LIMIT_PATTERNS = re.compile(
     r"rate.?limit|usage.?limit|limit (reached|will reset)|hit your limit"
-    r"|too many requests|429|overloaded_error", re.I)
+    r"|too many requests|(status|http|error)[ :]*429|overloaded_error", re.I)
 
 
 class PayloadGuardError(RuntimeError):
@@ -194,20 +196,25 @@ def call_model(model: str,
             proc = subprocess.run(cmd, input=user_payload, cwd=work_dir, env=env,
                                   capture_output=True, text=True,
                                   timeout=timeout_seconds)
-            if _looks_rate_limited(proc.stdout[-2000:] if proc.stdout else "",
-                                   proc.stderr[-2000:] if proc.stderr else ""):
-                raise RateLimitedError(
-                    f"레이트 리밋 감지 (exit={proc.returncode}) — "
-                    f"stderr tail: {(proc.stderr or '')[-300:]}")
+
+            def _rate_limit_check():  # 오류 경로에서만 호출 (J13-g — 정상 응답 오탐 차단)
+                if _looks_rate_limited(proc.stdout[-2000:] if proc.stdout else "",
+                                       proc.stderr[-2000:] if proc.stderr else ""):
+                    raise RateLimitedError(
+                        f"레이트 리밋 감지 (exit={proc.returncode}) — "
+                        f"tail: {(proc.stderr or proc.stdout or '')[-300:]}")
+
             try:
                 obj = json.loads(proc.stdout)
             except (json.JSONDecodeError, TypeError):
+                _rate_limit_check()
                 last = {"fail_reason": "empty",
                         "raw": (proc.stdout or "")[:1000] + (proc.stderr or "")[-500:],
                         "obj": None}
                 continue
             last["obj"] = obj
             if obj.get("is_error"):
+                _rate_limit_check()
                 last = {"fail_reason": "error", "raw": str(obj.get("result"))[:1000], "obj": obj}
                 continue
             structured = obj.get("structured_output")
