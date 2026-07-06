@@ -1,0 +1,22 @@
+{
+  "_meta": {
+    "purpose": "pilot only — 본 실험 디렉토리 혼입 금지 (T18/T25는 실험군 밖 워크드 예시)",
+    "id_note": "case_90/case_91 — 본 실험 중립 ID(case_01~16)와 불충돌"
+  },
+  "cases": [
+    {
+      "case_id": "case_90",
+      "ticker": "VRX",
+      "cik": "0000885590",
+      "company_name": "Valeant Pharmaceuticals International, Inc.",
+      "cutoff_date": "2015-10-18"
+    },
+    {
+      "case_id": "case_91",
+      "ticker": "GE",
+      "cik": "0000040545",
+      "company_name": "General Electric Company",
+      "cutoff_date": "2017-07-20"
+    }
+  ]
+}

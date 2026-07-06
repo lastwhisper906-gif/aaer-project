@@ -113,6 +113,27 @@
 - 헤드라인에 정밀도/재현율 % 금지. n=8 신뢰구간(≈±35pp) 명기. 모든 양성 결과는
   잔여 오염 하의 **상한**. D5 단일 실행 한계 문구 의무. 선택/생존 편향 문단 의무.
 
+## 5-bis. 체크리스트 항목 정의 (freeze 개정 #1 — 2026-07-06, 실행 전)
+
+> **로그된 개정** (§5-6/GA-001 (c) 규약): freeze 커밋 `82a7717`이 체크리스트 항목
+> ID 집합을 누락함을 러너 구현 중 발견. 실행 전이므로 재실행 부담 0. 항목은 A/B 기준
+> F1~F6/T2 채널의 **중립화 문언** 번역 — 채널 구조 자체는 서명된 기준(GP-5)에서 옴.
+
+| item_id | 질문 (피평가자 노출 문언 — 닫힌 형식) |
+|---|---|
+| CL1 | Did receivables grow materially faster than revenue across consecutive periods? |
+| CL2 | Did non-current 'soft' assets (intangibles, other assets, capitalized items) grow materially faster than the business overall? |
+| CL3 | Is there a persistent divergence between net income and operating cash flow? |
+| CL4 | Do inventory levels or gross margins show trends inconsistent with revenue? |
+| CL5 | Is the earnings trajectory unusually smooth relative to the volatility of revenue and cash flow? |
+| CL6 | Did liability, allowance, or reserve balances decline (or fail to grow) despite growing business activity? |
+| CL7 | Does the filing chronology show irregularities (late filings/NT forms, amendments, unusual 8-K frequency)? |
+| CL8 | Is the provided data sufficient in coverage and length for the above assessments? |
+
+- 각 항목 finding ∈ {flag, no_flag, insufficient_data} + evidence (제공 데이터 포인트 참조).
+- 채점 연계: CL1~7은 차원 4(인용 품질)의 단위이며, 차원 2 기제 서술과의 정합도
+  체크에 쓰인다. CL8은 오류 귀속 R1(DATA) 판별의 피평가자 측 신호.
+
 ## 부록 A — self-red-team 결과 (2026-07-06 수신 — 전건 v1.1 반영 완료)
 
 | # | 심각도 | 발견 (요지) | 반영 |

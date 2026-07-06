@@ -23,6 +23,9 @@ FORBIDDEN_PATTERNS = {
     "candidates.json direct reference": re.compile(r"candidates\.json"),
     # 중립 ID ↔ 원본 매핑은 채점 전용(OV-001) — 피평가자 코드가 읽으면 그룹 소속 역산 가능
     "id_mapping direct reference": re.compile(r"id_mapping\.json"),
+    # V7 (threat model): 피평가자 쪽 코드는 채점 모듈을 import할 수 없다 — 채점 자료
+    # (정답 키·루브릭)의 역류 차단. 경로 문자열 언급(출력 저장 등)은 허용, import만 금지.
+    "scoring import": re.compile(r"^\s*(import\s+scoring|from\s+scoring)\b", re.M),
 }
 
 
