@@ -38,6 +38,8 @@ FORBIDDEN_VALUE_SUBSTRINGS = [
     "fraud", "restatement", "restated", "manipulat", "scheme",
     "enforcement", "litigation", "complaint", "investigation",
     "short seller", "short-seller", "whistleblower", "delist",
+    # 2026-07-06 대조군 편입 (v1.2): 그룹 구조 어휘의 값 수준 재발 방지 (OV-001 확장)
+    "control", "treatment", "matched",
 ]
 
 
