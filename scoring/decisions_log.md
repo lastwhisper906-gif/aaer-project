@@ -271,6 +271,15 @@ Review Packet 00에 오버라이드 경로와 함께 기재한다.
   무개입 착수 승인. 게이트 FAIL·모델 핀 변경 필요·고정 기준 수정 필요·원인 불명
   페이로드 보장 위반은 승인 밖(즉시 중단·보고).
 
+### `--bare` 1회 실증 결과 (2026-07-06, 지시문 PHASE 2 규정 절차)
+
+- 실행: 임시 디렉토리에서 `echo "Say OK" | claude -p --bare --model claude-sonnet-5
+  --output-format json --max-turns 1` (CLAUDE_CONFIG_DIR=빈 임시 디렉토리).
+- 결과: `is_error=true, result="Not logged in · Please run /login"` — CLI 문서
+  그대로 `--bare`는 OAuth·키체인을 절대 읽지 않음(API 키 전용). **즉시 포기**,
+  수동 격리 경로(임시 작업 디렉토리 + CLAUDE_CONFIG_DIR 격리 + 도구 전면 차단
+  플래그) 확정. 종량 자격 증명 부착은 금지 조항이므로 시도하지 않음.
+
 ### 소유자 지시문 (2026-07-06, verbatim)
 
 ```text
