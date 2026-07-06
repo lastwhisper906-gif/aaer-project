@@ -47,3 +47,43 @@
 - 사후 확인: human (즉시 검증 — 금지 부분열 스캔을 방어 ④에 편입)
 - **학습 노트(§10)**: look-ahead는 데이터 로딩 경로만이 아니라 **문자열 값 내부**로도 들어온다
   — cutoff_guard가 지키는 것은 문서 날짜지 필드 값의 시제가 아니다.
+
+## GA-001 — 2026-07-06 (거버넌스 수정 — 오버라이드가 아니라 협업 모델 자체의 소유자 변경 지시)
+
+- 대상: CLAUDE.md·PROJECT.md §7의 **차단형(blocking) 인간 서명 게이트** — 이번 사이클 잔여 기간 한정.
+- 성격: Claude 판정에 대한 오버라이드가 아니라, 소유자(사용자)가 협업 모델의 실행 형태를
+  변경한 거버넌스 수정. §7 불변 조항 3(최종 서명은 인간)은 **폐지되지 않고 비동기화**된다 —
+  인간 검토는 review packet을 통해 사후(post hoc)에 수행되며, 오버라이드 경로와 재실행
+  비용이 각 packet에 명시된다.
+- 세션 가드레일과의 긴장 (기록 의무): CLAUDE.md는 "검토 없는 일괄 승인은 인간 서명의
+  형해화"라고 규정한다. 본 수정은 일괄 *승인*이 아니라 검토의 *시점 이동*(사전 차단 →
+  사후 감사)이며, Claude 작성 산출물을 인간 서명으로 위장하는 것을 명시적으로 금지한다
+  ((b), D15). 이 구분이 형해화 지적에 대한 소유자의 응답임을 기록한다.
+- **소유자 지시 원문 (2026-07-06, verbatim)**:
+
+> === PHASE −1 — GOVERNANCE AMENDMENT (first action, before anything else) ===
+> CLAUDE.md/PROJECT.md prescribe blocking human sign-off gates. The owner has
+> directed (2026-07-06) that for the remainder of this cycle:
+> (a) blocking gates become asynchronous review packets;
+> (b) judgment artifacts (eval spec, threat model, error taxonomy) may be
+>     authored by Claude Code, labeled in the document header "Authored by
+>     Claude Code, pending human audit" — never presented as human-signed;
+> (c) temporal integrity is preserved mechanically: all criteria and config
+>     are committed BEFORE any scoring run (freeze-commit-then-run), freeze
+>     hash logged by the runner.
+> Record this amendment verbatim (quoting this instruction) in
+> scoring/overrides.md and scoring/decisions_log.md, then [COMMIT] — the
+> amendment's timestamp must precede every action it authorizes. Do not
+> silently deviate from repo governance; this logged amendment is the
+> authorization.
+
+- 부수 지시 (같은 지시문의 모드 선언): "Mode: CONTINUOUS EXECUTION. … All decisions that
+  previously required human sign-off have been pre-decided by the owner (DECISIONS block)
+  or converted to deterministic rules. Human review happens asynchronously via review
+  packets; never stop to wait for it." — DECISIONS 블록 전문은 `scoring/decisions_log.md`.
+- 효력 범위: 이번 사이클 잔여 기간. §5 방법론 규율(look-ahead 차단, 기준 사전 고정,
+  대조군 동일 프로토콜)은 변경 없음 — (c)가 기준 사전 고정을 기계적으로 보존.
+- **학습 노트(§10)**: "인간 서명"의 실질은 서명 행위가 아니라 (i) 기준이 결과보다 먼저
+  고정되었다는 증거와 (ii) 감사 가능한 오버라이드 경로다 — 이 둘이 기계적으로 보존되면
+  검토 시점(사전/사후)은 실행 형태의 문제가 된다. 단, 사후 검토가 실제로 수행되지 않으면
+  이 수정은 소급적으로 형해화가 된다 (Review Packet 색인이 그 방지 장치).
