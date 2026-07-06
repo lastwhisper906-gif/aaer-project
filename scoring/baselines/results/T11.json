@@ -1,0 +1,563 @@
+{
+  "case_id": "T11",
+  "ticker": "OFIX",
+  "cutoff_date": "2013-07-28",
+  "fiscal_year_ends_used": [
+    "2012-12-31",
+    "2011-12-31",
+    "2010-12-31"
+  ],
+  "point_in_time_rule": "facts with filed <= cutoff only; latest filed wins per (tag, period-end)",
+  "beneish": {
+    "variables": {
+      "DSRI": 1.1507541419191054,
+      "GMI": 0.9877866541948943,
+      "AQI": 1.409401048077817,
+      "SGI": 0.9834063996290316,
+      "DEPI": 1.2473443747287072,
+      "SGAI": 0.8502695955943409,
+      "LVGI": 0.3290360373606495,
+      "TATA": 0.08473450318374082
+    },
+    "m_score": -1.5270821152956189,
+    "missing": [],
+    "flag_minus_1_78": true,
+    "flag_minus_2_22": true
+  },
+  "dechow_f": {
+    "variables": {
+      "rsst_acc": 0.14242612014199757,
+      "ch_rec": 0.028935605537276848,
+      "ch_inv": 0.009555302034410669,
+      "soft_assets": 0.8365653276645363,
+      "ch_cs": -0.05651389145175693,
+      "ch_roa": 0.09190199759444477,
+      "issue": 1.0
+    },
+    "f_score": 1.626433492399362,
+    "missing": [],
+    "flag_1_0": true,
+    "flag_1_4": true
+  },
+  "montier_c": {
+    "flags": {
+      "c1_ni_cfo_divergence": 1,
+      "c2_dso_up": 1,
+      "c3_dsi_up": 1,
+      "c4_oca_up": 0,
+      "c5_dep_down": 1,
+      "c6_asset_growth": 0
+    },
+    "c_score": 4,
+    "undetermined": [],
+    "flag_ge_4": true
+  },
+  "sloan_accruals": {
+    "value": 0.06633116939523624,
+    "flag_gt_0_10": false,
+    "convention": "|accruals/avgTA| > 0.10 (상위 십분위 관행 근사)"
+  },
+  "notes": [],
+  "provenance": {
+    "sales@2012-12-31": {
+      "tag": "SalesRevenueNet",
+      "val": 462320000,
+      "filed": "2013-03-01",
+      "accn": "0001193125-13-087561",
+      "form": "10-K",
+      "start": "2012-01-01"
+    },
+    "cogs@2012-12-31": {
+      "tag": "CostOfGoodsAndServicesSold",
+      "val": 86492000,
+      "filed": "2013-03-01",
+      "accn": "0001193125-13-087561",
+      "form": "10-K",
+      "start": "2012-01-01"
+    },
+    "receivables@2012-12-31": {
+      "tag": "AccountsReceivableNetCurrent",
+      "val": 150316000,
+      "filed": "2013-05-09",
+      "accn": "0001193125-13-211276",
+      "form": "10-Q",
+      "start": null
+    },
+    "inventory@2012-12-31": {
+      "tag": "InventoryNet",
+      "val": 88744000,
+      "filed": "2013-05-09",
+      "accn": "0001193125-13-211276",
+      "form": "10-Q",
+      "start": null
+    },
+    "current_assets@2012-12-31": {
+      "tag": "AssetsCurrent",
+      "val": 340444000,
+      "filed": "2013-05-09",
+      "accn": "0001193125-13-211276",
+      "form": "10-Q",
+      "start": null
+    },
+    "total_assets@2012-12-31": {
+      "tag": "Assets",
+      "val": 504281000,
+      "filed": "2013-05-09",
+      "accn": "0001193125-13-211276",
+      "form": "10-Q",
+      "start": null
+    },
+    "ppe_net@2012-12-31": {
+      "tag": "PropertyPlantAndEquipmentNet",
+      "val": 51362000,
+      "filed": "2013-05-09",
+      "accn": "0001193125-13-211276",
+      "form": "10-Q",
+      "start": null
+    },
+    "ppe_gross@2012-12-31": {
+      "tag": "PropertyPlantAndEquipmentGross",
+      "val": 124645000,
+      "filed": "2013-03-01",
+      "accn": "0001193125-13-087561",
+      "form": "10-K",
+      "start": null
+    },
+    "securities@2012-12-31": {
+      "tag": null,
+      "note": "optional missing → 0"
+    },
+    "depreciation@2012-12-31": {
+      "tag": "DepreciationDepletionAndAmortization",
+      "val": 20261000,
+      "filed": "2013-03-01",
+      "accn": "0001193125-13-087561",
+      "form": "10-K",
+      "start": "2012-01-01"
+    },
+    "sga@2012-12-31": {
+      "tag": "GeneralAndAdministrativeExpense",
+      "val": 53827000,
+      "filed": "2013-03-01",
+      "accn": "0001193125-13-087561",
+      "form": "10-K",
+      "start": "2012-01-01"
+    },
+    "current_liabilities@2012-12-31": {
+      "tag": "LiabilitiesCurrent",
+      "val": 68797000,
+      "filed": "2013-05-09",
+      "accn": "0001193125-13-211276",
+      "form": "10-Q",
+      "start": null
+    },
+    "total_liabilities@2012-12-31": {
+      "tag": "Liabilities",
+      "val": 105183000,
+      "filed": "2013-05-09",
+      "accn": "0001193125-13-211276",
+      "form": "10-Q",
+      "start": null
+    },
+    "lt_debt@2012-12-31": {
+      "tag": "SecuredLongTermDebt",
+      "val": 20000000,
+      "filed": "2013-05-09",
+      "accn": "0001193125-13-211276",
+      "form": "10-Q",
+      "start": null
+    },
+    "st_debt@2012-12-31": {
+      "tag": null,
+      "note": "optional missing → 0"
+    },
+    "cash@2012-12-31": {
+      "tag": "CashAndCashEquivalentsAtCarryingValue",
+      "val": 31055000,
+      "filed": "2013-05-09",
+      "accn": "0001193125-13-211276",
+      "form": "10-Q",
+      "start": null
+    },
+    "st_investments@2012-12-31": {
+      "tag": null,
+      "note": "optional missing → 0"
+    },
+    "preferred@2012-12-31": {
+      "tag": null,
+      "note": "optional missing → 0"
+    },
+    "ni@2012-12-31": {
+      "tag": "NetIncomeLoss",
+      "val": 51295000,
+      "filed": "2013-03-01",
+      "accn": "0001193125-13-087561",
+      "form": "10-K",
+      "start": "2012-01-01"
+    },
+    "ibx@2012-12-31": {
+      "tag": "IncomeLossFromContinuingOperations",
+      "val": 53936000,
+      "filed": "2013-03-01",
+      "accn": "0001193125-13-087561",
+      "form": "10-K",
+      "start": "2012-01-01"
+    },
+    "cfo@2012-12-31": {
+      "tag": "NetCashProvidedByUsedInOperatingActivitiesContinuingOperations",
+      "val": 11206000,
+      "filed": "2013-03-01",
+      "accn": "0001193125-13-087561",
+      "form": "10-K",
+      "start": "2012-01-01"
+    },
+    "issue_stock@2012-12-31": {
+      "tag": "ProceedsFromIssuanceOfCommonStock",
+      "val": 25586000,
+      "filed": "2013-03-01",
+      "accn": "0001193125-13-087561",
+      "form": "10-K",
+      "start": "2012-01-01"
+    },
+    "issue_debt@2012-12-31": {
+      "tag": null,
+      "note": "optional missing → 0"
+    },
+    "sales@2011-12-31": {
+      "tag": "SalesRevenueNet",
+      "val": 470121000,
+      "filed": "2013-03-01",
+      "accn": "0001193125-13-087561",
+      "form": "10-K",
+      "start": "2011-01-01"
+    },
+    "cogs@2011-12-31": {
+      "tag": "CostOfGoodsAndServicesSold",
+      "val": 92619000,
+      "filed": "2013-03-01",
+      "accn": "0001193125-13-087561",
+      "form": "10-K",
+      "start": "2011-01-01"
+    },
+    "receivables@2011-12-31": {
+      "tag": "AccountsReceivableNetCurrent",
+      "val": 132828000,
+      "filed": "2013-03-01",
+      "accn": "0001193125-13-087561",
+      "form": "10-K",
+      "start": null
+    },
+    "inventory@2011-12-31": {
+      "tag": "InventoryNet",
+      "val": 82969000,
+      "filed": "2013-03-01",
+      "accn": "0001193125-13-087561",
+      "form": "10-K",
+      "start": null
+    },
+    "current_assets@2011-12-31": {
+      "tag": "AssetsCurrent",
+      "val": 549620000,
+      "filed": "2013-03-01",
+      "accn": "0001193125-13-087561",
+      "form": "10-K",
+      "start": null
+    },
+    "total_assets@2011-12-31": {
+      "tag": "Assets",
+      "val": 704472000,
+      "filed": "2013-03-01",
+      "accn": "0001193125-13-087561",
+      "form": "10-K",
+      "start": null
+    },
+    "ppe_net@2011-12-31": {
+      "tag": "PropertyPlantAndEquipmentNet",
+      "val": 43368000,
+      "filed": "2013-03-01",
+      "accn": "0001193125-13-087561",
+      "form": "10-K",
+      "start": null
+    },
+    "ppe_gross@2011-12-31": {
+      "tag": "PropertyPlantAndEquipmentGross",
+      "val": 107816000,
+      "filed": "2013-03-01",
+      "accn": "0001193125-13-087561",
+      "form": "10-K",
+      "start": null
+    },
+    "securities@2011-12-31": {
+      "tag": null,
+      "note": "optional missing → 0"
+    },
+    "depreciation@2011-12-31": {
+      "tag": "DepreciationDepletionAndAmortization",
+      "val": 22776000,
+      "filed": "2013-03-01",
+      "accn": "0001193125-13-087561",
+      "form": "10-K",
+      "start": "2011-01-01"
+    },
+    "sga@2011-12-31": {
+      "tag": "GeneralAndAdministrativeExpense",
+      "val": 64374000,
+      "filed": "2013-03-01",
+      "accn": "0001193125-13-087561",
+      "form": "10-K",
+      "start": "2011-01-01"
+    },
+    "current_liabilities@2011-12-31": {
+      "tag": "LiabilitiesCurrent",
+      "val": 185809000,
+      "filed": "2013-03-01",
+      "accn": "0001193125-13-087561",
+      "form": "10-K",
+      "start": null
+    },
+    "total_liabilities@2011-12-31": {
+      "tag": "Liabilities",
+      "val": 389301000,
+      "filed": "2013-03-01",
+      "accn": "0001193125-13-087561",
+      "form": "10-K",
+      "start": null
+    },
+    "lt_debt@2011-12-31": {
+      "tag": "SecuredLongTermDebt",
+      "val": 191195000,
+      "filed": "2013-03-01",
+      "accn": "0001193125-13-087561",
+      "form": "10-K",
+      "start": null
+    },
+    "st_debt@2011-12-31": {
+      "tag": "LongTermDebtCurrent",
+      "val": 17500000,
+      "filed": "2013-03-01",
+      "accn": "0001193125-13-087561",
+      "form": "10-K",
+      "start": null
+    },
+    "cash@2011-12-31": {
+      "tag": "CashAndCashEquivalentsAtCarryingValue",
+      "val": 33207000,
+      "filed": "2013-05-09",
+      "accn": "0001193125-13-211276",
+      "form": "10-Q",
+      "start": null
+    },
+    "st_investments@2011-12-31": {
+      "tag": null,
+      "note": "optional missing → 0"
+    },
+    "preferred@2011-12-31": {
+      "tag": null,
+      "note": "optional missing → 0"
+    },
+    "ni@2011-12-31": {
+      "tag": "NetIncomeLoss",
+      "val": -1073000,
+      "filed": "2013-03-01",
+      "accn": "0001193125-13-087561",
+      "form": "10-K",
+      "start": "2011-01-01"
+    },
+    "ibx@2011-12-31": {
+      "tag": "IncomeLossFromContinuingOperations",
+      "val": -1740000,
+      "filed": "2013-03-01",
+      "accn": "0001193125-13-087561",
+      "form": "10-K",
+      "start": "2011-01-01"
+    },
+    "cfo@2011-12-31": {
+      "tag": "NetCashProvidedByUsedInOperatingActivitiesContinuingOperations",
+      "val": 64781000,
+      "filed": "2013-03-01",
+      "accn": "0001193125-13-087561",
+      "form": "10-K",
+      "start": "2011-01-01"
+    },
+    "issue_stock@2011-12-31": {
+      "tag": "ProceedsFromIssuanceOfCommonStock",
+      "val": 20113000,
+      "filed": "2013-03-01",
+      "accn": "0001193125-13-087561",
+      "form": "10-K",
+      "start": "2011-01-01"
+    },
+    "issue_debt@2011-12-31": {
+      "tag": null,
+      "note": "optional missing → 0"
+    },
+    "sales@2010-12-31": {
+      "tag": "SalesRevenueNet",
+      "val": 460629000,
+      "filed": "2013-03-01",
+      "accn": "0001193125-13-087561",
+      "form": "10-K",
+      "start": "2010-01-01"
+    },
+    "cogs@2010-12-31": {
+      "tag": "CostOfGoodsAndServicesSold",
+      "val": 90461000,
+      "filed": "2013-03-01",
+      "accn": "0001193125-13-087561",
+      "form": "10-K",
+      "start": "2010-01-01"
+    },
+    "receivables@2010-12-31": {
+      "tag": "AccountsReceivableNetCurrent",
+      "val": 134184000,
+      "filed": "2012-02-29",
+      "accn": "0001104659-12-014637",
+      "form": "10-K",
+      "start": null
+    },
+    "inventory@2010-12-31": {
+      "tag": "InventoryNet",
+      "val": 84589000,
+      "filed": "2012-02-29",
+      "accn": "0001104659-12-014637",
+      "form": "10-K",
+      "start": null
+    },
+    "current_assets@2010-12-31": {
+      "tag": "AssetsCurrent",
+      "val": 311760000,
+      "filed": "2012-02-29",
+      "accn": "0001104659-12-014637",
+      "form": "10-K",
+      "start": null
+    },
+    "total_assets@2010-12-31": {
+      "tag": "Assets",
+      "val": 603989000,
+      "filed": "2012-02-29",
+      "accn": "0001104659-12-014637",
+      "form": "10-K",
+      "start": null
+    },
+    "ppe_net@2010-12-31": {
+      "tag": "PropertyPlantAndEquipmentNet",
+      "val": 45535000,
+      "filed": "2012-02-29",
+      "accn": "0001104659-12-014637",
+      "form": "10-K",
+      "start": null
+    },
+    "ppe_gross@2010-12-31": {
+      "tag": "PropertyPlantAndEquipmentGross",
+      "val": 119715000,
+      "filed": "2012-02-29",
+      "accn": "0001104659-12-014637",
+      "form": "10-K",
+      "start": null
+    },
+    "securities@2010-12-31": {
+      "tag": null,
+      "note": "optional missing → 0"
+    },
+    "depreciation@2010-12-31": {
+      "tag": "DepreciationDepletionAndAmortization",
+      "val": 22521000,
+      "filed": "2013-03-01",
+      "accn": "0001193125-13-087561",
+      "form": "10-K",
+      "start": "2010-01-01"
+    },
+    "sga@2010-12-31": {
+      "tag": "GeneralAndAdministrativeExpense",
+      "val": 72912000,
+      "filed": "2013-03-01",
+      "accn": "0001193125-13-087561",
+      "form": "10-K",
+      "start": "2010-01-01"
+    },
+    "current_liabilities@2010-12-31": {
+      "tag": "LiabilitiesCurrent",
+      "val": 83526000,
+      "filed": "2012-02-29",
+      "accn": "0001104659-12-014637",
+      "form": "10-K",
+      "start": null
+    },
+    "total_liabilities@2010-12-31": {
+      "tag": "Liabilities",
+      "val": 303098000,
+      "filed": "2012-02-29",
+      "accn": "0001104659-12-014637",
+      "form": "10-K",
+      "start": null
+    },
+    "lt_debt@2010-12-31": {
+      "tag": "SecuredLongTermDebt",
+      "val": 208695000,
+      "filed": "2012-02-29",
+      "accn": "0001104659-12-014637",
+      "form": "10-K",
+      "start": null
+    },
+    "st_debt@2010-12-31": {
+      "tag": "LongTermDebtCurrent",
+      "val": 7500000,
+      "filed": "2012-02-29",
+      "accn": "0001104659-12-014637",
+      "form": "10-K",
+      "start": null
+    },
+    "cash@2010-12-31": {
+      "tag": "CashAndCashEquivalentsAtCarryingValue",
+      "val": 13561000,
+      "filed": "2013-03-01",
+      "accn": "0001193125-13-087561",
+      "form": "10-K",
+      "start": null
+    },
+    "st_investments@2010-12-31": {
+      "tag": null,
+      "note": "optional missing → 0"
+    },
+    "preferred@2010-12-31": {
+      "tag": null,
+      "note": "optional missing → 0"
+    },
+    "ni@2010-12-31": {
+      "tag": "NetIncomeLoss",
+      "val": 44208000,
+      "filed": "2013-03-01",
+      "accn": "0001193125-13-087561",
+      "form": "10-K",
+      "start": "2010-01-01"
+    },
+    "ibx@2010-12-31": {
+      "tag": "IncomeLossFromContinuingOperations",
+      "val": 27758000,
+      "filed": "2013-03-01",
+      "accn": "0001193125-13-087561",
+      "form": "10-K",
+      "start": "2010-01-01"
+    },
+    "cfo@2010-12-31": {
+      "tag": "NetCashProvidedByUsedInOperatingActivitiesContinuingOperations",
+      "val": 42508000,
+      "filed": "2013-03-01",
+      "accn": "0001193125-13-087561",
+      "form": "10-K",
+      "start": "2010-01-01"
+    },
+    "issue_stock@2010-12-31": {
+      "tag": "ProceedsFromIssuanceOfCommonStock",
+      "val": 7854000,
+      "filed": "2013-03-01",
+      "accn": "0001193125-13-087561",
+      "form": "10-K",
+      "start": "2010-01-01"
+    },
+    "issue_debt@2010-12-31": {
+      "tag": null,
+      "note": "optional missing → 0"
+    }
+  }
+}

@@ -1,10 +1,10 @@
 {
   "manifest_version": 1,
   "root": "~/aaer-data",
-  "generated_at": "2026-07-06T08:01:08+00:00",
+  "generated_at": "2026-07-06T08:13:47+00:00",
   "generated_by": "tools/verify_manifest.py --write",
-  "file_count": 155,
-  "total_bytes": 24923194,
+  "file_count": 166,
+  "total_bytes": 63712938,
   "files": [
     {
       "path": "BRX/34-86538.pdf",
@@ -302,6 +302,13 @@
       "source_url": "https://data.sec.gov/submissions/CIK0000040545.json"
     },
     {
+      "path": "GE/xbrl/CIK0000040545.json",
+      "size": 6033618,
+      "sha256": "9b1d968642206c1a7820a2fd4c3fb0da50b319ae4843aedd14edbb9f8c43aa4d",
+      "fetched_at": "2026-07-06T08:06:40+00:00",
+      "source_url": null
+    },
+    {
       "path": "HAIN/34-84781.pdf",
       "size": 238885,
       "sha256": "1720ab9953f4ba133b9f6bfe68c9c9179db83ca5be3a071df0f9ba7408c113cf",
@@ -365,6 +372,20 @@
       "sha256": "05907b3710d8cd1d7cb27891cb8ad0ae0160dc85ba3a77b34f4b25966d52966c",
       "fetched_at": "2026-07-05T06:17:08+00:00",
       "source_url": "https://data.sec.gov/submissions/CIK0001657853.json"
+    },
+    {
+      "path": "HTZ/xbrl/CIK0001364479.json",
+      "size": 3634036,
+      "sha256": "9f24b46f942ad73f8a97396c5d8c5dd576af0c2e9ede7af065f7b3a6f02debfd",
+      "fetched_at": "2026-07-06T08:06:36+00:00",
+      "source_url": null
+    },
+    {
+      "path": "HTZ/xbrl/CIK0001657853.json",
+      "size": 2202614,
+      "sha256": "55e58c385f14407a31e40ff71d3b850f04f33c8cbb92fb426226c58cd53e83d8",
+      "fetched_at": "2026-07-06T08:06:35+00:00",
+      "source_url": null
     },
     {
       "path": "ICON/2019-251.html",
@@ -456,6 +477,13 @@
       "derived_from": "ICON/lr-24682.html"
     },
     {
+      "path": "ICON/xbrl/CIK0000857737.json",
+      "size": 2842920,
+      "sha256": "f46c9b4934f24907ef209d7a1edcbde723e30e209ce33ff6b79fd16fa74d1e2b",
+      "fetched_at": "2026-07-06T08:06:37+00:00",
+      "source_url": null
+    },
+    {
       "path": "KEYP/comp-pr2013-30.pdf",
       "size": 174900,
       "sha256": "0050c06eab829129b3a8693ee52d47f9f6026b7ee5b0cf299450c42efb247d5b",
@@ -513,6 +541,13 @@
       "sha256": "8341101944636194cc3b15e734150223d64287bed235101ddc454e5c41c53959",
       "fetched_at": "2026-07-05T06:17:50+00:00",
       "source_url": "https://data.sec.gov/submissions/CIK0001637459.json"
+    },
+    {
+      "path": "KHC/xbrl/CIK0001637459.json",
+      "size": 3359885,
+      "sha256": "7b4991942dc84af91020c6368b3861a84403ef80a1c19d8de2c0b1a577b7c907",
+      "fetched_at": "2026-07-06T08:06:41+00:00",
+      "source_url": null
     },
     {
       "path": "LK/comp-pr2020-319.pdf",
@@ -579,6 +614,13 @@
       "sha256": "3cad5bca6e634a5143e90c9c7debe4725dddbc1d92c5292e22dbacc8e055ad4d",
       "fetched_at": "2026-07-05T06:17:06+00:00",
       "source_url": "https://data.sec.gov/submissions/CIK0001032975.json"
+    },
+    {
+      "path": "LOGI/xbrl/CIK0001032975.json",
+      "size": 3859441,
+      "sha256": "aeb4e713a5008275d89d93466a986d77c77914a72cd7ff56a1d66e954a9921a2",
+      "fetched_at": "2026-07-06T08:06:35+00:00",
+      "source_url": null
     },
     {
       "path": "MDXG/comp24678.pdf",
@@ -676,6 +718,13 @@
       "source_url": "https://data.sec.gov/submissions/CIK0001110783.json"
     },
     {
+      "path": "MON/xbrl/CIK0001110783.json",
+      "size": 3491706,
+      "sha256": "ed2cbc96589d2706d86ebe96933a05c9928cea241454b963ebb6a6e6cc94a0a1",
+      "fetched_at": "2026-07-06T08:06:33+00:00",
+      "source_url": null
+    },
+    {
       "path": "MRVL/33-10684.pdf",
       "size": 221667,
       "sha256": "ffccdf8077a44abbd7dae6d707bcde9628e926b07414d31a9f1c11606eb87e32",
@@ -705,6 +754,13 @@
       "source_url": "https://data.sec.gov/submissions/CIK0001058057.json"
     },
     {
+      "path": "MRVL/xbrl/CIK0001058057.json",
+      "size": 2699266,
+      "sha256": "97c770be524b649aac8eabd6920da15ce9c5b53e9d8557305c83c1548c090a8e",
+      "fetched_at": "2026-07-06T08:06:38+00:00",
+      "source_url": null
+    },
+    {
       "path": "OFIX/33-10281.pdf",
       "size": 204905,
       "sha256": "256367564e1faccb20b9c220bbcfdd9cd61279090ceb0cf640c46ec89f53342f",
@@ -732,6 +788,13 @@
       "sha256": "5e86323511729e8028aa3cc3dca4a7fabc28390ee455c136008b0eb15192040a",
       "fetched_at": "2026-07-05T06:17:03+00:00",
       "source_url": "https://data.sec.gov/submissions/CIK0000884624.json"
+    },
+    {
+      "path": "OFIX/xbrl/CIK0000884624.json",
+      "size": 3111709,
+      "sha256": "55e4322a0189658dd19b717c24eec9e462c9b2d68ffa5f78fc13cee4d667029b",
+      "fetched_at": "2026-07-06T08:06:34+00:00",
+      "source_url": null
     },
     {
       "path": "OSIR/edgar/CIK0001360886.json",
@@ -978,6 +1041,13 @@
       "source_url": "https://data.sec.gov/submissions/CIK0001158172.json"
     },
     {
+      "path": "SCOR/xbrl/CIK0001158172.json",
+      "size": 3378441,
+      "sha256": "db811d3bdcc940552835399e11a2ba7bdaa5052cef2c9f94d4ba58cc6565e667",
+      "fetched_at": "2026-07-06T08:06:39+00:00",
+      "source_url": null
+    },
+    {
       "path": "TNGO/comp24255.pdf",
       "size": 249619,
       "sha256": "c32527bdeb566cabd10628c2f06c5e561058c189fc6dd04fcb76b86037338502",
@@ -1071,6 +1141,13 @@
       "sha256": "13a7ea0caffdb15d24e9ea307b4fb3f1c7e38e58d3494d5a9f28fb84c40bafbd",
       "fetched_at": "2026-07-05T06:17:28+00:00",
       "source_url": "https://data.sec.gov/submissions/CIK0000885590.json"
+    },
+    {
+      "path": "VRX/xbrl/CIK0000885590.json",
+      "size": 4176108,
+      "sha256": "a1b4848191fcd1ccbf68f5926fc0171d575d75ec5153445f4f0b66b39c42b82b",
+      "fetched_at": "2026-07-06T08:06:38+00:00",
+      "source_url": null
     },
     {
       "path": "WAGE/2021-23.html",

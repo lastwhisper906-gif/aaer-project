@@ -13,8 +13,8 @@ jobs:
         with:
           python-version: "3.12"
       - run: pip install -r requirements.txt
-      - name: pytest (cutoff_guard + 가드 우회 스캔 + 피평가자 입력 오염 차단)
-        run: python -m pytest pipeline/ tools/ -q
+      - name: pytest (cutoff_guard + 가드 우회 스캔 + 피평가자 입력 오염 차단 + 베이스라인 규율)
+        run: python -m pytest pipeline/ tools/ scoring/ -q
       - name: 스키마 검증 (candidates.json ↔ case_input, 편차 허용목록)
         run: python tools/validate_schemas.py
       - name: 매니페스트 자체 정합성 (러너에 ~/aaer-data 원본 없음 → schema-only)

@@ -1,0 +1,555 @@
+{
+  "case_id": "T28",
+  "ticker": "KHC",
+  "cutoff_date": "2019-02-20",
+  "fiscal_year_ends_used": [
+    "2017-12-30",
+    "2016-12-31",
+    "2016-01-03"
+  ],
+  "point_in_time_rule": "facts with filed <= cutoff only; latest filed wins per (tag, period-end)",
+  "beneish": {
+    "variables": {
+      "DSRI": 1.2093016857481764,
+      "GMI": 0.9784305972558857,
+      "AQI": 1.0097613867466546,
+      "SGI": 0.9903726356325745,
+      "DEPI": 1.3422669244587053,
+      "SGAI": 0.8590250836013784,
+      "LVGI": 0.9829229596788823,
+      "TATA": 0.08709827666511412
+    },
+    "m_score": -1.8267496918962767,
+    "missing": [],
+    "flag_minus_1_78": false,
+    "flag_minus_2_22": true
+  },
+  "dechow_f": {
+    "variables": {
+      "rsst_acc": 0.09345608029512446,
+      "ch_rec": 0.0012629200039881684,
+      "ch_inv": 0.001088437635016119,
+      "soft_assets": 0.9272323507884757,
+      "ch_cs": -0.019143254729399376,
+      "ch_roa": 0.06154983657757014,
+      "issue": 0.0
+    },
+    "f_score": 0.6419185060457099,
+    "missing": [],
+    "flag_1_0": false,
+    "flag_1_4": false
+  },
+  "montier_c": {
+    "flags": {
+      "c1_ni_cfo_divergence": 1,
+      "c2_dso_up": 1,
+      "c3_dsi_up": 1,
+      "c4_oca_up": 1,
+      "c5_dep_down": 1,
+      "c6_asset_growth": 0
+    },
+    "c_score": 5,
+    "undetermined": [],
+    "flag_ge_4": true
+  },
+  "sloan_accruals": {
+    "value": 0.0870085413273954,
+    "flag_gt_0_10": false,
+    "convention": "|accruals/avgTA| > 0.10 (상위 십분위 관행 근사)"
+  },
+  "notes": [],
+  "provenance": {
+    "sales@2017-12-30": {
+      "tag": "SalesRevenueGoodsNet",
+      "val": 26232000000,
+      "filed": "2018-02-16",
+      "accn": "0001637459-18-000015",
+      "form": "10-K",
+      "start": "2017-01-01"
+    },
+    "cogs@2017-12-30": {
+      "tag": "CostOfGoodsSold",
+      "val": 16529000000,
+      "filed": "2018-02-16",
+      "accn": "0001637459-18-000015",
+      "form": "10-K",
+      "start": "2017-01-01"
+    },
+    "receivables@2017-12-30": {
+      "tag": "AccountsReceivableNetCurrent",
+      "val": 921000000,
+      "filed": "2018-11-02",
+      "accn": "0001637459-18-000124",
+      "form": "10-Q",
+      "start": null
+    },
+    "inventory@2017-12-30": {
+      "tag": "InventoryNet",
+      "val": 2815000000,
+      "filed": "2018-11-02",
+      "accn": "0001637459-18-000124",
+      "form": "10-Q",
+      "start": null
+    },
+    "current_assets@2017-12-30": {
+      "tag": "AssetsCurrent",
+      "val": 7266000000,
+      "filed": "2018-11-02",
+      "accn": "0001637459-18-000124",
+      "form": "10-Q",
+      "start": null
+    },
+    "total_assets@2017-12-30": {
+      "tag": "Assets",
+      "val": 120232000000,
+      "filed": "2018-11-02",
+      "accn": "0001637459-18-000124",
+      "form": "10-Q",
+      "start": null
+    },
+    "ppe_net@2017-12-30": {
+      "tag": "PropertyPlantAndEquipmentNet",
+      "val": 7120000000,
+      "filed": "2018-11-02",
+      "accn": "0001637459-18-000124",
+      "form": "10-Q",
+      "start": null
+    },
+    "ppe_gross@2017-12-30": {
+      "tag": "PropertyPlantAndEquipmentGross",
+      "val": 9214000000,
+      "filed": "2018-02-16",
+      "accn": "0001637459-18-000015",
+      "form": "10-K",
+      "start": null
+    },
+    "securities@2017-12-30": {
+      "tag": null,
+      "note": "optional missing → 0"
+    },
+    "depreciation@2017-12-30": {
+      "tag": "DepreciationDepletionAndAmortization",
+      "val": 1036000000,
+      "filed": "2018-02-16",
+      "accn": "0001637459-18-000015",
+      "form": "10-K",
+      "start": "2017-01-01"
+    },
+    "sga@2017-12-30": {
+      "tag": "SellingGeneralAndAdministrativeExpense",
+      "val": 2930000000,
+      "filed": "2018-02-16",
+      "accn": "0001637459-18-000015",
+      "form": "10-K",
+      "start": "2017-01-01"
+    },
+    "current_liabilities@2017-12-30": {
+      "tag": "LiabilitiesCurrent",
+      "val": 10132000000,
+      "filed": "2018-11-02",
+      "accn": "0001637459-18-000124",
+      "form": "10-Q",
+      "start": null
+    },
+    "total_liabilities@2017-12-30": {
+      "tag": "Liabilities",
+      "val": 53985000000,
+      "filed": "2018-11-02",
+      "accn": "0001637459-18-000124",
+      "form": "10-Q",
+      "start": null
+    },
+    "lt_debt@2017-12-30": {
+      "tag": "LongTermDebtAndCapitalLeaseObligations",
+      "val": 28333000000,
+      "filed": "2018-11-02",
+      "accn": "0001637459-18-000124",
+      "form": "10-Q",
+      "start": null
+    },
+    "st_debt@2017-12-30": {
+      "tag": "ShortTermBorrowings",
+      "val": 460000000,
+      "filed": "2018-11-02",
+      "accn": "0001637459-18-000124",
+      "form": "10-Q",
+      "start": null
+    },
+    "cash@2017-12-30": {
+      "tag": "CashAndCashEquivalentsAtCarryingValue",
+      "val": 1629000000,
+      "filed": "2018-11-02",
+      "accn": "0001637459-18-000124",
+      "form": "10-Q",
+      "start": null
+    },
+    "st_investments@2017-12-30": {
+      "tag": null,
+      "note": "optional missing → 0"
+    },
+    "preferred@2017-12-30": {
+      "tag": null,
+      "note": "optional missing → 0"
+    },
+    "ni@2017-12-30": {
+      "tag": "NetIncomeLoss",
+      "val": 10999000000,
+      "filed": "2018-02-16",
+      "accn": "0001637459-18-000015",
+      "form": "10-K",
+      "start": "2017-01-01"
+    },
+    "ibx@2017-12-30": {
+      "tag": "NetIncomeLoss",
+      "val": 10999000000,
+      "filed": "2018-02-16",
+      "accn": "0001637459-18-000015",
+      "form": "10-K",
+      "start": "2017-01-01"
+    },
+    "cfo@2017-12-30": {
+      "tag": "NetCashProvidedByUsedInOperatingActivities",
+      "val": 527000000,
+      "filed": "2018-02-16",
+      "accn": "0001637459-18-000015",
+      "form": "10-K",
+      "start": "2017-01-01"
+    },
+    "issue_stock@2017-12-30": {
+      "tag": null,
+      "note": "optional missing → 0"
+    },
+    "issue_debt@2017-12-30": {
+      "tag": null,
+      "note": "optional missing → 0"
+    },
+    "sales@2016-12-31": {
+      "tag": "SalesRevenueGoodsNet",
+      "val": 26487000000,
+      "filed": "2018-02-16",
+      "accn": "0001637459-18-000015",
+      "form": "10-K",
+      "start": "2016-01-04"
+    },
+    "cogs@2016-12-31": {
+      "tag": "CostOfGoodsSold",
+      "val": 16901000000,
+      "filed": "2018-02-16",
+      "accn": "0001637459-18-000015",
+      "form": "10-K",
+      "start": "2016-01-04"
+    },
+    "receivables@2016-12-31": {
+      "tag": "AccountsReceivableNetCurrent",
+      "val": 769000000,
+      "filed": "2018-02-16",
+      "accn": "0001637459-18-000015",
+      "form": "10-K",
+      "start": null
+    },
+    "inventory@2016-12-31": {
+      "tag": "InventoryNet",
+      "val": 2684000000,
+      "filed": "2018-02-16",
+      "accn": "0001637459-18-000015",
+      "form": "10-K",
+      "start": null
+    },
+    "current_assets@2016-12-31": {
+      "tag": "AssetsCurrent",
+      "val": 8753000000,
+      "filed": "2018-02-16",
+      "accn": "0001637459-18-000015",
+      "form": "10-K",
+      "start": null
+    },
+    "total_assets@2016-12-31": {
+      "tag": "Assets",
+      "val": 120480000000,
+      "filed": "2018-02-16",
+      "accn": "0001637459-18-000015",
+      "form": "10-K",
+      "start": null
+    },
+    "ppe_net@2016-12-31": {
+      "tag": "PropertyPlantAndEquipmentNet",
+      "val": 6688000000,
+      "filed": "2018-02-16",
+      "accn": "0001637459-18-000015",
+      "form": "10-K",
+      "start": null
+    },
+    "ppe_gross@2016-12-31": {
+      "tag": "PropertyPlantAndEquipmentGross",
+      "val": 8518000000,
+      "filed": "2018-02-16",
+      "accn": "0001637459-18-000015",
+      "form": "10-K",
+      "start": null
+    },
+    "securities@2016-12-31": {
+      "tag": null,
+      "note": "optional missing → 0"
+    },
+    "depreciation@2016-12-31": {
+      "tag": "DepreciationDepletionAndAmortization",
+      "val": 1337000000,
+      "filed": "2018-02-16",
+      "accn": "0001637459-18-000015",
+      "form": "10-K",
+      "start": "2016-01-04"
+    },
+    "sga@2016-12-31": {
+      "tag": "SellingGeneralAndAdministrativeExpense",
+      "val": 3444000000,
+      "filed": "2018-02-16",
+      "accn": "0001637459-18-000015",
+      "form": "10-K",
+      "start": "2016-01-04"
+    },
+    "current_liabilities@2016-12-31": {
+      "tag": "LiabilitiesCurrent",
+      "val": 9501000000,
+      "filed": "2018-02-16",
+      "accn": "0001637459-18-000015",
+      "form": "10-K",
+      "start": null
+    },
+    "total_liabilities@2016-12-31": {
+      "tag": "Liabilities",
+      "val": 62906000000,
+      "filed": "2018-02-16",
+      "accn": "0001637459-18-000015",
+      "form": "10-K",
+      "start": null
+    },
+    "lt_debt@2016-12-31": {
+      "tag": "LongTermDebtAndCapitalLeaseObligations",
+      "val": 29713000000,
+      "filed": "2018-02-16",
+      "accn": "0001637459-18-000015",
+      "form": "10-K",
+      "start": null
+    },
+    "st_debt@2016-12-31": {
+      "tag": "ShortTermBorrowings",
+      "val": 645000000,
+      "filed": "2018-02-16",
+      "accn": "0001637459-18-000015",
+      "form": "10-K",
+      "start": null
+    },
+    "cash@2016-12-31": {
+      "tag": "CashAndCashEquivalentsAtCarryingValue",
+      "val": 4204000000,
+      "filed": "2018-02-16",
+      "accn": "0001637459-18-000015",
+      "form": "10-K",
+      "start": null
+    },
+    "st_investments@2016-12-31": {
+      "tag": null,
+      "note": "optional missing → 0"
+    },
+    "preferred@2016-12-31": {
+      "tag": null,
+      "note": "optional missing → 0"
+    },
+    "ni@2016-12-31": {
+      "tag": "NetIncomeLoss",
+      "val": 3632000000,
+      "filed": "2018-02-16",
+      "accn": "0001637459-18-000015",
+      "form": "10-K",
+      "start": "2016-01-04"
+    },
+    "ibx@2016-12-31": {
+      "tag": "NetIncomeLoss",
+      "val": 3632000000,
+      "filed": "2018-02-16",
+      "accn": "0001637459-18-000015",
+      "form": "10-K",
+      "start": "2016-01-04"
+    },
+    "cfo@2016-12-31": {
+      "tag": "NetCashProvidedByUsedInOperatingActivities",
+      "val": 2649000000,
+      "filed": "2018-02-16",
+      "accn": "0001637459-18-000015",
+      "form": "10-K",
+      "start": "2016-01-04"
+    },
+    "issue_stock@2016-12-31": {
+      "tag": null,
+      "note": "optional missing → 0"
+    },
+    "issue_debt@2016-12-31": {
+      "tag": null,
+      "note": "optional missing → 0"
+    },
+    "sales@2016-01-03": {
+      "tag": "SalesRevenueGoodsNet",
+      "val": 18338000000,
+      "filed": "2018-02-16",
+      "accn": "0001637459-18-000015",
+      "form": "10-K",
+      "start": "2014-12-29"
+    },
+    "cogs@2016-01-03": {
+      "tag": "CostOfGoodsSold",
+      "val": 12577000000,
+      "filed": "2018-02-16",
+      "accn": "0001637459-18-000015",
+      "form": "10-K",
+      "start": "2014-12-29"
+    },
+    "receivables@2016-01-03": {
+      "tag": "AccountsReceivableNetCurrent",
+      "val": 871000000,
+      "filed": "2017-02-23",
+      "accn": "0001637459-17-000007",
+      "form": "10-K",
+      "start": null
+    },
+    "inventory@2016-01-03": {
+      "tag": "InventoryNet",
+      "val": 2618000000,
+      "filed": "2017-02-23",
+      "accn": "0001637459-17-000007",
+      "form": "10-K",
+      "start": null
+    },
+    "current_assets@2016-01-03": {
+      "tag": "AssetsCurrent",
+      "val": 9780000000,
+      "filed": "2017-02-23",
+      "accn": "0001637459-17-000007",
+      "form": "10-K",
+      "start": null
+    },
+    "total_assets@2016-01-03": {
+      "tag": "Assets",
+      "val": 122973000000,
+      "filed": "2017-02-23",
+      "accn": "0001637459-17-000007",
+      "form": "10-K",
+      "start": null
+    },
+    "ppe_net@2016-01-03": {
+      "tag": "PropertyPlantAndEquipmentNet",
+      "val": 6524000000,
+      "filed": "2017-02-23",
+      "accn": "0001637459-17-000007",
+      "form": "10-K",
+      "start": null
+    },
+    "ppe_gross@2016-01-03": {
+      "tag": "PropertyPlantAndEquipmentGross",
+      "val": 7430000000,
+      "filed": "2017-02-23",
+      "accn": "0001637459-17-000007",
+      "form": "10-K",
+      "start": null
+    },
+    "securities@2016-01-03": {
+      "tag": null,
+      "note": "optional missing → 0"
+    },
+    "depreciation@2016-01-03": {
+      "tag": "DepreciationDepletionAndAmortization",
+      "val": 740000000,
+      "filed": "2018-02-16",
+      "accn": "0001637459-18-000015",
+      "form": "10-K",
+      "start": "2014-12-29"
+    },
+    "sga@2016-01-03": {
+      "tag": "SellingGeneralAndAdministrativeExpense",
+      "val": 3122000000,
+      "filed": "2018-02-16",
+      "accn": "0001637459-18-000015",
+      "form": "10-K",
+      "start": "2014-12-29"
+    },
+    "current_liabilities@2016-01-03": {
+      "tag": "LiabilitiesCurrent",
+      "val": 6932000000,
+      "filed": "2017-02-23",
+      "accn": "0001637459-17-000007",
+      "form": "10-K",
+      "start": null
+    },
+    "total_liabilities@2016-01-03": {
+      "tag": "Liabilities",
+      "val": 56737000000,
+      "filed": "2017-02-23",
+      "accn": "0001637459-17-000007",
+      "form": "10-K",
+      "start": null
+    },
+    "lt_debt@2016-01-03": {
+      "tag": "LongTermDebtAndCapitalLeaseObligations",
+      "val": 25151000000,
+      "filed": "2017-02-23",
+      "accn": "0001637459-17-000007",
+      "form": "10-K",
+      "start": null
+    },
+    "st_debt@2016-01-03": {
+      "tag": "ShortTermBorrowings",
+      "val": 4000000,
+      "filed": "2017-02-23",
+      "accn": "0001637459-17-000007",
+      "form": "10-K",
+      "start": null
+    },
+    "cash@2016-01-03": {
+      "tag": "CashAndCashEquivalentsAtCarryingValue",
+      "val": 4837000000,
+      "filed": "2017-02-23",
+      "accn": "0001637459-17-000007",
+      "form": "10-K",
+      "start": null
+    },
+    "st_investments@2016-01-03": {
+      "tag": null,
+      "note": "optional missing → 0"
+    },
+    "preferred@2016-01-03": {
+      "tag": null,
+      "note": "optional missing → 0"
+    },
+    "ni@2016-01-03": {
+      "tag": "NetIncomeLoss",
+      "val": 634000000,
+      "filed": "2018-02-16",
+      "accn": "0001637459-18-000015",
+      "form": "10-K",
+      "start": "2014-12-29"
+    },
+    "ibx@2016-01-03": {
+      "tag": "NetIncomeLoss",
+      "val": 634000000,
+      "filed": "2018-02-16",
+      "accn": "0001637459-18-000015",
+      "form": "10-K",
+      "start": "2014-12-29"
+    },
+    "cfo@2016-01-03": {
+      "tag": "NetCashProvidedByUsedInOperatingActivities",
+      "val": 1272000000,
+      "filed": "2018-02-16",
+      "accn": "0001637459-18-000015",
+      "form": "10-K",
+      "start": "2014-12-29"
+    },
+    "issue_stock@2016-01-03": {
+      "tag": null,
+      "note": "optional missing → 0"
+    },
+    "issue_debt@2016-01-03": {
+      "tag": null,
+      "note": "optional missing → 0"
+    }
+  }
+}
