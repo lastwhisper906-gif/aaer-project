@@ -745,3 +745,7 @@ c44bd59a…)는 **서명 없이 superseded** (채점 미진입 상태 폐기). v
 — 8선정 중 3건의 정체가 이 임계 하나로 결정됐다. 기준 개정은 "결과가 마음에
 안 듦"이 아니라 "규칙이 세려던 것을 세지 않음"일 때 정당하며, 그 구분의 증거는
 개정 전 이력 공개다.
+
+## D21 — RP-09 Stage 0: 채점 26건 소유자 확정 (2026-07-07, JSON 1줄)
+
+{"decision":"D21","date":"2026-07-07","scope":"grades 26 (main 16 + perturbed 8 + pilot 2) human_finalized=true — incl. 5 MODEL-flagged (main case_10; perturbed case_01/02/03/12) 귀속 확정 + MRVL(perturbed case_13) UNCLASSIFIED×2 → DATA(design) PROPOSAL 채택","basis":"owner instruction RP-09 Stage 0, verbatim commit 986a893","effect":"scoring/grades/ + pilot/grades/ frozen under I3 from this commit; treatment-side answer-key evaluation closed","unfinalized_items":0}

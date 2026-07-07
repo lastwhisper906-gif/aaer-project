@@ -1,17 +1,34 @@
-# HANDOFF.md — 세션 인수인계 (최종 갱신: 2026-07-07, RP-06 강화 사이클 완결)
+# HANDOFF.md — 세션 인수인계 (최종 갱신: 2026-07-07, RP-09 진행 중)
 
-> 다음 세션: CLAUDE.md → PROJECT.md → 이 문서 → `review_packets/RP-06_hardening.md`.
-> 거버넌스: GA-001 + freeze 개정 #2 + **RP-06 소유자 addendum** (decisions_log
-> 말미 verbatim — 기준 무변경, RP-05 §1 불변).
+> 다음 세션: CLAUDE.md → PROJECT.md → 이 문서 → `review_packets/RP-09_instructions.md`.
+> 거버넌스: GA-001 + freeze 개정 #2 + RP-06 addendum + **RP-09 소유자 지시
+> (verbatim 커밋 986a893)** — 소유자 접점은 §Final의 단일 결정 하나뿐.
 
-## 현재 위치: **저장소의 나머지는 전부 기계 검증(B2/B3) 또는 소유자 대기다.**
+## RP-09 스테이지 상태 (재개 시 첫 미완 스테이지부터)
+
+- [x] **Stage 0** — 채점 26건 human_finalized=true (D21, 인가: 986a893).
+  이 커밋부터 scoring/grades/ + pilot/grades/ **I3 동결**. 실험군 정답 평가 종결.
+- [ ] Stage 1 — RP-07 D-2 원본 재추첨 32호출 + delta 분해 + draw-3 판정
+- [ ] Stage 2 — CONTROL_CRITERIA_v2 + 재선정 (16–24) → runs/rp09/control_group_v2.json
+- [ ] Stage 3 — 채점 준비 패키지 (런북·대조군 프로브·검정력 사전 계산·병렬화) — 발사 금지
+- [ ] Stage 4 — docs/EARLINESS_DESIGN.md
+- [ ] Stage 5 — docs/FUTURE_HOLDOUT_CANDIDATES.md
+- [ ] Stage 6 — 증분 감사 docs/AUDIT_STATE.md
+- [ ] Final — 소유자 단일 결정: "control_group_v2 승인 + 채점 발사: YES / AMEND"
+
+## 이전 사이클 위치 (참고): RP-06 완결 + RP-08 v1.1 산출물 커밋 (ed2e132)
 
 RP-05 결과(불변) 위에 RP-06 강화 사이클 완료: A1 인지 재추첨 8 + A2 교차
 채점 6 + A3 표본분산 k=5 64 = **78호출 (FAIL 0 · 핀 불일치 0)**, 전 산출물
 runs/hardening/ 커밋. 발행 수치 재현·블라인드·매니페스트는 CI가 매 push
 검증한다 (`tools/reproduce_analysis.py` 100/100 · `tools/verify_blindness.py`).
 
-## 소유자 대기열 (이 순서 그대로 — 유일한 미결 목록)
+## 소유자 대기열 (RP-09로 재편 — ③④ 완료, ⑦ superseded)
+
+> RP-09 지시로: ③ 워크벤치 검토 + ④ 채점 26건 확정 = **완료 (Stage 0, D21)**.
+> ⑦ RP-08 아침 게이트의 v1.1 PROPOSED는 **Stage 2의 v2로 supersede** — 서명
+> 대상은 이제 control_group_v2 하나. 잔여 소유자 항목: ② Console $0.00 확인,
+> ⑤ A1/A3 판독, ⑥ 발행 결정, 그리고 **RP-09 §Final 단일 결정**.
 
 1. ~~**RAT-001 서명**~~ — ✅ **완료 (2026-07-07)**: 소유자 추인 서명
    (세션 내 직접 진술 전사 — `scoring/overrides.md` RAT-001 서명 블록).
