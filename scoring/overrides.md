@@ -152,3 +152,17 @@
   남는다 — 본 기록이 그것을 대체하지 않는다.
 - 학습 노트: E4 수기 통과 3건의 공통 증거 패턴 — 일반 토큰('global'/'first'/
   성씨 Campbell) 오탐 + 식별 토큰 색인 0건. 이 서명의 실체는 그 패턴의 확인이다.
+
+## RP-09 §Final — 소유자 결정 (2026-07-07)
+
+RP-09-FINAL: YES (A1: ADI ineligible-confirmed, replaced by rule)
+
+- 결정 주체: 소유자 (RP-10 미션 지시 verbatim — Phase 0.1). 기입 = 채점 보조
+  Claude의 전사 (RAT-001/GA-001 선례 형식).
+- A1 근거 (소유자 제공, 확정): Analog Devices — SEC cease-and-desist,
+  Exchange Act §10(b)/Rule 10b-5 (옵션 백데이팅, 민사 벌금 $3M, 화해
+  2008-05-30, SEC Admin. Proc. 3-13050, Release 33-8923, SEC PR 2008-102).
+  AAER 색인 무인쇄로 E4가 못 잡은 것 — 10b-5 명령은 clean 대조군 부적격
+  (ADI 진양성이 오탐으로 오계수되어 헤드라인 FPR 오염). 교체는 수기 지명이
+  아니라 **부적격 표기 후 사전 커밋된 순수 선정 함수 재실행** (Phase 0.2).
+- CPB·UPBD는 현행 유지 (소유자 명시).
