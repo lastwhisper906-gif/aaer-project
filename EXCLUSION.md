@@ -39,33 +39,41 @@
   (동결 `control_v2.OWNER_CONFIRMED_ENFORCEMENT_CIKS` + `aaer_hits_v2`). 실험군엔
   적용 안 함.
 
-## 4. 게이트 결과 기록 (빌드 시 채움 — 아래는 사전 기대치, NOT binding)
+## 4. 게이트 결과 (실행 완료 2026-07-07 — G-XBRL companyfacts 조회 + 동결 `load_pit_series` PIT 커버리지)
 
-**사전 기대 실패(게이트 미실행 시점의 예상, 참고용)**: PUDA·MILL·DMND·PWE =
-G-XBRL 실패 예상(중국 RTO 소형 / 수기-비용 / 40-F). **게이트 실행 결과로
-대체된다.**
+**방법**: `tools/fetch_xbrl_facts.py`로 각 후보 companyfacts를 data.sec.gov에서
+조회(availability), 동결 `pipeline/build_payload.load_pit_series`로 **컷오프 전**
+PIT 시계열을 조립해 커버리지 측정(점수 독립·오프라인·결정론). 통과 = 자산
+instant ≥2 AND (매출 또는 순이익 분기≥4 또는 연차≥2) AND 페이로드 태그 ≥8.
 
-**기대 생존 ≈ 9** (참고): CSC·WFT·OSIR·BRX·TNGO·HAIN·CGI·MDXG·UAA.
+**결과: 생존 9 / 실패 4** — 규칙+게이트가 결정(사전 기대와 일치하나 게이트가
+근거).
 
-| 티커 | G-XBRL | G-DATE | G-DOC | 최종 | memorization_risk |
+| 티커 | G-XBRL (커버리지) | G-DATE | G-DOC | 최종 | memorization_risk |
 |---|---|---|---|---|---|
-| CSC  | (빌드) | (빌드) | (빌드) | (빌드) | — |
-| WFT  | (빌드) | (빌드) | (빌드) | (빌드) | — |
-| PUDA | (빌드) | (빌드) | (빌드) | (빌드) | true (China-RTO, 생존 시) |
-| MILL | (빌드) | (빌드) | (빌드) | (빌드) | — |
-| DMND | (빌드) | (빌드) | (빌드) | (빌드) | — |
-| PWE  | (빌드) | (빌드) | (빌드) | (빌드) | — |
-| OSIR | (빌드) | (빌드) | (빌드) | (빌드) | — |
-| BRX  | (빌드) | (빌드) | (빌드) | (빌드) | — |
-| TNGO | (빌드) | (빌드) | (빌드) | (빌드) | — |
-| HAIN | (빌드) | (빌드) | (빌드) | (빌드) | — |
-| CGI  | (빌드) | (빌드) | (빌드) | (빌드) | — |
-| MDXG | (빌드) | (빌드) | (빌드) | (빌드) | — |
-| UAA  | (빌드) | (빌드) | (빌드) | (빌드) | — |
+| CSC  | PASS (rev q6/a3, NI q6/a3, assets i5, 30tags/176facts) | 2010-08-10 | ok | **생존** | 사후측정 |
+| WFT  | PASS (rev q8/a3, NI q8/a3, assets i7, 36tags/274facts; 전신 CIK 0001170565 companyfacts 404 — XBRL 시대 이전, 주 CIK가 커버) | 2011-02-28 | ok | **생존** | 사후측정 |
+| OSIR | PASS (rev q22/a6, NI q2/a0, assets i18, 35tags/458facts) | 2015-11-05 | ok | **생존** | 사후측정 |
+| BRX  | PASS (표준 Revenues 태그 부재=REIT 임대수익 태그, NI q10/a3 + assets i10, 19tags/178facts로 통과 — 페이로드는 표준 매출 결측·주석 대상) | 2016-02-07 | ok | **생존** | 사후측정 |
+| TNGO | PASS (rev q20/a6, NI q20/a6, assets i19, 33tags/595facts) | 2016-03-06 | ok | **생존** | 사후측정 |
+| HAIN | PASS (rev q21/a7, NI q21/a7, assets i24, 35tags/721facts) | 2016-08-14 | ok | **생존** | 사후측정 |
+| CGI  | PASS (rev q26/a7, NI q26/a7, assets i24, 31tags/599facts) | 2017-04-04 | ok | **생존** | 사후측정 |
+| MDXG | PASS (rev q25/a6, NI q25/a6, assets i23, 31tags/616facts) | 2016-12-14 | ok | **생존** | 사후측정 |
+| UAA  | PASS (rev q40/a12, NI q40/a11, assets i41, 35tags/1127facts) | 2019-11-02 | ok | **생존** | 사후측정 |
+| PUDA | **FAIL** — companyfacts 404 (data.sec.gov 무등록, 中 RTP 소형) | 2011-04-07 | — | **제외** | true (해당 없음 — 탈락) |
+| MILL | **FAIL** — 컷오프 2011-07-27 이전 PAYLOAD-태그 사실 0건 (최초 us-gaap 사실 filed 2011-10-05 = 컷오프 +70일; XBRL 채택이 폭로 이후) | 2011-07-27 | — | **제외** | — |
+| DMND | **FAIL** — 최초 PAYLOAD-태그 사실 filed 2012-11-14 = 컷오프(2011-10-31) +1년 (XBRL 채택이 폭로 이후, "수기 비용" 플래그 실증) | 2011-10-31 | — | **제외** | — |
+| PWE  | **FAIL** — 캐나다 40-F/IFRS 제출자 (ifrs-full 163태그, us-gaap는 2018-03 이후만 = 컷오프 2014-07-28 후) | 2014-07-28 | — | **제외** | — |
 
-> **memorization_risk 태그(사전, 기계적)**: 동결 China-RTO 클러스터(T01/T03/T05/
-> T06/T09/T30) 소속으로 게이트 생존 시 `true`. 그 외는 사후 프로브·교란 측정
-> (ANALYSIS_PLAN_WAVE2 §9). PUDA(T06)만 잠재 태그 대상 — 단 G-XBRL 실패 예상.
+> **최종 wave-2 실험군 로스터 (게이트 확정, 9)**: BRX·CGI·CSC·HAIN·MDXG·OSIR·
+> TNGO·UAA·WFT (알파벳 = 채점 순서, ANALYSIS_PLAN_WAVE2 §7). **memorization_risk
+> 사전 태그(China-RTO 클러스터) 해당자 없음** — PUDA(T06, 유일 China-RTO)가
+> G-XBRL 탈락. 9사 암기는 사후 프로브·교란으로 측정(§9). **BRX·OSIR 커버리지
+> 주석** 위 표 기재 — 채점 해석 시 참조.
+>
+> G-DATE는 동결 candidates.json의 `first_revelation_date`(킬 스위치 단계 확정,
+> 컷오프=전일)를 승계하며, Principle-A EDGAR 1차 문서 재검증은 빌드 시 출처
+> accession 기록으로 수행(동결 wave-1 폭로일 불침해).
 
 ## 5. 폭로일 재검증 절차 (Principle A — 케이스별 출처 문서 빌드 시 기록)
 
