@@ -141,6 +141,21 @@ def run(cmd: list) -> None:
         raise SystemExit(f"단계 실패 (exit {r.returncode}) — 같은 명령 재실행으로 재개")
 
 
+def commit_outputs(msg: str, regen_manifest: bool) -> None:
+    """단계별 산출물 커밋 — 다음 단계 러너의 clean-tree 가드 충족 + I3 즉시 동결.
+
+    runs/ 아래 산출물은 전역 매니페스트 재생성 후 커밋 (HANDOFF 규칙 — CI (d)).
+    """
+    if regen_manifest:
+        run([sys.executable, "tools/verify_blindness.py", "--write-manifest"])
+    subprocess.run(["git", "add", "-A"], cwd=REPO, check=True)
+    if subprocess.run(["git", "diff", "--cached", "--quiet"], cwd=REPO).returncode == 0:
+        return  # 변경 없음 (멱등 재실행)
+    subprocess.run(["git", "commit", "-q", "-m", msg + "\n\nCo-Authored-By: "
+                    "Claude Fable 5 <noreply@anthropic.com>"], cwd=REPO, check=True)
+    print(f"  [커밋] {msg}", flush=True)
+
+
 def main() -> int:
     ap = argparse.ArgumentParser()
     g = ap.add_mutually_exclusive_group(required=True)
@@ -178,19 +193,26 @@ def main() -> int:
     print("[2/5] build-inputs")
     build_inputs(rows)
     py = sys.executable
+    commit_outputs("RP-10 발사 전 입력 스테이징 (멱등 재생성분)", regen_manifest=False)
     print("[3/5] score")
     run([py, "pipeline/runner.py", "--cases", "data/evaluatee/cases_v2.json",
          "--out", "runs/rp09/scores"])
+    commit_outputs("RP-10 Phase 1: 대조군 v2 채점 원시 출력 22 (runs/rp09/scores) — I3 즉시 동결",
+                   regen_manifest=True)
     print("[4/5] probes")
     run([py, "pipeline/probe_runner.py", "--recognition",
          "--cases", "data/evaluatee/cases_v2.json",
          "--out-root", "scoring/probe_results_v2"])
+    commit_outputs("RP-10 Phase 1: 대조군 v2 인지 프로브 22 (scoring/probe_results_v2)",
+                   regen_manifest=False)
     print("[5/5] grade")
     run([py, "scoring/grader_runner.py", "--runs", "runs/rp09/scores",
          "--out", "scoring/grades_v2/controls",
          "--mapping", "scoring/id_mapping_v2.json",
          "--candidates", "data/candidates/candidates_v2_controls.json"])
-    print("\n완료 — 다음: python scoring/analyze_rp09.py (통계) + 매니페스트 갱신 + 커밋")
+    commit_outputs("RP-10 Phase 1: 대조군 v2 채점자 출력 22 (scoring/grades_v2/controls)",
+                   regen_manifest=False)
+    print("\n완료 — 다음: analysis/ (Phase 2 통계)")
     return 0
 
 
