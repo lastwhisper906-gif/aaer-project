@@ -1,0 +1,372 @@
+{
+  "case_id": "case_39",
+  "run_id": "perturbed-case_39-r1",
+  "model": "claude-sonnet-5",
+  "pipeline_version": "040f790165cd9040160fd41bf18dfd248824a4dc",
+  "run_timestamp": "2026-07-07T12:03:02.900727+00:00",
+  "documents_used": [
+    {
+      "accession_no": "0001047469-12-002580",
+      "form_type": "10-K",
+      "filing_date": "2012-03-14"
+    },
+    {
+      "accession_no": "0001047469-13-002788",
+      "form_type": "10-K",
+      "filing_date": "2013-03-15"
+    },
+    {
+      "accession_no": "0001047469-14-003199",
+      "form_type": "10-K",
+      "filing_date": "2014-03-31"
+    },
+    {
+      "accession_no": "0001047469-15-002532",
+      "form_type": "10-K",
+      "filing_date": "2015-03-20"
+    },
+    {
+      "accession_no": "0001104659-11-045066",
+      "form_type": "10-Q",
+      "filing_date": "2011-08-09"
+    },
+    {
+      "accession_no": "0001104659-11-061330",
+      "form_type": "10-Q",
+      "filing_date": "2011-11-07"
+    },
+    {
+      "accession_no": "0001104659-12-035988",
+      "form_type": "10-Q",
+      "filing_date": "2012-05-10"
+    },
+    {
+      "accession_no": "0001104659-12-056210",
+      "form_type": "10-Q",
+      "filing_date": "2012-08-09"
+    },
+    {
+      "accession_no": "0001104659-12-076280",
+      "form_type": "10-Q",
+      "filing_date": "2012-11-09"
+    },
+    {
+      "accession_no": "0001104659-13-039896",
+      "form_type": "10-Q",
+      "filing_date": "2013-05-10"
+    },
+    {
+      "accession_no": "0001104659-13-062017",
+      "form_type": "10-Q",
+      "filing_date": "2013-08-09"
+    },
+    {
+      "accession_no": "0001104659-13-083236",
+      "form_type": "10-Q",
+      "filing_date": "2013-11-12"
+    },
+    {
+      "accession_no": "0001104659-14-037626",
+      "form_type": "10-Q",
+      "filing_date": "2014-05-12"
+    },
+    {
+      "accession_no": "0001104659-14-059084",
+      "form_type": "10-Q",
+      "filing_date": "2014-08-11"
+    },
+    {
+      "accession_no": "0001104659-14-078750",
+      "form_type": "10-Q",
+      "filing_date": "2014-11-10"
+    },
+    {
+      "accession_no": "0001104659-15-036502",
+      "form_type": "10-Q",
+      "filing_date": "2015-05-11"
+    },
+    {
+      "accession_no": "0001104659-15-057928",
+      "form_type": "10-Q",
+      "filing_date": "2015-08-10"
+    }
+  ],
+  "checklist": [
+    {
+      "item_id": "CL1",
+      "question": "Did receivables grow materially faster than revenue across consecutive periods?",
+      "finding": "flag",
+      "confidence": "high",
+      "evidence": [
+        {
+          "quote": "AccountsReceivableNetCurrent=9,082,048.73 (2013-12-31)",
+          "source_accession_no": "0001047469-15-002532",
+          "location": "AccountsReceivableNetCurrent instant 2013-12-31"
+        },
+        {
+          "quote": "AccountsReceivableNetCurrent=29,596,106.52 (2014-12-31)",
+          "source_accession_no": "0001104659-15-057928",
+          "location": "AccountsReceivableNetCurrent instant 2014-12-31"
+        },
+        {
+          "quote": "SalesRevenueGoodsNet=29,597,324.11 (2013-01-01/2013-12-31)",
+          "source_accession_no": "0001047469-15-002532",
+          "location": "SalesRevenueGoodsNet annual 2013"
+        },
+        {
+          "quote": "SalesRevenueGoodsNet=72,893,821.08 (2014-01-01/2014-12-31)",
+          "source_accession_no": "0001047469-15-002532",
+          "location": "SalesRevenueGoodsNet annual 2014"
+        },
+        {
+          "quote": "AccountsReceivableNetCurrent=46,996,771.27 (2015-06-30) vs SalesRevenueGoodsNet=28,842,414.58 (2015-04-01/2015-06-30)",
+          "source_accession_no": "0001104659-15-057928",
+          "location": "AccountsReceivableNetCurrent and SalesRevenueGoodsNet, Q2 2015"
+        }
+      ]
+    },
+    {
+      "item_id": "CL2",
+      "question": "Did non-current 'soft' assets (intangibles, other assets, capitalized items) grow materially faster than the business overall?",
+      "finding": "insufficient_data",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "OtherAssetsNoncurrent=224,037.67 (2010-12-31)",
+          "source_accession_no": "0001047469-12-002580",
+          "location": "OtherAssetsNoncurrent instant 2010-12-31"
+        },
+        {
+          "quote": "OtherAssetsNoncurrent=115,671.62 (2015-06-30)",
+          "source_accession_no": "0001104659-15-057928",
+          "location": "OtherAssetsNoncurrent instant 2015-06-30"
+        }
+      ]
+    },
+    {
+      "item_id": "CL3",
+      "question": "Is there a persistent divergence between net income and operating cash flow?",
+      "finding": "flag",
+      "confidence": "high",
+      "evidence": [
+        {
+          "quote": "NetIncomeLossAvailableToCommonStockholdersBasic=50,698,263.18 (2013-01-01/2013-12-31)",
+          "source_accession_no": "0001047469-15-002532",
+          "location": "NetIncomeLossAvailableToCommonStockholdersBasic annual 2013"
+        },
+        {
+          "quote": "NetCashProvidedByUsedInOperatingActivities=-16,156,281.62 (2013-01-01/2013-12-31)",
+          "source_accession_no": "0001047469-15-002532",
+          "location": "NetCashProvidedByUsedInOperatingActivities annual 2013"
+        },
+        {
+          "quote": "NetIncomeLossAvailableToCommonStockholdersBasic=60,643,587.49 (2013-10-01/2013-12-31)",
+          "source_accession_no": "0001047469-15-002532",
+          "location": "NetIncomeLossAvailableToCommonStockholdersBasic Q4 2013"
+        },
+        {
+          "quote": "OperatingIncomeLoss=1,803,259.71 (2013-10-01/2013-12-31)",
+          "source_accession_no": "0001047469-14-003199",
+          "location": "OperatingIncomeLoss Q4 2013"
+        },
+        {
+          "quote": "Assets=48,518,766.30 (2013-09-30) vs Assets=112,136,940.88 (2013-12-31)",
+          "source_accession_no": "0001047469-15-002532",
+          "location": "Assets instant Q3 2013 vs Q4 2013"
+        }
+      ]
+    },
+    {
+      "item_id": "CL4",
+      "question": "Do inventory levels or gross margins show trends inconsistent with revenue?",
+      "finding": "flag",
+      "confidence": "high",
+      "evidence": [
+        {
+          "quote": "InventoryNet=2,348,742.73 (2013-12-31); CostOfGoodsSold=8,104,319.13 (2013-01-01/2013-12-31) => ~106 days inventory",
+          "source_accession_no": "0001047469-15-002532",
+          "location": "InventoryNet and CostOfGoodsSold 2013 annual"
+        },
+        {
+          "quote": "InventoryNet=13,301,018.95 (2014-12-31)",
+          "source_accession_no": "0001104659-15-057928",
+          "location": "InventoryNet instant 2014-12-31"
+        },
+        {
+          "quote": "CostOfGoodsSold=16,036,957.21 (2014-01-01/2014-12-31) => ~303 days inventory (nearly tripling DIO year over year)",
+          "source_accession_no": "0001047469-15-002532",
+          "location": "CostOfGoodsSold annual 2014"
+        }
+      ]
+    },
+    {
+      "item_id": "CL5",
+      "question": "Is the earnings trajectory unusually smooth relative to the volatility of revenue and cash flow?",
+      "finding": "flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "SalesRevenueGoodsNet=12,241,710.41 (2014-01-01/2014-03-31); CostOfGoodsSold=2,693,322.40 (2014-01-01/2014-03-31) => gross margin ~78.0%",
+          "source_accession_no": "0001104659-15-036502",
+          "location": "SalesRevenueGoodsNet & CostOfGoodsSold Q1 2014"
+        },
+        {
+          "quote": "SalesRevenueGoodsNet=28,842,414.58 (2015-04-01/2015-06-30); CostOfGoodsSold=6,260,878.75 (2015-04-01/2015-06-30) => gross margin ~78.3%",
+          "source_accession_no": "0001104659-15-057928",
+          "location": "SalesRevenueGoodsNet & CostOfGoodsSold Q2 2015"
+        },
+        {
+          "quote": "Gross margin held within ~0.3 percentage points across five quarters (Q1'14 through Q2'15) despite revenue more than doubling",
+          "source_accession_no": "0001047469-15-002532",
+          "location": "Derived from CostOfGoodsSold/SalesRevenueGoodsNet series 2014-2015"
+        }
+      ]
+    },
+    {
+      "item_id": "CL6",
+      "question": "Did liability, allowance, or reserve balances decline (or fail to grow) despite growing business activity?",
+      "finding": "flag",
+      "confidence": "high",
+      "evidence": [
+        {
+          "quote": "AllowanceForDoubtfulAccountsReceivableCurrent=1,582,874.83 (2015-03-31)",
+          "source_accession_no": "0001104659-15-036502",
+          "location": "AllowanceForDoubtfulAccountsReceivableCurrent instant 2015-03-31"
+        },
+        {
+          "quote": "AllowanceForDoubtfulAccountsReceivableCurrent=317,792.56 (2015-06-30)",
+          "source_accession_no": "0001104659-15-057928",
+          "location": "AllowanceForDoubtfulAccountsReceivableCurrent instant 2015-06-30"
+        },
+        {
+          "quote": "AccountsReceivableNetCurrent=38,989,859.83 (2015-03-31) growing to AccountsReceivableNetCurrent=46,996,771.27 (2015-06-30) while allowance fell ~80%",
+          "source_accession_no": "0001104659-15-057928",
+          "location": "AccountsReceivableNetCurrent instant Q1 2015 vs Q2 2015"
+        }
+      ]
+    },
+    {
+      "item_id": "CL7",
+      "question": "Does the filing chronology show irregularities (late filings/NT forms, amendments, unusual 8-K frequency)?",
+      "finding": "flag",
+      "confidence": "high",
+      "evidence": [
+        {
+          "quote": "NT 10-K filing_date=2014-03-17 followed by 10-K filing_date=2014-03-31",
+          "source_accession_no": "N/A",
+          "location": "filing_chronology 2014"
+        },
+        {
+          "quote": "NT 10-K filing_date=2015-03-17 followed by 10-K filing_date=2015-03-20",
+          "source_accession_no": "N/A",
+          "location": "filing_chronology 2015"
+        },
+        {
+          "quote": "10-Q/A amendment filing_date=2008-05-22",
+          "source_accession_no": "N/A",
+          "location": "filing_chronology 2008"
+        }
+      ]
+    },
+    {
+      "item_id": "CL8",
+      "question": "Is the provided data sufficient in coverage and length for the above assessments?",
+      "finding": "no_flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "Quarterly and annual XBRL data spanning 2008-12-31 through 2015-06-30 across Assets, Revenues, receivables, inventory, cash flow and equity concepts, plus full filing chronology 2006-2015",
+          "source_accession_no": "0001104659-15-057928",
+          "location": "Aggregate financial_series_point_in_time coverage"
+        }
+      ]
+    }
+  ],
+  "misstatement_probability": 65,
+  "mechanism_hypotheses": [
+    {
+      "affected_line_items": [
+        "NetIncomeLossAvailableToCommonStockholdersBasic",
+        "Assets",
+        "StockholdersEquity",
+        "NetCashProvidedByUsedInOperatingActivities"
+      ],
+      "direction": "overstated",
+      "accounting_treatment": "Likely a large non-operating/non-cash gain (consistent with purchase accounting for an acquisition/reverse merger, e.g., a bargain purchase gain or fair value remeasurement) recorded in Q4 2013 that inflated net income far beyond what operating results or cash flow support.",
+      "rationale_evidence": [
+        {
+          "quote": "NetIncomeLossAvailableToCommonStockholdersBasic=60,643,587.49 (2013-10-01/2013-12-31)",
+          "source_accession_no": "0001047469-15-002532",
+          "location": "Q4 2013 net income"
+        },
+        {
+          "quote": "OperatingIncomeLoss=1,803,259.71 (2013-10-01/2013-12-31)",
+          "source_accession_no": "0001047469-14-003199",
+          "location": "Q4 2013 operating income"
+        },
+        {
+          "quote": "Assets=48,518,766.30 (2013-09-30) rising to Assets=112,136,940.88 (2013-12-31)",
+          "source_accession_no": "0001047469-15-002532",
+          "location": "Assets Q3 vs Q4 2013"
+        },
+        {
+          "quote": "NetCashProvidedByUsedInOperatingActivities=-16,156,281.62 (2013 annual) despite NetIncomeLossAvailableToCommonStockholdersBasic=50,698,263.18 (2013 annual)",
+          "source_accession_no": "0001047469-15-002532",
+          "location": "2013 annual NI vs OCF"
+        }
+      ]
+    },
+    {
+      "affected_line_items": [
+        "AccountsReceivableNetCurrent",
+        "AllowanceForDoubtfulAccountsReceivableCurrent",
+        "Revenues",
+        "SalesRevenueGoodsNet"
+      ],
+      "direction": "overstated",
+      "accounting_treatment": "Revenue recognized with extended/looser collection terms (rising DSO) combined with a sharp reduction in bad-debt reserve coverage, potentially understating bad debt expense and overstating net receivables/revenue quality.",
+      "rationale_evidence": [
+        {
+          "quote": "AccountsReceivableNetCurrent=14,322,582.01 (2014-03-31) vs SalesRevenueGoodsNet=12,241,710.41 (Q1 2014) implying ~106 days sales outstanding, rising to AccountsReceivableNetCurrent=46,996,771.27 (2015-06-30) vs SalesRevenueGoodsNet=28,842,414.58 (Q2 2015) implying ~148 days",
+          "source_accession_no": "0001104659-15-057928",
+          "location": "AR and revenue Q1 2014 vs Q2 2015"
+        },
+        {
+          "quote": "AllowanceForDoubtfulAccountsReceivableCurrent=1,582,874.83 (2015-03-31) dropping to AllowanceForDoubtfulAccountsReceivableCurrent=317,792.56 (2015-06-30) while AR continued to grow",
+          "source_accession_no": "0001104659-15-057928",
+          "location": "Allowance vs AR Q1 2015 to Q2 2015"
+        }
+      ]
+    },
+    {
+      "affected_line_items": [
+        "InventoryNet",
+        "CostOfGoodsSold",
+        "GrossProfit"
+      ],
+      "direction": "overstated",
+      "accounting_treatment": "Inventory build-up (days inventory outstanding roughly tripling year over year) combined with an unusually constant ~78% gross margin across quarters of widely varying revenue suggests COGS may be estimated as a fixed percentage of revenue rather than true absorption costing, raising risk that inventory is not being written down for excess/obsolete stock and/or COGS is understated.",
+      "rationale_evidence": [
+        {
+          "quote": "InventoryNet=2,348,742.73 (2013-12-31) and CostOfGoodsSold=8,104,319.13 (2013 annual) implying ~106 days inventory, versus InventoryNet=13,301,018.95 (2014-12-31) and CostOfGoodsSold=16,036,957.21 (2014 annual) implying ~303 days inventory",
+          "source_accession_no": "0001047469-15-002532",
+          "location": "InventoryNet and CostOfGoodsSold 2013 vs 2014 annual"
+        },
+        {
+          "quote": "Gross margin computed at ~78.0% (Q1 2014: SalesRevenueGoodsNet=12,241,710.41, CostOfGoodsSold=2,693,322.40) and ~78.3% (Q2 2015: SalesRevenueGoodsNet=28,842,414.58, CostOfGoodsSold=6,260,878.75)",
+          "source_accession_no": "0001104659-15-057928",
+          "location": "Gross margin comparison Q1 2014 vs Q2 2015"
+        }
+      ]
+    }
+  ],
+  "overall": {
+    "risk_tier": "elevated",
+    "top_signals": [
+      "Massive Q4 2013 net income spike (NetIncomeLossAvailableToCommonStockholdersBasic=60,643,587.49) alongside near-flat operating income (OperatingIncomeLoss=1,803,259.71) and negative operating cash flow (annual OCF=-16,156,281.62), coinciding with Assets nearly doubling in one quarter (from $48.5M to $112.1M)",
+      "Accounts receivable growing faster than revenue with days-sales-outstanding expanding from ~106 to ~148 days (2014-2015), while the allowance for doubtful accounts was cut ~80% quarter-over-quarter (from $1,582,874.83 to $317,792.56) even as receivables grew",
+      "Inventory days-on-hand roughly tripling (from ~106 to ~303 days) between 2013 and 2014 while gross margin remained artificially constant near 78% across quarters of widely varying revenue",
+      "Two consecutive years of NT 10-K late-filing notifications (2014-03-17 and 2015-03-17) indicating recurring difficulty meeting reporting deadlines"
+    ]
+  }
+}

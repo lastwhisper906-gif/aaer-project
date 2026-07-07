@@ -1,0 +1,197 @@
+{
+  "case_id": "case_67",
+  "run_id": "perturbed-case_67-r1",
+  "model": "claude-sonnet-5",
+  "pipeline_version": "040f790165cd9040160fd41bf18dfd248824a4dc",
+  "run_timestamp": "2026-07-07T11:59:59.297199+00:00",
+  "documents_used": [
+    {
+      "accession_no": "0001581068-13-000007",
+      "form_type": "10-Q",
+      "filing_date": "2013-12-03"
+    },
+    {
+      "accession_no": "0001581068-14-000028",
+      "form_type": "10-Q",
+      "filing_date": "2014-05-07"
+    },
+    {
+      "accession_no": "0001581068-14-000038",
+      "form_type": "8-K",
+      "filing_date": "2014-05-27"
+    },
+    {
+      "accession_no": "0001581068-14-000053",
+      "form_type": "10-Q",
+      "filing_date": "2014-08-05"
+    },
+    {
+      "accession_no": "0001581068-14-000070",
+      "form_type": "10-Q",
+      "filing_date": "2014-11-04"
+    },
+    {
+      "accession_no": "0001581068-15-000028",
+      "form_type": "10-K",
+      "filing_date": "2015-02-19"
+    },
+    {
+      "accession_no": "0001581068-15-000050",
+      "form_type": "10-Q",
+      "filing_date": "2015-04-27"
+    },
+    {
+      "accession_no": "0001581068-15-000073",
+      "form_type": "10-Q",
+      "filing_date": "2015-07-27"
+    },
+    {
+      "accession_no": "0001581068-15-000092",
+      "form_type": "10-Q",
+      "filing_date": "2015-10-26"
+    }
+  ],
+  "checklist": [
+    {
+      "item_id": "CL1",
+      "question": "Did receivables grow materially faster than revenue across consecutive periods?",
+      "finding": "insufficient_data",
+      "confidence": "high",
+      "evidence": [
+        {
+          "quote": "ReceivablesNetCurrent=134820651.51 (2012-12-31)",
+          "source_accession_no": "0001581068-13-000007",
+          "location": "10-Q balance sheet"
+        },
+        {
+          "quote": "ReceivablesNetCurrent=147680430.49 (2015-09-30)",
+          "source_accession_no": "0001581068-15-000092",
+          "location": "10-Q balance sheet"
+        }
+      ]
+    },
+    {
+      "item_id": "CL2",
+      "question": "Did non-current 'soft' assets (intangibles, other assets, capitalized items) grow materially faster than the business overall?",
+      "finding": "insufficient_data",
+      "confidence": "high",
+      "evidence": [
+        {
+          "quote": "Assets=8249955402.5 (2012-12-31) vs Assets=8184577557.51 (2015-09-30)",
+          "source_accession_no": "0001581068-15-000092",
+          "location": "10-Q/10-K balance sheets"
+        }
+      ]
+    },
+    {
+      "item_id": "CL3",
+      "question": "Is there a persistent divergence between net income and operating cash flow?",
+      "finding": "no_flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "NetIncomeLoss=-138058360.73 (FY2012); NetCashProvidedByUsedInOperatingActivities=230949432.26 (FY2012); DepreciationDepletionAndAmortization=438482383.86 (FY2012)",
+          "source_accession_no": "0001581068-15-000028",
+          "location": "10-K income statement / cash flow statement"
+        },
+        {
+          "quote": "NetIncomeLoss=114123880.96 (FY2014); NetCashProvidedByUsedInOperatingActivities=411658963.77 (FY2014); DepreciationDepletionAndAmortization=379896941.84 (FY2014)",
+          "source_accession_no": "0001581068-15-000028",
+          "location": "10-K income statement / cash flow statement"
+        }
+      ]
+    },
+    {
+      "item_id": "CL4",
+      "question": "Do inventory levels or gross margins show trends inconsistent with revenue?",
+      "finding": "insufficient_data",
+      "confidence": "high",
+      "evidence": [
+        {
+          "quote": "No inventory, cost of goods sold, or revenue concepts are present in the provided data set.",
+          "source_accession_no": "0001581068-15-000028",
+          "location": "N/A - data coverage gap"
+        }
+      ]
+    },
+    {
+      "item_id": "CL5",
+      "question": "Is the earnings trajectory unusually smooth relative to the volatility of revenue and cash flow?",
+      "finding": "no_flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "ProfitLoss=-138058360.73 (FY2012), ProfitLoss=-102124856.72 (FY2013), ProfitLoss=114123880.96 (FY2014)",
+          "source_accession_no": "0001581068-15-000028",
+          "location": "10-K income statement"
+        },
+        {
+          "quote": "ProfitLoss=35856190.7 (2014-Q1), ProfitLoss=26886129.77 (2014-Q2), ProfitLoss=29090417.87 (2014-Q3)",
+          "source_accession_no": "0001581068-15-000073",
+          "location": "10-Q income statements"
+        }
+      ]
+    },
+    {
+      "item_id": "CL6",
+      "question": "Did liability, allowance, or reserve balances decline (or fail to grow) despite growing business activity?",
+      "finding": "insufficient_data",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "Liabilities=6276042896.96 (2012-12-31) declining to Liabilities=5666150912.6 (2015-09-30)",
+          "source_accession_no": "0001581068-15-000092",
+          "location": "10-Q balance sheets"
+        },
+        {
+          "quote": "Assets=8249955402.5 (2012-12-31) declining to Assets=8184577557.51 (2015-09-30)",
+          "source_accession_no": "0001581068-15-000092",
+          "location": "10-Q balance sheets"
+        }
+      ]
+    },
+    {
+      "item_id": "CL7",
+      "question": "Does the filing chronology show irregularities (late filings/NT forms, amendments, unusual 8-K frequency)?",
+      "finding": "no_flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "10-K filing_date=2015-02-19 (accession 0001581068-15-000028), filed within normal post-fiscal-year-end window",
+          "source_accession_no": "0001581068-15-000028",
+          "location": "filing_chronology"
+        },
+        {
+          "quote": "8-K/A filing_date=2014-05-08 shortly after 8-K filing_date=2014-05-07; DEFR14A filing_date=2015-04-15 shortly after DEF 14A filing_date=2014-04-10/2015-04-14",
+          "source_accession_no": "N/A",
+          "location": "filing_chronology"
+        }
+      ]
+    },
+    {
+      "item_id": "CL8",
+      "question": "Is the provided data sufficient in coverage and length for the above assessments?",
+      "finding": "flag",
+      "confidence": "high",
+      "evidence": [
+        {
+          "quote": "No 'Revenues', 'CostOfGoodsSold', 'InventoryNet', 'IntangibleAssets', or allowance/reserve line items appear anywhere in the provided financial_series_point_in_time dataset, limiting analysis of CL1, CL2, CL4, and CL6.",
+          "source_accession_no": "0001581068-15-000028",
+          "location": "Overall data set coverage"
+        }
+      ]
+    }
+  ],
+  "misstatement_probability": 20,
+  "mechanism_hypotheses": [],
+  "overall": {
+    "risk_tier": "watch",
+    "top_signals": [
+      "Material data gaps (no revenue, COGS, inventory, intangible asset, or allowance/reserve detail) prevent full assessment of several standard misstatement-risk checks (CL1, CL2, CL4, CL6)",
+      "Net income vs. operating cash flow divergence appears fully explained by large, stable depreciation & amortization charges typical of a REIT structure (e.g., DD&A=438.5M vs NI=-138.1M in FY2012; DD&A=379.9M vs NI=114.1M in FY2014), not indicative of earnings manipulation",
+      "Earnings trajectory shows genuine volatility (swing from net losses in 2012-2013 to net income in 2014-2015) rather than suspicious smoothness",
+      "Liabilities and total Assets declined roughly in tandem (Liabilities 6.28B→5.67B; Assets 8.25B→8.18B, 2012-12-31 to 2015-09-30), consistent with deleveraging rather than reserve manipulation, though lack of revenue data prevents confirming this against business growth",
+      "Filing chronology (S-11 IPO Oct-2013, subsequent 10-Ks/10-Qs, routine 8-Ks/Form 4s, mandatory IRANNOTICE filings) shows no late filings, NT forms, or restatements; minor administrative amendments (8-K/A, DEFR14A) are not unusual"
+    ]
+  }
+}
