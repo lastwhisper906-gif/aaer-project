@@ -1,0 +1,122 @@
+{
+  "draws_used": [
+    1,
+    2,
+    3
+  ],
+  "control_median_cmed": 30,
+  "identity_scores_fr": {
+    "T19": 58,
+    "T22": 55,
+    "T02": 40,
+    "T23": 58,
+    "T26": 65,
+    "T24": 72,
+    "T04": 74,
+    "T29": 55,
+    "T20": 20
+  },
+  "perturbed_by_draw": {
+    "draw_1": {
+      "T19": 65,
+      "T22": 52,
+      "T02": 55,
+      "T23": 45,
+      "T26": 58,
+      "T24": 62,
+      "T04": 55,
+      "T29": 42,
+      "T20": 20
+    },
+    "draw_2": {
+      "T19": 76,
+      "T22": 55,
+      "T02": 45,
+      "T23": 45,
+      "T26": 58,
+      "T24": 60,
+      "T04": 48,
+      "T29": 60,
+      "T20": 20
+    },
+    "draw_3": {
+      "T19": 80,
+      "T22": 60,
+      "T02": 55,
+      "T23": 45,
+      "T26": 58,
+      "T24": 60,
+      "T04": 50,
+      "T29": 58,
+      "T20": 25
+    }
+  },
+  "per_draw_dominance": {
+    "draw_1": {
+      "crossed": 3,
+      "cases": [
+        "T02",
+        "T29",
+        "T20"
+      ],
+      "fires_R3": false
+    },
+    "draw_2": {
+      "crossed": 4,
+      "cases": [
+        "T19",
+        "T02",
+        "T04",
+        "T20"
+      ],
+      "fires_R3": false
+    },
+    "draw_3": {
+      "crossed": 4,
+      "cases": [
+        "T19",
+        "T02",
+        "T04",
+        "T20"
+      ],
+      "fires_R3": false
+    }
+  },
+  "median_perturbed": {
+    "T19": 76,
+    "T22": 55,
+    "T02": 55,
+    "T23": 45,
+    "T26": 58,
+    "T24": 60,
+    "T04": 50,
+    "T29": 58,
+    "T20": 20
+  },
+  "per_case_sigma_pp": {
+    "T19": 6.3,
+    "T22": 3.3,
+    "T02": 4.7,
+    "T23": 0.0,
+    "T26": 0.0,
+    "T24": 0.9,
+    "T04": 2.9,
+    "T29": 8.1,
+    "T20": 2.4
+  },
+  "median_delta_dominance": {
+    "crossed": 4,
+    "cases": [
+      "T19",
+      "T02",
+      "T04",
+      "T20"
+    ],
+    "fires_R3": false,
+    "n": 9
+  },
+  "mean_sigma_pp": 3.2,
+  "conclusion_rule": "median-dominance ≥5/9 → R3 supersede; ≤4/9 → R4 (W2_PERTURB_REDRAW_PLAN §3)",
+  "verdict": "R4 유지 (median-dominance ≤4/9) + 재추첨 안정성 밴드 보고",
+  "note": "점수 기반 재계산, 채점자 0. identity·cmed 동결 main. wave-1 draw σ≈12pp 참조 — per-case σ 밴드 병기. draw-1 published 불변(E3=안정성/규칙 재판정)."
+}
