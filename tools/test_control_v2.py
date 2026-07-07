@@ -86,3 +86,9 @@ def test_sic_tier_ordering():
     assert sic_tier(spec, "3651") == 1          # 보충 1순위
     assert sic_tier(spec, "3576") == 4          # 보충 4순위
     assert N_SELECT == 3 and N_PIT_V2 == 40
+
+
+# ── (3d) 프로브 러너 병렬화 회귀 방지 ────────────────────────────────────
+def test_probe_runner_is_concurrent():
+    src = (Path(__file__).parents[1] / "pipeline/probe_runner.py").read_text(encoding="utf-8")
+    assert "ThreadPoolExecutor" in src and "--concurrency" in src

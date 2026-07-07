@@ -11,6 +11,7 @@
 from __future__ import annotations
 
 import argparse
+import concurrent.futures
 import datetime
 import json
 import shlex
@@ -80,13 +81,18 @@ def main() -> int:
     ap.add_argument("--recognition", action="store_true")
     ap.add_argument("--verbatim", action="store_true")
     ap.add_argument("--cases", default=str(bp.EVALUATEE_CASES))
+    ap.add_argument("--concurrency", type=int, default=3,
+                    help="RP-09 3d: 대조군 16-24건 확장 대비 — runner.py와 동일 패턴")
+    ap.add_argument("--out-root", default=str(REPO_ROOT / "scoring" / "probe_results"),
+                    help="RP-09 3b: v2 대조군 프로브는 별도 루트 (I3 — 기존 "
+                         "probe_results 동결 경로에 추가 기입 금지)")
     args = ap.parse_args()
 
     cli_client.assert_no_metered_credentials()
     cli_client.require_clean_tree()
 
     cases = json.loads(Path(args.cases).read_text(encoding="utf-8"))["cases"]
-    out_root = REPO_ROOT / "scoring" / "probe_results"
+    out_root = Path(args.out_root)
     ts = datetime.datetime.now(datetime.timezone.utc).strftime("%Y%m%dT%H%M%SZ")
     log_dir = REPO_ROOT / "logs" / f"run_{ts}"
     resume_cmd = "python pipeline/probe_runner.py " + " ".join(
@@ -98,11 +104,17 @@ def main() -> int:
     try:
         for kind in kinds:
             out = out_root / kind
-            for case in cases:  # 순차 (프로브는 8건 — 동시성 불요)
-                res = probe_case(kind, case, out, log_dir)
-                if res["status"].startswith("FAIL"):
-                    failures += 1
-                print(f"[{kind}] {res['case_id']}: {res['status']}", flush=True)
+            # RP-09 3d: 병렬화 (runner.py와 동일 ThreadPool 패턴 — 호출 격리는
+            # cli_client가 호출 단위로 보장, 케이스 간 상태 공유 없음)
+            with concurrent.futures.ThreadPoolExecutor(
+                    max_workers=args.concurrency) as pool:
+                futs = {pool.submit(probe_case, kind, case, out, log_dir): case
+                        for case in cases}
+                for fut in concurrent.futures.as_completed(futs):
+                    res = fut.result()
+                    if res["status"].startswith("FAIL"):
+                        failures += 1
+                    print(f"[{kind}] {res['case_id']}: {res['status']}", flush=True)
     except cli_client.RateLimitedError as e:
         print(f"\nHALT — {e}", file=sys.stderr)
         print(f"재개 명령 (완료분 자동 skip):\n  {resume_cmd}")

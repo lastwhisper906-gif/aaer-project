@@ -53,7 +53,7 @@ def stub(tmp_path, monkeypatch):
     monkeypatch.setenv("PATH", f"{bin_dir}{os.pathsep}{os.environ['PATH']}")
     monkeypatch.setenv("STUB_DIR", str(stub_dir))
     monkeypatch.delenv("ANTHROPIC_API_KEY", raising=False)
-    monkeypatch.setattr(gr, "answer_key", lambda oid: {"group": "treatment",
+    monkeypatch.setattr(gr, "answer_key", lambda oid, *a, **k: {"group": "treatment",
                                                        "scheme_summary": "s",
                                                        "scheme_type": ["x"],
                                                        "manipulation_period": [None, None],

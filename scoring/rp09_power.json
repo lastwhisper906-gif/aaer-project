@@ -1,0 +1,114 @@
+{
+  "committed_before_any_v2_control_scores": true,
+  "seed": 20260707,
+  "alpha": 0.05,
+  "sep_threshold_pp": 10.0,
+  "treatment_scores_frozen": {
+    "case_01": 55,
+    "case_02": 60,
+    "case_03": 42,
+    "case_06": 28,
+    "case_08": 78,
+    "case_09": 65,
+    "case_12": 68,
+    "case_13": 55
+  },
+  "rp01_control_observed": {
+    "median": 31.0,
+    "sd": 13.08
+  },
+  "inside_noise_sd_used": 6.3,
+  "min_achievable_p_8_vs_nc": {
+    "8": "7.77e-05",
+    "16": "1.36e-06",
+    "20": "3.22e-07",
+    "24": "9.51e-08"
+  },
+  "fpr_resolution": {
+    "8": {
+      "granularity_pct": 12.5,
+      "ci95_upper_if_zero_fp_pct": 31.2
+    },
+    "16": {
+      "granularity_pct": 6.2,
+      "ci95_upper_if_zero_fp_pct": 17.1
+    },
+    "20": {
+      "granularity_pct": 5.0,
+      "ci95_upper_if_zero_fp_pct": 13.9
+    },
+    "24": {
+      "granularity_pct": 4.2,
+      "ci95_upper_if_zero_fp_pct": 11.7
+    }
+  },
+  "monte_carlo_power": {
+    "rp01_observed": {
+      "ctrl_mu": 31.0,
+      "ctrl_sd": 13.08,
+      "n_c=8": {
+        "p_lt_alpha_rate": 0.983,
+        "sep_below_10pp_rate": 0.003,
+        "sep_mean": 27.3,
+        "sep_sd": 6.4
+      },
+      "n_c=16": {
+        "p_lt_alpha_rate": 1.0,
+        "sep_below_10pp_rate": 0.003,
+        "sep_mean": 27.1,
+        "sep_sd": 5.13
+      },
+      "n_c=24": {
+        "p_lt_alpha_rate": 1.0,
+        "sep_below_10pp_rate": 0.0,
+        "sep_mean": 27.2,
+        "sep_sd": 4.47
+      }
+    },
+    "conservative_noisier_controls": {
+      "ctrl_mu": 36.0,
+      "ctrl_sd": 18.08,
+      "n_c=8": {
+        "p_lt_alpha_rate": 0.703,
+        "sep_below_10pp_rate": 0.072,
+        "sep_mean": 22.3,
+        "sep_sd": 8.36
+      },
+      "n_c=16": {
+        "p_lt_alpha_rate": 0.92,
+        "sep_below_10pp_rate": 0.028,
+        "sep_mean": 22.5,
+        "sep_sd": 6.44
+      },
+      "n_c=24": {
+        "p_lt_alpha_rate": 0.958,
+        "sep_below_10pp_rate": 0.022,
+        "sep_mean": 22.3,
+        "sep_sd": 5.72
+      }
+    },
+    "clean_controls": {
+      "ctrl_mu": 26.0,
+      "ctrl_sd": 8.08,
+      "n_c=8": {
+        "p_lt_alpha_rate": 1.0,
+        "sep_below_10pp_rate": 0.0,
+        "sep_mean": 32.6,
+        "sep_sd": 4.57
+      },
+      "n_c=16": {
+        "p_lt_alpha_rate": 1.0,
+        "sep_below_10pp_rate": 0.0,
+        "sep_mean": 32.3,
+        "sep_sd": 4.16
+      },
+      "n_c=24": {
+        "p_lt_alpha_rate": 1.0,
+        "sep_below_10pp_rate": 0.0,
+        "sep_mean": 32.5,
+        "sep_sd": 3.99
+      }
+    }
+  },
+  "note": "mann_whitney_exact_fast = 몬테카를로 순열 (n_perm=2000, seed 고정) — 실채점 검정은 동결 mann_whitney_exact(전수)를 그대로 사용"
+}

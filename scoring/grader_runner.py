@@ -72,9 +72,9 @@ Cap at 1 if risk_tier contradicts the declared consistency rule \
 (b) mentions facts only public after the cutoff (revelation, enforcement, outcome)."""
 
 
-def answer_key(original_id: str) -> dict:
+def answer_key(original_id: str, candidates_path: str = "data/candidates/candidates.json") -> dict:
     cands = {c["case_id"]: c for c in json.loads(
-        (REPO / "data/candidates/candidates.json").read_text(encoding="utf-8"))["candidates"]}
+        (REPO / candidates_path).read_text(encoding="utf-8"))["candidates"]}
     c = cands[original_id]
     genre = None
     genre_table = (REPO / "scoring/genre_tags.md").read_text(encoding="utf-8")
@@ -104,11 +104,12 @@ def _existing_grade_valid(path: Path) -> bool:
 
 
 def grade_one(neutral: str, original_id: str, output: dict,
-              out_dir: Path, log_dir: Path, mapping_path_note: str) -> str:
+              out_dir: Path, log_dir: Path, mapping_path_note: str,
+              candidates_path: str = "data/candidates/candidates.json") -> str:
     out_path = out_dir / f"{neutral}.json"
     if _existing_grade_valid(out_path):
         return "skip (멱등)"
-    key = answer_key(original_id)
+    key = answer_key(original_id, candidates_path)
     user_payload = json.dumps({"answer_key": key, "evaluatee_output": output},
                               ensure_ascii=False)
     used_model, r = GRADER_PIN, None
@@ -148,6 +149,8 @@ def main() -> int:
     ap = argparse.ArgumentParser()
     ap.add_argument("--runs", required=True)
     ap.add_argument("--out", required=True)
+    ap.add_argument("--candidates", default="data/candidates/candidates.json",
+                    help="RP-09: v2 대조군은 data/candidates/candidates_v2_controls.json")
     ap.add_argument("--mapping", default="scoring/id_mapping.json",
                     help="파일럿은 scoring/id_mapping_pilot.json")
     args = ap.parse_args()
@@ -169,7 +172,8 @@ def main() -> int:
         for run_file in sorted((REPO / args.runs).glob("case_*.json")):
             output = json.loads(run_file.read_text(encoding="utf-8"))
             neutral = output["case_id"]
-            status = grade_one(neutral, mapping[neutral], output, out_dir, log_dir, note)
+            status = grade_one(neutral, mapping[neutral], output, out_dir, log_dir, note,
+                               candidates_path=args.candidates)
             if status.startswith("FAIL"):
                 failures += 1
             print(f"{neutral}: {status}", flush=True)
