@@ -1,0 +1,244 @@
+{
+ "plan": "analysis/ANALYSIS_PLAN.md (사전 커밋)",
+ "seed": 20260707,
+ "incomplete_cases": [],
+ "primary": {
+  "frame": "primary: original(8) vs original(22)",
+  "n_fraud": 8,
+  "n_control": 22,
+  "fraud_scores": [
+   28.0,
+   60.0,
+   42.0,
+   78.0,
+   65.0,
+   55.0,
+   55.0,
+   68.0
+  ],
+  "control_scores": [
+   30.0,
+   22.0,
+   30.0,
+   40.0,
+   18.0,
+   30.0,
+   42.0,
+   45.0,
+   28.0,
+   42.0,
+   33.0,
+   33.0,
+   42.0,
+   65.0,
+   42.0,
+   15.0,
+   55.0,
+   32.0,
+   30.0,
+   45.0,
+   55.0,
+   30.0
+  ],
+  "mean_diff": 19.83,
+  "median_fraud": 57.5,
+  "median_control": 33.0,
+  "perm_p_one_sided": 0.00114,
+  "fisher_2x2": {
+   "tp": 6,
+   "fn": 2,
+   "fp": 3,
+   "tn": 19,
+   "threshold": 50,
+   "p_one_sided": 0.003145
+  },
+  "cliffs_delta": 0.648,
+  "rank_biserial_note": "rank-biserial = Cliff's delta (동치)",
+  "auc": 0.8239,
+  "auc_boot95": [
+   0.599,
+   0.983
+  ],
+  "auc_stability_label": "UNSTABLE at N=30 — 점 플롯이 1차 시각화",
+  "fpr": {
+   "fp": 3,
+   "n": 22,
+   "rule": "Clopper-Pearson 95%",
+   "lo_pct": 2.9,
+   "upper95_pct": 34.9
+  }
+ },
+ "secondary": {
+  "frame": "secondary: perturbed-fraud vs original-control (J14)",
+  "n_fraud": 8,
+  "n_control": 22,
+  "fraud_scores": [
+   58.0,
+   45.0,
+   45.0,
+   55.0,
+   55.0,
+   42.0,
+   45.0,
+   68.0
+  ],
+  "control_scores": [
+   30.0,
+   22.0,
+   30.0,
+   40.0,
+   18.0,
+   30.0,
+   42.0,
+   45.0,
+   28.0,
+   42.0,
+   33.0,
+   33.0,
+   42.0,
+   65.0,
+   42.0,
+   15.0,
+   55.0,
+   32.0,
+   30.0,
+   45.0,
+   55.0,
+   30.0
+  ],
+  "mean_diff": 15.08,
+  "median_fraud": 50.0,
+  "median_control": 33.0,
+  "perm_p_one_sided": 0.00207,
+  "fisher_2x2": {
+   "tp": 4,
+   "fn": 4,
+   "fp": 3,
+   "tn": 19,
+   "threshold": 50,
+   "p_one_sided": 0.059613
+  },
+  "cliffs_delta": 0.727,
+  "rank_biserial_note": "rank-biserial = Cliff's delta (동치)",
+  "auc": 0.8636,
+  "auc_boot95": [
+   0.722,
+   0.969
+  ],
+  "auc_stability_label": "UNSTABLE at N=30 — 점 플롯이 1차 시각화",
+  "fpr": {
+   "fp": 3,
+   "n": 22,
+   "rule": "Clopper-Pearson 95%",
+   "lo_pct": 2.9,
+   "upper95_pct": 34.9
+  }
+ },
+ "baselines": {
+  "beneish_m": {
+   "n_computable": 22,
+   "n_fraud": 6,
+   "n_control": 16,
+   "own_separation": {
+    "mean_diff": 0.009,
+    "perm_p": 0.498245,
+    "auc": 0.5104
+   },
+   "spearman_rho_vs_llm": -0.075,
+   "r2_residual_test": {
+    "resid_mean_diff": 16.18,
+    "perm_p": 0.00529
+   },
+   "r2_fires": false
+  },
+  "dechow_f": {
+   "n_computable": 22,
+   "n_fraud": 6,
+   "n_control": 16,
+   "own_separation": {
+    "mean_diff": 0.128,
+    "perm_p": 0.267897,
+    "auc": 0.5729
+   },
+   "spearman_rho_vs_llm": -0.144,
+   "r2_residual_test": {
+    "resid_mean_diff": 22.04,
+    "perm_p": 0.00097
+   },
+   "r2_fires": false
+  }
+ },
+ "r3_decomposition": {
+  "cases": [
+   {
+    "ticker": "SCOR",
+    "delta_mean": 11.8,
+    "orig_minus_ctrl_median": 22.0,
+    "counts_toward_r3": true
+   },
+   {
+    "ticker": "OFIX",
+    "delta_mean": 16.6,
+    "orig_minus_ctrl_median": 27.0,
+    "counts_toward_r3": true
+   },
+   {
+    "ticker": "LOGI",
+    "delta_mean": -4.2,
+    "orig_minus_ctrl_median": 9.0,
+    "counts_toward_r3": false
+   },
+   {
+    "ticker": "MON",
+    "delta_mean": -15.8,
+    "orig_minus_ctrl_median": -5.0,
+    "counts_toward_r3": true
+   },
+   {
+    "ticker": "HTZ",
+    "delta_mean": 30.2,
+    "orig_minus_ctrl_median": 45.0,
+    "counts_toward_r3": true
+   },
+   {
+    "ticker": "ICON",
+    "delta_mean": 12.4,
+    "orig_minus_ctrl_median": 32.0,
+    "counts_toward_r3": false
+   },
+   {
+    "ticker": "KHC",
+    "delta_mean": -2.0,
+    "orig_minus_ctrl_median": 35.0,
+    "counts_toward_r3": false
+   },
+   {
+    "ticker": "MRVL",
+    "delta_mean": 15.4,
+    "orig_minus_ctrl_median": 22.0,
+    "counts_toward_r3": true
+   }
+  ],
+  "n_counting": 5,
+  "fires_at": ">=5/8"
+ },
+ "conclusion_rules": {
+  "per_frame": [
+   {
+    "frame": "primary",
+    "R1_null": false,
+    "R2_mechanical": false,
+    "R3_memorization": true,
+    "fired": "R3"
+   },
+   {
+    "frame": "secondary",
+    "R1_null": false,
+    "R2_mechanical": false,
+    "R3_memorization": true,
+    "fired": "R3"
+   }
+  ],
+  "headline_rule_fired": "R3"
+ }
+}

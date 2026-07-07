@@ -1,0 +1,403 @@
+{
+ "T07": {
+  "ticker": "MON",
+  "error": null,
+  "beneish_missing": [],
+  "dechow_missing": [
+   "rsst_acc"
+  ],
+  "notes": [
+   "F-score: t-2 총자산 결측 → avg assets(t-1) = TA(t-1) 근사",
+   "F-score: t-2 AR 결측 → t-1 현금매출 = 매출 근사"
+  ],
+  "fye_used": [
+   "2010-08-31",
+   "2009-08-31",
+   "2008-08-31"
+  ]
+ },
+ "T11": {
+  "ticker": "OFIX",
+  "error": null,
+  "beneish_missing": [],
+  "dechow_missing": [],
+  "notes": [],
+  "fye_used": [
+   "2012-12-31",
+   "2011-12-31",
+   "2010-12-31"
+  ]
+ },
+ "T12": {
+  "ticker": "LOGI",
+  "error": null,
+  "beneish_missing": [],
+  "dechow_missing": [],
+  "notes": [
+   "DEPI: PP&E gross 미보고 → net 대체"
+  ],
+  "fye_used": [
+   "2013-03-31",
+   "2012-03-31",
+   "2011-03-31"
+  ]
+ },
+ "T13": {
+  "ticker": "HTZ",
+  "error": null,
+  "beneish_missing": [
+   "GMI",
+   "AQI",
+   "DEPI",
+   "LVGI"
+  ],
+  "dechow_missing": [
+   "rsst_acc"
+  ],
+  "notes": [],
+  "fye_used": [
+   "2013-12-31",
+   "2012-12-31",
+   "2011-12-31"
+  ]
+ },
+ "T16": {
+  "ticker": "ICON",
+  "error": null,
+  "beneish_missing": [
+   "GMI"
+  ],
+  "dechow_missing": [],
+  "notes": [],
+  "fye_used": [
+   "2014-12-31",
+   "2013-12-31",
+   "2012-12-31"
+  ]
+ },
+ "T17": {
+  "ticker": "MRVL",
+  "error": null,
+  "beneish_missing": [],
+  "dechow_missing": [],
+  "notes": [],
+  "fye_used": [
+   "2015-01-31",
+   "2014-02-01",
+   "2013-02-02"
+  ]
+ },
+ "T21": {
+  "ticker": "SCOR",
+  "error": null,
+  "beneish_missing": [],
+  "dechow_missing": [],
+  "notes": [],
+  "fye_used": [
+   "2014-12-31",
+   "2013-12-31",
+   "2012-12-31"
+  ]
+ },
+ "T28": {
+  "ticker": "KHC",
+  "error": null,
+  "beneish_missing": [],
+  "dechow_missing": [],
+  "notes": [],
+  "fye_used": [
+   "2017-12-30",
+   "2016-12-31",
+   "2016-01-03"
+  ]
+ },
+ "V07": {
+  "ticker": "TDY",
+  "error": null,
+  "beneish_missing": [],
+  "dechow_missing": [],
+  "notes": [],
+  "fye_used": [
+   "2012-12-30",
+   "2012-01-01",
+   "2011-01-02"
+  ]
+ },
+ "V21": {
+  "ticker": "GIS",
+  "error": null,
+  "beneish_missing": [],
+  "dechow_missing": [],
+  "notes": [],
+  "fye_used": [
+   "2018-05-27",
+   "2017-05-28",
+   "2016-05-29"
+  ]
+ },
+ "V22": {
+  "ticker": "CPB",
+  "error": null,
+  "beneish_missing": [],
+  "dechow_missing": [],
+  "notes": [],
+  "fye_used": [
+   "2018-07-29",
+   "2017-07-30",
+   "2016-07-31"
+  ]
+ },
+ "V15": {
+  "ticker": "FSLR",
+  "error": null,
+  "beneish_missing": [],
+  "dechow_missing": [],
+  "notes": [],
+  "fye_used": [
+   "2014-12-31",
+   "2013-12-31",
+   "2012-12-31"
+  ]
+ },
+ "V19": {
+  "ticker": "EXPO",
+  "error": null,
+  "beneish_missing": [
+   "GMI"
+  ],
+  "dechow_missing": [],
+  "notes": [],
+  "fye_used": [
+   "2016-01-01",
+   "2015-01-02",
+   "2014-01-03"
+  ]
+ },
+ "V06": {
+  "ticker": "MMSI",
+  "error": null,
+  "beneish_missing": [],
+  "dechow_missing": [],
+  "notes": [],
+  "fye_used": [
+   "2012-12-31",
+   "2011-12-31",
+   "2010-12-31"
+  ]
+ },
+ "V17": {
+  "ticker": "BHE",
+  "error": null,
+  "beneish_missing": [],
+  "dechow_missing": [
+   "rsst_acc"
+  ],
+  "notes": [],
+  "fye_used": [
+   "2014-12-31",
+   "2013-12-31",
+   "2012-12-31"
+  ]
+ },
+ "V05": {
+  "ticker": "ARAY",
+  "error": null,
+  "beneish_missing": [
+   "DSRI"
+  ],
+  "dechow_missing": [
+   "ch_rec",
+   "ch_cs"
+  ],
+  "notes": [
+   "F-score: t-2 총자산 결측 → avg assets(t-1) = TA(t-1) 근사",
+   "F-score: t-2 AR 결측 → t-1 현금매출 = 매출 근사"
+  ],
+  "fye_used": [
+   "2012-06-30",
+   "2011-06-30",
+   "2010-06-30"
+  ]
+ },
+ "V09": {
+  "ticker": "GRMN",
+  "error": null,
+  "beneish_missing": [],
+  "dechow_missing": [
+   "rsst_acc"
+  ],
+  "notes": [],
+  "fye_used": [
+   "2012-12-29",
+   "2011-12-31",
+   "2010-12-25"
+  ]
+ },
+ "V12": {
+  "ticker": "IDCC",
+  "error": null,
+  "beneish_missing": [
+   "GMI"
+  ],
+  "dechow_missing": [],
+  "notes": [],
+  "fye_used": [
+   "2014-12-31",
+   "2013-12-31",
+   "2012-12-31"
+  ]
+ },
+ "V10": {
+  "ticker": "R",
+  "error": null,
+  "beneish_missing": [],
+  "dechow_missing": [],
+  "notes": [],
+  "fye_used": [
+   "2013-12-31",
+   "2012-12-31",
+   "2011-12-31"
+  ]
+ },
+ "V16": {
+  "ticker": "AMKR",
+  "error": null,
+  "beneish_missing": [],
+  "dechow_missing": [],
+  "notes": [],
+  "fye_used": [
+   "2014-12-31",
+   "2013-12-31",
+   "2012-12-31"
+  ]
+ },
+ "V11": {
+  "ticker": "UPBD",
+  "error": null,
+  "beneish_missing": [
+   "AQI",
+   "LVGI"
+  ],
+  "dechow_missing": [
+   "rsst_acc"
+  ],
+  "notes": [],
+  "fye_used": [
+   "2013-12-31",
+   "2012-12-31",
+   "2011-12-31"
+  ]
+ },
+ "V20": {
+  "ticker": "LQDT",
+  "error": null,
+  "beneish_missing": [
+   "GMI"
+  ],
+  "dechow_missing": [],
+  "notes": [],
+  "fye_used": [
+   "2015-09-30",
+   "2014-09-30",
+   "2013-09-30"
+  ]
+ },
+ "V03": {
+  "ticker": "CE",
+  "error": null,
+  "beneish_missing": [],
+  "dechow_missing": [
+   "rsst_acc"
+  ],
+  "notes": [
+   "DEPI: PP&E gross 미보고 → net 대체"
+  ],
+  "fye_used": [
+   "2010-12-31",
+   "2009-12-31",
+   "2008-12-31"
+  ]
+ },
+ "V01": {
+  "ticker": "APD",
+  "error": null,
+  "beneish_missing": [],
+  "dechow_missing": [],
+  "notes": [],
+  "fye_used": [
+   "2010-09-30",
+   "2009-09-30",
+   "2008-09-30"
+  ]
+ },
+ "V18": {
+  "ticker": "FORR",
+  "error": null,
+  "beneish_missing": [],
+  "dechow_missing": [],
+  "notes": [],
+  "fye_used": [
+   "2014-12-31",
+   "2013-12-31",
+   "2012-12-31"
+  ]
+ },
+ "V04": {
+  "ticker": "MASI",
+  "error": null,
+  "beneish_missing": [],
+  "dechow_missing": [],
+  "notes": [],
+  "fye_used": [
+   "2012-12-29",
+   "2011-12-31",
+   "2011-01-01"
+  ]
+ },
+ "V02": {
+  "ticker": "MOS",
+  "error": "컷오프 전 연차 XBRL 기간 1개 — 스크린 계산 불능 (연차 2개 필요)",
+  "beneish_missing": null,
+  "dechow_missing": null,
+  "notes": [],
+  "fye_used": [
+   "2010-05-31"
+  ]
+ },
+ "V08": {
+  "ticker": "CIEN",
+  "error": null,
+  "beneish_missing": [],
+  "dechow_missing": [],
+  "notes": [],
+  "fye_used": [
+   "2012-10-31",
+   "2011-10-31",
+   "2010-10-31"
+  ]
+ },
+ "V13": {
+  "ticker": "RCKY",
+  "error": null,
+  "beneish_missing": [],
+  "dechow_missing": [],
+  "notes": [],
+  "fye_used": [
+   "2014-12-31",
+   "2013-12-31",
+   "2012-12-31"
+  ]
+ },
+ "V14": {
+  "ticker": "DLB",
+  "error": null,
+  "beneish_missing": [],
+  "dechow_missing": [],
+  "notes": [],
+  "fye_used": [
+   "2014-09-26",
+   "2013-09-27",
+   "2012-09-28"
+  ]
+ }
+}
