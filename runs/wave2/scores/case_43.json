@@ -1,0 +1,264 @@
+{
+  "case_id": "case_43",
+  "run_id": "original-case_43-r1",
+  "model": "claude-sonnet-5",
+  "pipeline_version": "7e33dc2dd3d7327ee20538fa031cbffbc7237d0c",
+  "run_timestamp": "2026-07-07T11:52:31.535236+00:00",
+  "documents_used": [
+    {
+      "accession_no": "0000950123-09-028453",
+      "form_type": "10-Q",
+      "filing_date": "2009-07-31"
+    },
+    {
+      "accession_no": "0000950123-09-055534",
+      "form_type": "10-Q",
+      "filing_date": "2009-10-30"
+    },
+    {
+      "accession_no": "0000950123-10-018307",
+      "form_type": "10-K",
+      "filing_date": "2010-02-26"
+    },
+    {
+      "accession_no": "0000950123-10-074926",
+      "form_type": "10-Q",
+      "filing_date": "2010-08-09"
+    },
+    {
+      "accession_no": "0000950123-10-101722",
+      "form_type": "10-Q",
+      "filing_date": "2010-11-05"
+    }
+  ],
+  "checklist": [
+    {
+      "item_id": "CL1",
+      "question": "Did receivables grow materially faster than revenue across consecutive periods?",
+      "finding": "flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "AccountsReceivableNetCurrent=702712000 (2009-09-30) -> 1002974000 (2010-09-30), +42.7%",
+          "source_accession_no": "0000950123-10-101722",
+          "location": "10-Q balance sheet, AccountsReceivableNetCurrent"
+        },
+        {
+          "quote": "SalesRevenueNet=789200000 (2009-07-01/2009-09-30) -> 1069261000 (2010-07-01/2010-09-30), +35.5%",
+          "source_accession_no": "0000950123-10-101722",
+          "location": "10-Q income statement, SalesRevenueNet"
+        }
+      ]
+    },
+    {
+      "item_id": "CL2",
+      "question": "Did non-current 'soft' assets (intangibles, other assets, capitalized items) grow materially faster than the business overall?",
+      "finding": "flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "Goodwill=164078000 (2010-06-30) -> 463427000 (2010-09-30), +182% in a single quarter",
+          "source_accession_no": "0000950123-10-101722",
+          "location": "10-Q balance sheet, Goodwill"
+        },
+        {
+          "quote": "OtherAssetsNoncurrent=253834000 (2010-06-30) -> 396623000 (2010-09-30), +56% in a single quarter",
+          "source_accession_no": "0000950123-10-101722",
+          "location": "10-Q balance sheet, OtherAssetsNoncurrent"
+        },
+        {
+          "quote": "SalesRevenueNet=905058000 (2010-04-01/2010-06-30) -> 1069261000 (2010-07-01/2010-09-30), +18.1%, far slower than goodwill/other-asset growth",
+          "source_accession_no": "0000950123-10-101722",
+          "location": "10-Q income statement, SalesRevenueNet"
+        }
+      ]
+    },
+    {
+      "item_id": "CL3",
+      "question": "Is there a persistent divergence between net income and operating cash flow?",
+      "finding": "flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "NetIncomeLoss=-85546000 (2009-01-01 to 2009-12-31) while NetCashProvidedByUsedInOperatingActivities=1616972000 (2009-01-01 to 2009-12-31)",
+          "source_accession_no": "0000950123-10-018307",
+          "location": "10-K, Statements of Operations and Cash Flows"
+        },
+        {
+          "quote": "NetIncomeLoss=475737000 (2008 annual) vs NetCashProvidedByUsedInOperatingActivities=1462824000 (2008 annual)",
+          "source_accession_no": "0000950123-10-018307",
+          "location": "10-K, Statements of Operations and Cash Flows"
+        },
+        {
+          "quote": "DepreciationAndAmortization=668415000 (2009 annual) only partially explains the ~$1.7B gap between net loss and operating cash flow",
+          "source_accession_no": "0000950123-10-018307",
+          "location": "10-K, Cash Flow reconciliation"
+        }
+      ]
+    },
+    {
+      "item_id": "CL4",
+      "question": "Do inventory levels or gross margins show trends inconsistent with revenue?",
+      "finding": "no_flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "InventoryNet=150118000 (2008-12-31) -> 100819000 (2009-12-31) -> 142973000 (2010-09-30), tracking the revenue downturn and recovery",
+          "source_accession_no": "0000950123-10-101722",
+          "location": "10-Q/10-K balance sheet, InventoryNet"
+        },
+        {
+          "quote": "CostOfGoodsAndServicesSold=2012352000 and SalesRevenueNet=3692356000 imply a 54.5% cost ratio (2009 annual), vs CostOfGoodsAndServicesSold=625561000 and SalesRevenueNet=1069261000 implying 58.5% (Q3 2010) - modest margin movement consistent with cyclical recovery, not a red flag",
+          "source_accession_no": "0000950123-10-018307",
+          "location": "10-K/10-Q income statement, CostOfGoodsAndServicesSold and SalesRevenueNet"
+        }
+      ]
+    },
+    {
+      "item_id": "CL5",
+      "question": "Is the earnings trajectory unusually smooth relative to the volatility of revenue and cash flow?",
+      "finding": "no_flag",
+      "confidence": "high",
+      "evidence": [
+        {
+          "quote": "NetIncomeLoss=176413000 (Q2 2008) -> -192986000 (Q2 2009) -> 43621000 (Q2 2010) -> -39607000 (Q3 2010): highly volatile, mirroring revenue and cash-flow swings, not smoothed",
+          "source_accession_no": "0000950123-10-074926",
+          "location": "10-Q income statements, NetIncomeLoss"
+        }
+      ]
+    },
+    {
+      "item_id": "CL6",
+      "question": "Did liability, allowance, or reserve balances decline (or fail to grow) despite growing business activity?",
+      "finding": "flag",
+      "confidence": "low",
+      "evidence": [
+        {
+          "quote": "AccruedLiabilitiesCurrent=367393000 (2008-12-31) vs AccruedLiabilitiesCurrent=364752000 (2010-09-30) - essentially flat despite revenue recovering from trough",
+          "source_accession_no": "0000950123-10-101722",
+          "location": "10-Q balance sheet, AccruedLiabilitiesCurrent"
+        },
+        {
+          "quote": "LongTermDebtCurrent=163000 (2009-12-31) jumped to 1442714000 (2010-09-30), a large reclassification of debt into current liabilities",
+          "source_accession_no": "0000950123-10-101722",
+          "location": "10-Q balance sheet, LongTermDebtCurrent"
+        }
+      ]
+    },
+    {
+      "item_id": "CL7",
+      "question": "Does the filing chronology show irregularities (late filings/NT forms, amendments, unusual 8-K frequency)?",
+      "finding": "flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "10-K/A filed 2002-06-27, 10-K/A filed 2003-04-30, 10-K/A filed 2005-05-02, 10-K/A filed 2009-03-31 - repeated annual-report amendments over the company's history",
+          "source_accession_no": "n/a",
+          "location": "filing_chronology list"
+        },
+        {
+          "quote": "Multiple CORRESP/UPLOAD pairs indicating SEC staff comment-letter review cycles in 2009-2010 (CORRESP 2009-04-28, UPLOAD 2009-06-22, CORRESP 2010-05-24, UPLOAD 2010-06-08, CORRESP 2010-07-14, CORRESP 2010-08-23, CORRESP 2010-11-30)",
+          "source_accession_no": "n/a",
+          "location": "filing_chronology list"
+        }
+      ]
+    },
+    {
+      "item_id": "CL8",
+      "question": "Is the provided data sufficient in coverage and length for the above assessments?",
+      "finding": "flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "NetCashProvidedByUsedInOperatingActivities only provided as annual figures (2007, 2008, 2009 annual) with no quarterly breakdown for 2010, limiting granular OCF-vs-NI comparison for the most recent periods",
+          "source_accession_no": "0000950123-10-018307",
+          "location": "10-K cash flow statement"
+        },
+        {
+          "quote": "Most recent 10-K on file is for FY2009 (filed 2010-02-26); FY2010 10-K not yet available before the 2011-02-28 cutoff, so full-year 2010 figures are only available via Q3 2010 10-Q",
+          "source_accession_no": "0000950123-10-101722",
+          "location": "filing_chronology / financial_series_point_in_time"
+        }
+      ]
+    }
+  ],
+  "misstatement_probability": 45,
+  "mechanism_hypotheses": [
+    {
+      "affected_line_items": [
+        "Goodwill",
+        "OtherAssetsNoncurrent"
+      ],
+      "direction": "overstated",
+      "accounting_treatment": "Purchase price allocation from a Q3 2010 acquisition (goodwill jumped from Goodwill=164078000 (2010-06-30) to Goodwill=463427000 (2010-09-30), and OtherAssetsNoncurrent rose from 253834000 (2010-06-30) to 396623000 (2010-09-30)) could have allocated excess consideration to goodwill/other assets rather than identifiable intangibles or assumed liabilities, potentially overstating non-current soft assets relative to the underlying business growth (SalesRevenueNet grew only 18% quarter-over-quarter in the same period).",
+      "rationale_evidence": [
+        {
+          "quote": "Goodwill=164078000 (2010-06-30) -> 463427000 (2010-09-30)",
+          "source_accession_no": "0000950123-10-101722",
+          "location": "10-Q balance sheet"
+        },
+        {
+          "quote": "SalesRevenueNet=905058000 (Q2 2010) -> 1069261000 (Q3 2010)",
+          "source_accession_no": "0000950123-10-101722",
+          "location": "10-Q income statement"
+        }
+      ]
+    },
+    {
+      "affected_line_items": [
+        "NetIncomeLoss",
+        "NetCashProvidedByUsedInOperatingActivities",
+        "DepreciationAndAmortization"
+      ],
+      "direction": "timing_shift",
+      "accounting_treatment": "A persistent, large gap between reported net income/loss and operating cash flow (NetIncomeLoss=-85546000 vs NetCashProvidedByUsedInOperatingActivities=1616972000 for 2009 annual) suggests heavy reliance on non-cash charges (D&A, possible impairments, deferred taxes) and working-capital timing to reconcile earnings to cash, which could mask the true economic performance trend and create scope for earnings-management via the size/timing of non-cash charges.",
+      "rationale_evidence": [
+        {
+          "quote": "NetIncomeLoss=-85546000 (2009-01-01 to 2009-12-31)",
+          "source_accession_no": "0000950123-10-018307",
+          "location": "10-K income statement"
+        },
+        {
+          "quote": "NetCashProvidedByUsedInOperatingActivities=1616972000 (2009-01-01 to 2009-12-31)",
+          "source_accession_no": "0000950123-10-018307",
+          "location": "10-K cash flow statement"
+        },
+        {
+          "quote": "DepreciationAndAmortization=668415000 (2009 annual)",
+          "source_accession_no": "0000950123-10-018307",
+          "location": "10-K cash flow statement"
+        }
+      ]
+    },
+    {
+      "affected_line_items": [
+        "LongTermDebtCurrent",
+        "LiabilitiesCurrent"
+      ],
+      "direction": "timing_shift",
+      "accounting_treatment": "A large reclassification of long-term debt into current liabilities (LongTermDebtCurrent=163000 (2009-12-31) to 1442714000 (2010-09-30)) drove LiabilitiesCurrent from 608622000 (2009-12-31) to 2261520000 (2010-09-30); if this reclassification understates the true long-term nature of the obligations or overstates near-term liquidity risk, it could distort leverage/liquidity ratios used by investors, though it may simply reflect legitimate maturity-date proximity.",
+      "rationale_evidence": [
+        {
+          "quote": "LongTermDebtCurrent=163000 (2009-12-31) -> 1442714000 (2010-09-30)",
+          "source_accession_no": "0000950123-10-101722",
+          "location": "10-Q balance sheet"
+        },
+        {
+          "quote": "LiabilitiesCurrent=608622000 (2009-12-31) -> 2261520000 (2010-09-30)",
+          "source_accession_no": "0000950123-10-101722",
+          "location": "10-Q balance sheet"
+        }
+      ]
+    }
+  ],
+  "overall": {
+    "risk_tier": "watch",
+    "top_signals": [
+      "Repeated 10-K/A amendments across company history (2002, 2003, 2005, 2009) combined with heavy SEC CORRESP/UPLOAD comment-letter activity in 2009-2010 suggest recurring accounting/disclosure scrutiny",
+      "Sharp one-quarter spike in Goodwill (164078000 -> 463427000) and OtherAssetsNoncurrent (253834000 -> 396623000) in Q3 2010, far outpacing revenue growth, tied to an acquisition",
+      "Large and persistent divergence between net income (-85546000 in 2009) and operating cash flow (1616972000 in 2009), only partially explained by D&A (668415000)",
+      "Major reclassification of long-term debt to current (163000 -> 1442714000) causing a >3x jump in current liabilities within a few quarters",
+      "Receivables growth outpacing revenue growth in the most recent comparable quarter (42.7% vs 35.5%)"
+    ]
+  }
+}

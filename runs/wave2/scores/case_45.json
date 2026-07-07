@@ -1,0 +1,313 @@
+{
+  "case_id": "case_45",
+  "run_id": "original-case_45-r1",
+  "model": "claude-sonnet-5",
+  "pipeline_version": "7e33dc2dd3d7327ee20538fa031cbffbc7237d0c",
+  "run_timestamp": "2026-07-07T11:45:52.388787+00:00",
+  "documents_used": [
+    {
+      "accession_no": "0000950123-10-080248",
+      "form_type": "10-Q",
+      "filing_date": "2010-08-24"
+    },
+    {
+      "accession_no": "0000950123-10-107005",
+      "form_type": "10-Q",
+      "filing_date": "2010-11-18"
+    },
+    {
+      "accession_no": "0000950123-11-017197",
+      "form_type": "10-K",
+      "filing_date": "2011-02-23"
+    },
+    {
+      "accession_no": "0000950123-11-051840",
+      "form_type": "10-Q",
+      "filing_date": "2011-05-19"
+    },
+    {
+      "accession_no": "0000950123-13-003640",
+      "form_type": "10-Q",
+      "filing_date": "2013-05-16"
+    },
+    {
+      "accession_no": "0001193125-11-224828",
+      "form_type": "10-Q",
+      "filing_date": "2011-08-17"
+    },
+    {
+      "accession_no": "0001193125-11-305515",
+      "form_type": "10-Q",
+      "filing_date": "2011-11-10"
+    },
+    {
+      "accession_no": "0001193125-12-087463",
+      "form_type": "10-K",
+      "filing_date": "2012-02-29"
+    },
+    {
+      "accession_no": "0001193125-12-245966",
+      "form_type": "10-Q",
+      "filing_date": "2012-05-24"
+    },
+    {
+      "accession_no": "0001193125-12-353766",
+      "form_type": "10-Q",
+      "filing_date": "2012-08-14"
+    },
+    {
+      "accession_no": "0001193125-12-460716",
+      "form_type": "10-Q",
+      "filing_date": "2012-11-08"
+    },
+    {
+      "accession_no": "0001193125-13-067201",
+      "form_type": "10-K",
+      "filing_date": "2013-02-20"
+    },
+    {
+      "accession_no": "0001193125-13-331720",
+      "form_type": "10-Q",
+      "filing_date": "2013-08-13"
+    },
+    {
+      "accession_no": "0001193125-13-430967",
+      "form_type": "10-Q",
+      "filing_date": "2013-11-07"
+    },
+    {
+      "accession_no": "0001193125-14-058624",
+      "form_type": "10-K",
+      "filing_date": "2014-02-19"
+    },
+    {
+      "accession_no": "0001193125-14-199946",
+      "form_type": "10-Q",
+      "filing_date": "2014-05-15"
+    },
+    {
+      "accession_no": "0001193125-14-305610",
+      "form_type": "10-Q",
+      "filing_date": "2014-08-12"
+    },
+    {
+      "accession_no": "0001193125-14-407677",
+      "form_type": "10-Q",
+      "filing_date": "2014-11-12"
+    },
+    {
+      "accession_no": "0001193125-15-061804",
+      "form_type": "10-K",
+      "filing_date": "2015-02-25"
+    },
+    {
+      "accession_no": "0001193125-15-202728",
+      "form_type": "10-Q",
+      "filing_date": "2015-05-28"
+    },
+    {
+      "accession_no": "0001564590-15-007157",
+      "form_type": "10-Q",
+      "filing_date": "2015-08-13"
+    },
+    {
+      "accession_no": "0001564590-15-010429",
+      "form_type": "10-Q",
+      "filing_date": "2015-11-12"
+    },
+    {
+      "accession_no": "0001564590-16-013151",
+      "form_type": "10-K",
+      "filing_date": "2016-02-24"
+    },
+    {
+      "accession_no": "0001564590-16-019671",
+      "form_type": "10-Q",
+      "filing_date": "2016-05-18"
+    },
+    {
+      "accession_no": "0001564590-16-023935",
+      "form_type": "10-Q",
+      "filing_date": "2016-08-10"
+    }
+  ],
+  "checklist": [
+    {
+      "item_id": "CL1",
+      "question": "Did receivables grow materially faster than revenue across consecutive periods?",
+      "finding": "flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "AccountsNotesAndLoansReceivableNetCurrent=235911000 (2015-01-03) vs 269683000 (2016-01-02)",
+          "source_accession_no": "0001564590-16-023935",
+          "location": "10-Q balance sheet, period end 2016-01-02"
+        },
+        {
+          "quote": "SalesRevenueGoodsNet=3748973000 (FY2014, 2013-12-29 to 2015-01-03) vs 3778505000 (FY2015, 2015-01-04 to 2016-01-02)",
+          "source_accession_no": "0001564590-16-013151",
+          "location": "10-K income statement FY2015"
+        },
+        {
+          "quote": "AccountsNotesAndLoansReceivableNetCurrent=260864000 (2015-07-18) vs 293519000 (2016-07-16), a +12.5% YoY increase, while SalesRevenueGoodsNet=888795000 (Q2 2015) vs 935025000 (Q2 2016), a +5.2% YoY increase",
+          "source_accession_no": "0001564590-16-023935",
+          "location": "10-Q Q2 2016 balance sheet and income statement"
+        }
+      ]
+    },
+    {
+      "item_id": "CL2",
+      "question": "Did non-current 'soft' assets (intangibles, other assets, capitalized items) grow materially faster than the business overall?",
+      "finding": "flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "IntangibleAssetsNetExcludingGoodwill=103080000 (2010-01-02) growing to 862073000 (2016-07-16)",
+          "source_accession_no": "0001564590-16-023935",
+          "location": "10-K/10-Q balance sheets, various periods"
+        },
+        {
+          "quote": "Goodwill=201682000 (2010-01-02) growing to 464926000 (2016-01-02)",
+          "source_accession_no": "0001564590-16-023935",
+          "location": "10-Q balance sheet 2016-01-02"
+        },
+        {
+          "quote": "SalesRevenueGoodsNet=2600849000 (FY2009) growing to 3778505000 (FY2015), roughly a 45% increase versus the ~730% increase in intangibles over a similar period",
+          "source_accession_no": "0001564590-16-013151",
+          "location": "10-K income statement FY2015"
+        }
+      ]
+    },
+    {
+      "item_id": "CL3",
+      "question": "Is there a persistent divergence between net income and operating cash flow?",
+      "finding": "no_flag",
+      "confidence": "high",
+      "evidence": [
+        {
+          "quote": "NetIncomeLoss=189191000 (FY2015, 2015-01-04 to 2016-01-02) vs NetCashProvidedByUsedInOperatingActivitiesContinuingOperations=324233000 (same period)",
+          "source_accession_no": "0001564590-16-013151",
+          "location": "10-K cash flow statement FY2015"
+        },
+        {
+          "quote": "NetIncomeLoss=175739000 (FY2014) vs NetCashProvidedByUsedInOperatingActivitiesContinuingOperations=313970000 (FY2014)",
+          "source_accession_no": "0001564590-16-013151",
+          "location": "10-K cash flow statement FY2014"
+        },
+        {
+          "quote": "NetIncomeLoss=230894000 (FY2013) vs NetCashProvidedByUsedInOperatingActivitiesContinuingOperations=270484000 (FY2013)",
+          "source_accession_no": "0001564590-16-013151",
+          "location": "10-K cash flow statement FY2013"
+        }
+      ]
+    },
+    {
+      "item_id": "CL4",
+      "question": "Do inventory levels or gross margins show trends inconsistent with revenue?",
+      "finding": "insufficient_data",
+      "confidence": "low",
+      "evidence": [
+        {
+          "quote": "CostOfGoodsSold data only provided through period 2010-01-03 to 2011-01-01, value=1346790000; no COGS figures provided for FY2011-FY2015",
+          "source_accession_no": "0000950123-11-017197",
+          "location": "10-K income statement FY2010, filed 2011-02-23"
+        },
+        {
+          "quote": "InventoryNet=93100000 (2015-01-03) growing to 111177000 (2016-01-02), roughly in line with revenue growth of ~0.8% to ~19% depending on the ratio window measured, but without COGS data the gross margin trend cannot be verified",
+          "source_accession_no": "0001564590-16-023935",
+          "location": "10-Q balance sheet 2016-01-02"
+        }
+      ]
+    },
+    {
+      "item_id": "CL5",
+      "question": "Is the earnings trajectory unusually smooth relative to the volatility of revenue and cash flow?",
+      "finding": "no_flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "NetIncomeLoss quarterly: 41161000 (Q1 2011), 28210000 (Q2 2011), 31019000 (Q3 2011), 23038000 (Q4 2011) show normal seasonal swings rather than artificial smoothness",
+          "source_accession_no": "0001193125-13-067201",
+          "location": "10-K quarterly data FY2011, filed 2013-02-20"
+        },
+        {
+          "quote": "NetIncomeLoss quarterly: 51760000 (Q2 2015), 43796000 (Q3 2015), 32246000 (Q4 2015) show a declining seasonal pattern consistent with historical seasonality",
+          "source_accession_no": "0001564590-16-013151",
+          "location": "10-K quarterly data FY2015"
+        }
+      ]
+    },
+    {
+      "item_id": "CL6",
+      "question": "Did liability, allowance, or reserve balances decline (or fail to grow) despite growing business activity?",
+      "finding": "flag",
+      "confidence": "low",
+      "evidence": [
+        {
+          "quote": "AllowanceForDoubtfulAccountsReceivableCurrent=2892000 (2015-10-10) against AccountsNotesAndLoansReceivableNetCurrent=267762000 (2015-10-10), a ratio of ~1.08%",
+          "source_accession_no": "0001564590-15-010429",
+          "location": "10-Q balance sheet 2015-10-10"
+        },
+        {
+          "quote": "AllowanceForDoubtfulAccountsReceivableCurrent=1341000 (2016-01-02) against AccountsNotesAndLoansReceivableNetCurrent=269683000 (2016-01-02), a ratio of ~0.50%, even though receivables balance increased over the same quarter",
+          "source_accession_no": "0001564590-16-023935",
+          "location": "10-Q balance sheet 2016-01-02"
+        }
+      ]
+    },
+    {
+      "item_id": "CL7",
+      "question": "Does the filing chronology show irregularities (late filings/NT forms, amendments, unusual 8-K frequency)?",
+      "finding": "flag",
+      "confidence": "low",
+      "evidence": [
+        {
+          "quote": "form: 10-K/A, filing_date: 2010-06-03 (amendment shortly after the original 10-K filed 2010-03-03)",
+          "source_accession_no": "N/A",
+          "location": "filing_chronology list"
+        },
+        {
+          "quote": "Multiple 8-K/A amendments: 2008-02-25, 2008-06-25, 2010-01-11, 2010-02-16, 2012-10-04, 2012-11-08, 2013-05-28, coinciding with periods of acquisition activity (Sara Lee, Hostess brands)",
+          "source_accession_no": "N/A",
+          "location": "filing_chronology list"
+        },
+        {
+          "quote": "CORRESP and UPLOAD filings in 2008 and 2010 indicate SEC comment-letter correspondence during those periods",
+          "source_accession_no": "N/A",
+          "location": "filing_chronology list"
+        }
+      ]
+    },
+    {
+      "item_id": "CL8",
+      "question": "Is the provided data sufficient in coverage and length for the above assessments?",
+      "finding": "flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "CostOfGoodsSold series ends at FY2010 (period 2010-01-03 to 2011-01-01); no later COGS figures provided, limiting gross-margin trend analysis for FY2011-2015",
+          "source_accession_no": "0000950123-11-017197",
+          "location": "10-K income statement FY2010"
+        },
+        {
+          "quote": "NetCashProvidedByUsedInFinancingActivities and NetCashProvidedByUsedInInvestingActivities annual data are only provided through FY2012 (2012-01-01 to 2012-12-29, value 174049000 and -385437000 respectively); no later annual investing/financing cash flow figures are provided",
+          "source_accession_no": "0001193125-13-067201",
+          "location": "10-K cash flow statement FY2012, filed 2013-02-20"
+        }
+      ]
+    }
+  ],
+  "misstatement_probability": 35,
+  "mechanism_hypotheses": [],
+  "overall": {
+    "risk_tier": "watch",
+    "top_signals": [
+      "Receivables (AccountsNotesAndLoansReceivableNetCurrent) grew markedly faster than revenue in FY2015 (+14.3% vs +0.79% revenue) and in the most recent quarter (Q2 2016 AR +12.5% YoY vs revenue +5.2% YoY), suggesting a possible DSO deterioration worth monitoring for revenue-recognition or channel-stuffing risk.",
+      "Allowance for doubtful accounts as a percentage of receivables dropped sharply at fiscal year-end 2016-01-02 (0.50%) versus the prior quarter (1.08% at 2015-10-10) even as gross receivables rose, a pattern consistent with either normal write-offs or a reserve release that modestly favors reported earnings.",
+      "Intangible assets and goodwill grew far faster than revenue over the 2010-2016 window (intangibles +736%, goodwill +130%, vs revenue +46.8%), driven by disclosed acquisitions (Sara Lee bread business, Hostess brands, Dave's Killer Bread); this elevates future impairment risk but is largely explained by purchase accounting rather than manipulation.",
+      "Operating cash flow has consistently and substantially exceeded net income in every year with available data (e.g., FY2015 OCF=324,233,000 vs NI=189,191,000), which is a strong mitigating factor against earnings manipulation.",
+      "No late-filing NT forms were observed, though one 10-K/A and several 8-K/A amendments appear in the filing history, mostly clustered around acquisition periods.",
+      "Data gaps (COGS beyond FY2010, financing/investing cash flow beyond FY2012) limit the ability to fully verify gross margin and free cash flow trends in later years."
+    ]
+  }
+}

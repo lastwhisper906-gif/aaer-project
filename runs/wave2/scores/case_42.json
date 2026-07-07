@@ -1,0 +1,396 @@
+{
+  "case_id": "case_42",
+  "run_id": "original-case_42-r1",
+  "model": "claude-sonnet-5",
+  "pipeline_version": "7e33dc2dd3d7327ee20538fa031cbffbc7237d0c",
+  "run_timestamp": "2026-07-07T11:53:29.973767+00:00",
+  "documents_used": [
+    {
+      "accession_no": "0000950123-10-075672",
+      "form_type": "10-Q",
+      "filing_date": "2010-08-10"
+    },
+    {
+      "accession_no": "0000950123-10-103908",
+      "form_type": "10-Q",
+      "filing_date": "2010-11-10"
+    },
+    {
+      "accession_no": "0000950123-11-011050",
+      "form_type": "10-Q",
+      "filing_date": "2011-02-09"
+    },
+    {
+      "accession_no": "0000950123-11-054456",
+      "form_type": "10-K",
+      "filing_date": "2011-05-26"
+    },
+    {
+      "accession_no": "0000950123-11-076199",
+      "form_type": "10-Q",
+      "filing_date": "2011-08-11"
+    },
+    {
+      "accession_no": "0000950123-11-097033",
+      "form_type": "10-Q",
+      "filing_date": "2011-11-09"
+    },
+    {
+      "accession_no": "0001037038-13-000005",
+      "form_type": "10-Q",
+      "filing_date": "2013-02-06"
+    },
+    {
+      "accession_no": "0001037038-13-000009",
+      "form_type": "10-K",
+      "filing_date": "2013-05-23"
+    },
+    {
+      "accession_no": "0001037038-13-000014",
+      "form_type": "10-Q",
+      "filing_date": "2013-08-08"
+    },
+    {
+      "accession_no": "0001037038-13-000021",
+      "form_type": "10-Q",
+      "filing_date": "2013-11-06"
+    },
+    {
+      "accession_no": "0001037038-14-000003",
+      "form_type": "10-Q",
+      "filing_date": "2014-02-05"
+    },
+    {
+      "accession_no": "0001037038-14-000006",
+      "form_type": "10-K",
+      "filing_date": "2014-05-15"
+    },
+    {
+      "accession_no": "0001037038-14-000009",
+      "form_type": "10-Q",
+      "filing_date": "2014-08-07"
+    },
+    {
+      "accession_no": "0001037038-14-000014",
+      "form_type": "10-Q",
+      "filing_date": "2014-10-30"
+    },
+    {
+      "accession_no": "0001037038-15-000003",
+      "form_type": "10-Q",
+      "filing_date": "2015-02-04"
+    },
+    {
+      "accession_no": "0001037038-15-000006",
+      "form_type": "10-K",
+      "filing_date": "2015-05-15"
+    },
+    {
+      "accession_no": "0001037038-15-000009",
+      "form_type": "10-Q",
+      "filing_date": "2015-08-06"
+    },
+    {
+      "accession_no": "0001037038-15-000013",
+      "form_type": "10-Q",
+      "filing_date": "2015-11-05"
+    },
+    {
+      "accession_no": "0001037038-16-000016",
+      "form_type": "10-Q",
+      "filing_date": "2016-02-04"
+    },
+    {
+      "accession_no": "0001037038-16-000019",
+      "form_type": "10-K",
+      "filing_date": "2016-05-19"
+    },
+    {
+      "accession_no": "0001037038-16-000022",
+      "form_type": "10-Q",
+      "filing_date": "2016-08-11"
+    },
+    {
+      "accession_no": "0001037038-16-000024",
+      "form_type": "10-Q",
+      "filing_date": "2016-11-10"
+    },
+    {
+      "accession_no": "0001037038-17-000002",
+      "form_type": "10-Q",
+      "filing_date": "2017-02-09"
+    },
+    {
+      "accession_no": "0001037038-17-000004",
+      "form_type": "10-K",
+      "filing_date": "2017-05-18"
+    },
+    {
+      "accession_no": "0001037038-17-000008",
+      "form_type": "10-Q",
+      "filing_date": "2017-08-10"
+    },
+    {
+      "accession_no": "0001037038-17-000010",
+      "form_type": "10-Q",
+      "filing_date": "2017-11-09"
+    },
+    {
+      "accession_no": "0001037038-18-000005",
+      "form_type": "10-Q",
+      "filing_date": "2018-02-08"
+    },
+    {
+      "accession_no": "0001037038-18-000007",
+      "form_type": "10-K",
+      "filing_date": "2018-05-23"
+    },
+    {
+      "accession_no": "0001037038-18-000010",
+      "form_type": "10-Q",
+      "filing_date": "2018-08-03"
+    },
+    {
+      "accession_no": "0001037038-18-000015",
+      "form_type": "10-Q",
+      "filing_date": "2018-11-08"
+    },
+    {
+      "accession_no": "0001037038-19-000002",
+      "form_type": "10-Q",
+      "filing_date": "2019-02-07"
+    },
+    {
+      "accession_no": "0001037038-19-000005",
+      "form_type": "10-K",
+      "filing_date": "2019-05-16"
+    },
+    {
+      "accession_no": "0001037038-19-000008",
+      "form_type": "10-Q",
+      "filing_date": "2019-08-01"
+    },
+    {
+      "accession_no": "0001193125-12-046897",
+      "form_type": "10-Q",
+      "filing_date": "2012-02-08"
+    },
+    {
+      "accession_no": "0001193125-12-247066",
+      "form_type": "10-K",
+      "filing_date": "2012-05-24"
+    },
+    {
+      "accession_no": "0001193125-12-347580",
+      "form_type": "10-Q",
+      "filing_date": "2012-08-09"
+    },
+    {
+      "accession_no": "0001193125-12-449096",
+      "form_type": "10-Q",
+      "filing_date": "2012-11-02"
+    }
+  ],
+  "checklist": [
+    {
+      "item_id": "CL1",
+      "question": "Did receivables grow materially faster than revenue across consecutive periods?",
+      "finding": "no_flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "AccountsReceivableNetCurrent value 490000000 (end 2016-10-01)",
+          "source_accession_no": "0001037038-16-000024",
+          "location": "AccountsReceivableNetCurrent, 2016-10-01"
+        },
+        {
+          "quote": "AccountsReceivableNetCurrent value 432300000 (end 2018-09-29)",
+          "source_accession_no": "0001037038-18-000015",
+          "location": "AccountsReceivableNetCurrent, 2018-09-29"
+        },
+        {
+          "quote": "Revenues value 1690900000 (2018-07-01 to 2018-09-29)",
+          "source_accession_no": "0001037038-18-000015",
+          "location": "Revenues, Q2 FY2019"
+        }
+      ]
+    },
+    {
+      "item_id": "CL2",
+      "question": "Did non-current 'soft' assets (intangibles, other assets, capitalized items) grow materially faster than the business overall?",
+      "finding": "no_flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "Goodwill value 917900000 (end 2016-04-02)",
+          "source_accession_no": "0001037038-18-000007",
+          "location": "Goodwill, 2016-04-02"
+        },
+        {
+          "quote": "Goodwill value 919600000 (end 2019-03-30)",
+          "source_accession_no": "0001037038-19-000008",
+          "location": "Goodwill, 2019-03-30"
+        },
+        {
+          "quote": "IntangibleAssetsNetExcludingGoodwill value 158200000 (end 2019-06-29)",
+          "source_accession_no": "0001037038-19-000008",
+          "location": "IntangibleAssetsNetExcludingGoodwill, 2019-06-29"
+        },
+        {
+          "quote": "OtherAssetsNoncurrent value 296700000 (end 2016-04-02)",
+          "source_accession_no": "0001037038-17-000004",
+          "location": "OtherAssetsNoncurrent, 2016-04-02"
+        },
+        {
+          "quote": "OtherAssetsNoncurrent value 131200000 (end 2017-04-01)",
+          "source_accession_no": "0001037038-18-000007",
+          "location": "OtherAssetsNoncurrent, 2017-04-01"
+        }
+      ]
+    },
+    {
+      "item_id": "CL3",
+      "question": "Is there a persistent divergence between net income and operating cash flow?",
+      "finding": "flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "NetIncomeLoss value -99300000 (2016-04-03 to 2017-04-01)",
+          "source_accession_no": "0001037038-19-000005",
+          "location": "NetIncomeLoss, FY2017 (annual)"
+        },
+        {
+          "quote": "NetCashProvidedByUsedInOperatingActivities value 952600000 (2016-04-03 to 2017-04-01)",
+          "source_accession_no": "0001037038-19-000005",
+          "location": "NetCashProvidedByUsedInOperatingActivities, FY2017 (annual)"
+        },
+        {
+          "quote": "NetIncomeLoss value 396400000 (2015-03-29 to 2016-04-02)",
+          "source_accession_no": "0001037038-18-000007",
+          "location": "NetIncomeLoss, FY2016 (annual)"
+        },
+        {
+          "quote": "NetCashProvidedByUsedInOperatingActivities value 1016700000 (2015-03-29 to 2016-04-02)",
+          "source_accession_no": "0001037038-18-000007",
+          "location": "NetCashProvidedByUsedInOperatingActivities, FY2016 (annual)"
+        },
+        {
+          "quote": "NetIncomeLoss value 430900000 (2018-04-01 to 2019-03-30)",
+          "source_accession_no": "0001037038-19-000005",
+          "location": "NetIncomeLoss, FY2019 (annual)"
+        },
+        {
+          "quote": "NetCashProvidedByUsedInOperatingActivities value 783800000 (2018-04-01 to 2019-03-30)",
+          "source_accession_no": "0001037038-19-000005",
+          "location": "NetCashProvidedByUsedInOperatingActivities, FY2019 (annual)"
+        }
+      ]
+    },
+    {
+      "item_id": "CL4",
+      "question": "Do inventory levels or gross margins show trends inconsistent with revenue?",
+      "finding": "no_flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "InventoryNet value 1124600000 (end 2016-04-02)",
+          "source_accession_no": "0001037038-17-000004",
+          "location": "InventoryNet, 2016-04-02"
+        },
+        {
+          "quote": "InventoryNet value 761300000 (end 2018-03-31)",
+          "source_accession_no": "0001037038-19-000005",
+          "location": "InventoryNet, 2018-03-31"
+        },
+        {
+          "quote": "GrossProfit value 3651100000 (2016-04-03 to 2017-04-01)",
+          "source_accession_no": "0001037038-19-000005",
+          "location": "GrossProfit, FY2017 annual"
+        },
+        {
+          "quote": "GrossProfit value 3886000000 (2018-04-01 to 2019-03-30)",
+          "source_accession_no": "0001037038-19-000005",
+          "location": "GrossProfit, FY2019 annual"
+        },
+        {
+          "quote": "Revenues value 6313000000 (2018-04-01 to 2019-03-30)",
+          "source_accession_no": "0001037038-19-000005",
+          "location": "Revenues, FY2019 annual"
+        }
+      ]
+    },
+    {
+      "item_id": "CL5",
+      "question": "Is the earnings trajectory unusually smooth relative to the volatility of revenue and cash flow?",
+      "finding": "no_flag",
+      "confidence": "high",
+      "evidence": [
+        {
+          "quote": "NetIncomeLoss value 776000000 (2013-03-31 to 2014-03-29)",
+          "source_accession_no": "0001037038-16-000019",
+          "location": "NetIncomeLoss, FY2014 annual"
+        },
+        {
+          "quote": "NetIncomeLoss value -99300000 (2016-04-03 to 2017-04-01)",
+          "source_accession_no": "0001037038-19-000005",
+          "location": "NetIncomeLoss, FY2017 annual"
+        },
+        {
+          "quote": "NetIncomeLoss value 430900000 (2018-04-01 to 2019-03-30)",
+          "source_accession_no": "0001037038-19-000005",
+          "location": "NetIncomeLoss, FY2019 annual"
+        }
+      ]
+    },
+    {
+      "item_id": "CL6",
+      "question": "Did liability, allowance, or reserve balances decline (or fail to grow) despite growing business activity?",
+      "finding": "insufficient_data",
+      "confidence": "low",
+      "evidence": [
+        {
+          "quote": "AllowanceForDoubtfulAccountsReceivableCurrent value 17700000 (end 2011-07-02)",
+          "source_accession_no": "0000950123-11-076199",
+          "location": "AllowanceForDoubtfulAccountsReceivableCurrent, 2011-07-02 (last reported value in dataset)"
+        }
+      ]
+    },
+    {
+      "item_id": "CL7",
+      "question": "Does the filing chronology show irregularities (late filings/NT forms, amendments, unusual 8-K frequency)?",
+      "finding": "no_flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "NT 10-K filing_date 2005-06-16",
+          "source_accession_no": "n/a",
+          "location": "filing_chronology, 2005-06-16 (single historical late-filing notice, well outside cutoff-relevant recent period; no NT filings or amendments observed 2016-2019)"
+        }
+      ]
+    },
+    {
+      "item_id": "CL8",
+      "question": "Is the provided data sufficient in coverage and length for the above assessments?",
+      "finding": "no_flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "Revenues, NetIncomeLoss, NetCashProvidedByUsedInOperatingActivities, InventoryNet, AccountsReceivableNetCurrent series span fiscal 2009 through fiscal 2019 quarterly and annual data points across multiple 10-K/10-Q filings",
+          "source_accession_no": "0001037038-19-000005",
+          "location": "financial_series_point_in_time (overall coverage 2008-2019, though AllowanceForDoubtfulAccountsReceivableCurrent only covers 2010-2011)"
+        }
+      ]
+    }
+  ],
+  "misstatement_probability": 20,
+  "mechanism_hypotheses": [],
+  "overall": {
+    "risk_tier": "watch",
+    "top_signals": [
+      "Persistent, sizeable gap between net income and operating cash flow, most pronounced in FY2017 when the company reported a net loss (NetIncomeLoss=-99,300,000 for 2016-04-03 to 2017-04-01) alongside strong positive operating cash flow (NetCashProvidedByUsedInOperatingActivities=952,600,000 for the same period), consistent with large non-cash restructuring/impairment charges rather than earnings manipulation",
+      "A one-time, unexplained-in-data spike in OtherAssetsNoncurrent to 296,700,000 at fiscal year-end 2016-04-02 (reported in the FY2017 10-K) that reversed to 131,200,000 by 2017-04-01, plausibly tied to assets held for sale during the company's store-closure/restructuring program, but not independently corroborated by footnote detail in this dataset",
+      "Allowance for doubtful accounts data is only available for 2010-2011, leaving no visibility into reserve adequacy trends over the majority of the covered period",
+      "Earnings show genuine volatility including an outright net loss year (FY2017), inconsistent with income smoothing; inventory and gross margin trends track revenue trends reasonably (margin improved from ~54.9% in FY2017 to ~61.6% in FY2019 as revenue stabilized), and receivables-to-revenue ratios at matching seasonal quarters remained stable, arguing against channel-stuffing or premature revenue recognition"
+    ]
+  }
+}

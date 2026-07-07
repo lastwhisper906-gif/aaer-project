@@ -1,0 +1,324 @@
+{
+  "case_id": "case_49",
+  "run_id": "original-case_49-r1",
+  "model": "claude-sonnet-5",
+  "pipeline_version": "7e33dc2dd3d7327ee20538fa031cbffbc7237d0c",
+  "run_timestamp": "2026-07-07T11:48:22.672747+00:00",
+  "documents_used": [
+    {
+      "accession_no": "0001144204-11-050977",
+      "form_type": "10-Q/A",
+      "filing_date": "2011-09-01"
+    },
+    {
+      "accession_no": "0001144204-11-066214",
+      "form_type": "10-Q",
+      "filing_date": "2011-11-21"
+    },
+    {
+      "accession_no": "0001144204-12-018611",
+      "form_type": "10-K",
+      "filing_date": "2012-03-30"
+    },
+    {
+      "accession_no": "0001144204-15-016315",
+      "form_type": "10-K",
+      "filing_date": "2015-03-16"
+    },
+    {
+      "accession_no": "0001144204-15-029130",
+      "form_type": "10-Q",
+      "filing_date": "2015-05-11"
+    },
+    {
+      "accession_no": "0001144204-15-047780",
+      "form_type": "10-Q",
+      "filing_date": "2015-08-10"
+    },
+    {
+      "accession_no": "0001354488-14-002559",
+      "form_type": "10-Q",
+      "filing_date": "2014-05-14"
+    },
+    {
+      "accession_no": "0001513160-12-000038",
+      "form_type": "10-Q",
+      "filing_date": "2012-05-15"
+    },
+    {
+      "accession_no": "0001513160-12-000063",
+      "form_type": "10-Q/A",
+      "filing_date": "2012-09-10"
+    },
+    {
+      "accession_no": "0001513160-13-000022",
+      "form_type": "10-Q",
+      "filing_date": "2013-01-25"
+    },
+    {
+      "accession_no": "0001513160-13-000055",
+      "form_type": "10-K",
+      "filing_date": "2013-09-23"
+    },
+    {
+      "accession_no": "0001513160-13-000061",
+      "form_type": "10-Q",
+      "filing_date": "2013-10-23"
+    },
+    {
+      "accession_no": "0001513160-13-000062",
+      "form_type": "10-Q",
+      "filing_date": "2013-10-23"
+    },
+    {
+      "accession_no": "0001513160-13-000069",
+      "form_type": "10-Q",
+      "filing_date": "2013-11-14"
+    },
+    {
+      "accession_no": "0001513160-14-000023",
+      "form_type": "10-K",
+      "filing_date": "2014-03-28"
+    },
+    {
+      "accession_no": "0001513160-14-000039",
+      "form_type": "10-Q",
+      "filing_date": "2014-08-08"
+    },
+    {
+      "accession_no": "0001513160-14-000060",
+      "form_type": "10-Q",
+      "filing_date": "2014-11-13"
+    }
+  ],
+  "checklist": [
+    {
+      "item_id": "CL1",
+      "question": "Did receivables grow materially faster than revenue across consecutive periods?",
+      "finding": "insufficient_data",
+      "confidence": "high",
+      "evidence": [
+        {
+          "quote": "Revenues=0 (2013-01-01 to 2013-12-31); Revenues=0 (2014-01-01 to 2014-12-31)",
+          "source_accession_no": "0001144204-15-016315",
+          "location": "10-K FY2014, Revenues tag"
+        },
+        {
+          "quote": "SalesRevenueGoodsNet=0 across all quarterly/annual periods 2009-2014",
+          "source_accession_no": "0001144204-12-018611",
+          "location": "10-K FY2011 and subsequent filings, SalesRevenueGoodsNet tag"
+        }
+      ]
+    },
+    {
+      "item_id": "CL2",
+      "question": "Did non-current 'soft' assets (intangibles, other assets, capitalized items) grow materially faster than the business overall?",
+      "finding": "insufficient_data",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "PropertyPlantAndEquipmentNet=27756 (2013-12-31) growing to PropertyPlantAndEquipmentNet=1531566 (2014-12-31) and PropertyPlantAndEquipmentNet=2128260 (2015-03-31)",
+          "source_accession_no": "0001144204-15-047780",
+          "location": "10-Q Q2 2015, PP&E schedule"
+        },
+        {
+          "quote": "No IntangibleAssets, Goodwill, or OtherAssetsNoncurrent concept was provided in the series for any period.",
+          "source_accession_no": "0001144204-15-016315",
+          "location": "10-K FY2014 balance sheet - absence of intangible asset line"
+        }
+      ]
+    },
+    {
+      "item_id": "CL3",
+      "question": "Is there a persistent divergence between net income and operating cash flow?",
+      "finding": "flag",
+      "confidence": "high",
+      "evidence": [
+        {
+          "quote": "NetIncomeLoss=-25381363 (2013-01-01 to 2013-12-31) vs NetCashProvidedByUsedInOperatingActivities=-3662192 (2013-01-01 to 2013-12-31)",
+          "source_accession_no": "0001144204-15-016315",
+          "location": "10-K FY2014, income statement and cash flow statement"
+        },
+        {
+          "quote": "NetIncomeLoss=-12034709 (2014-01-01 to 2014-12-31) vs NetCashProvidedByUsedInOperatingActivitiesContinuingOperations=-8633247 (2014-01-01 to 2014-12-31)",
+          "source_accession_no": "0001144204-15-016315",
+          "location": "10-K FY2014, income statement and cash flow statement"
+        },
+        {
+          "quote": "NetCashProvidedByUsedInOperatingActivities=8633247 (2014-01-01 to 2014-12-31) reported with positive sign in same filing that also reports NetCashProvidedByUsedInOperatingActivitiesContinuingOperations=-8633247 for the identical period",
+          "source_accession_no": "0001144204-15-016315",
+          "location": "10-K FY2014, XBRL cash flow tags (sign inconsistency)"
+        }
+      ]
+    },
+    {
+      "item_id": "CL4",
+      "question": "Do inventory levels or gross margins show trends inconsistent with revenue?",
+      "finding": "insufficient_data",
+      "confidence": "high",
+      "evidence": [
+        {
+          "quote": "No Inventory or CostOfGoodsSold concept present in the provided data set; SalesRevenueGoodsNet=0 for all reported periods 2009-2014",
+          "source_accession_no": "0001144204-14-000023",
+          "location": "10-K FY2013, income statement"
+        }
+      ]
+    },
+    {
+      "item_id": "CL5",
+      "question": "Is the earnings trajectory unusually smooth relative to the volatility of revenue and cash flow?",
+      "finding": "no_flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "NetIncomeLoss=-1607988 (2010), -25694100 (2011), -3307619 (2012), -25381363 (2013), -12034709 (2014)",
+          "source_accession_no": "0001513160-14-000023",
+          "location": "10-K FY2012 and 10-K FY2014, annual NetIncomeLoss series"
+        },
+        {
+          "quote": "Quarterly NetIncomeLoss swings from -1046529 (Q1 2013) to -9409063 (Q3 2013) to -2259514 (Q1 2014)",
+          "source_accession_no": "0001513160-14-000060",
+          "location": "10-Q Q3 2014 and 10-Q Q1 2015 quarterly NetIncomeLoss figures"
+        }
+      ]
+    },
+    {
+      "item_id": "CL6",
+      "question": "Did liability, allowance, or reserve balances decline (or fail to grow) despite growing business activity?",
+      "finding": "flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "AccruedLiabilitiesCurrent=1518225 (2013-12-31) declined to AccruedLiabilitiesCurrent=327847 (2014-12-31)",
+          "source_accession_no": "0001144204-15-047780",
+          "location": "10-Q Q2 2015, balance sheet comparative"
+        },
+        {
+          "quote": "ResearchAndDevelopmentExpense=1329367 (2013 annual) increased to ResearchAndDevelopmentExpense=2704597 (2014 annual)",
+          "source_accession_no": "0001144204-15-016315",
+          "location": "10-K FY2014, income statement"
+        },
+        {
+          "quote": "AccountsPayableCurrent=1550865 (2013-09-30) fell sharply to AccountsPayableCurrent=412976 (2013-12-31) as restated in the FY2014 10-K",
+          "source_accession_no": "0001144204-15-016315",
+          "location": "10-K FY2014, balance sheet comparative vs 10-Q filed 2013-11-14"
+        }
+      ]
+    },
+    {
+      "item_id": "CL7",
+      "question": "Does the filing chronology show irregularities (late filings/NT forms, amendments, unusual 8-K frequency)?",
+      "finding": "flag",
+      "confidence": "high",
+      "evidence": [
+        {
+          "quote": "NT 10-Q filed 2010-11-16; NT 10-K filed 2011-04-01; NT 10-Q filed 2011-05-16; NT 10-Q filed 2011-08-16; NT 10-Q filed 2011-11-15; NT 10-K filed 2012-03-15; NT 10-Q filed 2012-05-11; NT 10-Q filed 2012-08-10; NT 10-Q filed 2012-11-13; NT 10-K filed 2013-04-01; NT 10-Q filed 2013-08-15",
+          "source_accession_no": "N/A",
+          "location": "filing_chronology list"
+        },
+        {
+          "quote": "10-K/A filed 2011-05-04; 10-Q/A filed 2011-09-01; 10-Q/A filed 2012-09-10; 10-K/A filed 2015-04-20 (one month after the original 10-K filed 2015-03-16)",
+          "source_accession_no": "N/A",
+          "location": "filing_chronology list"
+        },
+        {
+          "quote": "Numerous 8-K/A filings clustered in 2009 (2) and 2011-2012 (8: 2011-10-13, 2011-11-29, 2011-12-13, 2011-12-22, 2012-01-10, 2012-01-20, 2012-02-06, 2012-03-22) and 2014-12-09",
+          "source_accession_no": "N/A",
+          "location": "filing_chronology list"
+        }
+      ]
+    },
+    {
+      "item_id": "CL8",
+      "question": "Is the provided data sufficient in coverage and length for the above assessments?",
+      "finding": "flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "Revenues=0 for both 2013 and 2014 annual periods and SalesRevenueGoodsNet=0 across all periods 2009-2014, with no AccountsReceivable, Inventory, or CostOfGoodsSold concepts provided",
+          "source_accession_no": "0001144204-15-016315",
+          "location": "10-K FY2014, income statement tags"
+        },
+        {
+          "quote": "Balance sheet and cash flow data span 2007-2015 across multiple 10-K, 10-K/A, and 10-Q filings, providing adequate length for liability/cash-flow/earnings trend analysis but not for revenue-linked ratios",
+          "source_accession_no": "0001144204-15-047780",
+          "location": "10-Q Q2 2015 and prior filings, overall series coverage"
+        }
+      ]
+    }
+  ],
+  "misstatement_probability": 58,
+  "mechanism_hypotheses": [
+    {
+      "affected_line_items": [
+        "NetIncomeLoss",
+        "NetCashProvidedByUsedInOperatingActivities",
+        "AdditionalPaidInCapital/derivative or warrant liabilities (not separately provided)"
+      ],
+      "direction": "timing_shift",
+      "accounting_treatment": "Large non-cash charges (likely stock-based compensation, warrant/derivative revaluation, or beneficial conversion features typical of reverse-merger micro-cap biotechs) are driving a persistent, large gap between reported net loss and operating cash outflow. This creates risk that the valuation/timing of these non-cash items (which are judgment-heavy and easily manipulated or mis-estimated) could be used to manage reported net loss in a given period without cash consequence.",
+      "rationale_evidence": [
+        {
+          "quote": "NetIncomeLoss=-25381363 (2013 annual) vs NetCashProvidedByUsedInOperatingActivities=-3662192 (2013 annual)",
+          "source_accession_no": "0001144204-15-016315",
+          "location": "10-K FY2014 income statement/cash flow statement"
+        },
+        {
+          "quote": "NetIncomeLoss=-12034709 (2014 annual) vs NetCashProvidedByUsedInOperatingActivitiesContinuingOperations=-8633247 (2014 annual)",
+          "source_accession_no": "0001144204-15-016315",
+          "location": "10-K FY2014 income statement/cash flow statement"
+        }
+      ]
+    },
+    {
+      "affected_line_items": [
+        "AccruedLiabilitiesCurrent",
+        "ResearchAndDevelopmentExpense",
+        "LiabilitiesCurrent"
+      ],
+      "direction": "understated",
+      "accounting_treatment": "Accrued liabilities fell sharply (AccruedLiabilitiesCurrent 1,518,225 to 327,847) even as R&D spending roughly doubled, suggesting potential under-accrual of clinical trial/vendor liabilities (a common area of biotech misstatement given estimation complexity of CRO/clinical trial cost accruals), which would understate expenses/liabilities and overstate reported equity/net loss trajectory in the period of under-accrual, to be caught up later.",
+      "rationale_evidence": [
+        {
+          "quote": "AccruedLiabilitiesCurrent=1518225 (2013-12-31) declined to AccruedLiabilitiesCurrent=327847 (2014-12-31)",
+          "source_accession_no": "0001144204-15-047780",
+          "location": "10-Q Q2 2015 balance sheet comparative"
+        },
+        {
+          "quote": "ResearchAndDevelopmentExpense=1329367 (2013 annual) increased to ResearchAndDevelopmentExpense=2704597 (2014 annual)",
+          "source_accession_no": "0001144204-15-016315",
+          "location": "10-K FY2014 income statement"
+        }
+      ]
+    },
+    {
+      "affected_line_items": [
+        "Multiple balance sheet and income statement line items across FY2014 and prior periods"
+      ],
+      "direction": "timing_shift",
+      "accounting_treatment": "The pattern of a 10-K/A filed just over one month after the original 10-K (filed 2015-03-16, amended 2015-04-20), together with prior 10-Q/A amendments (2011-09-01, 2012-09-10) and a long history of NT 10-Q/NT 10-K late-filing notices, indicates the company has repeatedly needed to correct or delay previously reported figures, consistent with weak internal controls and elevated risk that as-filed statements required subsequent correction.",
+      "rationale_evidence": [
+        {
+          "quote": "10-K filed 2015-03-16 followed by 10-K/A filed 2015-04-20",
+          "source_accession_no": "N/A",
+          "location": "filing_chronology list"
+        },
+        {
+          "quote": "10-Q/A filed 2011-09-01 (amending 10-Q for 2011-06-30) and 10-Q/A filed 2012-09-10 (amending 10-Q for 2012-06-30)",
+          "source_accession_no": "N/A",
+          "location": "filing_chronology list"
+        }
+      ]
+    }
+  ],
+  "overall": {
+    "risk_tier": "elevated",
+    "top_signals": [
+      "Extensive filing chronology irregularities: multiple NT 10-Q/NT 10-K late filing notices (2010-2013) plus 10-K/A and 10-Q/A amendments including a 10-K/A filed just one month after the original FY2014 10-K",
+      "Large and persistent divergence between NetIncomeLoss and operating cash flow (e.g., -25.4M net loss vs -3.7M operating cash outflow in 2013), indicating heavy reliance on judgment-based non-cash accounting estimates",
+      "Accrued liabilities declined materially (1.52M to 0.33M) while R&D expense roughly doubled, suggesting possible under-accrual of clinical trial costs",
+      "Company history as a near-shell/reverse-merger entity with wild swings in Assets and StockholdersEquity (including negative equity for multiple years) prior to 2013-2014 recapitalization, reflecting historically weak financial reporting infrastructure",
+      "Pre-revenue clinical-stage status limits applicability of several standard misstatement checks (receivables, inventory, gross margin) due to lack of relevant data"
+    ]
+  }
+}

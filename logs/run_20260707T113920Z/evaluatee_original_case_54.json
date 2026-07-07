@@ -1,0 +1,59 @@
+{
+  "ts": "2026-07-07T11:49:21.591128+00:00",
+  "harness_pin": "2.1.201",
+  "flags": [
+    "claude",
+    "-p",
+    "--model",
+    "claude-sonnet-5",
+    "--output-format",
+    "json",
+    "--max-turns",
+    "2",
+    "--setting-sources",
+    "",
+    "--strict-mcp-config",
+    "--tools",
+    "",
+    "--disallowedTools",
+    "Bash,Read,Edit,Write,Glob,Grep,WebFetch,WebSearch,Task,NotebookEdit",
+    "--system-prompt",
+    "You are analyzing the financial reporting quality of LEVI STRAUSS & CO (LEVI, CIK 0000094845) using only the structured data provided below, which reflects public filings available on or before 2019-1...[1739 chars]",
+    "--json-schema",
+    "{\"type\": \"object\", \"additionalProperties\": false, \"required\": [\"checklist\", \"misstatement_probability\", \"mechanism_hypotheses\", \"overall\"], \"properties\": {\"checklist\": {\"type\": \"array\", \"items\": {\"typ...[1821 chars]"
+  ],
+  "model_requested": "claude-sonnet-5",
+  "served_models": [
+    "claude-sonnet-5"
+  ],
+  "pin_ok": true,
+  "ok": true,
+  "fail_reason": null,
+  "session_id": "edd7d877-1e37-40bd-89df-521a552f2372",
+  "usage": {
+    "input_tokens": 4,
+    "cache_creation_input_tokens": 108076,
+    "cache_read_input_tokens": 97990,
+    "output_tokens": 17024,
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 108076,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [],
+    "speed": "standard"
+  },
+  "total_cost_usd_reference_only": 0.933225,
+  "attempts": 1,
+  "wall_seconds": 148.1,
+  "freeze": {
+    "head": "7e33dc2dd3d7327ee20538fa031cbffbc7237d0c",
+    "clean_tree": false
+  },
+  "raw_tail": null
+}

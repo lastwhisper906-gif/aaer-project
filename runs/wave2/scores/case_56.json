@@ -1,0 +1,260 @@
+{
+  "case_id": "case_56",
+  "run_id": "original-case_56-r1",
+  "model": "claude-sonnet-5",
+  "pipeline_version": "7e33dc2dd3d7327ee20538fa031cbffbc7237d0c",
+  "run_timestamp": "2026-07-07T11:42:23.495341+00:00",
+  "documents_used": [
+    {
+      "accession_no": "0000950123-15-002980",
+      "form_type": "10-K",
+      "filing_date": "2015-02-17"
+    },
+    {
+      "accession_no": "0001193125-13-201909",
+      "form_type": "10-Q",
+      "filing_date": "2013-05-06"
+    },
+    {
+      "accession_no": "0001193125-13-310583",
+      "form_type": "10-Q",
+      "filing_date": "2013-07-30"
+    },
+    {
+      "accession_no": "0001193125-13-415926",
+      "form_type": "10-Q",
+      "filing_date": "2013-10-29"
+    },
+    {
+      "accession_no": "0001193125-14-057078",
+      "form_type": "10-K",
+      "filing_date": "2014-02-18"
+    },
+    {
+      "accession_no": "0001193125-14-167176",
+      "form_type": "10-Q",
+      "filing_date": "2014-04-29"
+    },
+    {
+      "accession_no": "0001193125-14-284599",
+      "form_type": "10-Q",
+      "filing_date": "2014-07-29"
+    },
+    {
+      "accession_no": "0001193125-14-385002",
+      "form_type": "10-Q",
+      "filing_date": "2014-10-28"
+    },
+    {
+      "accession_no": "0001193125-15-152864",
+      "form_type": "10-Q",
+      "filing_date": "2015-04-28"
+    },
+    {
+      "accession_no": "0001193125-15-265974",
+      "form_type": "10-Q",
+      "filing_date": "2015-07-28"
+    },
+    {
+      "accession_no": "0001193125-15-354712",
+      "form_type": "10-Q",
+      "filing_date": "2015-10-27"
+    },
+    {
+      "accession_no": "0001193805-11-001435",
+      "form_type": "10-Q",
+      "filing_date": "2011-08-03"
+    },
+    {
+      "accession_no": "0001193805-11-002123",
+      "form_type": "10-Q",
+      "filing_date": "2011-11-02"
+    },
+    {
+      "accession_no": "0001193805-12-000210",
+      "form_type": "10-K",
+      "filing_date": "2012-02-14"
+    },
+    {
+      "accession_no": "0001193805-12-000854",
+      "form_type": "10-Q",
+      "filing_date": "2012-05-08"
+    },
+    {
+      "accession_no": "0001193805-12-001247",
+      "form_type": "10-Q",
+      "filing_date": "2012-08-01"
+    },
+    {
+      "accession_no": "0001193805-12-001807",
+      "form_type": "10-Q",
+      "filing_date": "2012-11-14"
+    },
+    {
+      "accession_no": "0001193805-13-000696",
+      "form_type": "10-K",
+      "filing_date": "2013-03-26"
+    }
+  ],
+  "checklist": [
+    {
+      "item_id": "CL1",
+      "question": "Did receivables grow materially faster than revenue across consecutive periods?",
+      "finding": "insufficient_data",
+      "confidence": "high",
+      "evidence": [
+        {
+          "quote": "No AccountsReceivable, LoansReceivable, or similar receivable line item is present in the provided financial_series_point_in_time dataset.",
+          "source_accession_no": "N/A",
+          "location": "financial_series_point_in_time (concept list)"
+        }
+      ]
+    },
+    {
+      "item_id": "CL2",
+      "question": "Did non-current 'soft' assets (intangibles, other assets, capitalized items) grow materially faster than the business overall?",
+      "finding": "insufficient_data",
+      "confidence": "high",
+      "evidence": [
+        {
+          "quote": "No IntangibleAssets, Goodwill, OtherAssets, or CapitalizedCosts concept is present in the provided dataset; only aggregate Assets is reported.",
+          "source_accession_no": "N/A",
+          "location": "financial_series_point_in_time (concept list)"
+        }
+      ]
+    },
+    {
+      "item_id": "CL3",
+      "question": "Is there a persistent divergence between net income and operating cash flow?",
+      "finding": "flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "NetIncomeLoss=258,142,000 (2011-01-01 to 2011-12-31)",
+          "source_accession_no": "0001193125-14-057078",
+          "location": "10-K FY2013, NetIncomeLoss annual 2011"
+        },
+        {
+          "quote": "NetCashProvidedByUsedInOperatingActivities=28,884,000 (2011-01-01 to 2011-12-31)",
+          "source_accession_no": "0001193125-14-057078",
+          "location": "10-K FY2013, cash flow annual 2011"
+        },
+        {
+          "quote": "NetIncomeLoss=181,024,000 (2012-01-01 to 2012-12-31)",
+          "source_accession_no": "0000950123-15-002980",
+          "location": "10-K FY2014, NetIncomeLoss annual 2012"
+        },
+        {
+          "quote": "NetCashProvidedByUsedInOperatingActivities=6,768,000 (2012-01-01 to 2012-12-31)",
+          "source_accession_no": "0000950123-15-002980",
+          "location": "10-K FY2014, cash flow annual 2012"
+        }
+      ]
+    },
+    {
+      "item_id": "CL4",
+      "question": "Do inventory levels or gross margins show trends inconsistent with revenue?",
+      "finding": "insufficient_data",
+      "confidence": "high",
+      "evidence": [
+        {
+          "quote": "No Inventory or CostOfGoodsSold concept is present; BXMT is a commercial mortgage REIT with no inventory in its business model.",
+          "source_accession_no": "N/A",
+          "location": "financial_series_point_in_time (concept list)"
+        }
+      ]
+    },
+    {
+      "item_id": "CL5",
+      "question": "Is the earnings trajectory unusually smooth relative to the volatility of revenue and cash flow?",
+      "finding": "no_flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "NetIncomeLoss=254,585,000 (2011-01-01 to 2011-03-31); NetIncomeLoss=-1,845,000 (2011-04-01 to 2011-06-30); NetIncomeLoss=13,722,000 (2011-07-01 to 2011-09-30); NetIncomeLoss=-8,320,000 (2011-10-01 to 2011-12-31)",
+          "source_accession_no": "0001193125-14-057078",
+          "location": "10-K FY2013, quarterly NetIncomeLoss 2011"
+        },
+        {
+          "quote": "NetIncomeLoss=66,553,000 (2012-01-01 to 2012-03-31); NetIncomeLoss=2,283,000 (2012-04-01 to 2012-06-30); NetIncomeLoss=6,999,000 (2012-07-01 to 2012-09-30); NetIncomeLoss=105,189,000 (2012-10-01 to 2012-12-31)",
+          "source_accession_no": "0000950123-15-002980",
+          "location": "10-K FY2014, quarterly NetIncomeLoss 2012"
+        }
+      ]
+    },
+    {
+      "item_id": "CL6",
+      "question": "Did liability, allowance, or reserve balances decline (or fail to grow) despite growing business activity?",
+      "finding": "no_flag",
+      "confidence": "low",
+      "evidence": [
+        {
+          "quote": "Liabilities=168,890,000 (2012-12-31)",
+          "source_accession_no": "0001193125-14-057078",
+          "location": "10-K FY2013 balance sheet"
+        },
+        {
+          "quote": "Liabilities=7,351,706,000 (2015-09-30)",
+          "source_accession_no": "0001193125-15-354712",
+          "location": "10-Q Q3 2015 balance sheet"
+        },
+        {
+          "quote": "Assets=322,343,000 (2012-12-31)",
+          "source_accession_no": "0001193125-14-057078",
+          "location": "10-K FY2013 balance sheet"
+        },
+        {
+          "quote": "Assets=9,851,868,000 (2015-09-30)",
+          "source_accession_no": "0001193125-15-354712",
+          "location": "10-Q Q3 2015 balance sheet"
+        }
+      ]
+    },
+    {
+      "item_id": "CL7",
+      "question": "Does the filing chronology show irregularities (late filings/NT forms, amendments, unusual 8-K frequency)?",
+      "finding": "no_flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "10-K filed 2015-02-17; 10-Q filed 2015-04-28; 10-Q filed 2015-07-28; 10-Q filed 2015-10-27 - consistent quarterly cadence with no NT 10-K/NT 10-Q filings observed in the chronology near the cutoff date.",
+          "source_accession_no": "0000950123-15-002980",
+          "location": "filing_chronology 2015 entries"
+        },
+        {
+          "quote": "8-K/A filed 2013-03-26 (same day as 10-K filing 2013-03-26)",
+          "source_accession_no": "N/A",
+          "location": "filing_chronology 2013-03-26 entries"
+        }
+      ]
+    },
+    {
+      "item_id": "CL8",
+      "question": "Is the provided data sufficient in coverage and length for the above assessments?",
+      "finding": "flag",
+      "confidence": "high",
+      "evidence": [
+        {
+          "quote": "Revenues data series ends at 2014-10-01 to 2014-12-31 (58,258,000); no 2015 annual or quarterly Revenues figures are provided in the dataset despite Assets and Liabilities data extending through 2015-09-30.",
+          "source_accession_no": "0000950123-15-002980",
+          "location": "Revenues concept series, last entry"
+        },
+        {
+          "quote": "No receivables, intangible asset, inventory, or loan-loss allowance/reserve concepts appear anywhere in the financial_series_point_in_time dataset.",
+          "source_accession_no": "N/A",
+          "location": "financial_series_point_in_time (concept list)"
+        }
+      ]
+    }
+  ],
+  "misstatement_probability": 35,
+  "mechanism_hypotheses": [],
+  "overall": {
+    "risk_tier": "watch",
+    "top_signals": [
+      "Large, unexplained-in-data divergence between NetIncomeLoss and NetCashProvidedByUsedInOperatingActivities in 2011 (NetIncomeLoss=258,142,000 vs OCF=28,884,000) and 2012 (NetIncomeLoss=181,024,000 vs OCF=6,768,000), coinciding with the company's transition from legacy Capital Trust (with prior negative stockholders' equity, e.g. StockholdersEquityIncludingPortionAttributableToNoncontrollingInterest=-411,187,000 at 2010-12-31) to the Blackstone-sponsored recapitalization, suggesting large non-cash gains (e.g., from CDO deconsolidation/debt extinguishment) drove reported earnings rather than cash-generating operations",
+      "Key balance sheet, income statement, and cash flow figures show extreme volatility and multiple redefinitions of the reporting entity (Assets collapsing from 4.12B in 2010 to 322M in 2012, then rebuilding to 9.85B by mid-2015), which is consistent with disclosed corporate restructuring (name/business change from Capital Trust to Blackstone Mortgage Trust) rather than clear misstatement, but complicates trend-based analytical checks and increases inherent risk",
+      "Data set lacks receivables, intangible asset, inventory, and loan-loss reserve/allowance concepts, and lacks 2015 revenue figures, limiting the ability to fully test CL1, CL2, CL4, and CL6 for this loan-portfolio-heavy REIT"
+    ]
+  }
+}

@@ -1,0 +1,223 @@
+{
+  "case_id": "case_52",
+  "run_id": "original-case_52-r1",
+  "model": "claude-sonnet-5",
+  "pipeline_version": "7e33dc2dd3d7327ee20538fa031cbffbc7237d0c",
+  "run_timestamp": "2026-07-07T11:43:14.762066+00:00",
+  "documents_used": [
+    {
+      "accession_no": "0000023082-09-000045",
+      "form_type": "10-Q",
+      "filing_date": "2009-08-07"
+    },
+    {
+      "accession_no": "0000023082-09-000065",
+      "form_type": "10-Q",
+      "filing_date": "2009-11-12"
+    },
+    {
+      "accession_no": "0000023082-10-000015",
+      "form_type": "10-Q",
+      "filing_date": "2010-02-10"
+    },
+    {
+      "accession_no": "0000023082-10-000036",
+      "form_type": "10-K",
+      "filing_date": "2010-05-21"
+    }
+  ],
+  "checklist": [
+    {
+      "item_id": "CL1",
+      "question": "Did receivables grow materially faster than revenue across consecutive periods?",
+      "finding": "flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "Revenues=16740000000 (FY2009: 2008-03-29 to 2009-04-03) vs Revenues=16128000000 (FY2010: 2009-04-04 to 2010-04-02) — a -3.7% decline",
+          "source_accession_no": "0000023082-10-000036",
+          "location": "10-K FY2010, Income Statement - Revenues"
+        },
+        {
+          "quote": "ReceivablesNetCurrent=3786000000 (2009-04-03) vs ReceivablesNetCurrent=3849000000 (2010-04-02) — a +1.7% increase",
+          "source_accession_no": "0000023082-10-000036",
+          "location": "10-K FY2010, Balance Sheet - Receivables, net current"
+        }
+      ]
+    },
+    {
+      "item_id": "CL2",
+      "question": "Did non-current 'soft' assets (intangibles, other assets, capitalized items) grow materially faster than the business overall?",
+      "finding": "flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "OtherAssetsNoncurrent=615000000 (2009-04-03) growing to OtherAssetsNoncurrent=773000000 (2010-04-02), a +25.7% increase, while Revenues fell from 16740000000 (FY2009) to 16128000000 (FY2010), a -3.7% decline",
+          "source_accession_no": "0000023082-10-000036",
+          "location": "10-K FY2010, Balance Sheet - Other assets, noncurrent"
+        },
+        {
+          "quote": "Goodwill=3784000000 (2009-04-03) to Goodwill=3866000000 (2010-04-02), +2.2% growth against a revenue decline of -3.7%",
+          "source_accession_no": "0000023082-10-000036",
+          "location": "10-K FY2010, Balance Sheet - Goodwill"
+        }
+      ]
+    },
+    {
+      "item_id": "CL3",
+      "question": "Is there a persistent divergence between net income and operating cash flow?",
+      "finding": "no_flag",
+      "confidence": "high",
+      "evidence": [
+        {
+          "quote": "NetIncomeLoss=817000000 (FY2010) vs NetCashProvidedByUsedInOperatingActivities=1643000000 (FY2010); NetIncomeLoss=1115000000 (FY2009) vs NetCashProvidedByUsedInOperatingActivities=1986000000 (FY2009); NetIncomeLoss=545000000 (FY2008) vs NetCashProvidedByUsedInOperatingActivities=1343000000 (FY2008) — operating cash flow consistently exceeds net income, the opposite of an earnings-quality red flag",
+          "source_accession_no": "0000023082-10-000036",
+          "location": "10-K FY2010, Income Statement and Cash Flow Statement"
+        }
+      ]
+    },
+    {
+      "item_id": "CL4",
+      "question": "Do inventory levels or gross margins show trends inconsistent with revenue?",
+      "finding": "no_flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "No InventoryNet concept provided (CSC is a services company); gross margin computed from Revenues=16500000000 and CostOfServices=13150000000 (FY2008, ~20.3% margin), Revenues=16740000000 and CostOfServices=13268000000 (FY2009, ~20.7% margin), Revenues=16128000000 and CostOfServices=12797000000 (FY2010, ~20.7% margin) — margins are stable and track revenue changes reasonably",
+          "source_accession_no": "0000023082-10-000036",
+          "location": "10-K FY2010, Income Statement - Cost of services"
+        }
+      ]
+    },
+    {
+      "item_id": "CL5",
+      "question": "Is the earnings trajectory unusually smooth relative to the volatility of revenue and cash flow?",
+      "finding": "no_flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "Quarterly NetIncomeLoss values show a large spike: NetIncomeLoss=121000000 (Q1 FY2009, 2008-03-29 to 2008-07-04), NetIncomeLoss=452000000 (Q2 FY2009, 2008-07-05 to 2008-10-03), NetIncomeLoss=161000000 (Q3 FY2009, 2008-10-04 to 2009-01-02) — earnings volatility exceeds the relatively stable quarterly Revenues (4437000000, 4239000000, 3952000000 for the same quarters), the opposite of unusual smoothness",
+          "source_accession_no": "0000023082-09-000065",
+          "location": "10-Q Q2 FY2009 and 10-Q Q3 FY2009 Income Statements"
+        }
+      ]
+    },
+    {
+      "item_id": "CL6",
+      "question": "Did liability, allowance, or reserve balances decline (or fail to grow) despite growing business activity?",
+      "finding": "insufficient_data",
+      "confidence": "low",
+      "evidence": [
+        {
+          "quote": "AllowanceForDoubtfulAccountsReceivableCurrent=3786000000 (2009-04-03) and AllowanceForDoubtfulAccountsReceivableCurrent=3849000000 (2010-04-02) are identical in magnitude to ReceivablesNetCurrent for the same dates, while AllowanceForDoubtfulAccountsReceivableCurrent=55000000 (2009-07-03) is far smaller and more plausible as an actual allowance figure — this internal inconsistency suggests a tagging/data error rather than a reliable reserve trend",
+          "source_accession_no": "0000023082-10-000036",
+          "location": "10-K FY2010 XBRL tag AllowanceForDoubtfulAccountsReceivableCurrent vs 10-Q FY2010 Q1"
+        }
+      ]
+    },
+    {
+      "item_id": "CL7",
+      "question": "Does the filing chronology show irregularities (late filings/NT forms, amendments, unusual 8-K frequency)?",
+      "finding": "flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "NT 10-Q filed 2006-11-09; NT 10-Q filed 2007-02-08; NT 10-K filed 2007-05-30; NT 10-Q filed 2007-08-08; NT 10-Q filed 2007-11-08",
+          "source_accession_no": "N/A",
+          "location": "Filing chronology - notification of late filing forms 2006-2007"
+        },
+        {
+          "quote": "10-K/A filed 2008-01-11; 10-Q/A filed 2007-03-05; 10-Q/A filed 2005-08-08; 10-Q/A filed 2004-11-12; 10-Q/A filed 2002-11-08",
+          "source_accession_no": "N/A",
+          "location": "Filing chronology - multiple amended periodic reports 2002-2008"
+        },
+        {
+          "quote": "Numerous CORRESP and UPLOAD entries (SEC comment-letter correspondence) recur through 2006-2009, e.g. CORRESP filed 2006-08-04, 2006-09-01, 2007-08-03, 2007-09-06, 2007-11-07, 2008-01-18, 2008-08-20, 2009-02-11, 2009-02-25, 2009-07-17, 2009-08-11, 2009-08-24",
+          "source_accession_no": "N/A",
+          "location": "Filing chronology - SEC correspondence entries"
+        }
+      ]
+    },
+    {
+      "item_id": "CL8",
+      "question": "Is the provided data sufficient in coverage and length for the above assessments?",
+      "finding": "flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "Quarterly XBRL detail is available only from 2008-03-29 (Q1 FY2009) through 2010-04-02 (FY2010 year-end), i.e., roughly two fiscal years, with only three full annual Revenues data points (FY2008=16500000000, FY2009=16740000000, FY2010=16128000000); no InventoryNet, no segment-level receivable aging, and an apparently erroneous AllowanceForDoubtfulAccountsReceivableCurrent series limit the depth of trend analysis",
+          "source_accession_no": "0000023082-10-000036",
+          "location": "10-K FY2010 and prior 10-Q filings - data coverage"
+        }
+      ]
+    }
+  ],
+  "misstatement_probability": 40,
+  "mechanism_hypotheses": [
+    {
+      "affected_line_items": [
+        "OtherAssetsNoncurrent",
+        "Goodwill",
+        "Assets"
+      ],
+      "direction": "overstated",
+      "accounting_treatment": "Possible under-impairment or continued capitalization of costs (e.g., deferred contract costs, capitalized software, or transition/setup costs on outsourcing contracts) into Other Assets, Noncurrent, causing this line to grow +25.7% (615000000 to 773000000) even as consolidated Revenues declined -3.7% (16740000000 to 16128000000) in the same fiscal year, which could mask deteriorating recoverability of long-lived/intangible balances.",
+      "rationale_evidence": [
+        {
+          "quote": "OtherAssetsNoncurrent=615000000 (2009-04-03) to OtherAssetsNoncurrent=773000000 (2010-04-02)",
+          "source_accession_no": "0000023082-10-000036",
+          "location": "10-K FY2010 Balance Sheet"
+        },
+        {
+          "quote": "Revenues=16740000000 (FY2009) to Revenues=16128000000 (FY2010)",
+          "source_accession_no": "0000023082-10-000036",
+          "location": "10-K FY2010 Income Statement"
+        }
+      ]
+    },
+    {
+      "affected_line_items": [
+        "ReceivablesNetCurrent",
+        "Revenues"
+      ],
+      "direction": "overstated",
+      "accounting_treatment": "Potential revenue recognition timing acceleration (e.g., percentage-of-completion estimates on long-term outsourcing/systems-integration contracts) causing receivables to grow modestly (3786000000 to 3849000000) even while top-line revenue contracted, implying slower cash conversion of recognized revenue relative to sales activity.",
+      "rationale_evidence": [
+        {
+          "quote": "ReceivablesNetCurrent=3786000000 (2009-04-03) vs ReceivablesNetCurrent=3849000000 (2010-04-02)",
+          "source_accession_no": "0000023082-10-000036",
+          "location": "10-K FY2010 Balance Sheet"
+        },
+        {
+          "quote": "Revenues=16740000000 (FY2009) vs Revenues=16128000000 (FY2010)",
+          "source_accession_no": "0000023082-10-000036",
+          "location": "10-K FY2010 Income Statement"
+        }
+      ]
+    },
+    {
+      "affected_line_items": [
+        "AllowanceForDoubtfulAccountsReceivableCurrent"
+      ],
+      "direction": "understated",
+      "accounting_treatment": "If the allowance figures tagged at 3786000000 (2009-04-03) and 3849000000 (2010-04-02) reflect gross receivables rather than an actual bad-debt reserve (as suggested by the much smaller 55000000 figure at 2009-07-03), the true allowance for doubtful accounts may be understated relative to receivables outstanding, understating bad-debt expense and overstating net receivables/assets — though this could also be a pure XBRL tagging error rather than a substantive misstatement.",
+      "rationale_evidence": [
+        {
+          "quote": "AllowanceForDoubtfulAccountsReceivableCurrent=3786000000 (2009-04-03); AllowanceForDoubtfulAccountsReceivableCurrent=55000000 (2009-07-03); AllowanceForDoubtfulAccountsReceivableCurrent=3849000000 (2010-04-02)",
+          "source_accession_no": "0000023082-10-000036",
+          "location": "10-K FY2010 and 10-Q Q1 FY2010 XBRL allowance tag"
+        }
+      ]
+    }
+  ],
+  "overall": {
+    "risk_tier": "watch",
+    "top_signals": [
+      "Other Assets, Noncurrent grew +25.7% (615000000 to 773000000, FY2009→FY2010) while Revenues fell -3.7% (16740000000 to 16128000000), a soft-asset/revenue divergence",
+      "Receivables grew +1.7% (3786000000 to 3849000000) despite declining Revenues (-3.7%), a mild working-capital divergence",
+      "History of multiple NT 10-Q/NT 10-K late-filing notices (2006-2007) and periodic-report amendments (10-K/A, 10-Q/A) plus recurring SEC CORRESP/UPLOAD correspondence through 2009, indicating a pattern of financial-reporting process friction and SEC scrutiny",
+      "Anomalous/likely mis-tagged Allowance for Doubtful Accounts data (values matching gross receivables in two periods vs. a much smaller figure in a third), reducing confidence in reserve adequacy assessment",
+      "Operating cash flow consistently exceeds net income across FY2008-FY2010, which is a mitigating (not aggravating) factor for earnings-quality concerns"
+    ]
+  }
+}

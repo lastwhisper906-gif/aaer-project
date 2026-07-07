@@ -1,0 +1,235 @@
+{
+  "case_id": "case_51",
+  "run_id": "original-case_51-r1",
+  "model": "claude-sonnet-5",
+  "pipeline_version": "7e33dc2dd3d7327ee20538fa031cbffbc7237d0c",
+  "run_timestamp": "2026-07-07T11:57:54.020836+00:00",
+  "documents_used": [
+    {
+      "accession_no": "0000314808-09-000067",
+      "form_type": "10-Q",
+      "filing_date": "2009-07-23"
+    },
+    {
+      "accession_no": "0000314808-09-000093",
+      "form_type": "10-Q",
+      "filing_date": "2009-10-22"
+    },
+    {
+      "accession_no": "0000314808-10-000121",
+      "form_type": "8-K",
+      "filing_date": "2010-08-13"
+    },
+    {
+      "accession_no": "0000314808-10-000123",
+      "form_type": "8-K",
+      "filing_date": "2010-08-13"
+    },
+    {
+      "accession_no": "0000314808-10-000153",
+      "form_type": "10-Q",
+      "filing_date": "2010-10-21"
+    },
+    {
+      "accession_no": "0000314808-10-000165",
+      "form_type": "8-K",
+      "filing_date": "2010-11-29"
+    },
+    {
+      "accession_no": "0000314808-10-000167",
+      "form_type": "8-K",
+      "filing_date": "2010-11-29"
+    },
+    {
+      "accession_no": "0000314808-10-000170",
+      "form_type": "8-K",
+      "filing_date": "2010-11-29"
+    },
+    {
+      "accession_no": "0000314808-11-000016",
+      "form_type": "10-K",
+      "filing_date": "2011-02-24"
+    }
+  ],
+  "checklist": [
+    {
+      "item_id": "CL1",
+      "question": "Did receivables grow materially faster than revenue across consecutive periods?",
+      "finding": "insufficient_data",
+      "confidence": "high",
+      "evidence": [
+        {
+          "quote": "ReceivablesNetCurrent ... value 482700000 (end 2008-12-31)",
+          "source_accession_no": "0000314808-10-000165",
+          "location": "ReceivablesNetCurrent, 2008-12-31"
+        },
+        {
+          "quote": "ReceivablesNetCurrent ... value 214600000 (end 2010-12-31)",
+          "source_accession_no": "0000314808-11-000016",
+          "location": "ReceivablesNetCurrent, 2010-12-31"
+        }
+      ]
+    },
+    {
+      "item_id": "CL2",
+      "question": "Did non-current 'soft' assets (intangibles, other assets, capitalized items) grow materially faster than the business overall?",
+      "finding": "no_flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "Goodwill=336200000 (2008-12-31) unchanged through Goodwill=336200000 (2010-12-31)",
+          "source_accession_no": "0000314808-11-000016",
+          "location": "Goodwill, 2008-12-31 to 2010-12-31"
+        },
+        {
+          "quote": "OtherAssetsNoncurrent=157500000 (2008-12-31) rising to OtherAssetsNoncurrent=184200000 (2010-12-31)",
+          "source_accession_no": "0000314808-11-000016",
+          "location": "OtherAssetsNoncurrent, 2008-12-31 and 2010-12-31"
+        },
+        {
+          "quote": "PropertyPlantAndEquipmentGross=5376300000 (2008-12-31) growing to PropertyPlantAndEquipmentGross=6744600000 (2010-12-31), matched by PaymentsToAcquirePropertyPlantAndEquipment=764200000 (2008) and 875300000 (2010)",
+          "source_accession_no": "0000314808-11-000016",
+          "location": "PropertyPlantAndEquipmentGross / PaymentsToAcquirePropertyPlantAndEquipment"
+        }
+      ]
+    },
+    {
+      "item_id": "CL3",
+      "question": "Is there a persistent divergence between net income and operating cash flow?",
+      "finding": "no_flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "NetIncomeLoss=1150800000 (2008) vs NetCashProvidedByUsedInOperatingActivitiesContinuingOperations=1014700000 (2008)",
+          "source_accession_no": "0000314808-11-000016",
+          "location": "NetIncomeLoss / OCF, FY2008"
+        },
+        {
+          "quote": "NetIncomeLoss=779400000 (2009) vs NetCashProvidedByUsedInOperatingActivitiesContinuingOperations=1185600000 (2009)",
+          "source_accession_no": "0000314808-11-000016",
+          "location": "NetIncomeLoss / OCF, FY2009"
+        },
+        {
+          "quote": "NetIncomeLoss=579500000 (2010) vs NetCashProvidedByUsedInOperatingActivitiesContinuingOperations=816700000 (2010)",
+          "source_accession_no": "0000314808-11-000016",
+          "location": "NetIncomeLoss / OCF, FY2010"
+        }
+      ]
+    },
+    {
+      "item_id": "CL4",
+      "question": "Do inventory levels or gross margins show trends inconsistent with revenue?",
+      "finding": "insufficient_data",
+      "confidence": "high",
+      "evidence": [
+        {
+          "quote": "InventoryNet=53100000 (2009-12-31)",
+          "source_accession_no": "0000314808-11-000016",
+          "location": "InventoryNet, 2009-12-31"
+        },
+        {
+          "quote": "InventoryNet=56400000 (2010-12-31)",
+          "source_accession_no": "0000314808-11-000016",
+          "location": "InventoryNet, 2010-12-31"
+        }
+      ]
+    },
+    {
+      "item_id": "CL5",
+      "question": "Is the earnings trajectory unusually smooth relative to the volatility of revenue and cash flow?",
+      "finding": "no_flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "NetIncomeLoss quarterly: 220700000 (2009-Q1), 200300000 (2009-Q2), 149700000 (2009-Q3), 208700000 (2009-Q4)",
+          "source_accession_no": "0000314808-11-000016",
+          "location": "NetIncomeLoss, 2009 quarters"
+        },
+        {
+          "quote": "NetIncomeLoss quarterly: 189800000 (2010-Q1), 126300000 (2010-Q2), 130500000 (2010-Q3), 132900000 (2010-Q4)",
+          "source_accession_no": "0000314808-11-000016",
+          "location": "NetIncomeLoss, 2010 quarters"
+        },
+        {
+          "quote": "OperatingIncomeLoss annual: 1279900000 (2008), 926400000 (2009), 626300000 (2010)",
+          "source_accession_no": "0000314808-11-000016",
+          "location": "OperatingIncomeLoss, FY2008-FY2010"
+        }
+      ]
+    },
+    {
+      "item_id": "CL6",
+      "question": "Did liability, allowance, or reserve balances decline (or fail to grow) despite growing business activity?",
+      "finding": "flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "AccountsPayableCurrent=195800000 (2008-12-31) then 32800000 (2009-06-30), 28800000 (2009-09-30), 159100000 (2009-12-31), 97600000 (2010-03-31), 152500000 (2010-06-30), 182200000 (2010-09-30), 163500000 (2010-12-31)",
+          "source_accession_no": "0000314808-11-000016",
+          "location": "AccountsPayableCurrent, 2008-2010 series"
+        },
+        {
+          "quote": "LiabilitiesCurrent=427900000 (2008-12-31), 403000000 (2009-09-30), 484900000 (2009-12-31), 336600000 (2010-03-31), 477900000 (2010-09-30), 349000000 (2010-12-31)",
+          "source_accession_no": "0000314808-11-000016",
+          "location": "LiabilitiesCurrent series"
+        },
+        {
+          "quote": "Assets grew steadily from Assets=5830100000 (2008-12-31) to Assets=7051500000 (2010-12-31) while current liabilities did not show a corresponding steady increase",
+          "source_accession_no": "0000314808-11-000016",
+          "location": "Assets, 2008-12-31 and 2010-12-31"
+        }
+      ]
+    },
+    {
+      "item_id": "CL7",
+      "question": "Does the filing chronology show irregularities (late filings/NT forms, amendments, unusual 8-K frequency)?",
+      "finding": "no_flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "8-K12B filed 2009-12-23; 15-12B filed 2010-01-22; 15-15D filed 2010-02-01 (successor registrant / redomiciliation transaction, not a late-filing indicator)",
+          "source_accession_no": "0000314808-11-000016",
+          "location": "Filing chronology, Dec2009-Feb2010"
+        },
+        {
+          "quote": "10-K filed 2011-02-24 (accession 0000314808-11-000016) filed on a normal annual schedule following the prior 10-K filed 2010-02-25",
+          "source_accession_no": "0000314808-11-000016",
+          "location": "Filing chronology, 10-K filings 2010 and 2011"
+        }
+      ]
+    },
+    {
+      "item_id": "CL8",
+      "question": "Is the provided data sufficient in coverage and length for the above assessments?",
+      "finding": "flag",
+      "confidence": "high",
+      "evidence": [
+        {
+          "quote": "No Revenues, CostOfRevenue, or GrossProfit concept present in the provided financial_series_point_in_time dataset",
+          "source_accession_no": "0000314808-11-000016",
+          "location": "Entire financial_series_point_in_time concept list"
+        },
+        {
+          "quote": "AllowanceForDoubtfulAccountsReceivableCurrent only provided for 2008-12-31 (20600000), 2009-06-30 (26200000), 2009-09-30 (25100000) - no 2010 data points",
+          "source_accession_no": "0000314808-09-000093",
+          "location": "AllowanceForDoubtfulAccountsReceivableCurrent series"
+        },
+        {
+          "quote": "InventoryNet only provided for two periods: 2009-12-31 (53100000) and 2010-12-31 (56400000)",
+          "source_accession_no": "0000314808-11-000016",
+          "location": "InventoryNet series"
+        }
+      ]
+    }
+  ],
+  "misstatement_probability": 20,
+  "mechanism_hypotheses": [],
+  "overall": {
+    "risk_tier": "watch",
+    "top_signals": [
+      "Erratic swings in AccountsPayableCurrent and LiabilitiesCurrent (e.g., AccountsPayableCurrent=195800000 (2008-12-31) dropping to 32800000 (2009-06-30) then rebounding to 163500000 (2010-12-31)) that do not track the steady growth in Assets (5830100000 in 2008-12-31 to 7051500000 in 2010-12-31), likely linked to the Dec-2009 corporate redomiciliation (8-K12B filed 2009-12-23) rather than clear misstatement, but warranting further review",
+      "Absence of any Revenue/COGS data in the provided dataset prevents assessment of receivables-to-revenue and margin-to-revenue relationships (CL1, CL4), materially limiting overall confidence in this analysis",
+      "Otherwise favorable indicators: operating cash flow exceeded net income in FY2009 (1185600000 vs 779400000) and FY2010 (816700000 vs 579500000), goodwill was flat at 336200000 across all periods, and quarterly net income showed real cyclical volatility (e.g., 220700000 to 149700000 in 2009) consistent with the offshore-drilling downturn rather than artificial smoothing"
+    ]
+  }
+}

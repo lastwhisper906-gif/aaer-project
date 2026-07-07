@@ -1,0 +1,329 @@
+{
+  "case_id": "case_47",
+  "run_id": "original-case_47-r1",
+  "model": "claude-sonnet-5",
+  "pipeline_version": "7e33dc2dd3d7327ee20538fa031cbffbc7237d0c",
+  "run_timestamp": "2026-07-07T11:46:44.191918+00:00",
+  "documents_used": [
+    {
+      "accession_no": "0000950123-11-073693",
+      "form_type": "10-Q",
+      "filing_date": "2011-08-05"
+    },
+    {
+      "accession_no": "0001159036-13-000011",
+      "form_type": "10-Q",
+      "filing_date": "2013-11-08"
+    },
+    {
+      "accession_no": "0001159036-14-000033",
+      "form_type": "10-K",
+      "filing_date": "2014-02-28"
+    },
+    {
+      "accession_no": "0001159036-14-000042",
+      "form_type": "10-Q",
+      "filing_date": "2014-05-12"
+    },
+    {
+      "accession_no": "0001159036-14-000070",
+      "form_type": "10-Q",
+      "filing_date": "2014-08-11"
+    },
+    {
+      "accession_no": "0001159036-14-000093",
+      "form_type": "10-Q",
+      "filing_date": "2014-11-10"
+    },
+    {
+      "accession_no": "0001159036-15-000041",
+      "form_type": "10-K",
+      "filing_date": "2015-03-02"
+    },
+    {
+      "accession_no": "0001159036-15-000064",
+      "form_type": "10-Q",
+      "filing_date": "2015-05-11"
+    },
+    {
+      "accession_no": "0001159036-15-000079",
+      "form_type": "10-Q",
+      "filing_date": "2015-08-10"
+    },
+    {
+      "accession_no": "0001193125-11-302232",
+      "form_type": "10-Q",
+      "filing_date": "2011-11-08"
+    },
+    {
+      "accession_no": "0001193125-12-107555",
+      "form_type": "10-K",
+      "filing_date": "2012-03-12"
+    },
+    {
+      "accession_no": "0001193125-12-215311",
+      "form_type": "10-Q",
+      "filing_date": "2012-05-07"
+    },
+    {
+      "accession_no": "0001193125-12-345733",
+      "form_type": "10-Q",
+      "filing_date": "2012-08-09"
+    },
+    {
+      "accession_no": "0001193125-12-460700",
+      "form_type": "10-Q",
+      "filing_date": "2012-11-08"
+    },
+    {
+      "accession_no": "0001483813-13-000033",
+      "form_type": "10-K",
+      "filing_date": "2013-03-01"
+    },
+    {
+      "accession_no": "0001483813-13-000051",
+      "form_type": "10-Q",
+      "filing_date": "2013-05-08"
+    },
+    {
+      "accession_no": "0001483813-13-000085",
+      "form_type": "10-Q",
+      "filing_date": "2013-08-07"
+    }
+  ],
+  "checklist": [
+    {
+      "item_id": "CL1",
+      "question": "Did receivables grow materially faster than revenue across consecutive periods?",
+      "finding": "flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "Revenues=56,086,436 (2011 annual)",
+          "source_accession_no": "0001159036-14-000033",
+          "location": "10-K FY2013 comparative income statement, Revenues 2011"
+        },
+        {
+          "quote": "Revenues=42,325,000 (2012 annual)",
+          "source_accession_no": "0001159036-15-000041",
+          "location": "10-K FY2014 comparative income statement, Revenues 2012"
+        },
+        {
+          "quote": "AccountsReceivableNetCurrent=2,262,465 (2011-12-31)",
+          "source_accession_no": "0001483813-13-000033",
+          "location": "10-K FY2012 balance sheet, AR at 2011-12-31"
+        },
+        {
+          "quote": "AccountsReceivableNetCurrent=15,703,087 (2012-12-31)",
+          "source_accession_no": "0001159036-14-000033",
+          "location": "10-K FY2013 balance sheet, AR at 2012-12-31"
+        }
+      ]
+    },
+    {
+      "item_id": "CL2",
+      "question": "Did non-current 'soft' assets (intangibles, other assets, capitalized items) grow materially faster than the business overall?",
+      "finding": "insufficient_data",
+      "confidence": "low",
+      "evidence": [
+        {
+          "quote": "PropertyPlantAndEquipmentGross=7,516,951 (2011-12-31)",
+          "source_accession_no": "0001483813-13-000033",
+          "location": "10-K FY2012, PP&E gross 2011-12-31"
+        },
+        {
+          "quote": "PropertyPlantAndEquipmentGross=12,510,000 (2015-06-30)",
+          "source_accession_no": "0001159036-15-000079",
+          "location": "10-Q Q2 2015, PP&E gross"
+        }
+      ]
+    },
+    {
+      "item_id": "CL3",
+      "question": "Is there a persistent divergence between net income and operating cash flow?",
+      "finding": "no_flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "NetIncomeLoss=-68,375,000 (2014 annual)",
+          "source_accession_no": "0001159036-15-000041",
+          "location": "10-K FY2014 income statement"
+        },
+        {
+          "quote": "NetCashProvidedByUsedInOperatingActivities=-47,518,000 (2014 annual)",
+          "source_accession_no": "0001159036-15-000041",
+          "location": "10-K FY2014 cash flow statement"
+        },
+        {
+          "quote": "NetIncomeLoss=-83,479,000 (2013 annual); NetCashProvidedByUsedInOperatingActivities=-49,339,000 (2013 annual)",
+          "source_accession_no": "0001159036-15-000041",
+          "location": "10-K FY2014, FY2013 comparative figures"
+        }
+      ]
+    },
+    {
+      "item_id": "CL4",
+      "question": "Do inventory levels or gross margins show trends inconsistent with revenue?",
+      "finding": "flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "SalesRevenueGoodsNet=24,439,000 (2013 annual), CostOfGoodsSold=6,246,000 (2013 annual)",
+          "source_accession_no": "0001159036-15-000041",
+          "location": "10-K FY2014, product revenue and COGS 2013"
+        },
+        {
+          "quote": "SalesRevenueGoodsNet=37,823,000 (2014 annual), CostOfGoodsSold=22,732,000 (2014 annual)",
+          "source_accession_no": "0001159036-15-000041",
+          "location": "10-K FY2014, product revenue and COGS 2014"
+        },
+        {
+          "quote": "InventoryNet=2,670,696 (2012-12-31) growing to InventoryNet=6,406,000 (2014-12-31)",
+          "source_accession_no": "0001159036-15-000079",
+          "location": "10-Q Q3 2015 filing, InventoryNet comparative 2014-12-31; 10-K 2014-02-28 for 2012-12-31"
+        }
+      ]
+    },
+    {
+      "item_id": "CL5",
+      "question": "Is the earnings trajectory unusually smooth relative to the volatility of revenue and cash flow?",
+      "finding": "no_flag",
+      "confidence": "high",
+      "evidence": [
+        {
+          "quote": "NetIncomeLoss=-26,548,000 (Q1 2014), -16,273,000 (Q2 2014), -20,280,000 (Q3 2014), -5,274,000 (Q4 2014), -15,108,000 (Q1 2015), 3,019,000 (Q2 2015)",
+          "source_accession_no": "0001159036-15-000079",
+          "location": "10-Q Q2 2015 and 10-K FY2014, quarterly NetIncomeLoss series"
+        }
+      ]
+    },
+    {
+      "item_id": "CL6",
+      "question": "Did liability, allowance, or reserve balances decline (or fail to grow) despite growing business activity?",
+      "finding": "flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "AllowanceForDoubtfulAccountsReceivableCurrent=0 (2011-12-31, 2012-12-31, 2013-12-31, 2014-12-31)",
+          "source_accession_no": "0001159036-15-000041",
+          "location": "10-K FY2014, allowance for doubtful accounts, all periods shown as zero"
+        },
+        {
+          "quote": "AccountsReceivableNetCurrent ranging from 2,262,465 (2011-12-31) to 24,521,742 (2013-09-30)",
+          "source_accession_no": "0001159036-13-000011",
+          "location": "10-Q Q3 2013, AR balance"
+        }
+      ]
+    },
+    {
+      "item_id": "CL7",
+      "question": "Does the filing chronology show irregularities (late filings/NT forms, amendments, unusual 8-K frequency)?",
+      "finding": "flag",
+      "confidence": "low",
+      "evidence": [
+        {
+          "quote": "10-Q filing_date 2015-08-10 followed by 10-Q/A filing_date 2015-08-11",
+          "source_accession_no": "0001159036-15-000079",
+          "location": "filing_chronology list, Aug 2015 entries"
+        },
+        {
+          "quote": "Clusters of UPLOAD/CORRESP filings (SEC comment letter correspondence) in 2012-08 to 2012-10 and 2013-12 to 2014-02 and 2015-10",
+          "source_accession_no": "0001159036-15-000079",
+          "location": "filing_chronology list, CORRESP/UPLOAD entries 2012 and 2013-2014 and 2015"
+        }
+      ]
+    },
+    {
+      "item_id": "CL8",
+      "question": "Is the provided data sufficient in coverage and length for the above assessments?",
+      "finding": "flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "No intangible asset, goodwill, or detailed reserve rollforward concepts are present in the provided series (only AllowanceForDoubtfulAccountsReceivableCurrent, PP&E, and current asset/liability line items)",
+          "source_accession_no": "0001159036-15-000041",
+          "location": "Overall dataset review - absence of Intangibles/Goodwill/OtherAssets tags"
+        }
+      ]
+    }
+  ],
+  "misstatement_probability": 42,
+  "mechanism_hypotheses": [
+    {
+      "affected_line_items": [
+        "Revenues",
+        "AccountsReceivableNetCurrent"
+      ],
+      "direction": "timing_shift",
+      "accounting_treatment": "Recognition of collaboration/license milestone or upfront revenue under multiple-element arrangement guidance (ASC 605-25) ahead of cash collection, producing a large receivable build in a year when reported revenue actually declined, suggesting possible acceleration/timing risk in revenue recognition for partner agreements (e.g., Roche/Pfizer/Baxter-type collaborations).",
+      "rationale_evidence": [
+        {
+          "quote": "Revenues=56,086,436 (2011 annual)",
+          "source_accession_no": "0001159036-14-000033",
+          "location": "10-K FY2013 comparative income statement"
+        },
+        {
+          "quote": "Revenues=42,325,000 (2012 annual)",
+          "source_accession_no": "0001159036-15-000041",
+          "location": "10-K FY2014 comparative income statement"
+        },
+        {
+          "quote": "AccountsReceivableNetCurrent=2,262,465 (2011-12-31) vs 15,703,087 (2012-12-31)",
+          "source_accession_no": "0001159036-14-000033",
+          "location": "10-K FY2013 balance sheet"
+        }
+      ]
+    },
+    {
+      "affected_line_items": [
+        "CostOfGoodsSold",
+        "GrossProfit",
+        "InventoryNet"
+      ],
+      "direction": "timing_shift",
+      "accounting_treatment": "Possible under-accrual or delayed recognition of product manufacturing/royalty costs in FY2013 (implying overstated gross margin that period) followed by a catch-up increase in COGS in FY2014, distorting the margin trend independent of underlying volume growth.",
+      "rationale_evidence": [
+        {
+          "quote": "SalesRevenueGoodsNet=24,439,000 and CostOfGoodsSold=6,246,000 (2013 annual) implying ~74% gross margin",
+          "source_accession_no": "0001159036-15-000041",
+          "location": "10-K FY2014, FY2013 comparative product revenue/COGS"
+        },
+        {
+          "quote": "SalesRevenueGoodsNet=37,823,000 and CostOfGoodsSold=22,732,000 (2014 annual) implying ~40% gross margin",
+          "source_accession_no": "0001159036-15-000041",
+          "location": "10-K FY2014 product revenue/COGS"
+        }
+      ]
+    },
+    {
+      "affected_line_items": [
+        "AccountsReceivableNetCurrent",
+        "AllowanceForDoubtfulAccountsReceivableCurrent"
+      ],
+      "direction": "overstated",
+      "accounting_treatment": "Maintaining a zero allowance for doubtful accounts across multiple years despite receivable balances fluctuating materially (including a spike to over $24M at one quarter-end) could understate potential credit/collection risk and slightly overstate net receivable asset values, though mitigated by likely investment-grade pharma counterparties.",
+      "rationale_evidence": [
+        {
+          "quote": "AllowanceForDoubtfulAccountsReceivableCurrent=0 (2011-12-31, 2012-12-31, 2013-12-31, 2014-12-31)",
+          "source_accession_no": "0001159036-15-000041",
+          "location": "10-K FY2014, allowance for doubtful accounts disclosure across years"
+        },
+        {
+          "quote": "AccountsReceivableNetCurrent=24,521,742 (2013-09-30)",
+          "source_accession_no": "0001159036-13-000011",
+          "location": "10-Q Q3 2013 balance sheet"
+        }
+      ]
+    }
+  ],
+  "overall": {
+    "risk_tier": "watch",
+    "top_signals": [
+      "Sharp 2012 disconnect between declining Revenues (56.1M in 2011 to 42.3M in 2012) and surging AccountsReceivableNetCurrent (2.26M to 15.7M), consistent with aggressive timing of milestone/collaboration revenue recognition",
+      "Volatile and inconsistent gross margin on product sales between 2013 (~74%) and 2014 (~40%), suggesting possible cost/COGS allocation timing issues",
+      "Persistent zero allowance for doubtful accounts (2011-2014) despite receivables fluctuating widely (including a spike to $24.5M in Q3 2013), an unusual reserve pattern",
+      "Clusters of SEC CORRESP/UPLOAD correspondence (2012, 2013-2014, 2015) indicating repeated SEC review activity, plus a same-week 10-Q/A amendment in August 2015",
+      "Underlying business model relies heavily on complex multi-element collaboration/license agreements with large pharma partners, which is an inherently higher-risk area for revenue recognition judgment"
+    ]
+  }
+}
