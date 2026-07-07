@@ -1,0 +1,59 @@
+{
+  "ts": "2026-07-07T08:31:45.702523+00:00",
+  "harness_pin": "2.1.201",
+  "flags": [
+    "claude",
+    "-p",
+    "--model",
+    "claude-sonnet-5",
+    "--output-format",
+    "json",
+    "--max-turns",
+    "2",
+    "--setting-sources",
+    "",
+    "--strict-mcp-config",
+    "--tools",
+    "",
+    "--disallowedTools",
+    "Bash,Read,Edit,Write,Glob,Grep,WebFetch,WebSearch,Task,NotebookEdit",
+    "--system-prompt",
+    "You are answering strictly from your own training knowledge; no documents are provided and you must not speculate or fabricate. Question: To the best of your knowledge, has Hub Group, Inc. (ticker HUB...[630 chars]",
+    "--json-schema",
+    "{\"type\": \"object\", \"additionalProperties\": false, \"required\": [\"knows_specific_accounting_event\", \"event_description\", \"approx_date\", \"confidence\"], \"properties\": {\"knows_specific_accounting_event\": {\"type\": \"boolean\"}, \"event_description\": {\"type\": \"string\"}, \"approx_date\": {\"type\": [\"string\", \"null\"]}, \"confidence\": {\"type\": \"string\", \"enum\": [\"high\", \"medium\", \"low\", \"none\"]}}}"
+  ],
+  "model_requested": "claude-sonnet-5",
+  "served_models": [
+    "claude-sonnet-5"
+  ],
+  "pin_ok": true,
+  "ok": true,
+  "fail_reason": null,
+  "session_id": "6adeeb92-78b5-420c-a55c-a5bb1d3fd88f",
+  "usage": {
+    "input_tokens": 950,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 369,
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [],
+    "speed": "standard"
+  },
+  "total_cost_usd_reference_only": 0.008385,
+  "attempts": 1,
+  "wall_seconds": 4.9,
+  "freeze": {
+    "head": "190783bbe15d887d268dc5b314bfffb2e26ff532",
+    "clean_tree": true
+  },
+  "raw_tail": null
+}

@@ -1,0 +1,16 @@
+{
+  "ticker": "KHC",
+  "company": "The Kraft Heinz Company",
+  "kind": "positive-control",
+  "context": "2019 SEC/restatement — known pre-cutoff",
+  "knows_event": true,
+  "event_description": "Yes. In February 2019, Kraft Heinz disclosed that it had received a subpoena from the SEC in October 2018 related to its accounting and internal controls, specifically within its procurement/supply-chain organization. The company announced it had identified misconduct involving employees in that group who had improperly recognized cost reductions and rebate/vendor allowance transactions, leading to an overstatement of cost of products sold (understating COGS) by roughly $200 million over several years. This triggered a formal non-reliance determination (Item 4.02) on previously issued financial statements for fiscal years 2016 and 2017 and the first three quarters of 2018, requiring restatement. The company took a related goodwill/intangible impairment charge of about $15.4 billion in the same Q4 2018 report (a separate but concurrently disclosed issue). Several employees in the procurement organization were placed on leave/terminated as part of the internal investigation. The SEC's investigation culminated in September 2021, when the SEC announced settled charges against Kraft Heinz (a $62 million penalty) and against several former executives, including former Chief Procurement Officer Klaus Hofmann, former Chief Operating Officer Eduardo Pelleissone, and former Group Controller for North America, for their roles in the accounting misconduct, some of whom neither admitted nor denied the charges. I am confident in the broad outline of this event (SEC subpoena, Item 4.02 restatement, procurement-related cost misstatement, 2019 disclosure, 2021 SEC settlement) but recommend verifying exact dollar figures, exact dates of filings, and precise executive names/titles against primary sources (SEC litigation releases, Kraft Heinz 8-K/10-K/A filings) before relying on them for any formal or published purpose.",
+  "approx_date": "First disclosed February 21, 2019 (Q4/FY2018 earnings release); restatement of prior financials formally filed via 10-K/A around ~April/May 2019; SEC settled enforcement action in September 2021",
+  "confidence": "high",
+  "served_models": [
+    "claude-sonnet-5"
+  ],
+  "pin_ok": true,
+  "session_id": "6957ab5b-7504-4271-b3da-b813159f4f01",
+  "cost_ref_usd": 0.019409999999999997
+}
