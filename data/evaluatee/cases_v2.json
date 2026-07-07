@@ -1,0 +1,164 @@
+{
+  "_meta": {
+    "contract": "schemas/evaluatee_input.json",
+    "generated_by": "tools/run_control_v2_scoring.py (결정론 — seed 20260707)",
+    "id_convention": "중립 ID case_17.. — 동결 16건과 비겹침",
+    "name_convention": "컷오프 시점 사명 (formerNames 재구성, OV-002)"
+  },
+  "cases": [
+    {
+      "case_id": "case_17",
+      "ticker": "TDY",
+      "cik": "0001094285",
+      "company_name": "TELEDYNE TECHNOLOGIES INC",
+      "cutoff_date": "2013-08-06"
+    },
+    {
+      "case_id": "case_18",
+      "ticker": "GIS",
+      "cik": "0000040704",
+      "company_name": "GENERAL MILLS INC",
+      "cutoff_date": "2019-02-20"
+    },
+    {
+      "case_id": "case_19",
+      "ticker": "CPB",
+      "cik": "0000016732",
+      "company_name": "CAMPBELL SOUP CO",
+      "cutoff_date": "2019-02-20"
+    },
+    {
+      "case_id": "case_20",
+      "ticker": "FSLR",
+      "cik": "0001274494",
+      "company_name": "FIRST SOLAR, INC.",
+      "cutoff_date": "2015-09-10"
+    },
+    {
+      "case_id": "case_21",
+      "ticker": "EXPO",
+      "cik": "0000851520",
+      "company_name": "EXPONENT INC",
+      "cutoff_date": "2016-02-28"
+    },
+    {
+      "case_id": "case_22",
+      "ticker": "MMSI",
+      "cik": "0000856982",
+      "company_name": "MERIT MEDICAL SYSTEMS INC",
+      "cutoff_date": "2013-07-28"
+    },
+    {
+      "case_id": "case_23",
+      "ticker": "BHE",
+      "cik": "0000863436",
+      "company_name": "BENCHMARK ELECTRONICS INC",
+      "cutoff_date": "2015-09-10"
+    },
+    {
+      "case_id": "case_24",
+      "ticker": "ARAY",
+      "cik": "0001138723",
+      "company_name": "ACCURAY INC",
+      "cutoff_date": "2013-07-28"
+    },
+    {
+      "case_id": "case_25",
+      "ticker": "GRMN",
+      "cik": "0001121788",
+      "company_name": "GARMIN LTD",
+      "cutoff_date": "2013-08-06"
+    },
+    {
+      "case_id": "case_26",
+      "ticker": "IDCC",
+      "cik": "0001405495",
+      "company_name": "InterDigital, Inc.",
+      "cutoff_date": "2015-08-09"
+    },
+    {
+      "case_id": "case_27",
+      "ticker": "R",
+      "cik": "0000085961",
+      "company_name": "RYDER SYSTEM INC",
+      "cutoff_date": "2014-05-12"
+    },
+    {
+      "case_id": "case_28",
+      "ticker": "AMKR",
+      "cik": "0001047127",
+      "company_name": "AMKOR TECHNOLOGY, INC.",
+      "cutoff_date": "2015-09-10"
+    },
+    {
+      "case_id": "case_29",
+      "ticker": "UPBD",
+      "cik": "0000933036",
+      "company_name": "RENT A CENTER INC DE",
+      "cutoff_date": "2014-05-12"
+    },
+    {
+      "case_id": "case_30",
+      "ticker": "LQDT",
+      "cik": "0001235468",
+      "company_name": "LIQUIDITY SERVICES INC",
+      "cutoff_date": "2016-02-28"
+    },
+    {
+      "case_id": "case_31",
+      "ticker": "CE",
+      "cik": "0001306830",
+      "company_name": "Celanese Corp",
+      "cutoff_date": "2011-06-28"
+    },
+    {
+      "case_id": "case_32",
+      "ticker": "APD",
+      "cik": "0000002969",
+      "company_name": "AIR PRODUCTS & CHEMICALS INC /DE/",
+      "cutoff_date": "2011-06-28"
+    },
+    {
+      "case_id": "case_33",
+      "ticker": "FORR",
+      "cik": "0001023313",
+      "company_name": "FORRESTER RESEARCH, INC.",
+      "cutoff_date": "2016-02-28"
+    },
+    {
+      "case_id": "case_34",
+      "ticker": "MASI",
+      "cik": "0000937556",
+      "company_name": "MASIMO CORP",
+      "cutoff_date": "2013-07-28"
+    },
+    {
+      "case_id": "case_35",
+      "ticker": "MOS",
+      "cik": "0001285785",
+      "company_name": "MOSAIC CO",
+      "cutoff_date": "2011-06-28"
+    },
+    {
+      "case_id": "case_36",
+      "ticker": "CIEN",
+      "cik": "0000936395",
+      "company_name": "CIENA CORP",
+      "cutoff_date": "2013-08-06"
+    },
+    {
+      "case_id": "case_37",
+      "ticker": "RCKY",
+      "cik": "0000895456",
+      "company_name": "ROCKY BRANDS, INC.",
+      "cutoff_date": "2015-08-09"
+    },
+    {
+      "case_id": "case_38",
+      "ticker": "DLB",
+      "cik": "0001308547",
+      "company_name": "Dolby Laboratories, Inc.",
+      "cutoff_date": "2015-08-09"
+    }
+  ]
+}
