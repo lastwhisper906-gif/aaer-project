@@ -2,9 +2,9 @@
  "_meta": {
   "status": "PROPOSED — NOT FOR SCORING UNTIL OWNER-SIGNED (RP-09 §Final)",
   "criteria": "docs/CONTROL_CRITERIA_v2.md",
-  "criteria_sha256": "2d62a2d9ca907c9c64757848716f5b2254d6e0caefdc065d89a642eb1fd991dc",
+  "criteria_sha256": "f6cc67cb006eb01aa3bcb9df0f46d15cc006bd0931a014a3905f5783818c1a81",
   "pool_extract_sha256": "df2c4ac79f21e97615cab5d6f273b5da2eeb6ffceb9a6093461544cf5eeb6ada",
-  "generated_at": "2026-07-07T04:39:48.552089+00:00",
+  "generated_at": "2026-07-07T05:25:41.353699+00:00",
   "selected_count": 22,
   "per_case_target": "2-3 (S3-v2)",
   "rerun": "python3 tools/control_v2.py select (네트워크 불요)"
@@ -575,27 +575,6 @@
      "rank": 2
     },
     {
-     "cik": "0000006281",
-     "name": "ANALOG DEVICES INC",
-     "sic": "3674",
-     "sic_pool": "3674",
-     "rev_pit": 2864773000,
-     "assets_pit": 7134701000,
-     "size_dist": 0.2577,
-     "size_basis": "revenue",
-     "size_flags": [],
-     "fye": "1101",
-     "fye_month_dist": 2,
-     "sic_tier": 0,
-     "former_names": [],
-     "tickers": [
-      "ADI"
-     ],
-     "rank": 3
-    }
-   ],
-   "alternates": [
-    {
      "cik": "0000863436",
      "name": "BENCHMARK ELECTRONICS INC",
      "sic": "3672",
@@ -612,8 +591,10 @@
      "tickers": [
       "BHE"
      ],
-     "rank": 4
-    },
+     "rank": 3
+    }
+   ],
+   "alternates": [
     {
      "cik": "0000002488",
      "name": "ADVANCED MICRO DEVICES INC",
@@ -631,10 +612,32 @@
      "tickers": [
       "AMD"
      ],
+     "rank": 4
+    },
+    {
+     "cik": "0000004127",
+     "name": "SKYWORKS SOLUTIONS, INC.",
+     "sic": "3674",
+     "sic_pool": "3674",
+     "rev_pit": 2291500000,
+     "assets_pit": 3518300000,
+     "size_dist": 0.481,
+     "size_basis": "revenue",
+     "size_flags": [],
+     "fye": "1002",
+     "fye_month_dist": 3,
+     "sic_tier": 0,
+     "former_names": [
+      "SKYWORKS SOLUTIONS INC",
+      "ALPHA INDUSTRIES INC"
+     ],
+     "tickers": [
+      "SWKS"
+     ],
      "rank": 5
     }
    ],
-   "eligible_ranked_count": 16,
+   "eligible_ranked_count": 15,
    "under_target": false
   },
   "T21": {
@@ -38477,6 +38480,15 @@
     ]
    },
    {
+    "cik": "0000006281",
+    "name": "ANALOG DEVICES INC",
+    "sic": "3674",
+    "sic_pool": "3674",
+    "excluded": [
+     "E8b 소유자 확인 집행 부적격: Analog Devices — SEC C&D §10(b)/10b-5 옵션 백데이팅, $3M, 2008-05-30 화해 (AP 3-13050, Rel 33-8923, PR 2008-102)"
+    ]
+   },
+   {
     "cik": "0000013606",
     "name": "WHITE ELECTRONIC DESIGNS CORP",
     "sic": "3674",
@@ -46317,31 +46329,6 @@
     ]
    },
    {
-    "cik": "0000004127",
-    "name": "SKYWORKS SOLUTIONS, INC.",
-    "sic": "3674",
-    "sic_pool": "3674",
-    "rev_pit": 2291500000,
-    "assets_pit": 3518300000,
-    "size_dist": 0.481,
-    "size_basis": "revenue",
-    "size_flags": [],
-    "fye": "1002",
-    "fye_month_dist": 3,
-    "sic_tier": 0,
-    "former_names": [
-     "SKYWORKS SOLUTIONS INC",
-     "ALPHA INDUSTRIES INC"
-    ],
-    "tickers": [
-     "SWKS"
-    ],
-    "rank": 6,
-    "excluded": [
-     "순위 밖 (rank 6)"
-    ]
-   },
-   {
     "cik": "0000827054",
     "name": "MICROCHIP TECHNOLOGY INC",
     "sic": "3674",
@@ -46359,9 +46346,9 @@
      "MCHP",
      "MCHPP"
     ],
-    "rank": 7,
+    "rank": 6,
     "excluded": [
-     "순위 밖 (rank 7)"
+     "순위 밖 (rank 6)"
     ]
    },
    {
@@ -46384,9 +46371,9 @@
     "tickers": [
      "SANM"
     ],
-    "rank": 8,
+    "rank": 7,
     "excluded": [
-     "순위 밖 (rank 8)"
+     "순위 밖 (rank 7)"
     ]
    },
    {
@@ -46406,9 +46393,9 @@
     "tickers": [
      "SYNA"
     ],
-    "rank": 9,
+    "rank": 8,
     "excluded": [
-     "순위 밖 (rank 9)"
+     "순위 밖 (rank 8)"
     ]
    },
    {
@@ -46432,9 +46419,9 @@
     "tickers": [
      "WOLF"
     ],
-    "rank": 10,
+    "rank": 9,
     "excluded": [
-     "순위 밖 (rank 10)"
+     "순위 밖 (rank 9)"
     ]
    },
    {
@@ -46454,9 +46441,9 @@
     "tickers": [
      "AMAT"
     ],
-    "rank": 11,
+    "rank": 10,
     "excluded": [
-     "순위 밖 (rank 11)"
+     "순위 밖 (rank 10)"
     ]
    },
    {
@@ -46479,9 +46466,9 @@
     "tickers": [
      "NTGR"
     ],
-    "rank": 12,
+    "rank": 11,
     "excluded": [
-     "순위 밖 (rank 12)"
+     "순위 밖 (rank 11)"
     ]
    },
    {
@@ -46501,9 +46488,9 @@
     "tickers": [
      "TTMI"
     ],
-    "rank": 13,
+    "rank": 12,
     "excluded": [
-     "순위 밖 (rank 13)"
+     "순위 밖 (rank 12)"
     ]
    },
    {
@@ -46525,9 +46512,9 @@
     "tickers": [
      "PLXS"
     ],
-    "rank": 14,
+    "rank": 13,
     "excluded": [
-     "순위 밖 (rank 14)"
+     "순위 밖 (rank 13)"
     ]
    },
    {
@@ -46547,9 +46534,9 @@
     "tickers": [
      "TXN"
     ],
-    "rank": 15,
+    "rank": 14,
     "excluded": [
-     "순위 밖 (rank 15)"
+     "순위 밖 (rank 14)"
     ]
    },
    {
@@ -46571,9 +46558,9 @@
     "tickers": [
      "OSIS"
     ],
-    "rank": 16,
+    "rank": 15,
     "excluded": [
-     "순위 밖 (rank 16)"
+     "순위 밖 (rank 15)"
     ]
    }
   ],
