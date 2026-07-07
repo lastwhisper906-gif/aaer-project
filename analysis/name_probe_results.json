@@ -1,11 +1,11 @@
 {
- "n_probes": 22,
- "recognized_total": 12,
- "rate_pct": 54.5,
+ "n_probes": 30,
+ "recognized_total": 15,
+ "rate_pct": 50.0,
  "by_group": {
   "fraud": {
-   "n": 0,
-   "recognized": 0
+   "n": 8,
+   "recognized": 3
   },
   "control": {
    "n": 22,
@@ -15,6 +15,70 @@
  "verdict_rule": "frozen scoring/probe_verdict.name_match",
  "context": "EDINET-Bench (2025): 표 데이터 식별률 <5% 보고",
  "rows": [
+  {
+   "case_id": "case_01",
+   "group": "fraud",
+   "truth_ticker": "SCOR",
+   "guess": "SolarWinds, Inc.",
+   "confidence": "medium",
+   "recognized": false
+  },
+  {
+   "case_id": "case_02",
+   "group": "fraud",
+   "truth_ticker": "OFIX",
+   "guess": "Taro Pharmaceutical Industries Ltd.",
+   "confidence": "medium",
+   "recognized": false
+  },
+  {
+   "case_id": "case_03",
+   "group": "fraud",
+   "truth_ticker": "LOGI",
+   "guess": "Logitech International S.A.",
+   "confidence": "medium",
+   "recognized": true
+  },
+  {
+   "case_id": "case_06",
+   "group": "fraud",
+   "truth_ticker": "MON",
+   "guess": "unknown",
+   "confidence": "low",
+   "recognized": false
+  },
+  {
+   "case_id": "case_08",
+   "group": "fraud",
+   "truth_ticker": "HTZ",
+   "guess": "unknown",
+   "confidence": "low",
+   "recognized": false
+  },
+  {
+   "case_id": "case_09",
+   "group": "fraud",
+   "truth_ticker": "ICON",
+   "guess": "Cornerstone Therapeutics Inc.",
+   "confidence": "medium",
+   "recognized": false
+  },
+  {
+   "case_id": "case_12",
+   "group": "fraud",
+   "truth_ticker": "KHC",
+   "guess": "The Kraft Heinz Company",
+   "confidence": "high",
+   "recognized": true
+  },
+  {
+   "case_id": "case_13",
+   "group": "fraud",
+   "truth_ticker": "MRVL",
+   "guess": "Marvell Technology Group Ltd.",
+   "confidence": "medium",
+   "recognized": true
+  },
   {
    "case_id": "case_17",
    "group": "control",

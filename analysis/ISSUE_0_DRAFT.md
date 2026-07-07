@@ -114,9 +114,10 @@ scatter shows the identity-perturbation delta against the base score, with
 identity is reconstructable from censored filing text in ~70% of cases. Our
 name-prediction probe confirms the numeric analogue: asked "which company is
 this?" on the anonymized, rescaled payloads, the evaluatee named the correct
-company in **12/22 controls (54.5%)** — an order of magnitude above the <5%
-identifiability EDINET-Bench reports for tabular data — and 6/8 fraud cases in
-at least one probe draw. This is why the design stacks a coded temporal cutoff
+company in **15/30 firms (50%) in a single uniform draw — 12/22 controls
+(54.5%)** — an order of magnitude above the <5% identifiability EDINET-Bench
+reports for tabular data — and 6/8 fraud cases across probe draws (Monsanto:
+never, in three draws). This is why the design stacks a coded temporal cutoff
 + value perturbation + recognition probes rather than trusting anonymization,
 and why the recognition result is itself a reported finding, not a footnote.
 One nuance the probes add: recognition alone does not move control scores

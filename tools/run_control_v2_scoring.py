@@ -85,12 +85,18 @@ def stage_data(rows) -> None:
         src_f = BIG / f"facts/CIK{cik}.json"
         if not src_f.exists():
             raise SystemExit(f"companyfacts 캐시 부재: {src_f} — control_v2.py fetch 재실행")
-        shutil.copy2(src_f, x / f"CIK{cik}.json")
+        # 기존 파일 덮어쓰기 금지 (2026-07-07 사고, D23): RP-01과 v2 이중 역할
+        # 티커의 동결 시대 원본 아카이브를 보존 — 존재하면 그대로 사용 (PIT
+        # 필터가 두 버전을 컷오프 이전 내용에서 동치로 만듦은 D23에서 검증).
+        dst_f = x / f"CIK{cik}.json"
+        if not dst_f.exists():
+            shutil.copy2(src_f, dst_f)
         subs = sorted(BIG.glob(f"submissions/CIK{cik}*.json"))
         if not subs:
             raise SystemExit(f"submissions 캐시 부재: CIK{cik}")
         for s in subs:
-            shutil.copy2(s, e / s.name)
+            if not (e / s.name).exists():
+                shutil.copy2(s, e / s.name)
         print(f"  staged {tick} (CIK {cik})")
 
 
