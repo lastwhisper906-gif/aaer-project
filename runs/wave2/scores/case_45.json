@@ -2,8 +2,8 @@
   "case_id": "case_45",
   "run_id": "original-case_45-r1",
   "model": "claude-sonnet-5",
-  "pipeline_version": "7e33dc2dd3d7327ee20538fa031cbffbc7237d0c",
-  "run_timestamp": "2026-07-07T11:45:52.388787+00:00",
+  "pipeline_version": "08f1a4829ebc794aacc12ea74d4461b60fb8d5b8",
+  "run_timestamp": "2026-07-07T12:41:35.798888+00:00",
   "documents_used": [
     {
       "accession_no": "0000950123-10-080248",
@@ -139,19 +139,14 @@
       "confidence": "medium",
       "evidence": [
         {
-          "quote": "AccountsNotesAndLoansReceivableNetCurrent=235911000 (2015-01-03) vs 269683000 (2016-01-02)",
-          "source_accession_no": "0001564590-16-023935",
-          "location": "10-Q balance sheet, period end 2016-01-02"
+          "quote": "AccountsNotesAndLoansReceivableNetCurrent=256235000 (2012-12-29); SalesRevenueGoodsNet=3031124000 (FY2012, 2012-01-01 to 2012-12-29)",
+          "source_accession_no": "0001193125-14-058624",
+          "location": "10-K FY2012 balance sheet / income statement"
         },
         {
-          "quote": "SalesRevenueGoodsNet=3748973000 (FY2014, 2013-12-29 to 2015-01-03) vs 3778505000 (FY2015, 2015-01-04 to 2016-01-02)",
-          "source_accession_no": "0001564590-16-013151",
-          "location": "10-K income statement FY2015"
-        },
-        {
-          "quote": "AccountsNotesAndLoansReceivableNetCurrent=260864000 (2015-07-18) vs 293519000 (2016-07-16), a +12.5% YoY increase, while SalesRevenueGoodsNet=888795000 (Q2 2015) vs 935025000 (Q2 2016), a +5.2% YoY increase",
+          "quote": "AccountsNotesAndLoansReceivableNetCurrent=269683000 (2016-01-02) vs 235911000 (2015-01-03), a 14.3% YoY increase; SalesRevenueGoodsNet=3778505000 (FY2015) vs 3748973000 (FY2014), a 0.8% YoY increase",
           "source_accession_no": "0001564590-16-023935",
-          "location": "10-Q Q2 2016 balance sheet and income statement"
+          "location": "10-Q filed 2016-08-10, comparative balance sheet data"
         }
       ]
     },
@@ -159,22 +154,17 @@
       "item_id": "CL2",
       "question": "Did non-current 'soft' assets (intangibles, other assets, capitalized items) grow materially faster than the business overall?",
       "finding": "flag",
-      "confidence": "medium",
+      "confidence": "high",
       "evidence": [
         {
-          "quote": "IntangibleAssetsNetExcludingGoodwill=103080000 (2010-01-02) growing to 862073000 (2016-07-16)",
-          "source_accession_no": "0001564590-16-023935",
-          "location": "10-K/10-Q balance sheets, various periods"
+          "quote": "IntangibleAssetsNetExcludingGoodwill=103080000 (2010-01-02) growing to IntangibleAssetsNetExcludingGoodwill=862073000 (2016-07-16), an approximately 8.4x increase",
+          "source_accession_no": "0000950123-11-017197",
+          "location": "10-K FY2010 balance sheet; 10-Q FY2016Q2 balance sheet"
         },
         {
-          "quote": "Goodwill=201682000 (2010-01-02) growing to 464926000 (2016-01-02)",
+          "quote": "Goodwill=201682000 (2010-01-02) growing to Goodwill=464926000 (2016-07-16), roughly a 2.3x increase, while SalesRevenueGoodsNet grew from 2600849000 (FY2009) to 3778505000 (FY2015), only about 1.45x",
           "source_accession_no": "0001564590-16-023935",
-          "location": "10-Q balance sheet 2016-01-02"
-        },
-        {
-          "quote": "SalesRevenueGoodsNet=2600849000 (FY2009) growing to 3778505000 (FY2015), roughly a 45% increase versus the ~730% increase in intangibles over a similar period",
-          "source_accession_no": "0001564590-16-013151",
-          "location": "10-K income statement FY2015"
+          "location": "10-Q filed 2016-08-10 balance sheet vs 10-K FY2015 income statement"
         }
       ]
     },
@@ -185,37 +175,27 @@
       "confidence": "high",
       "evidence": [
         {
-          "quote": "NetIncomeLoss=189191000 (FY2015, 2015-01-04 to 2016-01-02) vs NetCashProvidedByUsedInOperatingActivitiesContinuingOperations=324233000 (same period)",
+          "quote": "NetIncomeLoss=175739000 (FY2014, 2013-12-29 to 2015-01-03) vs NetCashProvidedByUsedInOperatingActivitiesContinuingOperations=313970000 (FY2014)",
           "source_accession_no": "0001564590-16-013151",
-          "location": "10-K cash flow statement FY2015"
+          "location": "10-K FY2015 cash flow statement / income statement"
         },
         {
-          "quote": "NetIncomeLoss=175739000 (FY2014) vs NetCashProvidedByUsedInOperatingActivitiesContinuingOperations=313970000 (FY2014)",
+          "quote": "NetIncomeLoss=189191000 (FY2015, 2015-01-04 to 2016-01-02) vs NetCashProvidedByUsedInOperatingActivitiesContinuingOperations=324233000 (FY2015)",
           "source_accession_no": "0001564590-16-013151",
-          "location": "10-K cash flow statement FY2014"
-        },
-        {
-          "quote": "NetIncomeLoss=230894000 (FY2013) vs NetCashProvidedByUsedInOperatingActivitiesContinuingOperations=270484000 (FY2013)",
-          "source_accession_no": "0001564590-16-013151",
-          "location": "10-K cash flow statement FY2013"
+          "location": "10-K FY2015 cash flow statement / income statement"
         }
       ]
     },
     {
       "item_id": "CL4",
       "question": "Do inventory levels or gross margins show trends inconsistent with revenue?",
-      "finding": "insufficient_data",
-      "confidence": "low",
+      "finding": "no_flag",
+      "confidence": "medium",
       "evidence": [
         {
-          "quote": "CostOfGoodsSold data only provided through period 2010-01-03 to 2011-01-01, value=1346790000; no COGS figures provided for FY2011-FY2015",
+          "quote": "InventoryNet=60996000 (2010-01-02) relative to SalesRevenueGoodsNet=2600849000 (FY2009) = 2.34%; InventoryNet=111177000 (2016-01-02) relative to SalesRevenueGoodsNet=3778505000 (FY2015) = 2.94%",
           "source_accession_no": "0000950123-11-017197",
-          "location": "10-K income statement FY2010, filed 2011-02-23"
-        },
-        {
-          "quote": "InventoryNet=93100000 (2015-01-03) growing to 111177000 (2016-01-02), roughly in line with revenue growth of ~0.8% to ~19% depending on the ratio window measured, but without COGS data the gross margin trend cannot be verified",
-          "source_accession_no": "0001564590-16-023935",
-          "location": "10-Q balance sheet 2016-01-02"
+          "location": "10-K FY2010 and 10-Q filed 2016-08-10 balance sheets vs income statements"
         }
       ]
     },
@@ -226,32 +206,22 @@
       "confidence": "medium",
       "evidence": [
         {
-          "quote": "NetIncomeLoss quarterly: 41161000 (Q1 2011), 28210000 (Q2 2011), 31019000 (Q3 2011), 23038000 (Q4 2011) show normal seasonal swings rather than artificial smoothness",
-          "source_accession_no": "0001193125-13-067201",
-          "location": "10-K quarterly data FY2011, filed 2013-02-20"
-        },
-        {
-          "quote": "NetIncomeLoss quarterly: 51760000 (Q2 2015), 43796000 (Q3 2015), 32246000 (Q4 2015) show a declining seasonal pattern consistent with historical seasonality",
+          "quote": "OperatingIncomeLoss=335233000 (FY2013) declining to OperatingIncomeLoss=275395000 (FY2014) then recovering to OperatingIncomeLoss=297879000 (FY2015), showing real year-over-year volatility rather than artificial smoothness",
           "source_accession_no": "0001564590-16-013151",
-          "location": "10-K quarterly data FY2015"
+          "location": "10-K FY2015 income statement, multi-year comparison"
         }
       ]
     },
     {
       "item_id": "CL6",
       "question": "Did liability, allowance, or reserve balances decline (or fail to grow) despite growing business activity?",
-      "finding": "flag",
+      "finding": "no_flag",
       "confidence": "low",
       "evidence": [
         {
-          "quote": "AllowanceForDoubtfulAccountsReceivableCurrent=2892000 (2015-10-10) against AccountsNotesAndLoansReceivableNetCurrent=267762000 (2015-10-10), a ratio of ~1.08%",
-          "source_accession_no": "0001564590-15-010429",
-          "location": "10-Q balance sheet 2015-10-10"
-        },
-        {
-          "quote": "AllowanceForDoubtfulAccountsReceivableCurrent=1341000 (2016-01-02) against AccountsNotesAndLoansReceivableNetCurrent=269683000 (2016-01-02), a ratio of ~0.50%, even though receivables balance increased over the same quarter",
-          "source_accession_no": "0001564590-16-023935",
-          "location": "10-Q balance sheet 2016-01-02"
+          "quote": "AllowanceForDoubtfulAccountsReceivableCurrent=171000 (2011-12-31) while AccountsNotesAndLoansReceivableNetCurrent=185603000 (2011-12-31) reflects a low allowance ratio, but the allowance later rose to AllowanceForDoubtfulAccountsReceivableCurrent=2723000 (2015-01-03) and fluctuated without a persistent decline trend",
+          "source_accession_no": "0001193125-13-067201",
+          "location": "10-K FY2012 and 10-K FY2015 receivables footnote"
         }
       ]
     },
@@ -262,52 +232,35 @@
       "confidence": "low",
       "evidence": [
         {
-          "quote": "form: 10-K/A, filing_date: 2010-06-03 (amendment shortly after the original 10-K filed 2010-03-03)",
+          "quote": "10-K filed 2010-03-03 followed by 10-K/A filed 2010-06-03",
           "source_accession_no": "N/A",
-          "location": "filing_chronology list"
-        },
-        {
-          "quote": "Multiple 8-K/A amendments: 2008-02-25, 2008-06-25, 2010-01-11, 2010-02-16, 2012-10-04, 2012-11-08, 2013-05-28, coinciding with periods of acquisition activity (Sara Lee, Hostess brands)",
-          "source_accession_no": "N/A",
-          "location": "filing_chronology list"
-        },
-        {
-          "quote": "CORRESP and UPLOAD filings in 2008 and 2010 indicate SEC comment-letter correspondence during those periods",
-          "source_accession_no": "N/A",
-          "location": "filing_chronology list"
+          "location": "filing_chronology list, 2010 entries"
         }
       ]
     },
     {
       "item_id": "CL8",
       "question": "Is the provided data sufficient in coverage and length for the above assessments?",
-      "finding": "flag",
+      "finding": "insufficient_data",
       "confidence": "medium",
       "evidence": [
         {
-          "quote": "CostOfGoodsSold series ends at FY2010 (period 2010-01-03 to 2011-01-01); no later COGS figures provided, limiting gross-margin trend analysis for FY2011-2015",
+          "quote": "CostOfGoodsSold data points only span FY2007-FY2010 (e.g., CostOfGoodsSold=1346790000 for FY2010, 2010-01-03 to 2011-01-01) with no subsequent annual COGS figures provided, limiting gross margin trend analysis for 2012-2016",
           "source_accession_no": "0000950123-11-017197",
-          "location": "10-K income statement FY2010"
-        },
-        {
-          "quote": "NetCashProvidedByUsedInFinancingActivities and NetCashProvidedByUsedInInvestingActivities annual data are only provided through FY2012 (2012-01-01 to 2012-12-29, value 174049000 and -385437000 respectively); no later annual investing/financing cash flow figures are provided",
-          "source_accession_no": "0001193125-13-067201",
-          "location": "10-K cash flow statement FY2012, filed 2013-02-20"
+          "location": "10-K FY2010 income statement, COGS tag series"
         }
       ]
     }
   ],
-  "misstatement_probability": 35,
+  "misstatement_probability": 28,
   "mechanism_hypotheses": [],
   "overall": {
     "risk_tier": "watch",
     "top_signals": [
-      "Receivables (AccountsNotesAndLoansReceivableNetCurrent) grew markedly faster than revenue in FY2015 (+14.3% vs +0.79% revenue) and in the most recent quarter (Q2 2016 AR +12.5% YoY vs revenue +5.2% YoY), suggesting a possible DSO deterioration worth monitoring for revenue-recognition or channel-stuffing risk.",
-      "Allowance for doubtful accounts as a percentage of receivables dropped sharply at fiscal year-end 2016-01-02 (0.50%) versus the prior quarter (1.08% at 2015-10-10) even as gross receivables rose, a pattern consistent with either normal write-offs or a reserve release that modestly favors reported earnings.",
-      "Intangible assets and goodwill grew far faster than revenue over the 2010-2016 window (intangibles +736%, goodwill +130%, vs revenue +46.8%), driven by disclosed acquisitions (Sara Lee bread business, Hostess brands, Dave's Killer Bread); this elevates future impairment risk but is largely explained by purchase accounting rather than manipulation.",
-      "Operating cash flow has consistently and substantially exceeded net income in every year with available data (e.g., FY2015 OCF=324,233,000 vs NI=189,191,000), which is a strong mitigating factor against earnings manipulation.",
-      "No late-filing NT forms were observed, though one 10-K/A and several 8-K/A amendments appear in the filing history, mostly clustered around acquisition periods.",
-      "Data gaps (COGS beyond FY2010, financing/investing cash flow beyond FY2012) limit the ability to fully verify gross margin and free cash flow trends in later years."
+      "Rapid, acquisition-driven inflation of goodwill (Goodwill=201682000 in 2010-01-02 to 464926000 in 2016-07-16) and intangibles (IntangibleAssetsNetExcludingGoodwill=103080000 in 2010-01-02 to 862073000 in 2016-07-16), now representing roughly 46% of total assets (Assets=2817860000, 2016-07-16), creating elevated purchase-accounting and impairment risk even though no direct evidence of misstatement is present in the provided data",
+      "Receivables growth materially outpaced revenue growth in at least two periods (FY2012 and FY2015), coincident with acquisitions (e.g., Goodwill jump from 282960000 in 2015-07-18 to 425216000 in 2015-10-10), suggesting the divergence is largely acquisition-driven rather than organic earnings management, but data is insufficient to fully disaggregate organic vs. acquired receivable growth",
+      "A 10-K/A amendment was filed in June 2010 shortly after the original 10-K, a mild chronology irregularity worth monitoring but with no further corroborating evidence of restatement scope or cause in the provided dataset",
+      "Operating cash flow consistently exceeded net income across FY2011-FY2015 (e.g., NetIncomeLoss=189191000 vs NetCashProvidedByUsedInOperatingActivitiesContinuingOperations=324233000 in FY2015), a conservative rather than aggressive earnings pattern that reduces concern about revenue/earnings overstatement"
     ]
   }
 }
