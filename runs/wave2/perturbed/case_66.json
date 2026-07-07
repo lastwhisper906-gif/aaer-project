@@ -2,8 +2,8 @@
   "case_id": "case_66",
   "run_id": "perturbed-case_66-r1",
   "model": "claude-sonnet-5",
-  "pipeline_version": "040f790165cd9040160fd41bf18dfd248824a4dc",
-  "run_timestamp": "2026-07-07T12:04:02.351159+00:00",
+  "pipeline_version": "3223fb28075db24b6607bf20ef72a1ef8d3dc103",
+  "run_timestamp": "2026-07-07T12:43:45.322129+00:00",
   "documents_used": [
     {
       "accession_no": "0001193125-10-178579",
@@ -195,18 +195,28 @@
     {
       "item_id": "CL1",
       "question": "Did receivables grow materially faster than revenue across consecutive periods?",
-      "finding": "flag",
+      "finding": "no_flag",
       "confidence": "medium",
       "evidence": [
         {
-          "quote": "AccountsReceivableNetCurrent=178690826.85 (2015-12-31) -> AccountsReceivableNetCurrent=256592128.72 (2016-12-31), a +43.6% increase",
-          "source_accession_no": "0001336917-17-000017 / 0001336917-18-000009",
-          "location": "AccountsReceivableNetCurrent instant series 2015-12-31 and 2016-12-31"
+          "quote": "AccountsReceivableNetCurrent=256592128.72 (2016-12-31)",
+          "source_accession_no": "0001336917-18-000009",
+          "location": "10-K FY2016 balance sheet"
         },
         {
-          "quote": "SalesRevenueNet=1633177159.33 (FY2015) -> SalesRevenueNet=1988393777.66 (FY2016), a +21.7% increase",
-          "source_accession_no": "0001336917-18-000009",
-          "location": "SalesRevenueNet annual series FY2015/FY2016"
+          "quote": "Revenues=1991691603.70 (2016 annual)",
+          "source_accession_no": "0001336917-19-000011",
+          "location": "10-K FY2018, prior-year comparative revenue"
+        },
+        {
+          "quote": "AccountsReceivableNetCurrent=268897062.28 (2018-12-31)",
+          "source_accession_no": "0001336917-19-000052",
+          "location": "10-Q Q2 2019, balance sheet comparative"
+        },
+        {
+          "quote": "Revenues=2139975098.15 (2018 annual)",
+          "source_accession_no": "0001336917-19-000011",
+          "location": "10-K FY2018 income statement"
         }
       ]
     },
@@ -217,14 +227,24 @@
       "confidence": "medium",
       "evidence": [
         {
-          "quote": "Goodwill=0.00 (2012-12-31) -> Goodwill=50373540.69 (2013-12-31) -> Goodwill=245386607.86 (2015-03-31), then flat around 225-241M through 2019-06-30",
-          "source_accession_no": "0001336917-15-000006 / 0001336917-16-000077",
-          "location": "Goodwill instant series 2012-2019"
+          "quote": "Goodwill=241137715.66 (2015-12-31)",
+          "source_accession_no": "0001336917-17-000017",
+          "location": "10-K FY2016 balance sheet, prior year"
         },
         {
-          "quote": "IntangibleAssetsNetExcludingGoodwill declines steadily from 35881319.78 (2015-03-31) to 16288038.21 (2019-06-30), consistent with amortization rather than build-up",
-          "source_accession_no": "0001336917-16-000077 / 0001336917-19-000052",
-          "location": "IntangibleAssetsNetExcludingGoodwill instant series"
+          "quote": "Goodwill=225195819.38 (2018-12-31)",
+          "source_accession_no": "0001336917-19-000052",
+          "location": "10-Q Q2 2019 balance sheet comparative"
+        },
+        {
+          "quote": "OtherAssetsNoncurrent=51022556.81 (2018-12-31)",
+          "source_accession_no": "0001336917-19-000052",
+          "location": "10-Q Q2 2019 balance sheet comparative"
+        },
+        {
+          "quote": "Assets=1749262036.90 (2018-12-31)",
+          "source_accession_no": "0001336917-19-000052",
+          "location": "10-Q Q2 2019 balance sheet comparative"
         }
       ]
     },
@@ -235,19 +255,24 @@
       "confidence": "high",
       "evidence": [
         {
-          "quote": "NetIncomeLoss=-19886678.07 (FY2017) while NetCashProvidedByUsedInOperatingActivities=97851027.22 (FY2017)",
+          "quote": "NetIncomeLoss=-19886678.07 (2017 annual)",
           "source_accession_no": "0001336917-19-000011",
-          "location": "NetIncomeLoss and NetCashProvidedByUsedInOperatingActivities annual FY2017"
+          "location": "10-K FY2018, prior-year income statement"
         },
         {
-          "quote": "NetIncomeLoss=-19079837.71 (FY2018) while NetCashProvidedByUsedInOperatingActivities=258877077.54 (FY2018)",
+          "quote": "NetCashProvidedByUsedInOperatingActivities=97851027.22 (2017 annual)",
           "source_accession_no": "0001336917-19-000011",
-          "location": "NetIncomeLoss and NetCashProvidedByUsedInOperatingActivities annual FY2018"
+          "location": "10-K FY2018, cash flow statement"
         },
         {
-          "quote": "DepreciationAndAmortization=74901817.22 (FY2018) is far too small to reconcile the ~278M gap between the FY2018 net loss and operating cash flow",
+          "quote": "NetIncomeLoss=-19079837.71 (2018 annual)",
           "source_accession_no": "0001336917-19-000011",
-          "location": "DepreciationAndAmortization annual FY2018"
+          "location": "10-K FY2018 income statement"
+        },
+        {
+          "quote": "NetCashProvidedByUsedInOperatingActivities=258877077.54 (2018 annual)",
+          "source_accession_no": "0001336917-19-000011",
+          "location": "10-K FY2018 cash flow statement"
         }
       ]
     },
@@ -258,14 +283,29 @@
       "confidence": "medium",
       "evidence": [
         {
-          "quote": "InventoryNet=378073935.89 (2016-12-31) -> InventoryNet=477407192.31 (2017-12-31), +26.3%, while Revenues=1991691603.7 (FY2016) -> Revenues=2055936370.18 (FY2017), only +3.2%",
-          "source_accession_no": "0001336917-19-000011",
-          "location": "InventoryNet instant and Revenues annual FY2016/FY2017"
+          "quote": "InventoryNet=378073935.89 (2016-12-31)",
+          "source_accession_no": "0001336917-18-000009",
+          "location": "10-K FY2017, prior-year balance sheet"
         },
         {
-          "quote": "InventoryNet then declines from 477407192.31 (2017-12-31) to 420107516.42 (2018-12-31), a -12% drop even as revenue continued to grow (+4.1%), suggesting a subsequent unwind of the prior build-up",
+          "quote": "InventoryNet=477407192.31 (2017-12-31)",
           "source_accession_no": "0001336917-19-000011",
-          "location": "InventoryNet instant 2017-12-31 and 2018-12-31"
+          "location": "10-K FY2018, prior-year balance sheet"
+        },
+        {
+          "quote": "SalesRevenueNet=1988393777.66 (2016 annual)",
+          "source_accession_no": "0001336917-18-000009",
+          "location": "10-K FY2017 income statement, prior year"
+        },
+        {
+          "quote": "SalesRevenueNet=2050706742.51 (2017 annual)",
+          "source_accession_no": "0001336917-18-000009",
+          "location": "10-K FY2017 income statement"
+        },
+        {
+          "quote": "GrossProfit=468391843.31 (2013 annual) vs SalesRevenueNet=938321957.85 (2013 annual) ~49.9% margin; GrossProfit=964446607.99 (2018 annual) vs Revenues=2139975098.15 (2018 annual) ~45.1% margin",
+          "source_accession_no": "0001336917-19-000011",
+          "location": "10-K FY2018 income statement, 5-year trend"
         }
       ]
     },
@@ -276,9 +316,19 @@
       "confidence": "medium",
       "evidence": [
         {
-          "quote": "NetIncomeLoss=-936231.51 (Q1 2017) vs NetIncomeLoss=22351703.10 (Q3 2017) vs NetIncomeLoss=-36230346.23 (Q4 2017) - large quarter-to-quarter volatility consistent with seasonal revenue pattern, not smoothing",
+          "quote": "NetIncomeLoss=-39371172.18 (Q2 2018)",
+          "source_accession_no": "0001336917-19-000052",
+          "location": "10-Q Q2 2019, prior-year quarterly comparative"
+        },
+        {
+          "quote": "NetIncomeLoss=31015141.14 (Q3 2018)",
           "source_accession_no": "0001336917-19-000011",
-          "location": "NetIncomeLoss quarterly series FY2017"
+          "location": "10-K FY2018, quarterly data note"
+        },
+        {
+          "quote": "NetCashProvidedByUsedInOperatingActivities=-36999687.88 (Q1 2019)",
+          "source_accession_no": "0001336917-19-000037",
+          "location": "10-Q Q1 2019 cash flow statement"
         }
       ]
     },
@@ -289,22 +339,27 @@
       "confidence": "medium",
       "evidence": [
         {
-          "quote": "AccruedLiabilitiesCurrent=86020390.52 (2016-12-31) grows to AccruedLiabilitiesCurrent=140276077.79 (2018-12-31), roughly proportional to revenue growth from Revenues=1991691603.7 (FY2016) to Revenues=2139975098.15 (FY2018)",
-          "source_accession_no": "0001336917-19-000011",
-          "location": "AccruedLiabilitiesCurrent instant and Revenues annual"
+          "quote": "AccruedLiabilitiesCurrent=60855460.08 (2014-12-31)",
+          "source_accession_no": "0001336917-16-000064",
+          "location": "10-K FY2015, prior-year balance sheet"
+        },
+        {
+          "quote": "AccruedLiabilitiesCurrent=140276077.79 (2018-12-31)",
+          "source_accession_no": "0001336917-19-000052",
+          "location": "10-Q Q2 2019 balance sheet comparative"
         }
       ]
     },
     {
       "item_id": "CL7",
       "question": "Does the filing chronology show irregularities (late filings/NT forms, amendments, unusual 8-K frequency)?",
-      "finding": "flag",
+      "finding": "no_flag",
       "confidence": "medium",
       "evidence": [
         {
-          "quote": "10-K filed 2013-02-25 immediately followed by a 10-K/A filed 2013-02-26 (one day later), an unusually rapid restatement/amendment of an annual report",
+          "quote": "10-K filed 2013-02-25 followed one day later by 10-K/A filed 2013-02-26",
           "source_accession_no": "0001336917-13-000013",
-          "location": "filing_chronology: 10-K (2013-02-25) and 10-K/A (2013-02-26)"
+          "location": "filing_chronology list, 2013-02-25 and 2013-02-26 entries"
         }
       ]
     },
@@ -315,90 +370,107 @@
       "confidence": "high",
       "evidence": [
         {
-          "quote": "Quarterly and annual data span from 2007/2008 through Q2 2019 across Assets, Revenues, NetIncomeLoss, cash flow statement items, and balance sheet detail, providing over a decade of point-in-time filings",
+          "quote": "Financial series span 2007-06-30 through 2019-06-30 across Assets, Revenues, NetIncomeLoss, cash flow, inventory, receivables, and liability concepts with both quarterly and annual granularity",
           "source_accession_no": "0001336917-19-000052",
-          "location": "Full financial_series_point_in_time dataset, e.g., Assets 2009-06-30 through 2019-06-30"
+          "location": "financial_series_point_in_time, multiple concepts"
         }
       ]
     }
   ],
-  "misstatement_probability": 58,
+  "misstatement_probability": 42,
   "mechanism_hypotheses": [
     {
       "affected_line_items": [
         "NetCashProvidedByUsedInOperatingActivities",
         "NetIncomeLoss",
         "InventoryNet",
-        "AccountsPayableCurrent",
-        "AccruedLiabilitiesCurrent"
+        "AccountsPayableCurrent"
       ],
       "direction": "overstated",
-      "accounting_treatment": "Operating cash flow appears to have been boosted well beyond what net income, depreciation/amortization, and disclosed working-capital items can explain in FY2017-FY2018, suggesting aggressive working-capital timing (e.g., stretching payables, drawing down inventory, or other non-cash/one-time reconciling adjustments) or under-disclosed reclassifications that make reported cash generation look stronger than underlying earnings quality would imply.",
+      "accounting_treatment": "Working-capital driven cash flow (inventory liquidation, payable stretching, deposit timing) may be inflating reported operating cash flow relative to a deteriorating earnings base, masking underlying profitability weakness in a period of net losses; the ~$278M swing between NetIncomeLoss and OCF in 2018 is far larger than D&A (Depreciation/Amortization ~$74.9M 2018) can explain, implying large non-D&A reconciling items (working capital and/or non-cash charges) not fully transparent in the provided data.",
       "rationale_evidence": [
         {
-          "quote": "NetIncomeLoss=-19079837.71 (FY2018) vs NetCashProvidedByUsedInOperatingActivities=258877077.54 (FY2018)",
+          "quote": "NetIncomeLoss=-19079837.71 (2018 annual)",
           "source_accession_no": "0001336917-19-000011",
-          "location": "NetIncomeLoss and NetCashProvidedByUsedInOperatingActivities annual FY2018"
+          "location": "10-K FY2018 income statement"
         },
         {
-          "quote": "DepreciationAndAmortization=74901817.22 (FY2018)",
+          "quote": "NetCashProvidedByUsedInOperatingActivities=258877077.54 (2018 annual)",
           "source_accession_no": "0001336917-19-000011",
-          "location": "DepreciationAndAmortization annual FY2018"
+          "location": "10-K FY2018 cash flow statement"
+        },
+        {
+          "quote": "DepreciationAndAmortization=74901817.22 (2018 annual)",
+          "source_accession_no": "0001336917-19-000011",
+          "location": "10-K FY2018 cash flow statement"
+        },
+        {
+          "quote": "InventoryNet declined from 477407192.31 (2017-12-31) to 420107516.42 (2018-12-31)",
+          "source_accession_no": "0001336917-19-000052",
+          "location": "10-Q Q2 2019 balance sheet comparative"
         }
       ]
     },
     {
       "affected_line_items": [
         "InventoryNet",
-        "CostOfGoodsAndServicesSold",
+        "CostOfGoodsSold",
         "GrossProfit"
       ],
-      "direction": "timing_shift",
-      "accounting_treatment": "Inventory build-up materially outpacing revenue growth in FY2017 (InventoryNet +26.3% vs Revenues +3.2%) followed by a sharp inventory decline in FY2018 is consistent with either channel stuffing/overproduction being unwound, or a later inventory write-down/liquidation flowing through cost of goods sold that was not clearly signaled by margin trends, potentially masking true demand and margin deterioration in the period of build-up.",
+      "direction": "understated",
+      "accounting_treatment": "Possible under-recognition or deferred timing of inventory cost write-downs/impairments (e.g., land or work-in-process carrying values) during the high-growth 2016-2017 period, followed by a reversal/absorption in 2017-2018 operating losses; consistent with inventory growing 26% (2016->2017) far faster than the ~3% revenue growth, and a steady erosion of gross margin from ~50% (2013) to ~45% (2018) that could reflect either genuine margin compression or delayed cost recognition catching up.",
       "rationale_evidence": [
         {
-          "quote": "InventoryNet=378073935.89 (2016-12-31) -> InventoryNet=477407192.31 (2017-12-31)",
+          "quote": "InventoryNet=378073935.89 (2016-12-31) to InventoryNet=477407192.31 (2017-12-31)",
           "source_accession_no": "0001336917-19-000011",
-          "location": "InventoryNet instant 2016-12-31 / 2017-12-31"
+          "location": "10-K FY2018, prior-year balance sheet"
         },
         {
-          "quote": "Revenues=1991691603.7 (FY2016) -> Revenues=2055936370.18 (FY2017)",
+          "quote": "Revenues=1991691603.70 (2016 annual) to Revenues=2055936370.18 (2017 annual)",
           "source_accession_no": "0001336917-19-000011",
-          "location": "Revenues annual FY2016/FY2017"
+          "location": "10-K FY2018 income statement, prior years"
+        },
+        {
+          "quote": "GrossProfit=468391843.31 (2013) vs SalesRevenueNet=938321957.85 (2013); GrossProfit=964446607.99 (2018) vs Revenues=2139975098.15 (2018)",
+          "source_accession_no": "0001336917-19-000011",
+          "location": "10-K FY2018 income statement, 5-year trend"
         }
       ]
     },
     {
       "affected_line_items": [
-        "AccountsReceivableNetCurrent",
-        "Revenues",
-        "SalesRevenueNet"
+        "OperatingIncomeLoss",
+        "NetIncomeLoss"
       ],
-      "direction": "overstated",
-      "accounting_treatment": "Receivables growing materially faster than revenue in FY2016 (+43.6% vs +21.7%) could reflect looser credit terms, channel financing, or premature revenue recognition that inflates receivables ahead of cash collection, warranting scrutiny of revenue recognition policies and allowance adequacy (no allowance/reserve data was provided to verify offsetting provisions).",
+      "direction": "timing_shift",
+      "accounting_treatment": "Highly volatile quarterly operating income (large losses in some quarters, large gains in adjacent quarters) despite comparatively steadier gross profit suggests discretionary timing of below-gross-profit charges (e.g., impairments, restructuring, litigation reserves, or SG&A accruals) that could be used to shift losses/gains between reporting periods rather than reflecting purely operational trends.",
       "rationale_evidence": [
         {
-          "quote": "AccountsReceivableNetCurrent=178690826.85 (2015-12-31) -> AccountsReceivableNetCurrent=256592128.72 (2016-12-31)",
-          "source_accession_no": "0001336917-17-000017",
-          "location": "AccountsReceivableNetCurrent instant 2015-12-31 / 2016-12-31 (also reported in 0001336917-18-000009)"
+          "quote": "OperatingIncomeLoss=-43216232.12 (Q2 2018)",
+          "source_accession_no": "0001336917-19-000052",
+          "location": "10-Q Q2 2019 prior-year quarterly comparative"
         },
         {
-          "quote": "SalesRevenueNet=1633177159.33 (FY2015) -> SalesRevenueNet=1988393777.66 (FY2016)",
-          "source_accession_no": "0001336917-18-000009",
-          "location": "SalesRevenueNet annual FY2015/FY2016"
+          "quote": "OperatingIncomeLoss=49022763.01 (Q3 2018)",
+          "source_accession_no": "0001336917-19-000011",
+          "location": "10-K FY2018 quarterly data"
+        },
+        {
+          "quote": "GrossProfit=216991431.48 (Q2 2018) and GrossProfit=274114327.74 (Q3 2018) show comparatively smaller swings than OperatingIncomeLoss",
+          "source_accession_no": "0001336917-19-000011",
+          "location": "10-K FY2018 quarterly data / 10-Q Q2 2019"
         }
       ]
     }
   ],
   "overall": {
-    "risk_tier": "elevated",
+    "risk_tier": "watch",
     "top_signals": [
-      "Large and unexplained divergence between net losses (FY2017: -19.9M, FY2018: -19.1M) and strongly positive operating cash flow (FY2017: 97.9M, FY2018: 258.9M), far exceeding what D&A alone can reconcile",
-      "Inventory grew 26.3% in FY2017 versus only 3.2% revenue growth, then reversed sharply (-12%) in FY2018",
-      "Accounts receivable grew 43.6% in FY2016 versus 21.7% revenue growth",
-      "Company swung from strong profitability (FY2016 NI ~106M) to consecutive net losses in FY2017-FY2018 despite continued revenue growth, alongside SG&A ratio jumping from ~37.9% to ~42% of revenue",
-      "Unusual filing chronology: a 10-K filed 2013-02-25 was amended via 10-K/A the very next day (2013-02-26)",
-      "Inconsistent XBRL tagging: a separate 'AccountsReceivableNet' concept reports near-zero values in 2018-2019 while 'AccountsReceivableNetCurrent' reports hundreds of millions in the same periods, indicating potential data/reporting inconsistencies"
+      "Sharp divergence between NetIncomeLoss (-19.9M in 2017, -19.1M in 2018) and NetCashProvidedByUsedInOperatingActivities (+97.9M in 2017, +258.9M in 2018), far exceeding what D&A add-backs explain",
+      "Inventory grew ~26% (378.1M to 477.4M, 2016-12-31 to 2017-12-31) far outpacing ~3% revenue growth, alongside a steady gross margin decline from ~50% (2013) to ~45% (2018)",
+      "Highly volatile quarterly OperatingIncomeLoss (swinging from -43.2M to +49.0M within 2018) not well explained by comparatively smoother GrossProfit trends, suggesting discretionary below-the-line charges",
+      "Inconsistent/duplicate receivables tagging (AccountsReceivableNet near zero in 2018-2019 vs AccountsReceivableNetCurrent in the hundreds of millions) indicating possible data/reporting inconsistencies worth further diligence",
+      "One 10-K/A filed one day after the original 10-K (2013-02-25/26) - minor but worth noting"
     ]
   }
 }
