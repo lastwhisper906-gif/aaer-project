@@ -1,8 +1,18 @@
-# HANDOFF.md — 세션 인수인계 (최종 갱신: 2026-07-07, RP-09 진행 중)
+# HANDOFF.md — 세션 인수인계 (최종 갱신: 2026-07-07, RP-10 완료 — 발행 게이트 대기)
 
-> 다음 세션: CLAUDE.md → PROJECT.md → 이 문서 → `review_packets/RP-09_instructions.md`.
-> 거버넌스: GA-001 + freeze 개정 #2 + RP-06 addendum + **RP-09 소유자 지시
-> (verbatim 커밋 986a893)** — 소유자 접점은 §Final의 단일 결정 하나뿐.
+> 다음 세션: CLAUDE.md → PROJECT.md → 이 문서 → `review_packets/RP-10_final.md`.
+> **현재 위치: Issue #0 초안(analysis/ISSUE_0_DRAFT.md)이 소유자 발행 게이트에
+> 서 있다 — 결론 규칙 R3 발동 (분리 실재 p=0.0011 + 암기 얽힘 5/8). 발행은
+> 소유자만. 다음 실측 라운드 후보: 컷오프 후 홀드아웃 (Tier 2 월간 재스캔).**
+
+## RP-10 요약 (2026-07-07 완료)
+
+Phase 0 (A1 ADI→BHE 규칙 교체 · A2 검증 · ANALYSIS_PLAN R1-R4 사전 커밋 ·
+불변량 검사) → Phase 1 발사 (74호출 FAIL 0 — 대조군 22 채점 32.5 중위/오탐 3
++ 프로브 30 식별률 50% + 채점자 22) → Phase 2 (M/F 기준선 무력, R2 비발동;
+순열 p=0.00114; make analysis 재현) → Phase 3 (오류 해부·계층화·조기성 1-4q·
+ECE 0.209·암기 산점도) → Phase 4 (Issue #0 초안) → RP-10 패킷. 사고 1건 D23
+(이중 역할 5티커 아카이브 덮어쓰기 — PIT 동치 검증, I3 무침해, 도구 패치).
 
 ## RP-09 스테이지 상태 (재개 시 첫 미완 스테이지부터)
 
