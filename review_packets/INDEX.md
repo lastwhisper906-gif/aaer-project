@@ -18,6 +18,9 @@
 | 06-W | `RP-06_grading_workbench.md` | 채점 26건 소유자 서명대 (⚑MODEL 5 · PROPOSAL 2 · A2 병기) | 서명/오버라이드 자체가 목적 — 재실행 없음 |
 | 07 | **결번** — 소유자 지시문(2026-07-07, D19)이 본 패킷 번호를 08로 직접 지정. D14 생성 순서 규칙과의 간극은 지시문 우선으로 기록 | — |
 | 08 | `RP-08_selection_memo.md` | **대조군 재선정 PROPOSED** (D19 야간 승인, 기준 커밋 fd90613이 풀 조회 선행) — 선정 8/8 (RP-01과 2/8 일치) · [DISCRETIONARY] 15 (선정 영향 4) · also-ran 3,666 전수 · v1.1 개정 후보 2 | 기준 수정 재선정 = 분 단위 (네트워크 불요, memo §0); 풀 재수집 포함 수십 분. **서명 전 채점 진입 불가 — 피평가자 호출 0** |
+| 09/10/11 | `RP-09_control_v2_memo.md` · `RP-10_final.md` · `RP-11_expansion_holdout.md` | (별도 파일 — 대조군 v2 / Issue #0 게이트 / wave-2·홀드아웃 확장) | 각 파일 참조 |
+| 13-W | `RP-13_grading_workbench.md` | **채점 35건 소유자 서명대** (wave-2 32 + 홀드아웃 3, flags-first: TIER A 13 · mem-suspect 0/35) · 결정론 생성기 `tools/build_rp13_workbench.py`(verbatim 보증) | 서명/오버라이드 자체가 목적 — 재실행 없음 |
+| 13 | `RP-13_final_packet.md` | **OWNER-GATE-E 세션 최종 패킷** — 순서 증명(사전등록 c1b85a7 < 첫채점 ef63cfc) · 호출 18/320 · E3→R4 확증 · E1 보류(§5-1) · 소유자 액션 4 | 실행 증거 — 재실행 없음 |
 
 ## Claude 재량 판단 전수 (인간 미개입 결정 — 감사 대상)
 
@@ -39,6 +42,7 @@
 | J14~J19 | 분석 재량 6건: 비대칭 비교 채택 · 인지 정규화 · MW 정확 검정 구현 · 오류 귀속 1차 8건 · Sloan 방향 · 파일럿 채점 산입 | RP-05 §9 | RP-05 §9 병기 (대부분 호출 0 재계산) |
 | J20~J23 | RP-06 재량 4건: A1=frozen 프로브 재추첨 해석 (지시문 전제가 frozen 프로토콜과 모순) · A3 입력 집합 = 본 분석 집합 · A2 비플래그 정의+시드 20260706 · A2 채점 변형 = 본 분석 변형 | RP-06 §4 | RP-06 §4 병기 (J20 원본 프로브 신설 8호출 / J21 대칭 교란 32호출 / J22 1호출 / J23 ≤6호출) |
 | J24 | RP-08 재량: E4 오탐 수기 통과 14건 (증거 개별 기록, 식별 토큰 재검색 전건 0) · Sealed Air는 W.R. Grace 계보로 보수적 유지 · S2 동률의 0.05 버킷 구현 · E7 코드 정합 수정 (treatment 그룹만 배제) | RP-08 memo §3 + `runs/rp08/e4_manual_overrides.json` | override 1건 삭제 후 재선정 = 분 단위, 호출 0 (PROPOSED 단계 — 채점 미진입) |
+| JE-1 | **OWNER-GATE-E 세션 실행층 재량**: (a) "run-to-quota"를 목표로 삼지 않음 — 미터링 E3(18호출)로 한정, E1 보류(§5-1 네트워크 look-ahead), E2/E4/E5 소유자 게이트 이관 (b) E3 개정 A: 고정 payload 모델 재추첨(wave-1 A3 프로토콜, 첫 채점 전) (c) DAR name-ID 규칙-vs-사람 불일치 재채점 금지·병기 | `scoring/overrides.md` JE-1 · `docs/OWNER_QUEUE.md` Q-E01/E02/E03 · `analysis/W2_PERTURB_REDRAW_PLAN.md` 개정 A | (a) spend 재량 = 소유자 추인/재지시 대상 (b) 개정 A는 첫 draw 전이라 재실행 0 (c) Q-E02 규약 선택 시 정합 |
 
 ## 감사 시 우선 순서 (제안)
 

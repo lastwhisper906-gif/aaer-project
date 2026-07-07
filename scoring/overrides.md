@@ -179,7 +179,10 @@ RP-09-FINAL: YES (A1: ADI ineligible-confirmed, replaced by rule)
   freeze-commit-then-run) 전부 유지. human_finalized=false 유지, 발행 안 함.
 - 전역 evaluatee+grader HARD CAP: 320 호출 (미션 지시).
 
-### 실행층 spend 재량 기록 (J14 — "run-to-quota"를 목표로 삼지 않는 판단)
+### 실행층 spend 재량 기록 (JE-1 — "run-to-quota"를 목표로 삼지 않는 판단)
+
+> (라벨 주의: INDEX.md J14~J19은 RP-05 분석 재량으로 이미 점유 — 본 E-세션 재량은
+> **JE-1**로 표기해 충돌 방지. 이전 본문의 "J14" 언급은 JE-1로 읽는다.)
 
 > 이 항목은 소유자 판정에 대한 오버라이드가 아니라, 연속 실행 모드에서
 > **미터링되는 자원(구독 quota)의 소진 자체를 목표로 삼는 지시**에 대한 실행층의

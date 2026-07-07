@@ -1,11 +1,31 @@
-# HANDOFF.md — 세션 인수인계 (최종 갱신: 2026-07-07, RP-11 — wave-2 로스터 확정 + 홀드아웃 게이트 admit, 채점 INCOMPLETE)
+# HANDOFF.md — 세션 인수인계 (최종 갱신: 2026-07-08, OWNER-GATE-E — E3 실행/R4 확증 + P1–P6, E1 보류)
 
-> 다음 세션: CLAUDE.md → PROJECT.md → 이 문서 → `review_packets/RP-11_expansion_holdout.md`
-> → `review_packets/RP-10_final.md`.
-> **현재 위치: Issue #0 초안이 여전히 소유자 발행 게이트(불변). 이번 사이클
-> (RP-11)에서 companion 2건 진행: (1) wave-2 로스터를 규칙+게이트로 확정(생존 9),
-> (2) 컷오프-후 홀드아웃 RECOGNITION GATE 실행 → HUBG·WMK·GNE 3/3 비인지 admit
-> (N=3). wave-2 채점·홀드아웃 채점은 INCOMPLETE(사전 고정 순서 절단 = 결과 독립).**
+> 다음 세션: CLAUDE.md → PROJECT.md → 이 문서 → `review_packets/RP-13_final_packet.md`
+> → `review_packets/RP-13_grading_workbench.md` → `RP-11_expansion_holdout.md`.
+
+## OWNER-GATE-E 요약 (2026-07-08, 무인 세션)
+
+- **거버넌스**: OWNER-GATE-E 기록(overrides.md) + spend 재량 **JE-1**(quota 소진을
+  목표로 삼지 않음). OWNER_QUEUE Q-E01/E02/E03 · RESUME.md(재개 명령·가계부).
+- **무-미터링 P-작업 전량**: P1 오류해부(`error_analysis_wave2_holdout.md` — 오탐=양성
+  오독·미탐 비대칭·HUBG tier적중/기제빗나감·ECE 0.179) · P2 종합(`synthesis.*` —
+  암기 dose-response, unified_table 65행) · P3 워크벤치(`RP-13_grading_workbench.md`
+  35건) · P4 발행정합(README 3층 재작성 + `lint_publication.py` CI 편입) · P5
+  재현성(`REPRODUCING.md` + `holdout_rescan.py` + matplotlib 핀) · P6(`RP-13_final_packet.md`).
+- **E1–E5 사전 등록**(`analysis/*_PLAN.md`, `c1b85a7`, 채점 전 동결).
+- **E3 실행 → R4 확증**: 교란 재추첨 18호출(피평가자 claude-sonnet-5, pin 18/18,
+  FAIL 0, 채점자 0). median-delta dominance **4/9 < 5** → **R4 유지**(R3 미발동),
+  per-case σ 3.2pp. 순서 증명: 사전등록 05:24 < 첫채점 05:47. **미터링 18/320.**
+- **E1 보류**(무인 부적합 — 2026-era 대조군 네트워크 빌드 = §5-1 look-ahead, Q-E03).
+  **E2/E4/E5 launch-ready**(Q-E01 spend 게이트). **미발행 유지, human_finalized=false.**
+- **소유자 액션 4**(RP-13_final_packet §7): ① 채점 35 확정 ② 3-이슈 발행 결정
+  ③ E4 EXPLORATORY 문단 ④ Console $0.00.
+
+## (이전) RP-11 요약
+
+> **현재 위치: Issue #0 초안이 여전히 소유자 발행 게이트(불변). RP-11 companion 2건:
+> (1) wave-2 로스터 확정(생존 9), (2) 홀드아웃 RECOGNITION GATE → HUBG·WMK·GNE 3/3
+> 비인지 admit(N=3). wave-2·홀드아웃 채점 human_finalized=false.**
 
 ## RP-11 요약 (2026-07-07, 이 세션)
 

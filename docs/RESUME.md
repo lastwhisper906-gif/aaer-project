@@ -19,7 +19,15 @@
 | E3 draw-2 | 9 | 0 | 9 | ef63cfc |
 | E3 draw-3 + 분석 (R4 유지) | 9 | 0 | 18 | f74bb94 |
 | E3 fold-in (summary/synthesis) | 0 | 0 | 18 | 39ffc16 |
-| P5 재현성(REPRODUCING+rescan) | 0 | 0 | 18 | (this) |
+| P5 재현성(REPRODUCING+rescan) | 0 | 0 | 18 | b909cb6 |
+| P6 RP-13 패킷 + HANDOFF/INDEX | 0 | 0 | 18 | (this) |
+
+## 세션 종료 상태 (2026-07-08)
+
+무-미터링 P1–P6 + E1–E5 사전등록 + E3 실행(R4 확증) 완료. **미터링 18/320.**
+E1 보류(§5-1, Q-E03) · E2/E4/E5 launch-ready(Q-E01). 소유자 액션 4 =
+`review_packets/RP-13_final_packet.md` §7. 미발행. 다음 세션 = 소유자 회신(Q-E01/02/03)
+또는 감독 하 E1 실행. 재개 명령 전량 위 표.
 
 ## Phase 3 상태 (미터링)
 
