@@ -16,6 +16,10 @@ wave-2 STANDALONE(실험군 9 vs 대조군 23):
   ρ(LLM, F-Score) = **0.265** — 둘 다 임계 0.7 미만 (M 계산가능 20/32, F 17/32).
 - **R3 (암기 지배) 비발동**: 9 케이스 중 **3건**만 정체-교란 임계 초과
   (CSC·BRX·UAA) — 과반(≥5) 미달. wave-1의 5/8과 대조.
+  - **E3 재추첨 확증 (2026-07-08, `analysis/e3_results.json`)**: 교란 +2 draw(동결
+    payload 위 모델 표본 재추첨) → per-draw dominance 3→4→4, **median-delta 4/9**
+    (< 5) → 사전 등록 규칙(W2_PERTURB_REDRAW_PLAN §3)상 **R4 유지**(R3 미발동, draw
+    잡음에 강건). per-case σ 평균 **3.2pp**(wave-1 ~12pp보다 안정). draw-1 published 불변.
 - ⇒ **R1·R2·R3 전부 비발동 → R4 발동**: "큐레이션된 케이스 집합 위 능력
   시연." **프레이밍 제약(R4)**: Bao/RUSBoost·EDINET 등과의 벤치마크 비교 가능
   정확도/AUC 주장 금지 (N·과제 정의·기저율 상이).

@@ -15,7 +15,10 @@
 | Phase 2 P2 종합 | 0 | 0 | 0 | c9c9889 |
 | Phase 2 E1-E5 사전등록 | 0 | 0 | 0 | c1b85a7 |
 | P4 발행정합(README+lint) | 0 | 0 | 0 | 2a07649 |
-| E3 개정+거버넌스 (발사 전) | 0 | 0 | 0 | (this) |
+| E3 개정+거버넌스 (발사 전) | 0 | 0 | 0 | ff9f017 |
+| E3 draw-2 | 9 | 0 | 9 | ef63cfc |
+| E3 draw-3 + 분석 (R4 유지) | 9 | 0 | 18 | f74bb94 |
+| E3 fold-in (summary/synthesis) | 0 | 0 | 18 | (this) |
 
 ## Phase 3 상태 (미터링)
 

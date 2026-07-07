@@ -175,8 +175,9 @@ def main():
                                   "0.824→0.829로 사실상 불변(wave1→wave2), 홀드아웃은 HUBG=70으로 "
                                   "탐지 잔존 → 분리는 암기로 설명되지 않음(R4/H2 residual). "
                                   "단 세 표본은 시대·유명도·라벨 tier 상이 = gradient 판독, 통제실험 아님."),
-        "per_wave_rule": {"wave1": "R3", "wave2": "R4", "holdout": "H2 (N=3, per-case)"},
-        "note": "E3(wave-2 교란 재추첨) 확정 시 wave2 rule은 R4↔R3 자동 갱신(E3 pre-reg 규칙).",
+        "per_wave_rule": {"wave1": "R3", "wave2": "R4 (E3 재추첨 확증)", "holdout": "H2 (N=3, per-case)"},
+        "note": ("E3(wave-2 교란 재추첨, 2026-07-08) 완료: median-delta dominance 4/9 < 5 → "
+                 "R4 유지(R3 미발동), per-case σ 3.2pp. e3_results.json 참조. wave2 rule 확정 R4."),
         "wave2_name_id_reconcile": {
             "frozen_rule_pct": 21.9, "frozen_rule_count": "7/32 (fraud 3/9, control 4/23)",
             "human_read_pct": 25.0, "human_read_count": "8/32 (fraud 3/9, control 5/23)",
