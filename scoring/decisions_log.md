@@ -749,3 +749,7 @@ c44bd59a…)는 **서명 없이 superseded** (채점 미진입 상태 폐기). v
 ## D21 — RP-09 Stage 0: 채점 26건 소유자 확정 (2026-07-07, JSON 1줄)
 
 {"decision":"D21","date":"2026-07-07","scope":"grades 26 (main 16 + perturbed 8 + pilot 2) human_finalized=true — incl. 5 MODEL-flagged (main case_10; perturbed case_01/02/03/12) 귀속 확정 + MRVL(perturbed case_13) UNCLASSIFIED×2 → DATA(design) PROPOSAL 채택","basis":"owner instruction RP-09 Stage 0, verbatim commit 986a893","effect":"scoring/grades/ + pilot/grades/ frozen under I3 from this commit; treatment-side answer-key evaluation closed","unfinalized_items":0}
+
+## D22 — RP-09 Stage 1: RP-07 D-2 원본 재추첨 사전 등록 (2026-07-07, 실행 전 커밋)
+
+{"decision":"D22","date":"2026-07-07","action":"original-side re-draw (RP-07 D-2): 실험군 8 원본 페이로드 × draws 2-5 = 32 evaluatee calls","output_root":"runs/rp07/draws/draw_{2..5}","cases":["case_01","case_02","case_03","case_06","case_08","case_09","case_12","case_13"],"protocol":"pipeline/runner.py 무변경 — 모델 핀 claude-sonnet-5(D6), 페이로드 build_payload(perturb=False) 결정론(draw1=runs/main과 byte-identical), I1 guard_payload + I2 cutoff 필터 동일, 핀 불일치=discard(재실행), API-key 부재 assert","rng_seed_note":"claude -p 헤드리스에 샘플링 시드 노출 없음 — draw = 비시드 독립 표본 (RP-06 A3와 동일 규약). 고정 난수 요소는 케이스 파일의 셔플된 중립 ID 제출 순서(NEUTRAL_ID_SEED, 기커밋)와 concurrency 3뿐이며 본 커밋이 그 사전 등록","basis":"owner instruction RP-09 Stage 1 (986a893); RP-06_hardening.md §D-2 정의(+32호출)와 일치"}
