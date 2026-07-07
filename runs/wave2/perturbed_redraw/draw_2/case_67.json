@@ -1,0 +1,256 @@
+{
+  "case_id": "case_67",
+  "run_id": "perturbed-case_67-r1",
+  "model": "claude-sonnet-5",
+  "pipeline_version": "ff9f01703e1f59f0da16186d69327df4f6b1102e",
+  "run_timestamp": "2026-07-07T20:38:24.318208+00:00",
+  "documents_used": [
+    {
+      "accession_no": "0001581068-13-000007",
+      "form_type": "10-Q",
+      "filing_date": "2013-12-03"
+    },
+    {
+      "accession_no": "0001581068-14-000028",
+      "form_type": "10-Q",
+      "filing_date": "2014-05-07"
+    },
+    {
+      "accession_no": "0001581068-14-000038",
+      "form_type": "8-K",
+      "filing_date": "2014-05-27"
+    },
+    {
+      "accession_no": "0001581068-14-000053",
+      "form_type": "10-Q",
+      "filing_date": "2014-08-05"
+    },
+    {
+      "accession_no": "0001581068-14-000070",
+      "form_type": "10-Q",
+      "filing_date": "2014-11-04"
+    },
+    {
+      "accession_no": "0001581068-15-000028",
+      "form_type": "10-K",
+      "filing_date": "2015-02-19"
+    },
+    {
+      "accession_no": "0001581068-15-000050",
+      "form_type": "10-Q",
+      "filing_date": "2015-04-27"
+    },
+    {
+      "accession_no": "0001581068-15-000073",
+      "form_type": "10-Q",
+      "filing_date": "2015-07-27"
+    },
+    {
+      "accession_no": "0001581068-15-000092",
+      "form_type": "10-Q",
+      "filing_date": "2015-10-26"
+    }
+  ],
+  "checklist": [
+    {
+      "item_id": "CL1",
+      "question": "Did receivables grow materially faster than revenue across consecutive periods?",
+      "finding": "insufficient_data",
+      "confidence": "low",
+      "evidence": [
+        {
+          "quote": "ReceivablesNetCurrent end=2012-12-31 value=134820651.51",
+          "source_accession_no": "0001581068-13-000007",
+          "location": "ReceivablesNetCurrent 2012-12-31"
+        },
+        {
+          "quote": "ReceivablesNetCurrent end=2015-09-30 value=147680430.49",
+          "source_accession_no": "0001581068-15-000092",
+          "location": "ReceivablesNetCurrent 2015-09-30"
+        }
+      ]
+    },
+    {
+      "item_id": "CL2",
+      "question": "Did non-current 'soft' assets (intangibles, other assets, capitalized items) grow materially faster than the business overall?",
+      "finding": "insufficient_data",
+      "confidence": "low",
+      "evidence": [
+        {
+          "quote": "No intangible asset, goodwill, or 'other assets' line items are present in the provided data series; only total Assets is reported.",
+          "source_accession_no": "0001581068-15-000028",
+          "location": "Assets series 2012-2015"
+        }
+      ]
+    },
+    {
+      "item_id": "CL3",
+      "question": "Is there a persistent divergence between net income and operating cash flow?",
+      "finding": "flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "NetIncomeLoss=-138058360.73 (2012 annual)",
+          "source_accession_no": "0001581068-15-000028",
+          "location": "NetIncomeLoss FY2012"
+        },
+        {
+          "quote": "NetCashProvidedByUsedInOperatingActivities=230949432.26 (2012 annual)",
+          "source_accession_no": "0001581068-15-000028",
+          "location": "OCF FY2012"
+        },
+        {
+          "quote": "NetIncomeLoss=-102124856.72 (2013 annual)",
+          "source_accession_no": "0001581068-15-000028",
+          "location": "NetIncomeLoss FY2013"
+        },
+        {
+          "quote": "NetCashProvidedByUsedInOperatingActivities=285191584.86 (2013 annual)",
+          "source_accession_no": "0001581068-15-000028",
+          "location": "OCF FY2013"
+        },
+        {
+          "quote": "NetIncomeLoss=114123880.96 (2014 annual)",
+          "source_accession_no": "0001581068-15-000028",
+          "location": "NetIncomeLoss FY2014"
+        },
+        {
+          "quote": "NetCashProvidedByUsedInOperatingActivities=411658963.77 (2014 annual)",
+          "source_accession_no": "0001581068-15-000028",
+          "location": "OCF FY2014"
+        },
+        {
+          "quote": "DepreciationAndAmortization=419660031.33 (2012 annual)",
+          "source_accession_no": "0001581068-15-000028",
+          "location": "D&A FY2012"
+        },
+        {
+          "quote": "DepreciationAndAmortization=376727955.56 (2013 annual)",
+          "source_accession_no": "0001581068-15-000028",
+          "location": "D&A FY2013"
+        },
+        {
+          "quote": "DepreciationAndAmortization=379376365.62 (2014 annual)",
+          "source_accession_no": "0001581068-15-000028",
+          "location": "D&A FY2014"
+        }
+      ]
+    },
+    {
+      "item_id": "CL4",
+      "question": "Do inventory levels or gross margins show trends inconsistent with revenue?",
+      "finding": "insufficient_data",
+      "confidence": "low",
+      "evidence": [
+        {
+          "quote": "No Inventory, Revenues, or CostOfGoodsSold concepts are present in the provided data series (consistent with a real-estate/REIT business model, but precludes this test).",
+          "source_accession_no": "0001581068-15-000028",
+          "location": "Full data series review"
+        }
+      ]
+    },
+    {
+      "item_id": "CL5",
+      "question": "Is the earnings trajectory unusually smooth relative to the volatility of revenue and cash flow?",
+      "finding": "no_flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "ProfitLoss=-48831939.64 (2013-04-01 to 2013-06-30)",
+          "source_accession_no": "0001581068-14-000053",
+          "location": "ProfitLoss Q2 2013"
+        },
+        {
+          "quote": "ProfitLoss=35856190.7 (2014-01-01 to 2014-03-31)",
+          "source_accession_no": "0001581068-15-000050",
+          "location": "ProfitLoss Q1 2014"
+        },
+        {
+          "quote": "ProfitLoss=47390476.1 (2015-04-01 to 2015-06-30)",
+          "source_accession_no": "0001581068-15-000073",
+          "location": "ProfitLoss Q2 2015"
+        }
+      ]
+    },
+    {
+      "item_id": "CL6",
+      "question": "Did liability, allowance, or reserve balances decline (or fail to grow) despite growing business activity?",
+      "finding": "insufficient_data",
+      "confidence": "low",
+      "evidence": [
+        {
+          "quote": "Liabilities=6276042896.96 (2012-12-31)",
+          "source_accession_no": "0001581068-13-000007",
+          "location": "Liabilities 2012-12-31"
+        },
+        {
+          "quote": "Liabilities=5666150912.6 (2015-09-30)",
+          "source_accession_no": "0001581068-15-000092",
+          "location": "Liabilities 2015-09-30"
+        },
+        {
+          "quote": "StockholdersEquity=1478827336.3 (2012-12-31)",
+          "source_accession_no": "0001581068-13-000007",
+          "location": "StockholdersEquity 2012-12-31"
+        },
+        {
+          "quote": "StockholdersEquity=2469636798.07 (2015-09-30)",
+          "source_accession_no": "0001581068-15-000092",
+          "location": "StockholdersEquity 2015-09-30"
+        },
+        {
+          "quote": "ProceedsFromIssuanceOfCommonStock=767858519.96 (2013 annual)",
+          "source_accession_no": "0001581068-15-000028",
+          "location": "ProceedsFromIssuanceOfCommonStock FY2013"
+        }
+      ]
+    },
+    {
+      "item_id": "CL7",
+      "question": "Does the filing chronology show irregularities (late filings/NT forms, amendments, unusual 8-K frequency)?",
+      "finding": "no_flag",
+      "confidence": "low",
+      "evidence": [
+        {
+          "quote": "10-K filing_date=2014-03-12; 10-Q filing_date=2014-05-07; 10-Q filing_date=2014-08-05; 10-Q filing_date=2014-11-04; 10-K filing_date=2015-02-19",
+          "source_accession_no": "n/a",
+          "location": "filing_chronology"
+        },
+        {
+          "quote": "8-K/A filing_date=2014-05-08 (one day after 8-K filing_date=2014-05-07)",
+          "source_accession_no": "n/a",
+          "location": "filing_chronology"
+        },
+        {
+          "quote": "DEFR14A filing_date=2015-04-15 (day after DEF 14A filing_date=2015-04-14 and DEFA14A filing_date=2015-04-14)",
+          "source_accession_no": "n/a",
+          "location": "filing_chronology"
+        }
+      ]
+    },
+    {
+      "item_id": "CL8",
+      "question": "Is the provided data sufficient in coverage and length for the above assessments?",
+      "finding": "flag",
+      "confidence": "high",
+      "evidence": [
+        {
+          "quote": "No Revenues, CostOfGoodsSold, Inventory, IntangibleAssets, Goodwill, or AllowanceForDoubtfulAccounts concepts appear anywhere in the financial_series_point_in_time data provided.",
+          "source_accession_no": "0001581068-15-000028",
+          "location": "Full data series review"
+        }
+      ]
+    }
+  ],
+  "mechanism_hypotheses": [],
+  "misstatement_probability": 20,
+  "overall": {
+    "risk_tier": "watch",
+    "top_signals": [
+      "Persistent divergence between NetIncomeLoss and operating cash flow (e.g., NetIncomeLoss=-138058360.73 vs OCF=230949432.26 in 2012 annual; NetIncomeLoss=114123880.96 vs OCF=411658963.77 in 2014 annual), though this gap is largely explained by heavy non-cash DepreciationAndAmortization (e.g., 419660031.33 in 2012, 379376365.62 in 2014), consistent with a real-estate/REIT business model rather than manipulation.",
+      "Key line items needed to assess revenue-based fraud risk (Revenues, COGS, Inventory, receivables-to-revenue ratio, intangible/goodwill balances, allowance/reserve accounts) are entirely absent from the provided data set, materially limiting the reliability of this assessment (CL1, CL2, CL4, CL6 all insufficient_data).",
+      "Filing chronology shows regular, timely 10-K/10-Q cadence with no NT filings; only minor administrative amendments (8-K/A, DEFR14A) noted, and equity issuance (ProceedsFromIssuanceOfCommonStock=767858519.96 in 2013) coincided with declining leverage (Liabilities fell from 6276042896.96 in 2012-12-31 to 5666150912.6 in 2015-09-30), which appears consistent with a deliberate deleveraging/IPO-funded strategy rather than reserve manipulation.",
+      "Quarterly earnings show meaningful swings (e.g., ProfitLoss=-48831939.64 in Q2 2013 to ProfitLoss=47390476.1 in Q2 2015), arguing against artificial income smoothing."
+    ]
+  }
+}

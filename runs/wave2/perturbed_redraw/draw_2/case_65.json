@@ -1,0 +1,325 @@
+{
+  "case_id": "case_65",
+  "run_id": "perturbed-case_65-r1",
+  "model": "claude-sonnet-5",
+  "pipeline_version": "ff9f01703e1f59f0da16186d69327df4f6b1102e",
+  "run_timestamp": "2026-07-07T20:42:26.890682+00:00",
+  "documents_used": [
+    {
+      "accession_no": "0000950123-09-040151",
+      "form_type": "10-Q/A",
+      "filing_date": "2009-09-01"
+    },
+    {
+      "accession_no": "0000950123-09-055794",
+      "form_type": "10-Q",
+      "filing_date": "2009-11-02"
+    },
+    {
+      "accession_no": "0000950123-10-019083",
+      "form_type": "10-K",
+      "filing_date": "2010-03-01"
+    },
+    {
+      "accession_no": "0000950123-10-042821",
+      "form_type": "10-Q",
+      "filing_date": "2010-05-03"
+    },
+    {
+      "accession_no": "0000950123-10-083078",
+      "form_type": "10-Q/A",
+      "filing_date": "2010-09-01"
+    },
+    {
+      "accession_no": "0000950123-10-098982",
+      "form_type": "10-Q",
+      "filing_date": "2010-11-02"
+    }
+  ],
+  "checklist": [
+    {
+      "item_id": "CL1",
+      "question": "Did receivables grow materially faster than revenue across consecutive periods?",
+      "finding": "flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "Revenues value=4995850275.11 (period 2009-01-01/2009-12-31)",
+          "source_accession_no": "0000950123-10-019083",
+          "location": "Revenues, annual 2009"
+        },
+        {
+          "quote": "Revenues value=5433708435.38 (period 2008-01-01/2008-12-31)",
+          "source_accession_no": "0000950123-10-019083",
+          "location": "Revenues, annual 2008"
+        },
+        {
+          "quote": "ReceivablesNetCurrent value=1417704819.30 (end 2009-12-31)",
+          "source_accession_no": "0000950123-10-098982",
+          "location": "ReceivablesNetCurrent, instant 2009-12-31"
+        },
+        {
+          "quote": "ReceivablesNetCurrent value=1382598333.18 (end 2008-12-31)",
+          "source_accession_no": "0000950123-10-019083",
+          "location": "ReceivablesNetCurrent, instant 2008-12-31"
+        }
+      ]
+    },
+    {
+      "item_id": "CL2",
+      "question": "Did non-current 'soft' assets (intangibles, other assets, capitalized items) grow materially faster than the business overall?",
+      "finding": "flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "Goodwill value=2352264179.15 (end 2009-12-31)",
+          "source_accession_no": "0000950123-10-098982",
+          "location": "Goodwill, instant 2009-12-31"
+        },
+        {
+          "quote": "Goodwill value=1998420365.73 (end 2008-12-31)",
+          "source_accession_no": "0000950123-10-019083",
+          "location": "Goodwill, instant 2008-12-31"
+        },
+        {
+          "quote": "Assets value=10677845354.76 (end 2009-12-31)",
+          "source_accession_no": "0000950123-10-098982",
+          "location": "Assets, instant 2009-12-31"
+        },
+        {
+          "quote": "Assets value=9325344602.01 (end 2008-12-31)",
+          "source_accession_no": "0000950123-10-019083",
+          "location": "Assets, instant 2008-12-31"
+        },
+        {
+          "quote": "Revenues value=4995850275.11 (2009 annual) vs Revenues value=5433708435.38 (2008 annual) -- revenue declined 8.1% while goodwill grew 17.7% and total assets grew 14.5%",
+          "source_accession_no": "0000950123-10-019083",
+          "location": "Revenues, annual 2008 & 2009"
+        }
+      ]
+    },
+    {
+      "item_id": "CL3",
+      "question": "Is there a persistent divergence between net income and operating cash flow?",
+      "finding": "flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "NetIncomeLoss value=143625984.35 (2009 annual)",
+          "source_accession_no": "0000950123-10-019083",
+          "location": "NetIncomeLoss, annual 2009"
+        },
+        {
+          "quote": "NetIncomeLoss value=788494010.13 (2008 annual)",
+          "source_accession_no": "0000950123-10-019083",
+          "location": "NetIncomeLoss, annual 2008"
+        },
+        {
+          "quote": "NetCashProvidedByUsedInOperatingActivities value=347692764.03 (2009 annual)",
+          "source_accession_no": "0000950123-10-019083",
+          "location": "NetCashProvidedByUsedInOperatingActivities, annual 2009"
+        },
+        {
+          "quote": "NetCashProvidedByUsedInOperatingActivities value=625161236.26 (2008 annual)",
+          "source_accession_no": "0000950123-10-019083",
+          "location": "NetCashProvidedByUsedInOperatingActivities, annual 2008"
+        }
+      ]
+    },
+    {
+      "item_id": "CL4",
+      "question": "Do inventory levels or gross margins show trends inconsistent with revenue?",
+      "finding": "flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "InventoryNet value=1267656116.10 (end 2009-12-31)",
+          "source_accession_no": "0000950123-10-098982",
+          "location": "InventoryNet, instant 2009-12-31"
+        },
+        {
+          "quote": "InventoryNet value=1181955720.66 (end 2008-12-31)",
+          "source_accession_no": "0000950123-10-019083",
+          "location": "InventoryNet, instant 2008-12-31"
+        },
+        {
+          "quote": "CostOfRevenue value=4597483798.85 (2009 annual) vs Revenues value=4995850275.11 (2009 annual) implies gross margin ~8.0% vs 2008 CostOfRevenue=4313893142.12 / Revenues=5433708435.38 implying margin ~20.6%",
+          "source_accession_no": "0000950123-10-019083",
+          "location": "CostOfRevenue & Revenues, annual 2008 & 2009"
+        }
+      ]
+    },
+    {
+      "item_id": "CL5",
+      "question": "Is the earnings trajectory unusually smooth relative to the volatility of revenue and cash flow?",
+      "finding": "no_flag",
+      "confidence": "high",
+      "evidence": [
+        {
+          "quote": "NetIncomeLoss value=-22644215.57 (2010-01-01/2010-03-31)",
+          "source_accession_no": "0000950123-10-042821",
+          "location": "NetIncomeLoss, quarterly Q1 2010"
+        },
+        {
+          "quote": "NetIncomeLoss value=-15034640.76 (2010-04-01/2010-06-30)",
+          "source_accession_no": "0000950123-10-083078",
+          "location": "NetIncomeLoss, quarterly Q2 2010"
+        },
+        {
+          "quote": "NetIncomeLoss value=81979655.78 (2010-07-01/2010-09-30)",
+          "source_accession_no": "0000950123-10-098982",
+          "location": "NetIncomeLoss, quarterly Q3 2010"
+        }
+      ]
+    },
+    {
+      "item_id": "CL6",
+      "question": "Did liability, allowance, or reserve balances decline (or fail to grow) despite growing business activity?",
+      "finding": "no_flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "AllowanceForDoubtfulAccountsReceivableCurrent value=9296189.38 (end 2008-12-31)",
+          "source_accession_no": "0000950123-10-019083",
+          "location": "AllowanceForDoubtfulAccountsReceivableCurrent, instant 2008-12-31"
+        },
+        {
+          "quote": "AllowanceForDoubtfulAccountsReceivableCurrent value=11583306.65 (end 2009-12-31)",
+          "source_accession_no": "0000950123-10-098982",
+          "location": "AllowanceForDoubtfulAccountsReceivableCurrent, instant 2009-12-31"
+        },
+        {
+          "quote": "AllowanceForDoubtfulAccountsReceivableCurrent value=13853444.59 (end 2010-09-30)",
+          "source_accession_no": "0000950123-10-098982",
+          "location": "AllowanceForDoubtfulAccountsReceivableCurrent, instant 2010-09-30"
+        }
+      ]
+    },
+    {
+      "item_id": "CL7",
+      "question": "Does the filing chronology show irregularities (late filings/NT forms, amendments, unusual 8-K frequency)?",
+      "finding": "flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "10-K/A filing_date=2010-04-30",
+          "source_accession_no": "n/a",
+          "location": "filing_chronology"
+        },
+        {
+          "quote": "10-Q/A filing_date=2010-09-01",
+          "source_accession_no": "0000950123-10-083078",
+          "location": "filing_chronology"
+        },
+        {
+          "quote": "10-Q/A filing_date=2009-09-01",
+          "source_accession_no": "0000950123-09-040151",
+          "location": "filing_chronology"
+        },
+        {
+          "quote": "10-K/A filing_date=2004-06-14",
+          "source_accession_no": "n/a",
+          "location": "filing_chronology"
+        },
+        {
+          "quote": "10-K/A filing_date=2005-06-14",
+          "source_accession_no": "n/a",
+          "location": "filing_chronology"
+        }
+      ]
+    },
+    {
+      "item_id": "CL8",
+      "question": "Is the provided data sufficient in coverage and length for the above assessments?",
+      "finding": "no_flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "Series span from CashAndCashEquivalentsAtCarryingValue end 2006-12-31 through Assets/Revenues/ReceivablesNetCurrent end 2010-09-30",
+          "source_accession_no": "0000950123-10-098982",
+          "location": "multiple concepts, 2006-2010"
+        },
+        {
+          "quote": "Quarterly granularity available for Revenues, NetIncomeLoss, OperatingIncomeLoss from 2008-Q2 through 2010-Q3",
+          "source_accession_no": "0000950123-10-098982",
+          "location": "Revenues/NetIncomeLoss quarterly series"
+        }
+      ]
+    }
+  ],
+  "misstatement_probability": 48,
+  "mechanism_hypotheses": [
+    {
+      "affected_line_items": [
+        "Revenues",
+        "ReceivablesNetCurrent",
+        "AllowanceForDoubtfulAccountsReceivableCurrent"
+      ],
+      "direction": "overstated",
+      "accounting_treatment": "Potential premature/aggressive revenue recognition or delayed write-off of receivables: receivables grew (+2.5%) while reported revenue fell (-8.1%) in FY2009, a divergence not fully offset by allowance growth relative to receivables growth, raising the possibility that revenue or receivable balances were not fully adjusted downward in line with underlying demand.",
+      "rationale_evidence": [
+        {
+          "quote": "ReceivablesNetCurrent value=1417704819.30 (end 2009-12-31) vs 1382598333.18 (end 2008-12-31)",
+          "source_accession_no": "0000950123-10-098982",
+          "location": "ReceivablesNetCurrent instant 2008-12-31 & 2009-12-31"
+        },
+        {
+          "quote": "Revenues value=4995850275.11 (2009 annual) vs 5433708435.38 (2008 annual)",
+          "source_accession_no": "0000950123-10-019083",
+          "location": "Revenues annual 2008 & 2009"
+        }
+      ]
+    },
+    {
+      "affected_line_items": [
+        "Goodwill",
+        "IntangibleAssetsNetExcludingGoodwill",
+        "Assets"
+      ],
+      "direction": "overstated",
+      "accounting_treatment": "Insufficient/delayed goodwill and intangible asset impairment: goodwill and total assets expanded materially (goodwill +17.7%, total assets +14.5%) during a year of revenue contraction (-8.1%), suggesting acquisition-driven balance sheet growth may not have been tested/impaired adequately against declining underlying cash flows.",
+      "rationale_evidence": [
+        {
+          "quote": "Goodwill value=2352264179.15 (end 2009-12-31) vs 1998420365.73 (end 2008-12-31)",
+          "source_accession_no": "0000950123-10-098982",
+          "location": "Goodwill instant 2008-12-31 & 2009-12-31"
+        },
+        {
+          "quote": "Assets value=10677845354.76 (end 2009-12-31) vs 9325344602.01 (end 2008-12-31)",
+          "source_accession_no": "0000950123-10-098982",
+          "location": "Assets instant 2008-12-31 & 2009-12-31"
+        }
+      ]
+    },
+    {
+      "affected_line_items": [
+        "InventoryNet",
+        "CostOfRevenue"
+      ],
+      "direction": "overstated",
+      "accounting_treatment": "Inventory build-up without corresponding demand and severe gross-margin compression suggest possible under-provision for obsolete/slow-moving inventory (inventory reserve), which would understate cost of revenue and overstate inventory carrying value in a declining-revenue environment.",
+      "rationale_evidence": [
+        {
+          "quote": "InventoryNet value=1267656116.10 (end 2009-12-31) vs 1181955720.66 (end 2008-12-31)",
+          "source_accession_no": "0000950123-10-098982",
+          "location": "InventoryNet instant 2008-12-31 & 2009-12-31"
+        },
+        {
+          "quote": "CostOfRevenue value=4597483798.85 (2009 annual) / Revenues value=4995850275.11 (2009 annual) implies gross margin ~8.0%, down from ~20.6% in 2008",
+          "source_accession_no": "0000950123-10-019083",
+          "location": "CostOfRevenue & Revenues annual 2008 & 2009"
+        }
+      ]
+    }
+  ],
+  "overall": {
+    "risk_tier": "watch",
+    "top_signals": [
+      "Receivables grew (+2.5%) while revenue declined (-8.1%) in FY2009",
+      "Goodwill/total assets expanded materially (+17.7%/+14.5%) during a revenue-contraction year",
+      "Net income collapsed 82% (788.5M to 143.6M) while operating cash flow fell only 44% (625.2M to 347.7M), a marked NI/OCF divergence",
+      "Inventory grew (+7.3%) despite revenue decline and gross margin compressed sharply (from ~20.6% to ~8.0%)",
+      "Recurring 10-K/A and 10-Q/A amendments across multiple years (2003-2005, 2009, 2010) indicating repeated restatements/corrections"
+    ]
+  }
+}
