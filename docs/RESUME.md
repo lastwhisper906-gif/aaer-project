@@ -14,7 +14,19 @@
 | Phase 1 P3 워크벤치 RP-13 | 0 | 0 | 0 | 00644f9 |
 | Phase 2 P2 종합 | 0 | 0 | 0 | c9c9889 |
 | Phase 2 E1-E5 사전등록 | 0 | 0 | 0 | c1b85a7 |
-| P4 발행정합(README+lint) | 0 | 0 | 0 | (this) |
+| P4 발행정합(README+lint) | 0 | 0 | 0 | 2a07649 |
+| E3 개정+거버넌스 (발사 전) | 0 | 0 | 0 | (this) |
+
+## Phase 3 상태 (미터링)
+
+- **E1 보류** (무인 부적합 — 네트워크 대조군 빌드 §5-1, OWNER_QUEUE Q-E03). 감독 하 이관.
+- **E3 실행 예정** (18 피평가자, 채점자 0). 재개 명령:
+  - draw-2: `python pipeline/runner.py --cases data/evaluatee/cases_wave2.json --perturbed
+    --out runs/wave2/perturbed_redraw/draw_2 --only case_39 case_40 case_52 case_59 case_60
+    case_61 case_65 case_66 case_67`
+  - draw-3: 위와 동일, `--out runs/wave2/perturbed_redraw/draw_3`
+  - 멱등 재개: 완료분 자동 skip. draw 완료마다 verify_blindness --write-manifest + commit+push.
+- E2/E4/E5 보류 (Q-E01 spend 게이트).
 
 ## 재개 순서 (die-anywhere)
 
