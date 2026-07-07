@@ -100,3 +100,16 @@ def test_s0_gate_has_no_exclusion_power():
     fetch_c = src.split("def cmd_fetch")[1].split("def cmd_validate")[0]
     assert "조잡 게이트 |log|" not in fetch_c
     assert "COARSE_BAND" not in src
+
+
+def test_e8b_owner_confirmed_enforcement_exclusion():
+    """A1 규칙화 회귀 방지: ADI CIK가 E8b 테이블에 있고 eligibility가 이를 거른다."""
+    import datetime
+    from control_v2 import OWNER_CONFIRMED_ENFORCEMENT_CIKS, eligibility_v2
+    assert "0000006281" in OWNER_CONFIRMED_ENFORCEMENT_CIKS
+    rec = {"cik": "0000006281", "pre_cutoff_10K": 20, "pre_cutoff_10Q": 60,
+           "fpi_forms": 0, "xbrl_pre_cutoff": True, "active_in_window": True,
+           "item_402_in_window": [], "first_counted": "1995-01-01",
+           "tickers": ["ADI"]}
+    ok, fails = eligibility_v2(rec, datetime.date(2015, 9, 10), [])
+    assert not ok and any("E8b" in f for f in fails)

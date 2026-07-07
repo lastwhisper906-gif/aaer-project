@@ -44,6 +44,14 @@ N_ALT_V2 = 2       # 차순위 기록 수
 CASES_V2 = {tid: dict(spec) for tid, spec in CASES.items()}
 CASES_V2["T21"]["sic_supp"] = ["8732", "7375", "8700", "8742"]
 
+# E8b — 소유자 확인 비-AAER 집행 부적격 (RP-09 §Final A1, overrides.md 전사).
+# AAER 색인 밖의 확정 10b-5 명령 등 — E4가 구조적으로 못 보는 집행 이력의
+# 규칙화 (E8 RP01_DISQUALIFIED_CIKS와 동형: 증거는 1차 소스로 기재).
+OWNER_CONFIRMED_ENFORCEMENT_CIKS = {
+    "0000006281": "Analog Devices — SEC C&D §10(b)/10b-5 옵션 백데이팅, $3M, "
+                  "2008-05-30 화해 (AP 3-13050, Rel 33-8923, PR 2008-102)",
+}
+
 # (iii) E4-v2 — 접미 목록: v1 _SUFFIXES + 복수형
 E4_SUFFIXES = {"the", "co", "corp", "inc", "ltd", "llc", "plc", "company",
                "corporation", "holdings", "holding", "group", "international",
@@ -105,6 +113,8 @@ def eligibility_v2(rec: dict, cutoff: datetime.date, e4_hits: list) -> tuple:
         fails.append("E6a 제출 이력 <3년")
     if rec["cik"] in RP01_DISQUALIFIED_CIKS:
         fails.append(f"E8 RP-01 실격 승계: {RP01_DISQUALIFIED_CIKS[rec['cik']]}")
+    if rec["cik"] in OWNER_CONFIRMED_ENFORCEMENT_CIKS:
+        fails.append(f"E8b 소유자 확인 집행 부적격: {OWNER_CONFIRMED_ENFORCEMENT_CIKS[rec['cik']]}")
     if "tickers" not in rec:
         fails.append("E9 판정 불능 (tickers 필드 부재)")
     elif not rec["tickers"]:
@@ -337,6 +347,12 @@ def cmd_select() -> int:
         for cik, rec in sorted(cdata["candidates"].items()):
             row = {"cik": cik, "name": rec.get("name"), "sic": rec.get("sic"),
                    "sic_pool": rec.get("sic_pool")}
+            # E8b 오버레이 (선정 시 재적용 — 풀 재수집 없이 규칙 개정 반영)
+            if cik in OWNER_CONFIRMED_ENFORCEMENT_CIKS:
+                row["excluded"] = [f"E8b 소유자 확인 집행 부적격: "
+                                   f"{OWNER_CONFIRMED_ENFORCEMENT_CIKS[cik]}"]
+                also.append(row)
+                continue
             if not rec.get("eligible"):
                 row["excluded"] = rec.get("fails") or ["수집 실패/자기 배제"]
                 also.append(row)
