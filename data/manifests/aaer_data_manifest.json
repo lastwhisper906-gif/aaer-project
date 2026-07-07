@@ -1,10 +1,10 @@
 {
   "manifest_version": 1,
   "root": "~/aaer-data",
-  "generated_at": "2026-07-07T13:03:00+00:00",
+  "generated_at": "2026-07-07T13:11:34+00:00",
   "generated_by": "tools/verify_manifest.py --write",
-  "file_count": 396,
-  "total_bytes": 363432785,
+  "file_count": 402,
+  "total_bytes": 371969744,
   "files": [
     {
       "path": "ADAM/edgar/CIK0001273685-submissions-001.json",
@@ -771,6 +771,20 @@
       "source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000040704.json"
     },
     {
+      "path": "GNE/edgar/CIK0001528356.json",
+      "size": 118042,
+      "sha256": "f3ae237435ba863ac5a7eb6c84e3778f94b0dfdad3e3c2090bdd94451e187e48",
+      "fetched_at": "2026-07-07T13:10:17+00:00",
+      "source_url": "https://data.sec.gov/submissions/CIK0001528356.json"
+    },
+    {
+      "path": "GNE/xbrl/CIK0001528356.json",
+      "size": 3192566,
+      "sha256": "6c359a3d71d46f6bb057f8bfa130d4d96f7f8509bf41493ab806f52dd1b9fb95",
+      "fetched_at": "2026-07-07T13:10:17+00:00",
+      "source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001528356.json"
+    },
+    {
       "path": "GRMN/edgar/CIK0001121788-submissions-001.json",
       "size": 156262,
       "sha256": "48cb47f6c7130071ab84cf47bea729a621dcb5e22555c6c530a3c7022e89b452",
@@ -918,6 +932,20 @@
       "sha256": "55e58c385f14407a31e40ff71d3b850f04f33c8cbb92fb426226c58cd53e83d8",
       "fetched_at": "2026-07-06T08:06:35+00:00",
       "source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001657853.json"
+    },
+    {
+      "path": "HUBG/edgar/CIK0000940942.json",
+      "size": 155597,
+      "sha256": "78f4d97caf7fdf25bf01f683fe1fa2acf0246aa14f5eab4615f15fd3835b1a2b",
+      "fetched_at": "2026-07-07T13:10:15+00:00",
+      "source_url": "https://data.sec.gov/submissions/CIK0000940942.json"
+    },
+    {
+      "path": "HUBG/xbrl/CIK0000940942.json",
+      "size": 2764011,
+      "sha256": "2ec770cc2ff6260917608bbc0d1068a3faea42727c5fb2202f3ebe2ea7c247fb",
+      "fetched_at": "2026-07-07T13:10:15+00:00",
+      "source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000940942.json"
     },
     {
       "path": "ICON/2019-251.html",
@@ -2299,6 +2327,20 @@
       "sha256": "7d0006cb853011a6b9a79bf01f15ed9b23d0f08ea4db40c27277d1937c963f9f",
       "fetched_at": "2026-07-07T08:24:35+00:00",
       "source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001453090.json"
+    },
+    {
+      "path": "WMK/edgar/CIK0000105418.json",
+      "size": 115633,
+      "sha256": "e9f771ab4f5116960e041de44ec22ec70453b50f9e6e5f4e6b057bedc6a1325c",
+      "fetched_at": "2026-07-07T13:10:16+00:00",
+      "source_url": "https://data.sec.gov/submissions/CIK0000105418.json"
+    },
+    {
+      "path": "WMK/xbrl/CIK0000105418.json",
+      "size": 2191110,
+      "sha256": "2e7bdb580a48b701df8a8d08aecf73d6a3bb0b498dd7ace9048c2e095ad27cf1",
+      "fetched_at": "2026-07-07T13:10:16+00:00",
+      "source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000105418.json"
     },
     {
       "path": "XLNX/edgar/CIK0000743988-submissions-001.json",

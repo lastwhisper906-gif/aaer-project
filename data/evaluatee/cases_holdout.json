@@ -1,0 +1,30 @@
+{
+  "_meta": {
+    "contract": "schemas/evaluatee_input.json",
+    "frame": "identity-visible PRIMARY (HOLDOUT_CRITERIA f) — memorization of post-cutoff revelation impossible (recognition gate 0d64a7a)",
+    "labels": "G2 provisional — restatement/non-reliance events, NOT fraud"
+  },
+  "cases": [
+    {
+      "case_id": "case_71",
+      "ticker": "HUBG",
+      "cik": "0000940942",
+      "company_name": "Hub Group, Inc.",
+      "cutoff_date": "2026-02-04"
+    },
+    {
+      "case_id": "case_72",
+      "ticker": "WMK",
+      "cik": "0000105418",
+      "company_name": "Weis Markets, Inc.",
+      "cutoff_date": "2026-02-19"
+    },
+    {
+      "case_id": "case_73",
+      "ticker": "GNE",
+      "cik": "0001528356",
+      "company_name": "Genie Energy Ltd.",
+      "cutoff_date": "2026-03-11"
+    }
+  ]
+}

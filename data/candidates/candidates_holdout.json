@@ -1,0 +1,46 @@
+{
+  "_meta": {
+    "warning": "채점 정답 키 — 피평가자 노출 금지. G2 provisional — restatement/non-reliance, NOT fraud."
+  },
+  "candidates": [
+    {
+      "case_id": "case_71",
+      "group": "treatment",
+      "company_name": "Hub Group, Inc.",
+      "ticker": "HUBG",
+      "cik": "0000940942",
+      "cutoff_date": "2026-02-04",
+      "label_tier": "G2_provisional",
+      "scheme_summary": "8-K Item 4.02 (2026-02-05): purchased transportation costs ~$77M understated / unrecorded accounts payable; FY2023-24 10-Ks characterized as materially misstated; CFO and COO terminated. G2 PROVISIONAL (non-reliance/restatement event, NOT confirmed fraud).",
+      "scheme_type": "restatement_nonreliance; expense_understatement; liability_understatement",
+      "manipulation_period_start": null,
+      "manipulation_period_end": null
+    },
+    {
+      "case_id": "case_72",
+      "group": "treatment",
+      "company_name": "Weis Markets, Inc.",
+      "ticker": "WMK",
+      "cik": "0000105418",
+      "cutoff_date": "2026-02-19",
+      "label_tier": "G2_provisional",
+      "scheme_summary": "8-K Item 4.02 (2026-02-20): whistleblower-triggered; meat-processing plant inventory overstated up to ~$22M cumulative (FY2022-2025). G2 PROVISIONAL (non-reliance/restatement event, NOT confirmed fraud).",
+      "scheme_type": "restatement_nonreliance; inventory_overstatement",
+      "manipulation_period_start": null,
+      "manipulation_period_end": null
+    },
+    {
+      "case_id": "case_73",
+      "group": "treatment",
+      "company_name": "Genie Energy Ltd.",
+      "ticker": "GNE",
+      "cik": "0001528356",
+      "cutoff_date": "2026-03-11",
+      "label_tier": "G2_provisional",
+      "scheme_summary": "8-K Item 4.02 (2026-03-12): captive-insurance subsidiary liability accounting error; FY2023-24 and prior quarters restated. G2 PROVISIONAL (non-reliance/restatement event, error-like, NOT confirmed fraud).",
+      "scheme_type": "restatement_nonreliance; liability_accounting_error",
+      "manipulation_period_start": null,
+      "manipulation_period_end": null
+    }
+  ]
+}
