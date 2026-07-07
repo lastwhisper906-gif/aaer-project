@@ -219,3 +219,11 @@ allegations; control-firm discussions describe lawful accounting and expressly
 do not imply misconduct. We hold no positions in any company named, sell
 nothing, and used no non-public information. Educational and informational
 purposes only; nothing here is investment, legal, or accounting advice.
+
+---
+
+*Companion drafts (do not alter the conclusions above): Issue #1
+(`analysis/ISSUE_1_WAVE2_DRAFT.md`, gate-decided wave-2 roster expansion) and
+Issue #2 (`analysis/ISSUE_2_HOLDOUT_DRAFT.md`, the post-cutoff holdout this draft's
+§8 anticipated — its recognition gate now admits 3 unmemorized cases). Gate packet:
+`review_packets/RP-11_expansion_holdout.md`.*

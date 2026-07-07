@@ -1,9 +1,34 @@
-# HANDOFF.md — 세션 인수인계 (최종 갱신: 2026-07-07, RP-10 완료 — 발행 게이트 대기)
+# HANDOFF.md — 세션 인수인계 (최종 갱신: 2026-07-07, RP-11 — wave-2 로스터 확정 + 홀드아웃 게이트 admit, 채점 INCOMPLETE)
 
-> 다음 세션: CLAUDE.md → PROJECT.md → 이 문서 → `review_packets/RP-10_final.md`.
-> **현재 위치: Issue #0 초안(analysis/ISSUE_0_DRAFT.md)이 소유자 발행 게이트에
-> 서 있다 — 결론 규칙 R3 발동 (분리 실재 p=0.0011 + 암기 얽힘 5/8). 발행은
-> 소유자만. 다음 실측 라운드 후보: 컷오프 후 홀드아웃 (Tier 2 월간 재스캔).**
+> 다음 세션: CLAUDE.md → PROJECT.md → 이 문서 → `review_packets/RP-11_expansion_holdout.md`
+> → `review_packets/RP-10_final.md`.
+> **현재 위치: Issue #0 초안이 여전히 소유자 발행 게이트(불변). 이번 사이클
+> (RP-11)에서 companion 2건 진행: (1) wave-2 로스터를 규칙+게이트로 확정(생존 9),
+> (2) 컷오프-후 홀드아웃 RECOGNITION GATE 실행 → HUBG·WMK·GNE 3/3 비인지 admit
+> (N=3). wave-2 채점·홀드아웃 채점은 INCOMPLETE(사전 고정 순서 절단 = 결과 독립).**
+
+## RP-11 요약 (2026-07-07, 이 세션)
+
+- **P0**: README를 RP-10 정합으로 수정 (`67523af`) — RP-05 잔재 제거.
+- **P1.0/P2.0 사전 커밋 (발사 전 타임스탬프)**: `analysis/ANALYSIS_PLAN_WAVE2.md`
+  + `EXCLUSION.md` (`9438b0c`), `docs/HOLDOUT_CRITERIA.md` (`62d2fda`).
+- **P1.1 wave-2 로스터 확정** (`190783b`, 점수 독립): A형 23 − 채점 8 − 오염 2
+  (VRX·GE) − G-XBRL 실패 4 (PUDA 404 / MILL·DMND XBRL 채택이 폭로 후 / PWE
+  IFRS) = **생존 9** BRX·CGI·CSC·HAIN·MDXG·OSIR·TNGO·UAA·WFT. 커버리지 주석:
+  BRX(REIT 매출태그 결측) · OSIR(NI 분기 얕음).
+- **P2.1 RECOGNITION GATE** (`0d64a7a`, freeze): 후보 3/3 knows_event=False →
+  admit (N=3, H3-STOP 비발동). 양성대조 HTZ·KHC = knows_event=True high (계기
+  검증). transcript `runs/holdout/recognition/`.
+- **P3 산출물**: `review_packets/RP-11_expansion_holdout.md`,
+  `analysis/ISSUE_1_WAVE2_DRAFT.md`, `analysis/ISSUE_2_HOLDOUT_DRAFT.md`,
+  ISSUE_0에 companion 포인터 1줄(결론 무변경). make verify green.
+- **INCOMPLETE (재개 = RP-11 §6)**: wave-2 대조군 선정·페이로드·채점·프로브·
+  채점자 전건; 홀드아웃 채점(H1/H2). 채점 발사는 소유자 게이트.
+- **비용(참고, 구독 흡수)**: recognition gate 5호출 $0.059, pin_ok 5/5.
+
+## (이전) RP-10 — Issue #0 발행 게이트 (불변, 유지)
+
+> 다음 실측 라운드 후보였던 "컷오프 후 홀드아웃"은 RP-11에서 착수됨(위).
 
 ## RP-10 요약 (2026-07-07 완료)
 
