@@ -58,6 +58,11 @@
   `r3_bootstrap.py`·`name_id_split.py`): **B7 결과 P(R3 count≥5)=0.60** (5/8 헤드라인이
   재추첨의 60%에서만 성립) · **B8 결과 fraud-side name-ID 37.5%→33.3%(거의 불변)**,
   전체 하락은 대조군 주도. 관측 점추정·동결 수치 불변, 반영 여부는 소유자.
+- **D3/B1 준비 완료 (소유자 서명 대기)**: wave-1 primary 대조군 22(grades_v2/controls)를
+  RP-13 워크벤치에 편입(35→**57건**, `build_rp13_workbench.py`) → 이제 헤드라인이 의존하는
+  대조군이 서명 가능. 확정 도구 `scoring/finalize_grades.py`(게이트 `RP-13-FINALIZE: YES` +
+  dry-run 기본, **Claude 미실행**). **실제 서명(human_finalized=true)은 소유자 몫** — 워크벤치
+  검토 → overrides.md 게이트 서명 → `--commit`. 커밋 f2309d3.
 - **B20 (신규 발견, B2 작업 중)**: `wave2_analyze.py`의 perm_p가 `glob`(파일시스템) 순서
   의존이라 환경 간 정확 재현 불가(wave-1 stats.py는 CSV라 무관). reproduce_headline는
   wave-2 순서독립 통계만 정확 대조, perm_p는 <0.01 유의성만 확인. **정렬로 결정화하면

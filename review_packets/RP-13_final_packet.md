@@ -73,8 +73,10 @@ fresh-clone(P5)    : reproduce·lint·pytest·schema-only PASS (temp dir 실측)
 
 ## 7. 소유자 액션 (정확히 4개 — NEVER self-finalize)
 
-1. **채점 확정** — `review_packets/RP-13_grading_workbench.md`의 35건(TIER A 13
-   우선). 서명 시 각 grade `human_finalized=true` + 오버라이드는 overrides.md.
+1. **채점 확정** — `review_packets/RP-13_grading_workbench.md`의 **57건**(wave-2 32 +
+   홀드아웃 3 + wave-1 primary 대조군 22[v2, 감사 B1 편입]; TIER A 우선). 검토 후
+   `scoring/overrides.md`에 `RP-13-FINALIZE: YES` 서명 → `python scoring/finalize_grades.py
+   --commit` (게이트형, Claude 미실행) → 각 grade `human_finalized=true` + 오버라이드는 overrides.md.
 2. **3-이슈 발행 결정** — `analysis/ISSUE_0/1/2_DRAFT.md` (전부 미발행, 소유자 게이트).
 3. **E4 EXPLORATORY 문단 검토** — E4 미실행. 사전 등록 `analysis/CROSSMODEL_PLAN.md`
    + Issue #0 §5/§8의 EXPLORATORY 라벨 문언 승인/수정. (실행 시 각주 1문단 전용.)
