@@ -13,6 +13,7 @@
 import csv
 import json
 import random
+import statistics
 import sys
 from pathlib import Path
 
@@ -123,8 +124,10 @@ def separation(rows, rng):
     fr = [r["llm_score"] for r in rows if r["group"] == "fraud" and r["llm_score"] is not None]
     ct = [r["llm_score"] for r in rows if r["group"] == "control" and r["llm_score"] is not None]
     d = dict(n_fraud=len(fr), n_control=len(ct),
-             fraud_median=round(sorted(fr)[len(fr) // 2], 1) if fr else None,
-             control_median=round(sorted(ct)[len(ct) // 2], 1) if ct else None)
+             # statistics.median: 짝수 n에서 두 중앙값의 평균(정답). 이전 sorted[n//2]는
+             # 상위중앙을 반환해 wave1 fraud를 57.5 대신 60.0으로 잘못 보고했다(감사 A4).
+             fraud_median=round(statistics.median(fr), 1) if fr else None,
+             control_median=round(statistics.median(ct), 1) if ct else None)
     if fr and ct and len(ct) >= 2:
         d["auc"] = round(auc(fr, ct), 3)
         lo, hi = boot_auc_ci(fr, ct, rng)

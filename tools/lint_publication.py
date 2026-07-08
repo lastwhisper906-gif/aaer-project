@@ -6,8 +6,9 @@
   (C) 대조군 회사가 주어인 부정 서술 (모델이 아니라 대조군을 주어로 한 유죄 문장).
   (D) pooled 수치가 standalone 병기 없이 등장.
   (E) E4/교차모델/opus 피평가자 언급에 EXPLORATORY 라벨 누락.
-  (F) 수치 정합: 산문 통계가 동결 json(results_stats/wave2_results/synthesis)과 불일치
-      + 알려진 stale 값 금지.
+  (F) 동결 헤드라인 값 존재 확인(canon 표의 각 값이 발행 문서에 그대로 존재 — 값 drift·삭제
+      차단) + deprecated/stale 값 금지. 전체 산문 통계의 JSON 대조 recompute는 아직 아님
+      (reproduce_analysis 소관 확장 = OWNER_QUEUE 리서치 항목; Q-E02 name-ID 25% 미해소).
 비영: 위반 0. 위반 시 라인·사유 출력 후 exit 1. `make verify`에 편입.
 """
 import json
@@ -35,17 +36,14 @@ def controls():
 
 
 def canon():
-    r1 = json.load(open(REPO / "analysis/results_stats.json", encoding="utf-8"))["primary"]
-    r2 = json.load(open(REPO / "analysis/wave2_results.json", encoding="utf-8"))
-    # (설명, 허용 문자열들, 반드시 이 라벨 근처에 나오면 매칭). 값이 문서에 있으면 일치해야.
+    """동결 헤드라인 값 — 각 문자열이 발행 문서에 그대로 존재해야 한다(값 drift·삭제 차단).
+    r1/r2 로드는 동결 JSON의 존재·파싱을 함께 검증한다(desync 조기 발견)."""
+    json.load(open(REPO / "analysis/results_stats.json", encoding="utf-8"))["primary"]
+    json.load(open(REPO / "analysis/wave2_results.json", encoding="utf-8"))
     return {
-        "wave1_perm_p": ["0.00114"],
-        "wave2_perm_p": ["0.00116"],
-        "wave2_auc": ["0.829"],
-        "wave1_fpr": ["13.6%", "3/22"],
-        "wave2_fpr": ["21.7%", "5/23"],
-        "wave2_ece": ["0.179"],
-        "name_id_w2_frozen": ["21.9%"],
+        "wave1_perm_p": "0.00114", "wave2_perm_p": "0.00116", "wave2_auc": "0.829",
+        "wave1_fpr_n": "3/22", "wave2_fpr_n": "5/23", "wave2_ece": "0.179",
+        "name_id_w2_frozen": "21.9%",  # 동결 규칙값 — 25%(사람판독)는 Q-E02(병기 규약)
     }
 
 
@@ -55,6 +53,9 @@ STALE = [
     (r"FPR\s*[:=]?\s*0%", "0% FPR 금지"),
     (r"무오탐|오탐\s*0%|오탐률\s*0%", "0% 오탐 헤드라인 금지"),
     (r"0\.86\b(?!4)", None),  # 0.86 단독은 wave1 perturbed 0.864 축약 — 정보용(비차단)
+    # deprecated RP-05 파일럿 값이 현행 헤드라인으로 등장 금지 (감사 A3)
+    (r"\b0\.0226\b", "RP-05 파일럿 p — 현행 8v22 헤드라인은 0.00114"),
+    (r"\b0\.797\b", "RP-05 파일럿 AUC — 현행 wave-1은 0.824"),
 ]
 ADVERSE = re.compile(r"(overstat|misstat|분식|조작|manipulat|fraudulent|허위|은폐)", re.I)
 
@@ -123,6 +124,14 @@ def main():
         for ln, msg in v:
             print(f"  {path}:{ln}: {msg}")
         total += len(v)
+
+    # (F) 동결 헤드라인 값 존재 확인 — 각 canon 값이 발행 문서 어딘가에 그대로 있어야
+    alltext = "\n".join((REPO / p).read_text(encoding="utf-8")
+                        for p in DOCS if (REPO / p).exists())
+    for label, val in canon().items():
+        if val not in alltext:
+            print(f"  <docs>: (F) 동결 헤드라인 값 부재/변경 — {label}={val}")
+            total += 1
     if total:
         print(f"\nFAIL — 발행 정합 위반 {total}건")
         return 1
