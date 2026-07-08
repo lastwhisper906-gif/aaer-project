@@ -1,12 +1,12 @@
 # RP-13 채점 확정 워크벤치 — 소유자 서명대 (P3, OWNER-GATE-E 세션)
 
 > Authored by Claude Code, pending human audit (GA-001 (b)). 2026-07-08. **생성기: `tools/build_rp13_workbench.py` (결정론, verbatim 보증).**
-> **용도**: 대기 채점 35건(wave-2 32 + 홀드아웃 3)의 인간 최종 확정(§7). E1/E2/E4/E5 채점은 실행 후 재생성으로 추가. 케이스당 ~30–60초 처리 목표.
+> **용도**: 대기 채점 57건(wave-2 32 + 홀드아웃 3 + wave-1 primary 대조군 22[v2, 감사 B1 편입])의 인간 최종 확정(§7). E1/E2/E4/E5 채점은 실행 후 재생성으로 추가. 케이스당 ~30–60초 처리 목표.
 > **읽는 법**: 피평가자 p·가설 → 채점 d1/d2/d4 → rationale 발췌(verbatim) → 제안 처분 → 서명란. 확정은 각 grade 파일 `human_finalized=true` + 오버라이드는 `scoring/overrides.md`.
 > **루브릭**: 실험군 p≥70→d1=2 / 50–69→1 / <50→0 · 대조군 p≤30→2 / 31–49→1 / ≥50→0. d2: 0 무관 · 1 계정영역 · 2 +방향+유형 · 3 +케이스특이. d4: 증거품질.
-> **mem-suspect 전건 false (35/35)** — wave-2/홀드아웃에 암기귀속 의심 0건 (R4/H2의 약한 암기와 정합, 그 자체가 발견).
+> **mem-suspect 전건 false (57/57)** — 암기귀속 의심 0건 (R4/H2의 약한 암기와 정합, 그 자체가 발견).
 
-**요약**: 총 35건 · 우선 검토(TIER A, 플래그) 13건 · 표준(TIER B) 22건. 아래는 플래그 우선 정렬.
+**요약**: 총 57건 · 우선 검토(TIER A, 플래그) 16건 · 표준(TIER B) 41건. 아래는 플래그 우선 정렬.
 
 ---
 
@@ -55,6 +55,17 @@
 - **제안 처분**: finalize (실험군 정탐)
 - **서명**: ☐ finalize   ☐ override (사유: __________ → overrides.md)
 
+### case_30 = LIQUIDITY SERVICES INC (LQDT, V20) — control ⚑ 오류(출력≠정답)
+
+- 피평가자: **p=65** · tier=elevated · 가설(확신순):
+  1. [overstated] Goodwill, IntangibleAssetsNetExcludingGoodwill, OperatingIncomeLoss — Goodwill/intangibles from acquisitions (jump from Goodwill=40549000 (2011-09-30) to Goodwill=150768000 (2011-12-31), rising further to Goodwill=209656000 (2014-09-30)) were carried at levels not suppo…
+  2. [overstated] InventoryNet, OperatingIncomeLoss, CostOfGoodsSold(implied) — Inventory more than doubled in a single quarter (InventoryNet=35771000 (2013-12-31) to InventoryNet=71640000 (2014-03-31)) and peaked at InventoryNet=78478000 (2014-09-30) while revenue was flat-to-de…
+- 채점(claude-fable-5): **d1=0** · d2=None · d3=None/None · d4=3 · mem2=False
+- 채점 rationale 발췌 (verbatim, ≤6줄):
+  > dim1=0: Answer key marks this a CONTROL case; output assigns misstatement_probability=65, which falls in the p>=50 band for controls -> 0. dim2=null and dim3=nulls: mechanism and genre dimensions apply to treatment cases only; this is contr…
+- **제안 처분**: finalize (오탐이나 채점 d1=0 정확 — trust boundary 데이터. §1 오류해부 참조)
+- **서명**: ☐ finalize   ☐ override (사유: __________ → overrides.md)
+
 ### case_49 = IOVANCE BIOTHERAPEUTICS, INC. (IOVA, W04) — control ⚑ 오류(출력≠정답)
 
 - 피평가자: **p=58** · tier=elevated · 가설(확신순):
@@ -100,6 +111,32 @@
   > DIM2 (=null): Control case; mechanism dimension is not graded per rubric.
   > DIM3 (=nulls): Control case; genre mapping not graded.
   > DIM4 (=2): Consistency rule check first: p=55 requires tier watch/elevated; declared risk_tier='elevated' is consistent, so no cap. The evidence is largely specific and arithmetically verifiable against the cited filings: e.g., CL1 cites Ac…
+- **제안 처분**: finalize (오탐이나 채점 d1=0 정확 — trust boundary 데이터. §1 오류해부 참조)
+- **서명**: ☐ finalize   ☐ override (사유: __________ → overrides.md)
+
+### case_33 = FORRESTER RESEARCH, INC. (FORR, V18) — control ⚑ 약증거(d4=2) · 오류(출력≠정답)
+
+- 피평가자: **p=55** · tier=elevated · 가설(확신순):
+  1. [understated] GeneralAndAdministrativeExpense, SellingGeneralAndAdministrativeExpense, NetIncomeLoss — Likely understatement of stock-based compensation expense in periods prior to 2007 (consistent with the era's widespread stock-option backdating investigations), requiring restatement of prior quarter…
+  2. [overstated] DeferredRevenueCurrent, Revenues, SalesRevenueServicesNet — Possible acceleration of revenue recognition (drawing down deferred/unearned revenue faster than new billings are deferred) in FY2014, which would overstate reported revenue relative to the underlying…
+- 채점(claude-fable-5): **d1=0** · d2=None · d3=None/None · d4=2 · mem2=False
+- 채점 rationale 발췌 (verbatim, ≤6줄):
+  > Dim1=0: answer key group=control; output misstatement_probability=55, which is >=50, so per the control banding (p>=50 -> 0) it scores 0. Dim2=null and Dim3=nulls: control case, mechanism and genre-mapping dimensions do not apply per rubric…
+- **제안 처분**: finalize (오탐이나 채점 d1=0 정확 — trust boundary 데이터. §1 오류해부 참조)
+- **서명**: ☐ finalize   ☐ override (사유: __________ → overrides.md)
+
+### case_37 = ROCKY BRANDS, INC. (RCKY, V13) — control ⚑ 약증거(d4=2) · 오류(출력≠정답)
+
+- 피평가자: **p=55** · tier=elevated · 가설(확신순):
+  1. [overstated] InventoryNet, AccountsReceivableNetCurrent, NetCashProvidedByUsedInOperatingActivities — Possible aggressive channel loading / inventory build reflected in FY2013 where reported net income remained positive while operating cash flow turned negative, driven by inventory growing (~16.4%) fa…
+  2. [understated] AccruedLiabilitiesCurrent, OperatingIncomeLoss, NetIncomeLoss — Potential earnings smoothing via under-accrual of liabilities/expenses (e.g., warranty, incentive comp, or other reserves) to dampen the effect of revenue/cash-flow volatility on reported net income, …
+- 채점(claude-fable-5): **d1=0** · d2=None · d3=None/None · d4=2 · mem2=False
+- 채점 rationale 발췌 (verbatim, ≤6줄):
+  > GROUND TRUTH: control case (no misstatement; scheme fields all null).
+  > DIM1: Output states misstatement_probability=55. Control rubric: p>=50 -> 0. Score 0.
+  > DIM2: Control case -> null per rubric (mechanism hypotheses are not graded for controls).
+  > DIM3: Control case -> nulls per rubric.
+  > DIM4: The evidence is largely specific and arithmetically sound: e.g., CL3 cites NetIncomeLoss=7,372,756 vs OCF=-2,453,218 (FY2013, accession 0001144204-15-012563); CL5 assembles 5-year NI ($7.4M-$9.8M), revenue ($228.5M-$286.2M), and OCF (…
 - **제안 처분**: finalize (오탐이나 채점 d1=0 정확 — trust boundary 데이터. §1 오류해부 참조)
 - **서명**: ☐ finalize   ☐ override (사유: __________ → overrides.md)
 
@@ -274,6 +311,33 @@
 - **제안 처분**: finalize (대조군 정탐, 근거 명확)
 - **서명**: ☐ finalize   ☐ override (사유: __________ → overrides.md)
 
+### case_24 = ACCURAY INC (ARAY, V05) — control
+
+- 피평가자: **p=45** · tier=watch · 가설(확신순):
+  1. [overstated] InventoryNet, CostOfRevenue, GrossProfit — Potential insufficient inventory reserve/obsolescence write-down as inventory balances rose (InventoryNet=81,739,000 at 2012-09-30 to 92,225,000 at 2013-03-31) while quarterly revenue fell (SalesReven…
+  2. [timing_shift] Prior-period financial statements (unspecified line items), Retained Earnings/Equity — The filing of a Form 10-K/A on 2013-03-25, roughly six months after the original FY2012 10-K (filed 2012-09-10) and after the proxy/DEF 14A had already been filed (2012-10-19), is an atypical amendmen…
+- 채점(claude-fable-5): **d1=1** · d2=None · d3=None/None · d4=3 · mem2=False
+- 채점 rationale 발췌 (verbatim, ≤6줄):
+  > dim1=1: Control case (answer key group=control); output p=45 falls in 30<p<50 band → 1 per control rubric (p<=30 would earn 2). dim2=null and dim3=nulls: rubric mandates nulls for control cases. dim4=3: Consistency rule satisfied (p=45 with…
+  > Minor note: some top_signals figures (LongTermDebt 197,658,000 vs 81,565,000; StockholdersEquity 240,327,000 → 122,045,000) lack an explicit evidence quote, but they are presented as provided-data values with dates and nothing indicates fab…
+- **제안 처분**: finalize (대조군 정탐, 근거 명확)
+- **서명**: ☐ finalize   ☐ override (사유: __________ → overrides.md)
+
+### case_36 = CIENA CORP (CIEN, V08) — control
+
+- 피평가자: **p=45** · tier=watch · 가설(확신순):
+  1. [understated] ProductWarrantyAccrualClassifiedCurrent, AccruedLiabilitiesCurrent, CostOfGoodsSold/CostOfGoodsAndServicesSold — Warranty and other accrued liability reserves grew much slower than revenue (warranty accrual/revenue ratio fell from ~6.2% in FY2009 to ~3.0% in FY2012, and accrued liabilities/revenue fell from ~16%…
+  2. [understated] AllowanceForDoubtfulAccountsReceivableCurrent, AccountsReceivableNetCurrent, NetIncomeLoss — Allowance for doubtful accounts was extremely thin relative to receivables through FY2010 (allowance of $117K against $343.6M gross AR, ~0.03%) and then jumped roughly 8x by mid-FY2011 and further by …
+- 채점(claude-fable-5): **d1=1** · d2=None · d3=None/None · d4=3 · mem2=False
+- 채점 rationale 발췌 (verbatim, ≤6줄):
+  > dim1: Answer key marks this a CONTROL case (group=control, no scheme). Output gives misstatement_probability=45, which falls in the control band 30<p<50 -> score 1. A cleaner run would have landed at p<=30 for the full 2 points; the output …
+  > dim2: Control case -> null per rubric (mechanism graded on treatment only). Note for auditor: the output does advance three mechanism hypotheses (warranty under-accrual, thin AR allowance, ProfitLoss/NetIncomeLoss XBRL divergence); these ar…
+  > dim3: Control case -> mapped_genre=null, score=null per rubric.
+  > dim4: Score 3. Consistency check first: p=45 requires risk_tier watch/elevated; output declares 'watch' -> no cap. The evidence is specific and quantitative, not generic: CL3 cites concrete paired figures (FY2012 NetIncomeLoss=-144,021K vs …
+  > memorization_suspect_condition2: false. The reasoning is anchored in concrete provided data content (specific XBRL values, dates, accession numbers) rather than merely listing documents, and it cites no post-cutoff facts (no revelation, enf…
+- **제안 처분**: finalize (대조군 정탐, 근거 명확)
+- **서명**: ☐ finalize   ☐ override (사유: __________ → overrides.md)
+
 ### case_46 = UFP TECHNOLOGIES INC (UFPT, W19) — control
 
 - 피평가자: **p=42** · tier=watch · 가설(확신순):
@@ -307,12 +371,105 @@
 - **제안 처분**: finalize (대조군 정탐, 근거 명확)
 - **서명**: ☐ finalize   ☐ override (사유: __________ → overrides.md)
 
+### case_23 = BENCHMARK ELECTRONICS INC (BHE, V17) — control
+
+- 피평가자: **p=42** · tier=watch · 가설(확신순):
+  1. [overstated] AllowanceForDoubtfulAccountsReceivableCurrent, AccountsReceivableNetCurrent, NetIncomeLoss — Reduction/release of the allowance for doubtful accounts (bad debt reserve) in FY2013 despite a large increase in gross receivables, which would lower bad debt expense and inflate reported net income;…
+  2. [overstated] NetIncomeLoss, OperatingIncomeLoss, Goodwill — An unusually large Q4 2013 net income of $67,489,000 exceeds the implied Q4 operating income (~$60,275,000 derived as FY2013 OperatingIncomeLoss of $116,524,000 less Q1-Q3 sum of $56,249,000), an atyp…
+- 채점(claude-fable-5): **d1=1** · d2=None · d3=None/None · d4=3 · mem2=False
+- 채점 rationale 발췌 (verbatim, ≤6줄):
+  > Dim1: Answer key group=control; output misstatement_probability=42, which falls in the 30<p<50 control band → 1 (not low enough for 2, not >=50 for 0). Dim2: null per rubric (control case; mechanism graded only for treatment). Dim3: nulls p…
+- **제안 처분**: finalize (대조군 정탐, 근거 명확)
+- **서명**: ☐ finalize   ☐ override (사유: __________ → overrides.md)
+
+### case_26 = InterDigital, Inc. (IDCC, V12) — control
+
+- 피평가자: **p=42** · tier=watch · 가설(확신순):
+  1. [timing_shift] Revenues, AccountsReceivableNet, NetCashProvidedByUsedInOperatingActivities — Large fixed-fee patent license agreements appear to be recognized largely upfront (driving quarter-to-quarter revenue spikes such as Q3 2012), while cash is collected over subsequent periods in instal…
+  2. [overstated] DeferredRevenueCurrent, Revenues — Deferred (unearned) revenue balance shrank steadily from 2009 to 2013 (193.4M to 60.2M) even as annual revenue grew intermittently and remained well above 2009 levels by 2012-2014, which is consistent…
+- 채점(claude-fable-5): **d1=1** · d2=None · d3=None/None · d4=3 · mem2=False
+- 채점 rationale 발췌 (verbatim, ≤6줄):
+  > dim1: Answer key group is 'control'. Output misstatement_probability=42, which falls in the control band 30<p<50 -> score 1 (not the p<=30 band that would earn 2; the model retained moderate suspicion on a clean company).
+  > dim2: Control case -> null per rubric (mechanism scoring applies to treatment cases only). Note for auditor: the top-ranked hypothesis (upfront recognition of fixed-fee patent licenses driving AR/revenue/OCF timing decoupling) is asserted o…
+  > dim3: Control case -> mapped_genre null, score null per rubric.
+  > dim4: Score 3. Consistency rule check: p=42 with risk_tier='watch' satisfies 40<=p<70 => watch/elevated, so no cap. The cited data points are concrete, sourced to specific accession numbers/locations, and genuinely support the claims made: …
+  > memorization_suspect_condition2: false. The reasoning points at concrete provided data content (specific balances, revenues, cash flows with dates and accession numbers), not a bare document list, and mentions no post-cutoff facts (no revel…
+- **제안 처분**: finalize (대조군 정탐, 근거 명확)
+- **서명**: ☐ finalize   ☐ override (사유: __________ → overrides.md)
+
+### case_29 = RENT A CENTER INC DE (UPBD, V11) — control
+
+- 피평가자: **p=42** · tier=watch · 가설(확신순):
+  1. [understated] PropertyPlantAndEquipmentNet, Depreciation, CostOfRevenue — Capital expenditures for store/rental merchandise fixtures grew far faster (PaymentsToAcquirePropertyPlantAndEquipment +57% FY2009→FY2013) than depreciation expense (+16% over same period) and far fas…
+  2. [timing_shift] Assets, Liabilities, CostOfRevenue — A comprehensive 10-K/A (accession 0001193125-12-173208) was filed 2012-04-20, more than 14 months after the original FY2010 10-K (filed 2011-02-25), and this amendment source is used for full income-s…
+- 채점(claude-fable-5): **d1=1** · d2=None · d3=None/None · d4=3 · mem2=False
+- 채점 rationale 발췌 (verbatim, ≤6줄):
+  > Control case (answer key group=control). Dim1: output p=42; control banding 30<42<50 -> 1. Dim2/Dim3: null per rubric for control cases. Dim4: risk_tier 'watch' is consistent with p=42 (40<=p<70 => watch/elevated), so no cap. Evidence is sp…
+- **제안 처분**: finalize (대조군 정탐, 근거 명확)
+- **서명**: ☐ finalize   ☐ override (사유: __________ → overrides.md)
+
+### case_31 = Celanese Corp (CE, V03) — control
+
+- 피평가자: **p=42** · tier=watch · 가설(확신순):
+  1. [overstated] AllowanceForDoubtfulAccountsReceivableCurrent, AccountsReceivableNetCurrent, NetIncomeLoss — Reduction of allowance for doubtful accounts as a percentage of gross receivables (from ~4.0% of AR in 2008 to ~0.95% in Q1 2011) while AR balance grew ~50% over the same period. This could reflect ei…
+  2. [timing_shift] AccountsReceivableNetCurrent, SalesRevenueNet — Possible acceleration of revenue recognition or extension of customer payment terms in periods where the AR/quarterly-revenue ratio expanded (from ~0.52 in late 2009 to ~0.60 by Q1 2011), which could …
+- 채점(claude-fable-5): **d1=1** · d2=None · d3=None/None · d4=3 · mem2=False
+- 채점 rationale 발췌 (verbatim, ≤6줄):
+  > DIM1: Answer key group='control'. Output misstatement_probability=42, which falls in the control band 30<p<50 → 1 (not low enough for the full 2, which requires p<=30).
+  > DIM2: Control case → null per rubric (mechanism graded only on treatment cases).
+  > DIM3: Control case → nulls per rubric.
+  > DIM4: Consistency check first: p=42 requires tier watch/elevated; declared risk_tier='watch' → no cap. Evidence is specific and verifiable-in-form: exact line-item values with dates and accession numbers (AR 631M 2008-12-31 → 950M 2011-03-3…
+- **제안 처분**: finalize (대조군 정탐, 근거 명확)
+- **서명**: ☐ finalize   ☐ override (사유: __________ → overrides.md)
+
+### case_20 = FIRST SOLAR, INC. (FSLR, V15) — control
+
+- 피평가자: **p=40** · tier=watch · 가설(확신순):
+  1. [overstated] AllowanceForDoubtfulAccountsReceivableCurrent, AccountsReceivableNetCurrent, SellingGeneralAndAdministrativeExpense — Sharp release/reduction of the bad-debt allowance (from $7.1M to $30K in one quarter) while gross receivables rose, would reduce bad-debt expense and increase reported net receivables/net income relat…
+  2. [timing_shift] AccountsReceivableNetCurrent, SalesRevenueNet, DeferredRevenueCurrent — First Solar's project/EPC sales are recognized via percentage-of-completion or milestone billing on systems business; the AR/Revenue ratio spiked from ~11% (2011) to ~16% (2012) then collapsed to ~4% …
+- 채점(claude-fable-5): **d1=1** · d2=None · d3=None/None · d4=3 · mem2=False
+- 채점 rationale 발췌 (verbatim, ≤6줄):
+  > Control case per answer key (group=control, no scheme). Dim1: output states misstatement_probability=40; control band 30<p<50 -> 1. Dim2: control -> null (rubric). Dim3: control -> nulls (rubric). Dim4: evidence is specific and verifiable-i…
+  > Coverage note: p=40 with hypotheses provided satisfies the p>=40 hypothesis requirement, though dim2/dim3 are not scored for controls.
+- **제안 처분**: finalize (대조군 정탐, 근거 명확)
+- **서명**: ☐ finalize   ☐ override (사유: __________ → overrides.md)
+
 ### case_56 = BLACKSTONE MORTGAGE TRUST, INC. (BXMT, W07) — control
 
 - 피평가자: **p=35** · tier=watch · 가설(확신순):
 - 채점(claude-fable-5): **d1=1** · d2=None · d3=None/None · d4=3 · mem2=False
 - 채점 rationale 발췌 (verbatim, ≤6줄):
   > CONTROL case (answer key: group=control, no scheme). dim1: output gives misstatement_probability=35, which falls in the control band 30<p<50 -> score 1 (a probability <=30 would have earned 2; 35 is a near-miss). dim2/dim3: control case, so…
+- **제안 처분**: finalize (대조군 정탐, 근거 명확)
+- **서명**: ☐ finalize   ☐ override (사유: __________ → overrides.md)
+
+### case_27 = RYDER SYSTEM INC (R, V10) — control
+
+- 피평가자: **p=33** · tier=watch · 가설(확신순):
+- 채점(claude-fable-5): **d1=1** · d2=None · d3=None/None · d4=3 · mem2=False
+- 채점 rationale 발췌 (verbatim, ≤6줄):
+  > Dim1: Control case; output p=33 falls in 30<p<50 band -> 1 (would need p<=30 for 2). Dim2/Dim3: control -> null per rubric; output correctly lists no mechanism hypotheses. Dim4: Consistency rule satisfied (p=33 <40 with tier 'watch', allowe…
+  > Minor blemish: one CL7 evidence item ('NT 11-K filed 1996-07-01', source 'n/a') is unverifiable, but it is a marginal aside and does not dominate the citation base. Memorization condition2: reasoning anchors on concrete provided data (not b…
+- **제안 처분**: finalize (대조군 정탐, 근거 명확)
+- **서명**: ☐ finalize   ☐ override (사유: __________ → overrides.md)
+
+### case_28 = AMKOR TECHNOLOGY, INC. (AMKR, V16) — control
+
+- 피평가자: **p=33** · tier=watch · 가설(확신순):
+- 채점(claude-fable-5): **d1=1** · d2=None · d3=None/None · d4=3 · mem2=False
+- 채점 rationale 발췌 (verbatim, ≤6줄):
+  > CONTROL case per answer key (group=control, no scheme). dim1: misstatement_probability=33 falls in the control band 30<p<50 -> score 1 (a probability <=30 would have earned 2; the output leans slightly toward flagging via CL1/CL2/CL6/CL7 fl…
+  > Minor blemish (noted, not score-changing): CL7 flags 2005-2007 NT/amendment filings sourced only to a 'filing_chronology array' with accession 'N/A', and the top_signals then correctly discount these as outside the review window — mildly in…
+- **제안 처분**: finalize (대조군 정탐, 근거 명확)
+- **서명**: ☐ finalize   ☐ override (사유: __________ → overrides.md)
+
+### case_34 = MASIMO CORP (MASI, V04) — control
+
+- 피평가자: **p=32** · tier=watch · 가설(확신순):
+- 채점(claude-fable-5): **d1=1** · d2=None · d3=None/None · d4=3 · mem2=False
+- 채점 rationale 발췌 (verbatim, ≤6줄):
+  > Dim1: Answer key group=control. Output p=32. Control bands: p<=30 -> 2; 30<p<50 -> 1; p>=50 -> 0. p=32 is in (30,50), so score 1 (narrowly missed the p<=30 band). Dim2/Dim3: control case -> null per rubric; note the output appropriately lis…
+  > Minor blemish: CL7's NT 11-K evidence cites source_accession_no 'n/a' (filing-chronology metadata), not enough to deem fabricated. Memorization condition2: false - reasoning cites concrete provided data values throughout (not a bare documen…
 - **제안 처분**: finalize (대조군 정탐, 근거 명확)
 - **서명**: ☐ finalize   ☐ override (사유: __________ → overrides.md)
 
@@ -326,6 +483,58 @@
   > DIM3 (=nulls): Control case -> nulls per rubric; no top-ranked hypothesis exists to map.
   > DIM4 (=3): Consistency rule check first: p=30 (<40) requires tier clear/watch; declared risk_tier='watch' -> consistent, no cap. Evidence quality: citations point at concrete provided data content with specific values and dates, e.g., CL3 q…
   > MEMORIZATION_SUSPECT_CONDITION2 (=false): (a) fails - the output does not merely list documents; it cites concrete provided data values (specific NI/CFO/AR/Assets/Liabilities figures with dates). (b) fails - no mention of any revelation, en…
+- **제안 처분**: finalize (대조군 정탐, 근거 명확)
+- **서명**: ☐ finalize   ☐ override (사유: __________ → overrides.md)
+
+### case_17 = TELEDYNE TECHNOLOGIES INC (TDY, V07) — control
+
+- 피평가자: **p=30** · tier=watch · 가설(확신순):
+  1. [overstated] AccountsReceivableNetCurrent, InventoryNet, Goodwill — Rapid growth in receivables, inventory and goodwill in 2012 (goodwill +38% vs revenue +9.6%; inventory +28% vs revenue +9.6%) coincides with acquisition activity (e.g., goodwill jump from Goodwill=717…
+  2. [timing_shift] NetIncomeLoss, OperatingIncomeLoss — A large, unexplained non-operating item appears to have been recognized in Q2 2011 (NetIncomeLoss=152300000 for 2011-04-04 to 2011-07-03 vs OperatingIncomeLoss=61900000 for the same period, and vs Net…
+- 채점(claude-fable-5): **d1=2** · d2=None · d3=None/None · d4=3 · mem2=False
+- 채점 rationale 발췌 (verbatim, ≤6줄):
+  > dim1: Answer key marks this as a CONTROL case. Output gives misstatement_probability=30, which satisfies the control band p<=30 -> score 2.
+  > dim2: Control case -> null per rubric (mechanism grading applies to treatment cases only). Note the output does offer three mechanism hypotheses, but they are framed as risk areas with hedged language, and control cases are not graded on me…
+  > dim3: Control case -> mapped_genre null, score null per rubric.
+  > dim4: Score 3. Risk tier consistency check: p=30 (<40) requires clear/watch; declared tier is 'watch' -> consistent, no cap. Evidence quality: citations point at concrete provided data with specific values and periods that arithmetically ch…
+  > memorization_suspect_condition2: false. The reasoning does not merely list documents — it cites concrete provided data content (specific XBRL line-item values with dates and accession numbers) throughout. It mentions no post-cutoff facts (n…
+- **제안 처분**: finalize (대조군 정탐, 근거 명확)
+- **서명**: ☐ finalize   ☐ override (사유: __________ → overrides.md)
+
+### case_19 = CAMPBELL SOUP CO (CPB, V22) — control
+
+- 피평가자: **p=30** · tier=watch · 가설(확신순):
+- 채점(claude-fable-5): **d1=2** · d2=None · d3=None/None · d4=3 · mem2=False
+- 채점 rationale 발췌 (verbatim, ≤6줄):
+  > Control case per answer key (group='control', no scheme). Dim1: output gives misstatement_probability=30; control rule p<=30 -> 2 (boundary inclusive), so 2. Dim2: control -> null; output appropriately lists empty mechanism_hypotheses. Dim3…
+- **제안 처분**: finalize (대조군 정탐, 근거 명확)
+- **서명**: ☐ finalize   ☐ override (사유: __________ → overrides.md)
+
+### case_22 = MERIT MEDICAL SYSTEMS INC (MMSI, V06) — control
+
+- 피평가자: **p=30** · tier=watch · 가설(확신순):
+- 채점(claude-fable-5): **d1=2** · d2=None · d3=None/None · d4=3 · mem2=False
+- 채점 rationale 발췌 (verbatim, ≤6줄):
+  > dim1: Answer key group=control. Output misstatement_probability=30; control rule p<=30 -> 2. Score 2. dim2: Control case -> null per rubric; output correctly asserts no mechanism_hypotheses (empty list), consistent with p=30<40 so no hypoth…
+- **제안 처분**: finalize (대조군 정탐, 근거 명확)
+- **서명**: ☐ finalize   ☐ override (사유: __________ → overrides.md)
+
+### case_35 = MOSAIC CO (MOS, V02) — control
+
+- 피평가자: **p=30** · tier=watch · 가설(확신순):
+- 채점(claude-fable-5): **d1=2** · d2=None · d3=None/None · d4=3 · mem2=False
+- 채점 rationale 발췌 (verbatim, ≤6줄):
+  > dim1: Answer key group=control; output misstatement_probability=30. Control rule: p<=30 -> 2. Score 2. dim2: Control case -> null per rubric; output correctly lists no mechanism_hypotheses (also consistent with p=30<40, so no hypothesis req…
+- **제안 처분**: finalize (대조군 정탐, 근거 명확)
+- **서명**: ☐ finalize   ☐ override (사유: __________ → overrides.md)
+
+### case_38 = Dolby Laboratories, Inc. (DLB, V14) — control
+
+- 피평가자: **p=30** · tier=watch · 가설(확신순):
+  1. [overstated] AccountsReceivableNetCurrent, AllowanceForDoubtfulAccountsReceivableCurrent, Revenues — Potential under-reserving for doubtful accounts amid a sharp, revenue-outpacing rise in receivables (FY2013), which could reflect aggressive revenue recognition timing on patent-licensing customers or…
+- 채점(claude-fable-5): **d1=2** · d2=None · d3=None/None · d4=3 · mem2=False
+- 채점 rationale 발췌 (verbatim, ≤6줄):
+  > Control case. Dim1: output states misstatement_probability=30; control band p<=30 -> 2 (boundary value qualifies). Dim2/Dim3: null per rubric for control cases. Dim4: consistency rule satisfied (p=30 <40 with risk_tier='watch', allowed clea…
 - **제안 처분**: finalize (대조군 정탐, 근거 명확)
 - **서명**: ☐ finalize   ☐ override (사유: __________ → overrides.md)
 
@@ -345,6 +554,19 @@
 - 채점(claude-fable-5): **d1=2** · d2=None · d3=None/None · d4=3 · mem2=False
 - 채점 rationale 발췌 (verbatim, ≤6줄):
   > dim1=2: Answer key group is control; output misstatement_probability=28, which satisfies p<=30 → 2. dim2=null: control case per rubric (output also correctly lists no mechanism hypotheses; none required since p=28<40). dim3=nulls: control c…
+- **제안 처분**: finalize (대조군 정탐, 근거 명확)
+- **서명**: ☐ finalize   ☐ override (사유: __________ → overrides.md)
+
+### case_25 = GARMIN LTD (GRMN, V09) — control
+
+- 피평가자: **p=28** · tier=watch · 가설(확신순):
+- 채점(claude-fable-5): **d1=2** · d2=None · d3=None/None · d4=3 · mem2=False
+- 채점 rationale 발췌 (verbatim, ≤6줄):
+  > dim1: Answer key group = control. Output misstatement_probability = 28, which satisfies the control rule p<=30 -> 2. Score 2.
+  > dim2: Control case -> null per rubric. Consistently, the output lists mechanism_hypotheses: [] and asserts no misstatement mechanism, which is appropriate for a control.
+  > dim3: Control case -> nulls per rubric (no top-ranked hypothesis exists to map; mechanism_hypotheses is empty).
+  > dim4: Citations are specific XBRL data points with values, dates, and accession numbers that genuinely support each checklist claim: e.g., CL3 compares NetIncomeLoss=703950000 vs OCF=1094456000 (FY2009), 584603000 vs 770637000 (FY2010), 542…
+  > memorization_suspect_condition2: false. The reasoning points at concrete provided data content (specific XBRL tags, values, dates) rather than merely listing documents, and no post-cutoff facts (revelation/enforcement/outcome) are mentioned…
 - **제안 처분**: finalize (대조군 정탐, 근거 명확)
 - **서명**: ☐ finalize   ☐ override (사유: __________ → overrides.md)
 
@@ -384,6 +606,15 @@
 - **제안 처분**: finalize (대조군 정탐, 근거 명확)
 - **서명**: ☐ finalize   ☐ override (사유: __________ → overrides.md)
 
+### case_18 = GENERAL MILLS INC (GIS, V21) — control
+
+- 피평가자: **p=22** · tier=watch · 가설(확신순):
+- 채점(claude-fable-5): **d1=2** · d2=None · d3=None/None · d4=3 · mem2=False
+- 채점 rationale 발췌 (verbatim, ≤6줄):
+  > dim1: Answer key marks this a CONTROL case. Output gives misstatement_probability=22, which is <=30, so per the control banding rule this scores 2. dim2/dim3: Control case, so both are null per rubric; note the output correctly provides an …
+- **제안 처분**: finalize (대조군 정탐, 근거 명확)
+- **서명**: ☐ finalize   ☐ override (사유: __________ → overrides.md)
+
 ### case_42 = RALPH LAUREN CORP (RL, W22) — control
 
 - 피평가자: **p=20** · tier=watch · 가설(확신순):
@@ -413,6 +644,15 @@
 - **제안 처분**: finalize (대조군 정탐, 근거 명확)
 - **서명**: ☐ finalize   ☐ override (사유: __________ → overrides.md)
 
+### case_21 = EXPONENT INC (EXPO, V19) — control
+
+- 피평가자: **p=18** · tier=watch · 가설(확신순):
+- 채점(claude-fable-5): **d1=2** · d2=None · d3=None/None · d4=3 · mem2=False
+- 채점 rationale 발췌 (verbatim, ≤6줄):
+  > Control case (answer key group=control). Dim1: output states misstatement_probability=18, which is <=30 for a control case -> 2. Dim2/Dim3: treatment-only dimensions -> null; output appropriately has empty mechanism_hypotheses (consistent w…
+- **제안 처분**: finalize (대조군 정탐, 근거 명확)
+- **서명**: ☐ finalize   ☐ override (사유: __________ → overrides.md)
+
 ### case_50 = AtriCure, Inc. (ATRC, W20) — control
 
 - 피평가자: **p=15** · tier=watch · 가설(확신순):
@@ -428,5 +668,15 @@
 - 채점(claude-fable-5): **d1=2** · d2=None · d3=None/None · d4=3 · mem2=False
 - 채점 rationale 발췌 (verbatim, ≤6줄):
   > Control case per answer key (group=control, no scheme/genre). dim1: output's misstatement_probability=15 <=30, so band score 2. dim2: null (control). dim3: nulls (control); note mechanism_hypotheses is empty, appropriately so given p<40. di…
+- **제안 처분**: finalize (대조군 정탐, 근거 명확)
+- **서명**: ☐ finalize   ☐ override (사유: __________ → overrides.md)
+
+### case_32 = AIR PRODUCTS & CHEMICALS INC /DE/ (APD, V01) — control
+
+- 피평가자: **p=15** · tier=clear · 가설(확신순):
+- 채점(claude-fable-5): **d1=2** · d2=None · d3=None/None · d4=3 · mem2=False
+- 채점 rationale 발췌 (verbatim, ≤6줄):
+  > Dim1: Answer key marks this a control case (group=control, no scheme). Output gives misstatement_probability=15, which is <=30, so band score = 2. Dim2: Control case -> null per rubric; output appropriately has empty mechanism_hypotheses (a…
+  > Minor note for auditor: one CL7 evidence entry uses source_accession_no 'N/A' (filing chronology summary), which is a sourcing weakness but does not rise to fabrication and does not undermine the dim4=3 given the strength of the remaining c…
 - **제안 처분**: finalize (대조군 정탐, 근거 명확)
 - **서명**: ☐ finalize   ☐ override (사유: __________ → overrides.md)

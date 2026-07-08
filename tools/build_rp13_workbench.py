@@ -46,6 +46,9 @@ def collect():
     frauds = set(load("runs/wave2/fraud_case_ids.json"))
     cw = {c["case_id"]: c for c in load("data/candidates/candidates_wave2.json")["candidates"]}
     ch = {c["case_id"]: c for c in load("data/candidates/candidates_holdout.json")["candidates"]}
+    # 감사 B1: wave-1 primary(8v22) 헤드라인의 대조군 22(v2)가 서명대에서 누락 → 편입.
+    idmap_v2 = load("scoring/id_mapping_v2.json")["mapping"]
+    cv2 = {c["case_id"]: c for c in load("data/candidates/candidates_v2_controls.json")["candidates"]}
     recs = []
 
     def add(case, gdir, sdir, kind):
@@ -58,6 +61,12 @@ def collect():
             grp = "FRAUD" if case in frauds else "control"
             name, tkr = c["company_name"], c["ticker"]
             key = c.get("scheme_summary") if grp == "FRAUD" else None
+        elif kind == "v2control":
+            code = idmap_v2[case]
+            c = cv2[code]
+            grp = "control"
+            name, tkr = c["company_name"], c["ticker"]
+            key = None
         else:
             c = ch[case]
             code = case
@@ -89,6 +98,8 @@ def collect():
         add(os.path.basename(gp)[:-5], "scoring/grades_wave2", "runs/wave2/scores", "wave2")
     for gp in sorted(glob.glob(str(REPO / "scoring/grades_holdout/*.json"))):
         add(os.path.basename(gp)[:-5], "scoring/grades_holdout", "runs/holdout/scores", "holdout")
+    for gp in sorted(glob.glob(str(REPO / "scoring/grades_v2/controls/*.json"))):
+        add(os.path.basename(gp)[:-5], "scoring/grades_v2/controls", "runs/rp09/scores", "v2control")
     return recs
 
 
@@ -123,14 +134,16 @@ def render(recs):
     L.append("# RP-13 채점 확정 워크벤치 — 소유자 서명대 (P3, OWNER-GATE-E 세션)\n")
     L.append("> Authored by Claude Code, pending human audit (GA-001 (b)). 2026-07-08. "
              "**생성기: `tools/build_rp13_workbench.py` (결정론, verbatim 보증).**")
-    L.append("> **용도**: 대기 채점 35건(wave-2 32 + 홀드아웃 3)의 인간 최종 확정(§7). "
-             "E1/E2/E4/E5 채점은 실행 후 재생성으로 추가. 케이스당 ~30–60초 처리 목표.")
+    L.append(f"> **용도**: 대기 채점 {len(recs)}건(wave-2 32 + 홀드아웃 3 + wave-1 primary "
+             "대조군 22[v2, 감사 B1 편입])의 인간 최종 확정(§7). E1/E2/E4/E5 채점은 실행 후 "
+             "재생성으로 추가. 케이스당 ~30–60초 처리 목표.")
     L.append("> **읽는 법**: 피평가자 p·가설 → 채점 d1/d2/d4 → rationale 발췌(verbatim) "
              "→ 제안 처분 → 서명란. 확정은 각 grade 파일 `human_finalized=true` + "
              "오버라이드는 `scoring/overrides.md`.")
     L.append("> **루브릭**: 실험군 p≥70→d1=2 / 50–69→1 / <50→0 · 대조군 p≤30→2 / 31–49→1 "
              "/ ≥50→0. d2: 0 무관 · 1 계정영역 · 2 +방향+유형 · 3 +케이스특이. d4: 증거품질.")
-    L.append(f"> **mem-suspect 전건 false (35/35)** — wave-2/홀드아웃에 암기귀속 의심 0건 "
+    n_mem_false = sum(1 for r in recs if not r["mem2"])
+    L.append(f"> **mem-suspect 전건 false ({n_mem_false}/{len(recs)})** — 암기귀속 의심 0건 "
              "(R4/H2의 약한 암기와 정합, 그 자체가 발견).\n")
     L.append(f"**요약**: 총 {len(recs)}건 · 우선 검토(TIER A, 플래그) {n_flag}건 · "
              f"표준(TIER B) {len(recs)-n_flag}건. 아래는 플래그 우선 정렬.\n")
