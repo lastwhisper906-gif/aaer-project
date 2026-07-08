@@ -49,5 +49,20 @@
 ## C. 소유자 직접 산출물 (내가 대신 못 함)
 - **C1**: §9 사전/사후 자가평가 diff — `docs/self_assessment/week4.md` 미작성(day0만 존재). 성공지표(§5). 소유자 본인 언어·무검색 규칙이라 대필 불가.
 
+## 진행 상황 (소유자 D2 승인 반영, 2026-07-08)
+
+- **B18 완료** (canary hard-fail, 커밋 bfd1558) · **B2 완료** (현행 헤드라인 CI 재계산,
+  `tools/reproduce_headline.py` + CI/make verify, bfd1558) · **B17 완료** (name_match 회귀
+  테스트 + 한계 문서화, 규칙 무변경 = 동결 name-ID 불침해, c8dd35c).
+- **B7·B8 초안 완료** (소유자 검토 대상 — `analysis/DRAFT_audit_B7_B8.md` +
+  `r3_bootstrap.py`·`name_id_split.py`): **B7 결과 P(R3 count≥5)=0.60** (5/8 헤드라인이
+  재추첨의 60%에서만 성립) · **B8 결과 fraud-side name-ID 37.5%→33.3%(거의 불변)**,
+  전체 하락은 대조군 주도. 관측 점추정·동결 수치 불변, 반영 여부는 소유자.
+- **B20 (신규 발견, B2 작업 중)**: `wave2_analyze.py`의 perm_p가 `glob`(파일시스템) 순서
+  의존이라 환경 간 정확 재현 불가(wave-1 stats.py는 CSV라 무관). reproduce_headline는
+  wave-2 순서독립 통계만 정확 대조, perm_p는 <0.01 유의성만 확인. **정렬로 결정화하면
+  committed 0.00116이 바뀜 → owner-gate.** 유형: 재현성. 권장: 발사/재생성 시 scores를
+  정렬해 결정론화(소유자 승인 시).
+
 ## 강점 (수정 대상 아님 — 노력 낭비 방지)
 기저율 번역(PPV@0.7%, 0%FPR 금지, Clopper-Pearson) · 선택/생존편향 명시(sr11-7) · look-ahead 코드가드 fail-closed + EDGAR 대조 · 사전등록 순서증명 real · cli_client 격리/핀/페이로드가드 실스텁 테스트 · earliness_grid 순수 property 테스트 · numpy 부재로 수치 결정성.
