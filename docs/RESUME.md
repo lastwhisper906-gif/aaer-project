@@ -72,7 +72,14 @@ E1 보류(§5-1, Q-E03) · E2/E4/E5 launch-ready(Q-E01). 소유자 액션 4 =
   **이전에** `FileNotFoundError`. 캐시 재생성=네트워크 fetch=미션 최상위 금지·§5-1 정지
   규칙. 무인 fetch 안 함. **미터링 0.**
 - **부가 (Q-E05)**: E2 조기성 하네스는 "launch-ready"가 아니라 **미구현**(EARLINESS_DESIGN
-  §5 "설계만"). 사전등록(기준)만 완료. Q-E04로 어차피 실행 무의미 → 구현·발사 모두 감독 이관.
+  §5 "설계만"). 사전등록(기준)만 완료였음.
+- **소유자 "keep going / 권한 최종" 지시 후 추가 작업 (0-미터링, 0-네트워크)**: E2 조기성
+  하네스를 **오프라인 구현·검증** (커밋 4aec7bf·799acc4·bb90ca4 + 런북/문서):
+  · `pipeline/earliness_grid.py` 순수 스냅샷 그리드 + look-ahead 가드 G1/G2/G3 (CI 상주 10건)
+  · `pipeline/build_payload.py` base_id 시드(하위호환, 4건) · `tools/build_earliness_snapshots.py`
+  선정+그리드+cutoff_guard 경계검사(5건, 합성 픽스처) · `docs/EARLINESS_RUNBOOK.md` 발사 절차.
+  검증 전체 91 passed 4 skipped, reproduce 100/100, lint PASS. **채점 미발사(발사=owner-gate,
+  `EARLINESS-LAUNCH: YES` 토큰 + 캐시 복원 필요). 미터링 18/320 불변.**
 - **불변식 3 전부 무침해**: BLINDNESS/CUTOFF/IMMUTABILITY — 아무 실행도 없었으므로 runs/·
   frozen grades·published draw-1·blindness/cutoff 경로 **1바이트도 안 건드림**. 문서 2건
   (OWNER_QUEUE Q-E04/E05, 본 RESUME)만 갱신.

@@ -122,6 +122,20 @@
 - **옵션**: (A 기본) 감독 세션에서 하네스 구현 → 오프라인 컷오프 검증 CI green →
   그 후 발사. (B) 소유자가 "무인 구현+airtight 오프라인 검증 후 발사" 승인.
 - **세션 기본 조치**: **(A)** — 구현/발사 모두 이관. 본 세션 미착수(Q-E04로 무의미).
-- **상태**: OPEN.
+- **갱신 (무인 재개 세션 #2, 소유자 "keep going / 권한 최종" 지시 반영)**:
+  하네스를 **오프라인·0-미터링으로 구현·검증 완료**(발사는 미착수, 여전히 owner-gate):
+  - `pipeline/earliness_grid.py` — look-ahead-critical 스냅샷 그리드 순수 함수 + G1(폭로
+    상한)/G2(인접 제출 누출)/G3(중복일) 가드. `test_earliness_grid` 10건 CI 상주(캐시 불요).
+  - `pipeline/build_payload.py` — base_id 시드(스냅샷 간 동일 교란 k·정체), 하위호환.
+    `test_build_payload_base_id` 4건.
+  - `tools/build_earliness_snapshots.py` — 적격 선정(데이터드리븐 21=fraud13+control8) +
+    그리드 + 스냅샷별 cutoff_guard 경계검사(≤폭로, fail-closed). `--plan` 캐시 불요.
+    `test_build_earliness_snapshots` 5건(합성 EDGAR 픽스처).
+  - `docs/EARLINESS_RUNBOOK.md` — 발사 절차(캐시 복원 + `EARLINESS-LAUNCH: YES` 게이트 +
+    160 cap 균일절단 + 스냅샷0 재사용 + verify_blindness/commit/CI 규율).
+  - 검증: 전체 91 passed 4 skipped(캐시), reproduce 100/100, lint PASS.
+  - **잔여(감독)**: (i) 캐시 복원(Q-E04) → `--emit`로 그리드/가드 실측·감사, (ii) 소유자
+    `EARLINESS-LAUNCH: YES` → runner.py 발사(~≤160). **구현 검토(diff)는 소유자 서명 대상.**
+- **상태**: OPEN(구현·검증 완료, 발사 owner-gate 대기 — 권한 최종).
 
 ---
