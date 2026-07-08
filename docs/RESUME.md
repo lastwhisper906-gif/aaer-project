@@ -91,6 +91,12 @@ E1 보류(§5-1, Q-E03) · E2/E4/E5 launch-ready(Q-E01). 소유자 액션 4 =
   복원 = 소유자측 조치(환경 egress에 data.sec.gov 허용, 또는 캐시 직접 제공) 필요.
   파이프라인·하네스는 준비 완료 — **데이터만 오면 즉시 발사 가능(발사=owner-gate).**
   **미터링 플랜 자체는 owner-gate 유지.**
+- **전면 감사 (소유자 지시, 0-미터링)**: 3 병렬 패스(방법론·코드·문서) + 직교 스캔 →
+  `docs/AUDIT_FINDINGS_2026-07-08.md`. **안전수정 9건(A1-A9) 처리**(커밋 5244182·85ea7b1·
+  3670924): 러너 계약검증 fail-closed + 컷오프필터 CI강제 + lint dead-code 실사용 +
+  synthesis 중위버그(60→57.5) + 문서 진실성/위생(human-finalized 허위·</content>·reproduce
+  범위 과대표기). **소유자판단/리서치 19건(B1-B19)+자가평가 C1 = OWNER_QUEUE Q-E07**
+  (self-resolve 안 함, 권고순 B1·B2·B9). 동결 수치·결론 불침해, 가드 강화만.
 - **불변식 3 전부 무침해**: BLINDNESS/CUTOFF/IMMUTABILITY — 아무 실행도 없었으므로 runs/·
   frozen grades·published draw-1·blindness/cutoff 경로 **1바이트도 안 건드림**. 문서 2건
   (OWNER_QUEUE Q-E04/E05, 본 RESUME)만 갱신.

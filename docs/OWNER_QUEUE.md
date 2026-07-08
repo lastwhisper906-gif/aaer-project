@@ -164,3 +164,46 @@
 - **상태**: OPEN — 발사 시 소유자 결정(미터링 예산 ±8).
 
 ---
+
+## Q-E07 — 전면 감사(2026-07-08) 소유자 판단·리서치 항목 — **OPEN**
+
+- **출처**: `docs/AUDIT_FINDINGS_2026-07-08.md` (3 병렬 감사 패스 + 직교 스캔). 안전수정
+  9건(A1-A9)은 이미 처리(비동결·가드강화·명백버그, 커밋 5244182·85ea7b1·3670924). 아래는
+  **소유자 판단/리서치** 항목 — self-resolve 안 함. 세션 기본 = 무행동(제안만).
+- **발행/정합 (문구는 A6/A9에서 정정, 실체는 소유자)**:
+  - **B1 (HIGH)**: Issue #0의 22 v2 대조군 grades가 `human_finalized=false`이고 RP-13 서명
+    워크벤치(wave-2 32+홀드아웃 3)에 **미포함** → 확정 경로 부재. **조치 제안**: 워크벤치에
+    22 대조군 추가 후 소유자 서명. (헤드라인 p·FPR·AUC가 이 grades에 의존.)
+  - **B2 (HIGH)**: 현행 8v22·wave2 헤드라인을 CI가 재계산 검증 안 함(reproduce_analysis는
+    RP-05 파일럿만). **제안**: results_stats/wave2_results 재계산+assert를 CI에 추가(캐시
+    불요·frozen 점수만) = "verifiable" 기둥 강화. (문구는 A9에서 정정.)
+  - **B3 (MED)**: Issue #2 라이브 3사 달러 수치에 §6-2 공시 accession 링크 부재 — 발행 전 보강.
+  - **B4/B5 (MED)**: RP-13/HANDOFF "launch-ready" 및 Issue #0 §8 "holdout=future work"가
+    Q-E04/E05·Issue #2로 superseded — 소유자가 정정/각주 여부 결정.
+  - **B6 (LOW)**: Issue #0 §5 라이브 대조군 3사 실명 "false positive" — 익명화 여부.
+- **방법론/통계 (owner-judgment + research)**:
+  - **B7 (HIGH)**: wave-1 R3(암기우세) 헤드라인이 정확히 5/8 경계, SCOR +0.8pp(1 SEM). 1건
+    이탈 시 R4로 반전. **제안**: frozen k=5 재추첨 부트스트랩으로 P(count≥5) 공개(재채점 아님).
+  - **B8 (HIGH)**: dose-response가 대조군 주도 — fraud-side name-ID wave1 37.5%→wave2 33% 거의
+    불변. fraud/control 분리 보고 권고.
+  - **B9 (HIGH·research)**: 홀드아웃 "capability 잔존"이 단일 HUBG=70(기제 빗나감 dim2=1)+대조군
+    0에 의존. **E1 감독 실행**이 최고가치 공백(신규 fraud·look-ahead 무추가). 그전엔 "tier hit,
+    mechanism miss" 일화 표기.
+  - **B10 (MED)**: ECE 0.209/0.179 무CI·소표본·기저율조건부 → 부트스트랩 CI+adaptive binning.
+  - **B11 (MED·research)**: 단일 채점자(fable-5) IRR 없음 → frozen 피평가자 출력에 2차 채점자로
+    Cohen's κ(피평가자 재채점 아님) → dim2 forensic 밴드.
+  - **B12 (MED)**: 교란 flag 검정 p=0.06(4/8)인데 헤드라인은 AUC 0.86만 인용 — flag 4/8 병기.
+  - **B13 (MED·research)**: R3가 부풀림(HTZ+30)·억제(MON−16)를 |Δ|합산 → signed effect + "인식이
+    탐지를 돕나 해치나" 연구질문.
+  - **B14 (LOW-MED)**: 기계 베이스라인 complete-case(22/30) 한정 명시. **B15/B16 (research)**:
+    wave-1 delta 분해(E3의 wave-1판) · E2 조기성(하네스 구현 완료, 캐시+발사 게이트).
+- **코드/가드 (owner-judgment)**:
+  - **B17 (MED)**: `probe_verdict.name_match` prefix 과매칭(D7 오염판정 무검정) → 전체토큰 규칙+테스트.
+  - **B18 (LOW-MED)**: 러너가 출력 canary_hit를 FAIL 안 함(downstream 포착) → hard-FAIL 승격 검토.
+  - **B19 (MED)**: build_payload를 cutoff_guard 게이트웨이 경유로 라우팅할지(A2로 CI 강화됨).
+- **소유자 직접 산출물 C1**: `docs/self_assessment/week4.md` 미작성(§9 사전/사후 diff, 성공지표).
+  본인 언어·무검색 규칙 → **대필 불가**, 소유자 작성 필요.
+- **세션 기본 조치**: 무행동(전부 제안). 안전수정 A1-A9만 반영. 상세·근거는 findings 문서.
+- **상태**: OPEN — 소유자 우선순위 회신 대기(권고 착수순: B1·B2·B9 → B7·B8 → 나머지).
+
+---
