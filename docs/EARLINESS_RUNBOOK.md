@@ -62,7 +62,9 @@ python pipeline/runner.py --cases runs/earliness/cases_earliness.json --perturbe
 - 멱등: 완료 스냅샷 자동 skip. 서브배치마다 verify_blindness --write-manifest → commit → push
   → CI green → RESUME 가계부 갱신(정확한 호출수). **전역 320 cap 초과 직전 STOP.**
 
-### Step 6 — 분석 (사전등록 §3 지표)
+### Step 6 — 분석 (사전등록 §3 지표) — `analysis/earliness_analyze.py`
+- 순수 지표 함수(선행시간·기울기·교차·잡음밴드)는 구현·검증 완료(`test_earliness_analyze` 6건,
+  캐시/점수 불요). 채점 산출물(runs/earliness/perturbed) 존재 시 궤적 조립·집계.
 - **탐지 선행시간** = 궤적이 p≥50을 처음 넘는 스냅샷의 t(폭로까지 분기).
 - 전체 p(t) 궤적 + inside-noise 밴드(RP-07 per-case σ 중위 6.3pp) — **형태만** 판독, 점별
   유의성 주장 금지. 대조군 궤적(평평 기대)과 병치. d2 텍스트-증거 조기성(RP-10 Phase 3)과 교차검증.
