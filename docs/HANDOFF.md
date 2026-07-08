@@ -2,6 +2,30 @@
 
 > 다음 세션: CLAUDE.md → PROJECT.md → 이 문서 → `review_packets/RP-13_final_packet.md`
 > → `review_packets/RP-13_grading_workbench.md` → `RP-11_expansion_holdout.md`.
+> **최신 상태는 아래 "재개 세션 #2".**
+
+## 재개 세션 #2 요약 (2026-07-08 야간, 무인 ~14h 창) — 미터링 0, 하드 스톱 + E2 하네스 구현
+
+- **미터링 플랜 하드 스톱 (Q-E04)**: fresh ephemeral 컨테이너에 `~/aaer-data` PIT 캐시(git
+  밖 402파일 SEC) 부재 → E2/E5/E4 전 유닛의 build_payload가 **API 호출 전** FileNotFoundError.
+  캐시 재생성=네트워크 fetch=미션 최상위 금지·§5-1 → **무인 실행 불가, 미터링 18/320 불변(0 소비).**
+- **E2 조기성 하네스 구현 (Q-E05, 소유자 "keep going/권한 최종" 지시 반영, 0-미터링·0-네트워크)**:
+  "launch-ready"로 기술됐으나 실제 **미구현**(EARLINESS_DESIGN §5 "설계만")이던 하네스를
+  오프라인 구현·검증. 커밋 `4aec7bf`(그리드)·`799acc4`(base_id)·`bb90ca4`(생성기)·
+  `893ecdb`(런북)·`51439d1`(분석):
+  · `pipeline/earliness_grid.py` — 순수 스냅샷 그리드 + look-ahead 가드 G1(폭로상한)/
+    G2(인접누출)/G3(중복일). `pipeline/build_payload.py` base_id(스냅샷 간 동일 k, 하위호환).
+  · `tools/build_earliness_snapshots.py` — 선정(데이터드리븐 21=detected13+대조군8) + 그리드 +
+    스냅샷별 cutoff_guard 경계검사(≤폭로, fail-closed). `analysis/earliness_analyze.py` — §3 지표.
+  · `docs/EARLINESS_RUNBOOK.md` — 발사 절차(캐시복원 + `EARLINESS-LAUNCH: YES` 게이트).
+  · 신규 테스트 19건(전부 캐시/점수 불요, CI 상주). 전체 97 passed 4 skipped, reproduce
+    100/100, lint PASS, CI green(run #66).
+- **E2 = 생성→(채점 owner-gate)→분석 turnkey.** E5 draw-2/3·E4는 기존 러너 재사용(무코드),
+  캐시 복원 시 즉시 launch-ready. **채점 미발사 — 발사는 소유자 권한이 마지막(캐시+토큰).**
+- **불변식 3 무침해**: 실행 0. build_payload 변경은 하위호환(기본=바이트동일). runs/main·
+  frozen grades·published draw-1 무변경. cutoff/blindness 경로는 **강화만**(신규 가드), 약화 0.
+- **소유자 결정**: Q-E04(감독 하 캐시 복원) · Q-E05(E2 발사 게이트) · 기존 Q-E01/02/03 +
+  RP-13 §7 액션 4 유지.
 
 ## OWNER-GATE-E 요약 (2026-07-08, 무인 세션)
 
