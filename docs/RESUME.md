@@ -21,7 +21,8 @@
 | E3 fold-in (summary/synthesis) | 0 | 0 | 18 | 39ffc16 |
 | P5 재현성(REPRODUCING+rescan) | 0 | 0 | 18 | b909cb6 |
 | P6 RP-13 패킷 + HANDOFF/INDEX | 0 | 0 | 18 | 80ad1df |
-| **재개 세션 #2 (2026-07-08 야간)** — 캐시 부재로 미실행 | **0** | **0** | **18** | (this) |
+| **재개 세션 #2 (2026-07-08 야간)** — 캐시 부재로 미실행 | **0** | **0** | **18** | 41a47b9 |
+| 재개 세션 #2 스모크 (합성 payload, 메타드 경로 검증) | 1 | 0 | 19 | (this) |
 
 ## 세션 종료 상태 (2026-07-08)
 
@@ -78,8 +79,18 @@ E1 보류(§5-1, Q-E03) · E2/E4/E5 launch-ready(Q-E01). 소유자 액션 4 =
   · `pipeline/earliness_grid.py` 순수 스냅샷 그리드 + look-ahead 가드 G1/G2/G3 (CI 상주 10건)
   · `pipeline/build_payload.py` base_id 시드(하위호환, 4건) · `tools/build_earliness_snapshots.py`
   선정+그리드+cutoff_guard 경계검사(5건, 합성 픽스처) · `docs/EARLINESS_RUNBOOK.md` 발사 절차.
-  검증 전체 91 passed 4 skipped, reproduce 100/100, lint PASS. **채점 미발사(발사=owner-gate,
-  `EARLINESS-LAUNCH: YES` 토큰 + 캐시 복원 필요). 미터링 18/320 불변.**
+  검증 전체 101 passed 4 skipped, reproduce 100/100, lint PASS.
+- **자가검토 수정 (커밋 41a47b9)**: 스냅샷0 프레임 불일치 버그 + §1 최소요건 미강제 수정,
+  Q-E06(교란 대조군 t=0) 플래그. (상세 OWNER_QUEUE Q-E05/E06.)
+- **메타드 경로 스모크 (소유자 지시, 1 호출 → 누계 19/320)**: 합성 payload로 evaluatee
+  `claude -p` 경로 검증 — **served=claude-sonnet-5, pin_ok=True, payload guard 통과, 스키마
+  검증 통과** (p=65, 36s, cost_ref $0.072). **파이프라인은 이 컨테이너에서 정상 작동 확인.**
+- **미터링 플랜 실행 불가 사유 확정 (Q-E04 갱신)**: (1) `~/aaer-data` 캐시 부재 + (2)
+  **egress 정책이 data.sec.gov 차단**(agent proxy 403 policy denial, `/root/.ccr/README.md`:
+  "403은 조직 정책 거부 — 우회 금지·보고"). 즉 데이터 원천이 물리적으로 도달 불가. 캐시
+  복원 = 소유자측 조치(환경 egress에 data.sec.gov 허용, 또는 캐시 직접 제공) 필요.
+  파이프라인·하네스는 준비 완료 — **데이터만 오면 즉시 발사 가능(발사=owner-gate).**
+  **미터링 플랜 자체는 owner-gate 유지.**
 - **불변식 3 전부 무침해**: BLINDNESS/CUTOFF/IMMUTABILITY — 아무 실행도 없었으므로 runs/·
   frozen grades·published draw-1·blindness/cutoff 경로 **1바이트도 안 건드림**. 문서 2건
   (OWNER_QUEUE Q-E04/E05, 본 RESUME)만 갱신.
