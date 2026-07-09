@@ -1,0 +1,22 @@
+{
+  "dim1_probability_band": 2,
+  "dim2_mechanism": null,
+  "dim3_genre_mapping": {
+    "mapped_genre": null,
+    "score": null
+  },
+  "dim4_evidence_quality": 3,
+  "memorization_suspect_condition2": false,
+  "rationale": "Dim1: Answer key group=control; output misstatement_probability=12, which satisfies p<=30, so band score 2. Dim2: control case, so null per rubric; note output correctly provides an empty mechanism_hypotheses list (no hypothesis required since p<40). Dim3: control case, so mapped_genre and score are null. Dim4: Evidence is specific and grounded in provided point-in-time data: CL2 cites Goodwill 12,650,000 (2019-07-27) vs 24,190,000 (2020-07-25) and Assets 502,289,000 vs 915,546,000 against revenue 1,643,502,000 vs 1,804,594,000 (accessions 0000103595-20-000033, 0000103595-21-000014); CL3 cites NI 5,045,000 vs OCF 52,447,000 (FY2014) and NI 30,620,000 vs OCF 17,468,000 (FY2015); CL4 computes gross margins from FY2011 (350,159,000/1,298,928,000, ~26.96%) vs FY2025 (662,966,000/2,320,690,000, ~28.57%) and inventory FY2019 vs FY2024. Top_signals coherently combine multi-year points (14-year margin trend, FY2020 asset jump attributed to ASC 842 and goodwill doubling, 30+ year filing chronology regularity), meeting the '2 plus coherent multi-year/multi-point combination' bar for 3. Consistency rule: p=12 with risk_tier='clear' is compliant (p<40 => clear/watch), so no cap. Minor issues (two chronology evidence entries with source_accession_no 'N/A'; CL6 labeled insufficient_data despite citing liabilities/assets figures) noted but not disqualifying. Memorization condition2: false - the reasoning points at concrete provided data values throughout (not mere document listing), and it mentions no post-cutoff facts such as revelation, enforcement, or outcome; the ASC 842/acquisition explanation is inferred from provided goodwill and asset figures.",
+  "_meta": {
+    "case_id": "hc_09",
+    "original_id": "VLGEA",
+    "grader_model_reported": "claude-fable-5",
+    "grader_pin_used": "claude-fable-5",
+    "fallback_used": false,
+    "session_id": "726c5feb-5a5d-48a9-b05c-1ab3da891c15",
+    "ts": "2026-07-09T02:34:20.317137+00:00",
+    "human_finalized": false,
+    "mapping_access_note": "scoring/id_mapping_holdout_controls.json opened mechanically by grader_runner for answer-key join; neutral IDs only on stdout (label-joining deferred to Phase 6)"
+  }
+}

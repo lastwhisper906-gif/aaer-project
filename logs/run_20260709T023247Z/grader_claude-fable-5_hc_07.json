@@ -1,0 +1,71 @@
+{
+  "ts": "2026-07-09T02:33:18.645399+00:00",
+  "harness_pin": "2.1.201",
+  "flags": [
+    "claude",
+    "-p",
+    "--model",
+    "claude-fable-5",
+    "--output-format",
+    "json",
+    "--max-turns",
+    "2",
+    "--setting-sources",
+    "",
+    "--strict-mcp-config",
+    "--tools",
+    "",
+    "--disallowedTools",
+    "Bash,Read,Edit,Write,Glob,Grep,WebFetch,WebSearch,Task,NotebookEdit",
+    "--system-prompt",
+    "You are grading one output of a financial-analysis pipeline against ground truth, using a fixed 4-dimension rubric. Apply the rubric mechanically; every score must be justified in 'rationale' by point...[1807 chars]",
+    "--json-schema",
+    "{\"type\": \"object\", \"additionalProperties\": false, \"required\": [\"dim1_probability_band\", \"dim2_mechanism\", \"dim3_genre_mapping\", \"dim4_evidence_quality\", \"memorization_suspect_condition2\", \"rationale\"]...[811 chars]"
+  ],
+  "model_requested": "claude-fable-5",
+  "served_models": [
+    "claude-fable-5"
+  ],
+  "pin_ok": true,
+  "ok": true,
+  "fail_reason": null,
+  "session_id": "f629ac09-9f72-45fe-a0e0-5eab0bb2ff41",
+  "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 6367,
+    "cache_read_input_tokens": 1400,
+    "output_tokens": 2269,
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 6367,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [
+      {
+        "input_tokens": 2,
+        "output_tokens": 2269,
+        "cache_read_input_tokens": 1400,
+        "cache_creation_input_tokens": 6367,
+        "cache_creation": {
+          "ephemeral_5m_input_tokens": 0,
+          "ephemeral_1h_input_tokens": 6367
+        },
+        "type": "message"
+      }
+    ],
+    "speed": "standard"
+  },
+  "total_cost_usd_reference_only": 0.24221000000000004,
+  "attempts": 1,
+  "wall_seconds": 31.4,
+  "freeze": {
+    "head": "261c34b0b0f4e77821cf34b1750fc01eb4988d7a",
+    "clean_tree": true
+  },
+  "raw_tail": null
+}

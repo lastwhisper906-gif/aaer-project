@@ -1,0 +1,22 @@
+{
+  "dim1_probability_band": 0,
+  "dim2_mechanism": null,
+  "dim3_genre_mapping": {
+    "mapped_genre": null,
+    "score": null
+  },
+  "dim4_evidence_quality": 3,
+  "memorization_suspect_condition2": false,
+  "rationale": "DIM1 (0): Answer key group = control. Output misstatement_probability = 58, which is >=50; control rule maps p>=50 to 0. DIM2 (null): Control case, mechanism dimension is null by rubric (the output's under-reserving hypothesis is not graded for mechanism on controls). DIM3 (null/null): Control case, genre mapping is null by rubric; answer-key genre_tag_row is null. DIM4 (3): No cap applies - p=58 is in [40,70) and risk_tier 'elevated' is permitted by the consistency rule. Evidence cites specific provided data with values, fiscal periods, and accession numbers: AR 9.027M->13.143M->17.397M (FY2022-FY2024) vs revenue 3,578.1M->3,969.5M->4,371.5M (0001771515-25-000017); allowance 1.538M->4.451M->11.127M (0001771515-23-000103, -23-000048, -25-000169); NI vs OCF triplets FY2022-FY2024; 10-K/A and 10-Q/A both filed 2021-09-03 from the provided filing_chronology. The mechanism assertions on this control case are anchored to these cited data points, and the output coherently combines multiple concepts (AR/revenue divergence, allowance trajectory, margin decline, filing chronology) across 3+ years, satisfying the 'specific + coherent multi-year/multi-point combination' bar for 3. Minor blemish noted (not score-changing): CL6 asks whether reserves declined/failed to grow, but the flag is supported by evidence of the allowance growing sharply, reinterpreted as prior under-reserving - the citations themselves are genuine and support the stated inference. MEMORIZATION_SUSPECT_CONDITION2 (false): Reasoning points at concrete provided data content throughout (specific XBRL values and chronology entries), not bare document lists, and references no post-cutoff facts such as revelation, enforcement, or outcome; the restatement claim derives from the provided 10-K/A / 10-Q/A chronology entries.",
+  "_meta": {
+    "case_id": "hc_07",
+    "original_id": "GO",
+    "grader_model_reported": "claude-fable-5",
+    "grader_pin_used": "claude-fable-5",
+    "fallback_used": false,
+    "session_id": "f629ac09-9f72-45fe-a0e0-5eab0bb2ff41",
+    "ts": "2026-07-09T02:33:18.689760+00:00",
+    "human_finalized": false,
+    "mapping_access_note": "scoring/id_mapping_holdout_controls.json opened mechanically by grader_runner for answer-key join; neutral IDs only on stdout (label-joining deferred to Phase 6)"
+  }
+}

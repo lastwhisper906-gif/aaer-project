@@ -1,0 +1,22 @@
+{
+  "dim1_probability_band": 1,
+  "dim2_mechanism": null,
+  "dim3_genre_mapping": {
+    "mapped_genre": null,
+    "score": null
+  },
+  "dim4_evidence_quality": 3,
+  "memorization_suspect_condition2": false,
+  "rationale": "Dim1: Control case per answer key; output p=32 falls in control band 30<p<50 → 1 (misses the p<=30 band for full credit). Dim2: Control → null; output appropriately lists no mechanism_hypotheses at p=32. Dim3: Control → nulls. Dim4: Consistency check passes — p=32 (<40) with risk_tier 'watch' satisfies clear/watch rule, so no cap. Evidence is specific and data-grounded: CL1 cites ReceivablesNetCurrent 30,901,000 (2024-12-29) → 65,221,000 (2025-12-28) vs revenue 7,719,290,000 → 8,806,159,000 (+14.1%), all with accession 0001575515-26-000008; CL3 pairs NetIncomeLoss vs operating cash flow for FY2019/FY2024/FY2025; CL4 combines inventory growth (+24.4%) with revenue growth and a FY2019→FY2025 gross-margin trend; CL5 gives a full FY2019–FY2025 net income sequence showing real volatility; CL6 cites allowance 1.3M → 7.5M. The top_signals coherently synthesize these multi-year, multi-line-item points (e.g., allowance jump tracking the AR spike; OCF consistently exceeding NI as an offsetting quality signal), meeting the '2 plus coherent multi-year/multi-point combination' bar → 3. Minor blemish: CL7's third item cites accession 'N/A', but it is a low-confidence chronology note and the other two chronology items carry real accessions. Memorization condition 2: false — reasoning points at concrete provided data content (specific XBRL values/periods) rather than merely listing documents, and mentions no post-cutoff revelation/enforcement/outcome facts.",
+  "_meta": {
+    "case_id": "hc_08",
+    "original_id": "SFM",
+    "grader_model_reported": "claude-fable-5",
+    "grader_pin_used": "claude-fable-5",
+    "fallback_used": false,
+    "session_id": "74bf0966-67d1-495a-a1c2-a94c79b86340",
+    "ts": "2026-07-09T02:33:50.649108+00:00",
+    "human_finalized": false,
+    "mapping_access_note": "scoring/id_mapping_holdout_controls.json opened mechanically by grader_runner for answer-key join; neutral IDs only on stdout (label-joining deferred to Phase 6)"
+  }
+}
