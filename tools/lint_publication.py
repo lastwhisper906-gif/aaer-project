@@ -35,18 +35,26 @@ def controls():
 
 
 def canon():
+    """결과 JSON에서 유도한 정본 수치 — README에 전건 존재해야 (드리프트 기계 검출)."""
     r1 = json.load(open(REPO / "analysis/results_stats.json", encoding="utf-8"))["primary"]
-    r2 = json.load(open(REPO / "analysis/wave2_results.json", encoding="utf-8"))
-    # (설명, 허용 문자열들, 반드시 이 라벨 근처에 나오면 매칭). 값이 문서에 있으면 일치해야.
+    r2 = json.load(open(REPO / "analysis/wave2_results.json", encoding="utf-8"))["original"]
     return {
-        "wave1_perm_p": ["0.00114"],
-        "wave2_perm_p": ["0.00116"],
-        "wave2_auc": ["0.829"],
+        "wave1_perm_p": [f"{r1['perm_p_one_sided']:.5f}".rstrip("0")],  # 0.00114
+        "wave2_perm_p": [f"{r2['perm_p']:.5f}".rstrip("0")],            # 0.00116
+        "wave2_auc": [f"{r2['auc']:.3f}"],                              # 0.829
         "wave1_fpr": ["13.6%", "3/22"],
         "wave2_fpr": ["21.7%", "5/23"],
         "wave2_ece": ["0.179"],
         "name_id_w2_frozen": ["21.9%"],
     }
+
+
+def check_canon():
+    """README ↔ 결과 JSON 수치 드리프트 검사 (키당 허용 문자열 중 1개 이상 존재)."""
+    text = (REPO / "README.md").read_text(encoding="utf-8")
+    return [("README.md", 0, f"canon drift: {key} — 기대 {variants} 중 어느 것도 README에 없음")
+            for key, variants in canon().items()
+            if not any(v in text for v in variants)]
 
 
 STALE = [
@@ -123,10 +131,14 @@ def main():
         for ln, msg in v:
             print(f"  {path}:{ln}: {msg}")
         total += len(v)
+    for path, ln, msg in check_canon():
+        print(f"  {path}:{ln}: {msg}")
+        total += 1
     if total:
         print(f"\nFAIL — 발행 정합 위반 {total}건")
         return 1
-    print("PASS — 발행 정합 (0% 오탐·G2-fraud·대조군주어·pooled·EXPLORATORY·stale 무위반)")
+    print("PASS — 발행 정합 (0% 오탐·G2-fraud·대조군주어·pooled·EXPLORATORY·stale"
+          "·canon 무위반)")
     return 0
 
 

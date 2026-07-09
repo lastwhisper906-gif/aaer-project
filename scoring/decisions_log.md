@@ -773,3 +773,7 @@ c44bd59a…)는 **서명 없이 superseded** (채점 미진입 상태 폐기). v
 ## D27 — E5§7 홀드아웃 재추첨 완료: 사전 규칙 판정 robust (2026-07-09, JSON 1줄)
 
 {"decision":"D27","date":"2026-07-09","action":"홀드아웃 본채점 k=5 재추첨 완료 (draws 2-5, 12 피평가자 호출, draw 경계 commit·push 전건)","result":"HUBG p>=50 5/5 (draw별 70/76/60/58/60, median 60, band [58,76]) → 사전 커밋 규칙(>=4/5) 'H2 탐지는 draw 잡음에 강건' · WMK [28,42] 0/5 · GNE [30,42] 0/5 — 뒤집힘 0, 불안정 보고 없음","invariants":"발행 per-case = draw-1 유지 · H1 미주장(N=3) · 판정은 holdout_redraw_analyze.py 기계 적용 (재해석 없음)","docs":"holdout_summary §2 밴드 병기 + ISSUE_2 §3 표 갱신","metered":"세션 누계 42 (E1 30 + redraw 12), 전역 cap 320 內"}
+
+## D28 — Phase 5: README 통계 재구성 + L-6 + canon 배선 (2026-07-09, JSON 1줄)
+
+{"decision":"D28","date":"2026-07-09","action":"발행 서사 재구성 (무호출)","items":["README dose-response 강등: 백본 = per-wave standalone 순열 유의성(0.00114/0.00116) 생존, AUC 0.824→0.829는 2차 gradient 관찰로 격하 + CI [0.599,0.983]/[0.616,0.983] 본문 병기 + 'CI 폭이 동등성 주장 금지' 본문 명시","synthesis.md 판독 동일 재구성","README 층③에 E1·k=5 최종 수치 반영 + FPR 절에 E1 2/9 CP[2.8%,60%] 추가","L-6 intra-family 편향 methodology_limitations 기입 + README 한계 한 줄","lint_publication canon() 사장 코드 배선: README↔결과JSON 수치 드리프트 기계 검출 (check_canon, 소유자 권고 승인 사항)"],"gates":"lint(canon 포함)·reproduce 100/100·pytest green"}
