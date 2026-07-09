@@ -67,8 +67,9 @@ wave-2 0.337/0.265), 잔차 분리가 살아남는다 → 사전 커밋 R2 **비
 
 - 채점: **Claude 보조 + 인간 최종 확정.** 피평가자 **claude-sonnet-5**(핀, 호출별 서빙
   모델 검증, 핀 불일치 0). 채점자 claude-fable-5.
-- wave-1 채점 26건 `human_finalized=true`(동결). **wave-2 32 + 홀드아웃 3 채점은
-  `human_finalized=false`(소유자 확정 대기)** — 워크벤치 `review_packets/RP-13_grading_workbench.md`.
+- wave-1 채점 26건 `human_finalized=true`(동결). **wave-2 32 + 홀드아웃 3 + wave-1
+  대조군 22 채점도 `human_finalized=true`** (2026-07-09 소유자 확정, D24 · 오버라이드
+  0건 — §9 고무도장 점검 포함) — 워크벤치 `review_packets/RP-13_grading_workbench.md`.
 
 ## 확장 실험 E1–E5 (사전 등록 완료 — freeze-then-run)
 

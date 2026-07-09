@@ -75,6 +75,8 @@ fresh-clone(P5)    : reproduce·lint·pytest·schema-only PASS (temp dir 실측)
 
 1. **채점 확정** — `review_packets/RP-13_grading_workbench.md`의 35건(TIER A 13
    우선). 서명 시 각 grade `human_finalized=true` + 오버라이드는 overrides.md.
+   → **완료 (2026-07-09, D24)**: 35건 + wave-1 대조군 22건 = 57건 확정, 오버라이드
+   0건(§9 고무도장 점검 소유자 확인), 적용기 `tools/apply_rp13_finalization.py`.
 2. **3-이슈 발행 결정** — `analysis/ISSUE_0/1/2_DRAFT.md` (전부 미발행, 소유자 게이트).
 3. **E4 EXPLORATORY 문단 검토** — E4 미실행. 사전 등록 `analysis/CROSSMODEL_PLAN.md`
    + Issue #0 §5/§8의 EXPLORATORY 라벨 문언 승인/수정. (실행 시 각주 1문단 전용.)
@@ -87,5 +89,6 @@ fresh-clone(P5)    : reproduce·lint·pytest·schema-only PASS (temp dir 실측)
 
 ## 8. 면책
 
-단일 Claude 파이프라인(claude-sonnet-5 핀), 채점 Claude 보조 + 인간 최종 확정 대기
-(human_finalized=false). 미발행. 대조군="비집행". 홀드아웃 G2 provisional.
+단일 Claude 파이프라인(claude-sonnet-5 핀), 채점 Claude 보조 + 인간 최종 확정
+(전 57건 human_finalized=true, 2026-07-09 D24). 미발행. 대조군="비집행". 홀드아웃
+G2 provisional.

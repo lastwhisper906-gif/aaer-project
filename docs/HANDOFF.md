@@ -1,7 +1,21 @@
-# HANDOFF.md — 세션 인수인계 (최종 갱신: 2026-07-08, OWNER-GATE-E — E3 실행/R4 확증 + P1–P6, E1 보류)
+# HANDOFF.md — 세션 인수인계 (최종 갱신: 2026-07-09, RP-13 확정 — 채점 57건 human_finalized=true)
 
 > 다음 세션: CLAUDE.md → PROJECT.md → 이 문서 → `review_packets/RP-13_final_packet.md`
 > → `review_packets/RP-13_grading_workbench.md` → `RP-11_expansion_holdout.md`.
+
+## RP-13 확정 요약 (2026-07-09, 소유자 대화형 세션)
+
+- **채점 57건 전건 확정 (D24)**: wave-2 32 + 홀드아웃 3 + wave-1 대조군 22.
+  TIER A 13 플래그 우선 개별 검토(경계 3·대조군 오탐 5·미탐 2·홀드아웃 3) →
+  TIER B 22 재검증 서명 → grades_v2/controls 22 일괄(RP-09/RP-10 기근거).
+  오버라이드 0건 — Issue #0 §9 고무도장 기준을 커밋 전 명시 제시, 소유자 확인.
+- 적용기 `tools/apply_rp13_finalization.py` (신규) — 워크벤치 틱 파서 + OV 블록
+  생성기. **주의: 확정 후 `tools/build_rp13_workbench.py` 재실행 금지 (틱 파괴).**
+- 잔여 소유자 액션(RP-13_final_packet §7): ② 3-이슈 발행 ③ E4 EXPLORATORY ④ Console.
+- 발견: Jul 8–9 무인 작업은 로컬이 아니라 원격 브랜치 `hardening/2026-07-08`에
+  있음 (57건 워크벤치·finalize_grades.py 포함, ~3.9k줄) — 소유자 결정: main 기준
+  진행, 브랜치는 별도 검토 세션으로 보류.
+- 다음: 계획 Phase 2 (E5 §7 개정 커밋 → E1 스캐폴딩) — `~/.claude/plans/i-want-to-solve-happy-moonbeam.md`.
 
 ## OWNER-GATE-E 요약 (2026-07-08, 무인 세션)
 

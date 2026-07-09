@@ -24,7 +24,7 @@
   > Dim1=2: treatment case, p=74 >= 70. Dim2=0: top-ranked hypothesis alleges premature revenue recognition / delayed write-down of trade receivables (Revenues, ReceivablesNetCurrent, Allowance) — unrelated to the answer key's mechanism of manu…
   > Coverage note: hypothesis #3 names 'Income tax accounts', direction NetIncomeLoss overstated / tax liabilities understated, which substantially matches account+direction and would likely score 2 if top-ranked, but rubric grades top-ranked o…
 - **제안 처분**: finalize (실험군 정탐)
-- **서명**: ☐ finalize   ☐ override (사유: __________ → overrides.md)
+- **서명**: ☑ finalize   ☐ override (사유: __________ → overrides.md)
 
 ### case_61 = Celadon Group, Inc. (CGI, T24) — FRAUD ⚑ 채점자-경계표시
 
@@ -40,7 +40,7 @@
   > DIM4 (=3): Citations reference specific accession numbers with concrete numeric data points that genuinely support the claims: NI +$24.844M vs. operating cash flow -$5.211M for FY2016 (10-K 0001008886-16-000363) and NI +$11.367M vs. OCF -$2…
   > MEMORIZATION_SUSPECT_CONDITION2 (=false): (a) fails — the reasoning points extensively at concrete provided data content (specific XBRL values with periods and accessions), not bare document lists. (b) fails — no mention of post-cutoff fact…
 - **제안 처분**: finalize (실험군 정탐)
-- **서명**: ☐ finalize   ☐ override (사유: __________ → overrides.md)
+- **서명**: ☑ finalize   ☐ override (사유: __________ → overrides.md)
 
 ### case_66 = Under Armour, Inc. (UAA, T29) — FRAUD ⚑ 채점자-경계표시
 
@@ -53,7 +53,7 @@
   > dim1=1: treatment case with p=55, falling in the 50<=p<70 band. dim2=2: the TOP-RANKED hypothesis targets Revenues/SalesRevenueNet and AccountsReceivableNetCurrent, direction 'overstated', with treatment 'premature/aggressive revenue recogn…
   > Coverage: the disclosure_only/omission component of the multi-part truth is uncovered by any hypothesis. dim3: top hypothesis narrative is active conduct (deliberate sell-in/premature recognition) -> mapped 'active'; key scheme is mixed (ac…
 - **제안 처분**: finalize (실험군 정탐)
-- **서명**: ☐ finalize   ☐ override (사유: __________ → overrides.md)
+- **서명**: ☑ finalize   ☐ override (사유: __________ → overrides.md)
 
 ### case_49 = IOVANCE BIOTHERAPEUTICS, INC. (IOVA, W04) — control ⚑ 오류(출력≠정답)
 
@@ -64,7 +64,7 @@
 - 채점 rationale 발췌 (verbatim, ≤6줄):
   > Control case (answer_key.group=control). Dim1: output's misstatement_probability=58, which is >=50 on a control case -> 0 per rubric. Dim2/Dim3: treatment-only dimensions -> null for control. Dim4: consistency rule satisfied (p=58 in [40,70…
 - **제안 처분**: finalize (오탐이나 채점 d1=0 정확 — trust boundary 데이터. §1 오류해부 참조)
-- **서명**: ☐ finalize   ☐ override (사유: __________ → overrides.md)
+- **서명**: ☑ finalize   ☐ override (사유: __________ → overrides.md)
 
 ### case_44 = ADAMAS TRUST, INC. (ADAM, W08) — control ⚑ 오류(출력≠정답)
 
@@ -75,7 +75,7 @@
 - 채점 rationale 발췌 (verbatim, ≤6줄):
   > Control case (answer key group='control'). Dim1: output gives misstatement_probability=55; control rubric assigns 0 for p>=50. Dim2: null (control). Dim3: nulls (control). Dim4: consistency check first — p=55 requires watch/elevated tier an…
 - **제안 처분**: finalize (오탐이나 채점 d1=0 정확 — trust boundary 데이터. §1 오류해부 참조)
-- **서명**: ☐ finalize   ☐ override (사유: __________ → overrides.md)
+- **서명**: ☑ finalize   ☐ override (사유: __________ → overrides.md)
 
 ### case_48 = LIVEPERSON INC (LPSN, W09) — control ⚑ 오류(출력≠정답)
 
@@ -87,7 +87,7 @@
   > Control case (answer key group=control). dim1: output gives misstatement_probability=55; control rubric says p>=50 -> 0. dim2/dim3: control -> null per rubric. dim4: no consistency-cap violation (p=55 with risk_tier 'elevated' satisfies 40<…
   > Minor interpretive flaw noted (treating positive OCF > negative NI as an overstatement flag is the atypical direction) but citations are genuine and supportive. memorization_suspect_condition2: false - reasoning cites concrete provided data…
 - **제안 처분**: finalize (오탐이나 채점 d1=0 정확 — trust boundary 데이터. §1 오류해부 참조)
-- **서명**: ☐ finalize   ☐ override (사유: __________ → overrides.md)
+- **서명**: ☑ finalize   ☐ override (사유: __________ → overrides.md)
 
 ### case_54 = LEVI STRAUSS & CO (LEVI, W21) — control ⚑ 약증거(d4=2) · 오류(출력≠정답)
 
@@ -101,7 +101,7 @@
   > DIM3 (=nulls): Control case; genre mapping not graded.
   > DIM4 (=2): Consistency rule check first: p=55 requires tier watch/elevated; declared risk_tier='elevated' is consistent, so no cap. The evidence is largely specific and arithmetically verifiable against the cited filings: e.g., CL1 cites Ac…
 - **제안 처분**: finalize (오탐이나 채점 d1=0 정확 — trust boundary 데이터. §1 오류해부 참조)
-- **서명**: ☐ finalize   ☐ override (사유: __________ → overrides.md)
+- **서명**: ☑ finalize   ☐ override (사유: __________ → overrides.md)
 
 ### case_69 = ARTIVION, INC. (AORT, W18) — control ⚑ 오류(출력≠정답)
 
@@ -112,7 +112,7 @@
 - 채점 rationale 발췌 (verbatim, ≤6줄):
   > dim1=0: Control case with misstatement_probability=50; rubric control bands are p<=30 -> 2, 30<p<50 -> 1, p>=50 -> 0, and p=50 falls in the p>=50 band. dim2=null and dim3=nulls: control case per rubric. dim4=3: No consistency cap triggered …
 - **제안 처분**: finalize (오탐이나 채점 d1=0 정확 — trust boundary 데이터. §1 오류해부 참조)
-- **서명**: ☐ finalize   ☐ override (사유: __________ → overrides.md)
+- **서명**: ☑ finalize   ☐ override (사유: __________ → overrides.md)
 
 ### case_52 = Computer Sciences Corporation (CSC, T02) — FRAUD ⚑ 오류(출력≠정답)
 
@@ -125,7 +125,7 @@
   > Dim1=0: treatment case with misstatement_probability=40, which is <50 (band: p<50 -> 0). Dim2=2: top-ranked hypothesis asserts overstatement of OtherAssetsNoncurrent/Goodwill via 'continued capitalization of costs (deferred contract costs, …
   > Coverage note: revenue_recognition/POC appears only in the second-ranked hypothesis; reserves_smoothing is uncovered (CL6 = insufficient_data). Dim3: top hypothesis maps to 'mixed' (active capitalization of costs + omission-type failure to …
 - **제안 처분**: finalize (미탐 — 채점 정확. CSC=보정 near-miss / BRX=구조적 미탐, §2 참조)
-- **서명**: ☐ finalize   ☐ override (사유: __________ → overrides.md)
+- **서명**: ☑ finalize   ☐ override (사유: __________ → overrides.md)
 
 ### case_67 = Brixmor Property Group Inc. (BRX, T20) — FRAUD ⚑ 오류(출력≠정답)
 
@@ -138,7 +138,7 @@
   > DIM3 (null/null): There is no top-ranked hypothesis narrative to map to active/omission-estimate/mixed, so genre mapping is ungradeable; the answer key's genre_tag_row is also null. Recorded as nulls rather than 0, since 0 denotes a wrong m…
   > DIM4 (=3): Citations are concrete provided data points that genuinely support the claims made: CL3 quotes exact NI vs OCF figures (e.g., NI=-160,713,000 vs OCF=268,847,000 for FY2012; NI=132,851,000 vs OCF=479,210,000 for FY2014) and pairs …
 - **제안 처분**: finalize (미탐 — 채점 정확. CSC=보정 near-miss / BRX=구조적 미탐, §2 참조)
-- **서명**: ☐ finalize   ☐ override (사유: __________ → overrides.md)
+- **서명**: ☑ finalize   ☐ override (사유: __________ → overrides.md)
 
 ### case_73 = Genie Energy Ltd. (GNE, case_73) — HOLDOUT(G2) ⚑ 홀드아웃-미탐/경계 · G2-provisional
 
@@ -154,7 +154,7 @@
   > DIM4 (3): Evidence is specific and genuine: exact XBRL-style values with dates and accession numbers (e.g., allowance 6,139,000 at 2021-12-31 vs 4,826,000 at 2022-12-31; AR 41,309,000 → 55,134,000; NI 19,538,000 vs CFO 62,478,000 in FY2023 …
   > MEMORIZATION_SUSPECT_CONDITION2 (false): The reasoning cites concrete provided data content throughout (not bare document lists), and nothing references post-cutoff facts — no mention of the 2026-03-12 Item 4.02 8-K, the captive-insurance s…
 - **제안 처분**: finalize (G2 provisional 라벨 유지 — 4.02/AAER 상향 시 티어 갱신)
-- **서명**: ☐ finalize   ☐ override (사유: __________ → overrides.md)
+- **서명**: ☑ finalize   ☐ override (사유: __________ → overrides.md)
 
 ### case_72 = Weis Markets, Inc. (WMK, case_72) — HOLDOUT(G2) ⚑ 홀드아웃-미탐/경계 · G2-provisional
 
@@ -169,7 +169,7 @@
   > DIM3=null: Top hypothesis narrative maps to omission-estimate (under-provisioning of allowance estimate), but the answer key genre_tag_row is null (G2 PROVISIONAL, non-reliance/restatement event, not confirmed fraud), so no key genre exists…
   > DIM4=3: Evidence cites specific provided data points with accession numbers (AR 50,863K->65,092K->81,567K vs flat revenue ~$4.71-4.79B; accrued liabilities 57,431K->34,196K; NI vs OCF for FY2022/FY2024), and top_signals combine them into co…
 - **제안 처분**: finalize (G2 provisional 라벨 유지 — 4.02/AAER 상향 시 티어 갱신)
-- **서명**: ☐ finalize   ☐ override (사유: __________ → overrides.md)
+- **서명**: ☑ finalize   ☐ override (사유: __________ → overrides.md)
 
 ### case_71 = Hub Group, Inc. (HUBG, case_71) — HOLDOUT(G2) ⚑ G2-provisional
 
@@ -185,7 +185,7 @@
   > DIM4 (=3): Consistency rule satisfied: p=70 => elevated required; risk_tier='elevated', so no cap. Evidence is specific and verifiable against provided data: CL1/CL3/CL6 cite concrete XBRL values with accessions and period tags (e.g., FY202…
   > MEMORIZATION_SUSPECT_CONDITION2 (=false): (a) fails — the reasoning repeatedly points at concrete provided data content (specific XBRL values, filing dates, accession numbers), not bare document lists. (b) fails — no mention of any post-cut…
 - **제안 처분**: finalize (G2 provisional 라벨 유지 — 4.02/AAER 상향 시 티어 갱신)
-- **서명**: ☐ finalize   ☐ override (사유: __________ → overrides.md)
+- **서명**: ☑ finalize   ☐ override (사유: __________ → overrides.md)
 
 
 ## TIER B — 표준
@@ -201,7 +201,7 @@
   > Dim1=1: treatment case, p=65 falls in 50<=p<70 band. Dim2=2: top-ranked hypothesis names the correct account area (SalesRevenueGoodsNet/AR), correct direction (overstated), and correct treatment type ('premature or aggressive revenue recogn…
   > Coverage note: hypothesis 3 also flags channel-stuffing via the 2016 inventory build, reinforcing the same single-mechanism truth. Dim3=2: top hypothesis maps to 'active' (aggressive/premature revenue booking); answer-key scheme (channel-st…
 - **제안 처분**: finalize (실험군 정탐)
-- **서명**: ☐ finalize   ☐ override (사유: __________ → overrides.md)
+- **서명**: ☑ finalize   ☐ override (사유: __________ → overrides.md)
 
 ### case_39 = Osiris Therapeutics, Inc. (OSIR, T19) — FRAUD
 
@@ -216,7 +216,7 @@
   > DIM3=1: Top hypothesis narrative blends active manipulation (premature revenue recognition/channel stuffing) with an estimate omission element ('understating the allowance for doubtful accounts... thereby overstating net receivables and net…
   > DIM4=3: Evidence consists of specific provided data points with values/dates/accession numbers that genuinely support claims: AR $21.446M (2014-09-30, acc 0001104659-14-078750) to $38.598M (2015-06-30, acc 0001104659-15-057928) with implied…
 - **제안 처분**: finalize (실험군 정탐)
-- **서명**: ☐ finalize   ☐ override (사유: __________ → overrides.md)
+- **서명**: ☑ finalize   ☐ override (사유: __________ → overrides.md)
 
 ### case_59 = The Hain Celestial Group, Inc. (HAIN, T23) — FRAUD
 
@@ -231,7 +231,7 @@
   > DIM3=0: Top hypothesis narrative is an estimate/reserve manipulation -> maps to omission-estimate; answer-key scheme is an active scheme (sales personnel affirmatively offering incentives to accelerate revenue). Omission-estimate vs active …
   > DIM4=3: Evidence cites specific provided data points with accession numbers and exact values (e.g., allowance vs AR trend FY2012-FY2015; gross margin 27.75%->23.01% FY2012-FY2015; inventory growth 34.2% vs revenue 25.9% in FY2013; intangibl…
 - **제안 처분**: finalize (실험군 정탐)
-- **서명**: ☐ finalize   ☐ override (사유: __________ → overrides.md)
+- **서명**: ☑ finalize   ☐ override (사유: __________ → overrides.md)
 
 ### case_40 = Tangoe, Inc. (TNGO, T22) — FRAUD
 
@@ -246,7 +246,7 @@
   > DIM3: Top hypothesis maps to 'mixed' (active premature recognition + omission-estimate under-reserving), but the answer key's genre_tag_row is null, so there is no key genre to compare against; score set to null for the human auditor to fin…
   > DIM4=3: No cap — p=55 with risk_tier 'watch' satisfies the consistency rule. Evidence cites specific provided data points that genuinely support the mechanism claims: AR 43,273k->56,948k (+31.6%) vs revenue 188,914k->212,476k (+12.5%) FY201…
 - **제안 처분**: finalize (실험군 정탐)
-- **서명**: ☐ finalize   ☐ override (사유: __________ → overrides.md)
+- **서명**: ☑ finalize   ☐ override (사유: __________ → overrides.md)
 
 ### case_43 = NABORS INDUSTRIES LTD (NBR, W01) — control
 
@@ -257,7 +257,7 @@
 - 채점 rationale 발췌 (verbatim, ≤6줄):
   > dim1=1: Answer key group=control; output misstatement_probability=45, which falls in the 30<p<50 control band (not <=30 for full credit, not >=50 for zero). dim2=null and dim3 nulls: rubric mandates nulls for control cases. dim4=3: risk_tie…
 - **제안 처분**: finalize (대조군 정탐, 근거 명확)
-- **서명**: ☐ finalize   ☐ override (사유: __________ → overrides.md)
+- **서명**: ☑ finalize   ☐ override (사유: __________ → overrides.md)
 
 ### case_68 = REPLIGEN CORP (RGEN, W03) — control
 
@@ -272,7 +272,7 @@
   > DIM4 (=3): Evidence is specific and internally coherent. Checklist items and mechanism assertions cite concrete provided data points with values, dates, accession numbers, and statement locations: e.g., CL1 combines AccountsReceivableNetCur…
   > MEMORIZATION_SUSPECT_CONDITION2 (false): The reasoning points extensively at concrete provided data content (specific XBRL-style values with periods and accessions), so condition (a) fails; and no post-cutoff facts (revelation, enforcement …
 - **제안 처분**: finalize (대조군 정탐, 근거 명확)
-- **서명**: ☐ finalize   ☐ override (사유: __________ → overrides.md)
+- **서명**: ☑ finalize   ☐ override (사유: __________ → overrides.md)
 
 ### case_46 = UFP TECHNOLOGIES INC (UFPT, W19) — control
 
@@ -283,7 +283,7 @@
 - 채점 rationale 발췌 (verbatim, ≤6줄):
   > Dim1: Control case per answer key; output p=42, and control rule gives 1 for 30<p<50. Dim2/Dim3: null per rubric (control case); noted that the output nonetheless proposes mechanism hypotheses, graded only via dim4. Dim4: Consistency rule s…
 - **제안 처분**: finalize (대조군 정탐, 근거 명확)
-- **서명**: ☐ finalize   ☐ override (사유: __________ → overrides.md)
+- **서명**: ☑ finalize   ☐ override (사유: __________ → overrides.md)
 
 ### case_47 = HALOZYME THERAPEUTICS, INC. (HALO, W05) — control
 
@@ -294,7 +294,7 @@
 - 채점 rationale 발췌 (verbatim, ≤6줄):
   > Control case per answer key (group=control, no scheme). Dim1: output states misstatement_probability=42; control band 30<p<50 -> 1. Dim2: control -> null. Dim3: control -> nulls. Dim4: risk_tier='watch' with p=42 satisfies the consistency r…
 - **제안 처분**: finalize (대조군 정탐, 근거 명확)
-- **서명**: ☐ finalize   ☐ override (사유: __________ → overrides.md)
+- **서명**: ☑ finalize   ☐ override (사유: __________ → overrides.md)
 
 ### case_62 = UNIVERSAL LOGISTICS HOLDINGS, INC. (ULH, W15) — control
 
@@ -305,7 +305,7 @@
 - 채점 rationale 발췌 (verbatim, ≤6줄):
   > dim1=1: Answer key group=control; output misstatement_probability=42, which falls in the control band 30<p<50 → 1 (would need p<=30 for a 2). dim2=null and dim3=nulls: mandated for control cases. dim4=3: Consistency rule satisfied (p=42 wit…
 - **제안 처분**: finalize (대조군 정탐, 근거 명확)
-- **서명**: ☐ finalize   ☐ override (사유: __________ → overrides.md)
+- **서명**: ☑ finalize   ☐ override (사유: __________ → overrides.md)
 
 ### case_56 = BLACKSTONE MORTGAGE TRUST, INC. (BXMT, W07) — control
 
@@ -314,7 +314,7 @@
 - 채점 rationale 발췌 (verbatim, ≤6줄):
   > CONTROL case (answer key: group=control, no scheme). dim1: output gives misstatement_probability=35, which falls in the control band 30<p<50 -> score 1 (a probability <=30 would have earned 2; 35 is a near-miss). dim2/dim3: control case, so…
 - **제안 처분**: finalize (대조군 정탐, 근거 명확)
-- **서명**: ☐ finalize   ☐ override (사유: __________ → overrides.md)
+- **서명**: ☑ finalize   ☐ override (사유: __________ → overrides.md)
 
 ### case_63 = SITE Centers Corp. (SITC, W06) — control
 
@@ -327,7 +327,7 @@
   > DIM4 (=3): Consistency rule check first: p=30 (<40) requires tier clear/watch; declared risk_tier='watch' -> consistent, no cap. Evidence quality: citations point at concrete provided data content with specific values and dates, e.g., CL3 q…
   > MEMORIZATION_SUSPECT_CONDITION2 (=false): (a) fails - the output does not merely list documents; it cites concrete provided data values (specific NI/CFO/AR/Assets/Liabilities figures with dates). (b) fails - no mention of any revelation, en…
 - **제안 처분**: finalize (대조군 정탐, 근거 명확)
-- **서명**: ☐ finalize   ☐ override (사유: __________ → overrides.md)
+- **서명**: ☑ finalize   ☐ override (사유: __________ → overrides.md)
 
 ### case_45 = FLOWERS FOODS INC (FLO, W13) — control
 
@@ -337,7 +337,7 @@
   > Dim1: Answer key marks this a control case; output's misstatement_probability=28, which is <=30, so band score = 2 per the control rule. Dim2: Control case -> null per rubric; note the output correctly provides no mechanism_hypotheses (none…
   > Minor flaw (CL2 first evidence cites one accession for two documents) is not fabrication and does not undermine the score. Memorization_condition2: false - reasoning points at concrete provided data content throughout (specific values/dates…
 - **제안 처분**: finalize (대조군 정탐, 근거 명확)
-- **서명**: ☐ finalize   ☐ override (사유: __________ → overrides.md)
+- **서명**: ☑ finalize   ☐ override (사유: __________ → overrides.md)
 
 ### case_70 = MARCHEX INC (MCHX, W11) — control
 
@@ -346,7 +346,7 @@
 - 채점 rationale 발췌 (verbatim, ≤6줄):
   > dim1=2: Answer key group is control; output misstatement_probability=28, which satisfies p<=30 → 2. dim2=null: control case per rubric (output also correctly lists no mechanism hypotheses; none required since p=28<40). dim3=nulls: control c…
 - **제안 처분**: finalize (대조군 정탐, 근거 명확)
-- **서명**: ☐ finalize   ☐ override (사유: __________ → overrides.md)
+- **서명**: ☑ finalize   ☐ override (사유: __________ → overrides.md)
 
 ### case_55 = BROWN FORMAN CORP (BF-A, W14) — control
 
@@ -355,7 +355,7 @@
 - 채점 rationale 발췌 (verbatim, ≤6줄):
   > Control case (answer key: group=control, no scheme). Dim1: output gives misstatement_probability=25; control rule p<=30 -> 2. Dim2: control -> null; note the output correctly lists no mechanism hypotheses, consistent with p=25 (<40, so none…
 - **제안 처분**: finalize (대조군 정탐, 근거 명확)
-- **서명**: ☐ finalize   ☐ override (사유: __________ → overrides.md)
+- **서명**: ☑ finalize   ☐ override (사유: __________ → overrides.md)
 
 ### case_57 = DARLING INGREDIENTS INC. (DAR, W12) — control
 
@@ -364,7 +364,7 @@
 - 채점 rationale 발췌 (verbatim, ≤6줄):
   > Control case per answer key. dim1: p=25 <=30 -> 2. dim2/dim3: control -> null (output correctly has empty mechanism_hypotheses, appropriate since p<40). dim4: evidence is specific and verifiably tied to provided data (e.g., CL3 NI=64,215,00…
 - **제안 처분**: finalize (대조군 정탐, 근거 명확)
-- **서명**: ☐ finalize   ☐ override (사유: __________ → overrides.md)
+- **서명**: ☑ finalize   ☐ override (사유: __________ → overrides.md)
 
 ### case_58 = CINTAS CORP (CTAS, W23) — control
 
@@ -373,7 +373,7 @@
 - 채점 rationale 발췌 (verbatim, ≤6줄):
   > dim1=2: control case with misstatement_probability=25, which is <=30 (control band for full credit). dim2=null: control case per rubric; note output correctly provides no mechanism_hypotheses and none is required since p=25<40. dim3=nulls: …
 - **제안 처분**: finalize (대조군 정탐, 근거 명확)
-- **서명**: ☐ finalize   ☐ override (사유: __________ → overrides.md)
+- **서명**: ☑ finalize   ☐ override (사유: __________ → overrides.md)
 
 ### case_41 = HEALTHSTREAM INC (HSTM, W10) — control
 
@@ -382,7 +382,7 @@
 - 채점 rationale 발췌 (verbatim, ≤6줄):
   > Control case (answer key: group=control). dim1: output gives misstatement_probability=22; control rule p<=30 -> 2. dim2/dim3: control -> null per rubric; output appropriately has an empty mechanism_hypotheses list, so no unsupported mechani…
 - **제안 처분**: finalize (대조군 정탐, 근거 명확)
-- **서명**: ☐ finalize   ☐ override (사유: __________ → overrides.md)
+- **서명**: ☑ finalize   ☐ override (사유: __________ → overrides.md)
 
 ### case_42 = RALPH LAUREN CORP (RL, W22) — control
 
@@ -392,7 +392,7 @@
   > Control case (answer key group=control). Dim1: output p=20, control rule p<=30 -> 2. Dim2: control -> null; output correctly lists no mechanism_hypotheses (also consistent with p<40). Dim3: control -> nulls. Dim4: consistency rule satisfied…
   > Minor blemishes (CL7 accession 'n/a' for a 2005 NT 10-K from the chronology; fiscal-quarter labeling in CL1) are not fabrications. Memorization condition2: false - reasoning anchors on concrete provided data values throughout, and no post-c…
 - **제안 처분**: finalize (대조군 정탐, 근거 명확)
-- **서명**: ☐ finalize   ☐ override (사유: __________ → overrides.md)
+- **서명**: ☑ finalize   ☐ override (사유: __________ → overrides.md)
 
 ### case_51 = Valaris Ltd (VAL, W02) — control
 
@@ -401,7 +401,7 @@
 - 채점 rationale 발췌 (verbatim, ≤6줄):
   > dim1=2: Answer key group is control; output misstatement_probability=20, which is <=30, earning the top control band per rubric. dim2=null and dim3=nulls: control case per rubric; output correctly provides an empty mechanism_hypotheses list…
 - **제안 처분**: finalize (대조군 정탐, 근거 명확)
-- **서명**: ☐ finalize   ☐ override (사유: __________ → overrides.md)
+- **서명**: ☑ finalize   ☐ override (사유: __________ → overrides.md)
 
 ### case_64 = SAIA INC (SAIA, W16) — control
 
@@ -411,7 +411,7 @@
   > dim1: Answer key marks this a CONTROL case. Output gives misstatement_probability=20, which satisfies the control band p<=30, so dim1=2. dim2: Control case -> null per rubric; note the output correctly lists no mechanism_hypotheses (empty a…
   > Minor nit: CL7 evidence uses accession "n/a" for chronology items, but this is a chronology observation rather than a fabricated citation and does not undermine the score.
 - **제안 처분**: finalize (대조군 정탐, 근거 명확)
-- **서명**: ☐ finalize   ☐ override (사유: __________ → overrides.md)
+- **서명**: ☑ finalize   ☐ override (사유: __________ → overrides.md)
 
 ### case_50 = AtriCure, Inc. (ATRC, W20) — control
 
@@ -420,7 +420,7 @@
 - 채점 rationale 발췌 (verbatim, ≤6줄):
   > Dim1: Answer key group=control; output misstatement_probability=15, which is <=30, so control band score = 2. Dim2: Control case -> null per rubric; output correctly provides an empty mechanism_hypotheses list, consistent with p=15 (<40, no…
 - **제안 처분**: finalize (대조군 정탐, 근거 명확)
-- **서명**: ☐ finalize   ☐ override (사유: __________ → overrides.md)
+- **서명**: ☑ finalize   ☐ override (사유: __________ → overrides.md)
 
 ### case_53 = MARTEN TRANSPORT LTD (MRTN, W17) — control
 
@@ -429,4 +429,4 @@
 - 채점 rationale 발췌 (verbatim, ≤6줄):
   > Control case per answer key (group=control, no scheme/genre). dim1: output's misstatement_probability=15 <=30, so band score 2. dim2: null (control). dim3: nulls (control); note mechanism_hypotheses is empty, appropriately so given p<40. di…
 - **제안 처분**: finalize (대조군 정탐, 근거 명확)
-- **서명**: ☐ finalize   ☐ override (사유: __________ → overrides.md)
+- **서명**: ☑ finalize   ☐ override (사유: __________ → overrides.md)
