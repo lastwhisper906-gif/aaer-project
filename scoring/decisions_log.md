@@ -797,3 +797,7 @@ c44bd59a…)는 **서명 없이 superseded** (채점 미진입 상태 폐기). v
 ## D33 — Phase 1 판정: gate k=5 결과 방향 (i) — 자격 3/3 강건 (2026-07-10, JSON 1줄)
 
 {"decision":"D33","date":"2026-07-10","action":"recognition gate k=5 실행 완료 (13호출: HTZ 1 + 3케이스×draws 2–5 12, 경계 커밋 4회 전건 push)","result":"HTZ 양성대조 True(high) — 민감도 확증 · HUBG 0/5 · WMK 0/5 · GNE 0/5 (knows_event=True 0건) → 사전 규칙(≤1/5) 자격 3/3 유지, 결과 방향 (i), 판정 gate_k5_analyze.py 기계 적용","interpretation":"사전 등록 문장 (i) 그대로 — draw 잡음에 강건; k=1 거짓음성 산술(≈34%)은 반박이 아니라 관측 인지율이 가정(30%)보다 낮은 방향 시사로만 기술","docs":"holdout_summary §1 밴드 병기 + README 양어 병기(draw-1 발행값 불변) + ISSUE_2는 RP-14 DIFF-2로 diff-only + Q-R01 갱신","metered":"Phase 1 실호출 13/13 (초과·낭비 0), 세션 누계 13/60","invariants":"발행 동결값 무변경 — 전부 병기; Issue #2 발행 보류 긴급 항목 비발동"}
+
+## D34 — Phase 2 사전 등록: wave-2 outcome-recognition 프로브 (2026-07-10, JSON 1줄, 발사 전 커밋)
+
+{"decision":"D34","date":"2026-07-10","action":"wave-2 outcome-recognition 사전 등록 — analysis/OUTCOME_RECOGNITION_PLAN.md + analysis/outcome_recognition.py(결정론) 호출 전 커밋","targets":"wave-2 전 32사(실험군 9+대조군 23), identity-exposed, 동결 tools/holdout_probe.py 무수정(홀드아웃 게이트와 동일 knows_event 계기), 출력 runs/wave2/outcome_recognition/, 티커 알파벳순, 케이스 경계 commit·push 전건","purpose":"dose-response x축을 name-ID(대리)에서 outcome-knowledge(직접)로 승격 — Tier ①②/③ 계기 정렬. 무분기(branchless): 어떤 임계도 R/H 판정 불변, name-ID 서사(50%→21.9%→0%) 유지 병기","reporting_prefixed":"그룹별 인지율+CP95(동결 clopper_pearson 재사용) · name-ID 4분면 §reconcile(event_only=이름 상기 불능이나 사건 인지 → name-ID 거짓음성 실증) · synthesis/README 2축 병기(wave-1은 미측정 정직 표기)","budget":"Phase 2 = 32호출 (누계 13→45, cap 60)"}
