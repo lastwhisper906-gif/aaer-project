@@ -1,0 +1,59 @@
+{
+  "ts": "2026-07-09T07:52:56.715202+00:00",
+  "harness_pin": "2.1.201",
+  "flags": [
+    "claude",
+    "-p",
+    "--model",
+    "claude-sonnet-5",
+    "--output-format",
+    "json",
+    "--max-turns",
+    "2",
+    "--setting-sources",
+    "",
+    "--strict-mcp-config",
+    "--tools",
+    "",
+    "--disallowedTools",
+    "Bash,Read,Edit,Write,Glob,Grep,WebFetch,WebSearch,Task,NotebookEdit",
+    "--system-prompt",
+    "You are analyzing the financial reporting quality of Weis Markets, Inc. (WMK, CIK 0000105418) using only the structured data provided below, which reflects public filings available on or before 2026-0...[1739 chars]",
+    "--json-schema",
+    "{\"type\": \"object\", \"additionalProperties\": false, \"required\": [\"checklist\", \"misstatement_probability\", \"mechanism_hypotheses\", \"overall\"], \"properties\": {\"checklist\": {\"type\": \"array\", \"items\": {\"typ...[1821 chars]"
+  ],
+  "model_requested": "claude-sonnet-5",
+  "served_models": [
+    "claude-sonnet-5"
+  ],
+  "pin_ok": true,
+  "ok": true,
+  "fail_reason": null,
+  "session_id": "8dfb45b0-e528-4d4e-b690-f24e611c99cb",
+  "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 119333,
+    "output_tokens": 12965,
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [],
+    "speed": "standard"
+  },
+  "total_cost_usd_reference_only": 0.2302809,
+  "attempts": 1,
+  "wall_seconds": 116.3,
+  "freeze": {
+    "head": "16ad36f5c34219ca92f896b7637502bc0102b224",
+    "clean_tree": true
+  },
+  "raw_tail": null
+}

@@ -1,0 +1,59 @@
+{
+  "ts": "2026-07-09T07:53:13.393072+00:00",
+  "harness_pin": "2.1.201",
+  "flags": [
+    "claude",
+    "-p",
+    "--model",
+    "claude-sonnet-5",
+    "--output-format",
+    "json",
+    "--max-turns",
+    "2",
+    "--setting-sources",
+    "",
+    "--strict-mcp-config",
+    "--tools",
+    "",
+    "--disallowedTools",
+    "Bash,Read,Edit,Write,Glob,Grep,WebFetch,WebSearch,Task,NotebookEdit",
+    "--system-prompt",
+    "You are analyzing the financial reporting quality of Hub Group, Inc. (HUBG, CIK 0000940942) using only the structured data provided below, which reflects public filings available on or before 2026-02-...[1737 chars]",
+    "--json-schema",
+    "{\"type\": \"object\", \"additionalProperties\": false, \"required\": [\"checklist\", \"misstatement_probability\", \"mechanism_hypotheses\", \"overall\"], \"properties\": {\"checklist\": {\"type\": \"array\", \"items\": {\"typ...[1821 chars]"
+  ],
+  "model_requested": "claude-sonnet-5",
+  "served_models": [
+    "claude-sonnet-5"
+  ],
+  "pin_ok": true,
+  "ok": true,
+  "fail_reason": null,
+  "session_id": "1c17e90e-0346-43e2-beb0-abc0505755ff",
+  "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 144803,
+    "output_tokens": 14018,
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [],
+    "speed": "standard"
+  },
+  "total_cost_usd_reference_only": 0.25371689999999997,
+  "attempts": 1,
+  "wall_seconds": 132.9,
+  "freeze": {
+    "head": "16ad36f5c34219ca92f896b7637502bc0102b224",
+    "clean_tree": false
+  },
+  "raw_tail": null
+}
