@@ -1,0 +1,7881 @@
+{
+ "_meta": {
+  "status": "PROPOSED — NOT FOR SCORING UNTIL OWNER-SIGNED (RP-09 §Final)",
+  "criteria": "docs/CONTROL_CRITERIA_v2.md",
+  "criteria_sha256": "f6cc67cb006eb01aa3bcb9df0f46d15cc006bd0931a014a3905f5783818c1a81",
+  "pool_extract_sha256": "852d26f8b13420286abaff527b608ae701e456ce68167b9debb45850103e3fdf",
+  "generated_at": "2026-07-09T02:13:28.207777+00:00",
+  "selected_count": 9,
+  "per_case_target": "2-3 (S3-v2)",
+  "rerun": "python3 tools/control_v2.py select (네트워크 불요)"
+ },
+ "selections": {
+  "case_71": {
+   "treatment": {
+    "ticker": "HUBG",
+    "cutoff": "2026-02-04",
+    "rev_pit": 3946390000,
+    "fye_month": 12
+   },
+   "selected": [
+    {
+     "cik": "0001929561",
+     "name": "RXO, Inc.",
+     "sic": "4700",
+     "sic_pool": "4700",
+     "rev_pit": 4550000000,
+     "assets_pit": 3201000000,
+     "size_dist": 0.1423,
+     "size_basis": "revenue",
+     "size_flags": [],
+     "fye": "1231",
+     "fye_month_dist": 0,
+     "sic_tier": 1,
+     "former_names": [
+      "RXO, LLC",
+      "NAT Holdings, LLC"
+     ],
+     "tickers": [
+      "RXO"
+     ],
+     "rank": 1
+    },
+    {
+     "cik": "0000078890",
+     "name": "BRINKS CO",
+     "sic": "4731",
+     "sic_pool": "4731",
+     "rev_pit": 5011900000,
+     "assets_pit": 6953000000,
+     "size_dist": 0.239,
+     "size_basis": "revenue",
+     "size_flags": [],
+     "fye": "1231",
+     "fye_month_dist": 0,
+     "sic_tier": 0,
+     "former_names": [
+      "PITTSTON CO"
+     ],
+     "tickers": [
+      "BCO"
+     ],
+     "rank": 2
+    },
+    {
+     "cik": "0000912728",
+     "name": "FORWARD AIR CORP",
+     "sic": "4731",
+     "sic_pool": "4731",
+     "rev_pit": 2474262000,
+     "assets_pit": 2794198000,
+     "size_dist": 0.4669,
+     "size_basis": "revenue",
+     "size_flags": [],
+     "fye": "1231",
+     "fye_month_dist": 0,
+     "sic_tier": 0,
+     "former_names": [
+      "LANDAIR SERVICES INC"
+     ],
+     "tickers": [
+      "FWRD"
+     ],
+     "rank": 3
+    }
+   ],
+   "alternates": [
+    {
+     "cik": "0001166003",
+     "name": "XPO, Inc.",
+     "sic": "4700",
+     "sic_pool": "4700",
+     "rev_pit": 8072000000,
+     "assets_pit": 8189000000,
+     "size_dist": 0.7156,
+     "size_basis": "revenue",
+     "size_flags": [],
+     "fye": "1231",
+     "fye_month_dist": 0,
+     "sic_tier": 1,
+     "former_names": [
+      "XPO Logistics, Inc.",
+      "EXPRESS-1 EXPEDITED SOLUTIONS INC",
+      "SEGMENTZ INC"
+     ],
+     "tickers": [
+      "XPO"
+     ],
+     "rank": 4
+    },
+    {
+     "cik": "0000040211",
+     "name": "GATX CORP",
+     "sic": "4700",
+     "sic_pool": "4700",
+     "rev_pit": 1585500000,
+     "assets_pit": 13305800000,
+     "size_dist": 0.9119,
+     "size_basis": "revenue",
+     "size_flags": [],
+     "fye": "1231",
+     "fye_month_dist": 0,
+     "sic_tier": 1,
+     "former_names": [],
+     "tickers": [
+      "GATX"
+     ],
+     "rank": 5
+    }
+   ],
+   "eligible_ranked_count": 8,
+   "under_target": false
+  },
+  "case_72": {
+   "treatment": {
+    "ticker": "WMK",
+    "cutoff": "2026-02-19",
+    "rev_pit": 4791730000,
+    "fye_month": 12
+   },
+   "selected": [
+    {
+     "cik": "0001771515",
+     "name": "Grocery Outlet Holding Corp.",
+     "sic": "5411",
+     "sic_pool": "5411",
+     "rev_pit": 4371501000,
+     "assets_pit": 3368638000,
+     "size_dist": 0.0918,
+     "size_basis": "revenue",
+     "size_flags": [],
+     "fye": "0102",
+     "fye_month_dist": 1,
+     "sic_tier": 0,
+     "former_names": [],
+     "tickers": [
+      "GO"
+     ],
+     "rank": 1
+    },
+    {
+     "cik": "0001575515",
+     "name": "Sprouts Farmers Market, Inc.",
+     "sic": "5411",
+     "sic_pool": "5411",
+     "rev_pit": 8806159000,
+     "assets_pit": 4158649000,
+     "size_dist": 0.6086,
+     "size_basis": "revenue",
+     "size_flags": [],
+     "fye": "1228",
+     "fye_month_dist": 0,
+     "sic_tier": 0,
+     "former_names": [
+      "Sprouts Farmers Markets, LLC"
+     ],
+     "tickers": [
+      "SFM"
+     ],
+     "rank": 2
+    },
+    {
+     "cik": "0000103595",
+     "name": "VILLAGE SUPER MARKET INC",
+     "sic": "5411",
+     "sic_pool": "5411",
+     "rev_pit": 2320690000,
+     "assets_pit": 1004280000,
+     "size_dist": 0.725,
+     "size_basis": "revenue",
+     "size_flags": [],
+     "fye": "0727",
+     "fye_month_dist": 5,
+     "sic_tier": 0,
+     "former_names": [],
+     "tickers": [
+      "VLGEA"
+     ],
+     "rank": 3
+    }
+   ],
+   "alternates": [
+    {
+     "cik": "0001547459",
+     "name": "Natural Grocers by Vitamin Cottage, Inc.",
+     "sic": "5411",
+     "sic_pool": "5411",
+     "rev_pit": 1330836000,
+     "assets_pit": 668556000,
+     "size_dist": 1.2811,
+     "size_basis": "revenue",
+     "size_flags": [],
+     "fye": "0930",
+     "fye_month_dist": 3,
+     "sic_tier": 0,
+     "former_names": [],
+     "tickers": [
+      "NGVC"
+     ],
+     "rank": 4
+    }
+   ],
+   "eligible_ranked_count": 4,
+   "under_target": false
+  },
+  "case_73": {
+   "treatment": {
+    "ticker": "GNE",
+    "cutoff": "2026-03-11",
+    "rev_pit": 425202000,
+    "fye_month": 12
+   },
+   "selected": [
+    {
+     "cik": "0001606268",
+     "name": "Via Renewables, Inc.",
+     "sic": "4931",
+     "sic_pool": "4931",
+     "rev_pit": 463451000,
+     "assets_pit": 331289000,
+     "size_dist": 0.0861,
+     "size_basis": "revenue",
+     "size_flags": [],
+     "fye": "1231",
+     "fye_month_dist": 0,
+     "sic_tier": 0,
+     "former_names": [
+      "Spark Energy, Inc."
+     ],
+     "tickers": [
+      "VIASP"
+     ],
+     "rank": 1
+    },
+    {
+     "cik": "0000755001",
+     "name": "UNITIL CORP",
+     "sic": "4931",
+     "sic_pool": "4931",
+     "rev_pit": 536000000,
+     "assets_pit": 2134200000,
+     "size_dist": 0.2316,
+     "size_basis": "revenue",
+     "size_flags": [],
+     "fye": "1231",
+     "fye_month_dist": 0,
+     "sic_tier": 0,
+     "former_names": [],
+     "tickers": [
+      "UTL"
+     ],
+     "rank": 2
+    },
+    {
+     "cik": "0001604191",
+     "name": "GridAI Technologies Corp.",
+     "sic": "4931",
+     "sic_pool": "4931",
+     "rev_pit": 0,
+     "assets_pit": 135370340,
+     "size_dist": 1.0686,
+     "size_basis": "assets",
+     "size_flags": [
+      "S1-매출 PIT 불능 → 총자산 대체"
+     ],
+     "fye": "1231",
+     "fye_month_dist": 0,
+     "sic_tier": 0,
+     "former_names": [
+      "Entero Therapeutics, Inc.",
+      "First Wave BioPharma, Inc.",
+      "AzurRx BioPharma, Inc.",
+      "BioPharma d'Azur, Inc."
+     ],
+     "tickers": [
+      "GRDX"
+     ],
+     "rank": 3
+    }
+   ],
+   "alternates": [],
+   "eligible_ranked_count": 3,
+   "under_target": false
+  }
+ },
+ "also_rans": {
+  "case_71": [
+   {
+    "cik": "0000028374",
+    "name": "DETROIT & CANADA TUNNEL CORP",
+    "sic": "4700",
+    "sic_pool": "4700",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000045674",
+    "name": "CIRCLE INTERNATIONAL GROUP INC /DE/",
+    "sic": "4731",
+    "sic_pool": "4731",
+    "excluded": [
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000276478",
+    "name": "GATX RAIL CORP",
+    "sic": "4700",
+    "sic_pool": "4700",
+    "excluded": [
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000311250",
+    "name": "RMI COVERED HOPPER RAILCAR MANAGEMENT PROGRAM 79-1",
+    "sic": "4731",
+    "sic_pool": "4731",
+    "excluded": [
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000357019",
+    "name": "GATX FINANCIAL CORP",
+    "sic": "4700",
+    "sic_pool": "4700",
+    "excluded": [
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000700674",
+    "name": "AIR EXPRESS INTERNATIONAL CORP /DE/",
+    "sic": "4731",
+    "sic_pool": "4731",
+    "excluded": [
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000706122",
+    "name": "SEARIVER MARITIME FINANCIAL HOLDINGS, INC.",
+    "sic": "4700",
+    "sic_pool": "4700",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000719775",
+    "name": "OMNICORP LTD",
+    "sic": "4731",
+    "sic_pool": "4731",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000737573",
+    "name": "INTERTRANS CORP",
+    "sic": "4731",
+    "sic_pool": "4731",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=1",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000758452",
+    "name": "RADIX VENTURES INC",
+    "sic": "4731",
+    "sic_pool": "4731",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=2",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000786053",
+    "name": "TRANSCISCO INDUSTRIES INC",
+    "sic": "4700",
+    "sic_pool": "4700",
+    "excluded": [
+     "E1 filing history 10-K=2 10-Q=5",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000788611",
+    "name": "NextTrip, Inc.",
+    "sic": "4700",
+    "sic_pool": "4700",
+    "rev_pit": 501423,
+    "assets_pit": 14424933,
+    "excluded": [
+     "S1 규모 밴드 |log|=8.971 > log4 (revenue)"
+    ]
+   },
+   {
+    "cik": "0000791958",
+    "name": "GRAND ADVENTURES TOUR & TRAVEL PUBLISHING CORP",
+    "sic": "4700",
+    "sic_pool": "4700",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000798538",
+    "name": "ADEN ENTERPRISES INC",
+    "sic": "4700",
+    "sic_pool": "4700",
+    "excluded": [
+     "E1 filing history 10-K=4 10-Q=4",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000824845",
+    "name": "DAINE INDUSTRIES INC",
+    "sic": "4700",
+    "sic_pool": "4700",
+    "excluded": [
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000839094",
+    "name": "LEP GROUP PLC",
+    "sic": "4731",
+    "sic_pool": "4731",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000842461",
+    "name": "SIGNAL CAPITAL HOLDINGS CORP",
+    "sic": "4700",
+    "sic_pool": "4700",
+    "excluded": [
+     "E1 filing history 10-K=1 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000852766",
+    "name": "YTB International, Inc.",
+    "sic": "4700",
+    "sic_pool": "4700",
+    "excluded": [
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000882541",
+    "name": "ITEL RAIL CORP",
+    "sic": "4731",
+    "sic_pool": "4731",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000890508",
+    "name": "GOLDEN EAGLE GROUP INC",
+    "sic": "4731",
+    "sic_pool": "4731",
+    "excluded": [
+     "E1 filing history 10-K=2 10-Q=8",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000890662",
+    "name": "FRITZ COMPANIES INC",
+    "sic": "4731",
+    "sic_pool": "4731",
+    "excluded": [
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000919869",
+    "name": "CRG Liquidation CO",
+    "sic": "4700",
+    "sic_pool": "4700",
+    "excluded": [
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E4-v2 AAER 구문 적중 2건 (예: AAER-4357)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000934873",
+    "name": "DYNAMIC LEISURE CORP",
+    "sic": "4700",
+    "sic_pool": "4700",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=1",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000940942",
+    "name": null,
+    "sic": null,
+    "sic_pool": "4731",
+    "excluded": [
+     "E7 실험군/후보 풀 자기 배제"
+    ]
+   },
+   {
+    "cik": "0000942317",
+    "name": "INTRAV INC",
+    "sic": "4700",
+    "sic_pool": "4700",
+    "excluded": [
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000946823",
+    "name": "VITRAN CORP INC",
+    "sic": "4731",
+    "sic_pool": "4731",
+    "excluded": [
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000946842",
+    "name": "AMBASSADORS INTERNATIONAL INC",
+    "sic": "4700",
+    "sic_pool": "4700",
+    "excluded": [
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001001718",
+    "name": "EGL INC",
+    "sic": "4731",
+    "sic_pool": "4731",
+    "excluded": [
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001009480",
+    "name": "TARGET LOGISTICS INC",
+    "sic": "4731",
+    "sic_pool": "4731",
+    "excluded": [
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001013834",
+    "name": "PS GROUP HOLDINGS INC",
+    "sic": "4700",
+    "sic_pool": "4700",
+    "excluded": [
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001015527",
+    "name": "GEOLOGISTICS CORP",
+    "sic": "4731",
+    "sic_pool": "4731",
+    "excluded": [
+     "E1 filing history 10-K=2 10-Q=8",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001020265",
+    "name": "SABRE HOLDINGS CORP",
+    "sic": "4700",
+    "sic_pool": "4700",
+    "excluded": [
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001021264",
+    "name": "ACLN LTD",
+    "sic": "4731",
+    "sic_pool": "4731",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E1 FPI(20-F/40-F 전용)",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001035120",
+    "name": "PROFESSIONAL TRANSPORTATION GROUP LTD INC",
+    "sic": "4731",
+    "sic_pool": "4731",
+    "excluded": [
+     "E1 filing history 10-K=2 10-Q=5",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001039064",
+    "name": "TRAVEL SERVICES INTERNATIONAL INC",
+    "sic": "4700",
+    "sic_pool": "4700",
+    "excluded": [
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001039208",
+    "name": "800 TRAVEL SYSTEMS INC",
+    "sic": "4700",
+    "sic_pool": "4700",
+    "excluded": [
+     "E1 filing history 10-K=1 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001042727",
+    "name": "EATON J STEPHEN",
+    "sic": "4731",
+    "sic_pool": "4731",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001043277",
+    "name": "C. H. ROBINSON WORLDWIDE, INC.",
+    "sic": "4731",
+    "sic_pool": "4731",
+    "rev_pit": 17724956000,
+    "assets_pit": 5227854000,
+    "excluded": [
+     "S1 규모 밴드 |log|=1.502 > log4 (revenue)"
+    ]
+   },
+   {
+    "cik": "0001045341",
+    "name": "KNAUSS ROBERT L",
+    "sic": "4731",
+    "sic_pool": "4731",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001045342",
+    "name": "GOODCHILD JAMES W",
+    "sic": "4731",
+    "sic_pool": "4731",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001045343",
+    "name": "GROSSMAN DAVID A",
+    "sic": "4731",
+    "sic_pool": "4731",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001045427",
+    "name": "JOCHNICK ADOLF AF",
+    "sic": "4731",
+    "sic_pool": "4731",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001045428",
+    "name": "JOCHNICK JONAS AF",
+    "sic": "4731",
+    "sic_pool": "4731",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001045429",
+    "name": "DAVIER HOMI M",
+    "sic": "4731",
+    "sic_pool": "4731",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001045430",
+    "name": "GREGORY PAUL R",
+    "sic": "4731",
+    "sic_pool": "4731",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E4-v2 AAER 구문 적중 1건 (예: AAER-1796)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001045431",
+    "name": "PADEGS JURIS",
+    "sic": "4731",
+    "sic_pool": "4731",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001045432",
+    "name": "REYNOLDS TED",
+    "sic": "4731",
+    "sic_pool": "4731",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001045433",
+    "name": "SANDLER MORRIS A",
+    "sic": "4731",
+    "sic_pool": "4731",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001047121",
+    "name": "PREVIEW TRAVEL INC",
+    "sic": "4700",
+    "sic_pool": "4700",
+    "excluded": [
+     "E1 filing history 10-K=2 10-Q=6",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001055379",
+    "name": "ROBINSON RAY C JR & HOWARD CRAIG TRUSTEES",
+    "sic": "4731",
+    "sic_pool": "4731",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001055380",
+    "name": "CIRCLE INTERNATIONAL GROUP INC",
+    "sic": "4731",
+    "sic_pool": "4731",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001055452",
+    "name": "HARDWICK GREGORY G",
+    "sic": "4731",
+    "sic_pool": "4731",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001055455",
+    "name": "NAVIGANT INTERNATIONAL INC",
+    "sic": "4700",
+    "sic_pool": "4700",
+    "excluded": [
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001058786",
+    "name": "ONLINE VACATION CENTER HOLDINGS CORP",
+    "sic": "4700",
+    "sic_pool": "4700",
+    "excluded": [
+     "E1 filing history 10-K=2 10-Q=9",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001061202",
+    "name": "CLASSIC VACATION GROUP INC",
+    "sic": "4700",
+    "sic_pool": "4700",
+    "excluded": [
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001061255",
+    "name": "LOGISTICARE INC",
+    "sic": "4700",
+    "sic_pool": "4700",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001061857",
+    "name": "RAILWORKS CORP",
+    "sic": "4731",
+    "sic_pool": "4731",
+    "excluded": [
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001062372",
+    "name": "PACER INTERNATIONAL INC/ OLD",
+    "sic": "4731",
+    "sic_pool": "4731",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001068886",
+    "name": "AVIATION INDUSTRIES CORP",
+    "sic": "4700",
+    "sic_pool": "4700",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001069433",
+    "name": "AFFINITY INTERNATIONAL TRAVEL SYSTEMS INC",
+    "sic": "4700",
+    "sic_pool": "4700",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001070799",
+    "name": "OPTIMIZED TRANSPORTATION MANAGEMENT, INC.",
+    "sic": "4731",
+    "sic_pool": "4731",
+    "excluded": [
+     "E1 filing history 10-K=2 10-Q=9",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001072293",
+    "name": "ALLSTATES WORLDCARGO INC",
+    "sic": "4731",
+    "sic_pool": "4731",
+    "excluded": [
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001075531",
+    "name": "Booking Holdings Inc.",
+    "sic": "4700",
+    "sic_pool": "4700",
+    "rev_pit": 23739000000,
+    "assets_pit": 28752000000,
+    "excluded": [
+     "S1 규모 밴드 |log|=1.794 > log4 (revenue)"
+    ]
+   },
+   {
+    "cik": "0001076411",
+    "name": "CHEAP TICKETS INC",
+    "sic": "4700",
+    "sic_pool": "4700",
+    "excluded": [
+     "E1 filing history 10-K=2 10-Q=8",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001076505",
+    "name": "Solar Gold Ltd",
+    "sic": "4700",
+    "sic_pool": "4700",
+    "excluded": [
+     "E1 filing history 10-K=2 10-Q=7",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001079368",
+    "name": "CI4NET COM INC",
+    "sic": "4700",
+    "sic_pool": "4700",
+    "excluded": [
+     "E1 filing history 10-K=1 10-Q=3",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001081392",
+    "name": "TRAVELSCAPE COM INC",
+    "sic": "4700",
+    "sic_pool": "4700",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001082671",
+    "name": "NATIONS EXPRESS INC",
+    "sic": "4731",
+    "sic_pool": "4731",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001084140",
+    "name": "UNIGLOBE COM INC /CD",
+    "sic": "4700",
+    "sic_pool": "4700",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E1 FPI(20-F/40-F 전용)",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001085661",
+    "name": "Travelstar, Inc.",
+    "sic": "4700",
+    "sic_pool": "4700",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001089297",
+    "name": "NOVAGANT CORP",
+    "sic": "4700",
+    "sic_pool": "4700",
+    "excluded": [
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001091735",
+    "name": "PACER INTERNATIONAL INC",
+    "sic": "4731",
+    "sic_pool": "4731",
+    "excluded": [
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001092189",
+    "name": "INSIDER TRAVEL DEALS COM INC",
+    "sic": "4700",
+    "sic_pool": "4700",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001093546",
+    "name": "STONEPATH GROUP INC",
+    "sic": "4731",
+    "sic_pool": "4731",
+    "excluded": [
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001093819",
+    "name": "CARGO CONNECTION LOGISTICS HOLDING, INC.",
+    "sic": "4700",
+    "sic_pool": "4700",
+    "excluded": [
+     "E1 filing history 10-K=3 10-Q=6",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E4-v2 AAER 구문 적중 1건 (예: AAER-2936)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001095357",
+    "name": "EXPEDIA INC",
+    "sic": "4700",
+    "sic_pool": "4700",
+    "excluded": [
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001098128",
+    "name": "EBOOKERS    PLC",
+    "sic": "4700",
+    "sic_pool": "4700",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E1 FPI(20-F/40-F 전용)",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001114503",
+    "name": "SKYAUCTION COM INC",
+    "sic": "4700",
+    "sic_pool": "4700",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001116884",
+    "name": "ORDERPRO LOGISTICS INC",
+    "sic": "4731",
+    "sic_pool": "4731",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001121680",
+    "name": "NEWGISTICS, INC",
+    "sic": "4731",
+    "sic_pool": "4731",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001124807",
+    "name": "EZEE RIDER CORP",
+    "sic": "4731",
+    "sic_pool": "4731",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001124827",
+    "name": "UTi WORLDWIDE INC",
+    "sic": "4731",
+    "sic_pool": "4731",
+    "excluded": [
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001125254",
+    "name": "HIGH TECH TRAVEL SERVICES CORP",
+    "sic": "4700",
+    "sic_pool": "4700",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001170422",
+    "name": "WORLD INFORMATION TECHNOLOGY INC",
+    "sic": "4700",
+    "sic_pool": "4700",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E4-v2 AAER 구문 적중 2건 (예: AAER-3494)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001171155",
+    "name": "RADIANT LOGISTICS, INC",
+    "sic": "4731",
+    "sic_pool": "4731",
+    "excluded": [
+     "E5 Item 4.02 재작성 ['2022-10-04']"
+    ]
+   },
+   {
+    "cik": "0001173495",
+    "name": "ORBITZ INC",
+    "sic": "4700",
+    "sic_pool": "4700",
+    "excluded": [
+     "E1 filing history 10-K=1 10-Q=2",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001180926",
+    "name": "INTERNATIONAL FREIGHT LOGISTICS LTD",
+    "sic": "4731",
+    "sic_pool": "4731",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001181232",
+    "name": "SIRVA INC",
+    "sic": "4700",
+    "sic_pool": "4700",
+    "excluded": [
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001208815",
+    "name": "TRANCOM INDUSTRIES INC",
+    "sic": "4700",
+    "sic_pool": "4700",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001212570",
+    "name": "INVICTA GROUP INC",
+    "sic": "4700",
+    "sic_pool": "4700",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=3",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001218148",
+    "name": "BHC INC",
+    "sic": "4700",
+    "sic_pool": "4700",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001220754",
+    "name": "ModivCare Inc",
+    "sic": "4700",
+    "sic_pool": "4700",
+    "excluded": [
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001260833",
+    "name": "HOTWIRE INC",
+    "sic": "4700",
+    "sic_pool": "4700",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001268897",
+    "name": "NEW WAVE WINDMILLS CORP",
+    "sic": "4700",
+    "sic_pool": "4700",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001281845",
+    "name": "Unique Logistics International, Inc.",
+    "sic": "4731",
+    "sic_pool": "4731",
+    "excluded": [
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001283236",
+    "name": "WLG INC",
+    "sic": "4731",
+    "sic_pool": "4731",
+    "excluded": [
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001290903",
+    "name": "eLong, Inc.",
+    "sic": "4700",
+    "sic_pool": "4700",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E1 FPI(20-F/40-F 전용)",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001309541",
+    "name": "Triton Distribution Systems, Inc.",
+    "sic": "4700",
+    "sic_pool": "4700",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=2",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001311369",
+    "name": "China Infrastructure Investment CORP",
+    "sic": "4700",
+    "sic_pool": "4700",
+    "excluded": [
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001323280",
+    "name": "Progress Rail Services, Inc.",
+    "sic": "4700",
+    "sic_pool": "4700",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001329176",
+    "name": "CARGO CONNECTION LOGISTICS HOLDINGS INC",
+    "sic": "4700",
+    "sic_pool": "4700",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001336644",
+    "name": "UNIVERSAL TRAVEL GROUP",
+    "sic": "4700",
+    "sic_pool": "4700",
+    "excluded": [
+     "E3 비활동(18개월)",
+     "E4-v2 AAER 구문 적중 1건 (예: AAER-3494)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001338401",
+    "name": "Clark Holdings Inc.",
+    "sic": "4700",
+    "sic_pool": "4700",
+    "excluded": [
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E4-v2 AAER 구문 적중 1건 (예: AAER-1533)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001353371",
+    "name": "Pro Travel Network, Inc",
+    "sic": "4700",
+    "sic_pool": "4700",
+    "excluded": [
+     "E1 filing history 10-K=2 10-Q=3",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001368275",
+    "name": "W&E Source Corp.",
+    "sic": "4700",
+    "sic_pool": "4700",
+    "excluded": [
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001375911",
+    "name": "ISDERA NORTH AMERICA, INC.",
+    "sic": "4700",
+    "sic_pool": "4700",
+    "excluded": [
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001381341",
+    "name": "ecoTECH Energy Group Inc.",
+    "sic": "4700",
+    "sic_pool": "4700",
+    "excluded": [
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001386353",
+    "name": "Travelport Inc",
+    "sic": "4700",
+    "sic_pool": "4700",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001386355",
+    "name": "Travelport LTD",
+    "sic": "4700",
+    "sic_pool": "4700",
+    "excluded": [
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001386885",
+    "name": "LINC Logistics Co",
+    "sic": "4731",
+    "sic_pool": "4731",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001387327",
+    "name": "Hotels.com, L.P.",
+    "sic": "4700",
+    "sic_pool": "4700",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001387329",
+    "name": "Travelscape, LLC",
+    "sic": "4700",
+    "sic_pool": "4700",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001387332",
+    "name": "EAN.com, L.P.",
+    "sic": "4700",
+    "sic_pool": "4700",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001387333",
+    "name": "Hotels.com GP, LLC",
+    "sic": "4700",
+    "sic_pool": "4700",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001387335",
+    "name": "HRN 99 Holdings, LLC",
+    "sic": "4700",
+    "sic_pool": "4700",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001391594",
+    "name": "CEVA Investments Ltd",
+    "sic": "4731",
+    "sic_pool": "4731",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001394159",
+    "name": "Orbitz Worldwide, Inc.",
+    "sic": "4700",
+    "sic_pool": "4700",
+    "excluded": [
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001397966",
+    "name": "Winland Ocean Shipping Corp",
+    "sic": "4731",
+    "sic_pool": "4731",
+    "excluded": [
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001410187",
+    "name": "Cannonau Corp.",
+    "sic": "4700",
+    "sic_pool": "4700",
+    "excluded": [
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001422892",
+    "name": "Singularity Future Technology Ltd.",
+    "sic": "4731",
+    "sic_pool": "4731",
+    "excluded": [
+     "E4-v2 AAER 구문 적중 1건 (예: AAER-4557)",
+     "E5 Item 4.02 재작성 ['2023-03-01', '2023-03-06']"
+    ]
+   },
+   {
+    "cik": "0001424755",
+    "name": "Travelport Worldwide LTD",
+    "sic": "4700",
+    "sic_pool": "4700",
+    "excluded": [
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001426506",
+    "name": "SMG Industries Inc.",
+    "sic": "4700",
+    "sic_pool": "4700",
+    "excluded": [
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001426945",
+    "name": "Echo Global Logistics, Inc.",
+    "sic": "4731",
+    "sic_pool": "4731",
+    "excluded": [
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001427639",
+    "name": "ADEN SOLUTIONS INC.",
+    "sic": "4700",
+    "sic_pool": "4700",
+    "excluded": [
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001432950",
+    "name": "Israeli Historical Sight Seeing Co.",
+    "sic": "4700",
+    "sic_pool": "4700",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=2",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001440024",
+    "name": "Roadrunner Transportation Systems, Inc.",
+    "sic": "4731",
+    "sic_pool": "4731",
+    "excluded": [
+     "E3 비활동(18개월)",
+     "E4-v2 AAER 구문 적중 1건 (예: AAER-4375)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001454017",
+    "name": "China Golden Dragon Travel Group",
+    "sic": "4700",
+    "sic_pool": "4700",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001461783",
+    "name": "CHINA US EVENTS CORP",
+    "sic": "4700",
+    "sic_pool": "4700",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001463208",
+    "name": "Transportation & Logistics Systems, Inc.",
+    "sic": "4700",
+    "sic_pool": "4700",
+    "rev_pit": 7744477,
+    "assets_pit": 47433,
+    "excluded": [
+     "S1 규모 밴드 |log|=6.234 > log4 (revenue)"
+    ]
+   },
+   {
+    "cik": "0001472277",
+    "name": "KUN DE INTERNATIONAL HOLDINGS INC.",
+    "sic": "4731",
+    "sic_pool": "4731",
+    "excluded": [
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001481621",
+    "name": "Worldwide Transportation Inc.",
+    "sic": "4700",
+    "sic_pool": "4700",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001495028",
+    "name": "BASELINE PRODUCTIONS, INC.",
+    "sic": "4700",
+    "sic_pool": "4700",
+    "excluded": [
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001495153",
+    "name": "MakeMyTrip Ltd",
+    "sic": "4700",
+    "sic_pool": "4700",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E1 FPI(20-F/40-F 전용)",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년"
+    ]
+   },
+   {
+    "cik": "0001498232",
+    "name": "TripBorn, Inc.",
+    "sic": "4700",
+    "sic_pool": "4700",
+    "excluded": [
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001506042",
+    "name": "Navios South American Logistics Inc.",
+    "sic": "4731",
+    "sic_pool": "4731",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E1 FPI(20-F/40-F 전용)",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001506359",
+    "name": "Fortune Vacation Travel Ltd.",
+    "sic": "4700",
+    "sic_pool": "4700",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001512499",
+    "name": "LINDBLAD EXPEDITIONS HOLDINGS, INC.",
+    "sic": "4700",
+    "sic_pool": "4700",
+    "rev_pit": 266504000,
+    "assets_pit": 976534000,
+    "excluded": [
+     "S1 규모 밴드 |log|=2.695 > log4 (revenue)"
+    ]
+   },
+   {
+    "cik": "0001516899",
+    "name": "Yatra Online, Inc.",
+    "sic": "4700",
+    "sic_pool": "4700",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E1 FPI(20-F/40-F 전용)",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년"
+    ]
+   },
+   {
+    "cik": "0001521700",
+    "name": "GETAWAY2GOLFONLINE.COM",
+    "sic": "4700",
+    "sic_pool": "4700",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001528749",
+    "name": "San Lotus Holding Inc",
+    "sic": "4700",
+    "sic_pool": "4700",
+    "excluded": [
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001553784",
+    "name": "View on Two, Inc",
+    "sic": "4700",
+    "sic_pool": "4700",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001576206",
+    "name": "New Breed Holding Co",
+    "sic": "4700",
+    "sic_pool": "4700",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001589361",
+    "name": "White River Energy Corp.",
+    "sic": "4700",
+    "sic_pool": "4700",
+    "excluded": [
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001597095",
+    "name": "Tuniu Corp",
+    "sic": "4700",
+    "sic_pool": "4700",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E1 FPI(20-F/40-F 전용)",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년"
+    ]
+   },
+   {
+    "cik": "0001598097",
+    "name": "Privoz",
+    "sic": "4731",
+    "sic_pool": "4731",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001616113",
+    "name": "WWTE, Inc.",
+    "sic": "4700",
+    "sic_pool": "4700",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001623032",
+    "name": "EKLIPS CORP",
+    "sic": "4700",
+    "sic_pool": "4700",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001628871",
+    "name": "Tempus Applied Solutions Holdings, Inc.",
+    "sic": "4700",
+    "sic_pool": "4700",
+    "excluded": [
+     "E1 filing history 10-K=2 10-Q=8",
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001639143",
+    "name": "Sadiya Transport, Inc.",
+    "sic": "4700",
+    "sic_pool": "4700",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=3",
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001640304",
+    "name": "Cruise, LLC",
+    "sic": "4700",
+    "sic_pool": "4700",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001642453",
+    "name": "Daseke, Inc.",
+    "sic": "4700",
+    "sic_pool": "4700",
+    "excluded": [
+     "E3 비활동(18개월)",
+     "E5 Item 4.02 재작성 ['2021-04-22']",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001649313",
+    "name": "BW LPG Ltd",
+    "sic": "4700",
+    "sic_pool": "4700",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E1 FPI(20-F/40-F 전용)",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년"
+    ]
+   },
+   {
+    "cik": "0001654915",
+    "name": "Infinity (Int'l) Travel Holdings Inc.",
+    "sic": "4700",
+    "sic_pool": "4700",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001671077",
+    "name": "MED SPA VACATIONS INC.",
+    "sic": "4700",
+    "sic_pool": "4700",
+    "excluded": [
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001679450",
+    "name": "Hunter Maritime Acquisition Corp.",
+    "sic": "4731",
+    "sic_pool": "4731",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E1 FPI(20-F/40-F 전용)",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001682745",
+    "name": "VERRA MOBILITY Corp",
+    "sic": "4700",
+    "sic_pool": "4700",
+    "excluded": [
+     "E5 Item 4.02 재작성 ['2021-05-07']"
+    ]
+   },
+   {
+    "cik": "0001685237",
+    "name": "TEMIR CORP.",
+    "sic": "4700",
+    "sic_pool": "4700",
+    "excluded": [
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001687505",
+    "name": "Sinorama Corp",
+    "sic": "4700",
+    "sic_pool": "4700",
+    "excluded": [
+     "E1 filing history 10-K=2 10-Q=4",
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001687542",
+    "name": "Freight Technologies, Inc.",
+    "sic": "4731",
+    "sic_pool": "4731",
+    "excluded": [
+     "E1 filing history 10-K=1 10-Q=2",
+     "E6a 제출 이력 <3년"
+    ]
+   },
+   {
+    "cik": "0001697935",
+    "name": "MAPTELLIGENT, INC.",
+    "sic": "4700",
+    "sic_pool": "4700",
+    "excluded": [
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001703141",
+    "name": "Despegar.com, Corp.",
+    "sic": "4700",
+    "sic_pool": "4700",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E1 FPI(20-F/40-F 전용)",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001706946",
+    "name": "Virgin Galactic Holdings, Inc",
+    "sic": "4700",
+    "sic_pool": "4700",
+    "excluded": [
+     "E5 Item 4.02 재작성 ['2021-04-30']"
+    ]
+   },
+   {
+    "cik": "0001751707",
+    "name": "OZ VISION INC.",
+    "sic": "4700",
+    "sic_pool": "4700",
+    "excluded": [
+     "E4-v2 AAER 구문 적중 1건 (예: AAER-2137)",
+     "E5 Item 4.02 재작성 ['2024-05-22', '2024-06-24']"
+    ]
+   },
+   {
+    "cik": "0001761940",
+    "name": "Diamond S Shipping Inc.",
+    "sic": "4700",
+    "sic_pool": "4700",
+    "excluded": [
+     "E1 filing history 10-K=2 10-Q=7",
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001782037",
+    "name": "MingZhu Logistics Holdings Ltd",
+    "sic": "4700",
+    "sic_pool": "4700",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E1 FPI(20-F/40-F 전용)",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년"
+    ]
+   },
+   {
+    "cik": "0001787123",
+    "name": "QLY Biotech Group Corp.",
+    "sic": "4700",
+    "sic_pool": "4700",
+    "excluded": [
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001814329",
+    "name": "Astra Space, Inc.",
+    "sic": "4700",
+    "sic_pool": "4700",
+    "excluded": [
+     "E3 비활동(18개월)",
+     "E5 Item 4.02 재작성 ['2021-05-03', '2021-10-22']",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001815779",
+    "name": "Hafnia Ltd",
+    "sic": "4700",
+    "sic_pool": "4700",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E1 FPI(20-F/40-F 전용)",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년"
+    ]
+   },
+   {
+    "cik": "0001820872",
+    "name": "Global Business Travel Group, Inc.",
+    "sic": "4700",
+    "sic_pool": "4700",
+    "excluded": [
+     "E5 Item 4.02 재작성 ['2021-05-17', '2021-11-24']"
+    ]
+   },
+   {
+    "cik": "0001824211",
+    "name": "Astrea Acquisition Corp.",
+    "sic": "4700",
+    "sic_pool": "4700",
+    "excluded": [
+     "E1 filing history 10-K=1 10-Q=5",
+     "E3 비활동(18개월)",
+     "E5 Item 4.02 재작성 ['2021-12-27', '2022-04-15']",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001828852",
+    "name": "Mondee Holdings, Inc.",
+    "sic": "4700",
+    "sic_pool": "4700",
+    "excluded": [
+     "E5 Item 4.02 재작성 ['2021-11-19']",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001832765",
+    "name": "Edify Acquisition Corp.",
+    "sic": "4731",
+    "sic_pool": "4731",
+    "excluded": [
+     "E3 비활동(18개월)",
+     "E5 Item 4.02 재작성 ['2021-12-22']",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001867604",
+    "name": "EURO DOT, Inc.",
+    "sic": "4700",
+    "sic_pool": "4700",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001882958",
+    "name": "Transfix Holdings, Inc.",
+    "sic": "4731",
+    "sic_pool": "4731",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001898718",
+    "name": "GMR Solutions Inc.",
+    "sic": "4700",
+    "sic_pool": "4700",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년"
+    ]
+   },
+   {
+    "cik": "0001917890",
+    "name": "PSI Group Holdings Ltd.",
+    "sic": "4731",
+    "sic_pool": "4731",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001927719",
+    "name": "Freightos Ltd",
+    "sic": "4731",
+    "sic_pool": "4731",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E1 FPI(20-F/40-F 전용)",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년"
+    ]
+   },
+   {
+    "cik": "0001934387",
+    "name": "CGL Logistics Holdings Ltd",
+    "sic": "4731",
+    "sic_pool": "4731",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년"
+    ]
+   },
+   {
+    "cik": "0001938186",
+    "name": "Jayud Global Logistics Ltd",
+    "sic": "4731",
+    "sic_pool": "4731",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E1 FPI(20-F/40-F 전용)",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년"
+    ]
+   },
+   {
+    "cik": "0001947462",
+    "name": "Zergratran SA, Inc.",
+    "sic": "4700",
+    "sic_pool": "4700",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001968043",
+    "name": "New Century Logistics (BVI) Ltd",
+    "sic": "4731",
+    "sic_pool": "4731",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E1 FPI(20-F/40-F 전용)",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년"
+    ]
+   },
+   {
+    "cik": "0001978527",
+    "name": "Globavend Holdings Ltd",
+    "sic": "4731",
+    "sic_pool": "4731",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E1 FPI(20-F/40-F 전용)",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년"
+    ]
+   },
+   {
+    "cik": "0001987189",
+    "name": "Smart Logistics Global Ltd",
+    "sic": "4731",
+    "sic_pool": "4731",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E1 FPI(20-F/40-F 전용)",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년"
+    ]
+   },
+   {
+    "cik": "0001996192",
+    "name": "Lakeside Holding Ltd",
+    "sic": "4731",
+    "sic_pool": "4731",
+    "excluded": [
+     "E1 filing history 10-K=2 10-Q=4",
+     "E6a 제출 이력 <3년"
+    ]
+   },
+   {
+    "cik": "0001997201",
+    "name": "PS International Group Ltd.",
+    "sic": "4731",
+    "sic_pool": "4731",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E1 FPI(20-F/40-F 전용)",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년"
+    ]
+   },
+   {
+    "cik": "0001998768",
+    "name": "Proficient Auto Logistics, Inc",
+    "sic": "4700",
+    "sic_pool": "4700",
+    "excluded": [
+     "E1 filing history 10-K=1 10-Q=6",
+     "E6a 제출 이력 <3년"
+    ]
+   },
+   {
+    "cik": "0002003750",
+    "name": "Maitong Sunshine Cultural Development Co., Ltd",
+    "sic": "4700",
+    "sic_pool": "4700",
+    "excluded": [
+     "E1 filing history 10-K=2 10-Q=5",
+     "E6a 제출 이력 <3년"
+    ]
+   },
+   {
+    "cik": "0002006468",
+    "name": "NUSATRIP Inc",
+    "sic": "4700",
+    "sic_pool": "4700",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=2",
+     "E6a 제출 이력 <3년"
+    ]
+   },
+   {
+    "cik": "0002013320",
+    "name": "Eastern International Ltd.",
+    "sic": "4731",
+    "sic_pool": "4731",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년"
+    ]
+   },
+   {
+    "cik": "0002018836",
+    "name": "Transten Global Group Ltd",
+    "sic": "4731",
+    "sic_pool": "4731",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0002027160",
+    "name": "Vantage Corp (Singapore)",
+    "sic": "4731",
+    "sic_pool": "4731",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E1 FPI(20-F/40-F 전용)",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년"
+    ]
+   },
+   {
+    "cik": "0002047859",
+    "name": "Speed Group Holdings Ltd",
+    "sic": "4731",
+    "sic_pool": "4731",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년"
+    ]
+   },
+   {
+    "cik": "0002049348",
+    "name": "World Road Inc.",
+    "sic": "4731",
+    "sic_pool": "4731",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0002062925",
+    "name": "Smart Pointer Group Holdings Ltd",
+    "sic": "4731",
+    "sic_pool": "4731",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0002096205",
+    "name": "GXO Logistics Capital B.V.",
+    "sic": "4700",
+    "sic_pool": "4700",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0002097592",
+    "name": "NextTrip Privilege, Inc.",
+    "sic": "4700",
+    "sic_pool": "4700",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0002124478",
+    "name": "SMART KREATE GROUP Ltd",
+    "sic": "4731",
+    "sic_pool": "4731",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000746515",
+    "name": "EXPEDITORS INTERNATIONAL OF WASHINGTON INC",
+    "sic": "4731",
+    "sic_pool": "4731",
+    "rev_pit": 10600515000,
+    "assets_pit": 4779582000,
+    "size_dist": 0.9881,
+    "size_basis": "revenue",
+    "size_flags": [],
+    "fye": "1231",
+    "fye_month_dist": 0,
+    "sic_tier": 0,
+    "former_names": [],
+    "tickers": [
+     "EXPD"
+    ],
+    "rank": 6,
+    "excluded": [
+     "순위 밖 (rank 6)"
+    ]
+   },
+   {
+    "cik": "0001852244",
+    "name": "GXO Logistics, Inc.",
+    "sic": "4700",
+    "sic_pool": "4700",
+    "rev_pit": 11709000000,
+    "assets_pit": 11907000000,
+    "size_dist": 1.0876,
+    "size_basis": "revenue",
+    "size_flags": [],
+    "fye": "1231",
+    "fye_month_dist": 0,
+    "sic_tier": 1,
+    "former_names": [],
+    "tickers": [
+     "GXO"
+    ],
+    "rank": 7,
+    "excluded": [
+     "순위 밖 (rank 7)"
+    ]
+   },
+   {
+    "cik": "0001324424",
+    "name": "Expedia Group, Inc.",
+    "sic": "4700",
+    "sic_pool": "4700",
+    "rev_pit": 13691000000,
+    "assets_pit": 25108000000,
+    "size_dist": 1.2439,
+    "size_basis": "revenue",
+    "size_flags": [],
+    "fye": "1231",
+    "fye_month_dist": 0,
+    "sic_tier": 1,
+    "former_names": [
+     "Expedia, Inc."
+    ],
+    "tickers": [
+     "EXPE"
+    ],
+    "rank": 8,
+    "excluded": [
+     "순위 밖 (rank 8)"
+    ]
+   }
+  ],
+  "case_72": [
+   {
+    "cik": "0000003333",
+    "name": "ALBERTSONS INC /DE/",
+    "sic": "5411",
+    "sic_pool": "5411",
+    "excluded": [
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000004811",
+    "name": "AMERICAN CONSUMERS INC",
+    "sic": "5411",
+    "sic_pool": "5411",
+    "excluded": [
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000012105",
+    "name": "BIG V SUPERMARKETS INC",
+    "sic": "5411",
+    "sic_pool": "5411",
+    "excluded": [
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000013290",
+    "name": "BORMANS INC /DE/",
+    "sic": "5411",
+    "sic_pool": "5411",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000014920",
+    "name": "BRUNOS INC",
+    "sic": "5411",
+    "sic_pool": "5411",
+    "excluded": [
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000024602",
+    "name": "COPPS CORP",
+    "sic": "5411",
+    "sic_pool": "5411",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000025500",
+    "name": "CRAWFORD STORES INC",
+    "sic": "5411",
+    "sic_pool": "5411",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000028325",
+    "name": "GRISTEDES FOODS INC",
+    "sic": "5411",
+    "sic_pool": "5411",
+    "excluded": [
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000030908",
+    "name": "EAGLE FOOD CENTERS INC",
+    "sic": "5411",
+    "sic_pool": "5411",
+    "excluded": [
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000037912",
+    "name": "DELHAIZE AMERICA LLC",
+    "sic": "5411",
+    "sic_pool": "5411",
+    "excluded": [
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000037914",
+    "name": "FOODARAMA SUPERMARKETS, INC.",
+    "sic": "5411",
+    "sic_pool": "5411",
+    "excluded": [
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000041289",
+    "name": "GIANT FOOD INC",
+    "sic": "5411",
+    "sic_pool": "5411",
+    "excluded": [
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000043300",
+    "name": "GREAT ATLANTIC & PACIFIC TEA CO INC",
+    "sic": "5411",
+    "sic_pool": "5411",
+    "excluded": [
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000045379",
+    "name": "HANNAFORD BROTHERS CO",
+    "sic": "5411",
+    "sic_pool": "5411",
+    "excluded": [
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000050493",
+    "name": "INGLES MARKETS INC",
+    "sic": "5411",
+    "sic_pool": "5411",
+    "excluded": [
+     "E4-v2 AAER 구문 적중 1건 (예: AAER-2422)"
+    ]
+   },
+   {
+    "cik": "0000056873",
+    "name": "KROGER CO",
+    "sic": "5411",
+    "sic_pool": "5411",
+    "rev_pit": 147123000000,
+    "assets_pit": 51440000000,
+    "excluded": [
+     "S1 규모 밴드 |log|=3.424 > log4 (revenue)"
+    ]
+   },
+   {
+    "cik": "0000059461",
+    "name": "LIL CHAMP FOOD STORES INC",
+    "sic": "5411",
+    "sic_pool": "5411",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000059956",
+    "name": "LLOYDS SHOPPING CENTERS INC",
+    "sic": "5411",
+    "sic_pool": "5411",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000062737",
+    "name": "MARSH SUPERMARKETS INC",
+    "sic": "5411",
+    "sic_pool": "5411",
+    "excluded": [
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000077155",
+    "name": "PENN TRAFFIC CO",
+    "sic": "5411",
+    "sic_pool": "5411",
+    "excluded": [
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000081061",
+    "name": "PUBLIX SUPER MARKETS INC",
+    "sic": "5411",
+    "sic_pool": "5411",
+    "excluded": [
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000081942",
+    "name": "WESTERN BEEF INC /DE/",
+    "sic": "5411",
+    "sic_pool": "5411",
+    "excluded": [
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000085704",
+    "name": "HARRIS TEETER SUPERMARKETS, INC.",
+    "sic": "5411",
+    "sic_pool": "5411",
+    "excluded": [
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000086144",
+    "name": "SAFEWAY INC",
+    "sic": "5411",
+    "sic_pool": "5411",
+    "excluded": [
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000087588",
+    "name": "SCHULTZ SAV O STORES INC",
+    "sic": "5411",
+    "sic_pool": "5411",
+    "excluded": [
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000088296",
+    "name": "SEAWAY FOOD TOWN INC",
+    "sic": "5411",
+    "sic_pool": "5411",
+    "excluded": [
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000089926",
+    "name": "SHOPWELL INC",
+    "sic": "5411",
+    "sic_pool": "5411",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000090811",
+    "name": "AMERICAN STORES CO /NEW/",
+    "sic": "5411",
+    "sic_pool": "5411",
+    "excluded": [
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000095585",
+    "name": "PATHMARK STORES INC",
+    "sic": "5411",
+    "sic_pool": "5411",
+    "excluded": [
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000104184",
+    "name": "WALDBAUM INC",
+    "sic": "5411",
+    "sic_pool": "5411",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000105418",
+    "name": null,
+    "sic": null,
+    "sic_pool": "5411",
+    "excluded": [
+     "E7 실험군/후보 풀 자기 배제"
+    ]
+   },
+   {
+    "cik": "0000107681",
+    "name": "WINN DIXIE STORES INC",
+    "sic": "5411",
+    "sic_pool": "5411",
+    "excluded": [
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000225051",
+    "name": "ARDEN GROUP INC",
+    "sic": "5411",
+    "sic_pool": "5411",
+    "excluded": [
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000316236",
+    "name": "GRAND UNION CO /DE/",
+    "sic": "5411",
+    "sic_pool": "5411",
+    "excluded": [
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000317030",
+    "name": "GENERAL NUTRITION INC",
+    "sic": "5400",
+    "sic_pool": "5400",
+    "excluded": [
+     "E1 filing history 10-K=1 10-Q=1",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000715357",
+    "name": "FARM FRESH INC",
+    "sic": "5411",
+    "sic_pool": "5411",
+    "excluded": [
+     "E1 filing history 10-K=1 10-Q=5",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000715633",
+    "name": "VONS COMPANIES INC",
+    "sic": "5411",
+    "sic_pool": "5411",
+    "excluded": [
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000729970",
+    "name": "DELCHAMPS INC",
+    "sic": "5411",
+    "sic_pool": "5411",
+    "excluded": [
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000781885",
+    "name": "GRAND PEAK CAPITAL CORP.",
+    "sic": "5411",
+    "sic_pool": "5411",
+    "excluded": [
+     "E1 filing history 10-K=2 10-Q=8",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000789878",
+    "name": "AVASOFT, INC.",
+    "sic": "5400",
+    "sic_pool": "5400",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000802840",
+    "name": "SAFEWAY CANADA HOLDINGS INC",
+    "sic": "5411",
+    "sic_pool": "5411",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000802842",
+    "name": "SAFEWAY AUSTRALIA HOLDINGS INC",
+    "sic": "5411",
+    "sic_pool": "5411",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000803114",
+    "name": "SSI EQUITY ASSOCIATES L P",
+    "sic": "5411",
+    "sic_pool": "5411",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000804333",
+    "name": "QUALITY FOOD CENTERS INC",
+    "sic": "5411",
+    "sic_pool": "5411",
+    "excluded": [
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000808047",
+    "name": "QKL Stores Inc.",
+    "sic": "5411",
+    "sic_pool": "5411",
+    "excluded": [
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000821139",
+    "name": "SUPERMARKETS GENERAL HOLDINGS CORP",
+    "sic": "5411",
+    "sic_pool": "5411",
+    "excluded": [
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000830746",
+    "name": "MIDLAND INC",
+    "sic": "5400",
+    "sic_pool": "5400",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E4-v2 AAER 구문 적중 1건 (예: AAER-4582)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000832177",
+    "name": "RISER FOODS INC /DE/",
+    "sic": "5411",
+    "sic_pool": "5411",
+    "excluded": [
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000835582",
+    "name": "HOMELAND HOLDING CORP",
+    "sic": "5411",
+    "sic_pool": "5411",
+    "excluded": [
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000835583",
+    "name": "HOMELAND STORES INC",
+    "sic": "5400",
+    "sic_pool": "5400",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000835676",
+    "name": "RALPHS GROCERY CO /DE/",
+    "sic": "5411",
+    "sic_pool": "5411",
+    "excluded": [
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000835678",
+    "name": "FALLEYS INC /KS/",
+    "sic": "5400",
+    "sic_pool": "5400",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000836023",
+    "name": "RALPHS GROCERY CO",
+    "sic": "5411",
+    "sic_pool": "5411",
+    "excluded": [
+     "E1 filing history 10-K=2 10-Q=4",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000838196",
+    "name": "CALA FOODS INC",
+    "sic": "5411",
+    "sic_pool": "5411",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000838448",
+    "name": "FF HOLDINGS CORP",
+    "sic": "5411",
+    "sic_pool": "5411",
+    "excluded": [
+     "E1 filing history 10-K=1 10-Q=5",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000842913",
+    "name": "KASH N KARRY FOOD STORES, INC.",
+    "sic": "5411",
+    "sic_pool": "5411",
+    "excluded": [
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000843087",
+    "name": "ABCO MARKETS INC /AZ/",
+    "sic": "5411",
+    "sic_pool": "5411",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000846340",
+    "name": "MOTTS HOLDINGS INC",
+    "sic": "5411",
+    "sic_pool": "5411",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000850309",
+    "name": "SMITHS FOOD & DRUG CENTERS INC",
+    "sic": "5411",
+    "sic_pool": "5411",
+    "excluded": [
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000857136",
+    "name": "GENERAL NUTRITION CORP",
+    "sic": "5400",
+    "sic_pool": "5400",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000858994",
+    "name": "GENERAL NUTRITION INVESTMENT CO",
+    "sic": "5400",
+    "sic_pool": "5400",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000858995",
+    "name": "GENERAL NUTRITION INTERNATIONAL INC",
+    "sic": "5400",
+    "sic_pool": "5400",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000865436",
+    "name": "WHOLE FOODS MARKET INC",
+    "sic": "5411",
+    "sic_pool": "5411",
+    "excluded": [
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000869425",
+    "name": "Royal Ahold Delhaize",
+    "sic": "5411",
+    "sic_pool": "5411",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E1 FPI(20-F/40-F 전용)",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000871891",
+    "name": "CARR GOTTSTEIN FOODS CO",
+    "sic": "5411",
+    "sic_pool": "5411",
+    "excluded": [
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000880120",
+    "name": "GENERAL NUTRITION COMPANIES INC",
+    "sic": "5400",
+    "sic_pool": "5400",
+    "excluded": [
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000880267",
+    "name": "STOP & SHOP COMPANIES INC /DE/",
+    "sic": "5411",
+    "sic_pool": "5411",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=1",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000880800",
+    "name": "ALPHA BETA COMPANY",
+    "sic": "5411",
+    "sic_pool": "5411",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000880801",
+    "name": "BELL MARKETS INC",
+    "sic": "5411",
+    "sic_pool": "5411",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000880803",
+    "name": "CALA CO",
+    "sic": "5411",
+    "sic_pool": "5411",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000880823",
+    "name": "FOOD 4 LESS OF CALIFORNIA INC",
+    "sic": "5411",
+    "sic_pool": "5411",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000880824",
+    "name": "FOOD 4 LESS MERCHANDISING INC",
+    "sic": "5411",
+    "sic_pool": "5411",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000880825",
+    "name": "FOOD 4 LESS OF SOUTHERN CALIFORNIA INC",
+    "sic": "5411",
+    "sic_pool": "5411",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000882256",
+    "name": "BUTTREY FOOD & DRUG STORES CO",
+    "sic": "5411",
+    "sic_pool": "5411",
+    "excluded": [
+     "E1 filing history 10-K=2 10-Q=8",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000882596",
+    "name": "CONTROLADORA COMERCIAL MEXICANAS S A DE C V /FI",
+    "sic": "5411",
+    "sic_pool": "5411",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000882829",
+    "name": "STATER BROS HOLDINGS INC",
+    "sic": "5411",
+    "sic_pool": "5411",
+    "excluded": [
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000886141",
+    "name": "FOOD 4 LESS GM INC",
+    "sic": "5411",
+    "sic_pool": "5411",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000888139",
+    "name": "MEGAFOODS STORES INC",
+    "sic": "5411",
+    "sic_pool": "5411",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000898470",
+    "name": "FOOD 4 LESS HOLDINGS INC /CA/",
+    "sic": "5411",
+    "sic_pool": "5411",
+    "excluded": [
+     "E1 filing history 10-K=1 10-Q=2",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000899755",
+    "name": "HURRY INC",
+    "sic": "5411",
+    "sic_pool": "5411",
+    "excluded": [
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000906307",
+    "name": "NUTRITIONAL SOURCING CORP",
+    "sic": "5411",
+    "sic_pool": "5411",
+    "excluded": [
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000910676",
+    "name": "HOUCHENS INDUSTRIES INC /KY/",
+    "sic": "5411",
+    "sic_pool": "5411",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000914761",
+    "name": "CUMBERLAND FARMS INC",
+    "sic": "5411",
+    "sic_pool": "5411",
+    "excluded": [
+     "E1 filing history 10-K=2 10-Q=5",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000927288",
+    "name": "FRESH BRANDS DISTRIBUTING INC  RETIREMENT SAVINGS PLAN",
+    "sic": "5411",
+    "sic_pool": "5411",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000927729",
+    "name": "DICKELMAN HOWARD C",
+    "sic": "5411",
+    "sic_pool": "5411",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000927773",
+    "name": "SMITTYS SUPER VALU INC",
+    "sic": "5411",
+    "sic_pool": "5411",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000927774",
+    "name": "SMITTYS SUPERMARKETS INC",
+    "sic": "5411",
+    "sic_pool": "5411",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000930309",
+    "name": "DELHAIZE GROUP",
+    "sic": "5411",
+    "sic_pool": "5411",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E1 FPI(20-F/40-F 전용)",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000932550",
+    "name": "SAINT LAWRENCE HOLDING CO",
+    "sic": "5411",
+    "sic_pool": "5411",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000932721",
+    "name": "BAY AREA WAREHOUSE STORES INC",
+    "sic": "5411",
+    "sic_pool": "5411",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000933086",
+    "name": "COMPARE INC",
+    "sic": "5411",
+    "sic_pool": "5411",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000933160",
+    "name": "STAR MARKETS CO INC",
+    "sic": "5411",
+    "sic_pool": "5411",
+    "excluded": [
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000936523",
+    "name": "FOOD 4 LESS HOLDINGS INC /DE/",
+    "sic": "5411",
+    "sic_pool": "5411",
+    "excluded": [
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000940890",
+    "name": "SKAGGS L S",
+    "sic": "5411",
+    "sic_pool": "5411",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000943563",
+    "name": "Dominick's Supermarkets, LLC",
+    "sic": "5411",
+    "sic_pool": "5411",
+    "excluded": [
+     "E1 filing history 10-K=2 10-Q=6",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000945800",
+    "name": "DOMINICKS FINER FOODS, LLC",
+    "sic": "5411",
+    "sic_pool": "5411",
+    "excluded": [
+     "E1 filing history 10-K=1 10-Q=5",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000947462",
+    "name": "SANTA ISABEL INC",
+    "sic": "5411",
+    "sic_pool": "5411",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E1 FPI(20-F/40-F 전용)",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000947661",
+    "name": "DIEDRICH COFFEE INC",
+    "sic": "5400",
+    "sic_pool": "5400",
+    "excluded": [
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001005408",
+    "name": "JITNEY JUNGLE STORES OF AMERICA INC /MI/",
+    "sic": "5411",
+    "sic_pool": "5411",
+    "excluded": [
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001009866",
+    "name": "DISCO SA",
+    "sic": "5411",
+    "sic_pool": "5411",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E1 FPI(20-F/40-F 전용)",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001036510",
+    "name": "UNIMARC SUPERMARKETS INC",
+    "sic": "5411",
+    "sic_pool": "5411",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E1 FPI(20-F/40-F 전용)",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001038572",
+    "name": "BRAZILIAN DISTRIBUTION CO COMPANHIA BRASILEIRA DE DISTR CBD",
+    "sic": "5411",
+    "sic_pool": "5411",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E1 FPI(20-F/40-F 전용)",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001040033",
+    "name": "HUGHES MARKETS INC",
+    "sic": "5411",
+    "sic_pool": "5411",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001040034",
+    "name": "KU ACQUISITION CORP",
+    "sic": "5411",
+    "sic_pool": "5411",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E4-v2 AAER 구문 적중 2건 (예: AAER-4443)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001040035",
+    "name": "QUALITY FOOD HOLDINGS INC",
+    "sic": "5411",
+    "sic_pool": "5411",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001042564",
+    "name": "RANDALLS FOOD MARKETS INC",
+    "sic": "5411",
+    "sic_pool": "5411",
+    "excluded": [
+     "E1 filing history 10-K=2 10-Q=5",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001042811",
+    "name": "QUALITY FOOD INC",
+    "sic": "5411",
+    "sic_pool": "5411",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001043065",
+    "name": "SHOPPERS FOOD WAREHOUSE CORP",
+    "sic": "5411",
+    "sic_pool": "5411",
+    "excluded": [
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001043066",
+    "name": "SFW HOLDING CORP",
+    "sic": "5411",
+    "sic_pool": "5411",
+    "excluded": [
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001043482",
+    "name": "MRS FIELDS ORIGINAL COOKIES INC",
+    "sic": "5400",
+    "sic_pool": "5400",
+    "excluded": [
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001045315",
+    "name": "MARSH CLEARING HOUSE LLC",
+    "sic": "5411",
+    "sic_pool": "5411",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001045317",
+    "name": "MARSH DRUGS LLC",
+    "sic": "5411",
+    "sic_pool": "5411",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001045321",
+    "name": "LOBILL FOODS LLC",
+    "sic": "5411",
+    "sic_pool": "5411",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001045324",
+    "name": "NORTH MARION DEVELOPMENT CORP",
+    "sic": "5411",
+    "sic_pool": "5411",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001045326",
+    "name": "MARSH INTERNATIONAL INC",
+    "sic": "5411",
+    "sic_pool": "5411",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001045327",
+    "name": "MARSH P Q INC",
+    "sic": "5411",
+    "sic_pool": "5411",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001045328",
+    "name": "MUNDY REALTY INC",
+    "sic": "5411",
+    "sic_pool": "5411",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001045329",
+    "name": "MAR PROPERTIES INC",
+    "sic": "5411",
+    "sic_pool": "5411",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001045330",
+    "name": "MAR LEASE INC",
+    "sic": "5411",
+    "sic_pool": "5411",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001045331",
+    "name": "LIMITED HOLDINGS INC",
+    "sic": "5411",
+    "sic_pool": "5411",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001046247",
+    "name": "DISTRIBUTION & SERVICE D&S SA",
+    "sic": "5411",
+    "sic_pool": "5411",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E1 FPI(20-F/40-F 전용)",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001051777",
+    "name": "SANDHILLS INC",
+    "sic": "5411",
+    "sic_pool": "5411",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001052671",
+    "name": "Welwind Energy International CORP",
+    "sic": "5400",
+    "sic_pool": "5400",
+    "excluded": [
+     "E1 filing history 10-K=2 10-Q=9",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001067944",
+    "name": "TM GROUP HOLDINGS PLC",
+    "sic": "5411",
+    "sic_pool": "5411",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E1 FPI(20-F/40-F 전용)",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001077014",
+    "name": "AHOLD FINANCE USA INC",
+    "sic": "5411",
+    "sic_pool": "5411",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001080426",
+    "name": "HOLMES BIOPHARMA, INC.",
+    "sic": "5400",
+    "sic_pool": "5400",
+    "excluded": [
+     "E1 filing history 10-K=1 10-Q=1",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001090156",
+    "name": "VITAMINSHOPPE COM INC",
+    "sic": "5400",
+    "sic_pool": "5400",
+    "excluded": [
+     "E1 filing history 10-K=2 10-Q=4",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001090950",
+    "name": "PIKES PEAK ACQUISITIONS COM INC",
+    "sic": "5400",
+    "sic_pool": "5400",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001097453",
+    "name": "JEREMYS MICROBATCH ICE CREAMS INC",
+    "sic": "5400",
+    "sic_pool": "5400",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001100270",
+    "name": "KRISPY KREME DOUGHNUTS INC",
+    "sic": "5400",
+    "sic_pool": "5400",
+    "excluded": [
+     "E3 비활동(18개월)",
+     "E4-v2 AAER 구문 적중 1건 (예: AAER-2941)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001106971",
+    "name": "VITAMIN SHOPPE INDUSTRIES",
+    "sic": "5400",
+    "sic_pool": "5400",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001110782",
+    "name": "UCELLIT COM INC",
+    "sic": "5400",
+    "sic_pool": "5400",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001122887",
+    "name": "JAVA DETOUR INC.",
+    "sic": "5400",
+    "sic_pool": "5400",
+    "excluded": [
+     "E1 filing history 10-K=1 10-Q=6",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001122999",
+    "name": "XIANG INC",
+    "sic": "5400",
+    "sic_pool": "5400",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001123001",
+    "name": "BELFLEUR INC",
+    "sic": "5400",
+    "sic_pool": "5400",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001123424",
+    "name": "LIFESTREAM INC",
+    "sic": "5400",
+    "sic_pool": "5400",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001123425",
+    "name": "SYNTEC BIOFUEL INC",
+    "sic": "5400",
+    "sic_pool": "5400",
+    "excluded": [
+     "E1 filing history 10-K=2 10-Q=7",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001135431",
+    "name": "FRESH BRANDS INC",
+    "sic": "5411",
+    "sic_pool": "5411",
+    "excluded": [
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001136824",
+    "name": "ORNALI GROUP INC",
+    "sic": "5400",
+    "sic_pool": "5400",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001137375",
+    "name": "PKH ENTERPRISES INC",
+    "sic": "5400",
+    "sic_pool": "5400",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001143040",
+    "name": "EFFECTIVE SPORT NUTRITION CORP",
+    "sic": "5400",
+    "sic_pool": "5400",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001144499",
+    "name": "GLOBAL LIFE SCIENCES INC",
+    "sic": "5411",
+    "sic_pool": "5411",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001159464",
+    "name": "Green PolkaDot Box Inc",
+    "sic": "5400",
+    "sic_pool": "5400",
+    "excluded": [
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001162418",
+    "name": "AHOLD LEASE USA INC",
+    "sic": "5411",
+    "sic_pool": "5411",
+    "excluded": [
+     "E1 filing history 10-K=1 10-Q=1",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001273886",
+    "name": "GNC CORP",
+    "sic": "5400",
+    "sic_pool": "5400",
+    "excluded": [
+     "E1 filing history 10-K=2 10-Q=7",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001278156",
+    "name": "COUCHE TARD US LP",
+    "sic": "5411",
+    "sic_pool": "5411",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001286040",
+    "name": "GNC FRANCHISING LLC",
+    "sic": "5400",
+    "sic_pool": "5400",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001286042",
+    "name": "GNC US DELAWARE INC",
+    "sic": "5400",
+    "sic_pool": "5400",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001286044",
+    "name": "NUTRA MANUFACTURING, INC",
+    "sic": "5400",
+    "sic_pool": "5400",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001286045",
+    "name": "GENERAL NUTRITION CENTERS, INC.",
+    "sic": "5400",
+    "sic_pool": "5400",
+    "excluded": [
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001288407",
+    "name": "MRS FIELDS FAMOUS BRANDS LLC",
+    "sic": "5400",
+    "sic_pool": "5400",
+    "excluded": [
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001314592",
+    "name": "Teavana Holdings Inc",
+    "sic": "5400",
+    "sic_pool": "5400",
+    "excluded": [
+     "E1 filing history 10-K=1 10-Q=5",
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001357292",
+    "name": "FSM-Delaware, Inc.",
+    "sic": "5411",
+    "sic_pool": "5411",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001360395",
+    "name": "VS DIRECT INC.",
+    "sic": "5400",
+    "sic_pool": "5400",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001360530",
+    "name": "Vitamin Shoppe, Inc.",
+    "sic": "5400",
+    "sic_pool": "5400",
+    "excluded": [
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001364208",
+    "name": "Zevotek, Inc",
+    "sic": "5400",
+    "sic_pool": "5400",
+    "excluded": [
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001375554",
+    "name": "Bill The Butcher, Inc.",
+    "sic": "5400",
+    "sic_pool": "5400",
+    "excluded": [
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001381240",
+    "name": "GSRX INDUSTRIES INC.",
+    "sic": "5400",
+    "sic_pool": "5400",
+    "excluded": [
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001436314",
+    "name": "HERB-VITA, INC.",
+    "sic": "5400",
+    "sic_pool": "5400",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001449112",
+    "name": "PHOENIX FINANCIAL HOLDINGS INC",
+    "sic": "5411",
+    "sic_pool": "5411",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001476719",
+    "name": "Crumbs Bake Shop, Inc.",
+    "sic": "5400",
+    "sic_pool": "5400",
+    "excluded": [
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001483173",
+    "name": "Tops Holding LLC",
+    "sic": "5411",
+    "sic_pool": "5411",
+    "excluded": [
+     "E1 filing history 10-K=2 10-Q=7",
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001489979",
+    "name": "Fresh Market, Inc.",
+    "sic": "5411",
+    "sic_pool": "5411",
+    "excluded": [
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001492135",
+    "name": "Global Stevia Corp.",
+    "sic": "5400",
+    "sic_pool": "5400",
+    "excluded": [
+     "E1 filing history 10-K=2 10-Q=6",
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001495765",
+    "name": "Tops Gift Card Company, LLC",
+    "sic": "5411",
+    "sic_pool": "5411",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001495766",
+    "name": "Tops Markets, LLC",
+    "sic": "5411",
+    "sic_pool": "5411",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001495767",
+    "name": "Tops PT, LLC",
+    "sic": "5411",
+    "sic_pool": "5411",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001502034",
+    "name": "GNC HOLDINGS, INC.",
+    "sic": "5400",
+    "sic_pool": "5400",
+    "excluded": [
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001522697",
+    "name": "Quantagen Biotech Inc",
+    "sic": "5400",
+    "sic_pool": "5400",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001523486",
+    "name": "MOJO DATA SOLUTIONS, INC.",
+    "sic": "5400",
+    "sic_pool": "5400",
+    "excluded": [
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001536035",
+    "name": "Roundy's, Inc.",
+    "sic": "5411",
+    "sic_pool": "5411",
+    "excluded": [
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001555492",
+    "name": "Fairway Group Holdings Corp",
+    "sic": "5411",
+    "sic_pool": "5411",
+    "excluded": [
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001563407",
+    "name": "Smart & Final Stores, Inc.",
+    "sic": "5411",
+    "sic_pool": "5411",
+    "excluded": [
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001570132",
+    "name": "ANVI GLOBAL HOLDINGS, INC.",
+    "sic": "5400",
+    "sic_pool": "5400",
+    "rev_pit": 137910,
+    "assets_pit": 2762,
+    "excluded": [
+     "S1 규모 밴드 |log|=10.456 > log4 (revenue)"
+    ]
+   },
+   {
+    "cik": "0001584701",
+    "name": "TOPS HOLDING II CORP",
+    "sic": "5411",
+    "sic_pool": "5411",
+    "excluded": [
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001585573",
+    "name": "LORILAY CORP.",
+    "sic": "5400",
+    "sic_pool": "5400",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001587205",
+    "name": "Southeastern Grocers, Inc.",
+    "sic": "5411",
+    "sic_pool": "5411",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001627606",
+    "name": "DAVIDsTEA Inc.",
+    "sic": "5400",
+    "sic_pool": "5400",
+    "excluded": [
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001646972",
+    "name": "Albertsons Companies, Inc.",
+    "sic": "5411",
+    "sic_pool": "5411",
+    "rev_pit": 80390900000,
+    "assets_pit": 27093300000,
+    "excluded": [
+     "S1 규모 밴드 |log|=2.820 > log4 (revenue)"
+    ]
+   },
+   {
+    "cik": "0001659910",
+    "name": "Save-A-Lot, Inc.",
+    "sic": "5411",
+    "sic_pool": "5411",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001681941",
+    "name": "iFresh Inc",
+    "sic": "5411",
+    "sic_pool": "5411",
+    "excluded": [
+     "E3 비활동(18개월)",
+     "E5 Item 4.02 재작성 ['2021-07-21', '2021-10-27']",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001696728",
+    "name": "ZipMesh, Inc.",
+    "sic": "5411",
+    "sic_pool": "5411",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001704956",
+    "name": "Albertsons Companies, LLC",
+    "sic": "5411",
+    "sic_pool": "5411",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=3",
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001724070",
+    "name": "Tal Consolidated Inc.",
+    "sic": "5411",
+    "sic_pool": "5411",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001754175",
+    "name": "Erie Logistics LLC",
+    "sic": "5411",
+    "sic_pool": "5411",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001754717",
+    "name": "TM1, LLC",
+    "sic": "5411",
+    "sic_pool": "5411",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001814974",
+    "name": "BBX Capital, Inc.",
+    "sic": "5400",
+    "sic_pool": "5400",
+    "rev_pit": 298014000,
+    "assets_pit": 603014000,
+    "excluded": [
+     "S1 규모 밴드 |log|=2.778 > log4 (revenue)"
+    ]
+   },
+   {
+    "cik": "0001824123",
+    "name": "Sugarfina Corp",
+    "sic": "5400",
+    "sic_pool": "5400",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001828650",
+    "name": "Long Mall Internet Technology Co Ltd",
+    "sic": "5400",
+    "sic_pool": "5400",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=1",
+     "E3 비활동(18개월)",
+     "E5 Item 4.02 재작성 ['2021-11-24']",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001834048",
+    "name": "Sendas Distributor S.A.",
+    "sic": "5411",
+    "sic_pool": "5411",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E1 FPI(20-F/40-F 전용)",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년"
+    ]
+   },
+   {
+    "cik": "0001850030",
+    "name": "Fresh Market Holdings, Inc.",
+    "sic": "5411",
+    "sic_pool": "5411",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001857154",
+    "name": "Krispy Kreme, Inc.",
+    "sic": "5400",
+    "sic_pool": "5400",
+    "excluded": [
+     "E4-v2 AAER 구문 적중 1건 (예: AAER-2941)"
+    ]
+   },
+   {
+    "cik": "0001859836",
+    "name": "Yesway, Inc.",
+    "sic": "5411",
+    "sic_pool": "5411",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년"
+    ]
+   },
+   {
+    "cik": "0001869083",
+    "name": "Panera Brands, Inc.",
+    "sic": "5400",
+    "sic_pool": "5400",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001892292",
+    "name": "Maison Solutions Inc.",
+    "sic": "5411",
+    "sic_pool": "5411",
+    "excluded": [
+     "E5 Item 4.02 재작성 ['2025-08-13']",
+     "E6a 제출 이력 <3년"
+    ]
+   },
+   {
+    "cik": "0001948864",
+    "name": "HEALTHY CHOICE WELLNESS CORP.",
+    "sic": "5411",
+    "sic_pool": "5411",
+    "excluded": [
+     "E1 filing history 10-K=1 10-Q=4",
+     "E6a 제출 이력 <3년"
+    ]
+   },
+   {
+    "cik": "0001969108",
+    "name": "Veg House Holdings Inc.",
+    "sic": "5411",
+    "sic_pool": "5411",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001978954",
+    "name": "BBB FOODS INC",
+    "sic": "5411",
+    "sic_pool": "5411",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E1 FPI(20-F/40-F 전용)",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년"
+    ]
+   },
+   {
+    "cik": "0002023797",
+    "name": "JICAIBA HOLDINGS LTD",
+    "sic": "5400",
+    "sic_pool": "5400",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   }
+  ],
+  "case_73": [
+   {
+    "cik": "0000007286",
+    "name": "ARIZONA PUBLIC SERVICE CO",
+    "sic": "4931",
+    "sic_pool": "4931",
+    "excluded": [
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000009466",
+    "name": "BALTIMORE GAS & ELECTRIC CO",
+    "sic": "4931",
+    "sic_pool": "4931",
+    "excluded": [
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000017797",
+    "name": "DUKE ENERGY PROGRESS, LLC.",
+    "sic": "4931",
+    "sic_pool": "4931",
+    "excluded": [
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000018647",
+    "name": "CENTRAL HUDSON GAS & ELECTRIC CORP",
+    "sic": "4931",
+    "sic_pool": "4931",
+    "excluded": [
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000018651",
+    "name": "CENTRAL ILLINOIS LIGHT CO",
+    "sic": "4931",
+    "sic_pool": "4931",
+    "excluded": [
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000018654",
+    "name": "Ameren Illinois Co",
+    "sic": "4931",
+    "sic_pool": "4931",
+    "excluded": [
+     "companyfacts 수집 실패: 404 Client Error: Not Found for url: https://data.sec.gov/api/xbrl/companyfacts/CIK0000018654.json"
+    ]
+   },
+   {
+    "cik": "0000020290",
+    "name": "Duke Energy Ohio, Inc.",
+    "sic": "4931",
+    "sic_pool": "4931",
+    "excluded": [
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000023632",
+    "name": "CONSOLIDATED EDISON CO OF NEW YORK INC",
+    "sic": "4931",
+    "sic_pool": "4931",
+    "excluded": [
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000027430",
+    "name": "DAYTON POWER & LIGHT CO",
+    "sic": "4931",
+    "sic_pool": "4931",
+    "excluded": [
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000027879",
+    "name": "DELMARVA POWER & LIGHT CO /DE/",
+    "sic": "4931",
+    "sic_pool": "4931",
+    "excluded": [
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000037248",
+    "name": "FITCHBURG GAS & ELECTRIC LIGHT CO",
+    "sic": "4931",
+    "sic_pool": "4931",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000037643",
+    "name": "FLORIDA PUBLIC UTILITIES CO",
+    "sic": "4931",
+    "sic_pool": "4931",
+    "excluded": [
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000049448",
+    "name": "HYDRO QUEBEC",
+    "sic": "4900",
+    "sic_pool": "4900",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000049816",
+    "name": "ILLINOIS POWER CO",
+    "sic": "4931",
+    "sic_pool": "4931",
+    "excluded": [
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000051720",
+    "name": "INTERSTATE POWER CO",
+    "sic": "4931",
+    "sic_pool": "4931",
+    "excluded": [
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000052485",
+    "name": "INTERSTATE POWER & LIGHT CO",
+    "sic": "4931",
+    "sic_pool": "4931",
+    "excluded": [
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000052491",
+    "name": "IOWA ILLINOIS GAS & ELECTRIC CO",
+    "sic": "4931",
+    "sic_pool": "4931",
+    "excluded": [
+     "E1 filing history 10-K=2 10-Q=4",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000052508",
+    "name": "IOWA SOUTHERN UTILITIES CO",
+    "sic": "4931",
+    "sic_pool": "4931",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000054507",
+    "name": "EVERGY KANSAS CENTRAL, INC.",
+    "sic": "4931",
+    "sic_pool": "4931",
+    "excluded": [
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000055373",
+    "name": "KENTUCKY POWER CO",
+    "sic": "4931",
+    "sic_pool": "4931",
+    "excluded": [
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000060251",
+    "name": "LONG ISLAND LIGHTING CO",
+    "sic": "4931",
+    "sic_pool": "4931",
+    "excluded": [
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000060549",
+    "name": "LOUISVILLE GAS & ELECTRIC CO /KY/",
+    "sic": "4931",
+    "sic_pool": "4931",
+    "excluded": [
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000061339",
+    "name": "MADISON GAS & ELECTRIC CO",
+    "sic": "4931",
+    "sic_pool": "4931",
+    "excluded": [
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000066756",
+    "name": "ALLETE INC",
+    "sic": "4931",
+    "sic_pool": "4931",
+    "excluded": [
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000067727",
+    "name": "MONTANA POWER CO /MT/",
+    "sic": "4931",
+    "sic_pool": "4931",
+    "excluded": [
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000071304",
+    "name": "COMMONWEALTH ENERGY SYSTEM",
+    "sic": "4931",
+    "sic_pool": "4931",
+    "excluded": [
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000071339",
+    "name": "NATIONAL GRID USA SERVICE CO INC",
+    "sic": "4900",
+    "sic_pool": "4900",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000071508",
+    "name": "ENTERGY NEW ORLEANS, LLC",
+    "sic": "4931",
+    "sic_pool": "4931",
+    "excluded": [
+     "companyfacts 수집 실패: 404 Client Error: Not Found for url: https://data.sec.gov/api/xbrl/companyfacts/CIK0000071508.json"
+    ]
+   },
+   {
+    "cik": "0000071932",
+    "name": "NIAGARA MOHAWK POWER CORP /NY/",
+    "sic": "4931",
+    "sic_pool": "4931",
+    "excluded": [
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000072843",
+    "name": "NORTHERN INDIANA PUBLIC SERVICE CO",
+    "sic": "4931",
+    "sic_pool": "4931",
+    "excluded": [
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000072903",
+    "name": "XCEL ENERGY INC",
+    "sic": "4931",
+    "sic_pool": "4931",
+    "rev_pit": 11537000000,
+    "assets_pit": 81371000000,
+    "excluded": [
+     "S1 규모 밴드 |log|=3.301 > log4 (revenue)"
+    ]
+   },
+   {
+    "cik": "0000072909",
+    "name": "NORTHERN STATES POWER CO /WI/",
+    "sic": "4931",
+    "sic_pool": "4931",
+    "excluded": [
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000073088",
+    "name": "NORTHWESTERN CORP",
+    "sic": "4931",
+    "sic_pool": "4931",
+    "excluded": [
+     "E3 비활동(18개월)",
+     "E4-v2 AAER 구문 적중 1건 (예: AAER-2573)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000074778",
+    "name": "ORANGE & ROCKLAND UTILITIES INC",
+    "sic": "4931",
+    "sic_pool": "4931",
+    "excluded": [
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000075488",
+    "name": "PACIFIC GAS & ELECTRIC Co",
+    "sic": "4931",
+    "sic_pool": "4931",
+    "excluded": [
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000077242",
+    "name": "PG ENERGY INC",
+    "sic": "4931",
+    "sic_pool": "4931",
+    "excluded": [
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E4-v2 AAER 구문 적중 18건 (예: AAER-4480)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000078100",
+    "name": "PECO ENERGY CO",
+    "sic": "4931",
+    "sic_pool": "4931",
+    "excluded": [
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000081018",
+    "name": "PUBLIC SERVICE CO OF COLORADO",
+    "sic": "4931",
+    "sic_pool": "4931",
+    "excluded": [
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000081023",
+    "name": "PUBLIC SERVICE CO OF NEW MEXICO",
+    "sic": "4931",
+    "sic_pool": "4931",
+    "rev_pit": null,
+    "assets_pit": null,
+    "excluded": [
+     "S1 PIT 규모 계산 불능 (매출·자산 태그 부재)"
+    ]
+   },
+   {
+    "cik": "0000081033",
+    "name": "PUBLIC SERVICE ELECTRIC & GAS CO",
+    "sic": "4931",
+    "sic_pool": "4931",
+    "excluded": [
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000086251",
+    "name": "ST JOSEPH LIGHT & POWER CO",
+    "sic": "4931",
+    "sic_pool": "4931",
+    "excluded": [
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000086521",
+    "name": "SAN DIEGO GAS & ELECTRIC CO",
+    "sic": "4931",
+    "sic_pool": "4931",
+    "excluded": [
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000090144",
+    "name": "SIERRA PACIFIC POWER CO",
+    "sic": "4931",
+    "sic_pool": "4931",
+    "excluded": [
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000091882",
+    "name": "DOMINION ENERGY SOUTH CAROLINA, INC.",
+    "sic": "4931",
+    "sic_pool": "4931",
+    "excluded": [
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000092521",
+    "name": "SOUTHWESTERN PUBLIC SERVICE CO",
+    "sic": "4931",
+    "sic_pool": "4931",
+    "excluded": [
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000100858",
+    "name": "UNION LIGHT HEAT & POWER CO",
+    "sic": "4931",
+    "sic_pool": "4931",
+    "excluded": [
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000101113",
+    "name": "SOUTHWARD VENTURES INC",
+    "sic": "4950",
+    "sic_pool": "4950",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000104918",
+    "name": "AVISTA CORP",
+    "sic": "4931",
+    "sic_pool": "4931",
+    "rev_pit": 1964000000,
+    "assets_pit": 8359000000,
+    "excluded": [
+     "S1 규모 밴드 |log|=1.530 > log4 (revenue)"
+    ]
+   },
+   {
+    "cik": "0000107832",
+    "name": "WISCONSIN POWER & LIGHT CO",
+    "sic": "4931",
+    "sic_pool": "4931",
+    "excluded": [
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000107833",
+    "name": "WISCONSIN PUBLIC SERVICE CORP",
+    "sic": "4931",
+    "sic_pool": "4931",
+    "excluded": [
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000201533",
+    "name": "CONSUMERS ENERGY CO",
+    "sic": "4931",
+    "sic_pool": "4931",
+    "rev_pit": null,
+    "assets_pit": null,
+    "excluded": [
+     "S1 PIT 규모 계산 불능 (매출·자산 태그 부재)"
+    ]
+   },
+   {
+    "cik": "0000311196",
+    "name": "NORTHWEST ENERGY CORP",
+    "sic": "4931",
+    "sic_pool": "4931",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000351917",
+    "name": "U S ENERGY SYSTEMS INC",
+    "sic": "4900",
+    "sic_pool": "4900",
+    "excluded": [
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000352541",
+    "name": "ALLIANT ENERGY CORP",
+    "sic": "4931",
+    "sic_pool": "4931",
+    "rev_pit": 4362000000,
+    "assets_pit": 24991000000,
+    "excluded": [
+     "S1 규모 밴드 |log|=2.328 > log4 (revenue)"
+    ]
+   },
+   {
+    "cik": "0000701983",
+    "name": "SOUTHWARD VENTURES DEPOSITARY TRUST",
+    "sic": "4950",
+    "sic_pool": "4950",
+    "excluded": [
+     "E1 filing history 10-K=2 10-Q=6",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000741508",
+    "name": "NV ENERGY, INC.",
+    "sic": "4931",
+    "sic_pool": "4931",
+    "excluded": [
+     "E3 비활동(18개월)",
+     "E4-v2 AAER 구문 적중 18건 (예: AAER-4480)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000754737",
+    "name": "SCANA CORP",
+    "sic": "4931",
+    "sic_pool": "4931",
+    "excluded": [
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000762129",
+    "name": "CILCORP INC",
+    "sic": "4931",
+    "sic_pool": "4931",
+    "excluded": [
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000783325",
+    "name": "WEC ENERGY GROUP, INC.",
+    "sic": "4931",
+    "sic_pool": "4931",
+    "rev_pit": 9800100000,
+    "assets_pit": 51518300000,
+    "excluded": [
+     "S1 규모 밴드 |log|=3.138 > log4 (revenue)"
+    ]
+   },
+   {
+    "cik": "0000787250",
+    "name": "DPL LLC",
+    "sic": "4931",
+    "sic_pool": "4931",
+    "excluded": [
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000788784",
+    "name": "PUBLIC SERVICE ENTERPRISE GROUP INC",
+    "sic": "4931",
+    "sic_pool": "4931",
+    "rev_pit": 12168000000,
+    "assets_pit": 57576000000,
+    "excluded": [
+     "S1 규모 밴드 |log|=3.354 > log4 (revenue)"
+    ]
+   },
+   {
+    "cik": "0000789943",
+    "name": "IES INDUSTRIES INC",
+    "sic": "4931",
+    "sic_pool": "4931",
+    "excluded": [
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000804742",
+    "name": "ALLWASTE INC",
+    "sic": "4950",
+    "sic_pool": "4950",
+    "excluded": [
+     "E1 filing history 10-K=2 10-Q=9",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000810162",
+    "name": "KBF POLLUTION MANAGEMENT INC",
+    "sic": "4950",
+    "sic_pool": "4950",
+    "excluded": [
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000811156",
+    "name": "CMS ENERGY CORP",
+    "sic": "4931",
+    "sic_pool": "4931",
+    "excluded": [
+     "E4-v2 AAER 구문 적중 1건 (예: AAER-1978)"
+    ]
+   },
+   {
+    "cik": "0000823392",
+    "name": "OLD NISOURCE INC.",
+    "sic": "4931",
+    "sic_pool": "4931",
+    "excluded": [
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000827099",
+    "name": "Ocean Thermal Energy Corp",
+    "sic": "4931",
+    "sic_pool": "4931",
+    "rev_pit": 0,
+    "assets_pit": 705305,
+    "excluded": [
+     "S1 규모 밴드 |log|=6.326 > log4 (assets)"
+    ]
+   },
+   {
+    "cik": "0000860520",
+    "name": "CIPSCO INC",
+    "sic": "4931",
+    "sic_pool": "4931",
+    "excluded": [
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000861388",
+    "name": "LG&E ENERGY CORP",
+    "sic": "4931",
+    "sic_pool": "4931",
+    "excluded": [
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E4-v2 AAER 구문 적중 18건 (예: AAER-4480)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000863444",
+    "name": "INTERCHEM NA INDUSTRIES INC",
+    "sic": "4950",
+    "sic_pool": "4950",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000873571",
+    "name": "VSI LIQUIDATION CORP",
+    "sic": "4950",
+    "sic_pool": "4950",
+    "excluded": [
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000899281",
+    "name": "SITHE INDEPENDENCE FUNDING CORP",
+    "sic": "4931",
+    "sic_pool": "4931",
+    "excluded": [
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000899322",
+    "name": "SITHE INDEPENDENCE POWER PARTNERS LP",
+    "sic": "4931",
+    "sic_pool": "4931",
+    "excluded": [
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000899652",
+    "name": "CINERGY CORP",
+    "sic": "4931",
+    "sic_pool": "4931",
+    "excluded": [
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000904896",
+    "name": "N-VIRO INTERNATIONAL CORP",
+    "sic": "4950",
+    "sic_pool": "4950",
+    "excluded": [
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000916863",
+    "name": "INTEGRYS HOLDING, INC.",
+    "sic": "4931",
+    "sic_pool": "4931",
+    "excluded": [
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000923604",
+    "name": "AQUAGENIX INC/DE",
+    "sic": "4950",
+    "sic_pool": "4950",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=3",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000925910",
+    "name": "PECO ENERGY CAPITAL LP",
+    "sic": "4931",
+    "sic_pool": "4931",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=1",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000926075",
+    "name": "AES GENER INC",
+    "sic": "4931",
+    "sic_pool": "4931",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E1 FPI(20-F/40-F 전용)",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000926807",
+    "name": "BRASCAN POWER INC",
+    "sic": "4931",
+    "sic_pool": "4931",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E1 FPI(20-F/40-F 전용)",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000932923",
+    "name": "NORCAL WASTE SYSTEMS INC",
+    "sic": "4950",
+    "sic_pool": "4950",
+    "excluded": [
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000937256",
+    "name": "ENVIROQ CORP /DE/",
+    "sic": "4950",
+    "sic_pool": "4950",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=1",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000945979",
+    "name": "MOBILE ENERGY SERVICES HOLDINGS INC",
+    "sic": "4931",
+    "sic_pool": "4931",
+    "excluded": [
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000946938",
+    "name": "NORTHWESTERN CAPITAL FINANCING II /DE/",
+    "sic": "4931",
+    "sic_pool": "4931",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000946940",
+    "name": "NORTHWESTERN CAPITAL FINANCING III /DE/",
+    "sic": "4931",
+    "sic_pool": "4931",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000948362",
+    "name": "MOBILE ENERGY SERVICES CO LLC",
+    "sic": "4931",
+    "sic_pool": "4931",
+    "excluded": [
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0000949652",
+    "name": "SAND CREEK COMMUNICATIONS CO",
+    "sic": "4931",
+    "sic_pool": "4931",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001002767",
+    "name": "WESTERN RESOURCES CAPITAL I",
+    "sic": "4931",
+    "sic_pool": "4931",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001002768",
+    "name": "WESTERN RESOURCES CAPITAL II",
+    "sic": "4931",
+    "sic_pool": "4931",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001002910",
+    "name": "AMEREN CORP",
+    "sic": "4931",
+    "sic_pool": "4931",
+    "rev_pit": 8799000000,
+    "assets_pit": 48476000000,
+    "excluded": [
+     "S1 규모 밴드 |log|=3.030 > log4 (revenue)"
+    ]
+   },
+   {
+    "cik": "0001004858",
+    "name": "NEW CENTURY ENERGIES INC",
+    "sic": "4931",
+    "sic_pool": "4931",
+    "excluded": [
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001004980",
+    "name": "PG&E Corp",
+    "sic": "4931",
+    "sic_pool": "4931",
+    "rev_pit": 24935000000,
+    "assets_pit": 141611000000,
+    "excluded": [
+     "S1 규모 밴드 |log|=4.071 > log4 (revenue)"
+    ]
+   },
+   {
+    "cik": "0001009526",
+    "name": "MIDAMERICAN ENERGY HOLDINGS CO",
+    "sic": "4900",
+    "sic_pool": "4900",
+    "excluded": [
+     "E1 filing history 10-K=2 10-Q=6",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001012535",
+    "name": "PSE&G CAPITAL TRUST II",
+    "sic": "4931",
+    "sic_pool": "4931",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001013128",
+    "name": "SIERRA PACIFIC POWER CAPITAL I",
+    "sic": "4931",
+    "sic_pool": "4931",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001014989",
+    "name": "LASALLE BRANDS CORP",
+    "sic": "4950",
+    "sic_pool": "4950",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001016160",
+    "name": "SOUTHWESTERN PUBLIC SERVICE CAPITAL I",
+    "sic": "4900",
+    "sic_pool": "4900",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001017789",
+    "name": "DELMARVA POWER FINANCING I",
+    "sic": "4931",
+    "sic_pool": "4931",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001017939",
+    "name": "VULCAN/BN GEOTHERMAL POWER CO",
+    "sic": "4900",
+    "sic_pool": "4900",
+    "excluded": [
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001017941",
+    "name": "SAN FELIPE ENERGY CO",
+    "sic": "4900",
+    "sic_pool": "4900",
+    "excluded": [
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001017943",
+    "name": "CONEJO ENERGY CO",
+    "sic": "4900",
+    "sic_pool": "4900",
+    "excluded": [
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001017945",
+    "name": "LEATHERS L P",
+    "sic": "4900",
+    "sic_pool": "4900",
+    "excluded": [
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001019682",
+    "name": "GREENWALT CLIFFORD L",
+    "sic": "4931",
+    "sic_pool": "4931",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001019685",
+    "name": "LOHMAN GORDON R",
+    "sic": "4931",
+    "sic_pool": "4931",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001019686",
+    "name": "MERRIMAN HANNE M",
+    "sic": "4931",
+    "sic_pool": "4931",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001019690",
+    "name": "KOERTNER WILLIAM A",
+    "sic": "4931",
+    "sic_pool": "4931",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001022728",
+    "name": "PANDA FUNDING CORP",
+    "sic": "4900",
+    "sic_pool": "4900",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001023228",
+    "name": "PANDA INTERFUNDING CORP",
+    "sic": "4900",
+    "sic_pool": "4900",
+    "excluded": [
+     "E1 filing history 10-K=2 10-Q=3",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001025345",
+    "name": "MONTANA POWER CAPITAL I",
+    "sic": "4931",
+    "sic_pool": "4931",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001026993",
+    "name": "BRUNETTI WAYNE H",
+    "sic": "4931",
+    "sic_pool": "4931",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001026998",
+    "name": "GREER GAYLE L",
+    "sic": "4931",
+    "sic_pool": "4931",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001026999",
+    "name": "HIRSCHFELD A BARRY",
+    "sic": "4931",
+    "sic_pool": "4931",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001027001",
+    "name": "KELLY RICHARD C",
+    "sic": "4931",
+    "sic_pool": "4931",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E4-v2 AAER 구문 적중 1건 (예: AAER-1630)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001027014",
+    "name": "SLIFER RODNEY E",
+    "sic": "4931",
+    "sic_pool": "4931",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001027017",
+    "name": "STEPHENS W T",
+    "sic": "4931",
+    "sic_pool": "4931",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001029590",
+    "name": "CONECTIV",
+    "sic": "4931",
+    "sic_pool": "4931",
+    "excluded": [
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001029728",
+    "name": "NSP FINANCING I",
+    "sic": "4931",
+    "sic_pool": "4931",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001033378",
+    "name": "PANDA INTERHOLDING CORP",
+    "sic": "4900",
+    "sic_pool": "4900",
+    "excluded": [
+     "E1 filing history 10-K=2 10-Q=3",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001038503",
+    "name": "PANDA GLOBAL ENERGY CO",
+    "sic": "4900",
+    "sic_pool": "4900",
+    "excluded": [
+     "E1 filing history 10-K=1 10-Q=1",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001038504",
+    "name": "PANDA GLOBAL HOLDINGS INC",
+    "sic": "4900",
+    "sic_pool": "4900",
+    "excluded": [
+     "E1 filing history 10-K=3 10-Q=7",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001039896",
+    "name": "PECO ENERGY CAPITAL TRUST II",
+    "sic": "4931",
+    "sic_pool": "4931",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001039925",
+    "name": "CMS ENERGY TRUST I",
+    "sic": "4931",
+    "sic_pool": "4931",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001039926",
+    "name": "CMS ENERGY TRUST II",
+    "sic": "4931",
+    "sic_pool": "4931",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001041407",
+    "name": "PACIFICORP MASTER RETIREMENT TRUST",
+    "sic": "4931",
+    "sic_pool": "4931",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001042949",
+    "name": "BARSKY BARBARA",
+    "sic": "4931",
+    "sic_pool": "4931",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001042951",
+    "name": "CHRISTENSEN MARC D",
+    "sic": "4931",
+    "sic_pool": "4931",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001042952",
+    "name": "FLYNN ROGER J",
+    "sic": "4931",
+    "sic_pool": "4931",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001042953",
+    "name": "MAERKI MAX H",
+    "sic": "4931",
+    "sic_pool": "4931",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001042954",
+    "name": "ORTIZ PATRICK T",
+    "sic": "4931",
+    "sic_pool": "4931",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001042956",
+    "name": "REAL WILLIAM J",
+    "sic": "4931",
+    "sic_pool": "4931",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001042957",
+    "name": "RIDGEWAY R B",
+    "sic": "4931",
+    "sic_pool": "4931",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001042959",
+    "name": "STERBA JEFFRY  E",
+    "sic": "4931",
+    "sic_pool": "4931",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001042962",
+    "name": "ARMSTRONG ROBERT G",
+    "sic": "4931",
+    "sic_pool": "4931",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E4-v2 AAER 구문 적중 9건 (예: AAER-2264)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001042963",
+    "name": "GODWIN JOYCE A",
+    "sic": "4931",
+    "sic_pool": "4931",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001042965",
+    "name": "LUJAN MANUEL JR",
+    "sic": "4931",
+    "sic_pool": "4931",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001042966",
+    "name": "MONTOYA BENJAMIN F",
+    "sic": "4931",
+    "sic_pool": "4931",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001042967",
+    "name": "ORTIZ REYNALDO U",
+    "sic": "4931",
+    "sic_pool": "4931",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001042968",
+    "name": "PRICE ROBERT M",
+    "sic": "4931",
+    "sic_pool": "4931",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001042969",
+    "name": "ROTH PAUL F",
+    "sic": "4931",
+    "sic_pool": "4931",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001045513",
+    "name": "SCOTTISH POWER PLC",
+    "sic": "4900",
+    "sic_pool": "4900",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E1 FPI(20-F/40-F 전용)",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001047642",
+    "name": "SCE&G TRUST I",
+    "sic": "4931",
+    "sic_pool": "4931",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001047862",
+    "name": "CONSOLIDATED EDISON INC",
+    "sic": "4931",
+    "sic_pool": "4931",
+    "rev_pit": 17049000000,
+    "assets_pit": 74603000000,
+    "excluded": [
+     "S1 규모 밴드 |log|=3.691 > log4 (revenue)"
+    ]
+   },
+   {
+    "cik": "0001051758",
+    "name": "MHC INVESTMENT CO",
+    "sic": "4900",
+    "sic_pool": "4900",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001052325",
+    "name": "ENTERPRISE CAPITAL TRUST I",
+    "sic": "4931",
+    "sic_pool": "4931",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001052328",
+    "name": "ENTERPRISE CAPITAL TRUST III",
+    "sic": "4931",
+    "sic_pool": "4931",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001053243",
+    "name": "KEYSTONE ENERGY SERVICES INC",
+    "sic": "4900",
+    "sic_pool": "4900",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001053775",
+    "name": "UNITED UTILITIES PLC",
+    "sic": "4931",
+    "sic_pool": "4931",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E1 FPI(20-F/40-F 전용)",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001055148",
+    "name": "TECHNICAL ENVIRONMENT SOLUTIONS INC",
+    "sic": "4950",
+    "sic_pool": "4950",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001057076",
+    "name": "RIDGEWOOD POWER GROWTH FUND /NJ",
+    "sic": "4931",
+    "sic_pool": "4931",
+    "excluded": [
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001057263",
+    "name": "PECO ENERGY CAPITAL TRUST III",
+    "sic": "4931",
+    "sic_pool": "4931",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001058322",
+    "name": "SOLAR ENERGY LTD",
+    "sic": "4931",
+    "sic_pool": "4931",
+    "excluded": [
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001060341",
+    "name": "PSCO CAPITAL TRUST I",
+    "sic": "4931",
+    "sic_pool": "4931",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001060888",
+    "name": "LIFEQUEST WORLD CORP.",
+    "sic": "4950",
+    "sic_pool": "4950",
+    "excluded": [
+     "E1 filing history 10-K=1 10-Q=13",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)"
+    ]
+   },
+   {
+    "cik": "0001061393",
+    "name": "CH ENERGY GROUP INC",
+    "sic": "4931",
+    "sic_pool": "4931",
+    "excluded": [
+     "E3 비활동(18개월)",
+     "E4-v2 AAER 구문 적중 18건 (예: AAER-4480)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001063694",
+    "name": "WPSR CAPITAL TRUST I",
+    "sic": "4931",
+    "sic_pool": "4931",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001070425",
+    "name": "CONCORD ELECTRIC CO /",
+    "sic": "4931",
+    "sic_pool": "4931",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001073353",
+    "name": "RGS ENERGY GROUP INC",
+    "sic": "4931",
+    "sic_pool": "4931",
+    "excluded": [
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001075187",
+    "name": "CMS ENERGY TRUST III",
+    "sic": "4931",
+    "sic_pool": "4931",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001075378",
+    "name": "NIPSCO CAPITAL TRUST I",
+    "sic": "4931",
+    "sic_pool": "4931",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001081316",
+    "name": "BERKSHIRE HATHAWAY ENERGY CO",
+    "sic": "4900",
+    "sic_pool": "4900",
+    "excluded": [
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001083459",
+    "name": "China Water Group, Inc.",
+    "sic": "4950",
+    "sic_pool": "4950",
+    "excluded": [
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001083776",
+    "name": "HART CATHY J",
+    "sic": "4931",
+    "sic_pool": "4931",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001083778",
+    "name": "HELTON BILL D",
+    "sic": "4931",
+    "sic_pool": "4931",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001083779",
+    "name": "JACKSON BRIAN P",
+    "sic": "4931",
+    "sic_pool": "4931",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001083781",
+    "name": "MADDEN TERESA S",
+    "sic": "4931",
+    "sic_pool": "4931",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001083785",
+    "name": "PETILLO J T",
+    "sic": "4931",
+    "sic_pool": "4931",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001083786",
+    "name": "COLLAWN PATRICIA K",
+    "sic": "4931",
+    "sic_pool": "4931",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001083788",
+    "name": "WILKS DAVID M",
+    "sic": "4931",
+    "sic_pool": "4931",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001084032",
+    "name": "SIBUN RIVER GROUP INC",
+    "sic": "4950",
+    "sic_pool": "4950",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001084187",
+    "name": "TEXAS SCIENTIFIC INC",
+    "sic": "4950",
+    "sic_pool": "4950",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001088690",
+    "name": "TXU EASTERN FUNDING CO",
+    "sic": "4900",
+    "sic_pool": "4900",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001088691",
+    "name": "TXU EUROPE LTD",
+    "sic": "4900",
+    "sic_pool": "4900",
+    "excluded": [
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001094117",
+    "name": "UCU CAPITAL TRUST I",
+    "sic": "4931",
+    "sic_pool": "4931",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001095701",
+    "name": "PHILIP SERVICES CORP/DE",
+    "sic": "4950",
+    "sic_pool": "4950",
+    "excluded": [
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001099291",
+    "name": "AES IRONWOOD LLC",
+    "sic": "4931",
+    "sic_pool": "4931",
+    "excluded": [
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001099346",
+    "name": "ALLIANT ENERGY RESOURCES INC",
+    "sic": "4931",
+    "sic_pool": "4931",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001099392",
+    "name": "TXU EUROPE CAPITAL I",
+    "sic": "4900",
+    "sic_pool": "4900",
+    "excluded": [
+     "E1 filing history 10-K=2 10-Q=8",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001103782",
+    "name": "CONSOLIDATED EDISON INC /DE",
+    "sic": "4931",
+    "sic_pool": "4931",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001109357",
+    "name": "EXELON CORP",
+    "sic": "4931",
+    "sic_pool": "4931",
+    "excluded": [
+     "E4-v2 AAER 구문 적중 1건 (예: AAER-4467)"
+    ]
+   },
+   {
+    "cik": "0001111711",
+    "name": "NISOURCE INC.",
+    "sic": "4931",
+    "sic_pool": "4931",
+    "rev_pit": 6522800000,
+    "assets_pit": 35858700000,
+    "excluded": [
+     "S1 규모 밴드 |log|=2.730 > log4 (revenue)"
+    ]
+   },
+   {
+    "cik": "0001117445",
+    "name": "AES RED OAK LLC",
+    "sic": "4931",
+    "sic_pool": "4931",
+    "excluded": [
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001119307",
+    "name": "NEWPOWER HOLDINGS INC",
+    "sic": "4931",
+    "sic_pool": "4931",
+    "excluded": [
+     "E1 filing history 10-K=2 10-Q=5",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001123852",
+    "name": "NORTHERN STATES POWER CO",
+    "sic": "4931",
+    "sic_pool": "4931",
+    "excluded": [
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001127732",
+    "name": "NISOURCE FINANCE CORP",
+    "sic": "4931",
+    "sic_pool": "4931",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001128032",
+    "name": "AQUILA MERCHANT SERVICE INC",
+    "sic": "4931",
+    "sic_pool": "4931",
+    "excluded": [
+     "E1 filing history 10-K=1 10-Q=3",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001135971",
+    "name": "PEPCO HOLDINGS LLC",
+    "sic": "4931",
+    "sic_pool": "4931",
+    "excluded": [
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001136808",
+    "name": "E.ON SE",
+    "sic": "4900",
+    "sic_pool": "4900",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E1 FPI(20-F/40-F 전용)",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년"
+    ]
+   },
+   {
+    "cik": "0001157983",
+    "name": "CHAVEZ R. MARTIN",
+    "sic": "4931",
+    "sic_pool": "4931",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001160413",
+    "name": "MORENO ALBERT F",
+    "sic": "4931",
+    "sic_pool": "4931",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001161728",
+    "name": "MGE ENERGY INC",
+    "sic": "4900",
+    "sic_pool": "4900",
+    "rev_pit": null,
+    "assets_pit": 3155420000,
+    "excluded": [
+     "S1 규모 밴드 |log|=2.080 > log4 (assets)"
+    ]
+   },
+   {
+    "cik": "0001161991",
+    "name": "DPL CAPITAL TRUST II",
+    "sic": "4931",
+    "sic_pool": "4931",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001168454",
+    "name": "NORTHWESTERN ENERGY LLC",
+    "sic": "4931",
+    "sic_pool": "4931",
+    "excluded": [
+     "E1 filing history 10-K=1 10-Q=1",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001169286",
+    "name": "ALFA UTILITY SERVICES INC",
+    "sic": "4931",
+    "sic_pool": "4931",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=1",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001206825",
+    "name": "PSEG FUNDING TRUST II",
+    "sic": "4931",
+    "sic_pool": "4931",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001269127",
+    "name": "GREENSHIFT CORP",
+    "sic": "4950",
+    "sic_pool": "4950",
+    "excluded": [
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001294148",
+    "name": "Innovative Energy Solutions, Inc.",
+    "sic": "4900",
+    "sic_pool": "4900",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001326160",
+    "name": "Duke Energy CORP",
+    "sic": "4931",
+    "sic_pool": "4931",
+    "excluded": [
+     "E4-v2 AAER 구문 적중 2건 (예: AAER-2273)"
+    ]
+   },
+   {
+    "cik": "0001332702",
+    "name": "International Power Group, Ltd.",
+    "sic": "4950",
+    "sic_pool": "4950",
+    "excluded": [
+     "E1 filing history 10-K=2 10-Q=7",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E4-v2 AAER 구문 적중 3건 (예: AAER-4558)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001343979",
+    "name": "CIRQUE ENERGY, INC.",
+    "sic": "4950",
+    "sic_pool": "4950",
+    "excluded": [
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001353252",
+    "name": "AVA Formation Corp",
+    "sic": "4931",
+    "sic_pool": "4931",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001365784",
+    "name": "BIOSHAFT WATER TECHNOLOGY, INC.",
+    "sic": "4950",
+    "sic_pool": "4950",
+    "excluded": [
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001371659",
+    "name": "Solar Night Industries, Inc.",
+    "sic": "4931",
+    "sic_pool": "4931",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001378706",
+    "name": "AMERICAN DG ENERGY INC",
+    "sic": "4931",
+    "sic_pool": "4931",
+    "excluded": [
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001388686",
+    "name": "Premier Power Renewable Energy, Inc.",
+    "sic": "4931",
+    "sic_pool": "4931",
+    "excluded": [
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001390131",
+    "name": "BIOCRUDE TECHOLOGIES INC",
+    "sic": "4950",
+    "sic_pool": "4950",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001401698",
+    "name": "Global Energy, Inc.",
+    "sic": "4931",
+    "sic_pool": "4931",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001403431",
+    "name": "Heritage-Crystal Clean, Inc.",
+    "sic": "4950",
+    "sic_pool": "4950",
+    "excluded": [
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001417892",
+    "name": "Emeren Group Ltd",
+    "sic": "4931",
+    "sic_pool": "4931",
+    "excluded": [
+     "E1 filing history 10-K=2 10-Q=6",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001419242",
+    "name": "ATLANTIC POWER CORP",
+    "sic": "4900",
+    "sic_pool": "4900",
+    "excluded": [
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001430744",
+    "name": "INTERNATIONAL DEVELOPMENT & ENVIRONMENTAL HOLDINGS",
+    "sic": "4950",
+    "sic_pool": "4950",
+    "excluded": [
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001454725",
+    "name": "Volt Solar Systems, Inc.",
+    "sic": "4931",
+    "sic_pool": "4931",
+    "excluded": [
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001493174",
+    "name": "ECOSCIENCES, INC.",
+    "sic": "4950",
+    "sic_pool": "4950",
+    "excluded": [
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001518339",
+    "name": "LG&E & KU Energy LLC",
+    "sic": "4931",
+    "sic_pool": "4931",
+    "excluded": [
+     "E3 비활동(18개월)",
+     "E4-v2 AAER 구문 적중 18건 (예: AAER-4480)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001528103",
+    "name": "EUROSITE POWER INC.",
+    "sic": "4931",
+    "sic_pool": "4931",
+    "excluded": [
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001528356",
+    "name": null,
+    "sic": null,
+    "sic_pool": "4931",
+    "excluded": [
+     "E7 실험군/후보 풀 자기 배제"
+    ]
+   },
+   {
+    "cik": "0001538492",
+    "name": "Laidlaw Energy Group, Inc.",
+    "sic": "4931",
+    "sic_pool": "4931",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=1",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001545236",
+    "name": "American Heritage International Inc.",
+    "sic": "4950",
+    "sic_pool": "4950",
+    "excluded": [
+     "E1 filing history 10-K=2 10-Q=7",
+     "E3 비활동(18개월)"
+    ]
+   },
+   {
+    "cik": "0001547716",
+    "name": "SunVault Energy, Inc.",
+    "sic": "4931",
+    "sic_pool": "4931",
+    "excluded": [
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001643930",
+    "name": "Dynamic Enviro Inc.",
+    "sic": "4950",
+    "sic_pool": "4950",
+    "excluded": [
+     "E1 filing history 10-K=1 10-Q=5",
+     "E3 비활동(18개월)",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001678022",
+    "name": "Newater Technology, Inc.",
+    "sic": "4950",
+    "sic_pool": "4950",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E1 FPI(20-F/40-F 전용)",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001680862",
+    "name": "Eco Waste Power Inc",
+    "sic": "4900",
+    "sic_pool": "4900",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001681348",
+    "name": "VivoPower PLC",
+    "sic": "4931",
+    "sic_pool": "4931",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E1 FPI(20-F/40-F 전용)",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년"
+    ]
+   },
+   {
+    "cik": "0001711269",
+    "name": "Evergy, Inc.",
+    "sic": "4931",
+    "sic_pool": "4931",
+    "rev_pit": 5705100000,
+    "assets_pit": 33948500000,
+    "excluded": [
+     "S1 규모 밴드 |log|=2.597 > log4 (revenue)"
+    ]
+   },
+   {
+    "cik": "0001758868",
+    "name": "Gravity Storage Inc.",
+    "sic": "4900",
+    "sic_pool": "4900",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001772695",
+    "name": "Sunnova Energy International Inc.",
+    "sic": "4931",
+    "sic_pool": "4931",
+    "excluded": [
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001793895",
+    "name": "CDT Environmental Technology Investment Holdings Ltd",
+    "sic": "4950",
+    "sic_pool": "4950",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E1 FPI(20-F/40-F 전용)",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년"
+    ]
+   },
+   {
+    "cik": "0001808949",
+    "name": "Energea Portfolio 1 LLC",
+    "sic": "4900",
+    "sic_pool": "4900",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001811470",
+    "name": "Energea Portfolio 2 LP",
+    "sic": "4900",
+    "sic_pool": "4900",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001865547",
+    "name": "Energea Portfolio 3 Africa LP",
+    "sic": "4900",
+    "sic_pool": "4900",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001883108",
+    "name": "Oriel Energy, Inc.",
+    "sic": "4931",
+    "sic_pool": "4931",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001883984",
+    "name": "Alternus Clean Energy, Inc.",
+    "sic": "4931",
+    "sic_pool": "4931",
+    "excluded": [
+     "E5 Item 4.02 재작성 ['2024-08-23']",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001896404",
+    "name": "Alternus Energy Group Plc",
+    "sic": "4931",
+    "sic_pool": "4931",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001908233",
+    "name": "MN8 Energy, Inc.",
+    "sic": "4931",
+    "sic_pool": "4931",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E4-v2 AAER 구문 적중 18건 (예: AAER-4480)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001958133",
+    "name": "Decent Holding Inc.",
+    "sic": "4950",
+    "sic_pool": "4950",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E1 FPI(20-F/40-F 전용)",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년"
+    ]
+   },
+   {
+    "cik": "0001971381",
+    "name": "Apollo Infrastructure Co LLC",
+    "sic": "4900",
+    "sic_pool": "4900",
+    "excluded": [
+     "E1 filing history 10-K=2 10-Q=8",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0001993004",
+    "name": "NorthWestern Energy Group, Inc.",
+    "sic": "4931",
+    "sic_pool": "4931",
+    "excluded": [
+     "E1 filing history 10-K=3 10-Q=7",
+     "E6a 제출 이력 <3년"
+    ]
+   },
+   {
+    "cik": "0001993443",
+    "name": "Energea Portfolio 5 LATAM LP",
+    "sic": "4900",
+    "sic_pool": "4900",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년",
+     "E9 상장 보통주 부재 (tickers 공백)"
+    ]
+   },
+   {
+    "cik": "0002087162",
+    "name": "Yesil Global Enerji A.S.",
+    "sic": "4931",
+    "sic_pool": "4931",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년"
+    ]
+   },
+   {
+    "cik": "0002088375",
+    "name": "Turbogen Ltd.",
+    "sic": "4931",
+    "sic_pool": "4931",
+    "excluded": [
+     "E1 filing history 10-K=0 10-Q=0",
+     "E2 XBRL 부재(pre-cutoff)",
+     "E3 비활동(18개월)",
+     "E6a 제출 이력 <3년"
+    ]
+   }
+  ]
+ }
+}
