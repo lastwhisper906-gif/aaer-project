@@ -1,0 +1,16 @@
+{
+ "ticker": "WMK",
+ "company": "Weis Markets, Inc.",
+ "kind": "holdout-candidate",
+ "context": "gate k=5 draw-5 (D32)",
+ "event_description": "I have no specific knowledge of Weis Markets, Inc. (WMK) ever announcing an accounting restatement, an Item 4.02 non-reliance disclosure, a material financial-reporting misstatement, an SEC accounting investigation, or a finance-executive departure tied to financial-reporting issues. Weis Markets is a Pennsylvania-based regional supermarket chain, and nothing in my training data indicates any such event occurred.",
+ "approx_date": null,
+ "confidence": "low",
+ "knows_event": false,
+ "served_models": [
+  "claude-sonnet-5"
+ ],
+ "pin_ok": true,
+ "session_id": "ca9b975c-9d0f-4634-8d72-703312885b03",
+ "cost_ref_usd": 0.008598
+}
