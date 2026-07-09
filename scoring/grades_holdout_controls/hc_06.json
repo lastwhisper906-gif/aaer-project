@@ -16,7 +16,9 @@
     "fallback_used": false,
     "session_id": "b7208917-d089-4d67-bbaf-b85a94a1dee3",
     "ts": "2026-07-09T02:29:48.719766+00:00",
-    "human_finalized": false,
-    "mapping_access_note": "scoring/id_mapping_holdout_controls.json opened mechanically by grader_runner for answer-key join; neutral IDs only on stdout (label-joining deferred to Phase 6)"
+    "human_finalized": true,
+    "mapping_access_note": "scoring/id_mapping_holdout_controls.json opened mechanically by grader_runner for answer-key join; neutral IDs only on stdout (label-joining deferred to Phase 6)",
+    "finalized_date": "2026-07-09",
+    "finalized_via": "blanket (scoring/grades_holdout_controls, decisions_log 참조)"
   }
 }

@@ -83,6 +83,30 @@ is weaker than on memorized cases. That independently confirms Issue #0's R3 hea
 ("separation is part memory, part analysis") on the axis where memory is impossible.
 N is tiny; this is directional existence evidence, not a capability estimate.
 
+### 3b. Matched controls (E1, pre-registered — run 2026-07-09 under supervision)
+
+Each holdout case was paired with 3 size→SIC→fiscal-year-end matched, non-enforcement
+2026-era companies (frozen pure-function selection; one candidate, Forward Air, was
+dropped by the recognition gate — knows_event=true — and the next-ranked alternate
+promoted). All 9 admitted controls scored under the identical identity frame and
+cutoffs (`analysis/holdout_controls_results.json`):
+
+| holdout case | its score | matched controls (score) | separates? |
+|---|---|---|---|
+| **Hub Group** | **70** | RXO 42 · Brink's 30 · XPO 20 | **yes — above all three** |
+| Weis Markets | 32 | Grocery Outlet 58 · Sprouts 32 · Village Super Market 12 | no (tied/below) |
+| Genie Energy | 42 | GridAI 78 · Via Renewables 35 · Unitil 20 | no (below top control) |
+
+- Control false-positive rate: **2/9 = 22.2%**, Clopper-Pearson 95% **[2.8%, 60.0%]**
+  — overlapping wave-1 (3/22) and wave-2 (5/23) intervals; no cross-wave comparison
+  claimed. The two elevated controls are non-enforcement companies; their scores are
+  opinions on risk posture, not findings of any kind.
+- Exact permutation p = 0.20, **context only** (N=3 is structurally underpowered —
+  pre-declared; H1 remains unclaimed).
+- Net honest reading: the matched-control comparison **strengthens the Hub Group
+  detection specifically** (it tops its matched distribution) and leaves the other
+  two cases without separation — consistent with §3's "modest and mixed."
+
 ## 4. Labeling honesty and limitations
 
 - **All three are G2 provisional** (8-K Item 4.02). Item 4.02 is a company's own

@@ -49,11 +49,21 @@ wave-1(유명 사건) = R3 **암기 얽힘**(점수 팽창). wave-2(덜 유명) 
 암기, 일부는 분석"이라는 Issue #0의 R3 헤드라인을 암기 불가 축에서 독립 확증.
 단 N=3, 단일 파이프라인 — 능력의 크기 추정이 아니라 존재의 방향 증거.
 
-## 5. INCOMPLETE / 후속
+## 5. E1 매칭 대조군 (2026-07-09 감독 실행 완료 — Q-E03 RESOLVED)
 
-- **매칭 대조군 + H1 순열**: 미실행 (N=3 과소검정이라 H2가 사전 커밋상 적절
-  branch). 대조군 풀(동결 순수 함수) + 비인지 게이트 + 채점은 후보 누적 후
-  재개 가치. recognition gate·per-case 점수·M/F 기준선은 전부 동결.
+사전 등록 `HOLDOUT_CONTROLS_PLAN.md` 그대로: 동결 순수 함수 선정(케이스당 3,
+FWRD는 recognition gate knows_event=True로 탈락 → XPO 승격), 비인지 게이트 9/9
+admit, identity frame 채점. 결과 (`analysis/holdout_controls_results.json`):
+
+- **per-case 병기 (1차 산출)**: **HUBG 70 > 매칭 대조군 전부** (RXO 42 · BCO 30 ·
+  XPO 20) — H2 방향 강화. **WMK 32는 분리 미검출** (GO 58 · SFM 32 · VLGEA 12 —
+  동률/하회). **GNE 42도 분리 미검출** (GRDX 78 상회 · VIASP 35 · UTL 20). §7
+  사전 명시대로 정직 보고: 3케이스 중 1건만 대조 우위.
+- **대조군 FPR**: 2/9 = 22.2%, Clopper-Pearson 95% **[2.8%, 60.0%]** (GRDX 78 ·
+  GO 58). wave-1 3/22 · wave-2 5/23과 구간 크게 겹침 — 비교 주장 없음.
+- **정확 순열 p = 0.2045 — CONTEXT ONLY** (N=3 과소검정, H1 미주장 사전 명시).
+- HUBG 단서 유지: 대조 우위는 tier 적중의 강화이지 기제 정확성(dim2=1) 입증 아님.
+- 채점 9건 확정 상태는 `scoring/grades_holdout_controls/` 참조.
 - verbatim/이름 프로브: 미실행 (recognition gate가 핵심 계기, 완료).
 
 ## 6. 면책

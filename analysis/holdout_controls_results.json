@@ -1,0 +1,48 @@
+{
+ "plan": "HOLDOUT_CONTROLS_PLAN.md §4 (사전 고정)",
+ "per_case_side_by_side": {
+  "HUBG": {
+   "holdout_score": 70,
+   "matched_controls": {
+    "RXO": 42,
+    "BCO": 30,
+    "XPO": 20
+   },
+   "holdout_above_all_matched": true
+  },
+  "WMK": {
+   "holdout_score": 32,
+   "matched_controls": {
+    "GO": 58,
+    "SFM": 32,
+    "VLGEA": 12
+   },
+   "holdout_above_all_matched": false
+  },
+  "GNE": {
+   "holdout_score": 42,
+   "matched_controls": {
+    "VIASP": 35,
+    "UTL": 20,
+    "GRDX": 78
+   },
+   "holdout_above_all_matched": false
+  }
+ },
+ "control_fpr": {
+  "fp": 2,
+  "n": 9,
+  "language": "Clopper-Pearson 95%",
+  "point": 0.222,
+  "ci": [
+   0.028,
+   0.6
+  ]
+ },
+ "exact_perm_p_CONTEXT_ONLY": {
+  "value": 0.2045,
+  "note": "N=3 과소검정 — H1 미주장 (참고 수치, 결론 근거 아님)"
+ },
+ "missing_scores": [],
+ "caveats": "HUBG 대조 우위여도 P1 단서 유지 (dim2=1 기제 빗나감 — forensic 정확성 입증 아님). G2 provisional — restatement/non-reliance 서술만."
+}
