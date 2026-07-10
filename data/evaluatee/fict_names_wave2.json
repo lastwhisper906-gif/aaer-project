@@ -1,0 +1,153 @@
+{
+ "_meta": {
+  "rule": "sha256(case_id+'fictname-v1'+attempt) 결정론; core가 EDGAR 전 filer명 부분문자열 불일치 AND 티커 실존 불일치일 때 채택 (D36)",
+  "reference": "~/aaer-data/reference/{cik-lookup-data.txt(1,049,982행),company_tickers.json(10,418)} — 스크린 전용, 페이로드 반입 없음",
+  "warning": "가공 사명 — 실존 회사와 무관 (§6)"
+ },
+ "names": {
+  "case_39": {
+   "company_name": "Galoridge Logistics",
+   "ticker": "GALO",
+   "core": "Galoridge",
+   "attempt_adopted": 0,
+   "history": [
+    {
+     "attempt": 0,
+     "core": "Galoridge",
+     "name": "Galoridge Logistics",
+     "ticker": "GALO",
+     "edgar_name_collision": false,
+     "ticker_collision": false
+    }
+   ]
+  },
+  "case_40": {
+   "company_name": "Joridine Enterprises",
+   "ticker": "JORI",
+   "core": "Joridine",
+   "attempt_adopted": 0,
+   "history": [
+    {
+     "attempt": 0,
+     "core": "Joridine",
+     "name": "Joridine Enterprises",
+     "ticker": "JORI",
+     "edgar_name_collision": false,
+     "ticker_collision": false
+    }
+   ]
+  },
+  "case_52": {
+   "company_name": "Calawick Logistics",
+   "ticker": "CALA",
+   "core": "Calawick",
+   "attempt_adopted": 0,
+   "history": [
+    {
+     "attempt": 0,
+     "core": "Calawick",
+     "name": "Calawick Logistics",
+     "ticker": "CALA",
+     "edgar_name_collision": false,
+     "ticker_collision": false
+    }
+   ]
+  },
+  "case_59": {
+   "company_name": "Hariawick Systems",
+   "ticker": "HARI",
+   "core": "Hariawick",
+   "attempt_adopted": 0,
+   "history": [
+    {
+     "attempt": 0,
+     "core": "Hariawick",
+     "name": "Hariawick Systems",
+     "ticker": "HARI",
+     "edgar_name_collision": false,
+     "ticker_collision": false
+    }
+   ]
+  },
+  "case_60": {
+   "company_name": "Pelodine Brands",
+   "ticker": "PELO",
+   "core": "Pelodine",
+   "attempt_adopted": 0,
+   "history": [
+    {
+     "attempt": 0,
+     "core": "Pelodine",
+     "name": "Pelodine Brands",
+     "ticker": "PELO",
+     "edgar_name_collision": false,
+     "ticker_collision": false
+    }
+   ]
+  },
+  "case_61": {
+   "company_name": "Solaford Holdings",
+   "ticker": "SOLA",
+   "core": "Solaford",
+   "attempt_adopted": 0,
+   "history": [
+    {
+     "attempt": 0,
+     "core": "Solaford",
+     "name": "Solaford Holdings",
+     "ticker": "SOLA",
+     "edgar_name_collision": false,
+     "ticker_collision": false
+    }
+   ]
+  },
+  "case_65": {
+   "company_name": "Teleridge Logistics",
+   "ticker": "TELE",
+   "core": "Teleridge",
+   "attempt_adopted": 0,
+   "history": [
+    {
+     "attempt": 0,
+     "core": "Teleridge",
+     "name": "Teleridge Logistics",
+     "ticker": "TELE",
+     "edgar_name_collision": false,
+     "ticker_collision": false
+    }
+   ]
+  },
+  "case_66": {
+   "company_name": "Vereridge Enterprises",
+   "ticker": "VERE",
+   "core": "Vereridge",
+   "attempt_adopted": 0,
+   "history": [
+    {
+     "attempt": 0,
+     "core": "Vereridge",
+     "name": "Vereridge Enterprises",
+     "ticker": "VERE",
+     "edgar_name_collision": false,
+     "ticker_collision": false
+    }
+   ]
+  },
+  "case_67": {
+   "company_name": "Taladine Logistics",
+   "ticker": "TALA",
+   "core": "Taladine",
+   "attempt_adopted": 0,
+   "history": [
+    {
+     "attempt": 0,
+     "core": "Taladine",
+     "name": "Taladine Logistics",
+     "ticker": "TALA",
+     "edgar_name_collision": false,
+     "ticker_collision": false
+    }
+   ]
+  }
+ }
+}
