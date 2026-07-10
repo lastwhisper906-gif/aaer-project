@@ -1,0 +1,59 @@
+{
+  "ts": "2026-07-10T00:30:34.044229+00:00",
+  "harness_pin": "2.1.201",
+  "flags": [
+    "claude",
+    "-p",
+    "--model",
+    "claude-sonnet-5",
+    "--output-format",
+    "json",
+    "--max-turns",
+    "2",
+    "--setting-sources",
+    "",
+    "--strict-mcp-config",
+    "--tools",
+    "",
+    "--disallowedTools",
+    "Bash,Read,Edit,Write,Glob,Grep,WebFetch,WebSearch,Task,NotebookEdit",
+    "--system-prompt",
+    "You are analyzing the financial reporting quality of Vereridge Enterprises (VERE) using only the structured data provided below, which reflects public filings available on or before 2019-11-02. Do not...[1727 chars]",
+    "--json-schema",
+    "{\"type\": \"object\", \"additionalProperties\": false, \"required\": [\"checklist\", \"misstatement_probability\", \"mechanism_hypotheses\", \"overall\"], \"properties\": {\"checklist\": {\"type\": \"array\", \"items\": {\"typ...[1821 chars]"
+  ],
+  "model_requested": "claude-sonnet-5",
+  "served_models": [
+    "claude-sonnet-5"
+  ],
+  "pin_ok": true,
+  "ok": true,
+  "fail_reason": null,
+  "session_id": "9b44dd57-c616-4951-a405-ff9212916707",
+  "usage": {
+    "input_tokens": 4,
+    "cache_creation_input_tokens": 118152,
+    "cache_read_input_tokens": 108793,
+    "output_tokens": 16409,
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 118152,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [],
+    "speed": "standard"
+  },
+  "total_cost_usd_reference_only": 0.9876969,
+  "attempts": 1,
+  "wall_seconds": 140.9,
+  "freeze": {
+    "head": "b1c0e980de0575e2056c6f843cb47cca69cd3d69",
+    "clean_tree": true
+  },
+  "raw_tail": null
+}
