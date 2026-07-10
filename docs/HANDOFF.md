@@ -35,7 +35,12 @@
 - **미터링 가계부 (정직 기록)**: Phase 1 = 13 (HTZ 1 + 3케이스×4draws 12) ·
   Phase 2 = 32 (32사 × 1) · Phase 3 = 9 (arm-b 9) — **합계 54/60, 초과·낭비·
   재시도 0, FAIL 0, 핀 불일치 0.** 전 미터링 케이스/draw 경계 commit·push,
-  CI 전건 green.
+  미터링 커밋 CI 전건 green.
+- **사고 기록 (무-미터링)**: D38 스캐폴드 커밋 `b456c18`~`27618ea` 2건 CI 적색 —
+  test_api_client가 로컬에서만 통과 (`anthropic` 로컬 설치·CI 미설치, 페이로드
+  가드가 SDK import 뒤에 있었음). `9d3af07`에서 가드를 import 앞으로 이동해
+  복구 (가드 선행이 옳은 순서이기도 함) + anthropic 부재 시뮬레이션으로 재검증.
+  교훈: 로컬 green ≠ CI green — 신규 의존성 접점은 push 직후 CI 확인까지가 완료.
 - **소유자 액션 (이 미션분)**: ① RP-14 DIFF-1/DIFF-2 서명 (Q-R01 — Issue #2
   발행 서명에 선행) ② Q-R02 freeze 개정 #3 발효 결정 ③ (기존 계류) 3-이슈 발행
   결정 · E4 EXPLORATORY · Console $0.00 · Q-E01/E02.
