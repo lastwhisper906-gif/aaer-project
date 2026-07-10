@@ -1,0 +1,59 @@
+{
+  "ts": "2026-07-10T00:00:35.597427+00:00",
+  "harness_pin": "2.1.201",
+  "flags": [
+    "claude",
+    "-p",
+    "--model",
+    "claude-sonnet-5",
+    "--output-format",
+    "json",
+    "--max-turns",
+    "2",
+    "--setting-sources",
+    "",
+    "--strict-mcp-config",
+    "--tools",
+    "",
+    "--disallowedTools",
+    "Bash,Read,Edit,Write,Glob,Grep,WebFetch,WebSearch,Task,NotebookEdit",
+    "--system-prompt",
+    "You are a factual-recall probe. Answer strictly from your training knowledge. Do not speculate, do not browse, do not fabricate. If you do not have reliable specific knowledge, say so and set knows_event to false.",
+    "--json-schema",
+    "{\"type\": \"object\", \"additionalProperties\": false, \"required\": [\"knows_event\", \"event_description\", \"approx_date\", \"confidence\"], \"properties\": {\"knows_event\": {\"type\": \"boolean\"}, \"event_description\": {\"type\": \"string\"}, \"approx_date\": {\"type\": [\"string\", \"null\"]}, \"confidence\": {\"type\": \"string\", \"enum\": [\"none\", \"low\", \"medium\", \"high\"]}}}"
+  ],
+  "model_requested": "claude-sonnet-5",
+  "served_models": [
+    "claude-sonnet-5"
+  ],
+  "pin_ok": true,
+  "ok": true,
+  "fail_reason": null,
+  "session_id": "e9708494-1579-46eb-b26b-9dca08bb1ddd",
+  "usage": {
+    "input_tokens": 955,
+    "cache_creation_input_tokens": 0,
+    "cache_read_input_tokens": 0,
+    "output_tokens": 447,
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 0,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [],
+    "speed": "standard"
+  },
+  "total_cost_usd_reference_only": 0.00957,
+  "attempts": 1,
+  "wall_seconds": 5.3,
+  "freeze": {
+    "head": "7c591f79e51e72682acd368cdb8d52e7ec2e68fc",
+    "clean_tree": true
+  },
+  "raw_tail": null
+}
