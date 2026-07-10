@@ -1,4 +1,48 @@
-# HANDOFF.md — 세션 인수인계 (최종 갱신: 2026-07-10, 6-약점 교정 계획 전 Phase 완료)
+# HANDOFF.md — 세션 인수인계 (최종 갱신: 2026-07-10, 잔여 교정 미션 D31–D38 전 Phase 완료)
+
+## 잔여 교정 세션 완료 요약 (2026-07-10, 무인 — D31~D38, 미터링 54/60)
+
+2·3차 외부 검토 잔여 항목 실행. **발행 동결값·R/H 판정 전부 불변 — 신규 결과는
+전량 병기.** 전 Phase freeze-commit-then-run (사전 등록 커밋 해시가 검증 경로).
+
+- **Phase 0 (D31, 무호출)**: ① GRDX 78 표면화 (README 양어 + ISSUE_2 §3b + lint
+  (H) GRDX·78 co-presence 강제) ② W3 교정 — "교란=능력 하한"을 "덜 오염 측정,
+  clean lower bound 아님 (잔여 인지 5–6/8)"으로 교체 + lint (G) 금지 패턴
+  ③ methodology_limitations §Instrument bias directions (4계기 편향 방향 표,
+  k=1 게이트 거짓음성 산술 ≈34% 포함) ④ docs/FUTURE_CYCLE_PROTOCOL.md (Cycle 2
+  위생: salt·GT sha256 봉인·카나리 2회·rolling holdout 승격 + repo 학습유입 시
+  소모품 소각) ⑤ Issue #2 서사 보강은 **diff-only** — RP-14 + Q-R01.
+  **정직 기록**: 미션 문면 "잔여 인지 4–5/8"은 동결 L-5(6/8·5/8)와 불일치 →
+  repo 값 5–6/8 채택 (D31 deviation_note).
+- **Phase 1 (D32/D33, 13호출)**: recognition gate k=5 승격 — HTZ 양성대조
+  True(high) · **HUBG·WMK·GNE 전건 0/5** → 사전 규칙(≤1/5)상 자격 3/3 draw
+  잡음에 강건 (결과 방향 (i), gate_k5_analyze.py 기계 판정). Issue #2 발행 보류
+  긴급 항목 비발동. holdout_summary §1 + README 양어 병기, ISSUE_2는 RP-14 DIFF-2.
+- **Phase 2 (D34/D35, 32호출)**: wave-2 outcome-recognition (branchless) —
+  **실험군 knows_event 8/9=88.9% CP[51.7%,99.7%] vs 대조군 0/23 CP[0%,14.8%]**.
+  event_only 5건(BRX·CGI·MDXG·TNGO·WFT) = name-ID 거짓음성 실증. **정직 판독:
+  "덜 암기(wave-1의 절반)" 서사는 name-ID 계기 한정 — 직접 축은 wave-2 88.9% →
+  홀드아웃 0%, 암기 제거는 wave-2→홀드아웃 사이.** R4 불변 (사전 등록 무분기).
+  synthesis §1 2축 표 + README 양어 반영.
+- **Phase 3 (D36/D37, 9호출)**: 정체 3-arm — 가공 사명(EDGAR 1,049,982행+티커
+  10,418 전수 스크린, 충돌 0, 전건 attempt 0) 중첩 arm (b) 9호출. **median(b−a)
+  =+6.0 · median(c−b)=−2.0 → 사전 분류 (ii) "암기의 점수 기여가 작다는 방향
+  증거 (a≈b≈c)"** (N=9 방향 증거, 인과 확정 금지). synthesis §1b + README 병기.
+- **Phase 4 (D38, 무호출)**: freeze 개정 #3 초안(docs/FREEZE_REV3_DRAFT.md —
+  하네스→순수 SDK, J13-e 주입 제거, L-2·W8 해소 경로) + 스캐폴드
+  (pipeline/api_client.py·runner_api.py·무호출 테스트 5건, 이중 안전장치,
+  기존 러너 import 0). 발효는 Q-R02 (키·과금·시점 = 소유자 인프라).
+- **미터링 가계부 (정직 기록)**: Phase 1 = 13 (HTZ 1 + 3케이스×4draws 12) ·
+  Phase 2 = 32 (32사 × 1) · Phase 3 = 9 (arm-b 9) — **합계 54/60, 초과·낭비·
+  재시도 0, FAIL 0, 핀 불일치 0.** 전 미터링 케이스/draw 경계 commit·push,
+  CI 전건 green.
+- **소유자 액션 (이 미션분)**: ① RP-14 DIFF-1/DIFF-2 서명 (Q-R01 — Issue #2
+  발행 서명에 선행) ② Q-R02 freeze 개정 #3 발효 결정 ③ (기존 계류) 3-이슈 발행
+  결정 · E4 EXPLORATORY · Console $0.00 · Q-E01/E02.
+
+> 이 미션의 신규 결과 판독 시 주의: D35(사건 지식 8/9 가용)와 D37(실명이 점수를
+> 안 끌어올림)은 **서로 독립 계기의 병기**다 — 종합 해석("알지만 안 쓴다" 등)은
+> 사전 등록 문장 밖이므로 세션이 서술하지 않았다. 소유자 검토 대상.
 
 ## 6-약점 교정 세션 완료 요약 (2026-07-09~10, 소유자 입회 — D24~D30)
 
