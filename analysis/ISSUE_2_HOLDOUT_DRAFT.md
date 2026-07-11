@@ -1,8 +1,8 @@
 # Issue #2 (DRAFT) — The clean test is now runnable: post-cutoff restatement events an LLM cannot have memorized
 
 > **DRAFT — not published. Owner sign-off required. Companion to Issue #0.**
-> Scoring: Claude-assisted, human-finalized (grades stay human_finalized=false until
-> owner finalization). All criteria committed before the corresponding results
+> Scoring: Claude-assisted, human-finalized (holdout grades owner-signed 2026-07-09,
+> D24; matched-control grades D26). All criteria committed before the corresponding results
 > existed; commit hashes are the reader's verification path. Single Claude-based
 > pipeline (evaluatee: claude-sonnet-5, pinned). **Every company named here is
 > labeled by a G2 provisional tier (8-K Item 4.02 non-reliance event) — we describe

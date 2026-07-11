@@ -7,7 +7,7 @@
 
 ---
 
-## Q-E03 — E1 무인 실행 보류 (네트워크 대조군 빌드 = §5-1 look-ahead 위험) — **OPEN**
+## Q-E03 — E1 무인 실행 보류 (네트워크 대조군 빌드 = §5-1 look-ahead 위험) — **RESOLVED**
 
 - **발견 (실행 가능성 검토)**: E1은 "채점 발사"가 아니라 **2026-era 매칭 대조군 풀을
   새로 빌드**(EDGAR SIC browse + companyfacts fetch, 네트워크)해야 한다 — `~/aaer-data`

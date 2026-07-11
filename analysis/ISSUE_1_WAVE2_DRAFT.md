@@ -69,7 +69,8 @@ probes) is pre-specified.
 ## 5. Result — conclusion rule **R4 (capability)** fired
 
 Full pipeline executed (23 controls selected by the frozen pure function; 32 scored;
-9 perturbed; 64 recognition/verbatim probes; 32 grades, human_finalized=false).
+9 perturbed; 64 recognition/verbatim probes; 32 grades, all since human-finalized
+— owner sign-off 2026-07-09, D24, via `review_packets/RP-13_grading_workbench.md`).
 Standalone primary (9 fraud vs 23 control), reproducible via
 `python analysis/wave2_analyze.py`:
 
@@ -88,7 +89,8 @@ identifies only **25%** of wave-2 firms (vs wave-1's 50%), confirming weaker
 memorization. Two misses (CSC, BRX) are themselves memorization-crossed cases.
 Pooled secondary (17 vs 45, wave-1 frozen scores reused, **never a standalone
 headline**): p = 3.0e-05, AUC 0.831. Full write-up: `analysis/wave2_summary.md`;
-grades await human finalization.
+all grades human-finalized (owner sign-off 2026-07-09, D24 — 0 overrides, with
+the Issue #0 rubber-stamp check explicitly confirmed).
 
 ## 6. Framing
 
