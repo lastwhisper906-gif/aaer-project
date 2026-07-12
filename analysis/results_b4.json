@@ -1,0 +1,1647 @@
+{
+ "spec": "specs/B4_short_interest.md",
+ "spec_commit": "4753824",
+ "seed": 20260713,
+ "n_perm": 100000,
+ "n_boot": 10000,
+ "primary_score": "score_slope_aug",
+ "lag_days": 14,
+ "data_floor": "2017-12-29",
+ "frozen_llm_auc": {
+  "wave1": 0.8239,
+  "wave2": 0.829,
+  "holdout": null
+ },
+ "frozen_baseline_auc": {
+  "wave1": {
+   "B1_beneish_m": 0.5104,
+   "B2_dechow_f": 0.5729
+  }
+ },
+ "tiers": {
+  "wave1": {
+   "n_total": 30,
+   "missing": [
+    "T07",
+    "T11",
+    "T12",
+    "T13",
+    "T16",
+    "T17",
+    "T21",
+    "V01",
+    "V02",
+    "V03",
+    "V04",
+    "V05",
+    "V06",
+    "V07",
+    "V08",
+    "V09",
+    "V10",
+    "V11",
+    "V12",
+    "V13",
+    "V14",
+    "V15",
+    "V16",
+    "V17",
+    "V18",
+    "V19",
+    "V20"
+   ],
+   "scores": {
+    "score_level": {
+     "coverage": "3/30",
+     "coverage_ratio": 0.1,
+     "headline_eligible": false,
+     "stats": {
+      "n_treatment": 1,
+      "n_control": 2,
+      "mean_diff": 0.006373,
+      "median_treatment": -0.006708,
+      "median_control": -0.013081,
+      "auc": 1.0,
+      "auc_boot95": [
+       1.0,
+       1.0
+      ],
+      "perm_p_one_sided": 0.332927
+     },
+     "precision_at_k": {
+      "k": 3,
+      "hits": 1,
+      "precision": 0.3333,
+      "top_k_case_ids": [
+       "T28",
+       "V22",
+       "V21"
+      ]
+     }
+    },
+    "score_slope_aug": {
+     "coverage": "3/30",
+     "coverage_ratio": 0.1,
+     "headline_eligible": false,
+     "stats": {
+      "n_treatment": 1,
+      "n_control": 2,
+      "mean_diff": 0.006461,
+      "median_treatment": -0.007124,
+      "median_control": -0.013585,
+      "auc": 1.0,
+      "auc_boot95": [
+       1.0,
+       1.0
+      ],
+      "perm_p_one_sided": 0.332927
+     },
+     "precision_at_k": {
+      "k": 3,
+      "hits": 1,
+      "precision": 0.3333,
+      "top_k_case_ids": [
+       "T28",
+       "V22",
+       "V21"
+      ]
+     }
+    }
+   },
+   "per_case": {
+    "T07": {
+     "ticker": "MON",
+     "group": "treatment",
+     "score_level": null,
+     "score_slope_aug": null,
+     "sir_last": null,
+     "abnormal_sir_last": null,
+     "slope4": null,
+     "n_reports_trailing12m": 0,
+     "last_settlement": null,
+     "flags": {
+      "insufficient_history": false,
+      "no_si_file": true,
+      "no_shares_denominator": false,
+      "slope_unavailable": false,
+      "revision_seen_diagnostic": 0
+     },
+     "cutoff": "2011-06-28"
+    },
+    "T11": {
+     "ticker": "OFIX",
+     "group": "treatment",
+     "score_level": null,
+     "score_slope_aug": null,
+     "sir_last": null,
+     "abnormal_sir_last": null,
+     "slope4": null,
+     "n_reports_trailing12m": 0,
+     "last_settlement": null,
+     "flags": {
+      "insufficient_history": false,
+      "no_si_file": true,
+      "no_shares_denominator": false,
+      "slope_unavailable": false,
+      "revision_seen_diagnostic": 0
+     },
+     "cutoff": "2013-07-28"
+    },
+    "T12": {
+     "ticker": "LOGI",
+     "group": "treatment",
+     "score_level": null,
+     "score_slope_aug": null,
+     "sir_last": null,
+     "abnormal_sir_last": null,
+     "slope4": null,
+     "n_reports_trailing12m": 0,
+     "last_settlement": null,
+     "flags": {
+      "insufficient_history": false,
+      "no_si_file": true,
+      "no_shares_denominator": false,
+      "slope_unavailable": false,
+      "revision_seen_diagnostic": 0
+     },
+     "cutoff": "2013-08-06"
+    },
+    "T13": {
+     "ticker": "HTZ",
+     "group": "treatment",
+     "score_level": null,
+     "score_slope_aug": null,
+     "sir_last": null,
+     "abnormal_sir_last": null,
+     "slope4": null,
+     "n_reports_trailing12m": 0,
+     "last_settlement": null,
+     "flags": {
+      "insufficient_history": false,
+      "no_si_file": true,
+      "no_shares_denominator": false,
+      "slope_unavailable": false,
+      "revision_seen_diagnostic": 0
+     },
+     "cutoff": "2014-05-12"
+    },
+    "T16": {
+     "ticker": "ICON",
+     "group": "treatment",
+     "score_level": null,
+     "score_slope_aug": null,
+     "sir_last": null,
+     "abnormal_sir_last": null,
+     "slope4": null,
+     "n_reports_trailing12m": 0,
+     "last_settlement": null,
+     "flags": {
+      "insufficient_history": false,
+      "no_si_file": true,
+      "no_shares_denominator": false,
+      "slope_unavailable": false,
+      "revision_seen_diagnostic": 0
+     },
+     "cutoff": "2015-08-09"
+    },
+    "T17": {
+     "ticker": "MRVL",
+     "group": "treatment",
+     "score_level": null,
+     "score_slope_aug": null,
+     "sir_last": null,
+     "abnormal_sir_last": null,
+     "slope4": null,
+     "n_reports_trailing12m": 0,
+     "last_settlement": null,
+     "flags": {
+      "insufficient_history": false,
+      "no_si_file": true,
+      "no_shares_denominator": false,
+      "slope_unavailable": false,
+      "revision_seen_diagnostic": 0
+     },
+     "cutoff": "2015-09-10"
+    },
+    "T21": {
+     "ticker": "SCOR",
+     "group": "treatment",
+     "score_level": null,
+     "score_slope_aug": null,
+     "sir_last": null,
+     "abnormal_sir_last": null,
+     "slope4": null,
+     "n_reports_trailing12m": 0,
+     "last_settlement": null,
+     "flags": {
+      "insufficient_history": false,
+      "no_si_file": true,
+      "no_shares_denominator": false,
+      "slope_unavailable": false,
+      "revision_seen_diagnostic": 0
+     },
+     "cutoff": "2016-02-28"
+    },
+    "T28": {
+     "ticker": "KHC",
+     "group": "treatment",
+     "score_level": -0.006708008942124437,
+     "score_slope_aug": -0.007124343927201341,
+     "sir_last": 0.01422546398486777,
+     "abnormal_sir_last": -0.006708008942124437,
+     "slope4": -0.00041633498507690387,
+     "n_reports_trailing12m": 24,
+     "last_settlement": "2019-01-31",
+     "flags": {
+      "insufficient_history": false,
+      "no_si_file": false,
+      "no_shares_denominator": false,
+      "slope_unavailable": false,
+      "revision_seen_diagnostic": 2
+     },
+     "cutoff": "2019-02-20"
+    },
+    "V01": {
+     "ticker": "APD",
+     "group": "control",
+     "score_level": null,
+     "score_slope_aug": null,
+     "sir_last": null,
+     "abnormal_sir_last": null,
+     "slope4": null,
+     "n_reports_trailing12m": 0,
+     "last_settlement": null,
+     "flags": {
+      "insufficient_history": false,
+      "no_si_file": true,
+      "no_shares_denominator": false,
+      "slope_unavailable": false,
+      "revision_seen_diagnostic": 0
+     },
+     "cutoff": "2011-06-28"
+    },
+    "V02": {
+     "ticker": "MOS",
+     "group": "control",
+     "score_level": null,
+     "score_slope_aug": null,
+     "sir_last": null,
+     "abnormal_sir_last": null,
+     "slope4": null,
+     "n_reports_trailing12m": 0,
+     "last_settlement": null,
+     "flags": {
+      "insufficient_history": false,
+      "no_si_file": true,
+      "no_shares_denominator": false,
+      "slope_unavailable": false,
+      "revision_seen_diagnostic": 0
+     },
+     "cutoff": "2011-06-28"
+    },
+    "V03": {
+     "ticker": "CE",
+     "group": "control",
+     "score_level": null,
+     "score_slope_aug": null,
+     "sir_last": null,
+     "abnormal_sir_last": null,
+     "slope4": null,
+     "n_reports_trailing12m": 0,
+     "last_settlement": null,
+     "flags": {
+      "insufficient_history": false,
+      "no_si_file": true,
+      "no_shares_denominator": false,
+      "slope_unavailable": false,
+      "revision_seen_diagnostic": 0
+     },
+     "cutoff": "2011-06-28"
+    },
+    "V04": {
+     "ticker": "MASI",
+     "group": "control",
+     "score_level": null,
+     "score_slope_aug": null,
+     "sir_last": null,
+     "abnormal_sir_last": null,
+     "slope4": null,
+     "n_reports_trailing12m": 0,
+     "last_settlement": null,
+     "flags": {
+      "insufficient_history": false,
+      "no_si_file": true,
+      "no_shares_denominator": false,
+      "slope_unavailable": false,
+      "revision_seen_diagnostic": 0
+     },
+     "cutoff": "2013-07-28"
+    },
+    "V05": {
+     "ticker": "ARAY",
+     "group": "control",
+     "score_level": null,
+     "score_slope_aug": null,
+     "sir_last": null,
+     "abnormal_sir_last": null,
+     "slope4": null,
+     "n_reports_trailing12m": 0,
+     "last_settlement": null,
+     "flags": {
+      "insufficient_history": false,
+      "no_si_file": true,
+      "no_shares_denominator": false,
+      "slope_unavailable": false,
+      "revision_seen_diagnostic": 0
+     },
+     "cutoff": "2013-07-28"
+    },
+    "V06": {
+     "ticker": "MMSI",
+     "group": "control",
+     "score_level": null,
+     "score_slope_aug": null,
+     "sir_last": null,
+     "abnormal_sir_last": null,
+     "slope4": null,
+     "n_reports_trailing12m": 0,
+     "last_settlement": null,
+     "flags": {
+      "insufficient_history": false,
+      "no_si_file": true,
+      "no_shares_denominator": false,
+      "slope_unavailable": false,
+      "revision_seen_diagnostic": 0
+     },
+     "cutoff": "2013-07-28"
+    },
+    "V07": {
+     "ticker": "TDY",
+     "group": "control",
+     "score_level": null,
+     "score_slope_aug": null,
+     "sir_last": null,
+     "abnormal_sir_last": null,
+     "slope4": null,
+     "n_reports_trailing12m": 0,
+     "last_settlement": null,
+     "flags": {
+      "insufficient_history": false,
+      "no_si_file": true,
+      "no_shares_denominator": false,
+      "slope_unavailable": false,
+      "revision_seen_diagnostic": 0
+     },
+     "cutoff": "2013-08-06"
+    },
+    "V08": {
+     "ticker": "CIEN",
+     "group": "control",
+     "score_level": null,
+     "score_slope_aug": null,
+     "sir_last": null,
+     "abnormal_sir_last": null,
+     "slope4": null,
+     "n_reports_trailing12m": 0,
+     "last_settlement": null,
+     "flags": {
+      "insufficient_history": false,
+      "no_si_file": true,
+      "no_shares_denominator": false,
+      "slope_unavailable": false,
+      "revision_seen_diagnostic": 0
+     },
+     "cutoff": "2013-08-06"
+    },
+    "V09": {
+     "ticker": "GRMN",
+     "group": "control",
+     "score_level": null,
+     "score_slope_aug": null,
+     "sir_last": null,
+     "abnormal_sir_last": null,
+     "slope4": null,
+     "n_reports_trailing12m": 0,
+     "last_settlement": null,
+     "flags": {
+      "insufficient_history": false,
+      "no_si_file": true,
+      "no_shares_denominator": false,
+      "slope_unavailable": false,
+      "revision_seen_diagnostic": 0
+     },
+     "cutoff": "2013-08-06"
+    },
+    "V10": {
+     "ticker": "R",
+     "group": "control",
+     "score_level": null,
+     "score_slope_aug": null,
+     "sir_last": null,
+     "abnormal_sir_last": null,
+     "slope4": null,
+     "n_reports_trailing12m": 0,
+     "last_settlement": null,
+     "flags": {
+      "insufficient_history": false,
+      "no_si_file": true,
+      "no_shares_denominator": false,
+      "slope_unavailable": false,
+      "revision_seen_diagnostic": 0
+     },
+     "cutoff": "2014-05-12"
+    },
+    "V11": {
+     "ticker": "UPBD",
+     "group": "control",
+     "score_level": null,
+     "score_slope_aug": null,
+     "sir_last": null,
+     "abnormal_sir_last": null,
+     "slope4": null,
+     "n_reports_trailing12m": 0,
+     "last_settlement": null,
+     "flags": {
+      "insufficient_history": false,
+      "no_si_file": true,
+      "no_shares_denominator": false,
+      "slope_unavailable": false,
+      "revision_seen_diagnostic": 0
+     },
+     "cutoff": "2014-05-12"
+    },
+    "V12": {
+     "ticker": "IDCC",
+     "group": "control",
+     "score_level": null,
+     "score_slope_aug": null,
+     "sir_last": null,
+     "abnormal_sir_last": null,
+     "slope4": null,
+     "n_reports_trailing12m": 0,
+     "last_settlement": null,
+     "flags": {
+      "insufficient_history": false,
+      "no_si_file": true,
+      "no_shares_denominator": false,
+      "slope_unavailable": false,
+      "revision_seen_diagnostic": 0
+     },
+     "cutoff": "2015-08-09"
+    },
+    "V13": {
+     "ticker": "RCKY",
+     "group": "control",
+     "score_level": null,
+     "score_slope_aug": null,
+     "sir_last": null,
+     "abnormal_sir_last": null,
+     "slope4": null,
+     "n_reports_trailing12m": 0,
+     "last_settlement": null,
+     "flags": {
+      "insufficient_history": false,
+      "no_si_file": true,
+      "no_shares_denominator": false,
+      "slope_unavailable": false,
+      "revision_seen_diagnostic": 0
+     },
+     "cutoff": "2015-08-09"
+    },
+    "V14": {
+     "ticker": "DLB",
+     "group": "control",
+     "score_level": null,
+     "score_slope_aug": null,
+     "sir_last": null,
+     "abnormal_sir_last": null,
+     "slope4": null,
+     "n_reports_trailing12m": 0,
+     "last_settlement": null,
+     "flags": {
+      "insufficient_history": false,
+      "no_si_file": true,
+      "no_shares_denominator": false,
+      "slope_unavailable": false,
+      "revision_seen_diagnostic": 0
+     },
+     "cutoff": "2015-08-09"
+    },
+    "V15": {
+     "ticker": "FSLR",
+     "group": "control",
+     "score_level": null,
+     "score_slope_aug": null,
+     "sir_last": null,
+     "abnormal_sir_last": null,
+     "slope4": null,
+     "n_reports_trailing12m": 0,
+     "last_settlement": null,
+     "flags": {
+      "insufficient_history": false,
+      "no_si_file": true,
+      "no_shares_denominator": false,
+      "slope_unavailable": false,
+      "revision_seen_diagnostic": 0
+     },
+     "cutoff": "2015-09-10"
+    },
+    "V16": {
+     "ticker": "AMKR",
+     "group": "control",
+     "score_level": null,
+     "score_slope_aug": null,
+     "sir_last": null,
+     "abnormal_sir_last": null,
+     "slope4": null,
+     "n_reports_trailing12m": 0,
+     "last_settlement": null,
+     "flags": {
+      "insufficient_history": false,
+      "no_si_file": true,
+      "no_shares_denominator": false,
+      "slope_unavailable": false,
+      "revision_seen_diagnostic": 0
+     },
+     "cutoff": "2015-09-10"
+    },
+    "V17": {
+     "ticker": "BHE",
+     "group": "control",
+     "score_level": null,
+     "score_slope_aug": null,
+     "sir_last": null,
+     "abnormal_sir_last": null,
+     "slope4": null,
+     "n_reports_trailing12m": 0,
+     "last_settlement": null,
+     "flags": {
+      "insufficient_history": false,
+      "no_si_file": true,
+      "no_shares_denominator": false,
+      "slope_unavailable": false,
+      "revision_seen_diagnostic": 0
+     },
+     "cutoff": "2015-09-10"
+    },
+    "V18": {
+     "ticker": "FORR",
+     "group": "control",
+     "score_level": null,
+     "score_slope_aug": null,
+     "sir_last": null,
+     "abnormal_sir_last": null,
+     "slope4": null,
+     "n_reports_trailing12m": 0,
+     "last_settlement": null,
+     "flags": {
+      "insufficient_history": false,
+      "no_si_file": true,
+      "no_shares_denominator": false,
+      "slope_unavailable": false,
+      "revision_seen_diagnostic": 0
+     },
+     "cutoff": "2016-02-28"
+    },
+    "V19": {
+     "ticker": "EXPO",
+     "group": "control",
+     "score_level": null,
+     "score_slope_aug": null,
+     "sir_last": null,
+     "abnormal_sir_last": null,
+     "slope4": null,
+     "n_reports_trailing12m": 0,
+     "last_settlement": null,
+     "flags": {
+      "insufficient_history": false,
+      "no_si_file": true,
+      "no_shares_denominator": false,
+      "slope_unavailable": false,
+      "revision_seen_diagnostic": 0
+     },
+     "cutoff": "2016-02-28"
+    },
+    "V20": {
+     "ticker": "LQDT",
+     "group": "control",
+     "score_level": null,
+     "score_slope_aug": null,
+     "sir_last": null,
+     "abnormal_sir_last": null,
+     "slope4": null,
+     "n_reports_trailing12m": 0,
+     "last_settlement": null,
+     "flags": {
+      "insufficient_history": false,
+      "no_si_file": true,
+      "no_shares_denominator": false,
+      "slope_unavailable": false,
+      "revision_seen_diagnostic": 0
+     },
+     "cutoff": "2016-02-28"
+    },
+    "V21": {
+     "ticker": "GIS",
+     "group": "control",
+     "score_level": -0.015855551017199966,
+     "score_slope_aug": -0.015482090827199086,
+     "sir_last": 0.0297174799899972,
+     "abnormal_sir_last": -0.015855551017199966,
+     "slope4": 0.0003734601900008811,
+     "n_reports_trailing12m": 24,
+     "last_settlement": "2019-01-31",
+     "flags": {
+      "insufficient_history": false,
+      "no_si_file": false,
+      "no_shares_denominator": false,
+      "slope_unavailable": false,
+      "revision_seen_diagnostic": 2
+     },
+     "cutoff": "2019-02-20"
+    },
+    "V22": {
+     "ticker": "CPB",
+     "group": "control",
+     "score_level": -0.01030561139805608,
+     "score_slope_aug": -0.011688586209601063,
+     "sir_last": 0.07932641073174393,
+     "abnormal_sir_last": -0.01030561139805608,
+     "slope4": -0.0013829748115449833,
+     "n_reports_trailing12m": 24,
+     "last_settlement": "2019-01-31",
+     "flags": {
+      "insufficient_history": false,
+      "no_si_file": false,
+      "no_shares_denominator": false,
+      "slope_unavailable": false,
+      "revision_seen_diagnostic": 3
+     },
+     "cutoff": "2019-02-20"
+    }
+   }
+  },
+  "wave2": {
+   "n_total": 32,
+   "missing": [
+    "T02",
+    "T04",
+    "T19",
+    "T20",
+    "T22",
+    "T23",
+    "T24",
+    "T26",
+    "T29",
+    "W01",
+    "W02",
+    "W03",
+    "W04",
+    "W05",
+    "W06",
+    "W07",
+    "W08",
+    "W09",
+    "W10",
+    "W11",
+    "W12",
+    "W13",
+    "W14",
+    "W15",
+    "W16",
+    "W17",
+    "W18",
+    "W19",
+    "W20",
+    "W22"
+   ],
+   "scores": {
+    "score_level": {
+     "coverage": "2/32",
+     "coverage_ratio": 0.0625,
+     "headline_eligible": false,
+     "stats": null,
+     "precision_at_k": null
+    },
+    "score_slope_aug": {
+     "coverage": "1/32",
+     "coverage_ratio": 0.0312,
+     "headline_eligible": false,
+     "stats": null,
+     "precision_at_k": null
+    }
+   },
+   "per_case": {
+    "T02": {
+     "ticker": "CSC",
+     "group": "treatment",
+     "score_level": null,
+     "score_slope_aug": null,
+     "sir_last": null,
+     "abnormal_sir_last": null,
+     "slope4": null,
+     "n_reports_trailing12m": 0,
+     "last_settlement": null,
+     "flags": {
+      "insufficient_history": false,
+      "no_si_file": true,
+      "no_shares_denominator": false,
+      "slope_unavailable": false,
+      "revision_seen_diagnostic": 0
+     },
+     "cutoff": "2010-08-10"
+    },
+    "T04": {
+     "ticker": "WFT",
+     "group": "treatment",
+     "score_level": null,
+     "score_slope_aug": null,
+     "sir_last": null,
+     "abnormal_sir_last": null,
+     "slope4": null,
+     "n_reports_trailing12m": 0,
+     "last_settlement": null,
+     "flags": {
+      "insufficient_history": false,
+      "no_si_file": true,
+      "no_shares_denominator": false,
+      "slope_unavailable": false,
+      "revision_seen_diagnostic": 0
+     },
+     "cutoff": "2011-02-28"
+    },
+    "T19": {
+     "ticker": "OSIR",
+     "group": "treatment",
+     "score_level": null,
+     "score_slope_aug": null,
+     "sir_last": null,
+     "abnormal_sir_last": null,
+     "slope4": null,
+     "n_reports_trailing12m": 0,
+     "last_settlement": null,
+     "flags": {
+      "insufficient_history": false,
+      "no_si_file": true,
+      "no_shares_denominator": false,
+      "slope_unavailable": false,
+      "revision_seen_diagnostic": 0
+     },
+     "cutoff": "2015-11-05"
+    },
+    "T20": {
+     "ticker": "BRX",
+     "group": "treatment",
+     "score_level": null,
+     "score_slope_aug": null,
+     "sir_last": null,
+     "abnormal_sir_last": null,
+     "slope4": null,
+     "n_reports_trailing12m": 0,
+     "last_settlement": null,
+     "flags": {
+      "insufficient_history": false,
+      "no_si_file": true,
+      "no_shares_denominator": false,
+      "slope_unavailable": false,
+      "revision_seen_diagnostic": 0
+     },
+     "cutoff": "2016-02-07"
+    },
+    "T22": {
+     "ticker": "TNGO",
+     "group": "treatment",
+     "score_level": null,
+     "score_slope_aug": null,
+     "sir_last": null,
+     "abnormal_sir_last": null,
+     "slope4": null,
+     "n_reports_trailing12m": 0,
+     "last_settlement": null,
+     "flags": {
+      "insufficient_history": false,
+      "no_si_file": true,
+      "no_shares_denominator": false,
+      "slope_unavailable": false,
+      "revision_seen_diagnostic": 0
+     },
+     "cutoff": "2016-03-06"
+    },
+    "T23": {
+     "ticker": "HAIN",
+     "group": "treatment",
+     "score_level": null,
+     "score_slope_aug": null,
+     "sir_last": null,
+     "abnormal_sir_last": null,
+     "slope4": null,
+     "n_reports_trailing12m": 0,
+     "last_settlement": null,
+     "flags": {
+      "insufficient_history": false,
+      "no_si_file": true,
+      "no_shares_denominator": false,
+      "slope_unavailable": false,
+      "revision_seen_diagnostic": 0
+     },
+     "cutoff": "2016-08-14"
+    },
+    "T24": {
+     "ticker": "CGI",
+     "group": "treatment",
+     "score_level": null,
+     "score_slope_aug": null,
+     "sir_last": null,
+     "abnormal_sir_last": null,
+     "slope4": null,
+     "n_reports_trailing12m": 0,
+     "last_settlement": null,
+     "flags": {
+      "insufficient_history": false,
+      "no_si_file": true,
+      "no_shares_denominator": false,
+      "slope_unavailable": false,
+      "revision_seen_diagnostic": 0
+     },
+     "cutoff": "2017-04-04"
+    },
+    "T26": {
+     "ticker": "MDXG",
+     "group": "treatment",
+     "score_level": null,
+     "score_slope_aug": null,
+     "sir_last": null,
+     "abnormal_sir_last": null,
+     "slope4": null,
+     "n_reports_trailing12m": 0,
+     "last_settlement": null,
+     "flags": {
+      "insufficient_history": false,
+      "no_si_file": true,
+      "no_shares_denominator": false,
+      "slope_unavailable": false,
+      "revision_seen_diagnostic": 0
+     },
+     "cutoff": "2016-12-14"
+    },
+    "T29": {
+     "ticker": "UAA",
+     "group": "treatment",
+     "score_level": null,
+     "score_slope_aug": null,
+     "sir_last": null,
+     "abnormal_sir_last": null,
+     "slope4": null,
+     "n_reports_trailing12m": 0,
+     "last_settlement": null,
+     "flags": {
+      "insufficient_history": false,
+      "no_si_file": false,
+      "no_shares_denominator": true,
+      "slope_unavailable": false,
+      "revision_seen_diagnostic": 2
+     },
+     "cutoff": "2019-11-02"
+    },
+    "W01": {
+     "ticker": "NBR",
+     "group": "control",
+     "score_level": null,
+     "score_slope_aug": null,
+     "sir_last": null,
+     "abnormal_sir_last": null,
+     "slope4": null,
+     "n_reports_trailing12m": 0,
+     "last_settlement": null,
+     "flags": {
+      "insufficient_history": false,
+      "no_si_file": true,
+      "no_shares_denominator": false,
+      "slope_unavailable": false,
+      "revision_seen_diagnostic": 0
+     },
+     "cutoff": "2011-02-28"
+    },
+    "W02": {
+     "ticker": "VAL",
+     "group": "control",
+     "score_level": null,
+     "score_slope_aug": null,
+     "sir_last": null,
+     "abnormal_sir_last": null,
+     "slope4": null,
+     "n_reports_trailing12m": 0,
+     "last_settlement": null,
+     "flags": {
+      "insufficient_history": false,
+      "no_si_file": true,
+      "no_shares_denominator": false,
+      "slope_unavailable": false,
+      "revision_seen_diagnostic": 0
+     },
+     "cutoff": "2011-02-28"
+    },
+    "W03": {
+     "ticker": "RGEN",
+     "group": "control",
+     "score_level": null,
+     "score_slope_aug": null,
+     "sir_last": null,
+     "abnormal_sir_last": null,
+     "slope4": null,
+     "n_reports_trailing12m": 0,
+     "last_settlement": null,
+     "flags": {
+      "insufficient_history": false,
+      "no_si_file": true,
+      "no_shares_denominator": false,
+      "slope_unavailable": false,
+      "revision_seen_diagnostic": 0
+     },
+     "cutoff": "2015-11-05"
+    },
+    "W04": {
+     "ticker": "IOVA",
+     "group": "control",
+     "score_level": null,
+     "score_slope_aug": null,
+     "sir_last": null,
+     "abnormal_sir_last": null,
+     "slope4": null,
+     "n_reports_trailing12m": 0,
+     "last_settlement": null,
+     "flags": {
+      "insufficient_history": false,
+      "no_si_file": true,
+      "no_shares_denominator": false,
+      "slope_unavailable": false,
+      "revision_seen_diagnostic": 0
+     },
+     "cutoff": "2015-11-05"
+    },
+    "W05": {
+     "ticker": "HALO",
+     "group": "control",
+     "score_level": null,
+     "score_slope_aug": null,
+     "sir_last": null,
+     "abnormal_sir_last": null,
+     "slope4": null,
+     "n_reports_trailing12m": 0,
+     "last_settlement": null,
+     "flags": {
+      "insufficient_history": false,
+      "no_si_file": true,
+      "no_shares_denominator": false,
+      "slope_unavailable": false,
+      "revision_seen_diagnostic": 0
+     },
+     "cutoff": "2015-11-05"
+    },
+    "W06": {
+     "ticker": "SITC",
+     "group": "control",
+     "score_level": null,
+     "score_slope_aug": null,
+     "sir_last": null,
+     "abnormal_sir_last": null,
+     "slope4": null,
+     "n_reports_trailing12m": 0,
+     "last_settlement": null,
+     "flags": {
+      "insufficient_history": false,
+      "no_si_file": true,
+      "no_shares_denominator": false,
+      "slope_unavailable": false,
+      "revision_seen_diagnostic": 0
+     },
+     "cutoff": "2016-02-07"
+    },
+    "W07": {
+     "ticker": "BXMT",
+     "group": "control",
+     "score_level": null,
+     "score_slope_aug": null,
+     "sir_last": null,
+     "abnormal_sir_last": null,
+     "slope4": null,
+     "n_reports_trailing12m": 0,
+     "last_settlement": null,
+     "flags": {
+      "insufficient_history": false,
+      "no_si_file": true,
+      "no_shares_denominator": false,
+      "slope_unavailable": false,
+      "revision_seen_diagnostic": 0
+     },
+     "cutoff": "2016-02-07"
+    },
+    "W08": {
+     "ticker": "ADAM",
+     "group": "control",
+     "score_level": null,
+     "score_slope_aug": null,
+     "sir_last": null,
+     "abnormal_sir_last": null,
+     "slope4": null,
+     "n_reports_trailing12m": 0,
+     "last_settlement": null,
+     "flags": {
+      "insufficient_history": false,
+      "no_si_file": true,
+      "no_shares_denominator": false,
+      "slope_unavailable": false,
+      "revision_seen_diagnostic": 0
+     },
+     "cutoff": "2016-02-07"
+    },
+    "W09": {
+     "ticker": "LPSN",
+     "group": "control",
+     "score_level": null,
+     "score_slope_aug": null,
+     "sir_last": null,
+     "abnormal_sir_last": null,
+     "slope4": null,
+     "n_reports_trailing12m": 0,
+     "last_settlement": null,
+     "flags": {
+      "insufficient_history": false,
+      "no_si_file": true,
+      "no_shares_denominator": false,
+      "slope_unavailable": false,
+      "revision_seen_diagnostic": 0
+     },
+     "cutoff": "2016-03-06"
+    },
+    "W10": {
+     "ticker": "HSTM",
+     "group": "control",
+     "score_level": null,
+     "score_slope_aug": null,
+     "sir_last": null,
+     "abnormal_sir_last": null,
+     "slope4": null,
+     "n_reports_trailing12m": 0,
+     "last_settlement": null,
+     "flags": {
+      "insufficient_history": false,
+      "no_si_file": true,
+      "no_shares_denominator": false,
+      "slope_unavailable": false,
+      "revision_seen_diagnostic": 0
+     },
+     "cutoff": "2016-03-06"
+    },
+    "W11": {
+     "ticker": "MCHX",
+     "group": "control",
+     "score_level": null,
+     "score_slope_aug": null,
+     "sir_last": null,
+     "abnormal_sir_last": null,
+     "slope4": null,
+     "n_reports_trailing12m": 0,
+     "last_settlement": null,
+     "flags": {
+      "insufficient_history": false,
+      "no_si_file": true,
+      "no_shares_denominator": false,
+      "slope_unavailable": false,
+      "revision_seen_diagnostic": 0
+     },
+     "cutoff": "2016-03-06"
+    },
+    "W12": {
+     "ticker": "DAR",
+     "group": "control",
+     "score_level": null,
+     "score_slope_aug": null,
+     "sir_last": null,
+     "abnormal_sir_last": null,
+     "slope4": null,
+     "n_reports_trailing12m": 0,
+     "last_settlement": null,
+     "flags": {
+      "insufficient_history": false,
+      "no_si_file": true,
+      "no_shares_denominator": false,
+      "slope_unavailable": false,
+      "revision_seen_diagnostic": 0
+     },
+     "cutoff": "2016-08-14"
+    },
+    "W13": {
+     "ticker": "FLO",
+     "group": "control",
+     "score_level": null,
+     "score_slope_aug": null,
+     "sir_last": null,
+     "abnormal_sir_last": null,
+     "slope4": null,
+     "n_reports_trailing12m": 0,
+     "last_settlement": null,
+     "flags": {
+      "insufficient_history": false,
+      "no_si_file": true,
+      "no_shares_denominator": false,
+      "slope_unavailable": false,
+      "revision_seen_diagnostic": 0
+     },
+     "cutoff": "2016-08-14"
+    },
+    "W14": {
+     "ticker": "BF-A",
+     "group": "control",
+     "score_level": null,
+     "score_slope_aug": null,
+     "sir_last": null,
+     "abnormal_sir_last": null,
+     "slope4": null,
+     "n_reports_trailing12m": 0,
+     "last_settlement": null,
+     "flags": {
+      "insufficient_history": false,
+      "no_si_file": true,
+      "no_shares_denominator": false,
+      "slope_unavailable": false,
+      "revision_seen_diagnostic": 0
+     },
+     "cutoff": "2016-08-14"
+    },
+    "W15": {
+     "ticker": "ULH",
+     "group": "control",
+     "score_level": null,
+     "score_slope_aug": null,
+     "sir_last": null,
+     "abnormal_sir_last": null,
+     "slope4": null,
+     "n_reports_trailing12m": 0,
+     "last_settlement": null,
+     "flags": {
+      "insufficient_history": false,
+      "no_si_file": true,
+      "no_shares_denominator": false,
+      "slope_unavailable": false,
+      "revision_seen_diagnostic": 0
+     },
+     "cutoff": "2017-04-04"
+    },
+    "W16": {
+     "ticker": "SAIA",
+     "group": "control",
+     "score_level": null,
+     "score_slope_aug": null,
+     "sir_last": null,
+     "abnormal_sir_last": null,
+     "slope4": null,
+     "n_reports_trailing12m": 0,
+     "last_settlement": null,
+     "flags": {
+      "insufficient_history": false,
+      "no_si_file": true,
+      "no_shares_denominator": false,
+      "slope_unavailable": false,
+      "revision_seen_diagnostic": 0
+     },
+     "cutoff": "2017-04-04"
+    },
+    "W17": {
+     "ticker": "MRTN",
+     "group": "control",
+     "score_level": null,
+     "score_slope_aug": null,
+     "sir_last": null,
+     "abnormal_sir_last": null,
+     "slope4": null,
+     "n_reports_trailing12m": 0,
+     "last_settlement": null,
+     "flags": {
+      "insufficient_history": false,
+      "no_si_file": true,
+      "no_shares_denominator": false,
+      "slope_unavailable": false,
+      "revision_seen_diagnostic": 0
+     },
+     "cutoff": "2017-04-04"
+    },
+    "W18": {
+     "ticker": "AORT",
+     "group": "control",
+     "score_level": null,
+     "score_slope_aug": null,
+     "sir_last": null,
+     "abnormal_sir_last": null,
+     "slope4": null,
+     "n_reports_trailing12m": 0,
+     "last_settlement": null,
+     "flags": {
+      "insufficient_history": false,
+      "no_si_file": true,
+      "no_shares_denominator": false,
+      "slope_unavailable": false,
+      "revision_seen_diagnostic": 0
+     },
+     "cutoff": "2016-12-14"
+    },
+    "W19": {
+     "ticker": "UFPT",
+     "group": "control",
+     "score_level": null,
+     "score_slope_aug": null,
+     "sir_last": null,
+     "abnormal_sir_last": null,
+     "slope4": null,
+     "n_reports_trailing12m": 0,
+     "last_settlement": null,
+     "flags": {
+      "insufficient_history": false,
+      "no_si_file": true,
+      "no_shares_denominator": false,
+      "slope_unavailable": false,
+      "revision_seen_diagnostic": 0
+     },
+     "cutoff": "2016-12-14"
+    },
+    "W20": {
+     "ticker": "ATRC",
+     "group": "control",
+     "score_level": null,
+     "score_slope_aug": null,
+     "sir_last": null,
+     "abnormal_sir_last": null,
+     "slope4": null,
+     "n_reports_trailing12m": 0,
+     "last_settlement": null,
+     "flags": {
+      "insufficient_history": false,
+      "no_si_file": true,
+      "no_shares_denominator": false,
+      "slope_unavailable": false,
+      "revision_seen_diagnostic": 0
+     },
+     "cutoff": "2016-12-14"
+    },
+    "W21": {
+     "ticker": "LEVI",
+     "group": "control",
+     "score_level": 0.08932162389955461,
+     "score_slope_aug": null,
+     "sir_last": 0.18194313126802672,
+     "abnormal_sir_last": 0.08932162389955461,
+     "slope4": null,
+     "n_reports_trailing12m": 13,
+     "last_settlement": "2019-10-15",
+     "flags": {
+      "insufficient_history": false,
+      "no_si_file": false,
+      "no_shares_denominator": false,
+      "slope_unavailable": true,
+      "revision_seen_diagnostic": 0
+     },
+     "cutoff": "2019-11-02"
+    },
+    "W22": {
+     "ticker": "RL",
+     "group": "control",
+     "score_level": null,
+     "score_slope_aug": null,
+     "sir_last": null,
+     "abnormal_sir_last": null,
+     "slope4": null,
+     "n_reports_trailing12m": 0,
+     "last_settlement": null,
+     "flags": {
+      "insufficient_history": false,
+      "no_si_file": false,
+      "no_shares_denominator": true,
+      "slope_unavailable": false,
+      "revision_seen_diagnostic": 2
+     },
+     "cutoff": "2019-11-02"
+    },
+    "W23": {
+     "ticker": "CTAS",
+     "group": "control",
+     "score_level": 0.0028110084887108915,
+     "score_slope_aug": 0.0038395386900585194,
+     "sir_last": 0.029942429467709027,
+     "abnormal_sir_last": 0.0028110084887108915,
+     "slope4": 0.001028530201347628,
+     "n_reports_trailing12m": 24,
+     "last_settlement": "2019-10-15",
+     "flags": {
+      "insufficient_history": false,
+      "no_si_file": false,
+      "no_shares_denominator": false,
+      "slope_unavailable": false,
+      "revision_seen_diagnostic": 1
+     },
+     "cutoff": "2019-11-02"
+    }
+   }
+  },
+  "holdout": {
+   "n_total": 12,
+   "missing": [
+    "GRDX",
+    "VIASP",
+    "VLGEA",
+    "case_71",
+    "case_73"
+   ],
+   "scores": {
+    "score_level": {
+     "coverage": "7/12",
+     "coverage_ratio": 0.5833,
+     "headline_eligible": false,
+     "stats": {
+      "n_treatment": 1,
+      "n_control": 6,
+      "mean_diff": -0.025626,
+      "median_treatment": -0.001544,
+      "median_control": 0.012222,
+      "auc": 0.1667,
+      "auc_boot95": [
+       0.0,
+       0.5
+      ],
+      "perm_p_one_sided": 0.856481
+     },
+     "precision_at_k": {
+      "k": 2,
+      "hits": 0,
+      "precision": 0.0,
+      "top_k_case_ids": [
+       "GO",
+       "SFM"
+      ]
+     }
+    },
+    "score_slope_aug": {
+     "coverage": "7/12",
+     "coverage_ratio": 0.5833,
+     "headline_eligible": false,
+     "stats": {
+      "n_treatment": 1,
+      "n_control": 6,
+      "mean_diff": -0.026687,
+      "median_treatment": -0.00308,
+      "median_control": 0.009779,
+      "auc": 0.1667,
+      "auc_boot95": [
+       0.0,
+       0.5
+      ],
+      "perm_p_one_sided": 0.856481
+     },
+     "precision_at_k": {
+      "k": 2,
+      "hits": 0,
+      "precision": 0.0,
+      "top_k_case_ids": [
+       "GO",
+       "SFM"
+      ]
+     }
+    }
+   },
+   "per_case": {
+    "BCO": {
+     "ticker": "BCO",
+     "group": "control",
+     "score_level": 0.0011652979713743378,
+     "score_slope_aug": 0.0025036629499734066,
+     "sir_last": 0.019230262835166816,
+     "abnormal_sir_last": 0.0011652979713743378,
+     "slope4": 0.001338364978599069,
+     "n_reports_trailing12m": 24,
+     "last_settlement": "2026-01-15",
+     "flags": {
+      "insufficient_history": false,
+      "no_si_file": false,
+      "no_shares_denominator": false,
+      "slope_unavailable": false,
+      "revision_seen_diagnostic": 1
+     },
+     "cutoff": "2026-02-04"
+    },
+    "GO": {
+     "ticker": "GO",
+     "group": "control",
+     "score_level": 0.0856402608002006,
+     "score_slope_aug": 0.08541202415370834,
+     "sir_last": 0.26401151734158385,
+     "abnormal_sir_last": 0.0856402608002006,
+     "slope4": -0.00022823664649225528,
+     "n_reports_trailing12m": 24,
+     "last_settlement": "2026-01-30",
+     "flags": {
+      "insufficient_history": false,
+      "no_si_file": false,
+      "no_shares_denominator": false,
+      "slope_unavailable": false,
+      "revision_seen_diagnostic": 0
+     },
+     "cutoff": "2026-02-19"
+    },
+    "GRDX": {
+     "ticker": "GRDX",
+     "group": "control",
+     "score_level": null,
+     "score_slope_aug": null,
+     "sir_last": 0.02741958944086132,
+     "abnormal_sir_last": null,
+     "slope4": null,
+     "n_reports_trailing12m": 4,
+     "last_settlement": "2026-02-13",
+     "flags": {
+      "insufficient_history": true,
+      "no_si_file": false,
+      "no_shares_denominator": false,
+      "slope_unavailable": false,
+      "revision_seen_diagnostic": 0
+     },
+     "cutoff": "2026-03-11"
+    },
+    "RXO": {
+     "ticker": "RXO",
+     "group": "control",
+     "score_level": 0.009263196661543058,
+     "score_slope_aug": 0.0038183917545222736,
+     "sir_last": 0.05902689965050183,
+     "abnormal_sir_last": 0.009263196661543058,
+     "slope4": -0.005444804907020784,
+     "n_reports_trailing12m": 24,
+     "last_settlement": "2026-01-15",
+     "flags": {
+      "insufficient_history": false,
+      "no_si_file": false,
+      "no_shares_denominator": false,
+      "slope_unavailable": false,
+      "revision_seen_diagnostic": 0
+     },
+     "cutoff": "2026-02-04"
+    },
+    "SFM": {
+     "ticker": "SFM",
+     "group": "control",
+     "score_level": 0.03748219715943864,
+     "score_slope_aug": 0.046240778465628476,
+     "sir_last": 0.11076734251288024,
+     "abnormal_sir_last": 0.03748219715943864,
+     "slope4": 0.008758581306189842,
+     "n_reports_trailing12m": 24,
+     "last_settlement": "2026-01-30",
+     "flags": {
+      "insufficient_history": false,
+      "no_si_file": false,
+      "no_shares_denominator": false,
+      "slope_unavailable": false,
+      "revision_seen_diagnostic": 1
+     },
+     "cutoff": "2026-02-19"
+    },
+    "UTL": {
+     "ticker": "UTL",
+     "group": "control",
+     "score_level": 0.01518013278211212,
+     "score_slope_aug": 0.015739558686008726,
+     "sir_last": 0.03414358345537704,
+     "abnormal_sir_last": 0.01518013278211212,
+     "slope4": 0.0005594259038966048,
+     "n_reports_trailing12m": 24,
+     "last_settlement": "2026-02-13",
+     "flags": {
+      "insufficient_history": false,
+      "no_si_file": false,
+      "no_shares_denominator": false,
+      "slope_unavailable": false,
+      "revision_seen_diagnostic": 0
+     },
+     "cutoff": "2026-03-11"
+    },
+    "VIASP": {
+     "ticker": "VIASP",
+     "group": "control",
+     "score_level": null,
+     "score_slope_aug": null,
+     "sir_last": null,
+     "abnormal_sir_last": null,
+     "slope4": null,
+     "n_reports_trailing12m": 0,
+     "last_settlement": null,
+     "flags": {
+      "insufficient_history": false,
+      "no_si_file": false,
+      "no_shares_denominator": true,
+      "slope_unavailable": false,
+      "revision_seen_diagnostic": 0
+     },
+     "cutoff": "2026-03-11"
+    },
+    "VLGEA": {
+     "ticker": "VLGEA",
+     "group": "control",
+     "score_level": null,
+     "score_slope_aug": null,
+     "sir_last": null,
+     "abnormal_sir_last": null,
+     "slope4": null,
+     "n_reports_trailing12m": 0,
+     "last_settlement": null,
+     "flags": {
+      "insufficient_history": false,
+      "no_si_file": false,
+      "no_shares_denominator": true,
+      "slope_unavailable": false,
+      "revision_seen_diagnostic": 0
+     },
+     "cutoff": "2026-02-19"
+    },
+    "XPO": {
+     "ticker": "XPO",
+     "group": "control",
+     "score_level": -0.004241749325703814,
+     "score_slope_aug": -0.012071448673205972,
+     "sir_last": 0.07418273776613481,
+     "abnormal_sir_last": -0.004241749325703814,
+     "slope4": -0.007829699347502158,
+     "n_reports_trailing12m": 24,
+     "last_settlement": "2026-01-15",
+     "flags": {
+      "insufficient_history": false,
+      "no_si_file": false,
+      "no_shares_denominator": false,
+      "slope_unavailable": false,
+      "revision_seen_diagnostic": 2
+     },
+     "cutoff": "2026-02-04"
+    },
+    "case_71": {
+     "ticker": "HUBG",
+     "group": "treatment",
+     "score_level": null,
+     "score_slope_aug": null,
+     "sir_last": null,
+     "abnormal_sir_last": null,
+     "slope4": null,
+     "n_reports_trailing12m": 0,
+     "last_settlement": null,
+     "flags": {
+      "insufficient_history": false,
+      "no_si_file": false,
+      "no_shares_denominator": true,
+      "slope_unavailable": false,
+      "revision_seen_diagnostic": 1
+     },
+     "cutoff": "2026-02-04"
+    },
+    "case_72": {
+     "ticker": "WMK",
+     "group": "treatment",
+     "score_level": -0.0015442696988305915,
+     "score_slope_aug": -0.003079872093381996,
+     "sir_last": 0.05203879456998229,
+     "abnormal_sir_last": -0.0015442696988305915,
+     "slope4": -0.0015356023945514046,
+     "n_reports_trailing12m": 24,
+     "last_settlement": "2026-01-30",
+     "flags": {
+      "insufficient_history": false,
+      "no_si_file": false,
+      "no_shares_denominator": false,
+      "slope_unavailable": false,
+      "revision_seen_diagnostic": 2
+     },
+     "cutoff": "2026-02-19"
+    },
+    "case_73": {
+     "ticker": "GNE",
+     "group": "treatment",
+     "score_level": null,
+     "score_slope_aug": null,
+     "sir_last": null,
+     "abnormal_sir_last": null,
+     "slope4": null,
+     "n_reports_trailing12m": 0,
+     "last_settlement": null,
+     "flags": {
+      "insufficient_history": false,
+      "no_si_file": false,
+      "no_shares_denominator": true,
+      "slope_unavailable": false,
+      "revision_seen_diagnostic": 0
+     },
+     "cutoff": "2026-03-11"
+    }
+   }
+  }
+ },
+ "interpretation": {
+  "comparison_established_tiers": [],
+  "reading": "비교 성립 tier 없음 — wave-1/2는 커버리지 미달(<70%), holdout은 동결 LLM AUC 부재(N=3). 무료 신호 벤치마크는 전향 비교(E2 스냅샷·sealed 분기)에서 성립한다.",
+  "engine_coupling": "비교 성립 조건 충족 미래 시점에서 LLM(또는 워치리스트) 성능 <= B4 성능이면 E2 평결과 동일 가중치로 엔진 결정 입력에 들어간다 — 완화 금지 (specs/B4_short_interest.md §7)"
+ }
+}

@@ -1,10 +1,10 @@
 {
   "manifest_version": 1,
   "root": "~/aaer-data",
-  "generated_at": "2026-07-09T02:25:10+00:00",
+  "generated_at": "2026-07-12T16:23:30+00:00",
   "generated_by": "tools/verify_manifest.py --write",
-  "file_count": 429,
-  "total_bytes": 399604670,
+  "file_count": 511,
+  "total_bytes": 577909570,
   "files": [
     {
       "path": "ADAM/edgar/CIK0001273685-submissions-001.json",
@@ -3062,6 +3062,581 @@
       "sha256": "e69fae2aca77a379697608d1741a5352a4f402256cd91d2934e4e92092b23969",
       "fetched_at": "2026-07-06T08:50:59+00:00",
       "source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000030554.json"
+    },
+    {
+      "path": "reference/cik-lookup-data.txt",
+      "size": 39739793,
+      "sha256": "279f647aee632e29cd5025f58e1472e78d2a6561d9f85e3c43ccb01d3729ada1",
+      "fetched_at": "2026-07-09T23:59:24+00:00",
+      "source_url": "https://www.sec.gov/Archives/edgar/cik-lookup-data.txt"
+    },
+    {
+      "path": "reference/company_tickers.json",
+      "size": 796915,
+      "sha256": "354f84eb0c74c56244e824cec2876815df0e5ee864212e84518c26fcc879f49c",
+      "fetched_at": "2026-07-09T23:59:20+00:00",
+      "source_url": "https://www.sec.gov/files/company_tickers.json"
+    },
+    {
+      "path": "short_interest/checksums.log",
+      "size": 15800,
+      "sha256": "31b98bc6a1e07eda9e05796ab5b13f6e6608c9cb203c34f133a7487cb6f4db7d",
+      "fetched_at": "2026-07-12T16:21:58+00:00",
+      "source_url": null,
+      "derived_from": "short_interest/ (수집 로그)"
+    },
+    {
+      "path": "short_interest/shrt20171229.csv",
+      "size": 1507693,
+      "sha256": "ae27f9f47cf6dab9e136c6950f67d3340a0e96e647bb3ad83031433f12058749",
+      "fetched_at": "2026-07-12T16:18:31+00:00",
+      "source_url": "https://cdn.finra.org/equity/otcmarket/biweekly/shrt20171229.csv"
+    },
+    {
+      "path": "short_interest/shrt20180112.csv",
+      "size": 1513511,
+      "sha256": "dbc924c5027265d9001ac7ad82d0d730dcf0854c4ac40cec374dfc7d678bc82c",
+      "fetched_at": "2026-07-12T16:20:04+00:00",
+      "source_url": "https://cdn.finra.org/equity/otcmarket/biweekly/shrt20180112.csv"
+    },
+    {
+      "path": "short_interest/shrt20180131.csv",
+      "size": 1522055,
+      "sha256": "82406e40e39c17bea51a8a993f1fe4b24f01f27cb71df6577e1e7a1facc16482",
+      "fetched_at": "2026-07-12T16:20:05+00:00",
+      "source_url": "https://cdn.finra.org/equity/otcmarket/biweekly/shrt20180131.csv"
+    },
+    {
+      "path": "short_interest/shrt20180215.csv",
+      "size": 1515146,
+      "sha256": "61907cd4bc02157b32ad169c528bda865631531d663b541a9aa5e4d3a8eb8fe6",
+      "fetched_at": "2026-07-12T16:20:07+00:00",
+      "source_url": "https://cdn.finra.org/equity/otcmarket/biweekly/shrt20180215.csv"
+    },
+    {
+      "path": "short_interest/shrt20180228.csv",
+      "size": 1515946,
+      "sha256": "b7a53b617901e34ed8c0f860c5d5bf40a81cb9eeb22fd0de83d74ce731383b83",
+      "fetched_at": "2026-07-12T16:20:08+00:00",
+      "source_url": "https://cdn.finra.org/equity/otcmarket/biweekly/shrt20180228.csv"
+    },
+    {
+      "path": "short_interest/shrt20180315.csv",
+      "size": 1503813,
+      "sha256": "0e14d9c2c5d1a49fd78b16e27fca464c675cf87135009f06f928c987b10b1767",
+      "fetched_at": "2026-07-12T16:20:10+00:00",
+      "source_url": "https://cdn.finra.org/equity/otcmarket/biweekly/shrt20180315.csv"
+    },
+    {
+      "path": "short_interest/shrt20180329.csv",
+      "size": 1505131,
+      "sha256": "21fcbb33eefd0aafeff50251181463736a8f0ac9998a61d9a3cb00306079119b",
+      "fetched_at": "2026-07-12T16:20:12+00:00",
+      "source_url": "https://cdn.finra.org/equity/otcmarket/biweekly/shrt20180329.csv"
+    },
+    {
+      "path": "short_interest/shrt20180413.csv",
+      "size": 1502449,
+      "sha256": "e9039a52d0ecf220c80fa40b07dc59320535d6158747eeb3336b2c683742ed66",
+      "fetched_at": "2026-07-12T16:20:14+00:00",
+      "source_url": "https://cdn.finra.org/equity/otcmarket/biweekly/shrt20180413.csv"
+    },
+    {
+      "path": "short_interest/shrt20180430.csv",
+      "size": 1511324,
+      "sha256": "35657eec5ac1f15431cd80a45786b9beac77cc190bb5a9209b96605ada752c6c",
+      "fetched_at": "2026-07-12T16:20:15+00:00",
+      "source_url": "https://cdn.finra.org/equity/otcmarket/biweekly/shrt20180430.csv"
+    },
+    {
+      "path": "short_interest/shrt20180515.csv",
+      "size": 1518621,
+      "sha256": "56334063e15c6119f054a6b115f92c3701781ea87df674042c8eb170a762c7fc",
+      "fetched_at": "2026-07-12T16:20:17+00:00",
+      "source_url": "https://cdn.finra.org/equity/otcmarket/biweekly/shrt20180515.csv"
+    },
+    {
+      "path": "short_interest/shrt20180531.csv",
+      "size": 1515278,
+      "sha256": "d8bc6c3a6a69c5d9aa0ef3da30976599c48a354d05f579bf1d1a4af7e4eed6b3",
+      "fetched_at": "2026-07-12T16:20:19+00:00",
+      "source_url": "https://cdn.finra.org/equity/otcmarket/biweekly/shrt20180531.csv"
+    },
+    {
+      "path": "short_interest/shrt20180615.csv",
+      "size": 1520719,
+      "sha256": "ae4daa65d54be6d8d73e732c728155deecc2104ad72644bc3ff6028a80efff8a",
+      "fetched_at": "2026-07-12T16:20:21+00:00",
+      "source_url": "https://cdn.finra.org/equity/otcmarket/biweekly/shrt20180615.csv"
+    },
+    {
+      "path": "short_interest/shrt20180629.csv",
+      "size": 1523132,
+      "sha256": "c680babd3cd21eedf6a75583f6d0f27a6a12a3bcc0764cced4f97bbb228cd7d2",
+      "fetched_at": "2026-07-12T16:20:22+00:00",
+      "source_url": "https://cdn.finra.org/equity/otcmarket/biweekly/shrt20180629.csv"
+    },
+    {
+      "path": "short_interest/shrt20180713.csv",
+      "size": 1535010,
+      "sha256": "52ac97c95ea3f461b40f0a8e4ce0eb7e60530ec1172f2ae93a758a8861eb019b",
+      "fetched_at": "2026-07-12T16:20:24+00:00",
+      "source_url": "https://cdn.finra.org/equity/otcmarket/biweekly/shrt20180713.csv"
+    },
+    {
+      "path": "short_interest/shrt20180731.csv",
+      "size": 1542485,
+      "sha256": "b0d68b5a27444b13528a6cd8393598f395933e488ee84a5848266bf708e615ca",
+      "fetched_at": "2026-07-12T16:20:25+00:00",
+      "source_url": "https://cdn.finra.org/equity/otcmarket/biweekly/shrt20180731.csv"
+    },
+    {
+      "path": "short_interest/shrt20180815.csv",
+      "size": 1537980,
+      "sha256": "6a06ff9d00a152077091c732d87e49ca21546a1c5bcf297f7a7e9ad7d9091165",
+      "fetched_at": "2026-07-12T16:20:26+00:00",
+      "source_url": "https://cdn.finra.org/equity/otcmarket/biweekly/shrt20180815.csv"
+    },
+    {
+      "path": "short_interest/shrt20180831.csv",
+      "size": 1539405,
+      "sha256": "1f93040d89025f78f80684bd4c7524d208d2f6b0d5ed507ba270825a9582eded",
+      "fetched_at": "2026-07-12T16:20:28+00:00",
+      "source_url": "https://cdn.finra.org/equity/otcmarket/biweekly/shrt20180831.csv"
+    },
+    {
+      "path": "short_interest/shrt20180914.csv",
+      "size": 1538468,
+      "sha256": "880c1ae8c53c0449b060f9810adaa1bfbd70f58493d1dd8746642c3ef66815dc",
+      "fetched_at": "2026-07-12T16:20:29+00:00",
+      "source_url": "https://cdn.finra.org/equity/otcmarket/biweekly/shrt20180914.csv"
+    },
+    {
+      "path": "short_interest/shrt20180928.csv",
+      "size": 1551139,
+      "sha256": "47ae2cdb652c42d8bb932816dd30393ddaf21b2598f047b14cfe1202b63430b8",
+      "fetched_at": "2026-07-12T16:20:31+00:00",
+      "source_url": "https://cdn.finra.org/equity/otcmarket/biweekly/shrt20180928.csv"
+    },
+    {
+      "path": "short_interest/shrt20181015.csv",
+      "size": 1556436,
+      "sha256": "82c5e723d849e43f61825150179a16726de61e637b6e2436068ab9948dfda749",
+      "fetched_at": "2026-07-12T16:20:32+00:00",
+      "source_url": "https://cdn.finra.org/equity/otcmarket/biweekly/shrt20181015.csv"
+    },
+    {
+      "path": "short_interest/shrt20181031.csv",
+      "size": 1549489,
+      "sha256": "e33ef7dea8667cb732bdaff7066570900f0a254b6eac8b02b47f84187f8221c5",
+      "fetched_at": "2026-07-12T16:20:34+00:00",
+      "source_url": "https://cdn.finra.org/equity/otcmarket/biweekly/shrt20181031.csv"
+    },
+    {
+      "path": "short_interest/shrt20181115.csv",
+      "size": 1546784,
+      "sha256": "0bc5224b796b624fd57d5977be3348bd402b974ac7f6c04b3c4f63ce8743ec50",
+      "fetched_at": "2026-07-12T16:20:35+00:00",
+      "source_url": "https://cdn.finra.org/equity/otcmarket/biweekly/shrt20181115.csv"
+    },
+    {
+      "path": "short_interest/shrt20181130.csv",
+      "size": 1534213,
+      "sha256": "041525984033bbd3543b14ce56df56a5529f9fb56e4e34cff73a9bc1c011b045",
+      "fetched_at": "2026-07-12T16:20:37+00:00",
+      "source_url": "https://cdn.finra.org/equity/otcmarket/biweekly/shrt20181130.csv"
+    },
+    {
+      "path": "short_interest/shrt20181214.csv",
+      "size": 1537904,
+      "sha256": "fbe98d91a5b1c21ebc4e0af8ddbf65497f37319b634c74856e9dda92a6023794",
+      "fetched_at": "2026-07-12T16:20:38+00:00",
+      "source_url": "https://cdn.finra.org/equity/otcmarket/biweekly/shrt20181214.csv"
+    },
+    {
+      "path": "short_interest/shrt20181231.csv",
+      "size": 1537274,
+      "sha256": "a81dc52e5aca8dd0b7fc5ba84ad4bee06fda8b9937b5579aadb3311d07b8082b",
+      "fetched_at": "2026-07-12T16:20:39+00:00",
+      "source_url": "https://cdn.finra.org/equity/otcmarket/biweekly/shrt20181231.csv"
+    },
+    {
+      "path": "short_interest/shrt20190115.csv",
+      "size": 1548209,
+      "sha256": "58d87d208761e2acaa0fd6eafed8345fd6e21785f45ee1d7915c1aab203c0aec",
+      "fetched_at": "2026-07-12T16:20:41+00:00",
+      "source_url": "https://cdn.finra.org/equity/otcmarket/biweekly/shrt20190115.csv"
+    },
+    {
+      "path": "short_interest/shrt20190131.csv",
+      "size": 1548528,
+      "sha256": "98097594d494bbb051122e98580f4be7e24c0c40661305f1e537b4309fb39943",
+      "fetched_at": "2026-07-12T16:20:42+00:00",
+      "source_url": "https://cdn.finra.org/equity/otcmarket/biweekly/shrt20190131.csv"
+    },
+    {
+      "path": "short_interest/shrt20190215.csv",
+      "size": 1553120,
+      "sha256": "517dfd9a0af7ffebd11038c92e0b5c665fa82ac217b9db7f954600ea9ad056f0",
+      "fetched_at": "2026-07-12T16:20:44+00:00",
+      "source_url": "https://cdn.finra.org/equity/otcmarket/biweekly/shrt20190215.csv"
+    },
+    {
+      "path": "short_interest/shrt20190228.csv",
+      "size": 1547252,
+      "sha256": "a4310dd77521ab9b342434e7bd68876075958acf26923498bf6ae9bb5b2c4598",
+      "fetched_at": "2026-07-12T16:20:45+00:00",
+      "source_url": "https://cdn.finra.org/equity/otcmarket/biweekly/shrt20190228.csv"
+    },
+    {
+      "path": "short_interest/shrt20190315.csv",
+      "size": 1552887,
+      "sha256": "9d017da29a4067d1de2afa35446d3ffa2c894b840655b1c1dddaeb2033c38463",
+      "fetched_at": "2026-07-12T16:20:46+00:00",
+      "source_url": "https://cdn.finra.org/equity/otcmarket/biweekly/shrt20190315.csv"
+    },
+    {
+      "path": "short_interest/shrt20190329.csv",
+      "size": 1549066,
+      "sha256": "d197627423d3657f6444ee247b4f497af8de14668b5bf0a9eacea841cb1ff7f3",
+      "fetched_at": "2026-07-12T16:20:48+00:00",
+      "source_url": "https://cdn.finra.org/equity/otcmarket/biweekly/shrt20190329.csv"
+    },
+    {
+      "path": "short_interest/shrt20190415.csv",
+      "size": 1559688,
+      "sha256": "f2908e12e4f925481af7f65eea6e65399b59744dfb7df79b93e7bb580ca0babf",
+      "fetched_at": "2026-07-12T16:20:50+00:00",
+      "source_url": "https://cdn.finra.org/equity/otcmarket/biweekly/shrt20190415.csv"
+    },
+    {
+      "path": "short_interest/shrt20190430.csv",
+      "size": 1566298,
+      "sha256": "218305567af56548aef55cb94dfb55da019a7d5081d8adf56d2d791fb532844b",
+      "fetched_at": "2026-07-12T16:20:51+00:00",
+      "source_url": "https://cdn.finra.org/equity/otcmarket/biweekly/shrt20190430.csv"
+    },
+    {
+      "path": "short_interest/shrt20190515.csv",
+      "size": 1569213,
+      "sha256": "07cef18a6816e6406f289e96b0d3f5d2e418158ae760a17d19667b2b1b116d73",
+      "fetched_at": "2026-07-12T16:20:52+00:00",
+      "source_url": "https://cdn.finra.org/equity/otcmarket/biweekly/shrt20190515.csv"
+    },
+    {
+      "path": "short_interest/shrt20190531.csv",
+      "size": 1569257,
+      "sha256": "e4707358d66a5e2569d440f22e48c6b461302747ac7c938d4b26826b0eda6d91",
+      "fetched_at": "2026-07-12T16:20:54+00:00",
+      "source_url": "https://cdn.finra.org/equity/otcmarket/biweekly/shrt20190531.csv"
+    },
+    {
+      "path": "short_interest/shrt20190614.csv",
+      "size": 1570943,
+      "sha256": "4f203dbb732d99d0183cbde269b9788d7ccc0b98c8abf6afb6035ee6c2f91ccb",
+      "fetched_at": "2026-07-12T16:20:55+00:00",
+      "source_url": "https://cdn.finra.org/equity/otcmarket/biweekly/shrt20190614.csv"
+    },
+    {
+      "path": "short_interest/shrt20190628.csv",
+      "size": 1577080,
+      "sha256": "3d1e0a9f183aa4c54fb9e3a125d9bf571625a84ec33aaced4bea4f22dd50d3b8",
+      "fetched_at": "2026-07-12T16:20:57+00:00",
+      "source_url": "https://cdn.finra.org/equity/otcmarket/biweekly/shrt20190628.csv"
+    },
+    {
+      "path": "short_interest/shrt20190715.csv",
+      "size": 1585107,
+      "sha256": "b6fd83c8e3cda6356d5075fad93defdb4a832e3c9ea1e56d7c246bfafea02f2f",
+      "fetched_at": "2026-07-12T16:20:58+00:00",
+      "source_url": "https://cdn.finra.org/equity/otcmarket/biweekly/shrt20190715.csv"
+    },
+    {
+      "path": "short_interest/shrt20190731.csv",
+      "size": 1582249,
+      "sha256": "44a86e245b15ec9d1800a4ab5fcd186176b6149ec5c9cdb154a8e7f31c66ed77",
+      "fetched_at": "2026-07-12T16:21:00+00:00",
+      "source_url": "https://cdn.finra.org/equity/otcmarket/biweekly/shrt20190731.csv"
+    },
+    {
+      "path": "short_interest/shrt20190815.csv",
+      "size": 1585497,
+      "sha256": "1c2df5d2b5dd9c3e473d54de0453e98c0170ec92f8cede30a1bf40f7b9f76d9c",
+      "fetched_at": "2026-07-12T16:21:01+00:00",
+      "source_url": "https://cdn.finra.org/equity/otcmarket/biweekly/shrt20190815.csv"
+    },
+    {
+      "path": "short_interest/shrt20190830.csv",
+      "size": 1586200,
+      "sha256": "3436540fa438080d2ba773aa13a26232ca0bb654da35d7924b8fcc2b31a31caa",
+      "fetched_at": "2026-07-12T16:21:03+00:00",
+      "source_url": "https://cdn.finra.org/equity/otcmarket/biweekly/shrt20190830.csv"
+    },
+    {
+      "path": "short_interest/shrt20190913.csv",
+      "size": 1581371,
+      "sha256": "7006a02d32a01ae2284c79bdd60d7a5e44f785818304cff86ae622cf1ec36f4a",
+      "fetched_at": "2026-07-12T16:21:05+00:00",
+      "source_url": "https://cdn.finra.org/equity/otcmarket/biweekly/shrt20190913.csv"
+    },
+    {
+      "path": "short_interest/shrt20190930.csv",
+      "size": 1577242,
+      "sha256": "02661bedabe2fcb0a5aba6fc6d3e6d2d9014848e1f4cb8144baebf2f0ec1f6d0",
+      "fetched_at": "2026-07-12T16:21:06+00:00",
+      "source_url": "https://cdn.finra.org/equity/otcmarket/biweekly/shrt20190930.csv"
+    },
+    {
+      "path": "short_interest/shrt20191015.csv",
+      "size": 1578226,
+      "sha256": "e4307dce4f630c32a9488704dec5863108fd2db977f70c79df17749076abd0a8",
+      "fetched_at": "2026-07-12T16:21:08+00:00",
+      "source_url": "https://cdn.finra.org/equity/otcmarket/biweekly/shrt20191015.csv"
+    },
+    {
+      "path": "short_interest/shrt20191031.csv",
+      "size": 1583695,
+      "sha256": "e00ed59b8ca8c402eab0e82142e498922ffb466cf1e987433a7c102353d6426f",
+      "fetched_at": "2026-07-12T16:21:09+00:00",
+      "source_url": "https://cdn.finra.org/equity/otcmarket/biweekly/shrt20191031.csv"
+    },
+    {
+      "path": "short_interest/shrt20241015.csv",
+      "size": 1926144,
+      "sha256": "8da672d65424e43653c49894a5012e6fd2300b0f02e0ca54dab70bd0f828cad7",
+      "fetched_at": "2026-07-12T16:21:11+00:00",
+      "source_url": "https://cdn.finra.org/equity/otcmarket/biweekly/shrt20241015.csv"
+    },
+    {
+      "path": "short_interest/shrt20241031.csv",
+      "size": 1919437,
+      "sha256": "404a2c0fa423c5a5bc9f75bf3df43ab76992ca833549cc73a7d79d88eb672bef",
+      "fetched_at": "2026-07-12T16:21:12+00:00",
+      "source_url": "https://cdn.finra.org/equity/otcmarket/biweekly/shrt20241031.csv"
+    },
+    {
+      "path": "short_interest/shrt20241115.csv",
+      "size": 1926518,
+      "sha256": "8d3747eae7b9f6cb104ffd70c630018094fc43aa393bde43c64f442fc0190702",
+      "fetched_at": "2026-07-12T16:21:13+00:00",
+      "source_url": "https://cdn.finra.org/equity/otcmarket/biweekly/shrt20241115.csv"
+    },
+    {
+      "path": "short_interest/shrt20241129.csv",
+      "size": 1946565,
+      "sha256": "2e36721481d756ecbebf651c4ab62d2dfc8f0219e1a0834f76f9016c78f9fc68",
+      "fetched_at": "2026-07-12T16:21:15+00:00",
+      "source_url": "https://cdn.finra.org/equity/otcmarket/biweekly/shrt20241129.csv"
+    },
+    {
+      "path": "short_interest/shrt20241213.csv",
+      "size": 1940257,
+      "sha256": "a651a4cfc3172c3d0e45cbbf866468ac98b386aad47343dc175680bdbfdcffab",
+      "fetched_at": "2026-07-12T16:21:16+00:00",
+      "source_url": "https://cdn.finra.org/equity/otcmarket/biweekly/shrt20241213.csv"
+    },
+    {
+      "path": "short_interest/shrt20241231.csv",
+      "size": 1931555,
+      "sha256": "43b28e5da13e59dfb84f113cafae6cd82f4cb331f8feeca7e8cc3e57b850a206",
+      "fetched_at": "2026-07-12T16:21:18+00:00",
+      "source_url": "https://cdn.finra.org/equity/otcmarket/biweekly/shrt20241231.csv"
+    },
+    {
+      "path": "short_interest/shrt20250115.csv",
+      "size": 1944546,
+      "sha256": "691c8d2f71b279c5a26b19ed98146d995a553cec63c557e6de3293a7121d3908",
+      "fetched_at": "2026-07-12T16:21:19+00:00",
+      "source_url": "https://cdn.finra.org/equity/otcmarket/biweekly/shrt20250115.csv"
+    },
+    {
+      "path": "short_interest/shrt20250131.csv",
+      "size": 1954436,
+      "sha256": "16870aec40110f7f089257ff6f23e223167bb737c00576acd51cfecc27991a88",
+      "fetched_at": "2026-07-12T16:21:21+00:00",
+      "source_url": "https://cdn.finra.org/equity/otcmarket/biweekly/shrt20250131.csv"
+    },
+    {
+      "path": "short_interest/shrt20250214.csv",
+      "size": 1961622,
+      "sha256": "3d25185d48a3a740c25ab70e56f577d15f2cbeb22b52e5d7c2dccdbf03fec4a7",
+      "fetched_at": "2026-07-12T16:21:22+00:00",
+      "source_url": "https://cdn.finra.org/equity/otcmarket/biweekly/shrt20250214.csv"
+    },
+    {
+      "path": "short_interest/shrt20250228.csv",
+      "size": 1962154,
+      "sha256": "8eafdd1d971b7da217abcea6b27724f6e4ad1cc07c38badc3f06a4092a327afc",
+      "fetched_at": "2026-07-12T16:21:23+00:00",
+      "source_url": "https://cdn.finra.org/equity/otcmarket/biweekly/shrt20250228.csv"
+    },
+    {
+      "path": "short_interest/shrt20250314.csv",
+      "size": 1972621,
+      "sha256": "9d297a3e18742e0284fda647245f58cbfc68b8e9bd3006354c72ae1e8df91d7c",
+      "fetched_at": "2026-07-12T16:21:25+00:00",
+      "source_url": "https://cdn.finra.org/equity/otcmarket/biweekly/shrt20250314.csv"
+    },
+    {
+      "path": "short_interest/shrt20250331.csv",
+      "size": 1978656,
+      "sha256": "af181ffe88561f2cd14062bd818c12ee48657107f36bb2f4275317888f558eee",
+      "fetched_at": "2026-07-12T16:21:26+00:00",
+      "source_url": "https://cdn.finra.org/equity/otcmarket/biweekly/shrt20250331.csv"
+    },
+    {
+      "path": "short_interest/shrt20250415.csv",
+      "size": 1988707,
+      "sha256": "76f3da26bd6fdda43e1717b050f7f9fe90bc8ce9d8dd27a99e6e39d630a92bb8",
+      "fetched_at": "2026-07-12T16:21:27+00:00",
+      "source_url": "https://cdn.finra.org/equity/otcmarket/biweekly/shrt20250415.csv"
+    },
+    {
+      "path": "short_interest/shrt20250430.csv",
+      "size": 1984282,
+      "sha256": "f1c56f84689e00187dfdc29cd2a7a9ab2417ce6e0720ad6d813465e3be29c9d7",
+      "fetched_at": "2026-07-12T16:21:29+00:00",
+      "source_url": "https://cdn.finra.org/equity/otcmarket/biweekly/shrt20250430.csv"
+    },
+    {
+      "path": "short_interest/shrt20250515.csv",
+      "size": 1987195,
+      "sha256": "21d25af65a7c67e8e9b32e657bd26f3a2eb45cfce306c649481c6917caf4bb0d",
+      "fetched_at": "2026-07-12T16:21:30+00:00",
+      "source_url": "https://cdn.finra.org/equity/otcmarket/biweekly/shrt20250515.csv"
+    },
+    {
+      "path": "short_interest/shrt20250530.csv",
+      "size": 1987925,
+      "sha256": "52ef718b7a9e5cef57e9be27e643ad768a6f0cf7cb90b624f1cef2bcc279df4e",
+      "fetched_at": "2026-07-12T16:21:31+00:00",
+      "source_url": "https://cdn.finra.org/equity/otcmarket/biweekly/shrt20250530.csv"
+    },
+    {
+      "path": "short_interest/shrt20250613.csv",
+      "size": 1995804,
+      "sha256": "4a5cb7c52fa41be106a45593073f7419300f840b97eac6883f0e08a0340048ae",
+      "fetched_at": "2026-07-12T16:21:33+00:00",
+      "source_url": "https://cdn.finra.org/equity/otcmarket/biweekly/shrt20250613.csv"
+    },
+    {
+      "path": "short_interest/shrt20250630.csv",
+      "size": 2004145,
+      "sha256": "6059c4e6a75d61b0793f20bd37857104d0519e598f2ef6fbe31c4f3954415be1",
+      "fetched_at": "2026-07-12T16:21:34+00:00",
+      "source_url": "https://cdn.finra.org/equity/otcmarket/biweekly/shrt20250630.csv"
+    },
+    {
+      "path": "short_interest/shrt20250715.csv",
+      "size": 2014011,
+      "sha256": "f95bc29c8258865d86fb4aa8af8ac3529c3a7e3d77ae3d39d8f84f327cbae9a7",
+      "fetched_at": "2026-07-12T16:21:36+00:00",
+      "source_url": "https://cdn.finra.org/equity/otcmarket/biweekly/shrt20250715.csv"
+    },
+    {
+      "path": "short_interest/shrt20250731.csv",
+      "size": 2013521,
+      "sha256": "595d81a901ba471077b472fc1a8ece90934bd14356799f232f8faab43f4f425e",
+      "fetched_at": "2026-07-12T16:21:37+00:00",
+      "source_url": "https://cdn.finra.org/equity/otcmarket/biweekly/shrt20250731.csv"
+    },
+    {
+      "path": "short_interest/shrt20250815.csv",
+      "size": 2017357,
+      "sha256": "2a5ef13d30ac69743f790568681b209851d2148c071f6aab6e03f7ada1d29b63",
+      "fetched_at": "2026-07-12T16:21:39+00:00",
+      "source_url": "https://cdn.finra.org/equity/otcmarket/biweekly/shrt20250815.csv"
+    },
+    {
+      "path": "short_interest/shrt20250829.csv",
+      "size": 2013507,
+      "sha256": "b9100a78c9bc226774bd8e8140590bb20b059f0185ff45c0ae407e50e6354386",
+      "fetched_at": "2026-07-12T16:21:40+00:00",
+      "source_url": "https://cdn.finra.org/equity/otcmarket/biweekly/shrt20250829.csv"
+    },
+    {
+      "path": "short_interest/shrt20250915.csv",
+      "size": 2019681,
+      "sha256": "8d86d3b428dd50efc046790e412284803b96f7506855b2b94e860de93947bd8d",
+      "fetched_at": "2026-07-12T16:21:42+00:00",
+      "source_url": "https://cdn.finra.org/equity/otcmarket/biweekly/shrt20250915.csv"
+    },
+    {
+      "path": "short_interest/shrt20250930.csv",
+      "size": 2039094,
+      "sha256": "1690003569b896396970d278ec518f1c2e97d4c6c7b2bff63f129de0911c2ea1",
+      "fetched_at": "2026-07-12T16:21:43+00:00",
+      "source_url": "https://cdn.finra.org/equity/otcmarket/biweekly/shrt20250930.csv"
+    },
+    {
+      "path": "short_interest/shrt20251015.csv",
+      "size": 2052842,
+      "sha256": "593366b69fff76c5df04dbe7f56828be5b6f84e16131cc843567e3b4ddf145bb",
+      "fetched_at": "2026-07-12T16:21:44+00:00",
+      "source_url": "https://cdn.finra.org/equity/otcmarket/biweekly/shrt20251015.csv"
+    },
+    {
+      "path": "short_interest/shrt20251031.csv",
+      "size": 2053422,
+      "sha256": "bdb05587a5a1670c98c9a47b436cea23449dca3fb230a5fd47e93a4ff394fb9c",
+      "fetched_at": "2026-07-12T16:21:46+00:00",
+      "source_url": "https://cdn.finra.org/equity/otcmarket/biweekly/shrt20251031.csv"
+    },
+    {
+      "path": "short_interest/shrt20251114.csv",
+      "size": 2060789,
+      "sha256": "e9e59a008391ca9f3e1005b03e2ba388d927cdc463867291a710f2aa802504af",
+      "fetched_at": "2026-07-12T16:21:48+00:00",
+      "source_url": "https://cdn.finra.org/equity/otcmarket/biweekly/shrt20251114.csv"
+    },
+    {
+      "path": "short_interest/shrt20251128.csv",
+      "size": 2073779,
+      "sha256": "3636c895088eca60f3c1500216cc40d915a002f8ab05f3a7dc4ed239d3e67f82",
+      "fetched_at": "2026-07-12T16:21:49+00:00",
+      "source_url": "https://cdn.finra.org/equity/otcmarket/biweekly/shrt20251128.csv"
+    },
+    {
+      "path": "short_interest/shrt20251215.csv",
+      "size": 2064630,
+      "sha256": "6f3b32055d2ef3470d466a1def89e2530e48494f892515f6fe32f733076ff582",
+      "fetched_at": "2026-07-12T16:21:50+00:00",
+      "source_url": "https://cdn.finra.org/equity/otcmarket/biweekly/shrt20251215.csv"
+    },
+    {
+      "path": "short_interest/shrt20251231.csv",
+      "size": 2074828,
+      "sha256": "f35895d9634aef09652af4d7a101bb649703743e5fdf2df7cd309e147bda05d6",
+      "fetched_at": "2026-07-12T16:21:52+00:00",
+      "source_url": "https://cdn.finra.org/equity/otcmarket/biweekly/shrt20251231.csv"
+    },
+    {
+      "path": "short_interest/shrt20260115.csv",
+      "size": 2079871,
+      "sha256": "1ea7c49ab05b54804399efa0647006ffef7a9a4a55dd4923f2a56b07db5ba151",
+      "fetched_at": "2026-07-12T16:21:53+00:00",
+      "source_url": "https://cdn.finra.org/equity/otcmarket/biweekly/shrt20260115.csv"
+    },
+    {
+      "path": "short_interest/shrt20260130.csv",
+      "size": 2093288,
+      "sha256": "e64aa4419a2de5d2a6e368af30cec1cfcfa35526db7a65b83bc5b57081adba27",
+      "fetched_at": "2026-07-12T16:21:54+00:00",
+      "source_url": "https://cdn.finra.org/equity/otcmarket/biweekly/shrt20260130.csv"
+    },
+    {
+      "path": "short_interest/shrt20260213.csv",
+      "size": 2107115,
+      "sha256": "e8f41dd6806ea47c3340e709b9131b7db24d3b29d2c6f6c21122ce814cb28a55",
+      "fetched_at": "2026-07-12T16:21:56+00:00",
+      "source_url": "https://cdn.finra.org/equity/otcmarket/biweekly/shrt20260213.csv"
+    },
+    {
+      "path": "short_interest/shrt20260227.csv",
+      "size": 2109555,
+      "sha256": "4f80d193e16b3db79d693fcec6dbb43384b4e256d81f52b7fb50bc9c11cb8511",
+      "fetched_at": "2026-07-12T16:21:58+00:00",
+      "source_url": "https://cdn.finra.org/equity/otcmarket/biweekly/shrt20260227.csv"
     }
   ]
 }
