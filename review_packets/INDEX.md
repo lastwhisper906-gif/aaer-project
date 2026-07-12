@@ -22,8 +22,8 @@
 | 13-W | `RP-13_grading_workbench.md` | **채점 35건 소유자 서명대** (wave-2 32 + 홀드아웃 3, flags-first: TIER A 13 · mem-suspect 0/35) · 결정론 생성기 `tools/build_rp13_workbench.py`(verbatim 보증) | 서명/오버라이드 자체가 목적 — 재실행 없음 |
 | 13 | `RP-13_final_packet.md` | **OWNER-GATE-E 세션 최종 패킷** — 순서 증명(사전등록 c1b85a7 < 첫채점 ef63cfc) · 호출 18/320 · E3→R4 확증 · E1 보류(§5-1) · 소유자 액션 4 | 실행 증거 — 재실행 없음 |
 | 14/15/16 | `RP-14_issue2_narrative_diff.md` · `RP-15_label_naming_diff.md` · `RP-16_calibration_language_diff.md` | (별도 파일 — 발행 서사 diff / 라벨 명명 diff(계류) / 보정 언어 diff) | diff-only — 각 파일 참조 |
-| 18 | `RP-18_asymmetry_memo_publication.md` | **D53 비대칭 메모 발행 여부** (소유자 대기) — 게시 가능 완성 영문 텍스트·배치 2안(Issue 1 부록 권장)·게시 명령·가설 표지 검토 노트 | 게시 = 명령 1줄; 기각 = 파일 존치 (비용 0) |
 | 17 | `RP-17_denominator_fallback.md` | **D56/D57 사후 분모 개정 분류 판정** (소유자 대기) — 기계 결함 vs 분석 변경, 1차↔재실행 전량 델타(holdout AUC 0.167→0.476), 정확 원복 명령, CLAUDE.md 거버넌스 3줄 제안 diff | 기각 = checkout 원복 커밋 1 + 주석 2줄 (재실행 0) |
+| 18 | `RP-18_asymmetry_memo_publication.md` | **D53 비대칭 메모 발행 여부** (소유자 대기) — 게시 가능 완성 영문 텍스트·배치 2안(Issue 1 부록 권장)·게시 명령·가설 표지 검토 노트 | 게시 = 명령 1줄; 기각 = 파일 존치 (비용 0) |
 
 ## Claude 재량 판단 전수 (인간 미개입 결정 — 감사 대상)
 
