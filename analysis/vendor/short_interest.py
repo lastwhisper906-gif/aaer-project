@@ -30,8 +30,17 @@ LAG_DAYS = 14                 # settlement -> dissemination, conservative (spec 
 TRAILING_DAYS = 365           # abnormal-SI median window (spec §3)
 MIN_TRAILING_REPORTS = 12     # of ~24 possible bi-monthly reports
 SLOPE_REPORTS = 4             # trailing reports for the slope term
-SHARES_FRESHNESS_DAYS = 400   # denominator instant fact: t-400 <= end <= t
-SHARES_TAG = "dei:EntityCommonStockSharesOutstanding"
+SHARES_FRESHNESS_DAYS = 400   # denominator fact: t-400 <= end <= t
+# Denominator priority chain (spec §13 / D53 amendment): multi-class issuers
+# have no undimensioned dei fact (companyfacts does not flatten dimensional
+# facts), so fall through — one source per case, never mixed within a series.
+SHARES_TAG_PRIORITY = (
+    "dei:EntityCommonStockSharesOutstanding",            # instant
+    "us-gaap:CommonStockSharesOutstanding",              # instant
+    "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding",  # duration
+    "us-gaap:WeightedAverageNumberOfSharesOutstandingBasic",    # duration
+)
+SHARES_TAG = SHARES_TAG_PRIORITY[0]  # kept for backward reference
 DATA_FLOOR = datetime.date(2017, 12, 29)  # earliest FINRA partition (probed 2026-07-13)
 HEADER_PREFIX = "accountingYearMonthNumber|symbolCode|issueName"
 
@@ -172,23 +181,38 @@ def si_series(symbol: str, si_dir: Path, cutoff: datetime.date,
     return rows, {"files_scanned": len(usable_files), "revision_seen": revision_seen}
 
 
-def shares_at(share_facts: dict, on: datetime.date,
+def _span_days(f: dict) -> int:
+    """duration fact length; instants count as 0 so they sort as 'shortest'."""
+    if not f.get("start"):
+        return 0
+    return (datetime.date.fromisoformat(f["end"])
+            - datetime.date.fromisoformat(f["start"])).days
+
+
+def shares_at(share_facts: dict, on: datetime.date, tag: str = SHARES_TAG,
               freshness_days: int = SHARES_FRESHNESS_DAYS) -> float | None:
-    """Denominator: latest (end, filed) instant dei shares-outstanding fact with
-    on - freshness <= end <= on. share_facts = payload_v2 extract_share_facts()[0]
-    (already PIT-filtered filed <= cutoff upstream)."""
-    facts = share_facts.get(SHARES_TAG, [])
+    """Denominator from one tag: latest (end, filed) fact with
+    on - freshness <= end <= on; equal (end, filed) -> shorter period wins
+    (quarterly average beats annual — spec §13 tie-break). share_facts =
+    payload_v2 extract_share_facts()[0] (already PIT-filtered upstream)."""
     best = None
-    for f in facts:
-        if f.get("period_type") != "instant":
-            continue
+    for f in share_facts.get(tag, []):
         end = datetime.date.fromisoformat(f["end"])
         if end > on or end < on - datetime.timedelta(days=freshness_days):
             continue
-        key = (end, f.get("filed") or "")
+        key = (end, f.get("filed") or "", -_span_days(f))
         if best is None or key > best[0]:
             best = (key, float(f["value"]))
     return None if best is None else best[1]
+
+
+def choose_shares_source(share_facts: dict, t_last: datetime.date) -> str | None:
+    """Spec §13: single source per case — highest-priority tag passing the
+    freshness band at the last report date; None if no source qualifies."""
+    for tag in SHARES_TAG_PRIORITY:
+        if shares_at(share_facts, t_last, tag) is not None:
+            return tag
+    return None
 
 
 # ---------------------------------------------------------------- score (spec §3–§4)
@@ -211,14 +235,21 @@ def b4_from_series(series: list[dict], share_facts: dict,
     out = {"score_level": None, "score_slope_aug": None, "sir_last": None,
            "abnormal_sir_last": None, "slope4": None,
            "n_reports_trailing12m": 0, "last_settlement": None,
-           "flags": flags, "cutoff": str(cutoff)}
+           "shares_source": None, "flags": flags, "cutoff": str(cutoff)}
     if not series:
         flags["no_si_file"] = True
         return out
 
+    # spec §13: one denominator source per case, chosen at the last report date
+    source = choose_shares_source(share_facts, series[-1]["settlement"])
+    if source is None:
+        flags["no_shares_denominator"] = True
+        return out
+    out["shares_source"] = source
+
     sir = []  # ascending [(settlement, SIR)]
     for rep in series:
-        denom = shares_at(share_facts, rep["settlement"])
+        denom = shares_at(share_facts, rep["settlement"], source)
         if denom is None or denom <= 0:
             continue
         sir.append((rep["settlement"], rep["short_qty"] / denom))

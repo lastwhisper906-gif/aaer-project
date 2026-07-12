@@ -186,3 +186,28 @@ def b4_score(ticker: str, cutoff: datetime.date,
 - **Q-M01**: FINRA 데이터 ToS/라이선스 — 발행물 게재 조건 확인 (소유자).
 - **Q-M02**: 과거 공표일(dissemination date) 실측 입수 가능성 — 입수 시 LAG 상수
   대체는 신규 D-엔트리 스펙 개정으로만.
+
+## §13 개정 1 (D53, 2026-07-13) — 분모 우선순위 사슬 (이력 공개 조건 하 개정)
+
+**공개**: 이 개정은 D52 1차 실행 결과(커밋 287a92a — coverage wave1 3/30 ·
+wave2 1/32 · holdout 7/12, holdout AUC 0.1667)를 **본 뒤** 작성되었다. 동기는
+성능이 아니라 커버리지다: §3의 dei 단일 분모가 다중 클래스 발행사(HUBG·GNE·
+UAA·RL·VIASP·VLGEA)에서 체계적으로 결측 — SEC companyfacts API가 차원(클래스별)
+사실을 평탄화하지 않아 undimensioned dei 사실 자체가 없다. §6의 사전 등록 기대
+커버리지(holdout 12/12)와의 불일치가 개정 계기이며, 분모 선택은 방향 중립
+(부호가 아니라 커버리지를 결정)이다. 1차 결과는 git 이력에 보존된다.
+
+**개정 규칙 (재실행 전 커밋)**:
+- 분모 소스 우선순위 (전부 D44 payload_v2 화이트리스트 내, 신규 태그 0):
+  1. `dei:EntityCommonStockSharesOutstanding` (instant)
+  2. `us-gaap:CommonStockSharesOutstanding` (instant)
+  3. `us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding` (duration, end 앵커)
+  4. `us-gaap:WeightedAverageNumberOfSharesOutstandingBasic` (duration, end 앵커)
+- **케이스당 단일 소스**: t_last에서 신선도 밴드를 통과하는 최상위 소스를
+  채택하고, 그 케이스의 전 보고서에 그 소스만 사용한다 (시계열 내 소스 혼합
+  금지 — 레벨 차이가 aSIR 중앙값 차분을 오염시키는 것 방지). 채택 소스가 특정
+  보고서에서 신선 사실이 없으면 그 보고서만 사용 불가 (기존 규칙 유지).
+- duration 사실의 as-of 앵커 = `end`. 동일 (end, filed)의 연간·분기 중복은
+  **짧은 기간(분기) 승리** (더 최신 평균) — 결정론 tie-break.
+- 가중평균 주식수는 기간 평균이지 시점 잔고가 아니다 — 정직 한계로 기록.
+  케이스 내 일관 사용이므로 aSIR(자기 중앙값 차분)에는 수준 편차가 상쇄된다.
