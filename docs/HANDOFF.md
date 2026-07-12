@@ -1,4 +1,64 @@
-# HANDOFF.md — 세션 인수인계 (최종 갱신: 2026-07-13, 병렬 워크트리 정합 병합 — main D51~D53 + worktree D54~D57, 미터링 0)
+# HANDOFF.md — 세션 인수인계 (최종 갱신: 2026-07-13, 병합 확정 + RP-17 + B4 무대 판정 미션 — D59/D60, 미터링 0)
+
+## 병합 확정 + RP-17 + B4 무대 판정 미션 요약 (2026-07-13 무인, 미터링 0 — D59/D60)
+
+**헤드라인 — B4 무대 판정 (D60, analysis/B4_VENUE_MEMO.md)**: **LLM-vs-B4
+비교는 E2에서 성립하지 않는다 — 신규 스냅샷 112개(실험군 48) 중 B4 점수 계산
+가능 0개.** s0 재사용점을 넣어도 실험군 케이스 커버 1/7(14%) < §4b 성립 조건
+70%, E2를 실행해도 불변(그리드가 과거로만 자란다). 귀결: engine_verdict는
+`b4_comparison.valid=false`를 자기 기록(설계 정상), `b4_dominated` 강등은
+E2에서 트리거 불능, **무료 신호 대결의 유일한 무대 = 전향 seal** — 첫 증거
+≈2027-11(2026-11-15 seal + 4분기 창), stage-gate 최초 개방 가능 ≈2028-08.
+LAUNCH_SEQUENCE 2단계에 기대치 주석 반영: **E2 발사 편익에 B4 대결 해소를
+계상하지 말 것** (E2가 사는 것은 LLM vs B3 리드타임이다).
+
+- **단일 작성자 확인**: 개시 시 60초 재확인 — remote/양 워크트리/screener
+  HEAD 무이동, lock 없음, 클린 트리 (직전 정합 병합 세션은 01:56 push로 종료).
+- **Phase 1 (검증만 — 병합은 직전 세션이 완료)**: 재부여 매핑 전수 grep —
+  잔존 구번호 인용 0 (전 인용이 '원번호' 주석 동반, HANDOFF 역사 절은 명시
+  보존). freeze 순서 git log --follow 실측 — 스펙<구현<결과 전 계열 정상
+  (4753824<a14d746<287a92a · 7994e2d<efaf4a1 · f03d331<0a57eb6), 병합이
+  merge 커밋이라 그래프 보존, 정합 노트 불요. 원장 D51~D60 중복 0.
+- **Phase 2 (D59)**: `review_packets/RP-17_denominator_fallback.md` —
+  D56/D57 사후 분모 개정의 소유자 분류 판정 (기계 결함 vs 분석 변경). 양판
+  전량 델타 실측 명기: **holdout AUC 0.1667→0.4762/0.5238 — AUC가 움직였다**
+  (커버리지만이 아니라). checkout 기반 무충돌 원복 명령·양측 최강 논거·
+  CLAUDE.md 거버넌스 3줄(사후 개정 한계·5게이트·단일 작성자) 제안 diff 동봉
+  (소유자 서명 시에만 적용). 미션 문면의 RP-16은 D47 diff가 선점 — RP-17로
+  발행 (D14 생성 순서 규칙).
+- **Phase 4 (screener)**: 81 passed + vendor 무결성 green. 구성 검증 2건 —
+  (a) publish 경로 게이트 순서(b4_top30 구조 검증 선행 → lint가 b4-유효
+  워치리스트 차단·파일 미기록) 시퀀스 테스트 신규 5af8a8c; (b) stage-1
+  fixtures_of_record diff 검토(2287907) — rank_rule = M/F/B4 flags +
+  b4_slope_aug tiebreak, B3 보조열 유지, 램프→플래그/평탄→0.0 픽스처 정상.
+  과학 모듈 무변경 → 재vendoring 불요.
+- **5게이트 실측 (2026-07-13)**:
+  - main(0c219e5 시점): pytest **135 passed**(analysis/ 포함) ·
+    reproduce **100/100** · lint **PASS** · blindness **PASS** ·
+    verify_manifest **PASS (511 files)** — 아래 커밋 후 재실측 병기.
+  - branch(a3ba603): pytest 111 · 나머지 4종 전부 PASS.
+  - screener: **81 passed** (vendor 무결성 포함). CI: main push 전건 green.
+- 미터링: **0호출.** 네트워크 = git fetch/push·gh만.
+
+### 소유자 통합 체크리스트 (레버리지 순 — 직전 두 목록 대체)
+
+1. **RP-17 서명** — D56/D57 수용 or 기각 (기각 = 패킷 §2 명령 그대로, 커밋
+   1개 원복·재실행 0). 수용 시 CLAUDE.md 거버넌스 3줄 diff도 함께 서명 권장.
+2. **RP-15 서명** — 라벨 명명 diff (계류 지속).
+3. **screener 원격 + UA** — S-03(remote-add/push 명령 62ba9cc에 있음) +
+   S-01(config.json UA). seal 앵커 사슬의 전제.
+4. **`make smoke`** (~30호출 종량) — FREEZE_REV3 §6-3 래치, E2 전 필수.
+5. **E2 예산·발사** (~112–160호출) — **D60 주석 확인 후**: E2는 B4 대결을
+   해소하지 않는다. 사는 것 = LLM vs B3 리드타임 + 엔진 판정 §4.
+6. **FINRA ToS** (Q-M01/S-08) — 발행물 원수치 게재 전 확인.
+7. **공표일 실측** (Q-M02/S-09) — 입수 시 LAG 14 대체는 신규 D-엔트리 개정.
+8. **변호사 2종** (S-10 증권 + S-13 이민·whistleblower, wrapper W-8).
+9. **Zenodo vs GitHub release** (S-02 + Q-R03) — seal 앵커 채널 단일화.
+10. **Q-F01** — HUBG 하위 파일 fetch (payload_v2 커버리지 완결).
+11. **D53 EXPLORATORY 메모 발행 여부** — wave-1 B3 비대칭 산술 분해.
+12. **WS-6/7 예산** (Q-F06 124/108 · Q-F07 ~20호출) — E4 동배치 권장 유지.
+
+# (이전) HANDOFF.md — 세션 인수인계 (최종 갱신: 2026-07-13, 병렬 워크트리 정합 병합 — main D51~D53 + worktree D54~D57, 미터링 0)
 
 > **정합 병합 노트 (통합 세션)**: 아래 두 미션이 같은 날 병렬 실행되어 병합됨. 워크트리 D-번호는 최종 **D54(게이트 수리)·D55(B4 사전 등록)·D56(분모 개정)·D57(재실행 확정)·Q-M04(설명가능성)**로 재부여 — 각 원장 엔트리의 renumber_note가 원번호·원 커밋 SHA를 보존한다. 아래 시장조사 미션 절 본문의 D51~D54/Q-M03 표기는 작성 당시 브랜치 번호(역사 기록)로 무수정 유지.
 
