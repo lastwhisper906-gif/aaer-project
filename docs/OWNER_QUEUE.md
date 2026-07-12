@@ -22,8 +22,13 @@
 9. **WS-6/7 예산** (Q-F06 124/108 · Q-F07 ~20호출, E4 동배치 권장).
 - 해소 반영: Q-F01 **RESOLVED**(D62) · Q-M02 **CONVERTED**(D63, 구현 GO 게이트)
   · Q-M03 RESOLVED(D56/D57, RP-17이 상급 심급) · Q-E01/E02/E03·Q-R01/R02 RESOLVED.
-- 잔여 OPEN 상세: Q-F02(원문 대조)·Q-F05(62호출 프로브)·Q-F08(생존 편향 감사)
-  ·Q-M01(FINRA ToS)·Q-M04(Cycle-2 등록).
+- 2026-07-13 야간 서면 승인 반영: **Q-F05 RESOLVED**(A-변형: 금야 창 발사) ·
+  **Q-F06 RESOLVED**(옵션 B: 108호출) · Q-M02 구현 **GO**(A-8) — 전부 인용
+  "(owner, 2026-07-13, written overnight authorization — this mission's prompt)".
+  freeze 개정 #4(docs/FREEZE_REV4_HARNESS_E2.md)가 금야 발사 경로를 지배.
+- 잔여 OPEN 상세: Q-F02(원문 대조)·Q-F07(교차 채점자 — grader 0 계약이라 금야
+  스코프 밖)·Q-F08(생존 편향 감사)·Q-M01(FINRA ToS)·Q-M04(Cycle-2 등록)·
+  **Q-M05(신규 — 야간 미션 프롬프트 §5 절단)**.
 
 ---
 
@@ -246,7 +251,12 @@
   (`test_date_shift.py::test_collision_property_documented` 실증).
 - **옵션**: (A) E 배치(E2+E4)와 같은 창에서 발사 · (B) 별도 시점 · (C) 보류.
 - **세션 기본 조치**: 없음 (launch-ready 동결 — 미터링 0 계약).
-- **상태**: OPEN
+- **상태**: **RESOLVED (owner, 2026-07-13, written overnight authorization —
+  this mission's prompt, §A-5)** — **(A-변형: 금야 창) 발사 승인.** 전제 순서
+  고정: ① date_shift 러너 배선(spec §5) ② 발사 전 위생 스캔(케이스별 오프셋
+  ∉ 원본 날짜쌍 차 집합, 충돌 케이스는 필드 단위 이동 검증 대체) ③ 테스트+
+  5게이트 — 전부 무호출·커밋 후 62호출. 엔드포인트 사전 등록 그대로
+  (v1 wave-1 50% [15/30] · wave-2 21.9% [7/32], 동일 문구·동일 k, 홀드아웃 제외).
 
 ---
 
@@ -261,7 +271,11 @@
   발행 수치 불변. 홀드아웃 k=5 유지.
 - **옵션**: (A) 124 신규 · (B) 108 재사용 · (C) 보류.
 - **세션 기본 조치**: 없음 (spec only — 미터링 0 계약).
-- **상태**: OPEN
+- **상태**: **RESOLVED (owner, 2026-07-13, written overnight authorization —
+  this mission's prompt, §A-6)** — **(B) 108호출.** wave-1 treatment 8케이스는
+  커밋된 hardening draw_2/3 재사용, 나머지 (30−8)×2 + 32×2 = 108 신규.
+  산출 = specs/draw_k3.md 그대로 flip-rate 표 + median 분리 통계 **주석 병기**
+  (grade 병합 금지, draw-1 발행 수치 불변, 홀드아웃 k=5 유지).
 
 ---
 
@@ -361,4 +375,22 @@
   aaer-evals 질문으로 등록. 이 세션은 등록만, 설계·구축 없음
   (docs/FUTURE_CYCLE_PROTOCOL.md 절차를 따를 것).
 
+- **상태**: OPEN
+
+---
+
+## Q-M05 — 야간 미션 프롬프트 §5(zero-call backlog B-1…B-10) 절단 — OPEN (신규, 2026-07-13 야간)
+
+- **발견**: 2026-07-13 야간 서면 승인 프롬프트가 §4 P1 항목 2 중간에서 절단됨 —
+  §5(zero-call backlog B-1…B-10 목록)와 §4 잔여가 세션에 도달하지 않았다.
+  §A-9가 B-1…B-10을 포괄 승인하고 §1이 "B-4 citation check"(publisher/journal
+  페이지 네트워크 허용)를 언급하나, **목록 자체가 부재**.
+- **세션 조치**: 미도달 목록을 추측 실행하지 않는다 (self-resolve 금지 규약의
+  연장). 레이트 리밋 대기 블록의 zero-call 작업은 **명시 승인된 A-8**(공표일
+  재구성 구현)과 P-큐 전처리(P3 배선 등)로 대체 수행. B-4가 Q-F02(Chu et al.
+  원문 대조)를 지시하는 것으로 추정되나, Q-F02는 "소유자 직접 대조" 조건이
+  걸려 있어 추정 실행 시 이중 위반 위험 — 보류.
+- **옵션**: (A) 소유자가 §5 전문 재전송 (차기 세션 실행) · (B) B-목록 폐기,
+  A-8+P-큐로 충분 · (C) B-4만 Q-F02 완화와 함께 재지시.
+- **세션 기본 조치**: A-8을 백로그 작업으로 사용, B-목록은 미실행.
 - **상태**: OPEN
