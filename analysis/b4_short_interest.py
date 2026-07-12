@@ -31,6 +31,7 @@ SI_DATA_DIR = DATA_DIR / "short_interest"
 SEED_B4 = 20260713  # 스펙 §5 신규 선언 (B3 20260712와 별도)
 SPEC = "specs/B4_short_interest.md"
 SPEC_COMMIT = "4753824"
+SPEC_AMENDMENTS = [("§13 분모 우선순위 사슬", "D56 (원번호 D53)", "7994e2d")]  # 재실행 전 동결
 COVERAGE_HEADLINE_FLOOR = 0.70  # 스펙 §6: 미달 tier는 서술 전용
 
 FROZEN_LLM_AUC = {"wave1": 0.8239, "wave2": 0.829, "holdout": None}  # 재계산 금지
@@ -146,8 +147,10 @@ def _b3_auc(b3: dict | None, tier: str) -> str:
 
 
 def report_md(out: dict, b3: dict | None) -> str:
-    L = ["# B4 리포트 — 비정상 공매도 잔고 기준선 (D55)", "",
-         f"- 스펙: {out['spec']} (커밋 {out['spec_commit']}, 계산 전 동결)",
+    L = ["# B4 리포트 — 비정상 공매도 잔고 기준선 (D55, 개정 D56 · 확정 D57)", "",
+         f"- 스펙: {out['spec']} (커밋 {out['spec_commit']}, 계산 전 동결)"
+         + "".join(f" · 개정: {name} — {dnum}, 커밋 {sha}"
+                   for name, dnum, sha in SPEC_AMENDMENTS),
          f"- 데이터: FINRA Consolidated Short Interest, 하한 {out['data_floor']}, "
          f"PIT LAG {out['lag_days']}일",
          f"- 시드 {out['seed']} · perm {out['n_perm']:,} · boot {out['n_boot']:,} · "
