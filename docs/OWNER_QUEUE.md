@@ -201,3 +201,24 @@
   후 적용 · (C) 기각 (사유 → overrides.md).
 - **세션 기본 조치**: 미적용 유지 (diff-only).
 - **상태**: OPEN
+
+---
+
+## Q-F05 — perturbation-v2 name-ID 프로브 런 (launch-ready, 미터링 62호출) — OPEN
+
+- **질문**: v2 날짜 이동 페이로드로 name-ID 프로브를 재실행할까?
+  (specs/perturb_v2.md §5 — 사전 등록 엔드포인트: v2 rate vs 동결 v1
+  wave-1 **50% [15/30]** · wave-2 **21.9% [7/32]**, 동일 프로브 문구·동일 k.)
+- **호출 산술 (repo 계수)**: wave-1 프레임 30 (`name_probe_results.json`
+  n_probes=30) + wave-2 32 (`cases_wave2.json` 전건) = **62 호출**. 홀드아웃
+  제외 (v1 name-ID 기준선 부재 — 정체 가시 프레임).
+- **구현 상태**: `pipeline/date_shift.py` + 테스트 8건 커밋 완료 (무비용 위생
+  포함). 실행은 러너 배선 + 미터링 승인 대기.
+- **위생 주의 (구현 중 실측)**: 주-단위 오프셋이 원본 날짜쌍 차와 일치하면
+  (364일 = 52주 = 역년 start↔end) 이동 날짜가 다른 원본 날짜 문자열 위에
+  착지하는 **양성 충돌**이 있다 — 발사 전 위생 스캔은 케이스별로 오프셋 ∉
+  날짜쌍 차 집합을 확인하고, 충돌 케이스는 필드 단위 이동 검증으로 대체
+  (`test_date_shift.py::test_collision_property_documented` 실증).
+- **옵션**: (A) E 배치(E2+E4)와 같은 창에서 발사 · (B) 별도 시점 · (C) 보류.
+- **세션 기본 조치**: 없음 (launch-ready 동결 — 미터링 0 계약).
+- **상태**: OPEN
