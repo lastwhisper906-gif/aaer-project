@@ -1,4 +1,40 @@
-# HANDOFF.md — 세션 인수인계 (최종 갱신: 2026-07-10, 잔여 교정 미션 D31–D38 전 Phase 완료)
+# HANDOFF.md — 세션 인수인계 (최종 갱신: 2026-07-12, 발행 완결 미션 D39–D42 — **발행 완료, v1.0.0**)
+
+## 발행 완결 미션 요약 (2026-07-11~12, 소유자 대화형 — D39~D42, 미터링 0)
+
+**발행이 세상에 존재한다.** 3-이슈 GitHub Issues 게시 + v1.0.0 동결 + 독자 검증
+패키지 ready-to-send. Phase E(c′ arm)는 소유자 SKIP — D43/D44는 발번되지 않음.
+
+- **발행 URL (시리즈 번호 0/1/2 = GitHub 번호 1/2/3)**:
+  - Issue 0: <https://github.com/lastwhisper906-gif/aaer-evals/issues/1>
+  - Issue 1: <https://github.com/lastwhisper906-gif/aaer-evals/issues/2>
+  - Issue 2: <https://github.com/lastwhisper906-gif/aaer-evals/issues/3>
+  - 태그/릴리스: **v1.0.0** = citable freeze point
+    <https://github.com/lastwhisper906-gif/aaer-evals/releases/tag/v1.0.0>
+- **D39 (Phase A, 이전 세션분)**: DIFF-3 재배선(RP-14) + 3-arm confound 서사 +
+  L-7 + lint (I).
+- **D40 (Phase B, 소유자 서명)**: DIFF-1/2 적용 · **DIFF-3 수정 적용**(Q-E02(A)
+  정합 — 21.9% 1차 + 25% rename-aware 각주, 적용기 `tools/apply_rp14_diffs.py`) ·
+  E4 EXPLORATORY 문언 승인 · Console $0.00 확인 · **Q-E01 RESOLVED(A)** 동결
+  유지 · **Q-E02 RESOLVED(A)** · **Q-R01 RESOLVED** · **Q-R02 RESOLVED(A) GO**
+  (다음 실행 배치부터, 래치 해제 조건 = FREEZE_REV3_DRAFT §6) · 발행 형식 =
+  Issues · Phase E = SKIP.
+- **D41 (Phase C)**: 3-이슈 게시 (건별 소유자 최종 렌더 확인 3회 전건 승인;
+  본문 = 서명본 전문 + 표면 변환 4종 — 제목 분리·Published 배너+번호 매핑·
+  Issue #N→Issue N 자동링크 오염 방지·저장소 푸터) + README 양어 발행 절 +
+  초안 배너 PUBLISHED + v1.0.0 annotated tag/Release (영문 고정 구조: 3-tier
+  동결값·방법론·3줄 재현·L-1~L-7) + **Q-R03 신설**(Zenodo DOI, 3줄 절차).
+  deviation: 배너 일자 07-11(서명일) vs 게시 UTC 07-12T00:15Z — D41 기록.
+- **D42 (Phase D)**: `docs/reader_validation/` 4종 — ONE_PAGER(영문, lint 편입
+  PASS, GRDX 78 포함) · FEEDBACK_FORM(핵심 3 고정 + 유형별) · TARGET_LIST_TEMPLATE
+  (5–10 슬롯, 회신 +10일) · OUTREACH_MESSAGE(cold/warm, <120단어, 단일 요청).
+  **패키지 발송은 소유자 인간 작업 — 자동화 금지.**
+- **소유자 잔여 액션 (전부 인간 작업)**: ① 독자 패키지 발송 (TARGET_LIST 실명
+  기입 → 발송 → 회신을 `docs/reader_validation/responses/`에 원문 기록)
+  ② Q-R03 Zenodo DOI (3줄 절차, OWNER_QUEUE) ③ Q-R02 후속 — API 키 발급·종량
+  예산 승인 후 동치성 스모크 테스트(~30호출) → E2 발사 (RESUME.md 재개 명령)
+  ④ E2/E4/E5 발사 시점 결정 (launch-ready 동결 유지 중).
+- 미터링: 전 Phase 0호출. 계류 브랜치 `hardening/2026-07-08` 불변(스코프 외).
 
 ## 잔여 교정 세션 완료 요약 (2026-07-10, 무인 — D31~D38, 미터링 54/60)
 
