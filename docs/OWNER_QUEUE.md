@@ -295,3 +295,13 @@
 - **옵션**: (A) 과거 일정표 수집 지시 (무-미터링 세션 작업 가능) · (B) LAG=14 유지.
 - **세션 기본 조치**: 등록만.
 - **상태**: OPEN
+
+## Q-M03 — Cycle-2 등록: 설명가능성(explainability) 채점 설계 — OPEN (등록만)
+
+- **맥락**: screener stage-2 출력 계약이 계정 수준 가설 스키마로 고정됨
+  (screener/schemas/flag_explanation.json + validate_explanation.py 기계
+  검증 — 접지성(groundedness)은 기계가 강제). 그러나 **가설의 품질**(기제
+  타당성·증거 적합성·반증 조건의 예리함) 채점은 평가 설계 문제 — Cycle-2
+  aaer-evals 질문으로 등록. 이 세션은 등록만, 설계·구축 없음
+  (docs/FUTURE_CYCLE_PROTOCOL.md 절차를 따를 것).
+- **상태**: OPEN
