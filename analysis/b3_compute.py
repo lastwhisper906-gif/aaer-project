@@ -270,10 +270,18 @@ def main() -> int:
                f"LLM AUC = {llm if llm is not None else '동결값 없음 (N=3 per-case 프레임)'}",
                ""]
     it = out["interpretation"]
+    w1_ratio = out["tiers"]["wave1"]["windows"][PRIMARY_WINDOW]["attribution_ratio_vs_frozen_llm"]
     md += ["## 사전 등록 해석 규칙 판정 (스펙 §7)", "",
            f"- 판정 tier/윈도: **{it['decision_tier']} · {it['decision_window']}** · "
            f"귀속비 = **{it['attribution_ratio']}** (경계 0.2 / 0.5)",
            f"- 발화 브랜치: **{it['branch']}** — {it['reading']}", "",
+           "### 판독 노트 (산술 사실 병기 — 서사 사용은 소유자 서명 대상)", "",
+           f"- 참고 tier 비대칭: wave-1 {PRIMARY_WINDOW} 귀속비 **{w1_ratio}** vs "
+           f"wave-2 **{it['attribution_ratio']}** — 사소한 연대기 규칙이 wave-1 분리의"
+           " 대부분에 도달하지만 wave-2에서는 그렇지 않다는 산술. 판정 tier는 스펙이"
+           " 계산 전에 wave-2로 고정했다 (§7 — 암기 교란이 덜한 tier가 귀속 문제의"
+           " 실체). 이 비대칭의 원인 서술(암기·대조군 매칭 품질·시대 차 등)은 사전"
+           " 등록 문장 밖 — 세션은 서술하지 않는다.", "",
            "## 한계", "",
            "- B3는 상한 탐사가 아니라 사전 등록 6지표의 단일 조합이다 — 지표 선택 자체가"
            " 문헌 기반이며, 계산 후 조정은 없었다 (스펙 커밋이 증거).",
