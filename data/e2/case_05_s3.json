@@ -1,0 +1,127 @@
+{
+ "b3_W8": {
+  "flags": {
+   "insufficient_history": false
+  },
+  "indicators": {
+   "b_401": 1,
+   "b_402": 0,
+   "b_8kfreq": 0,
+   "b_ka": 0,
+   "b_nt": 0,
+   "b_qa": 0
+  },
+  "score": 1
+ },
+ "b4": {
+  "cite": "D61 — 커버 2/13, 상태를 생략하지 않고 기록",
+  "flags": {
+   "insufficient_history": false,
+   "no_shares_denominator": false,
+   "no_si_file": true,
+   "revision_seen_diagnostic": 0,
+   "slope_unavailable": false
+  },
+  "state": "not_computable"
+ },
+ "base_case_id": "case_05",
+ "base_cutoff": "2015-08-09",
+ "cik": "0000900349",
+ "documents": [
+  {
+   "accession": "0001193125-11-242141",
+   "filed": "2011-09-07",
+   "form": "10-Q",
+   "n_facts": 18
+  },
+  {
+   "accession": "0001193125-11-333362",
+   "filed": "2011-12-07",
+   "form": "10-Q",
+   "n_facts": 18
+  },
+  {
+   "accession": "0001193125-12-160592",
+   "filed": "2012-04-12",
+   "form": "10-K",
+   "n_facts": 31
+  },
+  {
+   "accession": "0001193125-12-261320",
+   "filed": "2012-06-06",
+   "form": "10-Q",
+   "n_facts": 27
+  },
+  {
+   "accession": "0001193125-12-378601",
+   "filed": "2012-09-04",
+   "form": "10-Q",
+   "n_facts": 24
+  },
+  {
+   "accession": "0001193125-12-490365",
+   "filed": "2012-12-04",
+   "form": "10-Q",
+   "n_facts": 25
+  },
+  {
+   "accession": "0001193125-13-156951",
+   "filed": "2013-04-16",
+   "form": "10-K",
+   "n_facts": 66
+  },
+  {
+   "accession": "0001193125-13-254278",
+   "filed": "2013-06-11",
+   "form": "10-Q",
+   "n_facts": 32
+  },
+  {
+   "accession": "0001193125-13-359357",
+   "filed": "2013-09-06",
+   "form": "10-Q",
+   "n_facts": 26
+  },
+  {
+   "accession": "0001193125-13-466081",
+   "filed": "2013-12-09",
+   "form": "10-Q",
+   "n_facts": 26
+  },
+  {
+   "accession": "0001193125-14-143835",
+   "filed": "2014-04-15",
+   "form": "10-K",
+   "n_facts": 103
+  },
+  {
+   "accession": "0001193125-14-231403",
+   "filed": "2014-06-10",
+   "form": "10-Q",
+   "n_facts": 50
+  },
+  {
+   "accession": "0001193125-14-338940",
+   "filed": "2014-09-11",
+   "form": "10-Q",
+   "n_facts": 40
+  },
+  {
+   "accession": "0001193125-14-437723",
+   "filed": "2014-12-09",
+   "form": "10-Q",
+   "n_facts": 60
+  }
+ ],
+ "generator": "e2gen-v1 (EARLINESS_PLAN §1–§2 + D65)",
+ "group": "control",
+ "guard": {
+  "documents_passed": 562
+ },
+ "j": 3,
+ "payload_sha256": "22986bf775d0ae4b83ae453d1bde5f19bca6907b0de8f19910b2e06cc7b38c5c",
+ "snapshot_cutoff": "2014-12-10",
+ "snapshot_id": "case_05_s3",
+ "ticker": "PERY",
+ "tier": "wave1"
+}

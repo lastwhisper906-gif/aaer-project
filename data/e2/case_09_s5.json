@@ -1,0 +1,139 @@
+{
+ "b3_W8": {
+  "flags": {
+   "insufficient_history": false
+  },
+  "indicators": {
+   "b_401": 0,
+   "b_402": 0,
+   "b_8kfreq": 0,
+   "b_ka": 1,
+   "b_nt": 0,
+   "b_qa": 0
+  },
+  "score": 1
+ },
+ "b4": {
+  "cite": "D61 — 커버 2/13, 상태를 생략하지 않고 기록",
+  "flags": {
+   "insufficient_history": false,
+   "no_shares_denominator": false,
+   "no_si_file": true,
+   "revision_seen_diagnostic": 0,
+   "slope_unavailable": false
+  },
+  "state": "not_computable"
+ },
+ "base_case_id": "case_09",
+ "base_cutoff": "2015-08-09",
+ "cik": "0000857737",
+ "documents": [
+  {
+   "accession": "0001144204-10-041613",
+   "filed": "2010-08-05",
+   "form": "10-Q",
+   "n_facts": 22
+  },
+  {
+   "accession": "0001144204-10-057962",
+   "filed": "2010-11-05",
+   "form": "10-Q",
+   "n_facts": 22
+  },
+  {
+   "accession": "0001144204-11-011064",
+   "filed": "2011-02-25",
+   "form": "10-K",
+   "n_facts": 26
+  },
+  {
+   "accession": "0001144204-11-026827",
+   "filed": "2011-05-06",
+   "form": "10-Q",
+   "n_facts": 24
+  },
+  {
+   "accession": "0001144204-11-050565",
+   "filed": "2011-08-30",
+   "form": "10-Q/A",
+   "n_facts": 20
+  },
+  {
+   "accession": "0001144204-11-061644",
+   "filed": "2011-11-07",
+   "form": "10-Q",
+   "n_facts": 20
+  },
+  {
+   "accession": "0001144204-12-011985",
+   "filed": "2012-02-29",
+   "form": "10-K",
+   "n_facts": 41
+  },
+  {
+   "accession": "0001193125-12-215038",
+   "filed": "2012-05-07",
+   "form": "10-Q",
+   "n_facts": 25
+  },
+  {
+   "accession": "0001193125-12-337704",
+   "filed": "2012-08-06",
+   "form": "10-Q",
+   "n_facts": 20
+  },
+  {
+   "accession": "0001193125-12-446644",
+   "filed": "2012-11-01",
+   "form": "10-Q",
+   "n_facts": 20
+  },
+  {
+   "accession": "0001193125-13-084387",
+   "filed": "2013-02-28",
+   "form": "10-K",
+   "n_facts": 40
+  },
+  {
+   "accession": "0001193125-13-204557",
+   "filed": "2013-05-07",
+   "form": "10-Q",
+   "n_facts": 25
+  },
+  {
+   "accession": "0001193125-13-329139",
+   "filed": "2013-08-09",
+   "form": "10-Q",
+   "n_facts": 24
+  },
+  {
+   "accession": "0001193125-13-430192",
+   "filed": "2013-11-06",
+   "form": "10-Q",
+   "n_facts": 24
+  },
+  {
+   "accession": "0001193125-14-072954",
+   "filed": "2014-02-27",
+   "form": "10-K",
+   "n_facts": 78
+  },
+  {
+   "accession": "0001193125-14-192433",
+   "filed": "2014-05-09",
+   "form": "10-Q",
+   "n_facts": 59
+  }
+ ],
+ "generator": "e2gen-v1 (EARLINESS_PLAN §1–§2 + D65)",
+ "group": "treatment",
+ "guard": {
+  "documents_passed": 637
+ },
+ "j": 5,
+ "payload_sha256": "9d2bedb4d4b0667f9175cc7704be5cb971262129891e2f58351d928591f2430c",
+ "snapshot_cutoff": "2014-05-10",
+ "snapshot_id": "case_09_s5",
+ "ticker": "ICON",
+ "tier": "wave1"
+}

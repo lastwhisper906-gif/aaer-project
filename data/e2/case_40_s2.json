@@ -1,0 +1,145 @@
+{
+ "b3_W8": {
+  "flags": {
+   "insufficient_history": false
+  },
+  "indicators": {
+   "b_401": 0,
+   "b_402": 0,
+   "b_8kfreq": 1,
+   "b_ka": 0,
+   "b_nt": 0,
+   "b_qa": 0
+  },
+  "score": 1
+ },
+ "b4": {
+  "cite": "D61 — 커버 2/13, 상태를 생략하지 않고 기록",
+  "flags": {
+   "insufficient_history": false,
+   "no_shares_denominator": false,
+   "no_si_file": true,
+   "revision_seen_diagnostic": 0,
+   "slope_unavailable": false
+  },
+  "state": "not_computable"
+ },
+ "base_case_id": "case_40",
+ "base_cutoff": "2016-03-06",
+ "cik": "0001182325",
+ "documents": [
+  {
+   "accession": "0001104659-11-051152",
+   "filed": "2011-09-09",
+   "form": "10-Q",
+   "n_facts": 28
+  },
+  {
+   "accession": "0001104659-11-063969",
+   "filed": "2011-11-14",
+   "form": "10-Q",
+   "n_facts": 26
+  },
+  {
+   "accession": "0001047469-12-003496",
+   "filed": "2012-03-29",
+   "form": "10-K",
+   "n_facts": 28
+  },
+  {
+   "accession": "0001104659-12-037557",
+   "filed": "2012-05-15",
+   "form": "10-Q",
+   "n_facts": 29
+  },
+  {
+   "accession": "0001104659-12-057854",
+   "filed": "2012-08-14",
+   "form": "10-Q",
+   "n_facts": 28
+  },
+  {
+   "accession": "0001104659-12-077974",
+   "filed": "2012-11-14",
+   "form": "10-Q",
+   "n_facts": 28
+  },
+  {
+   "accession": "0001047469-13-002963",
+   "filed": "2013-03-18",
+   "form": "10-K",
+   "n_facts": 30
+  },
+  {
+   "accession": "0001104659-13-040310",
+   "filed": "2013-05-10",
+   "form": "10-Q",
+   "n_facts": 24
+  },
+  {
+   "accession": "0001104659-13-062346",
+   "filed": "2013-08-09",
+   "form": "10-Q",
+   "n_facts": 21
+  },
+  {
+   "accession": "0001104659-13-083713",
+   "filed": "2013-11-12",
+   "form": "10-Q",
+   "n_facts": 21
+  },
+  {
+   "accession": "0001047469-14-002521",
+   "filed": "2014-03-17",
+   "form": "10-K",
+   "n_facts": 52
+  },
+  {
+   "accession": "0001104659-14-037638",
+   "filed": "2014-05-12",
+   "form": "10-Q",
+   "n_facts": 24
+  },
+  {
+   "accession": "0001104659-14-059388",
+   "filed": "2014-08-11",
+   "form": "10-Q",
+   "n_facts": 21
+  },
+  {
+   "accession": "0001104659-14-078972",
+   "filed": "2014-11-10",
+   "form": "10-Q",
+   "n_facts": 26
+  },
+  {
+   "accession": "0001047469-15-002289",
+   "filed": "2015-03-16",
+   "form": "10-K",
+   "n_facts": 87
+  },
+  {
+   "accession": "0001104659-15-036841",
+   "filed": "2015-05-11",
+   "form": "10-Q",
+   "n_facts": 42
+  },
+  {
+   "accession": "0001104659-15-058230",
+   "filed": "2015-08-10",
+   "form": "10-Q",
+   "n_facts": 54
+  }
+ ],
+ "generator": "e2gen-v1 (EARLINESS_PLAN §1–§2 + D65)",
+ "group": "treatment",
+ "guard": {
+  "documents_passed": 294
+ },
+ "j": 2,
+ "payload_sha256": "cd9084d99227ca7c5c8f9a63df7b01d58d68dcfc9df68c84685a360f0dfdb0ca",
+ "snapshot_cutoff": "2015-08-11",
+ "snapshot_id": "case_40_s2",
+ "ticker": "TNGO",
+ "tier": "wave2"
+}

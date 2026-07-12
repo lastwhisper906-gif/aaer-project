@@ -1,0 +1,223 @@
+{
+ "b3_W8": {
+  "flags": {
+   "insufficient_history": false
+  },
+  "indicators": {
+   "b_401": 0,
+   "b_402": 0,
+   "b_8kfreq": 0,
+   "b_ka": 0,
+   "b_nt": 0,
+   "b_qa": 0
+  },
+  "score": 0
+ },
+ "b4": {
+  "cite": "D61 — 커버 2/13, 상태를 생략하지 않고 기록",
+  "flags": {
+   "insufficient_history": false,
+   "no_shares_denominator": false,
+   "no_si_file": true,
+   "revision_seen_diagnostic": 0,
+   "slope_unavailable": false
+  },
+  "state": "not_computable"
+ },
+ "base_case_id": "case_66",
+ "base_cutoff": "2019-11-02",
+ "cik": "0001336917",
+ "documents": [
+  {
+   "accession": "0001193125-10-178579",
+   "filed": "2010-08-05",
+   "form": "10-Q",
+   "n_facts": 21
+  },
+  {
+   "accession": "0001193125-10-245956",
+   "filed": "2010-11-03",
+   "form": "10-Q",
+   "n_facts": 21
+  },
+  {
+   "accession": "0001193125-11-044799",
+   "filed": "2011-02-24",
+   "form": "10-K",
+   "n_facts": 27
+  },
+  {
+   "accession": "0001193125-11-126229",
+   "filed": "2011-05-04",
+   "form": "10-Q",
+   "n_facts": 22
+  },
+  {
+   "accession": "0001193125-11-210817",
+   "filed": "2011-08-05",
+   "form": "10-Q",
+   "n_facts": 18
+  },
+  {
+   "accession": "0001193125-11-295787",
+   "filed": "2011-11-04",
+   "form": "10-Q",
+   "n_facts": 18
+  },
+  {
+   "accession": "0001193125-12-078826",
+   "filed": "2012-02-27",
+   "form": "10-K",
+   "n_facts": 48
+  },
+  {
+   "accession": "0001193125-12-211167",
+   "filed": "2012-05-04",
+   "form": "10-Q",
+   "n_facts": 23
+  },
+  {
+   "accession": "0001193125-12-335302",
+   "filed": "2012-08-06",
+   "form": "10-Q",
+   "n_facts": 18
+  },
+  {
+   "accession": "0001336917-12-000005",
+   "filed": "2012-11-08",
+   "form": "10-Q",
+   "n_facts": 18
+  },
+  {
+   "accession": "0001336917-13-000013",
+   "filed": "2013-02-26",
+   "form": "10-K/A",
+   "n_facts": 45
+  },
+  {
+   "accession": "0001336917-13-000017",
+   "filed": "2013-05-01",
+   "form": "10-Q",
+   "n_facts": 23
+  },
+  {
+   "accession": "0001336917-13-000023",
+   "filed": "2013-08-06",
+   "form": "10-Q",
+   "n_facts": 18
+  },
+  {
+   "accession": "0001336917-13-000030",
+   "filed": "2013-11-05",
+   "form": "10-Q",
+   "n_facts": 18
+  },
+  {
+   "accession": "0001336917-14-000008",
+   "filed": "2014-02-21",
+   "form": "10-K",
+   "n_facts": 49
+  },
+  {
+   "accession": "0001336917-14-000020",
+   "filed": "2014-05-07",
+   "form": "10-Q",
+   "n_facts": 24
+  },
+  {
+   "accession": "0001336917-14-000035",
+   "filed": "2014-08-05",
+   "form": "10-Q",
+   "n_facts": 20
+  },
+  {
+   "accession": "0001336917-14-000049",
+   "filed": "2014-11-05",
+   "form": "10-Q",
+   "n_facts": 19
+  },
+  {
+   "accession": "0001336917-15-000006",
+   "filed": "2015-02-20",
+   "form": "10-K",
+   "n_facts": 46
+  },
+  {
+   "accession": "0001336917-15-000022",
+   "filed": "2015-05-01",
+   "form": "10-Q",
+   "n_facts": 24
+  },
+  {
+   "accession": "0001336917-15-000034",
+   "filed": "2015-08-04",
+   "form": "10-Q",
+   "n_facts": 19
+  },
+  {
+   "accession": "0001336917-15-000050",
+   "filed": "2015-11-04",
+   "form": "10-Q",
+   "n_facts": 18
+  },
+  {
+   "accession": "0001336917-16-000064",
+   "filed": "2016-02-22",
+   "form": "10-K",
+   "n_facts": 47
+  },
+  {
+   "accession": "0001336917-16-000077",
+   "filed": "2016-04-29",
+   "form": "10-Q",
+   "n_facts": 24
+  },
+  {
+   "accession": "0001336917-16-000099",
+   "filed": "2016-08-03",
+   "form": "10-Q",
+   "n_facts": 19
+  },
+  {
+   "accession": "0001336917-16-000113",
+   "filed": "2016-11-02",
+   "form": "10-Q",
+   "n_facts": 19
+  },
+  {
+   "accession": "0001336917-17-000017",
+   "filed": "2017-02-23",
+   "form": "10-K",
+   "n_facts": 81
+  },
+  {
+   "accession": "0001336917-17-000029",
+   "filed": "2017-05-09",
+   "form": "10-Q",
+   "n_facts": 58
+  },
+  {
+   "accession": "0001336917-17-000041",
+   "filed": "2017-08-08",
+   "form": "10-Q",
+   "n_facts": 46
+  },
+  {
+   "accession": "0001336917-17-000049",
+   "filed": "2017-11-09",
+   "form": "10-Q",
+   "n_facts": 63
+  }
+ ],
+ "generator": "e2gen-v1 (EARLINESS_PLAN §1–§2 + D65)",
+ "group": "treatment",
+ "guard": {
+  "documents_passed": 689
+ },
+ "j": 8,
+ "payload_sha256": "11cd2d307b6877c8fc7e988653acd0762793ac7a3d7ff12be01d24749ce2ca97",
+ "snapshot_cutoff": "2017-11-10",
+ "snapshot_id": "case_66_s8",
+ "ticker": "UAA",
+ "tier": "wave2"
+}

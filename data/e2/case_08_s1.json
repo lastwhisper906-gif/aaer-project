@@ -1,0 +1,133 @@
+{
+ "b3_W8": {
+  "flags": {
+   "insufficient_history": true
+  },
+  "indicators": {
+   "b_401": 0,
+   "b_402": 0,
+   "b_8kfreq": 0,
+   "b_ka": 1,
+   "b_nt": 1,
+   "b_qa": 0
+  },
+  "score": 2
+ },
+ "b4": {
+  "cite": "D61 — 커버 2/13, 상태를 생략하지 않고 기록",
+  "flags": {
+   "insufficient_history": false,
+   "no_shares_denominator": false,
+   "no_si_file": true,
+   "revision_seen_diagnostic": 0,
+   "slope_unavailable": false
+  },
+  "state": "not_computable"
+ },
+ "base_case_id": "case_08",
+ "base_cutoff": "2014-05-12",
+ "cik": "0001657853",
+ "documents": [
+  {
+   "accession": "0001047469-10-007159",
+   "filed": "2010-08-06",
+   "form": "10-Q",
+   "n_facts": 16
+  },
+  {
+   "accession": "0001047469-10-009492",
+   "filed": "2010-11-09",
+   "form": "10-Q",
+   "n_facts": 17
+  },
+  {
+   "accession": "0001047469-11-001397",
+   "filed": "2011-02-25",
+   "form": "10-K",
+   "n_facts": 28
+  },
+  {
+   "accession": "0001047469-11-004720",
+   "filed": "2011-05-06",
+   "form": "10-Q",
+   "n_facts": 23
+  },
+  {
+   "accession": "0001047469-11-007031",
+   "filed": "2011-08-05",
+   "form": "10-Q",
+   "n_facts": 17
+  },
+  {
+   "accession": "0001047469-11-009145",
+   "filed": "2011-11-07",
+   "form": "10-Q",
+   "n_facts": 15
+  },
+  {
+   "accession": "0001047469-12-001623",
+   "filed": "2012-02-27",
+   "form": "10-K",
+   "n_facts": 28
+  },
+  {
+   "accession": "0001047469-12-005385",
+   "filed": "2012-05-04",
+   "form": "10-Q",
+   "n_facts": 18
+  },
+  {
+   "accession": "0001047469-12-007702",
+   "filed": "2012-08-03",
+   "form": "10-Q",
+   "n_facts": 16
+  },
+  {
+   "accession": "0001445305-12-003378",
+   "filed": "2012-11-02",
+   "form": "10-Q",
+   "n_facts": 16
+  },
+  {
+   "accession": "0001445305-13-000446",
+   "filed": "2013-03-04",
+   "form": "10-K",
+   "n_facts": 27
+  },
+  {
+   "accession": "0001445305-13-001076",
+   "filed": "2013-05-02",
+   "form": "10-Q",
+   "n_facts": 21
+  },
+  {
+   "accession": "0001364479-13-000006",
+   "filed": "2013-08-02",
+   "form": "10-Q",
+   "n_facts": 17
+  },
+  {
+   "accession": "0001364479-13-000011",
+   "filed": "2013-11-07",
+   "form": "10-Q",
+   "n_facts": 17
+  },
+  {
+   "accession": "0001364479-14-000008",
+   "filed": "2014-03-20",
+   "form": "10-K/A",
+   "n_facts": 73
+  }
+ ],
+ "generator": "e2gen-v1 (EARLINESS_PLAN §1–§2 + D65)",
+ "group": "treatment",
+ "guard": {
+  "documents_passed": 664
+ },
+ "j": 1,
+ "payload_sha256": "e38096d2d0dbc5d6849d0586e261f0558b3fd83d1c8d837e3622992b44436e56",
+ "snapshot_cutoff": "2014-03-20",
+ "snapshot_id": "case_08_s1",
+ "ticker": "HTZ",
+ "tier": "wave1"
+}

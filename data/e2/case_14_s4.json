@@ -1,0 +1,121 @@
+{
+ "b3_W8": {
+  "flags": {
+   "insufficient_history": false
+  },
+  "indicators": {
+   "b_401": 0,
+   "b_402": 0,
+   "b_8kfreq": 0,
+   "b_ka": 0,
+   "b_nt": 0,
+   "b_qa": 1
+  },
+  "score": 1
+ },
+ "b4": {
+  "cite": "D61 — 커버 2/13, 상태를 생략하지 않고 기록",
+  "flags": {
+   "insufficient_history": false,
+   "no_shares_denominator": false,
+   "no_si_file": true,
+   "revision_seen_diagnostic": 0,
+   "slope_unavailable": false
+  },
+  "state": "not_computable"
+ },
+ "base_case_id": "case_14",
+ "base_cutoff": "2013-08-06",
+ "cik": "0001121788",
+ "documents": [
+  {
+   "accession": "0001144204-09-046684",
+   "filed": "2009-09-01",
+   "form": "10-Q/A",
+   "n_facts": 19
+  },
+  {
+   "accession": "0001144204-09-056412",
+   "filed": "2009-11-04",
+   "form": "10-Q",
+   "n_facts": 20
+  },
+  {
+   "accession": "0001144204-10-009642",
+   "filed": "2010-02-24",
+   "form": "10-K",
+   "n_facts": 27
+  },
+  {
+   "accession": "0001144204-10-024521",
+   "filed": "2010-05-05",
+   "form": "10-Q",
+   "n_facts": 23
+  },
+  {
+   "accession": "0001144204-10-041076",
+   "filed": "2010-08-04",
+   "form": "10-Q",
+   "n_facts": 20
+  },
+  {
+   "accession": "0001144204-10-057166",
+   "filed": "2010-11-03",
+   "form": "10-Q",
+   "n_facts": 20
+  },
+  {
+   "accession": "0001144204-11-010358",
+   "filed": "2011-02-23",
+   "form": "10-K",
+   "n_facts": 31
+  },
+  {
+   "accession": "0001144204-11-025965",
+   "filed": "2011-05-04",
+   "form": "10-Q",
+   "n_facts": 24
+  },
+  {
+   "accession": "0001144204-11-050441",
+   "filed": "2011-08-30",
+   "form": "10-Q/A",
+   "n_facts": 16
+  },
+  {
+   "accession": "0001144204-11-060744",
+   "filed": "2011-11-02",
+   "form": "10-Q",
+   "n_facts": 24
+  },
+  {
+   "accession": "0001144204-12-012007",
+   "filed": "2012-02-29",
+   "form": "10-K",
+   "n_facts": 79
+  },
+  {
+   "accession": "0001144204-12-027190",
+   "filed": "2012-05-09",
+   "form": "10-Q",
+   "n_facts": 37
+  },
+  {
+   "accession": "0001144204-12-043539",
+   "filed": "2012-08-08",
+   "form": "10-Q",
+   "n_facts": 45
+  }
+ ],
+ "generator": "e2gen-v1 (EARLINESS_PLAN §1–§2 + D65)",
+ "group": "control",
+ "guard": {
+  "documents_passed": 538
+ },
+ "j": 4,
+ "payload_sha256": "98cf1a976cbc1ad5a8139ab590d5c78067e602616bdc1f80a080573ffc38208d",
+ "snapshot_cutoff": "2012-08-09",
+ "snapshot_id": "case_14_s4",
+ "ticker": "GRMN",
+ "tier": "wave1"
+}

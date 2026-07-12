@@ -1,0 +1,121 @@
+{
+ "b3_W8": {
+  "flags": {
+   "insufficient_history": true
+  },
+  "indicators": {
+   "b_401": 0,
+   "b_402": 1,
+   "b_8kfreq": 0,
+   "b_ka": 0,
+   "b_nt": 0,
+   "b_qa": 1
+  },
+  "score": 2
+ },
+ "b4": {
+  "cite": "D61 — 커버 2/13, 상태를 생략하지 않고 기록",
+  "flags": {
+   "insufficient_history": true,
+   "no_shares_denominator": false,
+   "no_si_file": false,
+   "revision_seen_diagnostic": 0,
+   "slope_unavailable": false
+  },
+  "state": "not_computable"
+ },
+ "base_case_id": "case_12",
+ "base_cutoff": "2019-02-20",
+ "cik": "0001637459",
+ "documents": [
+  {
+   "accession": "0001637459-15-000021",
+   "filed": "2015-08-10",
+   "form": "10-Q",
+   "n_facts": 21
+  },
+  {
+   "accession": "0001637459-15-000025",
+   "filed": "2015-08-10",
+   "form": "8-K",
+   "n_facts": 103
+  },
+  {
+   "accession": "0001637459-15-000049",
+   "filed": "2015-11-06",
+   "form": "10-Q",
+   "n_facts": 21
+  },
+  {
+   "accession": "0001637459-16-000100",
+   "filed": "2016-03-03",
+   "form": "10-K",
+   "n_facts": 26
+  },
+  {
+   "accession": "0001637459-16-000147",
+   "filed": "2016-05-05",
+   "form": "10-Q",
+   "n_facts": 24
+  },
+  {
+   "accession": "0001637459-16-000179",
+   "filed": "2016-08-05",
+   "form": "10-Q",
+   "n_facts": 19
+  },
+  {
+   "accession": "0001637459-16-000207",
+   "filed": "2016-11-04",
+   "form": "10-Q",
+   "n_facts": 19
+  },
+  {
+   "accession": "0001637459-17-000007",
+   "filed": "2017-02-23",
+   "form": "10-K",
+   "n_facts": 54
+  },
+  {
+   "accession": "0001637459-17-000116",
+   "filed": "2017-11-07",
+   "form": "10-Q/A",
+   "n_facts": 22
+  },
+  {
+   "accession": "0001637459-17-000117",
+   "filed": "2017-11-07",
+   "form": "10-Q/A",
+   "n_facts": 21
+  },
+  {
+   "accession": "0001637459-17-000118",
+   "filed": "2017-11-07",
+   "form": "10-Q",
+   "n_facts": 21
+  },
+  {
+   "accession": "0001637459-18-000015",
+   "filed": "2018-02-16",
+   "form": "10-K",
+   "n_facts": 97
+  },
+  {
+   "accession": "0001637459-18-000099",
+   "filed": "2018-05-03",
+   "form": "10-Q",
+   "n_facts": 55
+  }
+ ],
+ "generator": "e2gen-v1 (EARLINESS_PLAN §1–§2 + D65)",
+ "group": "treatment",
+ "guard": {
+  "documents_passed": 152
+ },
+ "j": 3,
+ "payload_sha256": "333460e08e185ce44c25eb8eb95a57f1bacbcaa673f86f5070a74b33d3c283ff",
+ "snapshot_cutoff": "2018-05-04",
+ "snapshot_id": "case_12_s3",
+ "ticker": "KHC",
+ "tier": "wave1"
+}

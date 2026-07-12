@@ -1,0 +1,139 @@
+{
+ "b3_W8": {
+  "flags": {
+   "insufficient_history": false
+  },
+  "indicators": {
+   "b_401": 0,
+   "b_402": 0,
+   "b_8kfreq": 0,
+   "b_ka": 0,
+   "b_nt": 0,
+   "b_qa": 0
+  },
+  "score": 0
+ },
+ "b4": {
+  "cite": "D61 — 커버 2/13, 상태를 생략하지 않고 기록",
+  "flags": {
+   "insufficient_history": false,
+   "no_shares_denominator": false,
+   "no_si_file": true,
+   "revision_seen_diagnostic": 0,
+   "slope_unavailable": false
+  },
+  "state": "not_computable"
+ },
+ "base_case_id": "case_15",
+ "base_cutoff": "2016-02-28",
+ "cik": "0001023313",
+ "documents": [
+  {
+   "accession": "0000950123-11-072637",
+   "filed": "2011-08-04",
+   "form": "10-Q",
+   "n_facts": 20
+  },
+  {
+   "accession": "0000950123-11-095373",
+   "filed": "2011-11-04",
+   "form": "10-Q",
+   "n_facts": 20
+  },
+  {
+   "accession": "0001193125-12-106588",
+   "filed": "2012-03-09",
+   "form": "10-K",
+   "n_facts": 24
+  },
+  {
+   "accession": "0001193125-12-208463",
+   "filed": "2012-05-03",
+   "form": "10-Q",
+   "n_facts": 22
+  },
+  {
+   "accession": "0001193125-12-346886",
+   "filed": "2012-08-09",
+   "form": "10-Q",
+   "n_facts": 21
+  },
+  {
+   "accession": "0001193125-12-462238",
+   "filed": "2012-11-09",
+   "form": "10-Q",
+   "n_facts": 21
+  },
+  {
+   "accession": "0001193125-13-112678",
+   "filed": "2013-03-18",
+   "form": "10-K",
+   "n_facts": 39
+  },
+  {
+   "accession": "0001193125-13-213424",
+   "filed": "2013-05-10",
+   "form": "10-Q",
+   "n_facts": 26
+  },
+  {
+   "accession": "0001193125-13-323276",
+   "filed": "2013-08-07",
+   "form": "10-Q",
+   "n_facts": 18
+  },
+  {
+   "accession": "0001193125-13-438491",
+   "filed": "2013-11-12",
+   "form": "10-Q",
+   "n_facts": 18
+  },
+  {
+   "accession": "0001193125-14-097919",
+   "filed": "2014-03-13",
+   "form": "10-K",
+   "n_facts": 45
+  },
+  {
+   "accession": "0001193125-14-192409",
+   "filed": "2014-05-09",
+   "form": "10-Q",
+   "n_facts": 22
+  },
+  {
+   "accession": "0001193125-14-298382",
+   "filed": "2014-08-06",
+   "form": "10-Q",
+   "n_facts": 26
+  },
+  {
+   "accession": "0001193125-14-398722",
+   "filed": "2014-11-05",
+   "form": "10-Q",
+   "n_facts": 26
+  },
+  {
+   "accession": "0001193125-15-087397",
+   "filed": "2015-03-11",
+   "form": "10-K",
+   "n_facts": 73
+  },
+  {
+   "accession": "0001193125-15-177131",
+   "filed": "2015-05-07",
+   "form": "10-Q",
+   "n_facts": 50
+  }
+ ],
+ "generator": "e2gen-v1 (EARLINESS_PLAN §1–§2 + D65)",
+ "group": "control",
+ "guard": {
+  "documents_passed": 597
+ },
+ "j": 3,
+ "payload_sha256": "783ccf0e5da00cc4f4fed49d8c3ecedfaad11fed87404a7f77aa0f8638875017",
+ "snapshot_cutoff": "2015-05-08",
+ "snapshot_id": "case_15_s3",
+ "ticker": "FORR",
+ "tier": "wave1"
+}

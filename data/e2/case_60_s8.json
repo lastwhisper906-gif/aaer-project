@@ -1,0 +1,133 @@
+{
+ "b3_W8": {
+  "flags": {
+   "insufficient_history": false
+  },
+  "indicators": {
+   "b_401": 0,
+   "b_402": 0,
+   "b_8kfreq": 1,
+   "b_ka": 1,
+   "b_nt": 0,
+   "b_qa": 0
+  },
+  "score": 2
+ },
+ "b4": {
+  "cite": "D61 — 커버 2/13, 상태를 생략하지 않고 기록",
+  "flags": {
+   "insufficient_history": false,
+   "no_shares_denominator": false,
+   "no_si_file": true,
+   "revision_seen_diagnostic": 0,
+   "slope_unavailable": false
+  },
+  "state": "not_computable"
+ },
+ "base_case_id": "case_60",
+ "base_cutoff": "2016-12-14",
+ "cik": "0001376339",
+ "documents": [
+  {
+   "accession": "0001140361-11-039734",
+   "filed": "2011-08-04",
+   "form": "10-Q",
+   "n_facts": 19
+  },
+  {
+   "accession": "0001140361-11-053502",
+   "filed": "2011-11-14",
+   "form": "10-Q",
+   "n_facts": 19
+  },
+  {
+   "accession": "0001140361-12-017997",
+   "filed": "2012-03-29",
+   "form": "10-K",
+   "n_facts": 25
+  },
+  {
+   "accession": "0001140361-12-024988",
+   "filed": "2012-05-14",
+   "form": "10-Q",
+   "n_facts": 21
+  },
+  {
+   "accession": "0001140361-12-036885",
+   "filed": "2012-08-14",
+   "form": "10-Q",
+   "n_facts": 18
+  },
+  {
+   "accession": "0001140361-12-046891",
+   "filed": "2012-11-13",
+   "form": "10-Q",
+   "n_facts": 18
+  },
+  {
+   "accession": "0001140361-13-012765",
+   "filed": "2013-03-15",
+   "form": "10-K",
+   "n_facts": 15
+  },
+  {
+   "accession": "0001140361-13-019946",
+   "filed": "2013-05-10",
+   "form": "10-Q",
+   "n_facts": 25
+  },
+  {
+   "accession": "0001376339-13-000006",
+   "filed": "2013-08-08",
+   "form": "10-Q",
+   "n_facts": 21
+  },
+  {
+   "accession": "0001376339-13-000010",
+   "filed": "2013-11-08",
+   "form": "10-Q",
+   "n_facts": 22
+  },
+  {
+   "accession": "0001376339-14-000005",
+   "filed": "2014-03-04",
+   "form": "10-K",
+   "n_facts": 41
+  },
+  {
+   "accession": "0001376339-14-000015",
+   "filed": "2014-05-12",
+   "form": "10-Q",
+   "n_facts": 33
+  },
+  {
+   "accession": "0001376339-14-000032",
+   "filed": "2014-08-11",
+   "form": "10-Q",
+   "n_facts": 27
+  },
+  {
+   "accession": "0001376339-14-000043",
+   "filed": "2014-11-10",
+   "form": "10-Q",
+   "n_facts": 28
+  },
+  {
+   "accession": "0001376339-15-000040",
+   "filed": "2015-03-13",
+   "form": "10-K",
+   "n_facts": 104
+  }
+ ],
+ "generator": "e2gen-v1 (EARLINESS_PLAN §1–§2 + D65)",
+ "group": "treatment",
+ "guard": {
+  "documents_passed": 306
+ },
+ "j": 8,
+ "payload_sha256": "47afe7944c0799835f593771dd5b0552e40916f94794a91b8c8978b3ad59ab5d",
+ "snapshot_cutoff": "2015-03-14",
+ "snapshot_id": "case_60_s8",
+ "ticker": "MDXG",
+ "tier": "wave2"
+}

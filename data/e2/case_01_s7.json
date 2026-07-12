@@ -1,0 +1,115 @@
+{
+ "b3_W8": {
+  "flags": {
+   "insufficient_history": false
+  },
+  "indicators": {
+   "b_401": 0,
+   "b_402": 0,
+   "b_8kfreq": 0,
+   "b_ka": 1,
+   "b_nt": 0,
+   "b_qa": 1
+  },
+  "score": 2
+ },
+ "b4": {
+  "cite": "D61 — 커버 2/13, 상태를 생략하지 않고 기록",
+  "flags": {
+   "insufficient_history": false,
+   "no_shares_denominator": false,
+   "no_si_file": true,
+   "revision_seen_diagnostic": 0,
+   "slope_unavailable": false
+  },
+  "state": "not_computable"
+ },
+ "base_case_id": "case_01",
+ "base_cutoff": "2016-02-28",
+ "cik": "0001158172",
+ "documents": [
+  {
+   "accession": "0000950123-11-075023",
+   "filed": "2011-08-09",
+   "form": "10-Q",
+   "n_facts": 12
+  },
+  {
+   "accession": "0001193125-11-295409",
+   "filed": "2011-11-03",
+   "form": "10-Q",
+   "n_facts": 12
+  },
+  {
+   "accession": "0001193125-12-072772",
+   "filed": "2012-02-22",
+   "form": "10-K",
+   "n_facts": 51
+  },
+  {
+   "accession": "0001193125-12-207751",
+   "filed": "2012-05-03",
+   "form": "10-Q",
+   "n_facts": 19
+  },
+  {
+   "accession": "0001193125-12-332128",
+   "filed": "2012-08-02",
+   "form": "10-Q",
+   "n_facts": 15
+  },
+  {
+   "accession": "0001158172-12-000049",
+   "filed": "2012-11-02",
+   "form": "10-Q",
+   "n_facts": 15
+  },
+  {
+   "accession": "0001158172-13-000004",
+   "filed": "2013-02-20",
+   "form": "10-K",
+   "n_facts": 51
+  },
+  {
+   "accession": "0001158172-13-000034",
+   "filed": "2013-05-13",
+   "form": "10-Q/A",
+   "n_facts": 20
+  },
+  {
+   "accession": "0001158172-13-000050",
+   "filed": "2013-07-30",
+   "form": "10-Q",
+   "n_facts": 18
+  },
+  {
+   "accession": "0001158172-13-000060",
+   "filed": "2013-10-29",
+   "form": "10-Q",
+   "n_facts": 18
+  },
+  {
+   "accession": "0001158172-14-000004",
+   "filed": "2014-02-18",
+   "form": "10-K",
+   "n_facts": 96
+  },
+  {
+   "accession": "0001158172-14-000020",
+   "filed": "2014-05-01",
+   "form": "10-Q",
+   "n_facts": 56
+  }
+ ],
+ "generator": "e2gen-v1 (EARLINESS_PLAN §1–§2 + D65)",
+ "group": "treatment",
+ "guard": {
+  "documents_passed": 518
+ },
+ "j": 7,
+ "payload_sha256": "9b9de19a36f1ae78e2603a58cc082b7a989e0309ae1d0d5e57da6c732d7146c0",
+ "snapshot_cutoff": "2014-05-02",
+ "snapshot_id": "case_01_s7",
+ "ticker": "SCOR",
+ "tier": "wave1"
+}

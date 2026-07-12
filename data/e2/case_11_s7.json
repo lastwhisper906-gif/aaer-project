@@ -1,0 +1,79 @@
+{
+ "b3_W8": {
+  "flags": {
+   "insufficient_history": false
+  },
+  "indicators": {
+   "b_401": 0,
+   "b_402": 0,
+   "b_8kfreq": 0,
+   "b_ka": 1,
+   "b_nt": 0,
+   "b_qa": 0
+  },
+  "score": 1
+ },
+ "b4": {
+  "cite": "D61 — 커버 2/13, 상태를 생략하지 않고 기록",
+  "flags": {
+   "insufficient_history": false,
+   "no_shares_denominator": false,
+   "no_si_file": true,
+   "revision_seen_diagnostic": 0,
+   "slope_unavailable": false
+  },
+  "state": "not_computable"
+ },
+ "base_case_id": "case_11",
+ "base_cutoff": "2013-07-28",
+ "cik": "0001142596",
+ "documents": [
+  {
+   "accession": "0000950123-10-074433",
+   "filed": "2010-08-06",
+   "form": "10-Q",
+   "n_facts": 18
+  },
+  {
+   "accession": "0000950123-10-101359",
+   "filed": "2010-11-05",
+   "form": "10-Q",
+   "n_facts": 18
+  },
+  {
+   "accession": "0000950123-11-018857",
+   "filed": "2011-02-25",
+   "form": "10-K",
+   "n_facts": 55
+  },
+  {
+   "accession": "0000950123-11-046730",
+   "filed": "2011-05-06",
+   "form": "10-Q",
+   "n_facts": 38
+  },
+  {
+   "accession": "0000950123-11-073729",
+   "filed": "2011-08-05",
+   "form": "10-Q",
+   "n_facts": 26
+  },
+  {
+   "accession": "0001193125-11-297771",
+   "filed": "2011-11-04",
+   "form": "10-Q",
+   "n_facts": 38
+  }
+ ],
+ "generator": "e2gen-v1 (EARLINESS_PLAN §1–§2 + D65)",
+ "group": "control",
+ "guard": {
+  "documents_passed": 694
+ },
+ "j": 7,
+ "payload_sha256": "6d9e0d3a066412ef7a78a8b6d1ff5aab39819141b96dd6cf35d4cb562adda8ef",
+ "snapshot_cutoff": "2011-11-05",
+ "snapshot_id": "case_11_s7",
+ "ticker": "NUVA",
+ "tier": "wave1"
+}

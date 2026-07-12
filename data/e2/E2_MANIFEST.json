@@ -1,0 +1,1695 @@
+{
+ "budget_of_record": {
+  "cite": "D65 주석 2",
+  "evaluatee_calls": 146,
+  "grader_calls": 0
+ },
+ "generator": "e2gen-v1 (EARLINESS_PLAN §1–§2 + D65)",
+ "rows": [
+  {
+   "base_case_id": "case_01",
+   "cutoff": "2015-11-07",
+   "group": "treatment",
+   "j": 1,
+   "snapshot_id": "case_01_s1",
+   "status": "buildable",
+   "ticker": "SCOR",
+   "tier": "wave1"
+  },
+  {
+   "base_case_id": "case_01",
+   "cutoff": "2015-08-08",
+   "group": "treatment",
+   "j": 2,
+   "snapshot_id": "case_01_s2",
+   "status": "buildable",
+   "ticker": "SCOR",
+   "tier": "wave1"
+  },
+  {
+   "base_case_id": "case_01",
+   "cutoff": "2015-05-06",
+   "group": "treatment",
+   "j": 3,
+   "snapshot_id": "case_01_s3",
+   "status": "buildable",
+   "ticker": "SCOR",
+   "tier": "wave1"
+  },
+  {
+   "base_case_id": "case_01",
+   "cutoff": "2015-02-21",
+   "group": "treatment",
+   "j": 4,
+   "snapshot_id": "case_01_s4",
+   "status": "buildable",
+   "ticker": "SCOR",
+   "tier": "wave1"
+  },
+  {
+   "base_case_id": "case_01",
+   "cutoff": "2014-10-30",
+   "group": "treatment",
+   "j": 5,
+   "snapshot_id": "case_01_s5",
+   "status": "buildable",
+   "ticker": "SCOR",
+   "tier": "wave1"
+  },
+  {
+   "base_case_id": "case_01",
+   "cutoff": "2014-08-06",
+   "group": "treatment",
+   "j": 6,
+   "snapshot_id": "case_01_s6",
+   "status": "buildable",
+   "ticker": "SCOR",
+   "tier": "wave1"
+  },
+  {
+   "base_case_id": "case_01",
+   "cutoff": "2014-05-02",
+   "group": "treatment",
+   "j": 7,
+   "snapshot_id": "case_01_s7",
+   "status": "buildable",
+   "ticker": "SCOR",
+   "tier": "wave1"
+  },
+  {
+   "base_case_id": "case_01",
+   "cutoff": "2014-02-19",
+   "group": "treatment",
+   "j": 8,
+   "snapshot_id": "case_01_s8",
+   "status": "buildable",
+   "ticker": "SCOR",
+   "tier": "wave1"
+  },
+  {
+   "base_case_id": "case_02",
+   "cutoff": "2013-05-10",
+   "group": "treatment",
+   "j": 1,
+   "snapshot_id": "case_02_s1",
+   "status": "buildable",
+   "ticker": "OFIX",
+   "tier": "wave1"
+  },
+  {
+   "base_case_id": "case_02",
+   "cutoff": "2013-03-02",
+   "group": "treatment",
+   "j": 2,
+   "snapshot_id": "case_02_s2",
+   "status": "buildable",
+   "ticker": "OFIX",
+   "tier": "wave1"
+  },
+  {
+   "base_case_id": "case_02",
+   "cutoff": "2012-11-03",
+   "group": "treatment",
+   "j": 3,
+   "snapshot_id": "case_02_s3",
+   "status": "buildable",
+   "ticker": "OFIX",
+   "tier": "wave1"
+  },
+  {
+   "base_case_id": "case_02",
+   "group": "treatment",
+   "j": 4,
+   "reason": "insufficient_remaining",
+   "snapshot_id": "case_02_s4",
+   "status": "grid_ineligible",
+   "ticker": "OFIX",
+   "tier": "wave1"
+  },
+  {
+   "base_case_id": "case_02",
+   "group": "treatment",
+   "j": 5,
+   "reason": "insufficient_remaining",
+   "snapshot_id": "case_02_s5",
+   "status": "grid_ineligible",
+   "ticker": "OFIX",
+   "tier": "wave1"
+  },
+  {
+   "base_case_id": "case_02",
+   "group": "treatment",
+   "j": 6,
+   "reason": "insufficient_remaining",
+   "snapshot_id": "case_02_s6",
+   "status": "grid_ineligible",
+   "ticker": "OFIX",
+   "tier": "wave1"
+  },
+  {
+   "base_case_id": "case_02",
+   "group": "treatment",
+   "j": 7,
+   "reason": "insufficient_remaining",
+   "snapshot_id": "case_02_s7",
+   "status": "grid_ineligible",
+   "ticker": "OFIX",
+   "tier": "wave1"
+  },
+  {
+   "base_case_id": "case_02",
+   "group": "treatment",
+   "j": 8,
+   "reason": "insufficient_remaining",
+   "snapshot_id": "case_02_s8",
+   "status": "grid_ineligible",
+   "ticker": "OFIX",
+   "tier": "wave1"
+  },
+  {
+   "base_case_id": "case_04",
+   "cutoff": "2018-12-20",
+   "group": "control",
+   "j": 1,
+   "snapshot_id": "case_04_s1",
+   "status": "buildable",
+   "ticker": "GIS",
+   "tier": "wave1"
+  },
+  {
+   "base_case_id": "case_04",
+   "cutoff": "2018-09-19",
+   "group": "control",
+   "j": 2,
+   "snapshot_id": "case_04_s2",
+   "status": "buildable",
+   "ticker": "GIS",
+   "tier": "wave1"
+  },
+  {
+   "base_case_id": "case_04",
+   "cutoff": "2018-06-30",
+   "group": "control",
+   "j": 3,
+   "snapshot_id": "case_04_s3",
+   "status": "buildable",
+   "ticker": "GIS",
+   "tier": "wave1"
+  },
+  {
+   "base_case_id": "case_04",
+   "cutoff": "2018-03-22",
+   "group": "control",
+   "j": 4,
+   "snapshot_id": "case_04_s4",
+   "status": "buildable",
+   "ticker": "GIS",
+   "tier": "wave1"
+  },
+  {
+   "base_case_id": "case_04",
+   "cutoff": "2017-12-21",
+   "group": "control",
+   "j": 5,
+   "snapshot_id": "case_04_s5",
+   "status": "buildable",
+   "ticker": "GIS",
+   "tier": "wave1"
+  },
+  {
+   "base_case_id": "case_04",
+   "cutoff": "2017-09-21",
+   "group": "control",
+   "j": 6,
+   "snapshot_id": "case_04_s6",
+   "status": "buildable",
+   "ticker": "GIS",
+   "tier": "wave1"
+  },
+  {
+   "base_case_id": "case_04",
+   "cutoff": "2017-06-30",
+   "group": "control",
+   "j": 7,
+   "snapshot_id": "case_04_s7",
+   "status": "buildable",
+   "ticker": "GIS",
+   "tier": "wave1"
+  },
+  {
+   "base_case_id": "case_04",
+   "cutoff": "2017-03-22",
+   "group": "control",
+   "j": 8,
+   "snapshot_id": "case_04_s8",
+   "status": "buildable",
+   "ticker": "GIS",
+   "tier": "wave1"
+  },
+  {
+   "base_case_id": "case_05",
+   "cutoff": "2015-06-10",
+   "group": "control",
+   "j": 1,
+   "snapshot_id": "case_05_s1",
+   "status": "buildable",
+   "ticker": "PERY",
+   "tier": "wave1"
+  },
+  {
+   "base_case_id": "case_05",
+   "cutoff": "2015-04-15",
+   "group": "control",
+   "j": 2,
+   "snapshot_id": "case_05_s2",
+   "status": "buildable",
+   "ticker": "PERY",
+   "tier": "wave1"
+  },
+  {
+   "base_case_id": "case_05",
+   "cutoff": "2014-12-10",
+   "group": "control",
+   "j": 3,
+   "snapshot_id": "case_05_s3",
+   "status": "buildable",
+   "ticker": "PERY",
+   "tier": "wave1"
+  },
+  {
+   "base_case_id": "case_05",
+   "cutoff": "2014-09-12",
+   "group": "control",
+   "j": 4,
+   "snapshot_id": "case_05_s4",
+   "status": "buildable",
+   "ticker": "PERY",
+   "tier": "wave1"
+  },
+  {
+   "base_case_id": "case_05",
+   "cutoff": "2014-06-11",
+   "group": "control",
+   "j": 5,
+   "snapshot_id": "case_05_s5",
+   "status": "buildable",
+   "ticker": "PERY",
+   "tier": "wave1"
+  },
+  {
+   "base_case_id": "case_05",
+   "cutoff": "2014-04-16",
+   "group": "control",
+   "j": 6,
+   "snapshot_id": "case_05_s6",
+   "status": "buildable",
+   "ticker": "PERY",
+   "tier": "wave1"
+  },
+  {
+   "base_case_id": "case_05",
+   "cutoff": "2013-12-10",
+   "group": "control",
+   "j": 7,
+   "snapshot_id": "case_05_s7",
+   "status": "buildable",
+   "ticker": "PERY",
+   "tier": "wave1"
+  },
+  {
+   "base_case_id": "case_05",
+   "cutoff": "2013-09-07",
+   "group": "control",
+   "j": 8,
+   "snapshot_id": "case_05_s8",
+   "status": "buildable",
+   "ticker": "PERY",
+   "tier": "wave1"
+  },
+  {
+   "base_case_id": "case_07",
+   "cutoff": "2015-08-01",
+   "group": "control",
+   "j": 1,
+   "snapshot_id": "case_07_s1",
+   "status": "buildable",
+   "ticker": "XLNX",
+   "tier": "wave1"
+  },
+  {
+   "base_case_id": "case_07",
+   "cutoff": "2015-05-14",
+   "group": "control",
+   "j": 2,
+   "snapshot_id": "case_07_s2",
+   "status": "buildable",
+   "ticker": "XLNX",
+   "tier": "wave1"
+  },
+  {
+   "base_case_id": "case_07",
+   "cutoff": "2015-01-31",
+   "group": "control",
+   "j": 3,
+   "snapshot_id": "case_07_s3",
+   "status": "buildable",
+   "ticker": "XLNX",
+   "tier": "wave1"
+  },
+  {
+   "base_case_id": "case_07",
+   "cutoff": "2014-10-28",
+   "group": "control",
+   "j": 4,
+   "snapshot_id": "case_07_s4",
+   "status": "buildable",
+   "ticker": "XLNX",
+   "tier": "wave1"
+  },
+  {
+   "base_case_id": "case_07",
+   "cutoff": "2014-07-29",
+   "group": "control",
+   "j": 5,
+   "snapshot_id": "case_07_s5",
+   "status": "buildable",
+   "ticker": "XLNX",
+   "tier": "wave1"
+  },
+  {
+   "base_case_id": "case_07",
+   "cutoff": "2014-05-17",
+   "group": "control",
+   "j": 6,
+   "snapshot_id": "case_07_s6",
+   "status": "buildable",
+   "ticker": "XLNX",
+   "tier": "wave1"
+  },
+  {
+   "base_case_id": "case_07",
+   "cutoff": "2014-01-31",
+   "group": "control",
+   "j": 7,
+   "snapshot_id": "case_07_s7",
+   "status": "buildable",
+   "ticker": "XLNX",
+   "tier": "wave1"
+  },
+  {
+   "base_case_id": "case_07",
+   "cutoff": "2013-10-29",
+   "group": "control",
+   "j": 8,
+   "snapshot_id": "case_07_s8",
+   "status": "buildable",
+   "ticker": "XLNX",
+   "tier": "wave1"
+  },
+  {
+   "base_case_id": "case_08",
+   "cutoff": "2014-03-20",
+   "group": "treatment",
+   "j": 1,
+   "snapshot_id": "case_08_s1",
+   "status": "buildable",
+   "ticker": "HTZ",
+   "tier": "wave1"
+  },
+  {
+   "base_case_id": "case_08",
+   "cutoff": "2013-11-08",
+   "group": "treatment",
+   "j": 2,
+   "snapshot_id": "case_08_s2",
+   "status": "buildable",
+   "ticker": "HTZ",
+   "tier": "wave1"
+  },
+  {
+   "base_case_id": "case_08",
+   "cutoff": "2013-08-03",
+   "group": "treatment",
+   "j": 3,
+   "snapshot_id": "case_08_s3",
+   "status": "buildable",
+   "ticker": "HTZ",
+   "tier": "wave1"
+  },
+  {
+   "base_case_id": "case_08",
+   "cutoff": "2013-05-03",
+   "group": "treatment",
+   "j": 4,
+   "snapshot_id": "case_08_s4",
+   "status": "buildable",
+   "ticker": "HTZ",
+   "tier": "wave1"
+  },
+  {
+   "base_case_id": "case_08",
+   "cutoff": "2013-03-05",
+   "group": "treatment",
+   "j": 5,
+   "snapshot_id": "case_08_s5",
+   "status": "buildable",
+   "ticker": "HTZ",
+   "tier": "wave1"
+  },
+  {
+   "base_case_id": "case_08",
+   "cutoff": "2012-11-03",
+   "group": "treatment",
+   "j": 6,
+   "snapshot_id": "case_08_s6",
+   "status": "buildable",
+   "ticker": "HTZ",
+   "tier": "wave1"
+  },
+  {
+   "base_case_id": "case_08",
+   "cutoff": "2012-08-04",
+   "group": "treatment",
+   "j": 7,
+   "snapshot_id": "case_08_s7",
+   "status": "buildable",
+   "ticker": "HTZ",
+   "tier": "wave1"
+  },
+  {
+   "base_case_id": "case_08",
+   "cutoff": "2012-05-05",
+   "group": "treatment",
+   "j": 8,
+   "snapshot_id": "case_08_s8",
+   "status": "buildable",
+   "ticker": "HTZ",
+   "tier": "wave1"
+  },
+  {
+   "base_case_id": "case_09",
+   "cutoff": "2015-05-09",
+   "group": "treatment",
+   "j": 1,
+   "snapshot_id": "case_09_s1",
+   "status": "buildable",
+   "ticker": "ICON",
+   "tier": "wave1"
+  },
+  {
+   "base_case_id": "case_09",
+   "cutoff": "2015-03-03",
+   "group": "treatment",
+   "j": 2,
+   "snapshot_id": "case_09_s2",
+   "status": "buildable",
+   "ticker": "ICON",
+   "tier": "wave1"
+  },
+  {
+   "base_case_id": "case_09",
+   "cutoff": "2014-11-08",
+   "group": "treatment",
+   "j": 3,
+   "snapshot_id": "case_09_s3",
+   "status": "buildable",
+   "ticker": "ICON",
+   "tier": "wave1"
+  },
+  {
+   "base_case_id": "case_09",
+   "cutoff": "2014-08-07",
+   "group": "treatment",
+   "j": 4,
+   "snapshot_id": "case_09_s4",
+   "status": "buildable",
+   "ticker": "ICON",
+   "tier": "wave1"
+  },
+  {
+   "base_case_id": "case_09",
+   "cutoff": "2014-05-10",
+   "group": "treatment",
+   "j": 5,
+   "snapshot_id": "case_09_s5",
+   "status": "buildable",
+   "ticker": "ICON",
+   "tier": "wave1"
+  },
+  {
+   "base_case_id": "case_09",
+   "cutoff": "2014-02-28",
+   "group": "treatment",
+   "j": 6,
+   "snapshot_id": "case_09_s6",
+   "status": "buildable",
+   "ticker": "ICON",
+   "tier": "wave1"
+  },
+  {
+   "base_case_id": "case_09",
+   "cutoff": "2013-11-07",
+   "group": "treatment",
+   "j": 7,
+   "snapshot_id": "case_09_s7",
+   "status": "buildable",
+   "ticker": "ICON",
+   "tier": "wave1"
+  },
+  {
+   "base_case_id": "case_09",
+   "cutoff": "2013-08-10",
+   "group": "treatment",
+   "j": 8,
+   "snapshot_id": "case_09_s8",
+   "status": "buildable",
+   "ticker": "ICON",
+   "tier": "wave1"
+  },
+  {
+   "base_case_id": "case_10",
+   "cutoff": "2014-04-24",
+   "group": "control",
+   "j": 1,
+   "snapshot_id": "case_10_s1",
+   "status": "buildable",
+   "ticker": "R",
+   "tier": "wave1"
+  },
+  {
+   "base_case_id": "case_10",
+   "cutoff": "2014-02-15",
+   "group": "control",
+   "j": 2,
+   "snapshot_id": "case_10_s2",
+   "status": "buildable",
+   "ticker": "R",
+   "tier": "wave1"
+  },
+  {
+   "base_case_id": "case_10",
+   "cutoff": "2013-10-23",
+   "group": "control",
+   "j": 3,
+   "snapshot_id": "case_10_s3",
+   "status": "buildable",
+   "ticker": "R",
+   "tier": "wave1"
+  },
+  {
+   "base_case_id": "case_10",
+   "cutoff": "2013-07-24",
+   "group": "control",
+   "j": 4,
+   "snapshot_id": "case_10_s4",
+   "status": "buildable",
+   "ticker": "R",
+   "tier": "wave1"
+  },
+  {
+   "base_case_id": "case_10",
+   "cutoff": "2013-04-24",
+   "group": "control",
+   "j": 5,
+   "snapshot_id": "case_10_s5",
+   "status": "buildable",
+   "ticker": "R",
+   "tier": "wave1"
+  },
+  {
+   "base_case_id": "case_10",
+   "cutoff": "2013-02-15",
+   "group": "control",
+   "j": 6,
+   "snapshot_id": "case_10_s6",
+   "status": "buildable",
+   "ticker": "R",
+   "tier": "wave1"
+  },
+  {
+   "base_case_id": "case_10",
+   "cutoff": "2012-10-24",
+   "group": "control",
+   "j": 7,
+   "snapshot_id": "case_10_s7",
+   "status": "buildable",
+   "ticker": "R",
+   "tier": "wave1"
+  },
+  {
+   "base_case_id": "case_10",
+   "cutoff": "2012-07-25",
+   "group": "control",
+   "j": 8,
+   "snapshot_id": "case_10_s8",
+   "status": "buildable",
+   "ticker": "R",
+   "tier": "wave1"
+  },
+  {
+   "base_case_id": "case_11",
+   "cutoff": "2013-05-02",
+   "group": "control",
+   "j": 1,
+   "snapshot_id": "case_11_s1",
+   "status": "buildable",
+   "ticker": "NUVA",
+   "tier": "wave1"
+  },
+  {
+   "base_case_id": "case_11",
+   "cutoff": "2013-02-28",
+   "group": "control",
+   "j": 2,
+   "snapshot_id": "case_11_s2",
+   "status": "buildable",
+   "ticker": "NUVA",
+   "tier": "wave1"
+  },
+  {
+   "base_case_id": "case_11",
+   "cutoff": "2012-10-26",
+   "group": "control",
+   "j": 3,
+   "snapshot_id": "case_11_s3",
+   "status": "buildable",
+   "ticker": "NUVA",
+   "tier": "wave1"
+  },
+  {
+   "base_case_id": "case_11",
+   "cutoff": "2012-07-27",
+   "group": "control",
+   "j": 4,
+   "snapshot_id": "case_11_s4",
+   "status": "buildable",
+   "ticker": "NUVA",
+   "tier": "wave1"
+  },
+  {
+   "base_case_id": "case_11",
+   "cutoff": "2012-05-02",
+   "group": "control",
+   "j": 5,
+   "snapshot_id": "case_11_s5",
+   "status": "buildable",
+   "ticker": "NUVA",
+   "tier": "wave1"
+  },
+  {
+   "base_case_id": "case_11",
+   "cutoff": "2012-02-28",
+   "group": "control",
+   "j": 6,
+   "snapshot_id": "case_11_s6",
+   "status": "buildable",
+   "ticker": "NUVA",
+   "tier": "wave1"
+  },
+  {
+   "base_case_id": "case_11",
+   "cutoff": "2011-11-05",
+   "group": "control",
+   "j": 7,
+   "snapshot_id": "case_11_s7",
+   "status": "buildable",
+   "ticker": "NUVA",
+   "tier": "wave1"
+  },
+  {
+   "base_case_id": "case_11",
+   "group": "control",
+   "j": 8,
+   "reason": "insufficient_remaining",
+   "snapshot_id": "case_11_s8",
+   "status": "grid_ineligible",
+   "ticker": "NUVA",
+   "tier": "wave1"
+  },
+  {
+   "base_case_id": "case_12",
+   "cutoff": "2018-11-03",
+   "group": "treatment",
+   "j": 1,
+   "snapshot_id": "case_12_s1",
+   "status": "buildable",
+   "ticker": "KHC",
+   "tier": "wave1"
+  },
+  {
+   "base_case_id": "case_12",
+   "cutoff": "2018-08-04",
+   "group": "treatment",
+   "j": 2,
+   "snapshot_id": "case_12_s2",
+   "status": "buildable",
+   "ticker": "KHC",
+   "tier": "wave1"
+  },
+  {
+   "base_case_id": "case_12",
+   "cutoff": "2018-05-04",
+   "group": "treatment",
+   "j": 3,
+   "snapshot_id": "case_12_s3",
+   "status": "buildable",
+   "ticker": "KHC",
+   "tier": "wave1"
+  },
+  {
+   "base_case_id": "case_12",
+   "cutoff": "2018-02-17",
+   "group": "treatment",
+   "j": 4,
+   "snapshot_id": "case_12_s4",
+   "status": "buildable",
+   "ticker": "KHC",
+   "tier": "wave1"
+  },
+  {
+   "base_case_id": "case_12",
+   "cutoff": "2017-11-08",
+   "group": "treatment",
+   "j": 5,
+   "snapshot_id": "case_12_s5",
+   "status": "buildable",
+   "ticker": "KHC",
+   "tier": "wave1"
+  },
+  {
+   "base_case_id": "case_12",
+   "cutoff": "2017-08-05",
+   "group": "treatment",
+   "j": 6,
+   "snapshot_id": "case_12_s6",
+   "status": "buildable",
+   "ticker": "KHC",
+   "tier": "wave1"
+  },
+  {
+   "base_case_id": "case_12",
+   "cutoff": "2017-05-05",
+   "group": "treatment",
+   "j": 7,
+   "snapshot_id": "case_12_s7",
+   "status": "buildable",
+   "ticker": "KHC",
+   "tier": "wave1"
+  },
+  {
+   "base_case_id": "case_12",
+   "cutoff": "2017-02-24",
+   "group": "treatment",
+   "j": 8,
+   "snapshot_id": "case_12_s8",
+   "status": "buildable",
+   "ticker": "KHC",
+   "tier": "wave1"
+  },
+  {
+   "base_case_id": "case_13",
+   "cutoff": "2015-06-05",
+   "group": "treatment",
+   "j": 1,
+   "snapshot_id": "case_13_s1",
+   "status": "buildable",
+   "ticker": "MRVL",
+   "tier": "wave1"
+  },
+  {
+   "base_case_id": "case_13",
+   "cutoff": "2015-03-27",
+   "group": "treatment",
+   "j": 2,
+   "snapshot_id": "case_13_s2",
+   "status": "buildable",
+   "ticker": "MRVL",
+   "tier": "wave1"
+  },
+  {
+   "base_case_id": "case_13",
+   "cutoff": "2014-12-05",
+   "group": "treatment",
+   "j": 3,
+   "snapshot_id": "case_13_s3",
+   "status": "buildable",
+   "ticker": "MRVL",
+   "tier": "wave1"
+  },
+  {
+   "base_case_id": "case_13",
+   "cutoff": "2014-09-05",
+   "group": "treatment",
+   "j": 4,
+   "snapshot_id": "case_13_s4",
+   "status": "buildable",
+   "ticker": "MRVL",
+   "tier": "wave1"
+  },
+  {
+   "base_case_id": "case_13",
+   "cutoff": "2014-06-06",
+   "group": "treatment",
+   "j": 5,
+   "snapshot_id": "case_13_s5",
+   "status": "buildable",
+   "ticker": "MRVL",
+   "tier": "wave1"
+  },
+  {
+   "base_case_id": "case_13",
+   "cutoff": "2014-03-28",
+   "group": "treatment",
+   "j": 6,
+   "snapshot_id": "case_13_s6",
+   "status": "buildable",
+   "ticker": "MRVL",
+   "tier": "wave1"
+  },
+  {
+   "base_case_id": "case_13",
+   "cutoff": "2013-12-07",
+   "group": "treatment",
+   "j": 7,
+   "snapshot_id": "case_13_s7",
+   "status": "buildable",
+   "ticker": "MRVL",
+   "tier": "wave1"
+  },
+  {
+   "base_case_id": "case_13",
+   "cutoff": "2013-09-06",
+   "group": "treatment",
+   "j": 8,
+   "snapshot_id": "case_13_s8",
+   "status": "buildable",
+   "ticker": "MRVL",
+   "tier": "wave1"
+  },
+  {
+   "base_case_id": "case_14",
+   "cutoff": "2013-05-09",
+   "group": "control",
+   "j": 1,
+   "snapshot_id": "case_14_s1",
+   "status": "buildable",
+   "ticker": "GRMN",
+   "tier": "wave1"
+  },
+  {
+   "base_case_id": "case_14",
+   "cutoff": "2013-02-28",
+   "group": "control",
+   "j": 2,
+   "snapshot_id": "case_14_s2",
+   "status": "buildable",
+   "ticker": "GRMN",
+   "tier": "wave1"
+  },
+  {
+   "base_case_id": "case_14",
+   "cutoff": "2012-11-08",
+   "group": "control",
+   "j": 3,
+   "snapshot_id": "case_14_s3",
+   "status": "buildable",
+   "ticker": "GRMN",
+   "tier": "wave1"
+  },
+  {
+   "base_case_id": "case_14",
+   "cutoff": "2012-08-09",
+   "group": "control",
+   "j": 4,
+   "snapshot_id": "case_14_s4",
+   "status": "buildable",
+   "ticker": "GRMN",
+   "tier": "wave1"
+  },
+  {
+   "base_case_id": "case_14",
+   "cutoff": "2012-05-10",
+   "group": "control",
+   "j": 5,
+   "snapshot_id": "case_14_s5",
+   "status": "buildable",
+   "ticker": "GRMN",
+   "tier": "wave1"
+  },
+  {
+   "base_case_id": "case_14",
+   "cutoff": "2012-03-01",
+   "group": "control",
+   "j": 6,
+   "snapshot_id": "case_14_s6",
+   "status": "buildable",
+   "ticker": "GRMN",
+   "tier": "wave1"
+  },
+  {
+   "base_case_id": "case_14",
+   "cutoff": "2011-11-03",
+   "group": "control",
+   "j": 7,
+   "snapshot_id": "case_14_s7",
+   "status": "buildable",
+   "ticker": "GRMN",
+   "tier": "wave1"
+  },
+  {
+   "base_case_id": "case_14",
+   "cutoff": "2011-05-05",
+   "group": "control",
+   "j": 8,
+   "snapshot_id": "case_14_s8",
+   "status": "buildable",
+   "ticker": "GRMN",
+   "tier": "wave1"
+  },
+  {
+   "base_case_id": "case_15",
+   "cutoff": "2015-11-07",
+   "group": "control",
+   "j": 1,
+   "snapshot_id": "case_15_s1",
+   "status": "buildable",
+   "ticker": "FORR",
+   "tier": "wave1"
+  },
+  {
+   "base_case_id": "case_15",
+   "cutoff": "2015-08-06",
+   "group": "control",
+   "j": 2,
+   "snapshot_id": "case_15_s2",
+   "status": "buildable",
+   "ticker": "FORR",
+   "tier": "wave1"
+  },
+  {
+   "base_case_id": "case_15",
+   "cutoff": "2015-05-08",
+   "group": "control",
+   "j": 3,
+   "snapshot_id": "case_15_s3",
+   "status": "buildable",
+   "ticker": "FORR",
+   "tier": "wave1"
+  },
+  {
+   "base_case_id": "case_15",
+   "cutoff": "2015-03-12",
+   "group": "control",
+   "j": 4,
+   "snapshot_id": "case_15_s4",
+   "status": "buildable",
+   "ticker": "FORR",
+   "tier": "wave1"
+  },
+  {
+   "base_case_id": "case_15",
+   "cutoff": "2014-11-06",
+   "group": "control",
+   "j": 5,
+   "snapshot_id": "case_15_s5",
+   "status": "buildable",
+   "ticker": "FORR",
+   "tier": "wave1"
+  },
+  {
+   "base_case_id": "case_15",
+   "cutoff": "2014-08-07",
+   "group": "control",
+   "j": 6,
+   "snapshot_id": "case_15_s6",
+   "status": "buildable",
+   "ticker": "FORR",
+   "tier": "wave1"
+  },
+  {
+   "base_case_id": "case_15",
+   "cutoff": "2014-05-10",
+   "group": "control",
+   "j": 7,
+   "snapshot_id": "case_15_s7",
+   "status": "buildable",
+   "ticker": "FORR",
+   "tier": "wave1"
+  },
+  {
+   "base_case_id": "case_15",
+   "cutoff": "2014-03-14",
+   "group": "control",
+   "j": 8,
+   "snapshot_id": "case_15_s8",
+   "status": "buildable",
+   "ticker": "FORR",
+   "tier": "wave1"
+  },
+  {
+   "base_case_id": "case_16",
+   "group": "control",
+   "j": 1,
+   "reason": "insufficient_remaining",
+   "snapshot_id": "case_16_s1",
+   "status": "grid_ineligible",
+   "ticker": "MOS",
+   "tier": "wave1"
+  },
+  {
+   "base_case_id": "case_16",
+   "group": "control",
+   "j": 2,
+   "reason": "insufficient_remaining",
+   "snapshot_id": "case_16_s2",
+   "status": "grid_ineligible",
+   "ticker": "MOS",
+   "tier": "wave1"
+  },
+  {
+   "base_case_id": "case_16",
+   "group": "control",
+   "j": 3,
+   "reason": "beyond_available",
+   "snapshot_id": "case_16_s3",
+   "status": "grid_ineligible",
+   "ticker": "MOS",
+   "tier": "wave1"
+  },
+  {
+   "base_case_id": "case_16",
+   "group": "control",
+   "j": 4,
+   "reason": "beyond_available",
+   "snapshot_id": "case_16_s4",
+   "status": "grid_ineligible",
+   "ticker": "MOS",
+   "tier": "wave1"
+  },
+  {
+   "base_case_id": "case_16",
+   "group": "control",
+   "j": 5,
+   "reason": "beyond_available",
+   "snapshot_id": "case_16_s5",
+   "status": "grid_ineligible",
+   "ticker": "MOS",
+   "tier": "wave1"
+  },
+  {
+   "base_case_id": "case_16",
+   "group": "control",
+   "j": 6,
+   "reason": "beyond_available",
+   "snapshot_id": "case_16_s6",
+   "status": "grid_ineligible",
+   "ticker": "MOS",
+   "tier": "wave1"
+  },
+  {
+   "base_case_id": "case_16",
+   "group": "control",
+   "j": 7,
+   "reason": "beyond_available",
+   "snapshot_id": "case_16_s7",
+   "status": "grid_ineligible",
+   "ticker": "MOS",
+   "tier": "wave1"
+  },
+  {
+   "base_case_id": "case_16",
+   "group": "control",
+   "j": 8,
+   "reason": "beyond_available",
+   "snapshot_id": "case_16_s8",
+   "status": "grid_ineligible",
+   "ticker": "MOS",
+   "tier": "wave1"
+  },
+  {
+   "base_case_id": "case_39",
+   "cutoff": "2015-08-11",
+   "group": "treatment",
+   "j": 1,
+   "snapshot_id": "case_39_s1",
+   "status": "buildable",
+   "ticker": "OSIR",
+   "tier": "wave2"
+  },
+  {
+   "base_case_id": "case_39",
+   "cutoff": "2015-05-12",
+   "group": "treatment",
+   "j": 2,
+   "snapshot_id": "case_39_s2",
+   "status": "buildable",
+   "ticker": "OSIR",
+   "tier": "wave2"
+  },
+  {
+   "base_case_id": "case_39",
+   "cutoff": "2015-03-21",
+   "group": "treatment",
+   "j": 3,
+   "snapshot_id": "case_39_s3",
+   "status": "buildable",
+   "ticker": "OSIR",
+   "tier": "wave2"
+  },
+  {
+   "base_case_id": "case_39",
+   "cutoff": "2014-11-11",
+   "group": "treatment",
+   "j": 4,
+   "snapshot_id": "case_39_s4",
+   "status": "buildable",
+   "ticker": "OSIR",
+   "tier": "wave2"
+  },
+  {
+   "base_case_id": "case_39",
+   "cutoff": "2014-08-12",
+   "group": "treatment",
+   "j": 5,
+   "snapshot_id": "case_39_s5",
+   "status": "buildable",
+   "ticker": "OSIR",
+   "tier": "wave2"
+  },
+  {
+   "base_case_id": "case_39",
+   "cutoff": "2014-05-13",
+   "group": "treatment",
+   "j": 6,
+   "snapshot_id": "case_39_s6",
+   "status": "buildable",
+   "ticker": "OSIR",
+   "tier": "wave2"
+  },
+  {
+   "base_case_id": "case_39",
+   "cutoff": "2014-04-01",
+   "group": "treatment",
+   "j": 7,
+   "snapshot_id": "case_39_s7",
+   "status": "buildable",
+   "ticker": "OSIR",
+   "tier": "wave2"
+  },
+  {
+   "base_case_id": "case_39",
+   "cutoff": "2013-11-13",
+   "group": "treatment",
+   "j": 8,
+   "snapshot_id": "case_39_s8",
+   "status": "buildable",
+   "ticker": "OSIR",
+   "tier": "wave2"
+  },
+  {
+   "base_case_id": "case_40",
+   "cutoff": "2015-11-10",
+   "group": "treatment",
+   "j": 1,
+   "snapshot_id": "case_40_s1",
+   "status": "buildable",
+   "ticker": "TNGO",
+   "tier": "wave2"
+  },
+  {
+   "base_case_id": "case_40",
+   "cutoff": "2015-08-11",
+   "group": "treatment",
+   "j": 2,
+   "snapshot_id": "case_40_s2",
+   "status": "buildable",
+   "ticker": "TNGO",
+   "tier": "wave2"
+  },
+  {
+   "base_case_id": "case_40",
+   "cutoff": "2015-05-12",
+   "group": "treatment",
+   "j": 3,
+   "snapshot_id": "case_40_s3",
+   "status": "buildable",
+   "ticker": "TNGO",
+   "tier": "wave2"
+  },
+  {
+   "base_case_id": "case_40",
+   "cutoff": "2015-03-17",
+   "group": "treatment",
+   "j": 4,
+   "snapshot_id": "case_40_s4",
+   "status": "buildable",
+   "ticker": "TNGO",
+   "tier": "wave2"
+  },
+  {
+   "base_case_id": "case_40",
+   "cutoff": "2014-11-11",
+   "group": "treatment",
+   "j": 5,
+   "snapshot_id": "case_40_s5",
+   "status": "buildable",
+   "ticker": "TNGO",
+   "tier": "wave2"
+  },
+  {
+   "base_case_id": "case_40",
+   "cutoff": "2014-08-12",
+   "group": "treatment",
+   "j": 6,
+   "snapshot_id": "case_40_s6",
+   "status": "buildable",
+   "ticker": "TNGO",
+   "tier": "wave2"
+  },
+  {
+   "base_case_id": "case_40",
+   "cutoff": "2014-05-13",
+   "group": "treatment",
+   "j": 7,
+   "snapshot_id": "case_40_s7",
+   "status": "buildable",
+   "ticker": "TNGO",
+   "tier": "wave2"
+  },
+  {
+   "base_case_id": "case_40",
+   "cutoff": "2014-03-18",
+   "group": "treatment",
+   "j": 8,
+   "snapshot_id": "case_40_s8",
+   "status": "buildable",
+   "ticker": "TNGO",
+   "tier": "wave2"
+  },
+  {
+   "base_case_id": "case_59",
+   "cutoff": "2016-05-11",
+   "group": "treatment",
+   "j": 1,
+   "snapshot_id": "case_59_s1",
+   "status": "buildable",
+   "ticker": "HAIN",
+   "tier": "wave2"
+  },
+  {
+   "base_case_id": "case_59",
+   "cutoff": "2016-02-10",
+   "group": "treatment",
+   "j": 2,
+   "snapshot_id": "case_59_s2",
+   "status": "buildable",
+   "ticker": "HAIN",
+   "tier": "wave2"
+  },
+  {
+   "base_case_id": "case_59",
+   "cutoff": "2015-11-10",
+   "group": "treatment",
+   "j": 3,
+   "snapshot_id": "case_59_s3",
+   "status": "buildable",
+   "ticker": "HAIN",
+   "tier": "wave2"
+  },
+  {
+   "base_case_id": "case_59",
+   "cutoff": "2015-08-22",
+   "group": "treatment",
+   "j": 4,
+   "snapshot_id": "case_59_s4",
+   "status": "buildable",
+   "ticker": "HAIN",
+   "tier": "wave2"
+  },
+  {
+   "base_case_id": "case_59",
+   "cutoff": "2015-05-12",
+   "group": "treatment",
+   "j": 5,
+   "snapshot_id": "case_59_s5",
+   "status": "buildable",
+   "ticker": "HAIN",
+   "tier": "wave2"
+  },
+  {
+   "base_case_id": "case_59",
+   "cutoff": "2015-02-10",
+   "group": "treatment",
+   "j": 6,
+   "snapshot_id": "case_59_s6",
+   "status": "buildable",
+   "ticker": "HAIN",
+   "tier": "wave2"
+  },
+  {
+   "base_case_id": "case_59",
+   "cutoff": "2014-11-08",
+   "group": "treatment",
+   "j": 7,
+   "snapshot_id": "case_59_s7",
+   "status": "buildable",
+   "ticker": "HAIN",
+   "tier": "wave2"
+  },
+  {
+   "base_case_id": "case_59",
+   "cutoff": "2014-08-28",
+   "group": "treatment",
+   "j": 8,
+   "snapshot_id": "case_59_s8",
+   "status": "buildable",
+   "ticker": "HAIN",
+   "tier": "wave2"
+  },
+  {
+   "base_case_id": "case_60",
+   "cutoff": "2016-11-09",
+   "group": "treatment",
+   "j": 1,
+   "snapshot_id": "case_60_s1",
+   "status": "buildable",
+   "ticker": "MDXG",
+   "tier": "wave2"
+  },
+  {
+   "base_case_id": "case_60",
+   "cutoff": "2016-08-03",
+   "group": "treatment",
+   "j": 2,
+   "snapshot_id": "case_60_s2",
+   "status": "buildable",
+   "ticker": "MDXG",
+   "tier": "wave2"
+  },
+  {
+   "base_case_id": "case_60",
+   "cutoff": "2016-05-11",
+   "group": "treatment",
+   "j": 3,
+   "snapshot_id": "case_60_s3",
+   "status": "buildable",
+   "ticker": "MDXG",
+   "tier": "wave2"
+  },
+  {
+   "base_case_id": "case_60",
+   "cutoff": "2016-03-01",
+   "group": "treatment",
+   "j": 4,
+   "snapshot_id": "case_60_s4",
+   "status": "buildable",
+   "ticker": "MDXG",
+   "tier": "wave2"
+  },
+  {
+   "base_case_id": "case_60",
+   "cutoff": "2015-11-07",
+   "group": "treatment",
+   "j": 5,
+   "snapshot_id": "case_60_s5",
+   "status": "buildable",
+   "ticker": "MDXG",
+   "tier": "wave2"
+  },
+  {
+   "base_case_id": "case_60",
+   "cutoff": "2015-08-08",
+   "group": "treatment",
+   "j": 6,
+   "snapshot_id": "case_60_s6",
+   "status": "buildable",
+   "ticker": "MDXG",
+   "tier": "wave2"
+  },
+  {
+   "base_case_id": "case_60",
+   "cutoff": "2015-05-02",
+   "group": "treatment",
+   "j": 7,
+   "snapshot_id": "case_60_s7",
+   "status": "buildable",
+   "ticker": "MDXG",
+   "tier": "wave2"
+  },
+  {
+   "base_case_id": "case_60",
+   "cutoff": "2015-03-14",
+   "group": "treatment",
+   "j": 8,
+   "snapshot_id": "case_60_s8",
+   "status": "buildable",
+   "ticker": "MDXG",
+   "tier": "wave2"
+  },
+  {
+   "base_case_id": "case_61",
+   "cutoff": "2017-02-11",
+   "group": "treatment",
+   "j": 1,
+   "snapshot_id": "case_61_s1",
+   "status": "buildable",
+   "ticker": "CGI",
+   "tier": "wave2"
+  },
+  {
+   "base_case_id": "case_61",
+   "cutoff": "2016-11-10",
+   "group": "treatment",
+   "j": 2,
+   "snapshot_id": "case_61_s2",
+   "status": "buildable",
+   "ticker": "CGI",
+   "tier": "wave2"
+  },
+  {
+   "base_case_id": "case_61",
+   "cutoff": "2016-09-14",
+   "group": "treatment",
+   "j": 3,
+   "snapshot_id": "case_61_s3",
+   "status": "buildable",
+   "ticker": "CGI",
+   "tier": "wave2"
+  },
+  {
+   "base_case_id": "case_61",
+   "cutoff": "2016-05-11",
+   "group": "treatment",
+   "j": 4,
+   "snapshot_id": "case_61_s4",
+   "status": "buildable",
+   "ticker": "CGI",
+   "tier": "wave2"
+  },
+  {
+   "base_case_id": "case_61",
+   "cutoff": "2016-02-10",
+   "group": "treatment",
+   "j": 5,
+   "snapshot_id": "case_61_s5",
+   "status": "buildable",
+   "ticker": "CGI",
+   "tier": "wave2"
+  },
+  {
+   "base_case_id": "case_61",
+   "cutoff": "2015-11-10",
+   "group": "treatment",
+   "j": 6,
+   "snapshot_id": "case_61_s6",
+   "status": "buildable",
+   "ticker": "CGI",
+   "tier": "wave2"
+  },
+  {
+   "base_case_id": "case_61",
+   "cutoff": "2015-09-11",
+   "group": "treatment",
+   "j": 7,
+   "snapshot_id": "case_61_s7",
+   "status": "buildable",
+   "ticker": "CGI",
+   "tier": "wave2"
+  },
+  {
+   "base_case_id": "case_61",
+   "cutoff": "2015-05-12",
+   "group": "treatment",
+   "j": 8,
+   "snapshot_id": "case_61_s8",
+   "status": "buildable",
+   "ticker": "CGI",
+   "tier": "wave2"
+  },
+  {
+   "base_case_id": "case_65",
+   "group": "treatment",
+   "j": 1,
+   "reason": "insufficient_remaining",
+   "snapshot_id": "case_65_s1",
+   "status": "grid_ineligible",
+   "ticker": "WFT",
+   "tier": "wave2"
+  },
+  {
+   "base_case_id": "case_65",
+   "group": "treatment",
+   "j": 2,
+   "reason": "insufficient_remaining",
+   "snapshot_id": "case_65_s2",
+   "status": "grid_ineligible",
+   "ticker": "WFT",
+   "tier": "wave2"
+  },
+  {
+   "base_case_id": "case_65",
+   "group": "treatment",
+   "j": 3,
+   "reason": "insufficient_remaining",
+   "snapshot_id": "case_65_s3",
+   "status": "grid_ineligible",
+   "ticker": "WFT",
+   "tier": "wave2"
+  },
+  {
+   "base_case_id": "case_65",
+   "group": "treatment",
+   "j": 4,
+   "reason": "insufficient_remaining",
+   "snapshot_id": "case_65_s4",
+   "status": "grid_ineligible",
+   "ticker": "WFT",
+   "tier": "wave2"
+  },
+  {
+   "base_case_id": "case_65",
+   "group": "treatment",
+   "j": 5,
+   "reason": "beyond_available",
+   "snapshot_id": "case_65_s5",
+   "status": "grid_ineligible",
+   "ticker": "WFT",
+   "tier": "wave2"
+  },
+  {
+   "base_case_id": "case_65",
+   "group": "treatment",
+   "j": 6,
+   "reason": "beyond_available",
+   "snapshot_id": "case_65_s6",
+   "status": "grid_ineligible",
+   "ticker": "WFT",
+   "tier": "wave2"
+  },
+  {
+   "base_case_id": "case_65",
+   "group": "treatment",
+   "j": 7,
+   "reason": "beyond_available",
+   "snapshot_id": "case_65_s7",
+   "status": "grid_ineligible",
+   "ticker": "WFT",
+   "tier": "wave2"
+  },
+  {
+   "base_case_id": "case_65",
+   "group": "treatment",
+   "j": 8,
+   "reason": "beyond_available",
+   "snapshot_id": "case_65_s8",
+   "status": "grid_ineligible",
+   "ticker": "WFT",
+   "tier": "wave2"
+  },
+  {
+   "base_case_id": "case_66",
+   "cutoff": "2019-08-02",
+   "group": "treatment",
+   "j": 1,
+   "snapshot_id": "case_66_s1",
+   "status": "buildable",
+   "ticker": "UAA",
+   "tier": "wave2"
+  },
+  {
+   "base_case_id": "case_66",
+   "cutoff": "2019-05-10",
+   "group": "treatment",
+   "j": 2,
+   "snapshot_id": "case_66_s2",
+   "status": "buildable",
+   "ticker": "UAA",
+   "tier": "wave2"
+  },
+  {
+   "base_case_id": "case_66",
+   "cutoff": "2019-02-26",
+   "group": "treatment",
+   "j": 3,
+   "snapshot_id": "case_66_s3",
+   "status": "buildable",
+   "ticker": "UAA",
+   "tier": "wave2"
+  },
+  {
+   "base_case_id": "case_66",
+   "cutoff": "2018-11-06",
+   "group": "treatment",
+   "j": 4,
+   "snapshot_id": "case_66_s4",
+   "status": "buildable",
+   "ticker": "UAA",
+   "tier": "wave2"
+  },
+  {
+   "base_case_id": "case_66",
+   "cutoff": "2018-08-04",
+   "group": "treatment",
+   "j": 5,
+   "snapshot_id": "case_66_s5",
+   "status": "buildable",
+   "ticker": "UAA",
+   "tier": "wave2"
+  },
+  {
+   "base_case_id": "case_66",
+   "cutoff": "2018-05-11",
+   "group": "treatment",
+   "j": 6,
+   "snapshot_id": "case_66_s6",
+   "status": "buildable",
+   "ticker": "UAA",
+   "tier": "wave2"
+  },
+  {
+   "base_case_id": "case_66",
+   "cutoff": "2018-03-01",
+   "group": "treatment",
+   "j": 7,
+   "snapshot_id": "case_66_s7",
+   "status": "buildable",
+   "ticker": "UAA",
+   "tier": "wave2"
+  },
+  {
+   "base_case_id": "case_66",
+   "cutoff": "2017-11-10",
+   "group": "treatment",
+   "j": 8,
+   "snapshot_id": "case_66_s8",
+   "status": "buildable",
+   "ticker": "UAA",
+   "tier": "wave2"
+  }
+ ],
+ "totals": {
+  "build_failed": 0,
+  "buildable": 146,
+  "grid_ineligible": 22
+ }
+}

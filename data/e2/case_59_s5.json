@@ -1,0 +1,157 @@
+{
+ "b3_W8": {
+  "flags": {
+   "insufficient_history": false
+  },
+  "indicators": {
+   "b_401": 0,
+   "b_402": 0,
+   "b_8kfreq": 0,
+   "b_ka": 0,
+   "b_nt": 0,
+   "b_qa": 0
+  },
+  "score": 0
+ },
+ "b4": {
+  "cite": "D61 — 커버 2/13, 상태를 생략하지 않고 기록",
+  "flags": {
+   "insufficient_history": false,
+   "no_shares_denominator": false,
+   "no_si_file": true,
+   "revision_seen_diagnostic": 0,
+   "slope_unavailable": false
+  },
+  "state": "not_computable"
+ },
+ "base_case_id": "case_59",
+ "base_cutoff": "2016-08-14",
+ "cik": "0000910406",
+ "documents": [
+  {
+   "accession": "0001193125-10-254149",
+   "filed": "2010-11-09",
+   "form": "10-Q",
+   "n_facts": 28
+  },
+  {
+   "accession": "0001193125-11-028997",
+   "filed": "2011-02-09",
+   "form": "10-Q",
+   "n_facts": 25
+  },
+  {
+   "accession": "0001193125-11-134300",
+   "filed": "2011-05-10",
+   "form": "10-Q",
+   "n_facts": 25
+  },
+  {
+   "accession": "0001193125-11-235494",
+   "filed": "2011-08-29",
+   "form": "10-K",
+   "n_facts": 31
+  },
+  {
+   "accession": "0001193125-11-304597",
+   "filed": "2011-11-09",
+   "form": "10-Q",
+   "n_facts": 28
+  },
+  {
+   "accession": "0001193125-12-049446",
+   "filed": "2012-02-09",
+   "form": "10-Q",
+   "n_facts": 25
+  },
+  {
+   "accession": "0001445305-12-001622",
+   "filed": "2012-05-09",
+   "form": "10-Q",
+   "n_facts": 24
+  },
+  {
+   "accession": "0001445305-12-002779",
+   "filed": "2012-08-29",
+   "form": "10-K",
+   "n_facts": 31
+  },
+  {
+   "accession": "0000910406-12-000011",
+   "filed": "2012-11-09",
+   "form": "10-Q",
+   "n_facts": 30
+  },
+  {
+   "accession": "0000910406-13-000006",
+   "filed": "2013-02-11",
+   "form": "10-Q",
+   "n_facts": 25
+  },
+  {
+   "accession": "0000910406-13-000015",
+   "filed": "2013-05-10",
+   "form": "10-Q",
+   "n_facts": 25
+  },
+  {
+   "accession": "0000910406-13-000023",
+   "filed": "2013-08-29",
+   "form": "10-K",
+   "n_facts": 31
+  },
+  {
+   "accession": "0000910406-13-000039",
+   "filed": "2013-11-12",
+   "form": "10-Q",
+   "n_facts": 30
+  },
+  {
+   "accession": "0000910406-14-000010",
+   "filed": "2014-02-10",
+   "form": "10-Q",
+   "n_facts": 25
+  },
+  {
+   "accession": "0000910406-14-000024",
+   "filed": "2014-05-12",
+   "form": "10-Q",
+   "n_facts": 25
+  },
+  {
+   "accession": "0000910406-14-000035",
+   "filed": "2014-08-27",
+   "form": "10-K",
+   "n_facts": 62
+  },
+  {
+   "accession": "0000910406-14-000046",
+   "filed": "2014-11-07",
+   "form": "10-Q",
+   "n_facts": 44
+  },
+  {
+   "accession": "0000910406-15-000008",
+   "filed": "2015-02-09",
+   "form": "10-Q",
+   "n_facts": 34
+  },
+  {
+   "accession": "0000910406-15-000013",
+   "filed": "2015-05-11",
+   "form": "10-Q",
+   "n_facts": 54
+  }
+ ],
+ "generator": "e2gen-v1 (EARLINESS_PLAN §1–§2 + D65)",
+ "group": "treatment",
+ "guard": {
+  "documents_passed": 721
+ },
+ "j": 5,
+ "payload_sha256": "7f323d542312d2b9749a8909a00e53759944887ea8ee5345985cbc7398c67c32",
+ "snapshot_cutoff": "2015-05-12",
+ "snapshot_id": "case_59_s5",
+ "ticker": "HAIN",
+ "tier": "wave2"
+}

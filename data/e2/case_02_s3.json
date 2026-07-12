@@ -1,0 +1,79 @@
+{
+ "b3_W8": {
+  "flags": {
+   "insufficient_history": false
+  },
+  "indicators": {
+   "b_401": 0,
+   "b_402": 0,
+   "b_8kfreq": 0,
+   "b_ka": 1,
+   "b_nt": 0,
+   "b_qa": 0
+  },
+  "score": 1
+ },
+ "b4": {
+  "cite": "D61 — 커버 2/13, 상태를 생략하지 않고 기록",
+  "flags": {
+   "insufficient_history": false,
+   "no_shares_denominator": false,
+   "no_si_file": true,
+   "revision_seen_diagnostic": 0,
+   "slope_unavailable": false
+  },
+  "state": "not_computable"
+ },
+ "base_case_id": "case_02",
+ "base_cutoff": "2013-07-28",
+ "cik": "0000884624",
+ "documents": [
+  {
+   "accession": "0001193125-11-212269",
+   "filed": "2011-08-05",
+   "form": "10-Q",
+   "n_facts": 20
+  },
+  {
+   "accession": "0001193125-11-288977",
+   "filed": "2011-10-31",
+   "form": "10-Q",
+   "n_facts": 20
+  },
+  {
+   "accession": "0001104659-12-014637",
+   "filed": "2012-02-29",
+   "form": "10-K",
+   "n_facts": 87
+  },
+  {
+   "accession": "0001104659-12-033122",
+   "filed": "2012-05-04",
+   "form": "10-Q",
+   "n_facts": 40
+  },
+  {
+   "accession": "0001104659-12-052296",
+   "filed": "2012-07-30",
+   "form": "10-Q",
+   "n_facts": 31
+  },
+  {
+   "accession": "0001193125-12-448885",
+   "filed": "2012-11-02",
+   "form": "10-Q",
+   "n_facts": 47
+  }
+ ],
+ "generator": "e2gen-v1 (EARLINESS_PLAN §1–§2 + D65)",
+ "group": "treatment",
+ "guard": {
+  "documents_passed": 595
+ },
+ "j": 3,
+ "payload_sha256": "6940226e17aee71f3725a94de3bb61bc96a1338fcad6e73aee0c9e2e3063fc07",
+ "snapshot_cutoff": "2012-11-03",
+ "snapshot_id": "case_02_s3",
+ "ticker": "OFIX",
+ "tier": "wave1"
+}

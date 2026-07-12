@@ -1,0 +1,91 @@
+{
+ "b3_W8": {
+  "flags": {
+   "insufficient_history": false
+  },
+  "indicators": {
+   "b_401": 0,
+   "b_402": 0,
+   "b_8kfreq": 0,
+   "b_ka": 1,
+   "b_nt": 0,
+   "b_qa": 0
+  },
+  "score": 1
+ },
+ "b4": {
+  "cite": "D61 — 커버 2/13, 상태를 생략하지 않고 기록",
+  "flags": {
+   "insufficient_history": false,
+   "no_shares_denominator": false,
+   "no_si_file": true,
+   "revision_seen_diagnostic": 0,
+   "slope_unavailable": false
+  },
+  "state": "not_computable"
+ },
+ "base_case_id": "case_11",
+ "base_cutoff": "2013-07-28",
+ "cik": "0001142596",
+ "documents": [
+  {
+   "accession": "0000950123-10-074433",
+   "filed": "2010-08-06",
+   "form": "10-Q",
+   "n_facts": 18
+  },
+  {
+   "accession": "0000950123-10-101359",
+   "filed": "2010-11-05",
+   "form": "10-Q",
+   "n_facts": 18
+  },
+  {
+   "accession": "0000950123-11-018857",
+   "filed": "2011-02-25",
+   "form": "10-K",
+   "n_facts": 25
+  },
+  {
+   "accession": "0000950123-11-046730",
+   "filed": "2011-05-06",
+   "form": "10-Q",
+   "n_facts": 20
+  },
+  {
+   "accession": "0000950123-11-073729",
+   "filed": "2011-08-05",
+   "form": "10-Q",
+   "n_facts": 18
+  },
+  {
+   "accession": "0001193125-11-297771",
+   "filed": "2011-11-04",
+   "form": "10-Q",
+   "n_facts": 18
+  },
+  {
+   "accession": "0001193125-12-078937",
+   "filed": "2012-02-27",
+   "form": "10-K",
+   "n_facts": 92
+  },
+  {
+   "accession": "0001193125-12-201060",
+   "filed": "2012-05-01",
+   "form": "10-Q",
+   "n_facts": 50
+  }
+ ],
+ "generator": "e2gen-v1 (EARLINESS_PLAN §1–§2 + D65)",
+ "group": "control",
+ "guard": {
+  "documents_passed": 729
+ },
+ "j": 5,
+ "payload_sha256": "cfe2e059eb92600b3b9aade101ae0eac3da8a719e85b7b3041d7f4167d1f8676",
+ "snapshot_cutoff": "2012-05-02",
+ "snapshot_id": "case_11_s5",
+ "ticker": "NUVA",
+ "tier": "wave1"
+}

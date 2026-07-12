@@ -1,0 +1,135 @@
+{
+ "_meta": {
+  "generator": "e2gen-v1 (EARLINESS_PLAN §1–§2 + D65)",
+  "role": "E2 스냅샷 s5 러너 배치 — evaluatee 5필드만 (메타는 사이드카 기록에, 페이로드 복사 누출 방지)",
+  "variant": "perturbed only (PLAN §2)"
+ },
+ "cases": [
+  {
+   "case_id": "case_01",
+   "cik": "0001158172",
+   "company_name": "Comscore, Inc.",
+   "cutoff_date": "2014-10-30",
+   "ticker": "SCOR"
+  },
+  {
+   "case_id": "case_04",
+   "cik": "0000040704",
+   "company_name": "General Mills, Inc.",
+   "cutoff_date": "2017-12-21",
+   "ticker": "GIS"
+  },
+  {
+   "case_id": "case_05",
+   "cik": "0000900349",
+   "company_name": "Perry Ellis International, Inc.",
+   "cutoff_date": "2014-06-11",
+   "ticker": "PERY"
+  },
+  {
+   "case_id": "case_07",
+   "cik": "0000743988",
+   "company_name": "Xilinx, Inc.",
+   "cutoff_date": "2014-07-29",
+   "ticker": "XLNX"
+  },
+  {
+   "case_id": "case_08",
+   "cik": "0001657853",
+   "company_name": "Hertz Global Holdings, Inc.",
+   "cutoff_date": "2013-03-05",
+   "ticker": "HTZ"
+  },
+  {
+   "case_id": "case_09",
+   "cik": "0000857737",
+   "company_name": "Iconix Brand Group, Inc.",
+   "cutoff_date": "2014-05-10",
+   "ticker": "ICON"
+  },
+  {
+   "case_id": "case_10",
+   "cik": "0000085961",
+   "company_name": "Ryder System, Inc.",
+   "cutoff_date": "2013-04-24",
+   "ticker": "R"
+  },
+  {
+   "case_id": "case_11",
+   "cik": "0001142596",
+   "company_name": "NuVasive, Inc.",
+   "cutoff_date": "2012-05-02",
+   "ticker": "NUVA"
+  },
+  {
+   "case_id": "case_12",
+   "cik": "0001637459",
+   "company_name": "The Kraft Heinz Company",
+   "cutoff_date": "2017-11-08",
+   "ticker": "KHC"
+  },
+  {
+   "case_id": "case_13",
+   "cik": "0001058057",
+   "company_name": "Marvell Technology Group, Ltd.",
+   "cutoff_date": "2014-06-06",
+   "ticker": "MRVL"
+  },
+  {
+   "case_id": "case_14",
+   "cik": "0001121788",
+   "company_name": "Garmin Ltd.",
+   "cutoff_date": "2012-05-10",
+   "ticker": "GRMN"
+  },
+  {
+   "case_id": "case_15",
+   "cik": "0001023313",
+   "company_name": "Forrester Research, Inc.",
+   "cutoff_date": "2014-11-06",
+   "ticker": "FORR"
+  },
+  {
+   "case_id": "case_39",
+   "cik": "0001360886",
+   "company_name": "Osiris Therapeutics, Inc.",
+   "cutoff_date": "2014-08-12",
+   "ticker": "OSIR"
+  },
+  {
+   "case_id": "case_40",
+   "cik": "0001182325",
+   "company_name": "Tangoe, Inc.",
+   "cutoff_date": "2014-11-11",
+   "ticker": "TNGO"
+  },
+  {
+   "case_id": "case_59",
+   "cik": "0000910406",
+   "company_name": "The Hain Celestial Group, Inc.",
+   "cutoff_date": "2015-05-12",
+   "ticker": "HAIN"
+  },
+  {
+   "case_id": "case_60",
+   "cik": "0001376339",
+   "company_name": "MiMedx Group, Inc.",
+   "cutoff_date": "2015-11-07",
+   "ticker": "MDXG"
+  },
+  {
+   "case_id": "case_61",
+   "cik": "0000865941",
+   "company_name": "Celadon Group, Inc.",
+   "cutoff_date": "2016-02-10",
+   "ticker": "CGI"
+  },
+  {
+   "case_id": "case_66",
+   "cik": "0001336917",
+   "company_name": "Under Armour, Inc.",
+   "cutoff_date": "2018-08-04",
+   "ticker": "UAA"
+  }
+ ]
+}

@@ -1,0 +1,229 @@
+{
+ "b3_W8": {
+  "flags": {
+   "insufficient_history": false
+  },
+  "indicators": {
+   "b_401": 0,
+   "b_402": 0,
+   "b_8kfreq": 0,
+   "b_ka": 0,
+   "b_nt": 0,
+   "b_qa": 0
+  },
+  "score": 0
+ },
+ "b4": {
+  "cite": "D61 — 커버 2/13, 상태를 생략하지 않고 기록",
+  "flags": {
+   "insufficient_history": false,
+   "no_shares_denominator": false,
+   "no_si_file": true,
+   "revision_seen_diagnostic": 0,
+   "slope_unavailable": false
+  },
+  "state": "not_computable"
+ },
+ "base_case_id": "case_04",
+ "base_cutoff": "2019-02-20",
+ "cik": "0000040704",
+ "documents": [
+  {
+   "accession": "0000950123-09-045366",
+   "filed": "2009-09-24",
+   "form": "10-Q",
+   "n_facts": 28
+  },
+  {
+   "accession": "0000950123-09-071898",
+   "filed": "2009-12-18",
+   "form": "10-Q",
+   "n_facts": 21
+  },
+  {
+   "accession": "0000950123-10-027743",
+   "filed": "2010-03-24",
+   "form": "10-Q",
+   "n_facts": 21
+  },
+  {
+   "accession": "0000950123-10-088122",
+   "filed": "2010-09-22",
+   "form": "10-Q",
+   "n_facts": 26
+  },
+  {
+   "accession": "0000950123-10-114560",
+   "filed": "2010-12-17",
+   "form": "10-Q",
+   "n_facts": 22
+  },
+  {
+   "accession": "0000950123-11-028211",
+   "filed": "2011-03-23",
+   "form": "10-Q",
+   "n_facts": 22
+  },
+  {
+   "accession": "0000950123-11-048680",
+   "filed": "2011-05-11",
+   "form": "8-K",
+   "n_facts": 27
+  },
+  {
+   "accession": "0000950123-11-064606",
+   "filed": "2011-07-08",
+   "form": "10-K",
+   "n_facts": 44
+  },
+  {
+   "accession": "0001193125-11-253354",
+   "filed": "2011-09-21",
+   "form": "10-Q",
+   "n_facts": 29
+  },
+  {
+   "accession": "0001193125-11-347162",
+   "filed": "2011-12-20",
+   "form": "10-Q",
+   "n_facts": 20
+  },
+  {
+   "accession": "0001193125-12-125489",
+   "filed": "2012-03-21",
+   "form": "10-Q",
+   "n_facts": 22
+  },
+  {
+   "accession": "0001193125-12-293636",
+   "filed": "2012-07-03",
+   "form": "10-K",
+   "n_facts": 44
+  },
+  {
+   "accession": "0001193125-12-396943",
+   "filed": "2012-09-19",
+   "form": "10-Q",
+   "n_facts": 24
+  },
+  {
+   "accession": "0001193125-12-508388",
+   "filed": "2012-12-19",
+   "form": "10-Q",
+   "n_facts": 19
+  },
+  {
+   "accession": "0001193125-13-117256",
+   "filed": "2013-03-20",
+   "form": "10-Q",
+   "n_facts": 21
+  },
+  {
+   "accession": "0001193125-13-282371",
+   "filed": "2013-07-03",
+   "form": "10-K",
+   "n_facts": 41
+  },
+  {
+   "accession": "0001193125-13-370415",
+   "filed": "2013-09-18",
+   "form": "10-Q",
+   "n_facts": 24
+  },
+  {
+   "accession": "0001193125-13-477790",
+   "filed": "2013-12-18",
+   "form": "10-Q",
+   "n_facts": 19
+  },
+  {
+   "accession": "0001193125-14-105810",
+   "filed": "2014-03-19",
+   "form": "10-Q",
+   "n_facts": 21
+  },
+  {
+   "accession": "0001193125-14-260716",
+   "filed": "2014-07-03",
+   "form": "10-K",
+   "n_facts": 41
+  },
+  {
+   "accession": "0001193125-14-345796",
+   "filed": "2014-09-18",
+   "form": "10-Q",
+   "n_facts": 25
+  },
+  {
+   "accession": "0001193125-14-445397",
+   "filed": "2014-12-17",
+   "form": "10-Q",
+   "n_facts": 19
+  },
+  {
+   "accession": "0001193125-15-096983",
+   "filed": "2015-03-18",
+   "form": "10-Q",
+   "n_facts": 21
+  },
+  {
+   "accession": "0001193125-15-245476",
+   "filed": "2015-07-06",
+   "form": "10-K",
+   "n_facts": 47
+  },
+  {
+   "accession": "0001193125-15-326176",
+   "filed": "2015-09-23",
+   "form": "10-Q",
+   "n_facts": 29
+  },
+  {
+   "accession": "0001193125-15-406352",
+   "filed": "2015-12-17",
+   "form": "10-Q",
+   "n_facts": 19
+  },
+  {
+   "accession": "0001193125-16-515116",
+   "filed": "2016-03-23",
+   "form": "10-Q",
+   "n_facts": 22
+  },
+  {
+   "accession": "0001193125-16-638404",
+   "filed": "2016-06-30",
+   "form": "10-K",
+   "n_facts": 78
+  },
+  {
+   "accession": "0001193125-16-716004",
+   "filed": "2016-09-21",
+   "form": "10-Q",
+   "n_facts": 35
+  },
+  {
+   "accession": "0001193125-16-798939",
+   "filed": "2016-12-20",
+   "form": "10-Q",
+   "n_facts": 29
+  },
+  {
+   "accession": "0001193125-17-090879",
+   "filed": "2017-03-21",
+   "form": "10-Q",
+   "n_facts": 45
+  }
+ ],
+ "generator": "e2gen-v1 (EARLINESS_PLAN §1–§2 + D65)",
+ "group": "control",
+ "guard": {
+  "documents_passed": 1384
+ },
+ "j": 8,
+ "payload_sha256": "cd521c3b06ebeadb266ec284d1703e6db3e4ad3a8fd575c9b32660dd05a0f269",
+ "snapshot_cutoff": "2017-03-22",
+ "snapshot_id": "case_04_s8",
+ "ticker": "GIS",
+ "tier": "wave1"
+}
