@@ -16,7 +16,8 @@ from b4_short_interest import b4_score  # noqa: E402
 FIXTURES = REPO / "pipeline" / "fixtures" / "data"  # TST: edgar + xbrl 동반
 CUTOFF = datetime.date(2015, 8, 1)
 SPEC_KEYS = {"score_level", "score_slope_aug", "sir_last", "abnormal_sir_last",
-             "slope4", "n_reports_trailing12m", "last_settlement", "flags", "cutoff"}
+             "slope4", "n_reports_trailing12m", "last_settlement", "flags", "cutoff",
+             "shares_source"}  # shares_source = §13/D56 개정의 §8 반환 확장
 SPEC_FLAGS = {"insufficient_history", "no_si_file", "no_shares_denominator",
               "slope_unavailable", "revision_seen_diagnostic"}
 
