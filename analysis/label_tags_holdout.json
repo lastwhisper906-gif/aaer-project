@@ -1,0 +1,88 @@
+{
+ "spec": "specs/label_taxonomy.md",
+ "spec_commit": "d60a6e0",
+ "rule": "8-K/8-K-A item 4.02 within revelation±90d → bigR else little_r",
+ "frozen_scoreboard_untouched": true,
+ "tags": [
+  {
+   "case_id": "case_71",
+   "ticker": "HUBG",
+   "revelation_date": "2026-02-05",
+   "neighborhood": [
+    "2025-11-07",
+    "2026-05-06"
+   ],
+   "tag": "bigR",
+   "insufficient_cache": false,
+   "evidence_in_neighborhood": [
+    {
+     "form": "8-K",
+     "date": "2026-02-05",
+     "items_raw": "2.02,4.02,9.01",
+     "accession": "0001193125-26-039396"
+    }
+   ],
+   "observations_outside_neighborhood": [
+    {
+     "form": "8-K",
+     "date": "2026-05-12",
+     "items_raw": "4.02",
+     "accession": "0001193125-26-218141"
+    }
+   ],
+   "cache_snapshot_max_filing_date": "2026-06-29",
+   "upgrade_monitoring_until": "2030-02-05"
+  },
+  {
+   "case_id": "case_72",
+   "ticker": "WMK",
+   "revelation_date": "2026-02-20",
+   "neighborhood": [
+    "2025-11-22",
+    "2026-05-21"
+   ],
+   "tag": "bigR",
+   "insufficient_cache": false,
+   "evidence_in_neighborhood": [
+    {
+     "form": "8-K",
+     "date": "2026-02-20",
+     "items_raw": "4.02",
+     "accession": "0000105418-26-000009"
+    }
+   ],
+   "observations_outside_neighborhood": [],
+   "cache_snapshot_max_filing_date": "2026-06-04",
+   "upgrade_monitoring_until": "2030-02-20"
+  },
+  {
+   "case_id": "case_73",
+   "ticker": "GNE",
+   "revelation_date": "2026-03-12",
+   "neighborhood": [
+    "2025-12-12",
+    "2026-06-10"
+   ],
+   "tag": "bigR",
+   "insufficient_cache": false,
+   "evidence_in_neighborhood": [
+    {
+     "form": "8-K",
+     "date": "2026-03-12",
+     "items_raw": "4.02,9.01",
+     "accession": "0001437749-26-007981"
+    }
+   ],
+   "observations_outside_neighborhood": [
+    {
+     "form": "8-K",
+     "date": "2017-11-02",
+     "items_raw": "2.02,4.02,5.02,9.01",
+     "accession": "0001213900-17-011231"
+    }
+   ],
+   "cache_snapshot_max_filing_date": "2026-06-11",
+   "upgrade_monitoring_until": "2030-03-12"
+  }
+ ]
+}

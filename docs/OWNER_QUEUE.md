@@ -158,3 +158,31 @@
   재실행 · (B) 방치 (진단 계열 영향 0 문서화로 충분).
 - **세션 기본 조치**: 없음 (fetch 금지 — 계약 9).
 - **상태**: OPEN
+
+---
+
+## Q-F02 — Chu/Dechow/Hui/Wang (2018) 정확 수치 인용의 원문 대조 — OPEN
+
+- **맥락 (WS-3/D46)**: 라벨 기저율 문서화(specs/label_taxonomy.md §3,
+  LABEL_REPORT §2)는 Chu et al. 2018을 "AAER 조사 대부분이 재작성 계기"라는
+  **정성 방향으로만** 인용한다. 이 논문의 정확 퍼센트를 발행 표면에 쓰려면
+  소유자가 원문 해당 문장을 직접 대조해야 한다 (2차 인용 금지).
+- **옵션**: (A 기본) 정성 인용 유지 (수치 불사용) · (B) 소유자 원문 대조 후
+  정확 수치+페이지 인용으로 승격.
+- **세션 기본 조치**: (A) — 산출물 전부 정성 인용으로 작성 완료.
+- **상태**: OPEN
+
+---
+
+## Q-F03 — RP-15 라벨 명명 diff (DIFF-4/DIFF-5) 서명 — OPEN
+
+- **질문**: 발행 표면의 홀드아웃 라벨 서술에 "Big R (Item 4.02 non-reliance)"
+  정밀화 + 기저율 한정 + 4년 모니터링 윈도를 반영할까?
+  (`review_packets/RP-15_label_naming_diff.md` — ISSUE_2 §7 불릿 교체 +
+  README 양어 1문장.)
+- **근거**: 기계 태깅 3/3 bigR (accession 증거, `analysis/label_tags_holdout.json`);
+  기저율 ~2.2%(Karpoff et al. TAR 2017)가 잠정 라벨의 노이즈를 정직 한정.
+- **옵션**: (A) 적용 (GitHub Issue #3은 edited 표시 + 사유 코멘트 병행) ·
+  (B) 문구 수정 후 적용 · (C) 기각 (사유 → overrides.md).
+- **세션 기본 조치**: 미적용 유지 (diff-only).
+- **상태**: OPEN
