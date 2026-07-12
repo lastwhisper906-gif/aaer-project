@@ -60,7 +60,10 @@ def run_case_api(case: dict, perturb: bool, out_dir: Path, log_dir: Path,
             "documents_used": sorted(accessions.values(), key=lambda d: d["accession_no"]),
             **r.structured}
     out_dir.mkdir(parents=True, exist_ok=True)
-    out_path.write_text(json.dumps(full, ensure_ascii=False, indent=2), encoding="utf-8")
+    # 원자적 기록 (D67): 크래시 시 부분 파일이 '완료'로 오인되지 않도록 tmp→replace
+    tmp = out_path.with_suffix(".json.tmp")
+    tmp.write_text(json.dumps(full, ensure_ascii=False, indent=2), encoding="utf-8")
+    tmp.replace(out_path)
     return {"case_id": cid,
             "status": f"OK p={full['misstatement_probability']} (perturb_k={k if perturb else None})"}
 
