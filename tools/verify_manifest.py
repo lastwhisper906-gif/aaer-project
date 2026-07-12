@@ -37,6 +37,13 @@ REPO = Path(__file__).resolve().parents[1]
 MANIFEST = REPO / "data" / "manifests" / "aaer_data_manifest.json"
 REQUIRED_KEYS = {"path", "size", "sha256", "fetched_at", "source_url"}
 
+# reference/ = D36 가공 사명 충돌 스크린 전용 목록 (data/README.md) —
+# .txt 파생물 규칙보다 먼저 판정해야 한다 (cik-lookup-data.txt는 원본이지 추출본이 아님).
+REFERENCE_URLS = {
+    "cik-lookup-data.txt": "https://www.sec.gov/Archives/edgar/cik-lookup-data.txt",
+    "company_tickers.json": "https://www.sec.gov/files/company_tickers.json",
+}
+
 
 def sha256_of(path: Path) -> str:
     h = hashlib.sha256()
@@ -104,7 +111,11 @@ def build_manifest() -> dict:
             ).isoformat(timespec="seconds"),
             "source_url": None,
         }
-        if path.suffix == ".txt":  # pdf/html에서 로컬 추출한 파생물
+        if ticker == "reference":
+            entry["source_url"] = REFERENCE_URLS.get(path.name)
+            if entry["source_url"] is None:
+                unattributed.append(str(rel))
+        elif path.suffix == ".txt":  # pdf/html에서 로컬 추출한 파생물
             entry["derived_from"] = str(rel)[: -len(".txt")]
         elif ticker == "_aaer_index":
             entry["source_url"] = ("https://www.sec.gov/enforcement-litigation/"
