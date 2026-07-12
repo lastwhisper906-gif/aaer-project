@@ -169,7 +169,21 @@ def report_md(out: dict, b3: dict | None) -> str:
                  f"{llm if llm is not None else '없음(N=3)'} | {blk['coverage']} |")
     L += ["", "⚠️coverage-limited = 커버리지 <70% (스펙 §6) — **서술 전용, 헤드라인 "
           "주장 금지**. FINRA 무료 데이터 하한(2017-12-29)이 원인이며 사전 등록된 "
-          "산술 그대로다.", ""]
+          "산술 그대로다.", "",
+          "**결정 관련성 (한 문장)**: 회고 tier의 B4 수치는 어느 것도 판정에 쓰이지 "
+          "않는다 — **결정에 관련된 B4 수치는 holdout과 모든 미래 seal이다** (스펙 §7 "
+          "결합 조항이 정의하는 전향 비교의 관할).", "",
+          ]
+    ho = out["tiers"].get("holdout", {}).get("scores", {}).get("score_slope_aug", {})
+    if ho and not ho.get("headline_eligible"):
+        L += ["**holdout 커버리지 미달의 정직 기록**: 스펙 §6의 사전 산술 기대는 12/12"
+              f"였으나 실측 {ho['coverage']} — **holdout조차 70% 바를 미달**해 서술 "
+              "전용이다. 원인 진단 (커밋 287a92a): SIR 분모가 "
+              "dei:EntityCommonStockSharesOutstanding 단일 태그인데 다중 클래스 "
+              "발행사에서 companyfacts가 차원(클래스별) 사실을 비평탄화해 체계적 결측. "
+              "교정(분모 폴백 규칙)은 스펙 §3 변경이므로 신규 D-엔트리 스펙 개정으로만 "
+              "가능 — **OWNER_QUEUE Q-M03** (첫 seal 전 해소 권장: 같은 분모가 "
+              "워치리스트 b4 필드에도 쓰인다).", ""]
     for tier, t in out["tiers"].items():
         L += [f"## {tier}", ""]
         for key in ("score_level", "score_slope_aug"):
