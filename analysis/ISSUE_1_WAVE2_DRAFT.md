@@ -1,6 +1,8 @@
-# Issue #1 (DRAFT) — Wave 2: expanding the fraud case set from 8 to a gate-decided roster
+# Issue #1 — Wave 2: expanding the fraud case set from 8 to a gate-decided roster
 
-> **DRAFT — not published. Owner sign-off required. Companion to Issue #0.**
+> **PUBLISHED 2026-07-11 (owner-signed, D40/D41)** →
+> <https://github.com/lastwhisper906-gif/aaer-evals/issues/2>. This file is the
+> frozen source text; the posted issue is the publication surface. Companion to Issue #0.
 > Scoring: Claude-assisted, human-finalized. All roster rules and the analysis plan
 > were committed **before any wave-2 score existed** (`9438b0c`); commit hashes are
 > the reader's verification path. Single Claude-based pipeline (evaluatee:

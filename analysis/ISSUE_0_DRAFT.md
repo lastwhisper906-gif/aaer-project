@@ -1,6 +1,8 @@
 # Issue #0 — Can an LLM detect accounting fraud from public financial data before public revelation?
 
-> **DRAFT — not published. Owner sign-off required (RP-10 final gate).**
+> **PUBLISHED 2026-07-11 (owner-signed, D40/D41)** →
+> <https://github.com/lastwhisper906-gif/aaer-evals/issues/1>. This file is the
+> frozen source text; the posted issue is the publication surface.
 > Scoring: Claude-assisted, human-finalized. All grading and selection criteria
 > were committed before the corresponding results existed; commit hashes below
 > are the reader's verification path. This result is specific to a single

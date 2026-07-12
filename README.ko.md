@@ -13,6 +13,17 @@
 대조군으로 백테스트하고, 컷오프-후 홀드아웃(암기 불가)으로 그 능력을 독립 검증한 기록이다.
 포지션 없음 · 교육·정보 목적 · 투자 조언 아님.
 
+## 발행 (v1.0 — 2026-07-11, 소유자 서명 D40/D41)
+
+3-이슈 시리즈를 GitHub Issues로 발행했다 (시리즈 번호 0/1/2; GitHub 번호
+1/2/3). 게시된 이슈가 발행 표면이고, `analysis/ISSUE_*_DRAFT.md`는 그 동결
+원문이다.
+
+- **Issue 0** (wave-1, R3 — 암기 얽힘 분리): <https://github.com/lastwhisper906-gif/aaer-evals/issues/1>
+- **Issue 1** (wave-2, R4 — 잔여 능력, 범위 한정): <https://github.com/lastwhisper906-gif/aaer-evals/issues/2>
+- **Issue 2** (컷오프 후 홀드아웃, H2 — 암기 불가 축): <https://github.com/lastwhisper906-gif/aaer-evals/issues/3>
+- **인용 가능한 동결점**: 릴리스 [v1.0.0](https://github.com/lastwhisper906-gif/aaer-evals/releases/tag/v1.0.0) (annotated tag, 발행 동결값 그대로).
+
 ## 헤드라인 — 3층 서사 (암기 축을 따라 벗겨내기)
 
 발동 결론 규칙은 **사전 커밋**된 R1–R4 / H1–H3의 기계 판정이다(점수 존재 전 커밋 —
@@ -124,7 +135,8 @@ wave-2 0.337/0.265), 잔차 분리가 살아남는다 → 사전 커밋 R2 **비
   arm 실행 완료 (2026-07-09, D27)**: HUBG 5/5 robust; wave-2 arm은 최저 우선순위 유지.
 
 실행 상태·미터링 spend 게이트: `docs/OWNER_QUEUE.md`(Q-E01) · `docs/RESUME.md`.
-**어떤 결과도 미발행**(소유자 게이트).
+**발행 완료 (2026-07-11, D40/D41)** — 상단 '발행' 절의 이슈 3건 + v1.0.0.
+E2/E4(**EXPLORATORY**)/E5 발사는 launch-ready 동결 유지 (Q-E01 RESOLVED (A)).
 
 ## 거버넌스 지도 (읽는 순서)
 
@@ -132,8 +144,9 @@ wave-2 0.337/0.265), 잔차 분리가 살아남는다 → 사전 커밋 R2 **비
 2. `CLAUDE.md` — 세션 가드레일 · `scoring/decisions_log.md` — 결정 대장 + freeze 해시
 3. `scoring/overrides.md` — 오버라이드·서명·게이트 (OWNER-GATE-E 포함)
 4. `review_packets/INDEX.md` · `RP-11_expansion_holdout.md` · `RP-10_final.md` — 감사 진입점
-5. 발행 후보 초안: `analysis/ISSUE_0_DRAFT.md`(wave-1) · `ISSUE_1_WAVE2_DRAFT.md`(R4) ·
-   `ISSUE_2_HOLDOUT_DRAFT.md`(H2) — 전부 소유자 서명 대기, 미발행.
+5. 발행 이슈 동결 원문: `analysis/ISSUE_0_DRAFT.md`(wave-1) · `ISSUE_1_WAVE2_DRAFT.md`(R4) ·
+   `ISSUE_2_HOLDOUT_DRAFT.md`(H2) — 소유자 서명 후 2026-07-11 게시 (D40/D41,
+   URL은 상단 '발행' 절).
 
 ## 수치 재현 (제3자 검증)
 

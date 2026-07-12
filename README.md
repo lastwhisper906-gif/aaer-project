@@ -16,6 +16,22 @@ confirmed cases with matched non-enforcement controls, and independently
 validated on a post-training-cutoff holdout where memorization is structurally
 impossible. No positions · educational/informational · not investment advice.
 
+## Publication (v1.0 — 2026-07-11, owner-signed D40/D41)
+
+The three-issue series is published as GitHub Issues (series numbering 0/1/2;
+GitHub numbers 1/2/3). The posted issues are the publication surface; the
+`analysis/ISSUE_*_DRAFT.md` files are their frozen source texts.
+
+- **Issue 0** (wave-1, R3 — memorization-entangled separation):
+  <https://github.com/lastwhisper906-gif/aaer-evals/issues/1>
+- **Issue 1** (wave-2, R4 — residual capability, scoped):
+  <https://github.com/lastwhisper906-gif/aaer-evals/issues/2>
+- **Issue 2** (post-cutoff holdout, H2 — the un-memorizable axis):
+  <https://github.com/lastwhisper906-gif/aaer-evals/issues/3>
+- **Citable freeze point**: release
+  [v1.0.0](https://github.com/lastwhisper906-gif/aaer-evals/releases/tag/v1.0.0)
+  (annotated tag; frozen numbers as published).
+
 ## Headline — three layers, peeling along the memorization axis
 
 Conclusions fire by **pre-committed** machine rules R1–R4 / H1–H3, committed
@@ -188,9 +204,10 @@ Execution status & metered spend gates: `docs/OWNER_QUEUE.md` (Q-E01) ·
 3. `scoring/overrides.md` — overrides/signatures/gates (incl. OWNER-GATE-E)
 4. `review_packets/INDEX.md` · `RP-11_expansion_holdout.md` · `RP-10_final.md`
    — audit entry points
-5. Publication candidates (written in English): `analysis/ISSUE_0_DRAFT.md`
+5. Published issue source texts: `analysis/ISSUE_0_DRAFT.md`
    (wave-1) · `ISSUE_1_WAVE2_DRAFT.md` (R4) · `ISSUE_2_HOLDOUT_DRAFT.md` (H2)
-   — all awaiting owner signature, unpublished.
+   — owner-signed and posted 2026-07-11 (D40/D41; URLs in the Publication
+   section above).
 
 ## Reproducing the numbers (third-party verification)
 

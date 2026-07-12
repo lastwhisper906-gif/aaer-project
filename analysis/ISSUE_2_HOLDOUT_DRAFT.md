@@ -1,6 +1,8 @@
-# Issue #2 (DRAFT) — The clean test is now runnable: post-cutoff restatement events an LLM cannot have memorized
+# Issue #2 — The clean test is now runnable: post-cutoff restatement events an LLM cannot have memorized
 
-> **DRAFT — not published. Owner sign-off required. Companion to Issue #0.**
+> **PUBLISHED 2026-07-11 (owner-signed, D40/D41)** →
+> <https://github.com/lastwhisper906-gif/aaer-evals/issues/3>. This file is the
+> frozen source text; the posted issue is the publication surface. Companion to Issue #0.
 > Scoring: Claude-assisted, human-finalized (holdout grades owner-signed 2026-07-09,
 > D24; matched-control grades D26). All criteria committed before the corresponding results
 > existed; commit hashes are the reader's verification path. Single Claude-based

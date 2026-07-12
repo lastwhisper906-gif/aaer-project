@@ -123,3 +123,18 @@
   종량 예산 승인 (실행 개시 시점에).
 
 ---
+
+## Q-R03 — Zenodo DOI 연동 (v1.0.0 릴리스의 인용 가능 DOI) — **OPEN**
+
+- **질문**: v1.0.0 GitHub Release에 Zenodo DOI를 붙일까? (소유자 계정 필요 —
+  세션 권한 밖, 자동화 금지 대상.)
+- **3줄 절차**: ① zenodo.org 로그인(GitHub 계정 연동) → Settings → GitHub에서
+  `lastwhisper906-gif/aaer-evals` 토글 ON. ② GitHub에서 릴리스를 새로 발행해야
+  Zenodo가 아카이브를 생성하므로, 토글 후 v1.0.1 태그(문서 무변경, DOI 전용) 또는
+  기존 v1.0.0의 재발행(edit→publish)으로 웹훅 트리거. ③ 발급된 DOI 배지를 README
+  '발행/Publication' 절에 추가 (인용 형식은 Zenodo 페이지가 자동 생성).
+- **근거**: 릴리스 노트에 "release = citable freeze point"를 명시했으나 DOI가
+  있어야 학술 인용·영속 아카이브가 보장된다. GitHub URL은 계정/repo 이름 변경에
+  취약(이미 D30에서 rename 1회).
+- **세션 기본 조치**: 없음 (소유자 계정 작업).
+- **상태**: OPEN.
