@@ -1,8 +1,16 @@
-"""E2 실행 하네스 (D67) — 146호출 세션의 안전 레일. tools/ 소재 (채점측 오케스트레이션).
+"""E2 실행 하네스 (D67, D69 --client) — 146호출 세션의 안전 레일. tools/ 소재 (채점측 오케스트레이션).
 
   .venv/bin/python tools/e2_runner.py            # dry-run: 계획·드리프트·잔여 출력만
-  AAER_RAW_API_APPROVED=1 .venv/bin/python tools/e2_runner.py --execute   # 발사
+  .venv/bin/python tools/e2_runner.py --client harness --execute          # 발사 (개정 #4 — 구독 하네스)
+  AAER_RAW_API_APPROVED=1 .venv/bin/python tools/e2_runner.py --execute   # 발사 (개정 #3 raw — 보류 중)
   .venv/bin/python tools/e2_runner.py --postrun-only                      # 후처리 재실행
+
+클라이언트 경로 (freeze 개정 #4, docs/FREEZE_REV4_HARNESS_E2.md):
+  --client harness = 동결 runner.run_case / cli_client.call_model (구독, 전 발행
+    tier와 동일 경로). 가드 = assert_no_metered_credentials + require_clean_tree
+    (raw 승인 래치·스모크 래치는 raw 경로와 한 몸으로 보류). 온도 핀은 하네스에
+    없음 — TEMPERATURE_PIN assert는 이 모드에서 N/A (L-3 미해소, 개정 #4 §3).
+  --client api (기본) = D67 원형 그대로 (runner_api.run_case_api, 개정 #3 래치).
 
 안전 레일 (전부 호출 전 평가):
   1. 매니페스트 드리프트 정지 — 커밋된 data/e2/E2_MANIFEST.json ≠ 현재 재생성
@@ -92,22 +100,51 @@ def scrub_check(path: Path) -> None:
         raise E2RunError(f"INVARIANT 4 위반: 출력에 API 키 문자열 — {path} 삭제·정지")
 
 
-def execute(manifest: dict, is_done=None, run_one=None) -> dict:
-    """호출 루프 — is_done/run_one 주입 가능 (테스트), 기본 = 실물."""
+def _run_one_api(row, entry, log_dir):
+    from runner_api import run_case_api
+    return run_case_api(entry, True, out_path(row).parent, log_dir,
+                        TEMPERATURE_PIN)
+
+
+def _run_one_harness(row, entry, log_dir):
+    from runner import run_case  # 동결 모듈 — 무수정 (§8-3), 출력 형식·멱등 skip 동일
+    return run_case(entry, True, out_path(row).parent, log_dir)
+
+
+def _default_run_one(client: str):
+    if client == "harness":
+        return _run_one_harness
+    if client == "api":
+        return _run_one_api
+    raise E2RunError(f"알 수 없는 --client: {client}")
+
+
+def client_preflight(client: str) -> None:
+    """발사 직전 경로별 가드 — harness(개정 #4) vs api(개정 #3 래치)."""
+    import cli_client
+    if client == "harness":
+        cli_client.assert_no_metered_credentials()  # INVARIANT 4 — 키 존재 = 즉시 예외
+        cli_client.require_clean_tree()             # freeze-commit-then-run (runner.py main 동형)
+    elif client == "api":
+        from api_client import assert_raw_api_approved
+        assert_raw_api_approved()
+    else:
+        raise E2RunError(f"알 수 없는 --client: {client}")
+
+
+def execute(manifest: dict, is_done=None, run_one=None, client: str = "api") -> dict:
+    """호출 루프 — is_done/run_one 주입 가능 (테스트), 기본 = client 경로 실물."""
     is_done = is_done or _is_done
     if run_one is None:
-        from runner_api import run_case_api
-
-        def run_one(row, entry, log_dir):
-            return run_case_api(entry, True, out_path(row).parent, log_dir,
-                                TEMPERATURE_PIN)
+        run_one = _default_run_one(client)
     rows = buildable_rows(manifest)
     done = [r for r in rows if is_done(out_path(r))]
     todo = [r for r in rows if not is_done(out_path(r))]
     if len(done) + len(todo) != manifest["totals"]["buildable"]:
         raise E2RunError(f"지출 가드: 완료 {len(done)} + 잔여 {len(todo)} != "
                          f"buildable {manifest['totals']['buildable']}")
-    assert TEMPERATURE_PIN == 0.0  # 온도 핀 (상수 변조 방지 이중 확인)
+    if client == "api":
+        assert TEMPERATURE_PIN == 0.0  # 온도 핀 (raw 전용 — 하네스는 핀 부재 N/A, 개정 #4 §3)
     ts = datetime.datetime.now(datetime.timezone.utc).strftime("%Y%m%dT%H%M%SZ")
     log_dir = REPO / "logs" / f"run_e2_{ts}"
     attempted, failures = 0, 0
@@ -204,8 +241,14 @@ def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("--execute", action="store_true", help="실호출 (기본: dry-run)")
     ap.add_argument("--postrun-only", action="store_true")
+    ap.add_argument("--client", choices=("api", "harness"), default="api",
+                    help="호출 경로: api(개정 #3 raw, 래치 필요) / harness(개정 #4 구독)")
     args = ap.parse_args()
     manifest = load_manifest()
+    temp_desc = TEMPERATURE_PIN if args.client == "api" else "N/A(harness, L-3)"
+    resume_cmd = (".venv/bin/python tools/e2_runner.py "
+                  + " ".join(a for a in sys.argv[1:]))
+    import cli_client
     try:
         drift_check(manifest)
         if args.postrun_only:
@@ -214,18 +257,22 @@ def main() -> int:
         rows = buildable_rows(manifest)
         todo = [r for r in rows if not _is_done(out_path(r))]
         print(f"계획: buildable {len(rows)} · 완료 {len(rows) - len(todo)} · "
-              f"잔여 {len(todo)} · temp={TEMPERATURE_PIN} · 예산 {manifest['budget_of_record']}")
+              f"잔여 {len(todo)} · client={args.client} · temp={temp_desc} · "
+              f"예산 {manifest['budget_of_record']}")
         if not args.execute:
-            print("dry-run — 발사는 --execute (AAER_RAW_API_APPROVED=1 + 키 필요, "
-                  "스모크 래치 §6-3 선행)")
+            print("dry-run — 발사는 --execute (--client harness = 개정 #4 구독 경로 / "
+                  "--client api = 개정 #3 raw, AAER_RAW_API_APPROVED=1 + 키 + 스모크 래치 §6-3)")
             return 0
-        from api_client import assert_raw_api_approved
-        assert_raw_api_approved()
-        r = execute(manifest)
+        client_preflight(args.client)
+        r = execute(manifest, client=args.client)
         print(f"실행 완료: 시도 {r['attempted']} · FAIL {r['failures']}")
         if r["failures"] == 0 and all(_is_done(out_path(x)) for x in rows):
             print(f"후처리 → {postrun(manifest)}")
         return 0 if r["failures"] == 0 else 2
+    except cli_client.RateLimitedError as e:
+        print(f"E2 HALT (레이트 리밋, 멱등 — 완료분 자동 skip) — {e}", file=sys.stderr)
+        print(f"재개 명령:\n  {resume_cmd}")
+        return 3
     except E2RunError as e:
         print(f"E2 HALT — {e}", file=sys.stderr)
         return 2

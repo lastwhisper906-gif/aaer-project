@@ -137,3 +137,86 @@ def test_crash_tmp_artifact_not_treated_as_done(sandbox):
     assert p.is_file()                           # 정본 존재
     assert not p.with_suffix(".json.tmp").exists()  # 부분 파일은 rename으로 소거
     assert len(calls) == 4                       # 전 스냅샷 정확 1회
+
+
+# ---------------------------------------------------------------- D69 --client harness
+
+
+def test_client_mode_selection():
+    assert er._default_run_one("harness") is er._run_one_harness
+    assert er._default_run_one("api") is er._run_one_api
+    with pytest.raises(er.E2RunError, match="알 수 없는"):
+        er._default_run_one("sdk")
+
+
+def test_harness_run_one_delegates_to_frozen_runner(sandbox, monkeypatch):
+    """하네스 run_one은 동결 runner.run_case에 (entry, perturb=True, 출력 디렉토리,
+    log_dir) 그대로 위임한다 — runner.py 무수정 계약 (§8-3)."""
+    import runner
+    seen = {}
+
+    def fake_run_case(case, perturb, out_dir, log_dir):
+        seen.update(case=case, perturb=perturb, out_dir=out_dir, log_dir=log_dir)
+        return {"case_id": case["case_id"], "status": "OK p=50"}
+
+    monkeypatch.setattr(runner, "run_case", fake_run_case)
+    row = er.buildable_rows(sandbox)[0]
+    entry = {"case_id": row["base_case_id"]}
+    res = er._run_one_harness(row, entry, Path("/tmp/logs"))
+    assert res["status"].startswith("OK")
+    assert seen["case"] is entry and seen["perturb"] is True
+    assert seen["out_dir"] == er.out_path(row).parent
+    assert seen["log_dir"] == Path("/tmp/logs")
+
+
+def test_harness_preflight_blocks_metered_key(monkeypatch):
+    """개정 #4 가드: 하네스 모드에서 ANTHROPIC_API_KEY 존재 = 즉시 예외 (INVARIANT 4)."""
+    import cli_client
+    monkeypatch.setattr(cli_client, "require_clean_tree", lambda: None)
+    monkeypatch.setenv("ANTHROPIC_API_KEY", "sk-test")
+    with pytest.raises(RuntimeError, match="ANTHROPIC_API_KEY"):
+        er.client_preflight("harness")
+
+
+def test_harness_preflight_skips_raw_latch(monkeypatch):
+    """하네스 모드는 raw 승인 래치를 참조하지 않는다 (개정 #3은 보류) —
+    AAER_RAW_API_APPROVED 부재·키 부재에서 통과, clean-tree 가드는 호출된다."""
+    import cli_client
+    called = []
+    monkeypatch.setattr(cli_client, "require_clean_tree", lambda: called.append(1))
+    monkeypatch.delenv("ANTHROPIC_API_KEY", raising=False)
+    monkeypatch.delenv("AAER_RAW_API_APPROVED", raising=False)
+    er.client_preflight("harness")          # 예외 없음
+    assert called == [1]
+
+
+def test_api_preflight_still_requires_latch(monkeypatch):
+    """api 모드 가드는 D67 원형 그대로 — 래치 부재 시 즉시 예외."""
+    monkeypatch.delenv("AAER_RAW_API_APPROVED", raising=False)
+    with pytest.raises(RuntimeError, match="raw API"):
+        er.client_preflight("api")
+
+
+def test_temp_pin_na_in_harness_mode(sandbox, monkeypatch):
+    """온도 핀 assert는 raw 전용 — 하네스 모드는 핀 부재가 N/A (개정 #4 §3, L-3).
+    api 모드에서는 상수 변조가 여전히 정지를 일으킨다."""
+    monkeypatch.setattr(er, "TEMPERATURE_PIN", 0.7)
+    calls = []
+    er.execute(sandbox, is_done=fake_done, run_one=make_run_one(calls),
+               client="harness")            # 하네스: 예외 없음
+    assert len(calls) == 4
+    with pytest.raises(AssertionError):
+        er.execute(sandbox, is_done=fake_done, run_one=make_run_one([]),
+                   client="api")
+
+
+def test_crash_resume_idempotent_harness_client(sandbox):
+    """크래시-재개 멱등은 client 인자와 무관하게 유지 — harness 경로로 명시 실행."""
+    calls = []
+    with pytest.raises(RuntimeError, match="simulated crash"):
+        er.execute(sandbox, is_done=fake_done,
+                   run_one=make_run_one(calls, crash_after=2), client="harness")
+    assert len(calls) == 2
+    er.execute(sandbox, is_done=fake_done, run_one=make_run_one(calls),
+               client="harness")
+    assert sorted(calls) == sorted(set(calls)) and len(calls) == 4
