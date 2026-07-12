@@ -1,4 +1,82 @@
-# HANDOFF.md — 세션 인수인계 (최종 갱신: 2026-07-12, 기능 약점 교정 미션 F-1…F-8 — D44~D50, 미터링 0)
+# HANDOFF.md — 세션 인수인계 (최종 갱신: 2026-07-13, 로드맵 운영화 미션 — D51~D53 + screener 리포 v0.1.0, 미터링 0)
+
+## 로드맵 운영화 미션 요약 (2026-07-13, 미터링 0 — D51~D53 + 신규 리포)
+
+로드맵(도구 가치 1→5)의 인프라 전환. **동결값·발행 표면 무변경** (D53 메모는
+not-for-publication 배너). 두 리포 두 체제: aaer-evals = 기존 거버넌스 전부 /
+`~/Documents/screener` (신규, v0.1.0 태그) = semver+pytest만, fail-closed 원칙만 계승.
+
+- **Phase A 정합 확인**: 로컬 = origin/main 695cf8f 동률·clean에서 시작.
+  4게이트 전건 green (수치 하단). B3 동결값 대조 확인 — wave-2 W8 AUC 0.5483·
+  귀속비 0.1468 `non_trivial` / wave-1 W8 0.7898 (LLM 0.8239, 귀속비 0.8947) /
+  holdout 0.4259 (귀속비 미계산). **설계 귀결 이행: 운영 퍼널에서 B3를 stage-1
+  1차 필터에서 보조 열로 강등, 기계 비율 스크린(Beneish M·Dechow F)이 1차** —
+  근거는 전망 유니버스가 wave-2형 모집단이라는 것 (screener/docs/FUNNEL.md §0).
+- **Phase B — screener 리포 부트스트랩** (`~/Documents/screener`, 커밋 9·태그
+  v0.1.0·pytest 19 green, 네트워크 0):
+  - B1 벤더링: cutoff_guard·payload_v2_extract·b3_compute·stats·screens 5모듈
+    verbatim + PROVENANCE.md(소스 커밋 695cf8f·sha256 표) + 무결성 테스트가
+    로컬 수정을 게이트. 어댑테이션은 전부 래퍼(screener/science.py).
+  - B2 docs/FUNNEL.md: 2단계 퍼널 설계 기준 문서 (stage-2는 ENGINE_DECISION
+    판정 조건부 — 그 전까지 rules-only 완주 의무).
+  - B3 ingest/: 재개 가능 다운로드(체크섬 로그·UA fail-closed)·per-CIK 추출+
+    SQLite 인덱스·유니버스 필터(SIC 제외·18개월 신선도·XBRL 8분기)·stage-1
+    랭커. --sample 모드 실행 완료 — 합성 6사 픽스처의 universe/stage1 산출물을
+    fixtures_of_record로 커밋 (회귀 diff 테스트).
+  - B4 seal/ (**핵심 산출물**): specs/SEALED_FORECAST_PROTOCOL.md (N=30 분기
+    봉인·첫 봉인 2026-11-15·per-item 32B salt SHA-256 커밋먼트·정렬 리스트
+    Merkle root·선택적 공개·판정 규칙 = 4분기 내 4.02/AAER·기저율 0.9건/yr·
+    유의 주장 ≥3배) → `seal create/verify/reveal` CLI. 테스트: 라운드트립·
+    1바이트 변조 검출·위조 reveal 기각·형제 항목 비누출.
+  - B5 monitor/: 주간 제출물 diff (8-K 4.02/4.01·NT·정정) — 봉인 티커 +
+    aaer-evals 홀드아웃 업그레이드 윈도(2030까지, WS-3)를 같은 인프라로.
+    WS-1 parse_items 재사용 (문법 단일화).
+- **Phase C — 미터링 준비 (발사 0)**:
+  - C1 (D52): tools/smoke_rev3.py + `make smoke` — FREEZE_REV3 §6-3 래치의
+    실행 형태. **dry-run 매니페스트 30호출 커밋** (`runs/smoke_rev3/
+    DRYRUN_MANIFEST.json` — pilot 2케이스×5draw×3arm, temp 핀 명시). live는
+    매니페스트 불일치 시 정지·하네스 arm 동안 API 키 임시 제거(INVARIANT 4).
+    절차는 docs/RESUME.md 스모크 절.
+  - C2 (D52): analysis/buyer_metrics_build.py + BUYER_METRICS.template.md —
+    E2 완료 후 단일 명령으로 구매자 지표 4종 (리드타임 LLM vs B3 · FPR@50
+    CP95 · 토큰 실측 cost-per-screen · 커버리지). 합성 픽스처 테스트 5건.
+  - C3 (D51): **specs/ENGINE_DECISION.md 사전 등록** (판정 코드 선행 커밋) —
+    3브랜치 순서 고정·전역 완전: (c) 양쪽 lead ≤1분기 → 도구 종료 / (a) LLM
+    ≥ B3+1분기 → LLM 엔진·stage-2 활성 / (b) 그 외 → 규칙 엔진. B3 플래그
+    ≥2 신규 사전 등록. analysis/engine_verdict.py 픽스처 테스트 6건 (3브랜치
+    전수·잔여지대·fail-closed).
+- **Phase D (D53)**: analysis/EXPLORATORY_wave1_b3_asymmetry.md — 비대칭의
+  유병률 분해 산술만 (w1 최대 기여 = 10-K/A 4/8 vs 2/22 · w2 동일 지표 역전
+  1/9 vs 6/23), 가설 전부 질문형. **발행 표면 접촉 0 — 공개 여부는 소유자.**
+- **실행 환경 사고 기록 (무-미터링)**: screener venv editable install이 간헐
+  소실 — 원인: 샌드박스 pip가 쓴 `.pth`에 macOS UF_HIDDEN 플래그, Python 3.12
+  site가 hidden .pth를 스킵. `chflags nohidden`으로 해소 (메모리 등록).
+
+### 소유자 통합 체크리스트 (이 미션 후 계류 전건)
+
+| # | 항목 | 위치/게이트 | 규모 |
+|---|---|---|---|
+| 1 | **RP-15 서명** (라벨 명명 diff — DIFF-4 ISSUE_2 §7 Big R 정밀화 + DIFF-5 README 1문장; 3/3 Big R 기계 증거 + 기저율 2.2% 한정 + 4년 윈도. 미적용 유지 확인) | Q-F03 | 판단 |
+| 2 | RP-16 서명 (보정 언어 서수 규약 2건) | Q-F04 | 판단 |
+| 3 | HUBG 하위 파일 캐시 (fetch 후 manifest 갱신 + payload-v2 재실행) | Q-F01 | 수분 |
+| 4 | Chu et al. 원문 대조 (정성 인용 유지 시 액션 불요) | Q-F02 | 선택 |
+| 5 | **스모크 발사**: `export ANTHROPIC_API_KEY=… && make smoke` (30호출 종량, 결과 커밋 선행 후에만 E2) | FREEZE_REV3 §6-3 / D52 | ~30호출 |
+| 6 | **E2 발사** (~160호출) → e2_trajectories 어댑터 → engine_verdict.py → 판정 D-엔트리 → buyer_metrics_build.py | D51/D52, RESUME.md | ~160호출 |
+| 7 | Zenodo vs GitHub release — v1.0.0 DOI (Q-R03 경로 확정분) **+ screener 봉인 앵커 채널 선택** | Q-R03 / screener S-02 | 계정 작업 |
+| 8 | screener config.json **SEC User-Agent 기입** + GitHub 원격 생성·push | screener S-01/S-03 | 수분 |
+| 9 | WS-6 k=3 예산 게이트 (124 vs 108) | Q-F06 | 판단 |
+| 10 | WS-7 교차 채점자 (E4 동배치 권장, ~20호출) | Q-F07 | 판단 |
+| 11 | D53 EXPLORATORY 메모 검토 (공개 여부 — 기본 비공개) | D53 | 판단 |
+| 12 | 독자 warm 5–7 발송 (D43 계획 — 이번 주) | D43 | 인간 작업 |
+
+- **4게이트 (2026-07-13 HEAD, 실측)**: `pytest pipeline/ tools/ scoring/ -q`
+  **106 passed** · `reproduce_analysis.py` **PASS 100/100** ·
+  `lint_publication.py` **PASS** · `verify_blindness.py` **PASS** (146 모델
+  출력 + 매니페스트 — runs/smoke_rev3 편입). 병기: `pytest analysis/ -q`
+  **18 passed** (b3 7 + engine_verdict 6 + buyer_metrics 5). screener:
+  **pytest 19 passed**.
+- 미터링: **전 Phase 0호출.** 계류 브랜치 `hardening/2026-07-08` 불변.
+
 
 ## 기능 약점 교정 미션 요약 (2026-07-12 무인, 미터링 0 — D44~D50)
 
