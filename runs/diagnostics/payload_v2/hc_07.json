@@ -1,0 +1,2514 @@
+{
+ "spec": "specs/payload_v2.md",
+ "diagnostic_only": true,
+ "case_id": "hc_07",
+ "ticker": "GO",
+ "cutoff_date": "2026-02-19",
+ "source_file": "cases_holdout_controls.json",
+ "eightk_items": [
+  {
+   "accession": "0001193125-19-184921",
+   "form": "8-K",
+   "filing_date": "2019-06-28",
+   "items_raw": "1.02,3.03,5.03,8.01,9.01",
+   "items": [
+    "1.02",
+    "3.03",
+    "5.03",
+    "8.01",
+    "9.01"
+   ]
+  },
+  {
+   "accession": "0001193125-19-201798",
+   "form": "8-K",
+   "filing_date": "2019-07-25",
+   "items_raw": "1.01,2.03,9.01",
+   "items": [
+    "1.01",
+    "2.03",
+    "9.01"
+   ]
+  },
+  {
+   "accession": "0001771515-19-000002",
+   "form": "8-K",
+   "filing_date": "2019-08-13",
+   "items_raw": "2.02,9.01",
+   "items": [
+    "2.02",
+    "9.01"
+   ]
+  },
+  {
+   "accession": "0001193125-19-260014",
+   "form": "8-K",
+   "filing_date": "2019-10-02",
+   "items_raw": "8.01,9.01",
+   "items": [
+    "8.01",
+    "9.01"
+   ]
+  },
+  {
+   "accession": "0001193125-19-260997",
+   "form": "8-K",
+   "filing_date": "2019-10-03",
+   "items_raw": "8.01,9.01",
+   "items": [
+    "8.01",
+    "9.01"
+   ]
+  },
+  {
+   "accession": "0001771515-19-000009",
+   "form": "8-K",
+   "filing_date": "2019-11-12",
+   "items_raw": "2.02,9.01",
+   "items": [
+    "2.02",
+    "9.01"
+   ]
+  },
+  {
+   "accession": "0001193125-19-294680",
+   "form": "8-K",
+   "filing_date": "2019-11-18",
+   "items_raw": "5.02",
+   "items": [
+    "5.02"
+   ]
+  },
+  {
+   "accession": "0001193125-20-003109",
+   "form": "8-K",
+   "filing_date": "2020-01-07",
+   "items_raw": "5.02,9.01",
+   "items": [
+    "5.02",
+    "9.01"
+   ]
+  },
+  {
+   "accession": "0001193125-20-014318",
+   "form": "8-K",
+   "filing_date": "2020-01-24",
+   "items_raw": "1.01,2.03,9.01",
+   "items": [
+    "1.01",
+    "2.03",
+    "9.01"
+   ]
+  },
+  {
+   "accession": "0001193125-20-015365",
+   "form": "8-K",
+   "filing_date": "2020-01-27",
+   "items_raw": "2.02,8.01,9.01",
+   "items": [
+    "2.02",
+    "8.01",
+    "9.01"
+   ]
+  },
+  {
+   "accession": "0001771515-20-000003",
+   "form": "8-K",
+   "filing_date": "2020-03-24",
+   "items_raw": "2.02,9.01",
+   "items": [
+    "2.02",
+    "9.01"
+   ]
+  },
+  {
+   "accession": "0001193125-20-112213",
+   "form": "8-K",
+   "filing_date": "2020-04-20",
+   "items_raw": "2.02,8.01,9.01",
+   "items": [
+    "2.02",
+    "8.01",
+    "9.01"
+   ]
+  },
+  {
+   "accession": "0001771515-20-000008",
+   "form": "8-K",
+   "filing_date": "2020-05-11",
+   "items_raw": "2.02,9.01",
+   "items": [
+    "2.02",
+    "9.01"
+   ]
+  },
+  {
+   "accession": "0001193125-20-153086",
+   "form": "8-K",
+   "filing_date": "2020-05-27",
+   "items_raw": "7.01,9.01",
+   "items": [
+    "7.01",
+    "9.01"
+   ]
+  },
+  {
+   "accession": "0001193125-20-167832",
+   "form": "8-K",
+   "filing_date": "2020-06-12",
+   "items_raw": "5.07",
+   "items": [
+    "5.07"
+   ]
+  },
+  {
+   "accession": "0001771515-20-000016",
+   "form": "8-K",
+   "filing_date": "2020-08-10",
+   "items_raw": "2.02,9.01",
+   "items": [
+    "2.02",
+    "9.01"
+   ]
+  },
+  {
+   "accession": "0001193125-20-240989",
+   "form": "8-K",
+   "filing_date": "2020-09-08",
+   "items_raw": "5.02",
+   "items": [
+    "5.02"
+   ]
+  },
+  {
+   "accession": "0001771515-20-000023",
+   "form": "8-K",
+   "filing_date": "2020-11-10",
+   "items_raw": "2.02,9.01",
+   "items": [
+    "2.02",
+    "9.01"
+   ]
+  },
+  {
+   "accession": "0001193125-21-011437",
+   "form": "8-K",
+   "filing_date": "2021-01-19",
+   "items_raw": "5.02",
+   "items": [
+    "5.02"
+   ]
+  },
+  {
+   "accession": "0001771515-21-000007",
+   "form": "8-K",
+   "filing_date": "2021-03-02",
+   "items_raw": "2.02,9.01",
+   "items": [
+    "2.02",
+    "9.01"
+   ]
+  },
+  {
+   "accession": "0001771515-21-000040",
+   "form": "8-K",
+   "filing_date": "2021-05-11",
+   "items_raw": "2.02,9.01",
+   "items": [
+    "2.02",
+    "9.01"
+   ]
+  },
+  {
+   "accession": "0001771515-21-000050",
+   "form": "8-K",
+   "filing_date": "2021-06-10",
+   "items_raw": "5.07",
+   "items": [
+    "5.07"
+   ]
+  },
+  {
+   "accession": "0001771515-21-000062",
+   "form": "8-K",
+   "filing_date": "2021-08-10",
+   "items_raw": "2.02,9.01",
+   "items": [
+    "2.02",
+    "9.01"
+   ]
+  },
+  {
+   "accession": "0001771515-21-000086",
+   "form": "8-K",
+   "filing_date": "2021-11-09",
+   "items_raw": "2.02,8.01,9.01",
+   "items": [
+    "2.02",
+    "8.01",
+    "9.01"
+   ]
+  },
+  {
+   "accession": "0001771515-21-000093",
+   "form": "8-K",
+   "filing_date": "2021-12-15",
+   "items_raw": "5.02,8.01,9.01",
+   "items": [
+    "5.02",
+    "8.01",
+    "9.01"
+   ]
+  },
+  {
+   "accession": "0001771515-22-000004",
+   "form": "8-K",
+   "filing_date": "2022-02-02",
+   "items_raw": "5.02,8.01",
+   "items": [
+    "5.02",
+    "8.01"
+   ]
+  },
+  {
+   "accession": "0001771515-22-000009",
+   "form": "8-K",
+   "filing_date": "2022-03-01",
+   "items_raw": "2.02,9.01",
+   "items": [
+    "2.02",
+    "9.01"
+   ]
+  },
+  {
+   "accession": "0001771515-22-000045",
+   "form": "8-K",
+   "filing_date": "2022-04-08",
+   "items_raw": "5.03,9.01",
+   "items": [
+    "5.03",
+    "9.01"
+   ]
+  },
+  {
+   "accession": "0001771515-22-000053",
+   "form": "8-K",
+   "filing_date": "2022-05-10",
+   "items_raw": "2.02,9.01",
+   "items": [
+    "2.02",
+    "9.01"
+   ]
+  },
+  {
+   "accession": "0001771515-22-000082",
+   "form": "8-K",
+   "filing_date": "2022-06-10",
+   "items_raw": "3.03,5.03,5.07,9.01",
+   "items": [
+    "3.03",
+    "5.03",
+    "5.07",
+    "9.01"
+   ]
+  },
+  {
+   "accession": "0001771515-22-000106",
+   "form": "8-K",
+   "filing_date": "2022-08-09",
+   "items_raw": "2.02,9.01",
+   "items": [
+    "2.02",
+    "9.01"
+   ]
+  },
+  {
+   "accession": "0001771515-22-000127",
+   "form": "8-K",
+   "filing_date": "2022-09-02",
+   "items_raw": "5.02,7.01,8.01,9.01",
+   "items": [
+    "5.02",
+    "7.01",
+    "8.01",
+    "9.01"
+   ]
+  },
+  {
+   "accession": "0001771515-22-000149",
+   "form": "8-K",
+   "filing_date": "2022-11-08",
+   "items_raw": "2.02,5.02,7.01,8.01,9.01",
+   "items": [
+    "2.02",
+    "5.02",
+    "7.01",
+    "8.01",
+    "9.01"
+   ]
+  },
+  {
+   "accession": "0001104659-23-024754",
+   "form": "8-K",
+   "filing_date": "2023-02-23",
+   "items_raw": "1.01,1.02,2.03,8.01,9.01",
+   "items": [
+    "1.01",
+    "1.02",
+    "2.03",
+    "8.01",
+    "9.01"
+   ]
+  },
+  {
+   "accession": "0001771515-23-000007",
+   "form": "8-K",
+   "filing_date": "2023-02-28",
+   "items_raw": "2.02,9.01",
+   "items": [
+    "2.02",
+    "9.01"
+   ]
+  },
+  {
+   "accession": "0001771515-23-000042",
+   "form": "8-K",
+   "filing_date": "2023-04-28",
+   "items_raw": "5.02,8.01",
+   "items": [
+    "5.02",
+    "8.01"
+   ]
+  },
+  {
+   "accession": "0001771515-23-000046",
+   "form": "8-K",
+   "filing_date": "2023-05-09",
+   "items_raw": "2.02,9.01",
+   "items": [
+    "2.02",
+    "9.01"
+   ]
+  },
+  {
+   "accession": "0001771515-23-000077",
+   "form": "8-K",
+   "filing_date": "2023-06-23",
+   "items_raw": "5.07",
+   "items": [
+    "5.07"
+   ]
+  },
+  {
+   "accession": "0001771515-23-000085",
+   "form": "8-K",
+   "filing_date": "2023-08-08",
+   "items_raw": "2.02,9.01",
+   "items": [
+    "2.02",
+    "9.01"
+   ]
+  },
+  {
+   "accession": "0001771515-23-000101",
+   "form": "8-K",
+   "filing_date": "2023-11-07",
+   "items_raw": "2.02,9.01",
+   "items": [
+    "2.02",
+    "9.01"
+   ]
+  },
+  {
+   "accession": "0001771515-23-000111",
+   "form": "8-K",
+   "filing_date": "2023-12-11",
+   "items_raw": "5.02,7.01,9.01",
+   "items": [
+    "5.02",
+    "7.01",
+    "9.01"
+   ]
+  },
+  {
+   "accession": "0001771515-24-000002",
+   "form": "8-K",
+   "filing_date": "2024-01-25",
+   "items_raw": "5.02,7.01,9.01",
+   "items": [
+    "5.02",
+    "7.01",
+    "9.01"
+   ]
+  },
+  {
+   "accession": "0001771515-24-000007",
+   "form": "8-K",
+   "filing_date": "2024-02-15",
+   "items_raw": "1.01,7.01,9.01",
+   "items": [
+    "1.01",
+    "7.01",
+    "9.01"
+   ]
+  },
+  {
+   "accession": "0001771515-24-000014",
+   "form": "8-K",
+   "filing_date": "2024-02-27",
+   "items_raw": "2.02,9.01",
+   "items": [
+    "2.02",
+    "9.01"
+   ]
+  },
+  {
+   "accession": "0001771515-24-000023",
+   "form": "8-K",
+   "filing_date": "2024-03-01",
+   "items_raw": "5.02,9.01",
+   "items": [
+    "5.02",
+    "9.01"
+   ]
+  },
+  {
+   "accession": "0001771515-24-000086",
+   "form": "8-K",
+   "filing_date": "2024-04-02",
+   "items_raw": "7.01,9.01",
+   "items": [
+    "7.01",
+    "9.01"
+   ]
+  },
+  {
+   "accession": "0001771515-24-000092",
+   "form": "8-K",
+   "filing_date": "2024-05-07",
+   "items_raw": "2.02,9.01",
+   "items": [
+    "2.02",
+    "9.01"
+   ]
+  },
+  {
+   "accession": "0001771515-24-000106",
+   "form": "8-K",
+   "filing_date": "2024-06-05",
+   "items_raw": "5.07",
+   "items": [
+    "5.07"
+   ]
+  },
+  {
+   "accession": "0001771515-24-000128",
+   "form": "8-K",
+   "filing_date": "2024-08-06",
+   "items_raw": "2.02,9.01",
+   "items": [
+    "2.02",
+    "9.01"
+   ]
+  },
+  {
+   "accession": "0001193125-24-246957",
+   "form": "8-K",
+   "filing_date": "2024-10-30",
+   "items_raw": "2.02,5.02,7.01,9.01",
+   "items": [
+    "2.02",
+    "5.02",
+    "7.01",
+    "9.01"
+   ]
+  },
+  {
+   "accession": "0001771515-24-000148",
+   "form": "8-K",
+   "filing_date": "2024-11-05",
+   "items_raw": "2.02,8.01,9.01",
+   "items": [
+    "2.02",
+    "8.01",
+    "9.01"
+   ]
+  },
+  {
+   "accession": "0001104659-24-129780",
+   "form": "8-K",
+   "filing_date": "2024-12-18",
+   "items_raw": "5.02,7.01,9.01",
+   "items": [
+    "5.02",
+    "7.01",
+    "9.01"
+   ]
+  },
+  {
+   "accession": "0001104659-25-005036",
+   "form": "8-K",
+   "filing_date": "2025-01-22",
+   "items_raw": "5.02,7.01,9.01",
+   "items": [
+    "5.02",
+    "7.01",
+    "9.01"
+   ]
+  },
+  {
+   "accession": "0001771515-25-000012",
+   "form": "8-K",
+   "filing_date": "2025-02-25",
+   "items_raw": "2.02,2.05,9.01",
+   "items": [
+    "2.02",
+    "2.05",
+    "9.01"
+   ]
+  },
+  {
+   "accession": "0001771515-25-000087",
+   "form": "8-K",
+   "filing_date": "2025-05-06",
+   "items_raw": "2.02,5.02,9.01",
+   "items": [
+    "2.02",
+    "5.02",
+    "9.01"
+   ]
+  },
+  {
+   "accession": "0001771515-25-000095",
+   "form": "8-K",
+   "filing_date": "2025-05-16",
+   "items_raw": "5.02",
+   "items": [
+    "5.02"
+   ]
+  },
+  {
+   "accession": "0001771515-25-000121",
+   "form": "8-K",
+   "filing_date": "2025-06-06",
+   "items_raw": "3.03,5.03,5.07,9.01",
+   "items": [
+    "3.03",
+    "5.03",
+    "5.07",
+    "9.01"
+   ]
+  },
+  {
+   "accession": "0001771515-25-000124",
+   "form": "8-K",
+   "filing_date": "2025-06-26",
+   "items_raw": "5.02,7.01,9.01",
+   "items": [
+    "5.02",
+    "7.01",
+    "9.01"
+   ]
+  },
+  {
+   "accession": "0001771515-25-000138",
+   "form": "8-K",
+   "filing_date": "2025-08-05",
+   "items_raw": "2.02,9.01",
+   "items": [
+    "2.02",
+    "9.01"
+   ]
+  },
+  {
+   "accession": "0001771515-25-000152",
+   "form": "8-K",
+   "filing_date": "2025-08-26",
+   "items_raw": "7.01,9.01",
+   "items": [
+    "7.01",
+    "9.01"
+   ]
+  },
+  {
+   "accession": "0001771515-25-000166",
+   "form": "8-K",
+   "filing_date": "2025-11-04",
+   "items_raw": "2.02,9.01",
+   "items": [
+    "2.02",
+    "9.01"
+   ]
+  },
+  {
+   "accession": "0001771515-25-000171",
+   "form": "8-K",
+   "filing_date": "2025-12-03",
+   "items_raw": "7.01",
+   "items": [
+    "7.01"
+   ]
+  },
+  {
+   "accession": "0001771515-26-000004",
+   "form": "8-K",
+   "filing_date": "2026-01-13",
+   "items_raw": "5.02,9.01",
+   "items": [
+    "5.02",
+    "9.01"
+   ]
+  }
+ ],
+ "share_facts": {
+  "dei:EntityCommonStockSharesOutstanding": [
+   {
+    "start": null,
+    "end": "2019-08-06",
+    "period_type": "instant",
+    "value": 88355118,
+    "unit": "shares",
+    "filed": "2019-08-13",
+    "accession": "0001771515-19-000005",
+    "form": "10-Q"
+   },
+   {
+    "start": null,
+    "end": "2019-11-05",
+    "period_type": "instant",
+    "value": 88892622,
+    "unit": "shares",
+    "filed": "2019-11-12",
+    "accession": "0001771515-19-000011",
+    "form": "10-Q"
+   },
+   {
+    "start": null,
+    "end": "2020-03-20",
+    "period_type": "instant",
+    "value": 89900566,
+    "unit": "shares",
+    "filed": "2020-03-25",
+    "accession": "0001771515-20-000005",
+    "form": "10-K"
+   },
+   {
+    "start": null,
+    "end": "2020-05-08",
+    "period_type": "instant",
+    "value": 90873610,
+    "unit": "shares",
+    "filed": "2020-05-12",
+    "accession": "0001771515-20-000011",
+    "form": "10-Q"
+   },
+   {
+    "start": null,
+    "end": "2020-08-07",
+    "period_type": "instant",
+    "value": 91600914,
+    "unit": "shares",
+    "filed": "2020-08-11",
+    "accession": "0001771515-20-000018",
+    "form": "10-Q"
+   },
+   {
+    "start": null,
+    "end": "2020-11-06",
+    "period_type": "instant",
+    "value": 94151015,
+    "unit": "shares",
+    "filed": "2020-11-10",
+    "accession": "0001771515-20-000025",
+    "form": "10-Q"
+   },
+   {
+    "start": null,
+    "end": "2021-02-25",
+    "period_type": "instant",
+    "value": 95249689,
+    "unit": "shares",
+    "filed": "2021-09-03",
+    "accession": "0001771515-21-000070",
+    "form": "10-K/A"
+   },
+   {
+    "start": null,
+    "end": "2021-05-06",
+    "period_type": "instant",
+    "value": 95707461,
+    "unit": "shares",
+    "filed": "2021-09-03",
+    "accession": "0001771515-21-000072",
+    "form": "10-Q/A"
+   },
+   {
+    "start": null,
+    "end": "2021-08-05",
+    "period_type": "instant",
+    "value": 95920474,
+    "unit": "shares",
+    "filed": "2021-09-03",
+    "accession": "0001771515-21-000074",
+    "form": "10-Q/A"
+   },
+   {
+    "start": null,
+    "end": "2021-11-04",
+    "period_type": "instant",
+    "value": 96017043,
+    "unit": "shares",
+    "filed": "2021-11-10",
+    "accession": "0001771515-21-000088",
+    "form": "10-Q"
+   },
+   {
+    "start": null,
+    "end": "2022-02-24",
+    "period_type": "instant",
+    "value": 96035472,
+    "unit": "shares",
+    "filed": "2022-03-02",
+    "accession": "0001771515-22-000011",
+    "form": "10-K"
+   },
+   {
+    "start": null,
+    "end": "2022-05-05",
+    "period_type": "instant",
+    "value": 96367403,
+    "unit": "shares",
+    "filed": "2022-05-11",
+    "accession": "0001771515-22-000055",
+    "form": "10-Q"
+   },
+   {
+    "start": null,
+    "end": "2022-08-04",
+    "period_type": "instant",
+    "value": 96930442,
+    "unit": "shares",
+    "filed": "2022-08-10",
+    "accession": "0001771515-22-000108",
+    "form": "10-Q"
+   },
+   {
+    "start": null,
+    "end": "2022-11-03",
+    "period_type": "instant",
+    "value": 97278977,
+    "unit": "shares",
+    "filed": "2022-11-09",
+    "accession": "0001771515-22-000151",
+    "form": "10-Q"
+   },
+   {
+    "start": null,
+    "end": "2023-02-23",
+    "period_type": "instant",
+    "value": 97683722,
+    "unit": "shares",
+    "filed": "2023-03-01",
+    "accession": "0001771515-23-000009",
+    "form": "10-K"
+   },
+   {
+    "start": null,
+    "end": "2023-05-04",
+    "period_type": "instant",
+    "value": 98286452,
+    "unit": "shares",
+    "filed": "2023-05-10",
+    "accession": "0001771515-23-000048",
+    "form": "10-Q"
+   },
+   {
+    "start": null,
+    "end": "2023-08-03",
+    "period_type": "instant",
+    "value": 98777446,
+    "unit": "shares",
+    "filed": "2023-08-09",
+    "accession": "0001771515-23-000087",
+    "form": "10-Q"
+   },
+   {
+    "start": null,
+    "end": "2023-11-02",
+    "period_type": "instant",
+    "value": 99269236,
+    "unit": "shares",
+    "filed": "2023-11-08",
+    "accession": "0001771515-23-000103",
+    "form": "10-Q"
+   },
+   {
+    "start": null,
+    "end": "2024-02-22",
+    "period_type": "instant",
+    "value": 99227528,
+    "unit": "shares",
+    "filed": "2024-02-28",
+    "accession": "0001771515-24-000016",
+    "form": "10-K"
+   },
+   {
+    "start": null,
+    "end": "2024-05-02",
+    "period_type": "instant",
+    "value": 99861691,
+    "unit": "shares",
+    "filed": "2024-05-08",
+    "accession": "0001771515-24-000094",
+    "form": "10-Q"
+   },
+   {
+    "start": null,
+    "end": "2024-08-01",
+    "period_type": "instant",
+    "value": 97990326,
+    "unit": "shares",
+    "filed": "2024-08-07",
+    "accession": "0001771515-24-000130",
+    "form": "10-Q"
+   },
+   {
+    "start": null,
+    "end": "2024-10-31",
+    "period_type": "instant",
+    "value": 97136365,
+    "unit": "shares",
+    "filed": "2024-11-06",
+    "accession": "0001771515-24-000150",
+    "form": "10-Q"
+   },
+   {
+    "start": null,
+    "end": "2025-02-20",
+    "period_type": "instant",
+    "value": 97357942,
+    "unit": "shares",
+    "filed": "2025-02-26",
+    "accession": "0001771515-25-000017",
+    "form": "10-K"
+   },
+   {
+    "start": null,
+    "end": "2025-05-01",
+    "period_type": "instant",
+    "value": 98034554,
+    "unit": "shares",
+    "filed": "2025-05-07",
+    "accession": "0001771515-25-000090",
+    "form": "10-Q"
+   },
+   {
+    "start": null,
+    "end": "2025-07-31",
+    "period_type": "instant",
+    "value": 98103295,
+    "unit": "shares",
+    "filed": "2025-08-06",
+    "accession": "0001771515-25-000141",
+    "form": "10-Q"
+   },
+   {
+    "start": null,
+    "end": "2025-10-30",
+    "period_type": "instant",
+    "value": 98137230,
+    "unit": "shares",
+    "filed": "2025-11-05",
+    "accession": "0001771515-25-000169",
+    "form": "10-Q"
+   }
+  ],
+  "us-gaap:CommonStockSharesOutstanding": [
+   {
+    "start": null,
+    "end": "2019-12-28",
+    "period_type": "instant",
+    "value": 89005062,
+    "unit": "shares",
+    "filed": "2021-03-02",
+    "accession": "0001771515-21-000009",
+    "form": "10-K"
+   },
+   {
+    "start": null,
+    "end": "2020-03-28",
+    "period_type": "instant",
+    "value": 89907194,
+    "unit": "shares",
+    "filed": "2020-05-12",
+    "accession": "0001771515-20-000011",
+    "form": "10-Q"
+   },
+   {
+    "start": null,
+    "end": "2020-06-27",
+    "period_type": "instant",
+    "value": 91418273,
+    "unit": "shares",
+    "filed": "2020-08-11",
+    "accession": "0001771515-20-000018",
+    "form": "10-Q"
+   },
+   {
+    "start": null,
+    "end": "2020-09-26",
+    "period_type": "instant",
+    "value": 93904922,
+    "unit": "shares",
+    "filed": "2020-11-10",
+    "accession": "0001771515-20-000025",
+    "form": "10-Q"
+   },
+   {
+    "start": null,
+    "end": "2021-01-02",
+    "period_type": "instant",
+    "value": 94854336,
+    "unit": "shares",
+    "filed": "2022-03-02",
+    "accession": "0001771515-22-000011",
+    "form": "10-K"
+   },
+   {
+    "start": null,
+    "end": "2021-04-03",
+    "period_type": "instant",
+    "value": 95501473,
+    "unit": "shares",
+    "filed": "2021-05-12",
+    "accession": "0001771515-21-000042",
+    "form": "10-Q"
+   },
+   {
+    "start": null,
+    "end": "2021-07-03",
+    "period_type": "instant",
+    "value": 95837220,
+    "unit": "shares",
+    "filed": "2021-08-11",
+    "accession": "0001771515-21-000064",
+    "form": "10-Q"
+   },
+   {
+    "start": null,
+    "end": "2021-10-02",
+    "period_type": "instant",
+    "value": 96007519,
+    "unit": "shares",
+    "filed": "2021-11-10",
+    "accession": "0001771515-21-000088",
+    "form": "10-Q"
+   },
+   {
+    "start": null,
+    "end": "2022-01-01",
+    "period_type": "instant",
+    "value": 96144433,
+    "unit": "shares",
+    "filed": "2023-03-01",
+    "accession": "0001771515-23-000009",
+    "form": "10-K"
+   },
+   {
+    "start": null,
+    "end": "2022-04-02",
+    "period_type": "instant",
+    "value": 96281188,
+    "unit": "shares",
+    "filed": "2022-05-11",
+    "accession": "0001771515-22-000055",
+    "form": "10-Q"
+   },
+   {
+    "start": null,
+    "end": "2022-07-02",
+    "period_type": "instant",
+    "value": 96846980,
+    "unit": "shares",
+    "filed": "2022-08-10",
+    "accession": "0001771515-22-000108",
+    "form": "10-Q"
+   },
+   {
+    "start": null,
+    "end": "2022-10-01",
+    "period_type": "instant",
+    "value": 97228838,
+    "unit": "shares",
+    "filed": "2022-11-09",
+    "accession": "0001771515-22-000151",
+    "form": "10-Q"
+   },
+   {
+    "start": null,
+    "end": "2022-12-31",
+    "period_type": "instant",
+    "value": 97674356,
+    "unit": "shares",
+    "filed": "2024-02-28",
+    "accession": "0001771515-24-000016",
+    "form": "10-K"
+   },
+   {
+    "start": null,
+    "end": "2023-04-01",
+    "period_type": "instant",
+    "value": 98285804,
+    "unit": "shares",
+    "filed": "2023-05-10",
+    "accession": "0001771515-23-000048",
+    "form": "10-Q"
+   },
+   {
+    "start": null,
+    "end": "2023-07-01",
+    "period_type": "instant",
+    "value": 98773249,
+    "unit": "shares",
+    "filed": "2023-08-09",
+    "accession": "0001771515-23-000087",
+    "form": "10-Q"
+   },
+   {
+    "start": null,
+    "end": "2023-09-30",
+    "period_type": "instant",
+    "value": 99338790,
+    "unit": "shares",
+    "filed": "2023-11-08",
+    "accession": "0001771515-23-000103",
+    "form": "10-Q"
+   },
+   {
+    "start": null,
+    "end": "2023-12-30",
+    "period_type": "instant",
+    "value": 99223863,
+    "unit": "shares",
+    "filed": "2025-02-26",
+    "accession": "0001771515-25-000017",
+    "form": "10-K"
+   },
+   {
+    "start": null,
+    "end": "2024-03-30",
+    "period_type": "instant",
+    "value": 100147065,
+    "unit": "shares",
+    "filed": "2024-05-08",
+    "accession": "0001771515-24-000094",
+    "form": "10-Q"
+   },
+   {
+    "start": null,
+    "end": "2024-06-29",
+    "period_type": "instant",
+    "value": 99154749,
+    "unit": "shares",
+    "filed": "2024-08-07",
+    "accession": "0001771515-24-000130",
+    "form": "10-Q"
+   },
+   {
+    "start": null,
+    "end": "2024-09-28",
+    "period_type": "instant",
+    "value": 98643576,
+    "unit": "shares",
+    "filed": "2024-11-06",
+    "accession": "0001771515-24-000150",
+    "form": "10-Q"
+   },
+   {
+    "start": null,
+    "end": "2024-12-28",
+    "period_type": "instant",
+    "value": 97262557,
+    "unit": "shares",
+    "filed": "2025-11-05",
+    "accession": "0001771515-25-000169",
+    "form": "10-Q"
+   },
+   {
+    "start": null,
+    "end": "2025-03-29",
+    "period_type": "instant",
+    "value": 98005068,
+    "unit": "shares",
+    "filed": "2025-05-07",
+    "accession": "0001771515-25-000090",
+    "form": "10-Q"
+   },
+   {
+    "start": null,
+    "end": "2025-06-28",
+    "period_type": "instant",
+    "value": 98103295,
+    "unit": "shares",
+    "filed": "2025-08-06",
+    "accession": "0001771515-25-000141",
+    "form": "10-Q"
+   },
+   {
+    "start": null,
+    "end": "2025-09-27",
+    "period_type": "instant",
+    "value": 98137230,
+    "unit": "shares",
+    "filed": "2025-11-05",
+    "accession": "0001771515-25-000169",
+    "form": "10-Q"
+   }
+  ],
+  "us-gaap:EarningsPerShareBasic": [
+   {
+    "start": "2017-01-01",
+    "end": "2017-12-30",
+    "period_type": "annual",
+    "value": 0.3,
+    "unit": "USD/shares",
+    "filed": "2020-03-25",
+    "accession": "0001771515-20-000005",
+    "form": "10-K"
+   },
+   {
+    "start": "2017-12-31",
+    "end": "2018-03-31",
+    "period_type": "quarterly",
+    "value": 0.08,
+    "unit": "USD/shares",
+    "filed": "2020-03-25",
+    "accession": "0001771515-20-000005",
+    "form": "10-K"
+   },
+   {
+    "start": "2018-04-01",
+    "end": "2018-06-30",
+    "period_type": "quarterly",
+    "value": 0.11,
+    "unit": "USD/shares",
+    "filed": "2020-03-25",
+    "accession": "0001771515-20-000005",
+    "form": "10-K"
+   },
+   {
+    "start": "2018-07-01",
+    "end": "2018-09-29",
+    "period_type": "quarterly",
+    "value": 0.11,
+    "unit": "USD/shares",
+    "filed": "2020-03-25",
+    "accession": "0001771515-20-000005",
+    "form": "10-K"
+   },
+   {
+    "start": "2017-12-31",
+    "end": "2018-12-29",
+    "period_type": "annual",
+    "value": 0.24,
+    "unit": "USD/shares",
+    "filed": "2021-03-02",
+    "accession": "0001771515-21-000009",
+    "form": "10-K"
+   },
+   {
+    "start": "2018-09-30",
+    "end": "2018-12-29",
+    "period_type": "quarterly",
+    "value": -0.07,
+    "unit": "USD/shares",
+    "filed": "2020-03-25",
+    "accession": "0001771515-20-000005",
+    "form": "10-K"
+   },
+   {
+    "start": "2018-12-30",
+    "end": "2019-03-30",
+    "period_type": "quarterly",
+    "value": 0.06,
+    "unit": "USD/shares",
+    "filed": "2021-03-02",
+    "accession": "0001771515-21-000009",
+    "form": "10-K"
+   },
+   {
+    "start": "2019-03-31",
+    "end": "2019-06-29",
+    "period_type": "quarterly",
+    "value": -0.15,
+    "unit": "USD/shares",
+    "filed": "2021-03-02",
+    "accession": "0001771515-21-000009",
+    "form": "10-K"
+   },
+   {
+    "start": "2019-06-30",
+    "end": "2019-09-28",
+    "period_type": "quarterly",
+    "value": 0.14,
+    "unit": "USD/shares",
+    "filed": "2021-03-02",
+    "accession": "0001771515-21-000009",
+    "form": "10-K"
+   },
+   {
+    "start": "2018-12-30",
+    "end": "2019-12-28",
+    "period_type": "annual",
+    "value": 0.2,
+    "unit": "USD/shares",
+    "filed": "2022-03-02",
+    "accession": "0001771515-22-000011",
+    "form": "10-K"
+   },
+   {
+    "start": "2019-09-29",
+    "end": "2019-12-28",
+    "period_type": "quarterly",
+    "value": 0.11,
+    "unit": "USD/shares",
+    "filed": "2021-03-02",
+    "accession": "0001771515-21-000009",
+    "form": "10-K"
+   },
+   {
+    "start": "2019-12-29",
+    "end": "2020-03-28",
+    "period_type": "quarterly",
+    "value": 0.14,
+    "unit": "USD/shares",
+    "filed": "2021-05-12",
+    "accession": "0001771515-21-000042",
+    "form": "10-Q"
+   },
+   {
+    "start": "2020-03-29",
+    "end": "2020-06-27",
+    "period_type": "quarterly",
+    "value": 0.32,
+    "unit": "USD/shares",
+    "filed": "2021-08-11",
+    "accession": "0001771515-21-000064",
+    "form": "10-Q"
+   },
+   {
+    "start": "2020-06-28",
+    "end": "2020-09-26",
+    "period_type": "quarterly",
+    "value": 0.44,
+    "unit": "USD/shares",
+    "filed": "2021-11-10",
+    "accession": "0001771515-21-000088",
+    "form": "10-Q"
+   },
+   {
+    "start": "2019-12-29",
+    "end": "2021-01-02",
+    "period_type": "annual",
+    "value": 1.16,
+    "unit": "USD/shares",
+    "filed": "2023-03-01",
+    "accession": "0001771515-23-000009",
+    "form": "10-K"
+   },
+   {
+    "start": "2020-09-27",
+    "end": "2021-01-02",
+    "period_type": "quarterly",
+    "value": 0.26,
+    "unit": "USD/shares",
+    "filed": "2021-03-02",
+    "accession": "0001771515-21-000009",
+    "form": "10-K"
+   },
+   {
+    "start": "2021-01-03",
+    "end": "2021-04-03",
+    "period_type": "quarterly",
+    "value": 0.2,
+    "unit": "USD/shares",
+    "filed": "2022-05-11",
+    "accession": "0001771515-22-000055",
+    "form": "10-Q"
+   },
+   {
+    "start": "2021-04-04",
+    "end": "2021-07-03",
+    "period_type": "quarterly",
+    "value": 0.21,
+    "unit": "USD/shares",
+    "filed": "2022-08-10",
+    "accession": "0001771515-22-000108",
+    "form": "10-Q"
+   },
+   {
+    "start": "2021-07-04",
+    "end": "2021-10-02",
+    "period_type": "quarterly",
+    "value": 0.18,
+    "unit": "USD/shares",
+    "filed": "2022-11-09",
+    "accession": "0001771515-22-000151",
+    "form": "10-Q"
+   },
+   {
+    "start": "2021-01-03",
+    "end": "2022-01-01",
+    "period_type": "annual",
+    "value": 0.65,
+    "unit": "USD/shares",
+    "filed": "2024-02-28",
+    "accession": "0001771515-24-000016",
+    "form": "10-K"
+   },
+   {
+    "start": "2022-01-02",
+    "end": "2022-04-02",
+    "period_type": "quarterly",
+    "value": 0.12,
+    "unit": "USD/shares",
+    "filed": "2023-05-10",
+    "accession": "0001771515-23-000048",
+    "form": "10-Q"
+   },
+   {
+    "start": "2022-04-03",
+    "end": "2022-07-02",
+    "period_type": "quarterly",
+    "value": 0.21,
+    "unit": "USD/shares",
+    "filed": "2023-08-09",
+    "accession": "0001771515-23-000087",
+    "form": "10-Q"
+   },
+   {
+    "start": "2022-07-03",
+    "end": "2022-10-01",
+    "period_type": "quarterly",
+    "value": 0.18,
+    "unit": "USD/shares",
+    "filed": "2023-11-08",
+    "accession": "0001771515-23-000103",
+    "form": "10-Q"
+   },
+   {
+    "start": "2022-01-02",
+    "end": "2022-12-31",
+    "period_type": "annual",
+    "value": 0.67,
+    "unit": "USD/shares",
+    "filed": "2025-02-26",
+    "accession": "0001771515-25-000017",
+    "form": "10-K"
+   },
+   {
+    "start": "2023-01-01",
+    "end": "2023-04-01",
+    "period_type": "quarterly",
+    "value": 0.14,
+    "unit": "USD/shares",
+    "filed": "2024-05-08",
+    "accession": "0001771515-24-000094",
+    "form": "10-Q"
+   },
+   {
+    "start": "2023-04-02",
+    "end": "2023-07-01",
+    "period_type": "quarterly",
+    "value": 0.25,
+    "unit": "USD/shares",
+    "filed": "2024-08-07",
+    "accession": "0001771515-24-000130",
+    "form": "10-Q"
+   },
+   {
+    "start": "2023-07-02",
+    "end": "2023-09-30",
+    "period_type": "quarterly",
+    "value": 0.27,
+    "unit": "USD/shares",
+    "filed": "2024-11-06",
+    "accession": "0001771515-24-000150",
+    "form": "10-Q"
+   },
+   {
+    "start": "2023-01-01",
+    "end": "2023-12-30",
+    "period_type": "annual",
+    "value": 0.8,
+    "unit": "USD/shares",
+    "filed": "2025-02-26",
+    "accession": "0001771515-25-000017",
+    "form": "10-K"
+   },
+   {
+    "start": "2023-12-31",
+    "end": "2024-03-30",
+    "period_type": "quarterly",
+    "value": -0.01,
+    "unit": "USD/shares",
+    "filed": "2025-05-07",
+    "accession": "0001771515-25-000090",
+    "form": "10-Q"
+   },
+   {
+    "start": "2024-03-31",
+    "end": "2024-06-29",
+    "period_type": "quarterly",
+    "value": 0.14,
+    "unit": "USD/shares",
+    "filed": "2025-08-06",
+    "accession": "0001771515-25-000141",
+    "form": "10-Q"
+   },
+   {
+    "start": "2024-06-30",
+    "end": "2024-09-28",
+    "period_type": "quarterly",
+    "value": 0.25,
+    "unit": "USD/shares",
+    "filed": "2025-11-05",
+    "accession": "0001771515-25-000169",
+    "form": "10-Q"
+   },
+   {
+    "start": "2023-12-31",
+    "end": "2024-12-28",
+    "period_type": "annual",
+    "value": 0.4,
+    "unit": "USD/shares",
+    "filed": "2025-02-26",
+    "accession": "0001771515-25-000017",
+    "form": "10-K"
+   },
+   {
+    "start": "2024-12-29",
+    "end": "2025-03-29",
+    "period_type": "quarterly",
+    "value": -0.24,
+    "unit": "USD/shares",
+    "filed": "2025-05-07",
+    "accession": "0001771515-25-000090",
+    "form": "10-Q"
+   },
+   {
+    "start": "2025-03-30",
+    "end": "2025-06-28",
+    "period_type": "quarterly",
+    "value": 0.05,
+    "unit": "USD/shares",
+    "filed": "2025-08-06",
+    "accession": "0001771515-25-000141",
+    "form": "10-Q"
+   },
+   {
+    "start": "2025-06-29",
+    "end": "2025-09-27",
+    "period_type": "quarterly",
+    "value": 0.12,
+    "unit": "USD/shares",
+    "filed": "2025-11-05",
+    "accession": "0001771515-25-000169",
+    "form": "10-Q"
+   }
+  ],
+  "us-gaap:EarningsPerShareDiluted": [
+   {
+    "start": "2017-01-01",
+    "end": "2017-12-30",
+    "period_type": "annual",
+    "value": 0.3,
+    "unit": "USD/shares",
+    "filed": "2020-03-25",
+    "accession": "0001771515-20-000005",
+    "form": "10-K"
+   },
+   {
+    "start": "2017-12-31",
+    "end": "2018-03-31",
+    "period_type": "quarterly",
+    "value": 0.08,
+    "unit": "USD/shares",
+    "filed": "2020-03-25",
+    "accession": "0001771515-20-000005",
+    "form": "10-K"
+   },
+   {
+    "start": "2018-04-01",
+    "end": "2018-06-30",
+    "period_type": "quarterly",
+    "value": 0.11,
+    "unit": "USD/shares",
+    "filed": "2020-03-25",
+    "accession": "0001771515-20-000005",
+    "form": "10-K"
+   },
+   {
+    "start": "2018-07-01",
+    "end": "2018-09-29",
+    "period_type": "quarterly",
+    "value": 0.11,
+    "unit": "USD/shares",
+    "filed": "2020-03-25",
+    "accession": "0001771515-20-000005",
+    "form": "10-K"
+   },
+   {
+    "start": "2017-12-31",
+    "end": "2018-12-29",
+    "period_type": "annual",
+    "value": 0.23,
+    "unit": "USD/shares",
+    "filed": "2021-03-02",
+    "accession": "0001771515-21-000009",
+    "form": "10-K"
+   },
+   {
+    "start": "2018-09-30",
+    "end": "2018-12-29",
+    "period_type": "quarterly",
+    "value": -0.07,
+    "unit": "USD/shares",
+    "filed": "2020-03-25",
+    "accession": "0001771515-20-000005",
+    "form": "10-K"
+   },
+   {
+    "start": "2018-12-30",
+    "end": "2019-03-30",
+    "period_type": "quarterly",
+    "value": 0.06,
+    "unit": "USD/shares",
+    "filed": "2021-03-02",
+    "accession": "0001771515-21-000009",
+    "form": "10-K"
+   },
+   {
+    "start": "2019-03-31",
+    "end": "2019-06-29",
+    "period_type": "quarterly",
+    "value": -0.15,
+    "unit": "USD/shares",
+    "filed": "2021-03-02",
+    "accession": "0001771515-21-000009",
+    "form": "10-K"
+   },
+   {
+    "start": "2019-06-30",
+    "end": "2019-09-28",
+    "period_type": "quarterly",
+    "value": 0.13,
+    "unit": "USD/shares",
+    "filed": "2021-03-02",
+    "accession": "0001771515-21-000009",
+    "form": "10-K"
+   },
+   {
+    "start": "2018-12-30",
+    "end": "2019-12-28",
+    "period_type": "annual",
+    "value": 0.19,
+    "unit": "USD/shares",
+    "filed": "2022-03-02",
+    "accession": "0001771515-22-000011",
+    "form": "10-K"
+   },
+   {
+    "start": "2019-09-29",
+    "end": "2019-12-28",
+    "period_type": "quarterly",
+    "value": 0.11,
+    "unit": "USD/shares",
+    "filed": "2021-03-02",
+    "accession": "0001771515-21-000009",
+    "form": "10-K"
+   },
+   {
+    "start": "2019-12-29",
+    "end": "2020-03-28",
+    "period_type": "quarterly",
+    "value": 0.13,
+    "unit": "USD/shares",
+    "filed": "2021-05-12",
+    "accession": "0001771515-21-000042",
+    "form": "10-Q"
+   },
+   {
+    "start": "2020-03-29",
+    "end": "2020-06-27",
+    "period_type": "quarterly",
+    "value": 0.3,
+    "unit": "USD/shares",
+    "filed": "2021-08-11",
+    "accession": "0001771515-21-000064",
+    "form": "10-Q"
+   },
+   {
+    "start": "2020-06-28",
+    "end": "2020-09-26",
+    "period_type": "quarterly",
+    "value": 0.41,
+    "unit": "USD/shares",
+    "filed": "2021-11-10",
+    "accession": "0001771515-21-000088",
+    "form": "10-Q"
+   },
+   {
+    "start": "2019-12-29",
+    "end": "2021-01-02",
+    "period_type": "annual",
+    "value": 1.08,
+    "unit": "USD/shares",
+    "filed": "2023-03-01",
+    "accession": "0001771515-23-000009",
+    "form": "10-K"
+   },
+   {
+    "start": "2020-09-27",
+    "end": "2021-01-02",
+    "period_type": "quarterly",
+    "value": 0.24,
+    "unit": "USD/shares",
+    "filed": "2021-03-02",
+    "accession": "0001771515-21-000009",
+    "form": "10-K"
+   },
+   {
+    "start": "2021-01-03",
+    "end": "2021-04-03",
+    "period_type": "quarterly",
+    "value": 0.19,
+    "unit": "USD/shares",
+    "filed": "2022-05-11",
+    "accession": "0001771515-22-000055",
+    "form": "10-Q"
+   },
+   {
+    "start": "2021-04-04",
+    "end": "2021-07-03",
+    "period_type": "quarterly",
+    "value": 0.2,
+    "unit": "USD/shares",
+    "filed": "2022-08-10",
+    "accession": "0001771515-22-000108",
+    "form": "10-Q"
+   },
+   {
+    "start": "2021-07-04",
+    "end": "2021-10-02",
+    "period_type": "quarterly",
+    "value": 0.17,
+    "unit": "USD/shares",
+    "filed": "2022-11-09",
+    "accession": "0001771515-22-000151",
+    "form": "10-Q"
+   },
+   {
+    "start": "2021-01-03",
+    "end": "2022-01-01",
+    "period_type": "annual",
+    "value": 0.63,
+    "unit": "USD/shares",
+    "filed": "2024-02-28",
+    "accession": "0001771515-24-000016",
+    "form": "10-K"
+   },
+   {
+    "start": "2022-01-02",
+    "end": "2022-04-02",
+    "period_type": "quarterly",
+    "value": 0.12,
+    "unit": "USD/shares",
+    "filed": "2023-05-10",
+    "accession": "0001771515-23-000048",
+    "form": "10-Q"
+   },
+   {
+    "start": "2022-04-03",
+    "end": "2022-07-02",
+    "period_type": "quarterly",
+    "value": 0.2,
+    "unit": "USD/shares",
+    "filed": "2023-08-09",
+    "accession": "0001771515-23-000087",
+    "form": "10-Q"
+   },
+   {
+    "start": "2022-07-03",
+    "end": "2022-10-01",
+    "period_type": "quarterly",
+    "value": 0.17,
+    "unit": "USD/shares",
+    "filed": "2023-11-08",
+    "accession": "0001771515-23-000103",
+    "form": "10-Q"
+   },
+   {
+    "start": "2022-01-02",
+    "end": "2022-12-31",
+    "period_type": "annual",
+    "value": 0.65,
+    "unit": "USD/shares",
+    "filed": "2025-02-26",
+    "accession": "0001771515-25-000017",
+    "form": "10-K"
+   },
+   {
+    "start": "2023-01-01",
+    "end": "2023-04-01",
+    "period_type": "quarterly",
+    "value": 0.14,
+    "unit": "USD/shares",
+    "filed": "2024-05-08",
+    "accession": "0001771515-24-000094",
+    "form": "10-Q"
+   },
+   {
+    "start": "2023-04-02",
+    "end": "2023-07-01",
+    "period_type": "quarterly",
+    "value": 0.24,
+    "unit": "USD/shares",
+    "filed": "2024-08-07",
+    "accession": "0001771515-24-000130",
+    "form": "10-Q"
+   },
+   {
+    "start": "2023-07-02",
+    "end": "2023-09-30",
+    "period_type": "quarterly",
+    "value": 0.27,
+    "unit": "USD/shares",
+    "filed": "2024-11-06",
+    "accession": "0001771515-24-000150",
+    "form": "10-Q"
+   },
+   {
+    "start": "2023-01-01",
+    "end": "2023-12-30",
+    "period_type": "annual",
+    "value": 0.79,
+    "unit": "USD/shares",
+    "filed": "2025-02-26",
+    "accession": "0001771515-25-000017",
+    "form": "10-K"
+   },
+   {
+    "start": "2023-12-31",
+    "end": "2024-03-30",
+    "period_type": "quarterly",
+    "value": -0.01,
+    "unit": "USD/shares",
+    "filed": "2025-05-07",
+    "accession": "0001771515-25-000090",
+    "form": "10-Q"
+   },
+   {
+    "start": "2024-03-31",
+    "end": "2024-06-29",
+    "period_type": "quarterly",
+    "value": 0.14,
+    "unit": "USD/shares",
+    "filed": "2025-08-06",
+    "accession": "0001771515-25-000141",
+    "form": "10-Q"
+   },
+   {
+    "start": "2024-06-30",
+    "end": "2024-09-28",
+    "period_type": "quarterly",
+    "value": 0.24,
+    "unit": "USD/shares",
+    "filed": "2025-11-05",
+    "accession": "0001771515-25-000169",
+    "form": "10-Q"
+   },
+   {
+    "start": "2023-12-31",
+    "end": "2024-12-28",
+    "period_type": "annual",
+    "value": 0.4,
+    "unit": "USD/shares",
+    "filed": "2025-02-26",
+    "accession": "0001771515-25-000017",
+    "form": "10-K"
+   },
+   {
+    "start": "2024-12-29",
+    "end": "2025-03-29",
+    "period_type": "quarterly",
+    "value": -0.24,
+    "unit": "USD/shares",
+    "filed": "2025-05-07",
+    "accession": "0001771515-25-000090",
+    "form": "10-Q"
+   },
+   {
+    "start": "2025-03-30",
+    "end": "2025-06-28",
+    "period_type": "quarterly",
+    "value": 0.05,
+    "unit": "USD/shares",
+    "filed": "2025-08-06",
+    "accession": "0001771515-25-000141",
+    "form": "10-Q"
+   },
+   {
+    "start": "2025-06-29",
+    "end": "2025-09-27",
+    "period_type": "quarterly",
+    "value": 0.12,
+    "unit": "USD/shares",
+    "filed": "2025-11-05",
+    "accession": "0001771515-25-000169",
+    "form": "10-Q"
+   }
+  ],
+  "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding": [
+   {
+    "start": "2017-01-01",
+    "end": "2017-12-30",
+    "period_type": "annual",
+    "value": 68332000,
+    "unit": "shares",
+    "filed": "2020-03-25",
+    "accession": "0001771515-20-000005",
+    "form": "10-K"
+   },
+   {
+    "start": "2018-04-01",
+    "end": "2018-06-30",
+    "period_type": "quarterly",
+    "value": 68512000,
+    "unit": "shares",
+    "filed": "2019-08-13",
+    "accession": "0001771515-19-000005",
+    "form": "10-Q"
+   },
+   {
+    "start": "2018-07-01",
+    "end": "2018-09-29",
+    "period_type": "quarterly",
+    "value": 68521000,
+    "unit": "shares",
+    "filed": "2019-11-12",
+    "accession": "0001771515-19-000011",
+    "form": "10-Q"
+   },
+   {
+    "start": "2017-12-31",
+    "end": "2018-12-29",
+    "period_type": "annual",
+    "value": 68546000,
+    "unit": "shares",
+    "filed": "2021-03-02",
+    "accession": "0001771515-21-000009",
+    "form": "10-K"
+   },
+   {
+    "start": "2018-12-30",
+    "end": "2019-03-30",
+    "period_type": "quarterly",
+    "value": 68553000,
+    "unit": "shares",
+    "filed": "2020-05-12",
+    "accession": "0001771515-20-000011",
+    "form": "10-Q"
+   },
+   {
+    "start": "2019-03-31",
+    "end": "2019-06-29",
+    "period_type": "quarterly",
+    "value": 70475000,
+    "unit": "shares",
+    "filed": "2020-08-11",
+    "accession": "0001771515-20-000018",
+    "form": "10-Q"
+   },
+   {
+    "start": "2019-06-30",
+    "end": "2019-09-28",
+    "period_type": "quarterly",
+    "value": 93183000,
+    "unit": "shares",
+    "filed": "2020-11-10",
+    "accession": "0001771515-20-000025",
+    "form": "10-Q"
+   },
+   {
+    "start": "2018-12-30",
+    "end": "2019-12-28",
+    "period_type": "annual",
+    "value": 81863000,
+    "unit": "shares",
+    "filed": "2022-03-02",
+    "accession": "0001771515-22-000011",
+    "form": "10-K"
+   },
+   {
+    "start": "2019-12-29",
+    "end": "2020-03-28",
+    "period_type": "quarterly",
+    "value": 94869000,
+    "unit": "shares",
+    "filed": "2021-05-12",
+    "accession": "0001771515-21-000042",
+    "form": "10-Q"
+   },
+   {
+    "start": "2020-03-29",
+    "end": "2020-06-27",
+    "period_type": "quarterly",
+    "value": 98618000,
+    "unit": "shares",
+    "filed": "2021-08-11",
+    "accession": "0001771515-21-000064",
+    "form": "10-Q"
+   },
+   {
+    "start": "2020-06-28",
+    "end": "2020-09-26",
+    "period_type": "quarterly",
+    "value": 99266000,
+    "unit": "shares",
+    "filed": "2021-11-10",
+    "accession": "0001771515-21-000088",
+    "form": "10-Q"
+   },
+   {
+    "start": "2019-12-29",
+    "end": "2021-01-02",
+    "period_type": "annual",
+    "value": 98452000,
+    "unit": "shares",
+    "filed": "2023-03-01",
+    "accession": "0001771515-23-000009",
+    "form": "10-K"
+   },
+   {
+    "start": "2021-01-03",
+    "end": "2021-04-03",
+    "period_type": "quarterly",
+    "value": 99570000,
+    "unit": "shares",
+    "filed": "2022-05-11",
+    "accession": "0001771515-22-000055",
+    "form": "10-Q"
+   },
+   {
+    "start": "2021-04-04",
+    "end": "2021-07-03",
+    "period_type": "quarterly",
+    "value": 99604000,
+    "unit": "shares",
+    "filed": "2022-08-10",
+    "accession": "0001771515-22-000108",
+    "form": "10-Q"
+   },
+   {
+    "start": "2021-07-04",
+    "end": "2021-10-02",
+    "period_type": "quarterly",
+    "value": 99169000,
+    "unit": "shares",
+    "filed": "2022-11-09",
+    "accession": "0001771515-22-000151",
+    "form": "10-Q"
+   },
+   {
+    "start": "2021-01-03",
+    "end": "2022-01-01",
+    "period_type": "annual",
+    "value": 99418000,
+    "unit": "shares",
+    "filed": "2024-02-28",
+    "accession": "0001771515-24-000016",
+    "form": "10-K"
+   },
+   {
+    "start": "2022-01-02",
+    "end": "2022-04-02",
+    "period_type": "quarterly",
+    "value": 99434000,
+    "unit": "shares",
+    "filed": "2023-05-10",
+    "accession": "0001771515-23-000048",
+    "form": "10-Q"
+   },
+   {
+    "start": "2022-04-03",
+    "end": "2022-07-02",
+    "period_type": "quarterly",
+    "value": 100140000,
+    "unit": "shares",
+    "filed": "2023-08-09",
+    "accession": "0001771515-23-000087",
+    "form": "10-Q"
+   },
+   {
+    "start": "2022-07-03",
+    "end": "2022-10-01",
+    "period_type": "quarterly",
+    "value": 100485000,
+    "unit": "shares",
+    "filed": "2023-11-08",
+    "accession": "0001771515-23-000103",
+    "form": "10-Q"
+   },
+   {
+    "start": "2022-01-02",
+    "end": "2022-12-31",
+    "period_type": "annual",
+    "value": 100162000,
+    "unit": "shares",
+    "filed": "2025-02-26",
+    "accession": "0001771515-25-000017",
+    "form": "10-K"
+   },
+   {
+    "start": "2023-01-01",
+    "end": "2023-04-01",
+    "period_type": "quarterly",
+    "value": 100569000,
+    "unit": "shares",
+    "filed": "2024-05-08",
+    "accession": "0001771515-24-000094",
+    "form": "10-Q"
+   },
+   {
+    "start": "2023-04-02",
+    "end": "2023-07-01",
+    "period_type": "quarterly",
+    "value": 100639000,
+    "unit": "shares",
+    "filed": "2024-08-07",
+    "accession": "0001771515-24-000130",
+    "form": "10-Q"
+   },
+   {
+    "start": "2023-07-02",
+    "end": "2023-09-30",
+    "period_type": "quarterly",
+    "value": 100973000,
+    "unit": "shares",
+    "filed": "2024-11-06",
+    "accession": "0001771515-24-000150",
+    "form": "10-Q"
+   },
+   {
+    "start": "2023-01-01",
+    "end": "2023-12-30",
+    "period_type": "annual",
+    "value": 100831000,
+    "unit": "shares",
+    "filed": "2025-02-26",
+    "accession": "0001771515-25-000017",
+    "form": "10-K"
+   },
+   {
+    "start": "2023-12-31",
+    "end": "2024-03-30",
+    "period_type": "quarterly",
+    "value": 99520000,
+    "unit": "shares",
+    "filed": "2025-05-07",
+    "accession": "0001771515-25-000090",
+    "form": "10-Q"
+   },
+   {
+    "start": "2024-03-31",
+    "end": "2024-06-29",
+    "period_type": "quarterly",
+    "value": 100369000,
+    "unit": "shares",
+    "filed": "2025-08-06",
+    "accession": "0001771515-25-000141",
+    "form": "10-Q"
+   },
+   {
+    "start": "2024-06-30",
+    "end": "2024-09-28",
+    "period_type": "quarterly",
+    "value": 98933000,
+    "unit": "shares",
+    "filed": "2025-11-05",
+    "accession": "0001771515-25-000169",
+    "form": "10-Q"
+   },
+   {
+    "start": "2023-12-31",
+    "end": "2024-12-28",
+    "period_type": "annual",
+    "value": 99615000,
+    "unit": "shares",
+    "filed": "2025-02-26",
+    "accession": "0001771515-25-000017",
+    "form": "10-K"
+   },
+   {
+    "start": "2024-12-29",
+    "end": "2025-03-29",
+    "period_type": "quarterly",
+    "value": 97521000,
+    "unit": "shares",
+    "filed": "2025-05-07",
+    "accession": "0001771515-25-000090",
+    "form": "10-Q"
+   },
+   {
+    "start": "2025-03-30",
+    "end": "2025-06-28",
+    "period_type": "quarterly",
+    "value": 98460000,
+    "unit": "shares",
+    "filed": "2025-08-06",
+    "accession": "0001771515-25-000141",
+    "form": "10-Q"
+   },
+   {
+    "start": "2025-06-29",
+    "end": "2025-09-27",
+    "period_type": "quarterly",
+    "value": 98705000,
+    "unit": "shares",
+    "filed": "2025-11-05",
+    "accession": "0001771515-25-000169",
+    "form": "10-Q"
+   }
+  ],
+  "us-gaap:WeightedAverageNumberOfSharesOutstandingBasic": [
+   {
+    "start": "2017-01-01",
+    "end": "2017-12-30",
+    "period_type": "annual",
+    "value": 68232000,
+    "unit": "shares",
+    "filed": "2020-03-25",
+    "accession": "0001771515-20-000005",
+    "form": "10-K"
+   },
+   {
+    "start": "2018-04-01",
+    "end": "2018-06-30",
+    "period_type": "quarterly",
+    "value": 68475000,
+    "unit": "shares",
+    "filed": "2019-08-13",
+    "accession": "0001771515-19-000005",
+    "form": "10-Q"
+   },
+   {
+    "start": "2018-07-01",
+    "end": "2018-09-29",
+    "period_type": "quarterly",
+    "value": 68477000,
+    "unit": "shares",
+    "filed": "2019-11-12",
+    "accession": "0001771515-19-000011",
+    "form": "10-Q"
+   },
+   {
+    "start": "2017-12-31",
+    "end": "2018-12-29",
+    "period_type": "annual",
+    "value": 68473000,
+    "unit": "shares",
+    "filed": "2021-03-02",
+    "accession": "0001771515-21-000009",
+    "form": "10-K"
+   },
+   {
+    "start": "2018-12-30",
+    "end": "2019-03-30",
+    "period_type": "quarterly",
+    "value": 68514000,
+    "unit": "shares",
+    "filed": "2020-05-12",
+    "accession": "0001771515-20-000011",
+    "form": "10-Q"
+   },
+   {
+    "start": "2019-03-31",
+    "end": "2019-06-29",
+    "period_type": "quarterly",
+    "value": 70475000,
+    "unit": "shares",
+    "filed": "2020-08-11",
+    "accession": "0001771515-20-000018",
+    "form": "10-Q"
+   },
+   {
+    "start": "2019-06-30",
+    "end": "2019-09-28",
+    "period_type": "quarterly",
+    "value": 88345000,
+    "unit": "shares",
+    "filed": "2020-11-10",
+    "accession": "0001771515-20-000025",
+    "form": "10-Q"
+   },
+   {
+    "start": "2018-12-30",
+    "end": "2019-12-28",
+    "period_type": "annual",
+    "value": 79044000,
+    "unit": "shares",
+    "filed": "2022-03-02",
+    "accession": "0001771515-22-000011",
+    "form": "10-K"
+   },
+   {
+    "start": "2019-12-29",
+    "end": "2020-03-28",
+    "period_type": "quarterly",
+    "value": 89481000,
+    "unit": "shares",
+    "filed": "2021-05-12",
+    "accession": "0001771515-21-000042",
+    "form": "10-Q"
+   },
+   {
+    "start": "2020-03-29",
+    "end": "2020-06-27",
+    "period_type": "quarterly",
+    "value": 90800000,
+    "unit": "shares",
+    "filed": "2021-08-11",
+    "accession": "0001771515-21-000064",
+    "form": "10-Q"
+   },
+   {
+    "start": "2020-06-28",
+    "end": "2020-09-26",
+    "period_type": "quarterly",
+    "value": 92489000,
+    "unit": "shares",
+    "filed": "2021-11-10",
+    "accession": "0001771515-21-000088",
+    "form": "10-Q"
+   },
+   {
+    "start": "2019-12-29",
+    "end": "2021-01-02",
+    "period_type": "annual",
+    "value": 91818000,
+    "unit": "shares",
+    "filed": "2023-03-01",
+    "accession": "0001771515-23-000009",
+    "form": "10-K"
+   },
+   {
+    "start": "2021-01-03",
+    "end": "2021-04-03",
+    "period_type": "quarterly",
+    "value": 95195000,
+    "unit": "shares",
+    "filed": "2022-05-11",
+    "accession": "0001771515-22-000055",
+    "form": "10-Q"
+   },
+   {
+    "start": "2021-04-04",
+    "end": "2021-07-03",
+    "period_type": "quarterly",
+    "value": 95724000,
+    "unit": "shares",
+    "filed": "2022-08-10",
+    "accession": "0001771515-22-000108",
+    "form": "10-Q"
+   },
+   {
+    "start": "2021-07-04",
+    "end": "2021-10-02",
+    "period_type": "quarterly",
+    "value": 95955000,
+    "unit": "shares",
+    "filed": "2022-11-09",
+    "accession": "0001771515-22-000151",
+    "form": "10-Q"
+   },
+   {
+    "start": "2021-01-03",
+    "end": "2022-01-01",
+    "period_type": "annual",
+    "value": 95725000,
+    "unit": "shares",
+    "filed": "2024-02-28",
+    "accession": "0001771515-24-000016",
+    "form": "10-K"
+   },
+   {
+    "start": "2022-01-02",
+    "end": "2022-04-02",
+    "period_type": "quarterly",
+    "value": 96148000,
+    "unit": "shares",
+    "filed": "2023-05-10",
+    "accession": "0001771515-23-000048",
+    "form": "10-Q"
+   },
+   {
+    "start": "2022-04-03",
+    "end": "2022-07-02",
+    "period_type": "quarterly",
+    "value": 96578000,
+    "unit": "shares",
+    "filed": "2023-08-09",
+    "accession": "0001771515-23-000087",
+    "form": "10-Q"
+   },
+   {
+    "start": "2022-07-03",
+    "end": "2022-10-01",
+    "period_type": "quarterly",
+    "value": 97057000,
+    "unit": "shares",
+    "filed": "2023-11-08",
+    "accession": "0001771515-23-000103",
+    "form": "10-Q"
+   },
+   {
+    "start": "2022-01-02",
+    "end": "2022-12-31",
+    "period_type": "annual",
+    "value": 96812000,
+    "unit": "shares",
+    "filed": "2025-02-26",
+    "accession": "0001771515-25-000017",
+    "form": "10-K"
+   },
+   {
+    "start": "2023-01-01",
+    "end": "2023-04-01",
+    "period_type": "quarterly",
+    "value": 97920000,
+    "unit": "shares",
+    "filed": "2024-05-08",
+    "accession": "0001771515-24-000094",
+    "form": "10-Q"
+   },
+   {
+    "start": "2023-04-02",
+    "end": "2023-07-01",
+    "period_type": "quarterly",
+    "value": 98515000,
+    "unit": "shares",
+    "filed": "2024-08-07",
+    "accession": "0001771515-24-000130",
+    "form": "10-Q"
+   },
+   {
+    "start": "2023-07-02",
+    "end": "2023-09-30",
+    "period_type": "quarterly",
+    "value": 99108000,
+    "unit": "shares",
+    "filed": "2024-11-06",
+    "accession": "0001771515-24-000150",
+    "form": "10-Q"
+   },
+   {
+    "start": "2023-01-01",
+    "end": "2023-12-30",
+    "period_type": "annual",
+    "value": 98709000,
+    "unit": "shares",
+    "filed": "2025-02-26",
+    "accession": "0001771515-25-000017",
+    "form": "10-K"
+   },
+   {
+    "start": "2023-12-31",
+    "end": "2024-03-30",
+    "period_type": "quarterly",
+    "value": 99520000,
+    "unit": "shares",
+    "filed": "2025-05-07",
+    "accession": "0001771515-25-000090",
+    "form": "10-Q"
+   },
+   {
+    "start": "2024-03-31",
+    "end": "2024-06-29",
+    "period_type": "quarterly",
+    "value": 99542000,
+    "unit": "shares",
+    "filed": "2025-08-06",
+    "accession": "0001771515-25-000141",
+    "form": "10-Q"
+   },
+   {
+    "start": "2024-06-30",
+    "end": "2024-09-28",
+    "period_type": "quarterly",
+    "value": 98359000,
+    "unit": "shares",
+    "filed": "2025-11-05",
+    "accession": "0001771515-25-000169",
+    "form": "10-Q"
+   },
+   {
+    "start": "2023-12-31",
+    "end": "2024-12-28",
+    "period_type": "annual",
+    "value": 98707000,
+    "unit": "shares",
+    "filed": "2025-02-26",
+    "accession": "0001771515-25-000017",
+    "form": "10-K"
+   },
+   {
+    "start": "2024-12-29",
+    "end": "2025-03-29",
+    "period_type": "quarterly",
+    "value": 97521000,
+    "unit": "shares",
+    "filed": "2025-05-07",
+    "accession": "0001771515-25-000090",
+    "form": "10-Q"
+   },
+   {
+    "start": "2025-03-30",
+    "end": "2025-06-28",
+    "period_type": "quarterly",
+    "value": 98081000,
+    "unit": "shares",
+    "filed": "2025-08-06",
+    "accession": "0001771515-25-000141",
+    "form": "10-Q"
+   },
+   {
+    "start": "2025-06-29",
+    "end": "2025-09-27",
+    "period_type": "quarterly",
+    "value": 98160000,
+    "unit": "shares",
+    "filed": "2025-11-05",
+    "accession": "0001771515-25-000169",
+    "form": "10-Q"
+   }
+  ]
+ },
+ "coverage": {
+  "submissions_files_read": 1,
+  "paginated_subfiles_listed_not_cached": [],
+  "facts_namespaces_present": [
+   "dei",
+   "ecd",
+   "us-gaap"
+  ],
+  "tags_found": {
+   "dei:EntityCommonStockSharesOutstanding": 26,
+   "us-gaap:CommonStockSharesOutstanding": 24,
+   "us-gaap:EarningsPerShareBasic": 35,
+   "us-gaap:EarningsPerShareDiluted": 35,
+   "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding": 31,
+   "us-gaap:WeightedAverageNumberOfSharesOutstandingBasic": 31
+  }
+ }
+}

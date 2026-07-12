@@ -1,0 +1,2599 @@
+{
+ "spec": "specs/payload_v2.md",
+ "diagnostic_only": true,
+ "case_id": "case_21",
+ "ticker": "EXPO",
+ "cutoff_date": "2016-02-28",
+ "source_file": "cases_v2.json",
+ "eightk_items": [
+  {
+   "accession": "0001012870-97-001089",
+   "form": "8-K",
+   "filing_date": "1997-05-30",
+   "items_raw": "2,7",
+   "items": [
+    "2",
+    "7"
+   ]
+  },
+  {
+   "accession": "0001012870-97-001354",
+   "form": "8-K/A",
+   "filing_date": "1997-07-30",
+   "items_raw": "7",
+   "items": [
+    "7"
+   ]
+  },
+  {
+   "accession": "0001012870-97-001905",
+   "form": "8-K",
+   "filing_date": "1997-10-03",
+   "items_raw": "2,7",
+   "items": [
+    "2",
+    "7"
+   ]
+  },
+  {
+   "accession": "0000929624-97-001457",
+   "form": "8-K/A",
+   "filing_date": "1997-11-26",
+   "items_raw": "7",
+   "items": [
+    "7"
+   ]
+  },
+  {
+   "accession": "0001012870-03-001898",
+   "form": "8-K",
+   "filing_date": "2003-04-21",
+   "items_raw": "7,9",
+   "items": [
+    "7",
+    "9"
+   ]
+  },
+  {
+   "accession": "0001193125-03-021612",
+   "form": "8-K",
+   "filing_date": "2003-07-21",
+   "items_raw": "7,9",
+   "items": [
+    "7",
+    "9"
+   ]
+  },
+  {
+   "accession": "0001193125-03-064108",
+   "form": "8-K",
+   "filing_date": "2003-10-20",
+   "items_raw": "12",
+   "items": [
+    "12"
+   ]
+  },
+  {
+   "accession": "0001193125-04-011280",
+   "form": "8-K",
+   "filing_date": "2004-01-29",
+   "items_raw": "12,7",
+   "items": [
+    "12",
+    "7"
+   ]
+  },
+  {
+   "accession": "0001193125-04-064593",
+   "form": "8-K",
+   "filing_date": "2004-04-19",
+   "items_raw": "12,7",
+   "items": [
+    "12",
+    "7"
+   ]
+  },
+  {
+   "accession": "0001193125-04-120244",
+   "form": "8-K",
+   "filing_date": "2004-07-19",
+   "items_raw": "12,7,9",
+   "items": [
+    "12",
+    "7",
+    "9"
+   ]
+  },
+  {
+   "accession": "0001193125-04-120919",
+   "form": "8-K",
+   "filing_date": "2004-07-20",
+   "items_raw": "9",
+   "items": [
+    "9"
+   ]
+  },
+  {
+   "accession": "0001193125-04-173077",
+   "form": "8-K",
+   "filing_date": "2004-10-18",
+   "items_raw": "2.02,7.01,9.01",
+   "items": [
+    "2.02",
+    "7.01",
+    "9.01"
+   ]
+  },
+  {
+   "accession": "0001193125-05-005992",
+   "form": "8-K",
+   "filing_date": "2005-01-13",
+   "items_raw": "2.02,7.01,9.01",
+   "items": [
+    "2.02",
+    "7.01",
+    "9.01"
+   ]
+  },
+  {
+   "accession": "0001193125-05-013164",
+   "form": "8-K",
+   "filing_date": "2005-01-27",
+   "items_raw": "2.02,7.01,9.01",
+   "items": [
+    "2.02",
+    "7.01",
+    "9.01"
+   ]
+  },
+  {
+   "accession": "0001193125-05-078627",
+   "form": "8-K",
+   "filing_date": "2005-04-18",
+   "items_raw": "2.02,7.01,9.01",
+   "items": [
+    "2.02",
+    "7.01",
+    "9.01"
+   ]
+  },
+  {
+   "accession": "0001193125-05-143752",
+   "form": "8-K",
+   "filing_date": "2005-07-18",
+   "items_raw": "2.02,7.01,9.01",
+   "items": [
+    "2.02",
+    "7.01",
+    "9.01"
+   ]
+  },
+  {
+   "accession": "0001193125-05-202510",
+   "form": "8-K",
+   "filing_date": "2005-10-17",
+   "items_raw": "2.02,7.01,9.01",
+   "items": [
+    "2.02",
+    "7.01",
+    "9.01"
+   ]
+  },
+  {
+   "accession": "0001193125-06-012774",
+   "form": "8-K",
+   "filing_date": "2006-01-26",
+   "items_raw": "2.02,7.01,9.01",
+   "items": [
+    "2.02",
+    "7.01",
+    "9.01"
+   ]
+  },
+  {
+   "accession": "0001193125-06-081282",
+   "form": "8-K",
+   "filing_date": "2006-04-17",
+   "items_raw": "2.02,7.01,9.01",
+   "items": [
+    "2.02",
+    "7.01",
+    "9.01"
+   ]
+  },
+  {
+   "accession": "0001193125-06-118814",
+   "form": "8-K",
+   "filing_date": "2006-05-24",
+   "items_raw": "3.03,5.03,9.01",
+   "items": [
+    "3.03",
+    "5.03",
+    "9.01"
+   ]
+  },
+  {
+   "accession": "0001193125-06-126565",
+   "form": "8-K",
+   "filing_date": "2006-06-08",
+   "items_raw": "1.01",
+   "items": [
+    "1.01"
+   ]
+  },
+  {
+   "accession": "0001193125-06-149182",
+   "form": "8-K",
+   "filing_date": "2006-07-19",
+   "items_raw": "2.02,7.01,9.01",
+   "items": [
+    "2.02",
+    "7.01",
+    "9.01"
+   ]
+  },
+  {
+   "accession": "0001193125-06-208356",
+   "form": "8-K",
+   "filing_date": "2006-10-16",
+   "items_raw": "2.02,7.01,9.01",
+   "items": [
+    "2.02",
+    "7.01",
+    "9.01"
+   ]
+  },
+  {
+   "accession": "0001193125-07-006743",
+   "form": "8-K",
+   "filing_date": "2007-01-16",
+   "items_raw": "5.02,9.01",
+   "items": [
+    "5.02",
+    "9.01"
+   ]
+  },
+  {
+   "accession": "0001193125-07-016307",
+   "form": "8-K",
+   "filing_date": "2007-01-30",
+   "items_raw": "8.01",
+   "items": [
+    "8.01"
+   ]
+  },
+  {
+   "accession": "0001193125-07-016316",
+   "form": "8-K",
+   "filing_date": "2007-01-30",
+   "items_raw": "2.02,7.01,9.01",
+   "items": [
+    "2.02",
+    "7.01",
+    "9.01"
+   ]
+  },
+  {
+   "accession": "0001193125-07-083924",
+   "form": "8-K",
+   "filing_date": "2007-04-18",
+   "items_raw": "2.02,7.01,9.01",
+   "items": [
+    "2.02",
+    "7.01",
+    "9.01"
+   ]
+  },
+  {
+   "accession": "0001193125-07-095792",
+   "form": "8-K",
+   "filing_date": "2007-04-30",
+   "items_raw": "8.01",
+   "items": [
+    "8.01"
+   ]
+  },
+  {
+   "accession": "0001193125-07-123625",
+   "form": "8-K",
+   "filing_date": "2007-05-25",
+   "items_raw": "5.02,8.01",
+   "items": [
+    "5.02",
+    "8.01"
+   ]
+  },
+  {
+   "accession": "0001193125-07-157259",
+   "form": "8-K",
+   "filing_date": "2007-07-18",
+   "items_raw": "2.02,7.01,9.01",
+   "items": [
+    "2.02",
+    "7.01",
+    "9.01"
+   ]
+  },
+  {
+   "accession": "0001193125-07-187953",
+   "form": "8-K",
+   "filing_date": "2007-08-23",
+   "items_raw": "5.02",
+   "items": [
+    "5.02"
+   ]
+  },
+  {
+   "accession": "0001193125-07-220296",
+   "form": "8-K",
+   "filing_date": "2007-10-17",
+   "items_raw": "2.02,7.01,9.01",
+   "items": [
+    "2.02",
+    "7.01",
+    "9.01"
+   ]
+  },
+  {
+   "accession": "0001193125-07-270183",
+   "form": "8-K",
+   "filing_date": "2007-12-21",
+   "items_raw": "8.01",
+   "items": [
+    "8.01"
+   ]
+  },
+  {
+   "accession": "0001193125-08-015483",
+   "form": "8-K",
+   "filing_date": "2008-01-30",
+   "items_raw": "2.02,7.01,9.01",
+   "items": [
+    "2.02",
+    "7.01",
+    "9.01"
+   ]
+  },
+  {
+   "accession": "0001193125-08-080830",
+   "form": "8-K",
+   "filing_date": "2008-04-14",
+   "items_raw": "2.02,7.01,9.01",
+   "items": [
+    "2.02",
+    "7.01",
+    "9.01"
+   ]
+  },
+  {
+   "accession": "0001193125-08-102687",
+   "form": "8-K",
+   "filing_date": "2008-05-06",
+   "items_raw": "5.02,5.03,9.01",
+   "items": [
+    "5.02",
+    "5.03",
+    "9.01"
+   ]
+  },
+  {
+   "accession": "0001193125-08-127596",
+   "form": "8-K",
+   "filing_date": "2008-06-04",
+   "items_raw": "5.02,8.01,9.01",
+   "items": [
+    "5.02",
+    "8.01",
+    "9.01"
+   ]
+  },
+  {
+   "accession": "0001193125-08-152036",
+   "form": "8-K",
+   "filing_date": "2008-07-16",
+   "items_raw": "2.02,7.01,9.01",
+   "items": [
+    "2.02",
+    "7.01",
+    "9.01"
+   ]
+  },
+  {
+   "accession": "0001193125-08-210972",
+   "form": "8-K",
+   "filing_date": "2008-10-15",
+   "items_raw": "2.02,7.01,9.01",
+   "items": [
+    "2.02",
+    "7.01",
+    "9.01"
+   ]
+  },
+  {
+   "accession": "0001193125-08-251984",
+   "form": "8-K",
+   "filing_date": "2008-12-11",
+   "items_raw": "5.02,9.01",
+   "items": [
+    "5.02",
+    "9.01"
+   ]
+  },
+  {
+   "accession": "0001193125-09-018808",
+   "form": "8-K",
+   "filing_date": "2009-02-04",
+   "items_raw": "2.02,7.01,9.01",
+   "items": [
+    "2.02",
+    "7.01",
+    "9.01"
+   ]
+  },
+  {
+   "accession": "0001193125-09-032675",
+   "form": "8-K",
+   "filing_date": "2009-02-19",
+   "items_raw": "5.02,8.01,9.01",
+   "items": [
+    "5.02",
+    "8.01",
+    "9.01"
+   ]
+  },
+  {
+   "accession": "0001193125-09-070434",
+   "form": "8-K",
+   "filing_date": "2009-04-01",
+   "items_raw": "5.03,9.01",
+   "items": [
+    "5.03",
+    "9.01"
+   ]
+  },
+  {
+   "accession": "0001193125-09-084539",
+   "form": "8-K",
+   "filing_date": "2009-04-22",
+   "items_raw": "2.02,7.01,9.01",
+   "items": [
+    "2.02",
+    "7.01",
+    "9.01"
+   ]
+  },
+  {
+   "accession": "0001193125-09-123161",
+   "form": "8-K",
+   "filing_date": "2009-06-02",
+   "items_raw": "5.02,9.01",
+   "items": [
+    "5.02",
+    "9.01"
+   ]
+  },
+  {
+   "accession": "0001193125-09-153100",
+   "form": "8-K",
+   "filing_date": "2009-07-22",
+   "items_raw": "2.02,7.01,9.01",
+   "items": [
+    "2.02",
+    "7.01",
+    "9.01"
+   ]
+  },
+  {
+   "accession": "0001193125-09-211086",
+   "form": "8-K",
+   "filing_date": "2009-10-21",
+   "items_raw": "2.02,7.01,9.01",
+   "items": [
+    "2.02",
+    "7.01",
+    "9.01"
+   ]
+  },
+  {
+   "accession": "0001171843-10-000124",
+   "form": "8-K",
+   "filing_date": "2010-02-03",
+   "items_raw": "2.02,9.01",
+   "items": [
+    "2.02",
+    "9.01"
+   ]
+  },
+  {
+   "accession": "0001171843-10-000600",
+   "form": "8-K",
+   "filing_date": "2010-04-21",
+   "items_raw": "2.02,9.01",
+   "items": [
+    "2.02",
+    "9.01"
+   ]
+  },
+  {
+   "accession": "0001193125-10-134932",
+   "form": "8-K",
+   "filing_date": "2010-06-08",
+   "items_raw": "5.02,5.07",
+   "items": [
+    "5.02",
+    "5.07"
+   ]
+  },
+  {
+   "accession": "0001171843-10-001318",
+   "form": "8-K",
+   "filing_date": "2010-07-21",
+   "items_raw": "2.02,9.01",
+   "items": [
+    "2.02",
+    "9.01"
+   ]
+  },
+  {
+   "accession": "0001171843-10-002071",
+   "form": "8-K",
+   "filing_date": "2010-10-20",
+   "items_raw": "2.02,9.01",
+   "items": [
+    "2.02",
+    "9.01"
+   ]
+  },
+  {
+   "accession": "0001171843-11-000287",
+   "form": "8-K",
+   "filing_date": "2011-02-02",
+   "items_raw": "2.02,9.01",
+   "items": [
+    "2.02",
+    "9.01"
+   ]
+  },
+  {
+   "accession": "0001193125-11-035550",
+   "form": "8-K",
+   "filing_date": "2011-02-14",
+   "items_raw": "5.03,9.01",
+   "items": [
+    "5.03",
+    "9.01"
+   ]
+  },
+  {
+   "accession": "0001171843-11-001041",
+   "form": "8-K",
+   "filing_date": "2011-04-20",
+   "items_raw": "2.02,9.01",
+   "items": [
+    "2.02",
+    "9.01"
+   ]
+  },
+  {
+   "accession": "0001144204-11-033610",
+   "form": "8-K",
+   "filing_date": "2011-06-02",
+   "items_raw": "8.01,9.01",
+   "items": [
+    "8.01",
+    "9.01"
+   ]
+  },
+  {
+   "accession": "0001144204-11-033906",
+   "form": "8-K",
+   "filing_date": "2011-06-03",
+   "items_raw": "5.07",
+   "items": [
+    "5.07"
+   ]
+  },
+  {
+   "accession": "0001171843-11-002058",
+   "form": "8-K",
+   "filing_date": "2011-07-20",
+   "items_raw": "2.02,9.01",
+   "items": [
+    "2.02",
+    "9.01"
+   ]
+  },
+  {
+   "accession": "0001144204-11-052244",
+   "form": "8-K/A",
+   "filing_date": "2011-09-12",
+   "items_raw": "5.07",
+   "items": [
+    "5.07"
+   ]
+  },
+  {
+   "accession": "0001171843-11-003030",
+   "form": "8-K",
+   "filing_date": "2011-10-19",
+   "items_raw": "2.02,9.01",
+   "items": [
+    "2.02",
+    "9.01"
+   ]
+  },
+  {
+   "accession": "0001171843-12-000319",
+   "form": "8-K",
+   "filing_date": "2012-02-01",
+   "items_raw": "2.02,9.01",
+   "items": [
+    "2.02",
+    "9.01"
+   ]
+  },
+  {
+   "accession": "0001144204-12-008489",
+   "form": "8-K",
+   "filing_date": "2012-02-14",
+   "items_raw": "5.03,8.01,9.01",
+   "items": [
+    "5.03",
+    "8.01",
+    "9.01"
+   ]
+  },
+  {
+   "accession": "0001171843-12-001303",
+   "form": "8-K",
+   "filing_date": "2012-04-18",
+   "items_raw": "2.02,9.01",
+   "items": [
+    "2.02",
+    "9.01"
+   ]
+  },
+  {
+   "accession": "0001144204-12-033172",
+   "form": "8-K",
+   "filing_date": "2012-06-04",
+   "items_raw": "5.07",
+   "items": [
+    "5.07"
+   ]
+  },
+  {
+   "accession": "0001171843-12-002609",
+   "form": "8-K",
+   "filing_date": "2012-07-18",
+   "items_raw": "2.02,9.01",
+   "items": [
+    "2.02",
+    "9.01"
+   ]
+  },
+  {
+   "accession": "0001171843-12-003667",
+   "form": "8-K",
+   "filing_date": "2012-10-17",
+   "items_raw": "2.02,9.01",
+   "items": [
+    "2.02",
+    "9.01"
+   ]
+  },
+  {
+   "accession": "0001171843-13-000333",
+   "form": "8-K",
+   "filing_date": "2013-01-30",
+   "items_raw": "2.02,9.01",
+   "items": [
+    "2.02",
+    "9.01"
+   ]
+  },
+  {
+   "accession": "0001144204-13-009843",
+   "form": "8-K",
+   "filing_date": "2013-02-19",
+   "items_raw": "7.01,9.01",
+   "items": [
+    "7.01",
+    "9.01"
+   ]
+  },
+  {
+   "accession": "0001171843-13-001387",
+   "form": "8-K",
+   "filing_date": "2013-04-17",
+   "items_raw": "2.02,7.01,9.01",
+   "items": [
+    "2.02",
+    "7.01",
+    "9.01"
+   ]
+  },
+  {
+   "accession": "0001144204-13-032897",
+   "form": "8-K",
+   "filing_date": "2013-06-03",
+   "items_raw": "5.07",
+   "items": [
+    "5.07"
+   ]
+  },
+  {
+   "accession": "0001171843-13-002890",
+   "form": "8-K",
+   "filing_date": "2013-07-23",
+   "items_raw": "2.02,7.01,9.01",
+   "items": [
+    "2.02",
+    "7.01",
+    "9.01"
+   ]
+  },
+  {
+   "accession": "0001144204-13-050207",
+   "form": "8-K",
+   "filing_date": "2013-09-11",
+   "items_raw": "5.02",
+   "items": [
+    "5.02"
+   ]
+  },
+  {
+   "accession": "0001171843-13-004016",
+   "form": "8-K",
+   "filing_date": "2013-10-16",
+   "items_raw": "2.02,7.01,9.01",
+   "items": [
+    "2.02",
+    "7.01",
+    "9.01"
+   ]
+  },
+  {
+   "accession": "0001171843-14-000556",
+   "form": "8-K",
+   "filing_date": "2014-02-05",
+   "items_raw": "2.02,7.01,9.01",
+   "items": [
+    "2.02",
+    "7.01",
+    "9.01"
+   ]
+  },
+  {
+   "accession": "0001171843-14-001814",
+   "form": "8-K",
+   "filing_date": "2014-04-23",
+   "items_raw": "2.02,7.01,9.01",
+   "items": [
+    "2.02",
+    "7.01",
+    "9.01"
+   ]
+  },
+  {
+   "accession": "0001144204-14-031272",
+   "form": "8-K",
+   "filing_date": "2014-05-15",
+   "items_raw": "8.01",
+   "items": [
+    "8.01"
+   ]
+  },
+  {
+   "accession": "0001144204-14-034393",
+   "form": "8-K",
+   "filing_date": "2014-05-30",
+   "items_raw": "1.01,1.02,5.03,5.07,8.01,9.01",
+   "items": [
+    "1.01",
+    "1.02",
+    "5.03",
+    "5.07",
+    "8.01",
+    "9.01"
+   ]
+  },
+  {
+   "accession": "0001144204-14-035972",
+   "form": "8-K/A",
+   "filing_date": "2014-06-05",
+   "items_raw": "5.07",
+   "items": [
+    "5.07"
+   ]
+  },
+  {
+   "accession": "0001171843-14-003364",
+   "form": "8-K",
+   "filing_date": "2014-07-22",
+   "items_raw": "2.02,7.01,9.01",
+   "items": [
+    "2.02",
+    "7.01",
+    "9.01"
+   ]
+  },
+  {
+   "accession": "0001171843-14-004901",
+   "form": "8-K",
+   "filing_date": "2014-10-22",
+   "items_raw": "2.02,7.01,9.01",
+   "items": [
+    "2.02",
+    "7.01",
+    "9.01"
+   ]
+  },
+  {
+   "accession": "0001171843-15-000600",
+   "form": "8-K",
+   "filing_date": "2015-02-04",
+   "items_raw": "2.02,7.01,9.01",
+   "items": [
+    "2.02",
+    "7.01",
+    "9.01"
+   ]
+  },
+  {
+   "accession": "0001171843-15-002112",
+   "form": "8-K",
+   "filing_date": "2015-04-22",
+   "items_raw": "2.02,7.01,9.01",
+   "items": [
+    "2.02",
+    "7.01",
+    "9.01"
+   ]
+  },
+  {
+   "accession": "0001144204-15-034077",
+   "form": "8-K",
+   "filing_date": "2015-05-28",
+   "items_raw": "3.03,5.03,5.07,9.01",
+   "items": [
+    "3.03",
+    "5.03",
+    "5.07",
+    "9.01"
+   ]
+  },
+  {
+   "accession": "0001171843-15-003928",
+   "form": "8-K",
+   "filing_date": "2015-07-21",
+   "items_raw": "2.02,7.01,9.01",
+   "items": [
+    "2.02",
+    "7.01",
+    "9.01"
+   ]
+  },
+  {
+   "accession": "0001171843-15-005630",
+   "form": "8-K",
+   "filing_date": "2015-10-21",
+   "items_raw": "2.02,7.01,9.01",
+   "items": [
+    "2.02",
+    "7.01",
+    "9.01"
+   ]
+  },
+  {
+   "accession": "0001171843-16-007624",
+   "form": "8-K",
+   "filing_date": "2016-02-03",
+   "items_raw": "2.02,7.01,9.01",
+   "items": [
+    "2.02",
+    "7.01",
+    "9.01"
+   ]
+  }
+ ],
+ "share_facts": {
+  "dei:EntityCommonStockSharesOutstanding": [
+   {
+    "start": null,
+    "end": "2011-07-29",
+    "period_type": "instant",
+    "value": 13650297,
+    "unit": "shares",
+    "filed": "2011-08-05",
+    "accession": "0001144204-11-044174",
+    "form": "10-Q"
+   },
+   {
+    "start": null,
+    "end": "2011-10-28",
+    "period_type": "instant",
+    "value": 13243065,
+    "unit": "shares",
+    "filed": "2011-11-04",
+    "accession": "0001144204-11-061352",
+    "form": "10-Q"
+   },
+   {
+    "start": null,
+    "end": "2012-02-17",
+    "period_type": "instant",
+    "value": 13322962,
+    "unit": "shares",
+    "filed": "2012-02-27",
+    "accession": "0001144204-12-010942",
+    "form": "10-K"
+   },
+   {
+    "start": null,
+    "end": "2012-04-27",
+    "period_type": "instant",
+    "value": 13410825,
+    "unit": "shares",
+    "filed": "2012-05-04",
+    "accession": "0001144204-12-026185",
+    "form": "10-Q"
+   },
+   {
+    "start": null,
+    "end": "2012-07-27",
+    "period_type": "instant",
+    "value": 13180508,
+    "unit": "shares",
+    "filed": "2012-08-03",
+    "accession": "0001144204-12-042745",
+    "form": "10-Q"
+   },
+   {
+    "start": null,
+    "end": "2012-10-26",
+    "period_type": "instant",
+    "value": 13223806,
+    "unit": "shares",
+    "filed": "2012-11-05",
+    "accession": "0001144204-12-059256",
+    "form": "10-Q"
+   },
+   {
+    "start": null,
+    "end": "2013-02-15",
+    "period_type": "instant",
+    "value": 13130717,
+    "unit": "shares",
+    "filed": "2013-02-28",
+    "accession": "0001144204-13-011685",
+    "form": "10-K"
+   },
+   {
+    "start": null,
+    "end": "2013-04-26",
+    "period_type": "instant",
+    "value": 13185158,
+    "unit": "shares",
+    "filed": "2013-05-03",
+    "accession": "0001144204-13-026298",
+    "form": "10-Q"
+   },
+   {
+    "start": null,
+    "end": "2013-07-26",
+    "period_type": "instant",
+    "value": 13133089,
+    "unit": "shares",
+    "filed": "2013-08-02",
+    "accession": "0001144204-13-042802",
+    "form": "10-Q"
+   },
+   {
+    "start": null,
+    "end": "2013-10-25",
+    "period_type": "instant",
+    "value": 13103213,
+    "unit": "shares",
+    "filed": "2013-11-01",
+    "accession": "0001144204-13-058283",
+    "form": "10-Q"
+   },
+   {
+    "start": null,
+    "end": "2014-02-21",
+    "period_type": "instant",
+    "value": 13063216,
+    "unit": "shares",
+    "filed": "2014-03-03",
+    "accession": "0001144204-14-012676",
+    "form": "10-K"
+   },
+   {
+    "start": null,
+    "end": "2014-05-02",
+    "period_type": "instant",
+    "value": 13102801,
+    "unit": "shares",
+    "filed": "2014-05-09",
+    "accession": "0001144204-14-029158",
+    "form": "10-Q"
+   },
+   {
+    "start": null,
+    "end": "2014-08-01",
+    "period_type": "instant",
+    "value": 13087900,
+    "unit": "shares",
+    "filed": "2014-08-08",
+    "accession": "0001144204-14-048084",
+    "form": "10-Q"
+   },
+   {
+    "start": null,
+    "end": "2014-10-31",
+    "period_type": "instant",
+    "value": 12866600,
+    "unit": "shares",
+    "filed": "2014-11-07",
+    "accession": "0001144204-14-066089",
+    "form": "10-Q"
+   },
+   {
+    "start": null,
+    "end": "2015-02-20",
+    "period_type": "instant",
+    "value": 12870974,
+    "unit": "shares",
+    "filed": "2015-03-02",
+    "accession": "0001144204-15-012949",
+    "form": "10-K"
+   },
+   {
+    "start": null,
+    "end": "2015-05-01",
+    "period_type": "instant",
+    "value": 12990741,
+    "unit": "shares",
+    "filed": "2015-05-08",
+    "accession": "0001144204-15-028813",
+    "form": "10-Q"
+   },
+   {
+    "start": null,
+    "end": "2015-07-31",
+    "period_type": "instant",
+    "value": 25922828,
+    "unit": "shares",
+    "filed": "2015-08-07",
+    "accession": "0001144204-15-047333",
+    "form": "10-Q"
+   },
+   {
+    "start": null,
+    "end": "2015-10-30",
+    "period_type": "instant",
+    "value": 25746928,
+    "unit": "shares",
+    "filed": "2015-11-06",
+    "accession": "0001144204-15-063389",
+    "form": "10-Q"
+   },
+   {
+    "start": null,
+    "end": "2016-02-19",
+    "period_type": "instant",
+    "value": 25720598,
+    "unit": "shares",
+    "filed": "2016-02-26",
+    "accession": "0001144204-16-084673",
+    "form": "10-K"
+   }
+  ],
+  "us-gaap:EarningsPerShareBasic": [
+   {
+    "start": "2009-01-03",
+    "end": "2010-01-01",
+    "period_type": "annual",
+    "value": 1.56,
+    "unit": "USD/shares",
+    "filed": "2012-02-27",
+    "accession": "0001144204-12-010942",
+    "form": "10-K"
+   },
+   {
+    "start": "2010-04-03",
+    "end": "2010-07-02",
+    "period_type": "quarterly",
+    "value": 0.51,
+    "unit": "USD/shares",
+    "filed": "2011-08-05",
+    "accession": "0001144204-11-044174",
+    "form": "10-Q"
+   },
+   {
+    "start": "2010-07-03",
+    "end": "2010-10-01",
+    "period_type": "quarterly",
+    "value": 0.54,
+    "unit": "USD/shares",
+    "filed": "2011-11-04",
+    "accession": "0001144204-11-061352",
+    "form": "10-Q"
+   },
+   {
+    "start": "2010-01-02",
+    "end": "2010-12-31",
+    "period_type": "annual",
+    "value": 1.92,
+    "unit": "USD/shares",
+    "filed": "2013-02-28",
+    "accession": "0001144204-13-011685",
+    "form": "10-K"
+   },
+   {
+    "start": "2011-01-02",
+    "end": "2011-04-01",
+    "period_type": "quarterly",
+    "value": 0.55,
+    "unit": "USD/shares",
+    "filed": "2013-02-28",
+    "accession": "0001144204-13-011685",
+    "form": "10-K"
+   },
+   {
+    "start": "2011-04-02",
+    "end": "2011-07-01",
+    "period_type": "quarterly",
+    "value": 0.57,
+    "unit": "USD/shares",
+    "filed": "2013-02-28",
+    "accession": "0001144204-13-011685",
+    "form": "10-K"
+   },
+   {
+    "start": "2011-07-02",
+    "end": "2011-09-30",
+    "period_type": "quarterly",
+    "value": 0.63,
+    "unit": "USD/shares",
+    "filed": "2013-02-28",
+    "accession": "0001144204-13-011685",
+    "form": "10-K"
+   },
+   {
+    "start": "2011-01-01",
+    "end": "2011-12-30",
+    "period_type": "annual",
+    "value": 2.31,
+    "unit": "USD/shares",
+    "filed": "2014-03-03",
+    "accession": "0001144204-14-012676",
+    "form": "10-K"
+   },
+   {
+    "start": "2011-10-01",
+    "end": "2011-12-30",
+    "period_type": "quarterly",
+    "value": 0.56,
+    "unit": "USD/shares",
+    "filed": "2013-02-28",
+    "accession": "0001144204-13-011685",
+    "form": "10-K"
+   },
+   {
+    "start": "2011-12-31",
+    "end": "2012-03-30",
+    "period_type": "quarterly",
+    "value": 0.59,
+    "unit": "USD/shares",
+    "filed": "2014-03-03",
+    "accession": "0001144204-14-012676",
+    "form": "10-K"
+   },
+   {
+    "start": "2012-03-30",
+    "end": "2012-06-29",
+    "period_type": "quarterly",
+    "value": 0.75,
+    "unit": "USD/shares",
+    "filed": "2013-08-02",
+    "accession": "0001144204-13-042802",
+    "form": "10-Q"
+   },
+   {
+    "start": "2012-03-31",
+    "end": "2012-06-29",
+    "period_type": "quarterly",
+    "value": 0.75,
+    "unit": "USD/shares",
+    "filed": "2014-03-03",
+    "accession": "0001144204-14-012676",
+    "form": "10-K"
+   },
+   {
+    "start": "2012-04-01",
+    "end": "2012-06-29",
+    "period_type": "quarterly",
+    "value": 0.75,
+    "unit": "USD/shares",
+    "filed": "2013-02-28",
+    "accession": "0001144204-13-011685",
+    "form": "10-K"
+   },
+   {
+    "start": "2012-06-29",
+    "end": "2012-09-28",
+    "period_type": "quarterly",
+    "value": 0.75,
+    "unit": "USD/shares",
+    "filed": "2013-11-01",
+    "accession": "0001144204-13-058283",
+    "form": "10-Q"
+   },
+   {
+    "start": "2012-06-30",
+    "end": "2012-09-28",
+    "period_type": "quarterly",
+    "value": 0.75,
+    "unit": "USD/shares",
+    "filed": "2014-03-03",
+    "accession": "0001144204-14-012676",
+    "form": "10-K"
+   },
+   {
+    "start": "2012-07-01",
+    "end": "2012-09-28",
+    "period_type": "quarterly",
+    "value": 0.75,
+    "unit": "USD/shares",
+    "filed": "2013-02-28",
+    "accession": "0001144204-13-011685",
+    "form": "10-K"
+   },
+   {
+    "start": "2011-12-31",
+    "end": "2012-12-28",
+    "period_type": "annual",
+    "value": 2.7,
+    "unit": "USD/shares",
+    "filed": "2015-03-02",
+    "accession": "0001144204-15-012949",
+    "form": "10-K"
+   },
+   {
+    "start": "2012-09-29",
+    "end": "2012-12-28",
+    "period_type": "quarterly",
+    "value": 0.62,
+    "unit": "USD/shares",
+    "filed": "2014-03-03",
+    "accession": "0001144204-14-012676",
+    "form": "10-K"
+   },
+   {
+    "start": "2012-12-29",
+    "end": "2013-03-29",
+    "period_type": "quarterly",
+    "value": 0.58,
+    "unit": "USD/shares",
+    "filed": "2015-03-02",
+    "accession": "0001144204-15-012949",
+    "form": "10-K"
+   },
+   {
+    "start": "2012-12-30",
+    "end": "2013-03-29",
+    "period_type": "quarterly",
+    "value": 0.58,
+    "unit": "USD/shares",
+    "filed": "2014-03-03",
+    "accession": "0001144204-14-012676",
+    "form": "10-K"
+   },
+   {
+    "start": "2013-03-29",
+    "end": "2013-06-28",
+    "period_type": "quarterly",
+    "value": 0.8,
+    "unit": "USD/shares",
+    "filed": "2013-08-02",
+    "accession": "0001144204-13-042802",
+    "form": "10-Q"
+   },
+   {
+    "start": "2013-03-30",
+    "end": "2013-06-28",
+    "period_type": "quarterly",
+    "value": 0.8,
+    "unit": "USD/shares",
+    "filed": "2015-03-02",
+    "accession": "0001144204-15-012949",
+    "form": "10-K"
+   },
+   {
+    "start": "2013-06-28",
+    "end": "2013-09-27",
+    "period_type": "quarterly",
+    "value": 0.82,
+    "unit": "USD/shares",
+    "filed": "2013-11-01",
+    "accession": "0001144204-13-058283",
+    "form": "10-Q"
+   },
+   {
+    "start": "2013-06-29",
+    "end": "2013-09-27",
+    "period_type": "quarterly",
+    "value": 0.82,
+    "unit": "USD/shares",
+    "filed": "2015-03-02",
+    "accession": "0001144204-15-012949",
+    "form": "10-K"
+   },
+   {
+    "start": "2012-12-29",
+    "end": "2014-01-03",
+    "period_type": "annual",
+    "value": 1.42,
+    "unit": "USD/shares",
+    "filed": "2016-02-26",
+    "accession": "0001144204-16-084673",
+    "form": "10-K"
+   },
+   {
+    "start": "2013-09-28",
+    "end": "2014-01-03",
+    "period_type": "quarterly",
+    "value": 0.64,
+    "unit": "USD/shares",
+    "filed": "2015-03-02",
+    "accession": "0001144204-15-012949",
+    "form": "10-K"
+   },
+   {
+    "start": "2014-01-04",
+    "end": "2014-04-04",
+    "period_type": "quarterly",
+    "value": 0.34,
+    "unit": "USD/shares",
+    "filed": "2016-02-26",
+    "accession": "0001144204-16-084673",
+    "form": "10-K"
+   },
+   {
+    "start": "2014-01-06",
+    "end": "2014-04-04",
+    "period_type": "quarterly",
+    "value": 0.68,
+    "unit": "USD/shares",
+    "filed": "2014-05-09",
+    "accession": "0001144204-14-029158",
+    "form": "10-Q"
+   },
+   {
+    "start": "2014-04-05",
+    "end": "2014-07-04",
+    "period_type": "quarterly",
+    "value": 0.42,
+    "unit": "USD/shares",
+    "filed": "2016-02-26",
+    "accession": "0001144204-16-084673",
+    "form": "10-K"
+   },
+   {
+    "start": "2014-07-05",
+    "end": "2014-10-03",
+    "period_type": "quarterly",
+    "value": 0.41,
+    "unit": "USD/shares",
+    "filed": "2016-02-26",
+    "accession": "0001144204-16-084673",
+    "form": "10-K"
+   },
+   {
+    "start": "2014-01-04",
+    "end": "2015-01-02",
+    "period_type": "annual",
+    "value": 1.51,
+    "unit": "USD/shares",
+    "filed": "2016-02-26",
+    "accession": "0001144204-16-084673",
+    "form": "10-K"
+   },
+   {
+    "start": "2014-10-04",
+    "end": "2015-01-02",
+    "period_type": "quarterly",
+    "value": 0.35,
+    "unit": "USD/shares",
+    "filed": "2016-02-26",
+    "accession": "0001144204-16-084673",
+    "form": "10-K"
+   },
+   {
+    "start": "2015-01-03",
+    "end": "2015-04-03",
+    "period_type": "quarterly",
+    "value": 0.39,
+    "unit": "USD/shares",
+    "filed": "2016-02-26",
+    "accession": "0001144204-16-084673",
+    "form": "10-K"
+   },
+   {
+    "start": "2015-04-04",
+    "end": "2015-07-03",
+    "period_type": "quarterly",
+    "value": 0.44,
+    "unit": "USD/shares",
+    "filed": "2016-02-26",
+    "accession": "0001144204-16-084673",
+    "form": "10-K"
+   },
+   {
+    "start": "2015-07-04",
+    "end": "2015-10-02",
+    "period_type": "quarterly",
+    "value": 0.44,
+    "unit": "USD/shares",
+    "filed": "2016-02-26",
+    "accession": "0001144204-16-084673",
+    "form": "10-K"
+   },
+   {
+    "start": "2015-01-03",
+    "end": "2016-01-01",
+    "period_type": "annual",
+    "value": 1.64,
+    "unit": "USD/shares",
+    "filed": "2016-02-26",
+    "accession": "0001144204-16-084673",
+    "form": "10-K"
+   },
+   {
+    "start": "2015-10-03",
+    "end": "2016-01-01",
+    "period_type": "quarterly",
+    "value": 0.37,
+    "unit": "USD/shares",
+    "filed": "2016-02-26",
+    "accession": "0001144204-16-084673",
+    "form": "10-K"
+   }
+  ],
+  "us-gaap:EarningsPerShareDiluted": [
+   {
+    "start": "2009-01-03",
+    "end": "2010-01-01",
+    "period_type": "annual",
+    "value": 1.47,
+    "unit": "USD/shares",
+    "filed": "2012-02-27",
+    "accession": "0001144204-12-010942",
+    "form": "10-K"
+   },
+   {
+    "start": "2010-04-03",
+    "end": "2010-07-02",
+    "period_type": "quarterly",
+    "value": 0.48,
+    "unit": "USD/shares",
+    "filed": "2011-08-05",
+    "accession": "0001144204-11-044174",
+    "form": "10-Q"
+   },
+   {
+    "start": "2010-07-03",
+    "end": "2010-10-01",
+    "period_type": "quarterly",
+    "value": 0.52,
+    "unit": "USD/shares",
+    "filed": "2011-11-04",
+    "accession": "0001144204-11-061352",
+    "form": "10-Q"
+   },
+   {
+    "start": "2010-01-02",
+    "end": "2010-12-31",
+    "period_type": "annual",
+    "value": 1.83,
+    "unit": "USD/shares",
+    "filed": "2013-02-28",
+    "accession": "0001144204-13-011685",
+    "form": "10-K"
+   },
+   {
+    "start": "2011-01-02",
+    "end": "2011-04-01",
+    "period_type": "quarterly",
+    "value": 0.53,
+    "unit": "USD/shares",
+    "filed": "2013-02-28",
+    "accession": "0001144204-13-011685",
+    "form": "10-K"
+   },
+   {
+    "start": "2011-04-02",
+    "end": "2011-07-01",
+    "period_type": "quarterly",
+    "value": 0.55,
+    "unit": "USD/shares",
+    "filed": "2013-02-28",
+    "accession": "0001144204-13-011685",
+    "form": "10-K"
+   },
+   {
+    "start": "2011-07-02",
+    "end": "2011-09-30",
+    "period_type": "quarterly",
+    "value": 0.6,
+    "unit": "USD/shares",
+    "filed": "2013-02-28",
+    "accession": "0001144204-13-011685",
+    "form": "10-K"
+   },
+   {
+    "start": "2011-01-01",
+    "end": "2011-12-30",
+    "period_type": "annual",
+    "value": 2.22,
+    "unit": "USD/shares",
+    "filed": "2014-03-03",
+    "accession": "0001144204-14-012676",
+    "form": "10-K"
+   },
+   {
+    "start": "2011-10-01",
+    "end": "2011-12-30",
+    "period_type": "quarterly",
+    "value": 0.54,
+    "unit": "USD/shares",
+    "filed": "2013-02-28",
+    "accession": "0001144204-13-011685",
+    "form": "10-K"
+   },
+   {
+    "start": "2011-12-31",
+    "end": "2012-03-30",
+    "period_type": "quarterly",
+    "value": 0.57,
+    "unit": "USD/shares",
+    "filed": "2014-03-03",
+    "accession": "0001144204-14-012676",
+    "form": "10-K"
+   },
+   {
+    "start": "2012-03-30",
+    "end": "2012-06-29",
+    "period_type": "quarterly",
+    "value": 0.72,
+    "unit": "USD/shares",
+    "filed": "2013-08-02",
+    "accession": "0001144204-13-042802",
+    "form": "10-Q"
+   },
+   {
+    "start": "2012-03-31",
+    "end": "2012-06-29",
+    "period_type": "quarterly",
+    "value": 0.72,
+    "unit": "USD/shares",
+    "filed": "2014-03-03",
+    "accession": "0001144204-14-012676",
+    "form": "10-K"
+   },
+   {
+    "start": "2012-04-01",
+    "end": "2012-06-29",
+    "period_type": "quarterly",
+    "value": 0.72,
+    "unit": "USD/shares",
+    "filed": "2013-02-28",
+    "accession": "0001144204-13-011685",
+    "form": "10-K"
+   },
+   {
+    "start": "2012-06-29",
+    "end": "2012-09-28",
+    "period_type": "quarterly",
+    "value": 0.72,
+    "unit": "USD/shares",
+    "filed": "2013-11-01",
+    "accession": "0001144204-13-058283",
+    "form": "10-Q"
+   },
+   {
+    "start": "2012-06-30",
+    "end": "2012-09-28",
+    "period_type": "quarterly",
+    "value": 0.72,
+    "unit": "USD/shares",
+    "filed": "2014-03-03",
+    "accession": "0001144204-14-012676",
+    "form": "10-K"
+   },
+   {
+    "start": "2012-07-01",
+    "end": "2012-09-28",
+    "period_type": "quarterly",
+    "value": 0.72,
+    "unit": "USD/shares",
+    "filed": "2013-02-28",
+    "accession": "0001144204-13-011685",
+    "form": "10-K"
+   },
+   {
+    "start": "2011-12-31",
+    "end": "2012-12-28",
+    "period_type": "annual",
+    "value": 2.6,
+    "unit": "USD/shares",
+    "filed": "2015-03-02",
+    "accession": "0001144204-15-012949",
+    "form": "10-K"
+   },
+   {
+    "start": "2012-09-29",
+    "end": "2012-12-28",
+    "period_type": "quarterly",
+    "value": 0.6,
+    "unit": "USD/shares",
+    "filed": "2014-03-03",
+    "accession": "0001144204-14-012676",
+    "form": "10-K"
+   },
+   {
+    "start": "2012-12-29",
+    "end": "2013-03-29",
+    "period_type": "quarterly",
+    "value": 0.56,
+    "unit": "USD/shares",
+    "filed": "2015-03-02",
+    "accession": "0001144204-15-012949",
+    "form": "10-K"
+   },
+   {
+    "start": "2012-12-30",
+    "end": "2013-03-29",
+    "period_type": "quarterly",
+    "value": 0.56,
+    "unit": "USD/shares",
+    "filed": "2014-03-03",
+    "accession": "0001144204-14-012676",
+    "form": "10-K"
+   },
+   {
+    "start": "2013-03-29",
+    "end": "2013-06-28",
+    "period_type": "quarterly",
+    "value": 0.77,
+    "unit": "USD/shares",
+    "filed": "2013-08-02",
+    "accession": "0001144204-13-042802",
+    "form": "10-Q"
+   },
+   {
+    "start": "2013-03-30",
+    "end": "2013-06-28",
+    "period_type": "quarterly",
+    "value": 0.77,
+    "unit": "USD/shares",
+    "filed": "2015-03-02",
+    "accession": "0001144204-15-012949",
+    "form": "10-K"
+   },
+   {
+    "start": "2013-06-28",
+    "end": "2013-09-27",
+    "period_type": "quarterly",
+    "value": 0.79,
+    "unit": "USD/shares",
+    "filed": "2013-11-01",
+    "accession": "0001144204-13-058283",
+    "form": "10-Q"
+   },
+   {
+    "start": "2013-06-29",
+    "end": "2013-09-27",
+    "period_type": "quarterly",
+    "value": 0.79,
+    "unit": "USD/shares",
+    "filed": "2015-03-02",
+    "accession": "0001144204-15-012949",
+    "form": "10-K"
+   },
+   {
+    "start": "2012-12-29",
+    "end": "2014-01-03",
+    "period_type": "annual",
+    "value": 1.38,
+    "unit": "USD/shares",
+    "filed": "2016-02-26",
+    "accession": "0001144204-16-084673",
+    "form": "10-K"
+   },
+   {
+    "start": "2013-09-28",
+    "end": "2014-01-03",
+    "period_type": "quarterly",
+    "value": 0.63,
+    "unit": "USD/shares",
+    "filed": "2015-03-02",
+    "accession": "0001144204-15-012949",
+    "form": "10-K"
+   },
+   {
+    "start": "2014-01-04",
+    "end": "2014-04-04",
+    "period_type": "quarterly",
+    "value": 0.33,
+    "unit": "USD/shares",
+    "filed": "2016-02-26",
+    "accession": "0001144204-16-084673",
+    "form": "10-K"
+   },
+   {
+    "start": "2014-01-06",
+    "end": "2014-04-04",
+    "period_type": "quarterly",
+    "value": 0.66,
+    "unit": "USD/shares",
+    "filed": "2014-05-09",
+    "accession": "0001144204-14-029158",
+    "form": "10-Q"
+   },
+   {
+    "start": "2014-04-05",
+    "end": "2014-07-04",
+    "period_type": "quarterly",
+    "value": 0.41,
+    "unit": "USD/shares",
+    "filed": "2016-02-26",
+    "accession": "0001144204-16-084673",
+    "form": "10-K"
+   },
+   {
+    "start": "2014-07-05",
+    "end": "2014-10-03",
+    "period_type": "quarterly",
+    "value": 0.4,
+    "unit": "USD/shares",
+    "filed": "2016-02-26",
+    "accession": "0001144204-16-084673",
+    "form": "10-K"
+   },
+   {
+    "start": "2014-01-04",
+    "end": "2015-01-02",
+    "period_type": "annual",
+    "value": 1.47,
+    "unit": "USD/shares",
+    "filed": "2016-02-26",
+    "accession": "0001144204-16-084673",
+    "form": "10-K"
+   },
+   {
+    "start": "2014-10-04",
+    "end": "2015-01-02",
+    "period_type": "quarterly",
+    "value": 0.34,
+    "unit": "USD/shares",
+    "filed": "2016-02-26",
+    "accession": "0001144204-16-084673",
+    "form": "10-K"
+   },
+   {
+    "start": "2015-01-03",
+    "end": "2015-04-03",
+    "period_type": "quarterly",
+    "value": 0.38,
+    "unit": "USD/shares",
+    "filed": "2016-02-26",
+    "accession": "0001144204-16-084673",
+    "form": "10-K"
+   },
+   {
+    "start": "2015-04-04",
+    "end": "2015-07-03",
+    "period_type": "quarterly",
+    "value": 0.43,
+    "unit": "USD/shares",
+    "filed": "2016-02-26",
+    "accession": "0001144204-16-084673",
+    "form": "10-K"
+   },
+   {
+    "start": "2015-07-04",
+    "end": "2015-10-02",
+    "period_type": "quarterly",
+    "value": 0.43,
+    "unit": "USD/shares",
+    "filed": "2016-02-26",
+    "accession": "0001144204-16-084673",
+    "form": "10-K"
+   },
+   {
+    "start": "2015-01-03",
+    "end": "2016-01-01",
+    "period_type": "annual",
+    "value": 1.6,
+    "unit": "USD/shares",
+    "filed": "2016-02-26",
+    "accession": "0001144204-16-084673",
+    "form": "10-K"
+   },
+   {
+    "start": "2015-10-03",
+    "end": "2016-01-01",
+    "period_type": "quarterly",
+    "value": 0.36,
+    "unit": "USD/shares",
+    "filed": "2016-02-26",
+    "accession": "0001144204-16-084673",
+    "form": "10-K"
+   }
+  ],
+  "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding": [
+   {
+    "start": "2009-01-03",
+    "end": "2010-01-01",
+    "period_type": "annual",
+    "value": 15030000,
+    "unit": "shares",
+    "filed": "2012-02-27",
+    "accession": "0001144204-12-010942",
+    "form": "10-K"
+   },
+   {
+    "start": "2010-04-03",
+    "end": "2010-07-02",
+    "period_type": "quarterly",
+    "value": 15054000,
+    "unit": "shares",
+    "filed": "2011-08-05",
+    "accession": "0001144204-11-044174",
+    "form": "10-Q"
+   },
+   {
+    "start": "2010-07-03",
+    "end": "2010-10-01",
+    "period_type": "quarterly",
+    "value": 15053000,
+    "unit": "shares",
+    "filed": "2011-11-04",
+    "accession": "0001144204-11-061352",
+    "form": "10-Q"
+   },
+   {
+    "start": "2010-01-02",
+    "end": "2010-12-31",
+    "period_type": "annual",
+    "value": 15069000,
+    "unit": "shares",
+    "filed": "2013-02-28",
+    "accession": "0001144204-13-011685",
+    "form": "10-K"
+   },
+   {
+    "start": "2011-01-02",
+    "end": "2011-04-01",
+    "period_type": "quarterly",
+    "value": 15140000,
+    "unit": "shares",
+    "filed": "2013-02-28",
+    "accession": "0001144204-13-011685",
+    "form": "10-K"
+   },
+   {
+    "start": "2011-04-02",
+    "end": "2011-07-01",
+    "period_type": "quarterly",
+    "value": 14971000,
+    "unit": "shares",
+    "filed": "2013-02-28",
+    "accession": "0001144204-13-011685",
+    "form": "10-K"
+   },
+   {
+    "start": "2011-07-02",
+    "end": "2011-09-30",
+    "period_type": "quarterly",
+    "value": 14554000,
+    "unit": "shares",
+    "filed": "2013-02-28",
+    "accession": "0001144204-13-011685",
+    "form": "10-K"
+   },
+   {
+    "start": "2011-01-01",
+    "end": "2011-12-30",
+    "period_type": "annual",
+    "value": 14751000,
+    "unit": "shares",
+    "filed": "2014-03-03",
+    "accession": "0001144204-14-012676",
+    "form": "10-K"
+   },
+   {
+    "start": "2011-10-01",
+    "end": "2011-12-30",
+    "period_type": "quarterly",
+    "value": 14322000,
+    "unit": "shares",
+    "filed": "2013-02-28",
+    "accession": "0001144204-13-011685",
+    "form": "10-K"
+   },
+   {
+    "start": "2011-12-31",
+    "end": "2012-03-30",
+    "period_type": "quarterly",
+    "value": 14419000,
+    "unit": "shares",
+    "filed": "2014-03-03",
+    "accession": "0001144204-14-012676",
+    "form": "10-K"
+   },
+   {
+    "start": "2012-03-30",
+    "end": "2012-06-29",
+    "period_type": "quarterly",
+    "value": 14316000,
+    "unit": "shares",
+    "filed": "2013-08-02",
+    "accession": "0001144204-13-042802",
+    "form": "10-Q"
+   },
+   {
+    "start": "2012-03-31",
+    "end": "2012-06-29",
+    "period_type": "quarterly",
+    "value": 14316000,
+    "unit": "shares",
+    "filed": "2014-03-03",
+    "accession": "0001144204-14-012676",
+    "form": "10-K"
+   },
+   {
+    "start": "2012-04-01",
+    "end": "2012-06-29",
+    "period_type": "quarterly",
+    "value": 14316000,
+    "unit": "shares",
+    "filed": "2013-02-28",
+    "accession": "0001144204-13-011685",
+    "form": "10-K"
+   },
+   {
+    "start": "2012-06-29",
+    "end": "2012-09-28",
+    "period_type": "quarterly",
+    "value": 14196000,
+    "unit": "shares",
+    "filed": "2013-11-01",
+    "accession": "0001144204-13-058283",
+    "form": "10-Q"
+   },
+   {
+    "start": "2012-06-30",
+    "end": "2012-09-28",
+    "period_type": "quarterly",
+    "value": 14196000,
+    "unit": "shares",
+    "filed": "2014-03-03",
+    "accession": "0001144204-14-012676",
+    "form": "10-K"
+   },
+   {
+    "start": "2012-07-01",
+    "end": "2012-09-28",
+    "period_type": "quarterly",
+    "value": 14196000,
+    "unit": "shares",
+    "filed": "2013-02-28",
+    "accession": "0001144204-13-011685",
+    "form": "10-K"
+   },
+   {
+    "start": "2011-12-31",
+    "end": "2012-12-28",
+    "period_type": "annual",
+    "value": 14293000,
+    "unit": "shares",
+    "filed": "2015-03-02",
+    "accession": "0001144204-15-012949",
+    "form": "10-K"
+   },
+   {
+    "start": "2012-09-29",
+    "end": "2012-12-28",
+    "period_type": "quarterly",
+    "value": 14208000,
+    "unit": "shares",
+    "filed": "2014-03-03",
+    "accession": "0001144204-14-012676",
+    "form": "10-K"
+   },
+   {
+    "start": "2012-12-29",
+    "end": "2013-03-29",
+    "period_type": "quarterly",
+    "value": 14125000,
+    "unit": "shares",
+    "filed": "2015-03-02",
+    "accession": "0001144204-15-012949",
+    "form": "10-K"
+   },
+   {
+    "start": "2012-12-30",
+    "end": "2013-03-29",
+    "period_type": "quarterly",
+    "value": 14125000,
+    "unit": "shares",
+    "filed": "2014-03-03",
+    "accession": "0001144204-14-012676",
+    "form": "10-K"
+   },
+   {
+    "start": "2013-03-29",
+    "end": "2013-06-28",
+    "period_type": "quarterly",
+    "value": 14007000,
+    "unit": "shares",
+    "filed": "2013-08-02",
+    "accession": "0001144204-13-042802",
+    "form": "10-Q"
+   },
+   {
+    "start": "2013-03-30",
+    "end": "2013-06-28",
+    "period_type": "quarterly",
+    "value": 14007000,
+    "unit": "shares",
+    "filed": "2015-03-02",
+    "accession": "0001144204-15-012949",
+    "form": "10-K"
+   },
+   {
+    "start": "2013-06-28",
+    "end": "2013-09-27",
+    "period_type": "quarterly",
+    "value": 13993000,
+    "unit": "shares",
+    "filed": "2013-11-01",
+    "accession": "0001144204-13-058283",
+    "form": "10-Q"
+   },
+   {
+    "start": "2013-06-29",
+    "end": "2013-09-27",
+    "period_type": "quarterly",
+    "value": 13993000,
+    "unit": "shares",
+    "filed": "2015-03-02",
+    "accession": "0001144204-15-012949",
+    "form": "10-K"
+   },
+   {
+    "start": "2012-12-29",
+    "end": "2014-01-03",
+    "period_type": "annual",
+    "value": 28050000,
+    "unit": "shares",
+    "filed": "2016-02-26",
+    "accession": "0001144204-16-084673",
+    "form": "10-K"
+   },
+   {
+    "start": "2013-09-28",
+    "end": "2014-01-03",
+    "period_type": "quarterly",
+    "value": 13949000,
+    "unit": "shares",
+    "filed": "2015-03-02",
+    "accession": "0001144204-15-012949",
+    "form": "10-K"
+   },
+   {
+    "start": "2014-01-04",
+    "end": "2014-04-04",
+    "period_type": "quarterly",
+    "value": 27880000,
+    "unit": "shares",
+    "filed": "2016-02-26",
+    "accession": "0001144204-16-084673",
+    "form": "10-K"
+   },
+   {
+    "start": "2014-01-06",
+    "end": "2014-04-04",
+    "period_type": "quarterly",
+    "value": 13940000,
+    "unit": "shares",
+    "filed": "2014-05-09",
+    "accession": "0001144204-14-029158",
+    "form": "10-Q"
+   },
+   {
+    "start": "2014-04-05",
+    "end": "2014-07-04",
+    "period_type": "quarterly",
+    "value": 27746000,
+    "unit": "shares",
+    "filed": "2016-02-26",
+    "accession": "0001144204-16-084673",
+    "form": "10-K"
+   },
+   {
+    "start": "2014-07-05",
+    "end": "2014-10-03",
+    "period_type": "quarterly",
+    "value": 27648000,
+    "unit": "shares",
+    "filed": "2016-02-26",
+    "accession": "0001144204-16-084673",
+    "form": "10-K"
+   },
+   {
+    "start": "2014-01-04",
+    "end": "2015-01-02",
+    "period_type": "annual",
+    "value": 27666000,
+    "unit": "shares",
+    "filed": "2016-02-26",
+    "accession": "0001144204-16-084673",
+    "form": "10-K"
+   },
+   {
+    "start": "2014-10-04",
+    "end": "2015-01-02",
+    "period_type": "quarterly",
+    "value": 27318000,
+    "unit": "shares",
+    "filed": "2016-02-26",
+    "accession": "0001144204-16-084673",
+    "form": "10-K"
+   },
+   {
+    "start": "2015-01-03",
+    "end": "2015-04-03",
+    "period_type": "quarterly",
+    "value": 27390000,
+    "unit": "shares",
+    "filed": "2016-02-26",
+    "accession": "0001144204-16-084673",
+    "form": "10-K"
+   },
+   {
+    "start": "2015-04-04",
+    "end": "2015-07-03",
+    "period_type": "quarterly",
+    "value": 27368000,
+    "unit": "shares",
+    "filed": "2016-02-26",
+    "accession": "0001144204-16-084673",
+    "form": "10-K"
+   },
+   {
+    "start": "2015-07-04",
+    "end": "2015-10-02",
+    "period_type": "quarterly",
+    "value": 27268000,
+    "unit": "shares",
+    "filed": "2016-02-26",
+    "accession": "0001144204-16-084673",
+    "form": "10-K"
+   },
+   {
+    "start": "2015-01-03",
+    "end": "2016-01-01",
+    "period_type": "annual",
+    "value": 27298000,
+    "unit": "shares",
+    "filed": "2016-02-26",
+    "accession": "0001144204-16-084673",
+    "form": "10-K"
+   },
+   {
+    "start": "2015-10-03",
+    "end": "2016-01-01",
+    "period_type": "quarterly",
+    "value": 27133000,
+    "unit": "shares",
+    "filed": "2016-02-26",
+    "accession": "0001144204-16-084673",
+    "form": "10-K"
+   }
+  ],
+  "us-gaap:WeightedAverageNumberOfSharesOutstandingBasic": [
+   {
+    "start": "2009-01-03",
+    "end": "2010-01-01",
+    "period_type": "annual",
+    "value": 14186000,
+    "unit": "shares",
+    "filed": "2012-02-27",
+    "accession": "0001144204-12-010942",
+    "form": "10-K"
+   },
+   {
+    "start": "2010-04-03",
+    "end": "2010-07-02",
+    "period_type": "quarterly",
+    "value": 14377000,
+    "unit": "shares",
+    "filed": "2011-08-05",
+    "accession": "0001144204-11-044174",
+    "form": "10-Q"
+   },
+   {
+    "start": "2010-07-03",
+    "end": "2010-10-01",
+    "period_type": "quarterly",
+    "value": 14385000,
+    "unit": "shares",
+    "filed": "2011-11-04",
+    "accession": "0001144204-11-061352",
+    "form": "10-Q"
+   },
+   {
+    "start": "2010-01-02",
+    "end": "2010-12-31",
+    "period_type": "annual",
+    "value": 14354000,
+    "unit": "shares",
+    "filed": "2013-02-28",
+    "accession": "0001144204-13-011685",
+    "form": "10-K"
+   },
+   {
+    "start": "2011-01-02",
+    "end": "2011-04-01",
+    "period_type": "quarterly",
+    "value": 14532000,
+    "unit": "shares",
+    "filed": "2013-02-28",
+    "accession": "0001144204-13-011685",
+    "form": "10-K"
+   },
+   {
+    "start": "2011-04-02",
+    "end": "2011-07-01",
+    "period_type": "quarterly",
+    "value": 14402000,
+    "unit": "shares",
+    "filed": "2013-02-28",
+    "accession": "0001144204-13-011685",
+    "form": "10-K"
+   },
+   {
+    "start": "2011-07-02",
+    "end": "2011-09-30",
+    "period_type": "quarterly",
+    "value": 13975000,
+    "unit": "shares",
+    "filed": "2013-02-28",
+    "accession": "0001144204-13-011685",
+    "form": "10-K"
+   },
+   {
+    "start": "2011-01-01",
+    "end": "2011-12-30",
+    "period_type": "annual",
+    "value": 14181000,
+    "unit": "shares",
+    "filed": "2014-03-03",
+    "accession": "0001144204-14-012676",
+    "form": "10-K"
+   },
+   {
+    "start": "2011-10-01",
+    "end": "2011-12-30",
+    "period_type": "quarterly",
+    "value": 13775000,
+    "unit": "shares",
+    "filed": "2013-02-28",
+    "accession": "0001144204-13-011685",
+    "form": "10-K"
+   },
+   {
+    "start": "2011-12-31",
+    "end": "2012-03-30",
+    "period_type": "quarterly",
+    "value": 13859000,
+    "unit": "shares",
+    "filed": "2014-03-03",
+    "accession": "0001144204-14-012676",
+    "form": "10-K"
+   },
+   {
+    "start": "2012-03-30",
+    "end": "2012-06-29",
+    "period_type": "quarterly",
+    "value": 13835000,
+    "unit": "shares",
+    "filed": "2013-08-02",
+    "accession": "0001144204-13-042802",
+    "form": "10-Q"
+   },
+   {
+    "start": "2012-03-31",
+    "end": "2012-06-29",
+    "period_type": "quarterly",
+    "value": 13835000,
+    "unit": "shares",
+    "filed": "2014-03-03",
+    "accession": "0001144204-14-012676",
+    "form": "10-K"
+   },
+   {
+    "start": "2012-04-01",
+    "end": "2012-06-29",
+    "period_type": "quarterly",
+    "value": 13835000,
+    "unit": "shares",
+    "filed": "2013-02-28",
+    "accession": "0001144204-13-011685",
+    "form": "10-K"
+   },
+   {
+    "start": "2012-06-29",
+    "end": "2012-09-28",
+    "period_type": "quarterly",
+    "value": 13694000,
+    "unit": "shares",
+    "filed": "2013-11-01",
+    "accession": "0001144204-13-058283",
+    "form": "10-Q"
+   },
+   {
+    "start": "2012-06-30",
+    "end": "2012-09-28",
+    "period_type": "quarterly",
+    "value": 13694000,
+    "unit": "shares",
+    "filed": "2014-03-03",
+    "accession": "0001144204-14-012676",
+    "form": "10-K"
+   },
+   {
+    "start": "2012-07-01",
+    "end": "2012-09-28",
+    "period_type": "quarterly",
+    "value": 13694000,
+    "unit": "shares",
+    "filed": "2013-02-28",
+    "accession": "0001144204-13-011685",
+    "form": "10-K"
+   },
+   {
+    "start": "2011-12-31",
+    "end": "2012-12-28",
+    "period_type": "annual",
+    "value": 13780000,
+    "unit": "shares",
+    "filed": "2015-03-02",
+    "accession": "0001144204-15-012949",
+    "form": "10-K"
+   },
+   {
+    "start": "2012-09-29",
+    "end": "2012-12-28",
+    "period_type": "quarterly",
+    "value": 13733000,
+    "unit": "shares",
+    "filed": "2014-03-03",
+    "accession": "0001144204-14-012676",
+    "form": "10-K"
+   },
+   {
+    "start": "2012-12-29",
+    "end": "2013-03-29",
+    "period_type": "quarterly",
+    "value": 13667000,
+    "unit": "shares",
+    "filed": "2015-03-02",
+    "accession": "0001144204-15-012949",
+    "form": "10-K"
+   },
+   {
+    "start": "2012-12-30",
+    "end": "2013-03-29",
+    "period_type": "quarterly",
+    "value": 13667000,
+    "unit": "shares",
+    "filed": "2014-03-03",
+    "accession": "0001144204-14-012676",
+    "form": "10-K"
+   },
+   {
+    "start": "2013-03-29",
+    "end": "2013-06-28",
+    "period_type": "quarterly",
+    "value": 13637000,
+    "unit": "shares",
+    "filed": "2013-08-02",
+    "accession": "0001144204-13-042802",
+    "form": "10-Q"
+   },
+   {
+    "start": "2013-03-30",
+    "end": "2013-06-28",
+    "period_type": "quarterly",
+    "value": 13637000,
+    "unit": "shares",
+    "filed": "2015-03-02",
+    "accession": "0001144204-15-012949",
+    "form": "10-K"
+   },
+   {
+    "start": "2013-06-28",
+    "end": "2013-09-27",
+    "period_type": "quarterly",
+    "value": 13598000,
+    "unit": "shares",
+    "filed": "2013-11-01",
+    "accession": "0001144204-13-058283",
+    "form": "10-Q"
+   },
+   {
+    "start": "2013-06-29",
+    "end": "2013-09-27",
+    "period_type": "quarterly",
+    "value": 13598000,
+    "unit": "shares",
+    "filed": "2015-03-02",
+    "accession": "0001144204-15-012949",
+    "form": "10-K"
+   },
+   {
+    "start": "2012-12-29",
+    "end": "2014-01-03",
+    "period_type": "annual",
+    "value": 27232000,
+    "unit": "shares",
+    "filed": "2016-02-26",
+    "accession": "0001144204-16-084673",
+    "form": "10-K"
+   },
+   {
+    "start": "2013-09-28",
+    "end": "2014-01-03",
+    "period_type": "quarterly",
+    "value": 13556000,
+    "unit": "shares",
+    "filed": "2015-03-02",
+    "accession": "0001144204-15-012949",
+    "form": "10-K"
+   },
+   {
+    "start": "2014-01-04",
+    "end": "2014-04-04",
+    "period_type": "quarterly",
+    "value": 27074000,
+    "unit": "shares",
+    "filed": "2016-02-26",
+    "accession": "0001144204-16-084673",
+    "form": "10-K"
+   },
+   {
+    "start": "2014-01-06",
+    "end": "2014-04-04",
+    "period_type": "quarterly",
+    "value": 13537000,
+    "unit": "shares",
+    "filed": "2014-05-09",
+    "accession": "0001144204-14-029158",
+    "form": "10-Q"
+   },
+   {
+    "start": "2014-04-05",
+    "end": "2014-07-04",
+    "period_type": "quarterly",
+    "value": 27040000,
+    "unit": "shares",
+    "filed": "2016-02-26",
+    "accession": "0001144204-16-084673",
+    "form": "10-K"
+   },
+   {
+    "start": "2014-07-05",
+    "end": "2014-10-03",
+    "period_type": "quarterly",
+    "value": 26938000,
+    "unit": "shares",
+    "filed": "2016-02-26",
+    "accession": "0001144204-16-084673",
+    "form": "10-K"
+   },
+   {
+    "start": "2014-01-04",
+    "end": "2015-01-02",
+    "period_type": "annual",
+    "value": 26910000,
+    "unit": "shares",
+    "filed": "2016-02-26",
+    "accession": "0001144204-16-084673",
+    "form": "10-K"
+   },
+   {
+    "start": "2014-10-04",
+    "end": "2015-01-02",
+    "period_type": "quarterly",
+    "value": 26586000,
+    "unit": "shares",
+    "filed": "2016-02-26",
+    "accession": "0001144204-16-084673",
+    "form": "10-K"
+   },
+   {
+    "start": "2015-01-03",
+    "end": "2015-04-03",
+    "period_type": "quarterly",
+    "value": 26622000,
+    "unit": "shares",
+    "filed": "2016-02-26",
+    "accession": "0001144204-16-084673",
+    "form": "10-K"
+   },
+   {
+    "start": "2015-04-04",
+    "end": "2015-07-03",
+    "period_type": "quarterly",
+    "value": 26714000,
+    "unit": "shares",
+    "filed": "2016-02-26",
+    "accession": "0001144204-16-084673",
+    "form": "10-K"
+   },
+   {
+    "start": "2015-07-04",
+    "end": "2015-10-02",
+    "period_type": "quarterly",
+    "value": 26597000,
+    "unit": "shares",
+    "filed": "2016-02-26",
+    "accession": "0001144204-16-084673",
+    "form": "10-K"
+   },
+   {
+    "start": "2015-01-03",
+    "end": "2016-01-01",
+    "period_type": "annual",
+    "value": 26606000,
+    "unit": "shares",
+    "filed": "2016-02-26",
+    "accession": "0001144204-16-084673",
+    "form": "10-K"
+   },
+   {
+    "start": "2015-10-03",
+    "end": "2016-01-01",
+    "period_type": "quarterly",
+    "value": 26491000,
+    "unit": "shares",
+    "filed": "2016-02-26",
+    "accession": "0001144204-16-084673",
+    "form": "10-K"
+   }
+  ]
+ },
+ "coverage": {
+  "submissions_files_read": 2,
+  "paginated_subfiles_listed_not_cached": [],
+  "facts_namespaces_present": [
+   "dei",
+   "ecd",
+   "srt",
+   "us-gaap"
+  ],
+  "tags_found": {
+   "dei:EntityCommonStockSharesOutstanding": 19,
+   "us-gaap:EarningsPerShareBasic": 37,
+   "us-gaap:EarningsPerShareDiluted": 37,
+   "us-gaap:WeightedAverageNumberOfDilutedSharesOutstanding": 37,
+   "us-gaap:WeightedAverageNumberOfSharesOutstandingBasic": 37
+  }
+ }
+}

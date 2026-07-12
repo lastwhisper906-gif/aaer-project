@@ -141,3 +141,20 @@
   재발행** (릴리스 삭제→동일 태그·동일 노트 재생성, 웹훅 트리거; annotated
   tag·URL 불변 = 단일 동결점 유지). 실행은 소유자 계정 작업으로 대기 —
   DOI 발급 후 배지 README 반영은 세션 몫.
+
+---
+
+## Q-F01 — HUBG submissions 하위 파일 1건 미캐시 (payload-v2 coverage 구멍) — OPEN
+
+- **발견 (WS-1/D44 실측)**: `~/aaer-data/HUBG/edgar/` 본체 JSON의 `filings.files`가
+  `CIK0000940942-submissions-001.json` (1996-05-15~2007-11-12 구간)을 열거하나
+  로컬 미캐시. 세션은 fail-closed 규약(fetch 금지)에 따라 coverage에만 기록 —
+  `runs/diagnostics/payload_v2/COVERAGE.json` partial 1/82.
+- **영향 범위**: payload-v2 진단의 HUBG 8-K 전 이력 완전성만. **B3(WS-2)·라벨
+  태깅(WS-3)은 무영향** — HUBG 컷오프 2026-02-04의 최장 윈도(W8×4 = 2018년까지)가
+  2007년 이전에 도달하지 않음.
+- **옵션**: (A 기본) 소유자가 `tools/fetch_primary_sources.py` 경로로 해당 파일
+  fetch 후 `verify_manifest.py --write` + README "(N 파일)" 갱신 → payload-v2
+  재실행 · (B) 방치 (진단 계열 영향 0 문서화로 충분).
+- **세션 기본 조치**: 없음 (fetch 금지 — 계약 9).
+- **상태**: OPEN

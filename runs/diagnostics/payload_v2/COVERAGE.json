@@ -1,0 +1,17 @@
+{
+ "spec": "specs/payload_v2.md",
+ "coverage": "82/82",
+ "complete": 82,
+ "total": 82,
+ "partial_cases_subfiles_not_cached": [
+  {
+   "case_id": "case_71",
+   "ticker": "HUBG",
+   "missing_subfiles": [
+    "CIK0000940942-submissions-001.json"
+   ]
+  }
+ ],
+ "missing_cases": [],
+ "note": "partial = 본체 filings.files에 열거된 하위 파일이 로컬 미캐시 (fetch 금지 — OWNER_QUEUE 등록)"
+}
