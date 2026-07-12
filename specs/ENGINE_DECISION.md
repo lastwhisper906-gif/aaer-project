@@ -86,3 +86,30 @@
 - N(실험군 detected ~7–8)이 작아 중위 리드타임의 신뢰구간은 넓다 — verdict
   JSON에 케이스별 lead 전수 표를 동반해 독자가 재계산 가능하게 한다 (§2-4
   검증가능성).
+
+## §4b B4 결합 조항 이행 (개정 1 — D58, 2026-07-13, E2 실행 전)
+
+> specs/B4_short_interest.md §7(D55, 완화 금지 조항)이 등록한 결합을 본 판정
+> 규칙에 기계적으로 이행한다. **E2 실행 전 개정** — §5 개정 조건 충족.
+> 판정 코드(engine_verdict.py §4b 지원)는 이 개정 커밋에 후행한다.
+
+- **입력 확장**: trajectories 스냅샷에 선택적 `b4_slope_aug` (float|None) —
+  동결 `b4_score(ticker, snapshot_cutoff)`의 `score_slope_aug` (결정론, 무비용).
+  부재/전건 None 허용 (커버리지 판정으로 귀결).
+- **B4 플래그 임계 (기존 사전 등록 재사용, 신설 아님)**: `b4_slope_aug > 0` —
+  screener FUNNEL §1 rank key·프로토콜 §2와 동일 임계.
+- **비교 성립 조건 (B4 스펙 §7 문면 그대로)**: (i) 실험군 B4 커버리지 ≥ 70%
+  (케이스가 커버 = ≥1 스냅샷에서 b4_slope_aug 비-None) AND (ii) 동일 산식의
+  LLM 성능이 같은 데이터에 존재 (E2 궤적 자체가 이를 공급).
+- **결합 규칙 (순서: §4 기본 판정 후 적용, 전역 완전)**:
+  - 비교 불성립 → 기본 판정 그대로, verdict JSON에 `b4_comparison.valid=false`
+    + 사유 기록.
+  - 비교 성립 AND `median_lead_llm ≤ median_lead_b4` AND `auc_llm ≤ auc_b4`
+    (둘 다, 경계 포함 — "성능 ≤"의 기계 번역) → **LLM ≤ B4 = E2 평결과 동일
+    가중치**: 기본 판정이 (a)였다면 **(b) 규칙 엔진으로 강등**
+    (`b_subcase="b4_dominated"`), (b)/(c)는 불변 (이미 stage-2 없음).
+  - 비교 성립 AND LLM이 어느 한 축에서라도 우위 → 기본 판정 그대로,
+    비교 전량 기록.
+- **정직 조항**: B4 리드타임·AUC는 커버 케이스 부분집합에서 계산 — LLM 값도
+  **같은 부분집합으로 재계산해 짝지어 비교**한다 (커버리지 편향 차단). 전체
+  실험군 LLM 값과의 차이는 verdict JSON에 병기.
