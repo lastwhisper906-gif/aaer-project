@@ -31,7 +31,20 @@ SI_DATA_DIR = DATA_DIR / "short_interest"
 SEED_B4 = 20260713  # 스펙 §5 신규 선언 (B3 20260712와 별도)
 SPEC = "specs/B4_short_interest.md"
 SPEC_COMMIT = "4753824"
-SPEC_AMENDMENTS = [("§13 분모 우선순위 사슬", "D56 (원번호 D53)", "7994e2d")]  # 재실행 전 동결
+SPEC_AMENDMENTS = [("§13 분모 우선순위 사슬", "D56 (원번호 D53)", "7994e2d"),
+                   ("§14 공표일 실측 대체", "D77", "7a12bb8")]  # 재실행 전 동결
+
+DISSEM_JSON = REPO / "data" / "finra_dissemination" / "dissemination_dates.json"
+
+
+def _dissemination_map() -> dict[str, str]:
+    """§14 실측 공표일 매핑 — 파일 부재 = 즉시 예외 (D77 후 필수 구성 요소)."""
+    data = json.loads(DISSEM_JSON.read_text(encoding="utf-8"))
+    return {k: v["publication"]
+            for k, v in data["settlement_to_publication"].items()}
+
+
+DISSEMINATION_MAP = _dissemination_map()
 COVERAGE_HEADLINE_FLOOR = 0.70  # 스펙 §6: 미달 tier는 서술 전용
 
 FROZEN_LLM_AUC = {"wave1": 0.8239, "wave2": 0.829, "holdout": None}  # 재계산 금지
@@ -41,15 +54,24 @@ OUT_JSON = REPO / "analysis" / "results_b4.json"
 OUT_MD = REPO / "analysis" / "B4_REPORT.md"
 
 
+_MAP_DEFAULT = object()  # 센티널 — None(=D66 규칙 명시 요청)과 기본값 구분
+
+
 def b4_score(ticker: str, cutoff: datetime.date,
-             data_dir: Path = SI_DATA_DIR, facts_dir: Path = DATA_DIR) -> dict:
+             data_dir: Path = SI_DATA_DIR, facts_dir: Path = DATA_DIR,
+             dissemination_map=_MAP_DEFAULT) -> dict:
     """스펙 §8 E2 통합 계약 — b3_score와 동형의 import 가능한 순수 함수.
-    사용 가능 보고서/분모 없음 = None 점수 + 플래그 (E2 루프 보존)."""
+    사용 가능 보고서/분모 없음 = None 점수 + 플래그 (E2 루프 보존).
+    dissemination_map: 기본 = §14 실측 매핑(D77). None을 명시하면 §2 LAG=14
+    규칙으로 계산 (E2 후처리 어댑터의 D66 관할 — §14 관할 명시 조항)."""
+    if dissemination_map is _MAP_DEFAULT:
+        dissemination_map = DISSEMINATION_MAP
     try:
         share_facts, _ = extract_share_facts(ticker, cutoff, facts_dir)
     except PayloadV2Error:
         share_facts = {}  # 분모 소스 부재 → no_shares_denominator 플래그로 귀결
-    return si_core.b4_from_facts(ticker, cutoff, data_dir, share_facts)
+    return si_core.b4_from_facts(ticker, cutoff, data_dir, share_facts,
+                                 dissemination_map=dissemination_map)
 
 
 def tier_stats_b4(treat: list[float], ctrl: list[float]) -> dict:
@@ -82,6 +104,10 @@ def main() -> int:
            "n_perm": stats.N_PERM, "n_boot": stats.N_BOOT,
            "primary_score": "score_slope_aug",
            "lag_days": si_core.LAG_DAYS, "data_floor": str(si_core.DATA_FLOOR),
+           "dissemination": {  # §14 (D77) — 실측 공표일 대체, 미커버만 LAG 폴백
+               "source": str(DISSEM_JSON.relative_to(REPO)),
+               "rows": len(DISSEMINATION_MAP),
+               "fallback": f"t+{si_core.LAG_DAYS}d (매핑 미커버 결제일만)"},
            "frozen_llm_auc": FROZEN_LLM_AUC, "frozen_baseline_auc": FROZEN_B_AUC,
            "tiers": {}, "interpretation": None}
 
@@ -152,7 +178,8 @@ def report_md(out: dict, b3: dict | None) -> str:
          + "".join(f" · 개정: {name} — {dnum}, 커밋 {sha}"
                    for name, dnum, sha in SPEC_AMENDMENTS),
          f"- 데이터: FINRA Consolidated Short Interest, 하한 {out['data_floor']}, "
-         f"PIT LAG {out['lag_days']}일",
+         f"PIT 공표일 실측 {out['dissemination']['rows']}행 (§14/D77, 지연 9~12일) "
+         f"+ LAG {out['lag_days']}일 폴백(미커버만)",
          f"- 시드 {out['seed']} · perm {out['n_perm']:,} · boot {out['n_boot']:,} · "
          "1차 점수 = slope-augmented", "",
          "> 본 결과는 Claude 기반 단일 파이프라인의 보조 기준선 문서에 한정된다"

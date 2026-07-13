@@ -197,7 +197,10 @@ def build_trajectories(manifest: dict, runs_dir: Path = RUNS) -> dict:
                                   .read_text(encoding="utf-8"))["base_cutoff"]
             b3s0 = b3_compute.b3_score(row["ticker"],
                                        datetime.date.fromisoformat(base_cut), 730)
-            b4s0 = b4m.b4_score(row["ticker"], datetime.date.fromisoformat(base_cut))
+            # §14 관할 명시 (D77): E2 궤적의 b4는 D66 규칙(LAG=14)으로 동결 —
+            # 사이드카(s1+)와 규칙 일관성 유지를 위해 실측 매핑을 명시적 비적용
+            b4s0 = b4m.b4_score(row["ticker"], datetime.date.fromisoformat(base_cut),
+                                dissemination_map=None)
             cases[cid] = {"case_id": cid, "ticker": row["ticker"],
                           "group": row["group"], "_base_cutoff": base_cut,
                           "snapshots": [{

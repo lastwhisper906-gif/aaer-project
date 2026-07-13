@@ -49,3 +49,29 @@ def test_precision_at_k_arithmetic_and_tiebreak():
     # 동률(2.0)은 case_id 사전순 → c2가 c3보다 앞 (중립 결정론)
     assert pk["top_k_case_ids"] == ["c1", "c2"]
     assert pk["hits"] == 1 and pk["precision"] == 0.5
+
+
+def test_dissemination_map_plumbing(monkeypatch):
+    """§14 (D77): b4_score 기본 = 실측 매핑 전달, None 명시 = LAG 규칙(D66 관할)."""
+    import datetime
+    import b4_short_interest as b4m
+    import short_interest as si_core
+    seen = []
+    monkeypatch.setattr(si_core, "b4_from_facts",
+                        lambda t, c, d, f, dissemination_map=None:
+                        seen.append(dissemination_map) or {"flags": {}})
+    monkeypatch.setattr(b4m, "extract_share_facts", lambda *a: ({}, None))
+    b4m.b4_score("TK", datetime.date(2020, 1, 1))
+    b4m.b4_score("TK", datetime.date(2020, 1, 1), dissemination_map=None)
+    assert seen[0] is b4m.DISSEMINATION_MAP and len(seen[0]) == 223
+    assert seen[1] is None
+
+
+def test_dissemination_map_covers_archive():
+    """§14: 현 SI 아카이브 결제일 전수가 매핑에 존재 (D72 검증 4의 소비자측 재확인)."""
+    from pathlib import Path
+    import b4_short_interest as b4m
+    missing = [p.stem[4:] for p in sorted(
+        (Path.home() / "aaer-data" / "short_interest").glob("shrt*.csv"))
+        if f"{p.stem[4:8]}-{p.stem[8:10]}-{p.stem[10:12]}" not in b4m.DISSEMINATION_MAP]
+    assert missing == []
