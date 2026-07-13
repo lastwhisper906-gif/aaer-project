@@ -1,0 +1,317 @@
+{
+  "case_id": "case_60",
+  "run_id": "original-case_60-r1",
+  "model": "claude-opus-4-8",
+  "pipeline_version": "34c08f13d424ef5136f88395c132c56a396f6294",
+  "run_timestamp": "2026-07-13T04:02:34.229031+00:00",
+  "documents_used": [
+    {
+      "accession_no": "0001140361-11-039734",
+      "form_type": "10-Q",
+      "filing_date": "2011-08-04"
+    },
+    {
+      "accession_no": "0001140361-11-053502",
+      "form_type": "10-Q",
+      "filing_date": "2011-11-14"
+    },
+    {
+      "accession_no": "0001140361-12-017997",
+      "form_type": "10-K",
+      "filing_date": "2012-03-29"
+    },
+    {
+      "accession_no": "0001140361-12-024988",
+      "form_type": "10-Q",
+      "filing_date": "2012-05-14"
+    },
+    {
+      "accession_no": "0001140361-12-036885",
+      "form_type": "10-Q",
+      "filing_date": "2012-08-14"
+    },
+    {
+      "accession_no": "0001140361-12-046891",
+      "form_type": "10-Q",
+      "filing_date": "2012-11-13"
+    },
+    {
+      "accession_no": "0001140361-13-012765",
+      "form_type": "10-K",
+      "filing_date": "2013-03-15"
+    },
+    {
+      "accession_no": "0001140361-13-019946",
+      "form_type": "10-Q",
+      "filing_date": "2013-05-10"
+    },
+    {
+      "accession_no": "0001376339-13-000006",
+      "form_type": "10-Q",
+      "filing_date": "2013-08-08"
+    },
+    {
+      "accession_no": "0001376339-13-000010",
+      "form_type": "10-Q",
+      "filing_date": "2013-11-08"
+    },
+    {
+      "accession_no": "0001376339-14-000005",
+      "form_type": "10-K",
+      "filing_date": "2014-03-04"
+    },
+    {
+      "accession_no": "0001376339-14-000015",
+      "form_type": "10-Q",
+      "filing_date": "2014-05-12"
+    },
+    {
+      "accession_no": "0001376339-14-000032",
+      "form_type": "10-Q",
+      "filing_date": "2014-08-11"
+    },
+    {
+      "accession_no": "0001376339-14-000043",
+      "form_type": "10-Q",
+      "filing_date": "2014-11-10"
+    },
+    {
+      "accession_no": "0001376339-15-000040",
+      "form_type": "10-K",
+      "filing_date": "2015-03-13"
+    },
+    {
+      "accession_no": "0001376339-15-000054",
+      "form_type": "10-Q",
+      "filing_date": "2015-05-01"
+    },
+    {
+      "accession_no": "0001376339-15-000084",
+      "form_type": "10-Q",
+      "filing_date": "2015-08-07"
+    },
+    {
+      "accession_no": "0001376339-15-000100",
+      "form_type": "10-Q",
+      "filing_date": "2015-11-06"
+    },
+    {
+      "accession_no": "0001376339-16-000138",
+      "form_type": "10-K",
+      "filing_date": "2016-02-29"
+    },
+    {
+      "accession_no": "0001376339-16-000160",
+      "form_type": "10-Q",
+      "filing_date": "2016-05-10"
+    },
+    {
+      "accession_no": "0001376339-16-000203",
+      "form_type": "10-Q",
+      "filing_date": "2016-08-02"
+    },
+    {
+      "accession_no": "0001376339-16-000213",
+      "form_type": "10-Q",
+      "filing_date": "2016-11-08"
+    }
+  ],
+  "checklist": [
+    {
+      "item_id": "CL1",
+      "question": "Did receivables grow materially faster than revenue across consecutive periods?",
+      "finding": "flag",
+      "confidence": "high",
+      "evidence": [
+        {
+          "quote": "Accounts receivable roughly doubled from 2014 to 2015 (AccountsReceivableNetCurrent=26,672,000 at 2014-12-31 to 53,755,000 at 2015-12-31, +102%) while annual revenue grew only ~58% (SalesRevenueGoodsNet=118,223,000 in 2014 to 187,296,000 in 2015).",
+          "source_accession_no": "0001376339-16-000138",
+          "location": "10-K balance sheet / income statement"
+        },
+        {
+          "quote": "AR continued to outpace sales into 2016: AccountsReceivableNetCurrent=63,427,000 (2016-09-30) versus quarterly SalesRevenueGoodsNet=64,429,000 (2016 Q3), implying receivables of roughly a full quarter of sales (DSO ~90 days) up from ~73 days in 2012 (AR=7,653,561 vs Q4-2012 rev=10,509,000).",
+          "source_accession_no": "0001376339-16-000213",
+          "location": "10-Q balance sheet"
+        }
+      ]
+    },
+    {
+      "item_id": "CL2",
+      "question": "Did non-current 'soft' assets grow materially faster than the business overall?",
+      "finding": "no_flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "Goodwill was flat at 4,040,000 through 2015-12-31 then stepped to 30,730,000 (2016-03-31), and IntangibleAssetsNetExcludingGoodwill rose from 10,763,000 (2015-12-31) to 33,710,000 (2016-03-31); the step change is a single-quarter acquisition-driven jump rather than gradual organic capitalization outpacing the business.",
+          "source_accession_no": "0001376339-16-000160",
+          "location": "10-Q balance sheet"
+        },
+        {
+          "quote": "OtherAssetsNoncurrent remained trivial (26,000 at 2015-09-30), showing no build-up of capitalized soft costs.",
+          "source_accession_no": "0001376339-15-000100",
+          "location": "10-Q balance sheet"
+        }
+      ]
+    },
+    {
+      "item_id": "CL3",
+      "question": "Is there a persistent divergence between net income and operating cash flow?",
+      "finding": "flag",
+      "confidence": "high",
+      "evidence": [
+        {
+          "quote": "In 2015 net income substantially exceeded operating cash flow: NetIncomeLoss=29,446,000 (2015) versus NetCashProvidedByUsedInOperatingActivities=18,807,000 (2015), a ~10.6M gap consistent with earnings tied up in receivables.",
+          "source_accession_no": "0001376339-16-000138",
+          "location": "10-K cash flow statement"
+        },
+        {
+          "quote": "In Q1 2016 the company reported positive earnings but negative operating cash flow: NetIncomeLoss=1,197,000 (2016 Q1) versus NetCashProvidedByUsedInOperatingActivities=-977,000 (2016 Q1).",
+          "source_accession_no": "0001376339-16-000160",
+          "location": "10-Q cash flow statement"
+        }
+      ]
+    },
+    {
+      "item_id": "CL4",
+      "question": "Do inventory levels or gross margins show trends inconsistent with revenue?",
+      "finding": "no_flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "Gross margins remained stable and high (GrossProfit=167,094,000 on SalesRevenueGoodsNet=187,296,000 in 2015 = ~89%), consistent with a high-margin tissue business.",
+          "source_accession_no": "0001376339-16-000138",
+          "location": "10-K income statement"
+        },
+        {
+          "quote": "Inventory rose from InventoryNet=7,460,000 (2015-12-31) to 17,967,000 (2016-03-31), but this coincides with the same-quarter acquisition step-up in goodwill/intangibles rather than a divergence from sales.",
+          "source_accession_no": "0001376339-16-000160",
+          "location": "10-Q balance sheet"
+        }
+      ]
+    },
+    {
+      "item_id": "CL5",
+      "question": "Is the earnings trajectory unusually smooth relative to the volatility of revenue and cash flow?",
+      "finding": "no_flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "Revenue rose in a remarkably smooth, monotonic sequence (SalesRevenueGoodsNet quarterly 40,767,000 / 45,679,000 / 49,015,000 / 51,835,000 across 2015), but reported earnings were volatile, not smooth: NetIncomeLoss spiked to 13,378,000 in 2015 Q4 then fell to 1,197,000 (2016 Q1) and 1,975,000 (2016 Q2).",
+          "source_accession_no": "0001376339-16-000160",
+          "location": "10-Q income statement"
+        }
+      ]
+    },
+    {
+      "item_id": "CL6",
+      "question": "Did liability, allowance, or reserve balances decline (or fail to grow) despite growing business activity?",
+      "finding": "insufficient_data",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "Receivables are presented net (AccountsReceivableNetCurrent) with no separate allowance-for-doubtful-accounts or sales-returns reserve balance disclosed in the provided data, so reserve adequacy relative to the growing AR base cannot be directly assessed.",
+          "source_accession_no": "0001376339-16-000213",
+          "location": "10-Q balance sheet"
+        },
+        {
+          "quote": "AccruedLiabilitiesCurrent generally grew with the business (2,504,000 at 2014-12-31 to 6,664,000 at 2016-09-30), providing no clear evidence of a declining reserve.",
+          "source_accession_no": "0001376339-16-000213",
+          "location": "10-Q balance sheet"
+        }
+      ]
+    },
+    {
+      "item_id": "CL7",
+      "question": "Does the filing chronology show irregularities (late filings/NT forms, amendments, unusual 8-K frequency)?",
+      "finding": "flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "Multiple SEC staff correspondence items appear immediately before the cutoff: UPLOAD 2016-10-31, CORRESP 2016-11-30, and UPLOAD 2016-12-06, indicating an active SEC comment/review process on recent filings.",
+          "source_accession_no": "n/a",
+          "location": "filing_chronology 2016-10 to 2016-12"
+        },
+        {
+          "quote": "History shows repeated amendments (10-K/A on 2008-07-29, 2008-09-30, 2011-05-02, 2012-04-27, 2012-06-21, 2014-04-30) and a prior late filing (NT 10-Q 2009-02-18), together with a high frequency of 8-K filings.",
+          "source_accession_no": "n/a",
+          "location": "filing_chronology"
+        }
+      ]
+    },
+    {
+      "item_id": "CL8",
+      "question": "Is the provided data sufficient in coverage and length for the above assessments?",
+      "finding": "no_flag",
+      "confidence": "high",
+      "evidence": [
+        {
+          "quote": "The dataset spans 2010-2016 with quarterly and annual granularity across revenue, receivables, cash flow, inventory, margins, balance-sheet and a full filing chronology, sufficient for trend and cross-check analysis (e.g., SalesRevenueGoodsNet and AccountsReceivableNetCurrent series through 2016-09-30).",
+          "source_accession_no": "0001376339-16-000213",
+          "location": "financial_series_point_in_time"
+        }
+      ]
+    }
+  ],
+  "misstatement_probability": 70,
+  "mechanism_hypotheses": [
+    {
+      "affected_line_items": [
+        "SalesRevenueGoodsNet",
+        "AccountsReceivableNetCurrent",
+        "NetIncomeLoss"
+      ],
+      "direction": "overstated",
+      "accounting_treatment": "Premature/aggressive revenue recognition (e.g., channel-stuffing / bill-and-hold or shipping ahead of demand to distributors) inflates recorded sales and net income while the offsetting benefit accumulates in receivables rather than cash. Evidenced by AR growing ~2x versus ~58% revenue growth and DSO rising toward ~90-105 days.",
+      "rationale_evidence": [
+        {
+          "quote": "AccountsReceivableNetCurrent=53,755,000 (2015-12-31) versus 26,672,000 (2014-12-31), +102%, against SalesRevenueGoodsNet=187,296,000 (2015) versus 118,223,000 (2014), +58%.",
+          "source_accession_no": "0001376339-16-000138",
+          "location": "10-K balance sheet / income statement"
+        },
+        {
+          "quote": "AccountsReceivableNetCurrent=63,427,000 (2016-09-30) is nearly equal to a full quarter of sales SalesRevenueGoodsNet=64,429,000 (2016 Q3).",
+          "source_accession_no": "0001376339-16-000213",
+          "location": "10-Q"
+        }
+      ]
+    },
+    {
+      "affected_line_items": [
+        "NetCashProvidedByUsedInOperatingActivities",
+        "NetIncomeLoss"
+      ],
+      "direction": "overstated",
+      "accounting_treatment": "Earnings quality deterioration: reported net income exceeds cash generation because revenue is booked but not collected, so accruals (receivables) drive the gap. Overstated income relative to underlying cash.",
+      "rationale_evidence": [
+        {
+          "quote": "NetIncomeLoss=29,446,000 (2015) exceeded NetCashProvidedByUsedInOperatingActivities=18,807,000 (2015); Q1 2016 NetIncomeLoss=1,197,000 while operating cash flow was -977,000.",
+          "source_accession_no": "0001376339-16-000160",
+          "location": "10-K/10-Q cash flow statements"
+        }
+      ]
+    },
+    {
+      "affected_line_items": [
+        "AccountsReceivableNetCurrent",
+        "SellingGeneralAndAdministrativeExpense"
+      ],
+      "direction": "understated",
+      "accounting_treatment": "Under-reserving: allowances for doubtful accounts and/or sales-returns reserves may be understated relative to a rapidly growing and slower-collecting receivable base, keeping net AR and income higher than warranted (reserve detail not separately disclosed, so directional inference only).",
+      "rationale_evidence": [
+        {
+          "quote": "Receivables are reported net with no separate allowance/returns reserve disclosed while AR grew from 26,672,000 (2014-12-31) to 63,427,000 (2016-09-30).",
+          "source_accession_no": "0001376339-16-000213",
+          "location": "10-Q balance sheet"
+        }
+      ]
+    }
+  ],
+  "overall": {
+    "risk_tier": "elevated",
+    "top_signals": [
+      "Accounts receivable grew ~102% in 2015 versus ~58% revenue growth, with DSO rising toward ~90-105 days (CL1)",
+      "Net income exceeded operating cash flow in 2015 (29.4M vs 18.8M) and Q1 2016 showed positive NI with negative operating cash flow (CL3)",
+      "Active SEC correspondence (UPLOAD/CORRESP) in Oct-Dec 2016 plus a history of repeated 10-K/A amendments (CL7)"
+    ]
+  }
+}
