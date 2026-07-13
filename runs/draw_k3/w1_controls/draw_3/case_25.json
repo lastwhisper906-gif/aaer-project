@@ -1,0 +1,420 @@
+{
+  "case_id": "case_25",
+  "run_id": "original-case_25-r1",
+  "model": "claude-sonnet-5",
+  "pipeline_version": "2d39058d057a679a93d4e514d8bebf79ddc9ca86",
+  "run_timestamp": "2026-07-13T07:27:59.097402+00:00",
+  "documents_used": [
+    {
+      "accession_no": "0001144204-09-046684",
+      "form_type": "10-Q/A",
+      "filing_date": "2009-09-01"
+    },
+    {
+      "accession_no": "0001144204-09-056412",
+      "form_type": "10-Q",
+      "filing_date": "2009-11-04"
+    },
+    {
+      "accession_no": "0001144204-10-009642",
+      "form_type": "10-K",
+      "filing_date": "2010-02-24"
+    },
+    {
+      "accession_no": "0001144204-10-024521",
+      "form_type": "10-Q",
+      "filing_date": "2010-05-05"
+    },
+    {
+      "accession_no": "0001144204-10-041076",
+      "form_type": "10-Q",
+      "filing_date": "2010-08-04"
+    },
+    {
+      "accession_no": "0001144204-10-057166",
+      "form_type": "10-Q",
+      "filing_date": "2010-11-03"
+    },
+    {
+      "accession_no": "0001144204-11-010358",
+      "form_type": "10-K",
+      "filing_date": "2011-02-23"
+    },
+    {
+      "accession_no": "0001144204-11-025965",
+      "form_type": "10-Q",
+      "filing_date": "2011-05-04"
+    },
+    {
+      "accession_no": "0001144204-11-050441",
+      "form_type": "10-Q/A",
+      "filing_date": "2011-08-30"
+    },
+    {
+      "accession_no": "0001144204-11-060744",
+      "form_type": "10-Q",
+      "filing_date": "2011-11-02"
+    },
+    {
+      "accession_no": "0001144204-12-012007",
+      "form_type": "10-K",
+      "filing_date": "2012-02-29"
+    },
+    {
+      "accession_no": "0001144204-12-027190",
+      "form_type": "10-Q",
+      "filing_date": "2012-05-09"
+    },
+    {
+      "accession_no": "0001144204-12-043539",
+      "form_type": "10-Q",
+      "filing_date": "2012-08-08"
+    },
+    {
+      "accession_no": "0001144204-12-059889",
+      "form_type": "10-Q",
+      "filing_date": "2012-11-07"
+    },
+    {
+      "accession_no": "0001144204-13-011527",
+      "form_type": "10-K",
+      "filing_date": "2013-02-27"
+    },
+    {
+      "accession_no": "0001144204-13-026963",
+      "form_type": "10-Q",
+      "filing_date": "2013-05-08"
+    }
+  ],
+  "checklist": [
+    {
+      "item_id": "CL1",
+      "question": "Did receivables grow materially faster than revenue across consecutive periods?",
+      "finding": "no_flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "AccountsReceivableNetCurrent=874110000 (2009-12-26)",
+          "source_accession_no": "0001144204-11-010358",
+          "location": "10-K FY2009 balance sheet"
+        },
+        {
+          "quote": "AccountsReceivableNetCurrent=607450000 (2011-12-31)",
+          "source_accession_no": "0001144204-13-011527",
+          "location": "10-K FY2011 balance sheet"
+        },
+        {
+          "quote": "SalesRevenueNet=2946440000 (FY2009, 2008-12-28 to 2009-12-26)",
+          "source_accession_no": "0001144204-12-012007",
+          "location": "10-K FY2010 income statement (prior year)"
+        },
+        {
+          "quote": "SalesRevenueNet=2758569000 (FY2011, 2010-12-26 to 2011-12-31)",
+          "source_accession_no": "0001144204-13-011527",
+          "location": "10-K FY2011 income statement"
+        }
+      ]
+    },
+    {
+      "item_id": "CL2",
+      "question": "Did non-current 'soft' assets (intangibles, other assets, capitalized items) grow materially faster than the business overall?",
+      "finding": "flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "Goodwill=136548000 (2010-12-25)",
+          "source_accession_no": "0001144204-13-011527",
+          "location": "10-K FY2011 balance sheet, prior year column"
+        },
+        {
+          "quote": "Goodwill=179475000 (2011-12-31)",
+          "source_accession_no": "0001144204-13-011527",
+          "location": "10-K FY2011 balance sheet"
+        },
+        {
+          "quote": "Assets=3988688000 (2010-12-25)",
+          "source_accession_no": "0001144204-12-012007",
+          "location": "10-K FY2011 balance sheet, prior year column"
+        },
+        {
+          "quote": "Assets=4471338000 (2011-12-31)",
+          "source_accession_no": "0001144204-13-011527",
+          "location": "10-K FY2011 balance sheet"
+        },
+        {
+          "quote": "SalesRevenueNet=2758569000 (2010-12-26 to 2011-12-31)",
+          "source_accession_no": "0001144204-13-011527",
+          "location": "10-K FY2011 income statement"
+        }
+      ]
+    },
+    {
+      "item_id": "CL3",
+      "question": "Is there a persistent divergence between net income and operating cash flow?",
+      "finding": "no_flag",
+      "confidence": "high",
+      "evidence": [
+        {
+          "quote": "NetIncomeLoss=703950000 (2008-12-28 to 2009-12-26)",
+          "source_accession_no": "0001144204-12-012007",
+          "location": "10-K FY2010, prior year comparative"
+        },
+        {
+          "quote": "NetCashProvidedByUsedInOperatingActivities=1094456000 (2008-12-28 to 2009-12-26)",
+          "source_accession_no": "0001144204-12-012007",
+          "location": "10-K FY2010 cash flow statement, prior year comparative"
+        },
+        {
+          "quote": "NetIncomeLoss=542403000 (2012-01-01 to 2012-12-29)",
+          "source_accession_no": "0001144204-13-011527",
+          "location": "10-K FY2012 income statement"
+        },
+        {
+          "quote": "NetCashProvidedByUsedInOperatingActivities=684745000 (2012-01-01 to 2012-12-29)",
+          "source_accession_no": "0001144204-13-011527",
+          "location": "10-K FY2012 cash flow statement"
+        }
+      ]
+    },
+    {
+      "item_id": "CL4",
+      "question": "Do inventory levels or gross margins show trends inconsistent with revenue?",
+      "finding": "flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "InventoryNet=309938000 (2009-12-26)",
+          "source_accession_no": "0001144204-11-010358",
+          "location": "10-K FY2009 balance sheet"
+        },
+        {
+          "quote": "InventoryNet=387577000 (2010-12-25)",
+          "source_accession_no": "0001144204-12-012007",
+          "location": "10-K FY2010 balance sheet"
+        },
+        {
+          "quote": "SalesRevenueNet=2946440000 (FY2009)",
+          "source_accession_no": "0001144204-12-012007",
+          "location": "10-K FY2010 income statement, prior year comparative"
+        },
+        {
+          "quote": "SalesRevenueNet=2689911000 (FY2010)",
+          "source_accession_no": "0001144204-13-011527",
+          "location": "10-K FY2011 income statement, prior year comparative"
+        },
+        {
+          "quote": "GrossProfit=1338592000 (2010-12-26 to 2011-12-31)",
+          "source_accession_no": "0001144204-13-011527",
+          "location": "10-K FY2011 income statement"
+        },
+        {
+          "quote": "GrossProfit=1438480000 (2012-01-01 to 2012-12-29)",
+          "source_accession_no": "0001144204-13-011527",
+          "location": "10-K FY2012 income statement"
+        },
+        {
+          "quote": "SalesRevenueNet=2715675000 (2012-01-01 to 2012-12-29)",
+          "source_accession_no": "0001144204-13-011527",
+          "location": "10-K FY2012 income statement"
+        }
+      ]
+    },
+    {
+      "item_id": "CL5",
+      "question": "Is the earnings trajectory unusually smooth relative to the volatility of revenue and cash flow?",
+      "finding": "no_flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "NetIncomeLoss=279552000 (2010-06-27 to 2010-09-25)",
+          "source_accession_no": "0001144204-12-012007",
+          "location": "10-K FY2011, quarterly data (prior year)"
+        },
+        {
+          "quote": "NetIncomeLoss=132906000 (2010-09-26 to 2010-12-25)",
+          "source_accession_no": "0001144204-12-012007",
+          "location": "10-K FY2011, quarterly data (prior year)"
+        },
+        {
+          "quote": "SalesRevenueNet=692364000 (2010-06-27 to 2010-09-25)",
+          "source_accession_no": "0001144204-12-012007",
+          "location": "10-K FY2011, quarterly data (prior year)"
+        },
+        {
+          "quote": "SalesRevenueNet=837715000 (2010-09-26 to 2010-12-25)",
+          "source_accession_no": "0001144204-12-012007",
+          "location": "10-K FY2011, quarterly data (prior year)"
+        }
+      ]
+    },
+    {
+      "item_id": "CL6",
+      "question": "Did liability, allowance, or reserve balances decline (or fail to grow) despite growing business activity?",
+      "finding": "flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "ProductWarrantyAccrualClassifiedCurrent=87424000 (2009-12-26)",
+          "source_accession_no": "0001144204-13-011527",
+          "location": "10-K FY2011, five-year/prior data"
+        },
+        {
+          "quote": "ProductWarrantyAccrualClassifiedCurrent=49885000 (2010-12-25)",
+          "source_accession_no": "0001144204-13-011527",
+          "location": "10-K FY2011 balance sheet, prior year comparative"
+        },
+        {
+          "quote": "ProductWarrantyAccrualClassifiedCurrent=37301000 (2012-12-29)",
+          "source_accession_no": "0001144204-13-026963",
+          "location": "10-Q Q1 2013 balance sheet, prior year-end comparative"
+        },
+        {
+          "quote": "SalesRevenueNet=2715675000 (2012-01-01 to 2012-12-29)",
+          "source_accession_no": "0001144204-13-011527",
+          "location": "10-K FY2012 income statement"
+        },
+        {
+          "quote": "AllowanceForDoubtfulAccountsReceivableCurrent=42409000 (2008-12-27)",
+          "source_accession_no": "0001144204-10-009642",
+          "location": "10-K FY2009, schedule II"
+        },
+        {
+          "quote": "AllowanceForDoubtfulAccountsReceivableCurrent=30596000 (2012-12-29)",
+          "source_accession_no": "0001144204-13-011527",
+          "location": "10-K FY2012, schedule II"
+        }
+      ]
+    },
+    {
+      "item_id": "CL7",
+      "question": "Does the filing chronology show irregularities (late filings/NT forms, amendments, unusual 8-K frequency)?",
+      "finding": "flag",
+      "confidence": "low",
+      "evidence": [
+        {
+          "quote": "{\"form\": \"10-Q/A\", \"filing_date\": \"2009-09-01\"}",
+          "source_accession_no": "0001144204-09-046684",
+          "location": "filing_chronology list"
+        },
+        {
+          "quote": "{\"form\": \"10-Q/A\", \"filing_date\": \"2011-08-30\"}",
+          "source_accession_no": "0001144204-11-050441",
+          "location": "filing_chronology list"
+        }
+      ]
+    },
+    {
+      "item_id": "CL8",
+      "question": "Is the provided data sufficient in coverage and length for the above assessments?",
+      "finding": "flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "AccruedLiabilitiesCurrent=58164000 (2011-03-26)",
+          "source_accession_no": "0001144204-11-025965",
+          "location": "10-Q Q1 2011 balance sheet (last available data point for this concept)"
+        },
+        {
+          "quote": "AllowanceForDoubtfulAccountsReceivableCurrent=30596000 (2012-12-29)",
+          "source_accession_no": "0001144204-13-011527",
+          "location": "10-K FY2012, schedule II (only annual granularity available for this concept)"
+        }
+      ]
+    }
+  ],
+  "misstatement_probability": 42,
+  "mechanism_hypotheses": [
+    {
+      "affected_line_items": [
+        "Cost of goods sold",
+        "Product warranty accrual (current liability)",
+        "Gross profit",
+        "Net income"
+      ],
+      "direction": "overstated",
+      "accounting_treatment": "Reduction of product warranty accrual relative to revenue (from ~3.0% of sales in FY2009 to ~1.4% of sales in FY2012) could reflect under-accrual of warranty costs, which would understate cost of goods sold and overstate gross profit and net income in the more recent periods, coinciding with a jump in gross margin in FY2012 despite flat/declining revenue.",
+      "rationale_evidence": [
+        {
+          "quote": "ProductWarrantyAccrualClassifiedCurrent=87424000 (2009-12-26)",
+          "source_accession_no": "0001144204-13-011527",
+          "location": "10-K FY2011, prior year data"
+        },
+        {
+          "quote": "ProductWarrantyAccrualClassifiedCurrent=37301000 (2012-12-29)",
+          "source_accession_no": "0001144204-13-026963",
+          "location": "10-Q Q1 2013, prior year-end balance"
+        },
+        {
+          "quote": "GrossProfit=1438480000 (2012-01-01 to 2012-12-29)",
+          "source_accession_no": "0001144204-13-011527",
+          "location": "10-K FY2012 income statement"
+        },
+        {
+          "quote": "SalesRevenueNet=2715675000 (2012-01-01 to 2012-12-29)",
+          "source_accession_no": "0001144204-13-011527",
+          "location": "10-K FY2012 income statement"
+        }
+      ]
+    },
+    {
+      "affected_line_items": [
+        "Goodwill",
+        "Intangible/Total Assets"
+      ],
+      "direction": "overstated",
+      "accounting_treatment": "Goodwill grew ~31% in FY2011 (from $136.5M to $179.5M) far outpacing revenue growth of only ~2.6%, suggesting acquisition premiums booked to goodwill that may not be supported by proportional future cash flows, creating impairment risk not yet recognized (potential asset overstatement).",
+      "rationale_evidence": [
+        {
+          "quote": "Goodwill=136548000 (2010-12-25)",
+          "source_accession_no": "0001144204-13-011527",
+          "location": "10-K FY2011 balance sheet, prior year"
+        },
+        {
+          "quote": "Goodwill=179475000 (2011-12-31)",
+          "source_accession_no": "0001144204-13-011527",
+          "location": "10-K FY2011 balance sheet"
+        },
+        {
+          "quote": "SalesRevenueNet=2758569000 (2010-12-26 to 2011-12-31)",
+          "source_accession_no": "0001144204-13-011527",
+          "location": "10-K FY2011 income statement"
+        }
+      ]
+    },
+    {
+      "affected_line_items": [
+        "Inventory",
+        "Cost of goods sold"
+      ],
+      "direction": "overstated",
+      "accounting_treatment": "Inventory rose ~25% from FY2009 to FY2010 ($309.9M to $387.6M) while revenue declined ~8.7% in the same period, raising risk that inventory was not written down to reflect declining demand, potentially overstating inventory and understating cost of goods sold/obsolescence reserves.",
+      "rationale_evidence": [
+        {
+          "quote": "InventoryNet=309938000 (2009-12-26)",
+          "source_accession_no": "0001144204-11-010358",
+          "location": "10-K FY2009 balance sheet"
+        },
+        {
+          "quote": "InventoryNet=387577000 (2010-12-25)",
+          "source_accession_no": "0001144204-12-012007",
+          "location": "10-K FY2010 balance sheet"
+        },
+        {
+          "quote": "SalesRevenueNet=2689911000 (2009-12-27 to 2010-12-25)",
+          "source_accession_no": "0001144204-13-011527",
+          "location": "10-K FY2011 income statement, prior year comparative"
+        }
+      ]
+    }
+  ],
+  "overall": {
+    "risk_tier": "watch",
+    "top_signals": [
+      "Product warranty accrual declined from ~3.0% to ~1.4% of revenue between FY2009 and FY2012 while gross margin expanded to 53% in FY2012 without corresponding revenue growth",
+      "Goodwill grew ~31% in FY2011 versus only ~2.6% revenue growth, outpacing overall asset growth",
+      "Inventory grew ~25% in FY2010 while revenue declined ~8.7% the same year, raising obsolescence/write-down risk",
+      "Two 10-Q/A amendments filed (2009-09-01 and 2011-08-30) indicating restated interim data",
+      "Operating cash flow consistently exceeded net income across FY2009-FY2012, which is a mitigating (reassuring) factor"
+    ]
+  }
+}

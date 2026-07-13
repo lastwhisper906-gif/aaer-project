@@ -1,0 +1,59 @@
+{
+  "ts": "2026-07-13T07:29:50.136247+00:00",
+  "harness_pin": "2.1.201",
+  "flags": [
+    "claude",
+    "-p",
+    "--model",
+    "claude-sonnet-5",
+    "--output-format",
+    "json",
+    "--max-turns",
+    "2",
+    "--setting-sources",
+    "",
+    "--strict-mcp-config",
+    "--tools",
+    "",
+    "--disallowedTools",
+    "Bash,Read,Edit,Write,Glob,Grep,WebFetch,WebSearch,Task,NotebookEdit",
+    "--system-prompt",
+    "You are analyzing the financial reporting quality of InterDigital, Inc. (IDCC, CIK 0001405495) using only the structured data provided below, which reflects public filings available on or before 2015-...[1740 chars]",
+    "--json-schema",
+    "{\"type\": \"object\", \"additionalProperties\": false, \"required\": [\"checklist\", \"misstatement_probability\", \"mechanism_hypotheses\", \"overall\"], \"properties\": {\"checklist\": {\"type\": \"array\", \"items\": {\"typ...[1821 chars]"
+  ],
+  "model_requested": "claude-sonnet-5",
+  "served_models": [
+    "claude-sonnet-5"
+  ],
+  "pin_ok": true,
+  "ok": true,
+  "fail_reason": null,
+  "session_id": "250e09e3-84e7-4e4a-9f83-d705d97a36b0",
+  "usage": {
+    "input_tokens": 4,
+    "cache_creation_input_tokens": 9497,
+    "cache_read_input_tokens": 114268,
+    "output_tokens": 13172,
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 9497,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [],
+    "speed": "standard"
+  },
+  "total_cost_usd_reference_only": 0.28885439999999996,
+  "attempts": 1,
+  "wall_seconds": 111.0,
+  "freeze": {
+    "head": "2d39058d057a679a93d4e514d8bebf79ddc9ca86",
+    "clean_tree": false
+  },
+  "raw_tail": null
+}

@@ -1,0 +1,247 @@
+{
+  "case_id": "case_22",
+  "run_id": "original-case_22-r1",
+  "model": "claude-sonnet-5",
+  "pipeline_version": "2d39058d057a679a93d4e514d8bebf79ddc9ca86",
+  "run_timestamp": "2026-07-13T07:22:51.598552+00:00",
+  "documents_used": [
+    {
+      "accession_no": "0000856982-11-000007",
+      "form_type": "10-Q",
+      "filing_date": "2011-11-08"
+    },
+    {
+      "accession_no": "0000856982-12-000012",
+      "form_type": "10-K",
+      "filing_date": "2012-02-29"
+    },
+    {
+      "accession_no": "0000856982-12-000021",
+      "form_type": "10-Q",
+      "filing_date": "2012-05-10"
+    },
+    {
+      "accession_no": "0000856982-12-000032",
+      "form_type": "10-Q",
+      "filing_date": "2012-08-09"
+    },
+    {
+      "accession_no": "0000856982-12-000039",
+      "form_type": "10-Q",
+      "filing_date": "2012-11-09"
+    },
+    {
+      "accession_no": "0000856982-13-000009",
+      "form_type": "10-K",
+      "filing_date": "2013-03-01"
+    },
+    {
+      "accession_no": "0000856982-13-000025",
+      "form_type": "10-Q",
+      "filing_date": "2013-05-10"
+    },
+    {
+      "accession_no": "0001104659-11-044773",
+      "form_type": "10-Q",
+      "filing_date": "2011-08-08"
+    }
+  ],
+  "checklist": [
+    {
+      "item_id": "CL1",
+      "question": "Did receivables grow materially faster than revenue across consecutive periods?",
+      "finding": "flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "AccountsReceivableNetCurrent=40550000 (2011-12-31)",
+          "source_accession_no": "0000856982-13-000009",
+          "location": "10-K balance sheet"
+        },
+        {
+          "quote": "AccountsReceivableNetCurrent=53402000 (2012-12-31)",
+          "source_accession_no": "0000856982-13-000025",
+          "location": "10-Q balance sheet"
+        },
+        {
+          "quote": "SalesRevenueGoodsNet=359449000 (FY2011)",
+          "source_accession_no": "0000856982-13-000009",
+          "location": "10-K income statement"
+        },
+        {
+          "quote": "SalesRevenueGoodsNet=394288000 (FY2012)",
+          "source_accession_no": "0000856982-13-000009",
+          "location": "10-K income statement"
+        }
+      ]
+    },
+    {
+      "item_id": "CL2",
+      "question": "Did non-current 'soft' assets (intangibles, other assets, capitalized items) grow materially faster than the business overall?",
+      "finding": "flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "Goodwill=61144000 (2011-12-31)",
+          "source_accession_no": "0000856982-13-000009",
+          "location": "10-K balance sheet"
+        },
+        {
+          "quote": "Goodwill=175108000 (2012-12-31)",
+          "source_accession_no": "0000856982-13-000025",
+          "location": "10-Q balance sheet"
+        },
+        {
+          "quote": "Assets=447017000 (2011-12-31) vs Assets=705309000 (2012-12-31)",
+          "source_accession_no": "0000856982-13-000025",
+          "location": "10-Q balance sheet"
+        },
+        {
+          "quote": "LongTermDebtNoncurrent=30737000 (2011-12-31) vs 227566000 (2012-12-31)",
+          "source_accession_no": "0000856982-13-000025",
+          "location": "10-Q balance sheet"
+        }
+      ]
+    },
+    {
+      "item_id": "CL3",
+      "question": "Is there a persistent divergence between net income and operating cash flow?",
+      "finding": "no_flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "NetIncomeLoss=19710000 (FY2012, available to common)",
+          "source_accession_no": "0000856982-13-000009",
+          "location": "10-K income statement"
+        },
+        {
+          "quote": "NetCashProvidedByUsedInOperatingActivities=46938000 (FY2012)",
+          "source_accession_no": "0000856982-13-000009",
+          "location": "10-K cash flow statement"
+        },
+        {
+          "quote": "DepreciationDepletionAndAmortization=22534000 (FY2012)",
+          "source_accession_no": "0000856982-13-000009",
+          "location": "10-K cash flow statement"
+        }
+      ]
+    },
+    {
+      "item_id": "CL4",
+      "question": "Do inventory levels or gross margins show trends inconsistent with revenue?",
+      "finding": "flag",
+      "confidence": "low",
+      "evidence": [
+        {
+          "quote": "InventoryNet=69911000 (2011-12-31) vs 84599000 (2012-12-31), +21.0%",
+          "source_accession_no": "0000856982-13-000025",
+          "location": "10-Q balance sheet"
+        },
+        {
+          "quote": "SalesRevenueGoodsNet growth FY2011->FY2012 = 9.7% (359449000 to 394288000)",
+          "source_accession_no": "0000856982-13-000009",
+          "location": "10-K income statement"
+        },
+        {
+          "quote": "GrossProfit=181992000 (FY2012) / SalesRevenueGoodsNet=394288000 (FY2012) = 46.2% margin, up from 46.0% (FY2011)",
+          "source_accession_no": "0000856982-13-000009",
+          "location": "10-K income statement"
+        }
+      ]
+    },
+    {
+      "item_id": "CL5",
+      "question": "Is the earnings trajectory unusually smooth relative to the volatility of revenue and cash flow?",
+      "finding": "no_flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "NetIncomeLoss=-1973000 (Q3 2010)",
+          "source_accession_no": "0000856982-12-000012",
+          "location": "10-K quarterly data"
+        },
+        {
+          "quote": "NetIncomeLoss=641000 (Q4 2012) vs 7226000 (Q3 2012)",
+          "source_accession_no": "0000856982-13-000009",
+          "location": "10-K quarterly data"
+        }
+      ]
+    },
+    {
+      "item_id": "CL6",
+      "question": "Did liability, allowance, or reserve balances decline (or fail to grow) despite growing business activity?",
+      "finding": "no_flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "AllowanceForDoubtfulAccountsReceivableCurrent=464000 (2011-12-31) to 892000 (2012-12-31), +92%",
+          "source_accession_no": "0000856982-13-000025",
+          "location": "10-Q balance sheet"
+        },
+        {
+          "quote": "AccruedLiabilitiesCurrent=20197000 (2011-12-31) to 27269000 (2012-12-31), +35%",
+          "source_accession_no": "0000856982-13-000025",
+          "location": "10-Q balance sheet"
+        }
+      ]
+    },
+    {
+      "item_id": "CL7",
+      "question": "Does the filing chronology show irregularities (late filings/NT forms, amendments, unusual 8-K frequency)?",
+      "finding": "flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "8-K/A filed 2012-11-30",
+          "source_accession_no": "n/a",
+          "location": "filing_chronology"
+        },
+        {
+          "quote": "8-K/A filed 2013-01-24",
+          "source_accession_no": "n/a",
+          "location": "filing_chronology"
+        },
+        {
+          "quote": "8-K/A filed 2013-03-07",
+          "source_accession_no": "n/a",
+          "location": "filing_chronology"
+        },
+        {
+          "quote": "8-K/A filed 2013-03-29",
+          "source_accession_no": "n/a",
+          "location": "filing_chronology"
+        },
+        {
+          "quote": "CORRESP filed 2010-07-20, 2010-11-19, 2010-12-23, 2010-12-29 (SEC comment-letter correspondence around S-3 registration)",
+          "source_accession_no": "n/a",
+          "location": "filing_chronology"
+        }
+      ]
+    },
+    {
+      "item_id": "CL8",
+      "question": "Is the provided data sufficient in coverage and length for the above assessments?",
+      "finding": "no_flag",
+      "confidence": "high",
+      "evidence": [
+        {
+          "quote": "Data spans FY2008 (StockholdersEquity) through Q1 2013 (10-Q filed 2013-05-10) across balance sheet, income statement, and cash flow concepts",
+          "source_accession_no": "0000856982-13-000025",
+          "location": "financial_series_point_in_time aggregate"
+        }
+      ]
+    }
+  ],
+  "misstatement_probability": 30,
+  "mechanism_hypotheses": [],
+  "overall": {
+    "risk_tier": "watch",
+    "top_signals": [
+      "Receivables grew 31.7% (AccountsReceivableNetCurrent 40,550,000 to 53,402,000, 2011-12-31 to 2012-12-31) versus only 9.7% revenue growth (SalesRevenueGoodsNet 359,449,000 to 394,288,000), though this coincides with a major debt-funded acquisition rather than clear organic channel-stuffing.",
+      "Goodwill surged 186% (61,144,000 to 175,108,000, 2011-12-31 to 2012-12-31) alongside a debt issuance of 330,630,000 (FY2012 ProceedsFromIssuanceOfLongTermDebt) and Assets nearly doubling (447,017,000 to 705,309,000) - typical purchase-accounting complexity/goodwill impairment risk following large M&A, not necessarily misstatement but warrants monitoring of purchase price allocation and future impairment testing.",
+      "Cluster of 8-K/A amendments in the months following the Q4 2012 acquisition (2012-11-30, 2013-01-24, 2013-03-07, 2013-03-29), consistent with delayed/iterative disclosure of acquisition-related financials (e.g., pro forma statements) rather than fraud, but adds governance/reporting-quality uncertainty.",
+      "Inventory grew 21.0% (69,911,000 to 84,599,000) against 9.7% revenue growth in FY2012, while gross margin actually improved slightly (46.0% to 46.2%), suggesting the inventory build is more likely acquisition-related or capacity investment than channel stuffing or margin manipulation.",
+      "Net income has been persistently and substantially below operating cash flow (e.g., NetIncomeLoss 19,710,000 vs NetCashProvidedByUsedInOperatingActivities 46,938,000 in FY2012), which is the opposite of the classic earnings-inflation red flag and instead suggests conservative (D&A-heavy) reported earnings, reducing overall misstatement concern."
+    ]
+  }
+}

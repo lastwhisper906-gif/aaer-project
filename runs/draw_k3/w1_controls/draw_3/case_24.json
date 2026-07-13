@@ -1,0 +1,263 @@
+{
+  "case_id": "case_24",
+  "run_id": "original-case_24-r1",
+  "model": "claude-sonnet-5",
+  "pipeline_version": "2d39058d057a679a93d4e514d8bebf79ddc9ca86",
+  "run_timestamp": "2026-07-13T07:26:34.434828+00:00",
+  "documents_used": [
+    {
+      "accession_no": "0001047469-12-008730",
+      "form_type": "10-K",
+      "filing_date": "2012-09-10"
+    },
+    {
+      "accession_no": "0001104659-11-062201",
+      "form_type": "10-Q",
+      "filing_date": "2011-11-08"
+    },
+    {
+      "accession_no": "0001104659-12-007843",
+      "form_type": "10-Q",
+      "filing_date": "2012-02-08"
+    },
+    {
+      "accession_no": "0001104659-12-034551",
+      "form_type": "10-Q",
+      "filing_date": "2012-05-08"
+    },
+    {
+      "accession_no": "0001104659-12-075938",
+      "form_type": "10-Q",
+      "filing_date": "2012-11-08"
+    },
+    {
+      "accession_no": "0001104659-13-008061",
+      "form_type": "10-Q",
+      "filing_date": "2013-02-06"
+    },
+    {
+      "accession_no": "0001104659-13-039494",
+      "form_type": "10-Q",
+      "filing_date": "2013-05-09"
+    }
+  ],
+  "checklist": [
+    {
+      "item_id": "CL1",
+      "question": "Did receivables grow materially faster than revenue across consecutive periods?",
+      "finding": "insufficient_data",
+      "confidence": "low",
+      "evidence": [
+        {
+          "quote": "No AccountsReceivableNetCurrent or gross trade receivable concept was provided in the dataset; only AllowanceForDoubtfulAccountsReceivableCurrent is available (e.g., AllowanceForDoubtfulAccountsReceivableCurrent=1650000 (2011-12-31)).",
+          "source_accession_no": "0001104659-12-007843",
+          "location": "10-Q balance sheet allowance line"
+        }
+      ]
+    },
+    {
+      "item_id": "CL2",
+      "question": "Did non-current 'soft' assets (intangibles, other assets, capitalized items) grow materially faster than the business overall?",
+      "finding": "flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "Goodwill=4495000 (2010-06-30) vs Goodwill=54474000 (2011-06-30), a ~12x increase in one year, coincident with the TomoTherapy merger disclosed via S-4/425 filings in 2011.",
+          "source_accession_no": "0001047469-12-008730",
+          "location": "10-K balance sheet - Goodwill"
+        },
+        {
+          "quote": "OtherAssetsNoncurrent=2468000 (2011-06-30) growing to OtherAssetsNoncurrent=12418000 (2013-03-31), roughly a 5x increase over ~21 months while SalesRevenueNet actually declined over the same trailing quarters (SalesRevenueNet=100533000 (Q4 FY12, Apr-Jun2012) vs SalesRevenueNet=70547000 (Q3 FY13, Jan-Mar2013)).",
+          "source_accession_no": "0001104659-13-039494",
+          "location": "10-Q balance sheet - Other Assets Noncurrent"
+        }
+      ]
+    },
+    {
+      "item_id": "CL3",
+      "question": "Is there a persistent divergence between net income and operating cash flow?",
+      "finding": "flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "ProfitLoss=2841000 (FY2010, 2009-07-01 to 2010-06-30) vs NetCashProvidedByUsedInOperatingActivitiesContinuingOperations=-5073000 (same period) - positive net income but negative operating cash flow.",
+          "source_accession_no": "0001047469-12-008730",
+          "location": "10-K income statement / cash flow statement"
+        },
+        {
+          "quote": "ProfitLoss=-27111000 (FY2011, 2010-07-01 to 2011-06-30) vs NetCashProvidedByUsedInOperatingActivitiesContinuingOperations=12403000 (same period) - net loss coexists with positive operating cash flow.",
+          "source_accession_no": "0001047469-12-008730",
+          "location": "10-K income statement / cash flow statement"
+        },
+        {
+          "quote": "ProfitLoss=-78453000 (FY2012, 2011-07-01 to 2012-06-30) vs NetCashProvidedByUsedInOperatingActivitiesContinuingOperations=-38279000 (same period) - operating cash outflow only about half the magnitude of the net loss, aided by DepreciationDepletionAndAmortization=32592000 (FY2012).",
+          "source_accession_no": "0001047469-12-008730",
+          "location": "10-K cash flow statement"
+        }
+      ]
+    },
+    {
+      "item_id": "CL4",
+      "question": "Do inventory levels or gross margins show trends inconsistent with revenue?",
+      "finding": "flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "InventoryNet=81739000 (2012-09-30) increasing to InventoryNet=92225000 (2013-03-31) even as SalesRevenueNet fell from SalesRevenueNet=82748000 (Q1 FY13, Jul-Sep2012) to SalesRevenueNet=70547000 (Q3 FY13, Jan-Mar2013), a ~15% revenue decline alongside a ~13% inventory increase.",
+          "source_accession_no": "0001104659-13-039494",
+          "location": "10-Q balance sheet / income statement"
+        },
+        {
+          "quote": "Gross margin compressed from GrossProfit=36490000 / SalesRevenueNet=100533000 (~36.3%, Q4 FY12, Apr-Jun2012) to GrossProfit=20053000 / SalesRevenueNet=70547000 (~28.4%, Q3 FY13, Jan-Mar2013) while inventory continued to build, suggesting potential under-reserved excess/obsolete inventory risk.",
+          "source_accession_no": "0001104659-13-039494",
+          "location": "10-Q income statement"
+        }
+      ]
+    },
+    {
+      "item_id": "CL5",
+      "question": "Is the earnings trajectory unusually smooth relative to the volatility of revenue and cash flow?",
+      "finding": "no_flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "Quarterly net losses widened substantially and unevenly: NetIncomeLossAvailableToCommonStockholdersBasic=-24130000 (Q1 FY13), -29171000 (Q2 FY13), -31203000 (Q3 FY13) - an accelerating, non-smooth loss trajectory that mirrors (rather than masks) the underlying revenue decline (SalesRevenueNet=82748000 to 70547000 over the same quarters).",
+          "source_accession_no": "0001104659-13-039494",
+          "location": "10-Q income statement"
+        }
+      ]
+    },
+    {
+      "item_id": "CL6",
+      "question": "Did liability, allowance, or reserve balances decline (or fail to grow) despite growing business activity?",
+      "finding": "no_flag",
+      "confidence": "low",
+      "evidence": [
+        {
+          "quote": "AllowanceForDoubtfulAccountsReceivableCurrent remained roughly stable/growing in the range of 1066000 (2011-09-30) to 1773000 (2012-09-30) to 1383000 (2013-03-31), not declining materially.",
+          "source_accession_no": "0001104659-13-039494",
+          "location": "10-Q balance sheet"
+        },
+        {
+          "quote": "DeferredRevenueCurrent grew from 68152000 (2011-06-30) to 91091000 (2013-03-31) even as revenue declined in FY2013 quarters, indicating deferred obligations were not shrinking despite slowing top line.",
+          "source_accession_no": "0001104659-13-039494",
+          "location": "10-Q balance sheet"
+        }
+      ]
+    },
+    {
+      "item_id": "CL7",
+      "question": "Does the filing chronology show irregularities (late filings/NT forms, amendments, unusual 8-K frequency)?",
+      "finding": "flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "NT 10-K filed 2011-09-13 followed by the actual 10-K on 2011-09-19, indicating a delayed annual filing.",
+          "source_accession_no": "NT 10-K",
+          "location": "Filing chronology"
+        },
+        {
+          "quote": "10-K/A filed 2013-03-25, an amendment to the FY2012 Form 10-K (originally filed 2012-09-10), filed roughly 6 months after the original 10-K.",
+          "source_accession_no": "10-K/A",
+          "location": "Filing chronology"
+        },
+        {
+          "quote": "An NT 10-Q was also filed on 2008-11-07 with the corresponding 10-Q filed late on 2008-12-19, showing a historical pattern of filing delays.",
+          "source_accession_no": "NT 10-Q",
+          "location": "Filing chronology"
+        }
+      ]
+    },
+    {
+      "item_id": "CL8",
+      "question": "Is the provided data sufficient in coverage and length for the above assessments?",
+      "finding": "insufficient_data",
+      "confidence": "high",
+      "evidence": [
+        {
+          "quote": "No accounts receivable balance (gross or net) concept is included in the dataset; operating cash flow data is only available for a handful of annual/quarterly periods (e.g., only two quarterly OCF points: -10247000 (Q1 FY11) and -49316000/-13162000 for FY12/FY13 quarters), and no footnote-level detail (revenue recognition policy, restatement rationale for the 10-K/A) is provided.",
+          "source_accession_no": "0001104659-12-075938",
+          "location": "Cash flow statement excerpts across filings"
+        }
+      ]
+    }
+  ],
+  "misstatement_probability": 42,
+  "mechanism_hypotheses": [
+    {
+      "affected_line_items": [
+        "InventoryNet",
+        "CostOfRevenue",
+        "CostOfGoodsSold",
+        "GrossProfit"
+      ],
+      "direction": "overstated",
+      "accounting_treatment": "Potential under-provisioning of excess/obsolete inventory reserves as product demand softened, keeping InventoryNet elevated (InventoryNet=92225000 (2013-03-31) vs 81739000 (2012-09-30)) while SalesRevenueNet fell (70547000 Q3 FY13 vs 82748000 Q1 FY13) and gross margin compressed (GrossProfit/Revenue ~28.4% Q3 FY13 vs ~36.3% Q4 FY12), which would overstate inventory and understate cost of revenue/impairment charges.",
+      "rationale_evidence": [
+        {
+          "quote": "InventoryNet=92225000 (2013-03-31); SalesRevenueNet=70547000 (2013-01-01 to 2013-03-31)",
+          "source_accession_no": "0001104659-13-039494",
+          "location": "10-Q balance sheet and income statement"
+        },
+        {
+          "quote": "GrossProfit=20053000 on SalesRevenueNet=70547000 (Q3 FY13) vs GrossProfit=36490000 on SalesRevenueNet=100533000 (Q4 FY12)",
+          "source_accession_no": "0001104659-13-039494",
+          "location": "10-Q income statement"
+        }
+      ]
+    },
+    {
+      "affected_line_items": [
+        "DeferredRevenueCurrent",
+        "SalesRevenueNet",
+        "SalesRevenueGoodsNet",
+        "SalesRevenueServicesNet"
+      ],
+      "direction": "timing_shift",
+      "accounting_treatment": "Possible use of deferred revenue timing (build-up of DeferredRevenueCurrent to 91091000 (2013-03-31) from 68152000 (2011-06-30)) to smooth or shift recognized revenue between periods as product sales (SalesRevenueGoodsNet) fell sharply (25023000 Q3 FY13 vs 59875000 Q3 FY12), potentially masking the severity of the underlying sales decline through recognition timing on multi-element service/installation arrangements.",
+      "rationale_evidence": [
+        {
+          "quote": "DeferredRevenueCurrent=91091000 (2013-03-31) vs DeferredRevenueCurrent=68152000 (2011-06-30)",
+          "source_accession_no": "0001104659-13-039494",
+          "location": "10-Q balance sheet"
+        },
+        {
+          "quote": "SalesRevenueGoodsNet=25023000 (2013-01-01 to 2013-03-31) vs SalesRevenueGoodsNet=59875000 (2012-01-01 to 2012-03-31)",
+          "source_accession_no": "0001104659-13-039494",
+          "location": "10-Q income statement"
+        }
+      ]
+    },
+    {
+      "affected_line_items": [
+        "NetCashProvidedByUsedInOperatingActivitiesContinuingOperations",
+        "AccountsPayableCurrent",
+        "ProfitLoss"
+      ],
+      "direction": "overstated",
+      "accounting_treatment": "Operating cash flow may be flattered relative to true economic performance through working-capital timing (e.g., stretching/paying down payables inconsistently, AccountsPayableCurrent falling from 38645000 (2011-06-30) to 14982000 (2013-03-31)) combined with heavy non-cash addbacks (DepreciationDepletionAndAmortization=32592000 FY2012), producing a persistent and widening gap between reported net losses (ProfitLoss=-78453000 FY2012) and operating cash outflow (-38279000 FY2012) that could mask deteriorating core cash generation.",
+      "rationale_evidence": [
+        {
+          "quote": "ProfitLoss=-78453000 (2011-07-01 to 2012-06-30); NetCashProvidedByUsedInOperatingActivitiesContinuingOperations=-38279000 (same period)",
+          "source_accession_no": "0001047469-12-008730",
+          "location": "10-K cash flow statement"
+        },
+        {
+          "quote": "AccountsPayableCurrent=38645000 (2011-06-30) declining to AccountsPayableCurrent=14982000 (2013-03-31)",
+          "source_accession_no": "0001104659-13-039494",
+          "location": "10-Q balance sheet"
+        }
+      ]
+    }
+  ],
+  "overall": {
+    "risk_tier": "watch",
+    "top_signals": [
+      "Inventory grew (InventoryNet=92225000 at 2013-03-31 vs 81739000 at 2012-09-30) while revenue declined and gross margin compressed, raising questions about reserve adequacy",
+      "Persistent, widening divergence between net losses (ProfitLoss=-78453000 FY2012) and operating cash flow (-38279000 FY2012), and even net-income-positive/OCF-negative reversal in FY2010",
+      "10-K/A amendment filed 2013-03-25 roughly six months after the original FY2012 10-K, plus a prior NT 10-K in 2011, indicating filing/process irregularities",
+      "Large non-organic jump in Goodwill (54474000 at 2011-06-30 vs 4495000 at 2010-06-30) and continued growth in Other Assets Noncurent, tied to the TomoTherapy merger, increasing balance-sheet complexity",
+      "Data limitations (no accounts receivable balances, sparse operating cash flow history) constrain confidence in several checklist conclusions"
+    ]
+  }
+}

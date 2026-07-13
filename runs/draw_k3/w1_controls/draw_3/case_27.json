@@ -1,0 +1,325 @@
+{
+  "case_id": "case_27",
+  "run_id": "original-case_27-r1",
+  "model": "claude-sonnet-5",
+  "pipeline_version": "2d39058d057a679a93d4e514d8bebf79ddc9ca86",
+  "run_timestamp": "2026-07-13T07:31:08.549669+00:00",
+  "documents_used": [
+    {
+      "accession_no": "0000085961-12-000005",
+      "form_type": "10-Q",
+      "filing_date": "2012-10-23"
+    },
+    {
+      "accession_no": "0000085961-13-000007",
+      "form_type": "10-K",
+      "filing_date": "2013-02-14"
+    },
+    {
+      "accession_no": "0000085961-13-000022",
+      "form_type": "10-Q",
+      "filing_date": "2013-04-23"
+    },
+    {
+      "accession_no": "0000085961-13-000036",
+      "form_type": "10-Q",
+      "filing_date": "2013-07-23"
+    },
+    {
+      "accession_no": "0000085961-13-000042",
+      "form_type": "10-Q",
+      "filing_date": "2013-10-22"
+    },
+    {
+      "accession_no": "0000085961-14-000006",
+      "form_type": "10-K",
+      "filing_date": "2014-02-14"
+    },
+    {
+      "accession_no": "0000085961-14-000027",
+      "form_type": "10-Q",
+      "filing_date": "2014-04-23"
+    },
+    {
+      "accession_no": "0000950123-10-067673",
+      "form_type": "10-Q",
+      "filing_date": "2010-07-23"
+    },
+    {
+      "accession_no": "0000950123-10-094963",
+      "form_type": "10-Q",
+      "filing_date": "2010-10-21"
+    },
+    {
+      "accession_no": "0000950123-11-013941",
+      "form_type": "10-K",
+      "filing_date": "2011-02-15"
+    },
+    {
+      "accession_no": "0000950123-11-039372",
+      "form_type": "10-Q",
+      "filing_date": "2011-04-26"
+    },
+    {
+      "accession_no": "0000950123-11-068853",
+      "form_type": "10-Q",
+      "filing_date": "2011-07-27"
+    },
+    {
+      "accession_no": "0001193125-11-280536",
+      "form_type": "10-Q",
+      "filing_date": "2011-10-26"
+    },
+    {
+      "accession_no": "0001193125-12-121535",
+      "form_type": "10-K/A",
+      "filing_date": "2012-03-19"
+    },
+    {
+      "accession_no": "0001445305-12-001152",
+      "form_type": "10-Q",
+      "filing_date": "2012-04-24"
+    },
+    {
+      "accession_no": "0001445305-12-002246",
+      "form_type": "10-Q",
+      "filing_date": "2012-07-24"
+    }
+  ],
+  "checklist": [
+    {
+      "item_id": "CL1",
+      "question": "Did receivables grow materially faster than revenue across consecutive periods?",
+      "finding": "no_flag",
+      "confidence": "high",
+      "evidence": [
+        {
+          "quote": "ReceivablesNetCurrent=598661000 (2009-12-31)",
+          "source_accession_no": "0000950123-11-013941",
+          "location": "Balance Sheet"
+        },
+        {
+          "quote": "Revenues=4887254000 (2009 annual)",
+          "source_accession_no": "0001193125-12-121535",
+          "location": "Income Statement"
+        },
+        {
+          "quote": "ReceivablesNetCurrent=777370000 (2013-12-31)",
+          "source_accession_no": "0000085961-14-000027",
+          "location": "Balance Sheet"
+        },
+        {
+          "quote": "Revenues=6419285000 (2013 annual)",
+          "source_accession_no": "0000085961-14-000006",
+          "location": "Income Statement"
+        }
+      ]
+    },
+    {
+      "item_id": "CL2",
+      "question": "Did non-current 'soft' assets (intangibles, other assets, capitalized items) grow materially faster than the business overall?",
+      "finding": "flag",
+      "confidence": "low",
+      "evidence": [
+        {
+          "quote": "Goodwill=216444000 (2009-12-31)",
+          "source_accession_no": "0001193125-12-121535",
+          "location": "Balance Sheet"
+        },
+        {
+          "quote": "Goodwill=355842000 (2010-12-31)",
+          "source_accession_no": "0000085961-13-000007",
+          "location": "Balance Sheet"
+        },
+        {
+          "quote": "IntangibleAssetsNetExcludingGoodwill=39120000 (2009-12-31)",
+          "source_accession_no": "0000950123-11-013941",
+          "location": "Balance Sheet"
+        },
+        {
+          "quote": "IntangibleAssetsNetExcludingGoodwill=72269000 (2010-12-31)",
+          "source_accession_no": "0001193125-12-121535",
+          "location": "Balance Sheet"
+        },
+        {
+          "quote": "Revenues=5136435000 (2010 annual)",
+          "source_accession_no": "0000085961-13-000007",
+          "location": "Income Statement"
+        }
+      ]
+    },
+    {
+      "item_id": "CL3",
+      "question": "Is there a persistent divergence between net income and operating cash flow?",
+      "finding": "no_flag",
+      "confidence": "high",
+      "evidence": [
+        {
+          "quote": "NetIncomeLoss=61945000 (2009 annual)",
+          "source_accession_no": "0001193125-12-121535",
+          "location": "Income Statement"
+        },
+        {
+          "quote": "NetCashProvidedByUsedInOperatingActivitiesContinuingOperations=984956000 (2009 annual)",
+          "source_accession_no": "0001193125-12-121535",
+          "location": "Cash Flow Statement"
+        },
+        {
+          "quote": "NetIncomeLoss=237792000 (2013 annual)",
+          "source_accession_no": "0000085961-14-000006",
+          "location": "Income Statement"
+        },
+        {
+          "quote": "NetCashProvidedByUsedInOperatingActivitiesContinuingOperations=1223082000 (2013 annual)",
+          "source_accession_no": "0000085961-14-000006",
+          "location": "Cash Flow Statement"
+        }
+      ]
+    },
+    {
+      "item_id": "CL4",
+      "question": "Do inventory levels or gross margins show trends inconsistent with revenue?",
+      "finding": "no_flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "CostOfServices=1662303000 (2009 annual)",
+          "source_accession_no": "0001193125-12-121535",
+          "location": "Income Statement"
+        },
+        {
+          "quote": "Revenues=4887254000 (2009 annual)",
+          "source_accession_no": "0001193125-12-121535",
+          "location": "Income Statement"
+        },
+        {
+          "quote": "CostOfServices=2366820000 (2013 annual)",
+          "source_accession_no": "0000085961-14-000006",
+          "location": "Income Statement"
+        },
+        {
+          "quote": "Revenues=6419285000 (2013 annual)",
+          "source_accession_no": "0000085961-14-000006",
+          "location": "Income Statement"
+        },
+        {
+          "quote": "InventoryNet=50146000 (2009-12-31)",
+          "source_accession_no": "0000950123-11-013941",
+          "location": "Balance Sheet"
+        },
+        {
+          "quote": "InventoryNet=64298000 (2013-12-31)",
+          "source_accession_no": "0000085961-14-000027",
+          "location": "Balance Sheet"
+        }
+      ]
+    },
+    {
+      "item_id": "CL5",
+      "question": "Is the earnings trajectory unusually smooth relative to the volatility of revenue and cash flow?",
+      "finding": "no_flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "NetIncomeLoss=25125000 (2011-01-01 to 2011-03-31)",
+          "source_accession_no": "0000085961-13-000007",
+          "location": "Income Statement"
+        },
+        {
+          "quote": "NetIncomeLoss=56524000 (2011-07-01 to 2011-09-30)",
+          "source_accession_no": "0000085961-13-000007",
+          "location": "Income Statement"
+        },
+        {
+          "quote": "NetIncomeLoss=34321000 (2012-01-01 to 2012-03-31)",
+          "source_accession_no": "0000085961-14-000006",
+          "location": "Income Statement"
+        },
+        {
+          "quote": "NetIncomeLoss=75091000 (2012-07-01 to 2012-09-30)",
+          "source_accession_no": "0000085961-14-000006",
+          "location": "Income Statement"
+        }
+      ]
+    },
+    {
+      "item_id": "CL6",
+      "question": "Did liability, allowance, or reserve balances decline (or fail to grow) despite growing business activity?",
+      "finding": "no_flag",
+      "confidence": "high",
+      "evidence": [
+        {
+          "quote": "AllowanceForDoubtfulAccountsReceivableCurrent=13808000 (2009-12-31)",
+          "source_accession_no": "0000950123-10-094963",
+          "location": "Balance Sheet Notes"
+        },
+        {
+          "quote": "AllowanceForDoubtfulAccountsReceivableCurrent=16955000 (2013-12-31)",
+          "source_accession_no": "0000085961-14-000006",
+          "location": "Balance Sheet Notes"
+        },
+        {
+          "quote": "ReceivablesNetCurrent=598661000 (2009-12-31)",
+          "source_accession_no": "0000950123-11-013941",
+          "location": "Balance Sheet"
+        },
+        {
+          "quote": "ReceivablesNetCurrent=777370000 (2013-12-31)",
+          "source_accession_no": "0000085961-14-000027",
+          "location": "Balance Sheet"
+        }
+      ]
+    },
+    {
+      "item_id": "CL7",
+      "question": "Does the filing chronology show irregularities (late filings/NT forms, amendments, unusual 8-K frequency)?",
+      "finding": "flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "10-K filing_date 2012-02-16",
+          "source_accession_no": "n/a",
+          "location": "Filing chronology"
+        },
+        {
+          "quote": "10-K/A filing_date 2012-03-19",
+          "source_accession_no": "0001193125-12-121535",
+          "location": "Filing chronology"
+        },
+        {
+          "quote": "Assets=6259830000 (2009-12-31) filed via 10-K/A 2012-03-19",
+          "source_accession_no": "0001193125-12-121535",
+          "location": "Balance Sheet"
+        }
+      ]
+    },
+    {
+      "item_id": "CL8",
+      "question": "Is the provided data sufficient in coverage and length for the above assessments?",
+      "finding": "no_flag",
+      "confidence": "high",
+      "evidence": [
+        {
+          "quote": "Revenues (annual) data points span 2008-2013 plus quarterly through 2014-03-31",
+          "source_accession_no": "0000085961-14-000027",
+          "location": "Income Statement series"
+        },
+        {
+          "quote": "Assets (instant) data points span 2009-12-31 through 2014-03-31",
+          "source_accession_no": "0000085961-14-000027",
+          "location": "Balance Sheet series"
+        }
+      ]
+    }
+  ],
+  "misstatement_probability": 30,
+  "mechanism_hypotheses": [],
+  "overall": {
+    "risk_tier": "watch",
+    "top_signals": [
+      "A 10-K/A was filed 2012-03-19 (accession 0001193125-12-121535), roughly one month after the original FY2011 10-K (filed 2012-02-16), re-presenting multi-year balance sheet and income statement data (e.g., Assets=6,259,830,000 for 2009-12-31, NetIncomeLoss quarterly breakdowns for 2010-2011) - suggesting a restatement or correction of previously filed financials, which is the most notable governance/reporting-quality flag in the record.",
+      "Goodwill and intangible assets grew far faster than revenue between 2009 and 2010 (Goodwill +64%: 216,444,000 to 355,842,000; IntangibleAssetsNetExcludingGoodwill +85%: 39,120,000 to 72,269,000) versus Revenues +5.1% (4,887,254,000 to 5,136,435,000), consistent with a business acquisition rather than organic capitalization, but the step-change coincides with the period later covered by the 10-K/A amendment.",
+      "All other core earnings-quality metrics (receivables-to-revenue ratio, allowance-to-receivables ratio, cost-of-services ratio, NI-to-operating-cash-flow ratio, quarterly earnings volatility) show stable, plausible trends consistent with Ryder's capital-intensive truck leasing/logistics business model, with no signs of channel-stuffing, reserve release, or earnings smoothing."
+    ]
+  }
+}

@@ -1,0 +1,345 @@
+{
+  "case_id": "case_29",
+  "run_id": "original-case_29-r1",
+  "model": "claude-sonnet-5",
+  "pipeline_version": "2d39058d057a679a93d4e514d8bebf79ddc9ca86",
+  "run_timestamp": "2026-07-13T07:36:05.700000+00:00",
+  "documents_used": [
+    {
+      "accession_no": "0000933036-13-000006",
+      "form_type": "10-K",
+      "filing_date": "2013-02-26"
+    },
+    {
+      "accession_no": "0000933036-13-000019",
+      "form_type": "10-Q",
+      "filing_date": "2013-04-26"
+    },
+    {
+      "accession_no": "0000933036-13-000028",
+      "form_type": "10-Q",
+      "filing_date": "2013-07-26"
+    },
+    {
+      "accession_no": "0000933036-13-000035",
+      "form_type": "10-Q",
+      "filing_date": "2013-10-25"
+    },
+    {
+      "accession_no": "0000933036-14-000007",
+      "form_type": "10-K",
+      "filing_date": "2014-03-03"
+    },
+    {
+      "accession_no": "0000933036-14-000016",
+      "form_type": "10-Q",
+      "filing_date": "2014-04-25"
+    },
+    {
+      "accession_no": "0000950123-10-070322",
+      "form_type": "10-Q",
+      "filing_date": "2010-07-30"
+    },
+    {
+      "accession_no": "0000950123-10-096884",
+      "form_type": "10-Q",
+      "filing_date": "2010-10-28"
+    },
+    {
+      "accession_no": "0000950123-11-018066",
+      "form_type": "10-K",
+      "filing_date": "2011-02-25"
+    },
+    {
+      "accession_no": "0000950123-11-041646",
+      "form_type": "10-Q",
+      "filing_date": "2011-04-29"
+    },
+    {
+      "accession_no": "0000950123-11-070051",
+      "form_type": "10-Q",
+      "filing_date": "2011-07-29"
+    },
+    {
+      "accession_no": "0000950123-11-092914",
+      "form_type": "10-Q",
+      "filing_date": "2011-10-28"
+    },
+    {
+      "accession_no": "0001193125-12-173208",
+      "form_type": "10-K/A",
+      "filing_date": "2012-04-20"
+    },
+    {
+      "accession_no": "0001193125-12-189121",
+      "form_type": "10-Q",
+      "filing_date": "2012-04-27"
+    },
+    {
+      "accession_no": "0001193125-12-318655",
+      "form_type": "10-Q",
+      "filing_date": "2012-07-27"
+    },
+    {
+      "accession_no": "0001445305-12-003241",
+      "form_type": "10-Q",
+      "filing_date": "2012-10-26"
+    }
+  ],
+  "checklist": [
+    {
+      "item_id": "CL1",
+      "question": "Did receivables grow materially faster than revenue across consecutive periods?",
+      "finding": "no_flag",
+      "confidence": "high",
+      "evidence": [
+        {
+          "quote": "AccountsReceivableNet=63439000 (2009-12-31)",
+          "source_accession_no": "0000950123-11-018066",
+          "location": "10-K FY2009 balance sheet"
+        },
+        {
+          "quote": "AccountsReceivableNet=58686000 (2013-12-31)",
+          "source_accession_no": "0000933036-14-000016",
+          "location": "10-Q Q1 2014 (prior year-end balance)"
+        },
+        {
+          "quote": "Revenues=2751956000 (2009 annual)",
+          "source_accession_no": "0001193125-12-173208",
+          "location": "10-K/A income statement"
+        },
+        {
+          "quote": "Revenues=3104183000 (2013 annual)",
+          "source_accession_no": "0000933036-14-000007",
+          "location": "10-K FY2013 income statement"
+        }
+      ]
+    },
+    {
+      "item_id": "CL2",
+      "question": "Did non-current 'soft' assets (intangibles, other assets, capitalized items) grow materially faster than the business overall?",
+      "finding": "flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "PropertyPlantAndEquipmentNet=204551000 (2009-12-31)",
+          "source_accession_no": "0000950123-11-018066",
+          "location": "10-K FY2009 balance sheet"
+        },
+        {
+          "quote": "PropertyPlantAndEquipmentNet=336498000 (2013-12-31)",
+          "source_accession_no": "0000933036-14-000016",
+          "location": "10-Q Q1 2014 (prior year-end balance)"
+        },
+        {
+          "quote": "Revenues=2751956000 (2009 annual) vs Revenues=3104183000 (2013 annual)",
+          "source_accession_no": "0001193125-12-173208",
+          "location": "10-K/A / 10-K FY2013"
+        },
+        {
+          "quote": "Goodwill=1268684000 (2009-12-31) vs Goodwill=1364549000 (2013-12-31)",
+          "source_accession_no": "0001193125-12-173208",
+          "location": "10-K/A / 10-Q Q1 2014"
+        }
+      ]
+    },
+    {
+      "item_id": "CL3",
+      "question": "Is there a persistent divergence between net income and operating cash flow?",
+      "finding": "flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "NetCashProvidedByUsedInOperatingActivities=330121000 (2009 annual) vs NetIncomeLoss=167855000 (2009 annual)",
+          "source_accession_no": "0001193125-12-173208",
+          "location": "10-K/A cash flow / income statement"
+        },
+        {
+          "quote": "NetCashProvidedByUsedInOperatingActivities=134342000 (2013 annual) vs NetIncomeLoss=128238000 (2013 annual)",
+          "source_accession_no": "0000933036-14-000007",
+          "location": "10-K FY2013 cash flow / income statement"
+        },
+        {
+          "quote": "NetCashProvidedByUsedInOperatingActivities=217898000 (2012 annual) vs NetIncomeLoss=181703000 (2012 annual)",
+          "source_accession_no": "0000933036-14-000007",
+          "location": "10-K FY2013 (comparative FY2012 cash flow)"
+        }
+      ]
+    },
+    {
+      "item_id": "CL4",
+      "question": "Do inventory levels or gross margins show trends inconsistent with revenue?",
+      "finding": "no_flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "GrossProfit=1987998000 / Revenues=2751956000 (2009 annual) = 72.2% margin",
+          "source_accession_no": "0001193125-12-173208",
+          "location": "10-K/A income statement"
+        },
+        {
+          "quote": "GrossProfit=2149446000 / Revenues=3104183000 (2013 annual) = 69.2% margin",
+          "source_accession_no": "0000933036-14-000007",
+          "location": "10-K FY2013 income statement"
+        }
+      ]
+    },
+    {
+      "item_id": "CL5",
+      "question": "Is the earnings trajectory unusually smooth relative to the volatility of revenue and cash flow?",
+      "finding": "no_flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "NetIncomeLoss=51941000 (Q1 2012)",
+          "source_accession_no": "0000933036-13-000019",
+          "location": "10-Q Q1 2012"
+        },
+        {
+          "quote": "NetIncomeLoss=27622000 (Q3 2013)",
+          "source_accession_no": "0000933036-13-000035",
+          "location": "10-Q Q3 2013"
+        },
+        {
+          "quote": "NetIncomeLoss=128238000 (2013 annual) vs NetIncomeLoss=181703000 (2012 annual)",
+          "source_accession_no": "0000933036-14-000007",
+          "location": "10-K FY2013 income statement"
+        }
+      ]
+    },
+    {
+      "item_id": "CL6",
+      "question": "Did liability, allowance, or reserve balances decline (or fail to grow) despite growing business activity?",
+      "finding": "no_flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "Liabilities=1196483000 (2009-12-31)",
+          "source_accession_no": "0000950123-11-018066",
+          "location": "10-K FY2009 balance sheet"
+        },
+        {
+          "quote": "Liabilities=1675002000 (2013-12-31)",
+          "source_accession_no": "0000933036-14-000016",
+          "location": "10-Q Q1 2014 (prior year-end balance)"
+        },
+        {
+          "quote": "Revenues=3104183000 (2013 annual) vs Revenues=2751956000 (2009 annual)",
+          "source_accession_no": "0000933036-14-000007",
+          "location": "10-K FY2013 income statement"
+        }
+      ]
+    },
+    {
+      "item_id": "CL7",
+      "question": "Does the filing chronology show irregularities (late filings/NT forms, amendments, unusual 8-K frequency)?",
+      "finding": "flag",
+      "confidence": "high",
+      "evidence": [
+        {
+          "quote": "10-K filed 2012-02-28, followed by 10-K/A filed 2012-04-20 (accession 0001193125-12-173208)",
+          "source_accession_no": "0001193125-12-173208",
+          "location": "filing chronology"
+        },
+        {
+          "quote": "CORRESP filed 2012-04-20 concurrent with the 10-K/A",
+          "source_accession_no": "0001193125-12-173208",
+          "location": "filing chronology"
+        },
+        {
+          "quote": "Multiple UPLOAD/CORRESP entries (2008-06-02, 2010-06-15, 2011-03-10, 2012-04-11, 2013-05-23, 2013-06-06, 2013-09-19, 2013-10-10/15/23, 2014-05-06/09) indicating repeated SEC staff review correspondence",
+          "source_accession_no": "0001193125-12-173208",
+          "location": "filing chronology"
+        }
+      ]
+    },
+    {
+      "item_id": "CL8",
+      "question": "Is the provided data sufficient in coverage and length for the above assessments?",
+      "finding": "no_flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "Quarterly and annual data available from 2007-12-31 through 2014-03-31 for Revenues, NetIncomeLoss, OperatingIncomeLoss, Assets, Liabilities, cash flow line items",
+          "source_accession_no": "0000933036-14-000016",
+          "location": "aggregated financial_series_point_in_time"
+        }
+      ]
+    }
+  ],
+  "misstatement_probability": 55,
+  "mechanism_hypotheses": [
+    {
+      "affected_line_items": [
+        "AccountsReceivableNet",
+        "Liabilities",
+        "StockholdersEquity",
+        "NetIncomeLoss",
+        "OperatingIncomeLoss",
+        "Assets",
+        "PropertyPlantAndEquipmentNet"
+      ],
+      "direction": "timing_shift",
+      "accounting_treatment": "Correction/restatement of previously issued financial statements via a Form 10-K/A filed only ~7 weeks after the original 10-K, revising prior-period balance sheet and income statement figures (e.g., AR, liabilities, equity, cash for 2008-2011 periods sourced from the amended filing rather than the original 10-K).",
+      "rationale_evidence": [
+        {
+          "quote": "10-K filed 2012-02-28 followed by 10-K/A filed 2012-04-20 (accession 0001193125-12-173208), which is the sourced accession for AccountsReceivableNet=53890000 (2010-12-31), Liabilities=1334532000 (2010-12-31), StockholdersEquity=1350956000 (2010-12-31 restated figure elsewhere), NetIncomeLoss=167855000 (2009 annual), and CashAndCashEquivalentsAtCarryingValue=87382000 (2008-12-31)",
+          "source_accession_no": "0001193125-12-173208",
+          "location": "10-K/A filing metadata across multiple concepts"
+        }
+      ]
+    },
+    {
+      "affected_line_items": [
+        "PropertyPlantAndEquipmentNet",
+        "PropertyPlantAndEquipmentGross",
+        "CostOfRevenue",
+        "Depreciation"
+      ],
+      "direction": "overstated",
+      "accounting_treatment": "Potential over-capitalization of store buildout/rental merchandise-related costs that should be expensed, inflating fixed assets relative to the pace of revenue growth (capex/PP&E growing ~65% vs revenue growth of ~13% over 2009-2013), which would understate cost of revenue/depreciation expense in the near term and overstate net asset values.",
+      "rationale_evidence": [
+        {
+          "quote": "PropertyPlantAndEquipmentNet=204551000 (2009-12-31) growing to PropertyPlantAndEquipmentNet=336498000 (2013-12-31), a 64.6% increase",
+          "source_accession_no": "0000933036-14-000016",
+          "location": "10-Q Q1 2014 balance sheet (prior year-end comparative)"
+        },
+        {
+          "quote": "Revenues=2751956000 (2009 annual) growing to Revenues=3104183000 (2013 annual), a 12.8% increase",
+          "source_accession_no": "0000933036-14-000007",
+          "location": "10-K FY2013 income statement"
+        }
+      ]
+    },
+    {
+      "affected_line_items": [
+        "NetIncomeLoss",
+        "NetCashProvidedByUsedInOperatingActivities",
+        "Revenues"
+      ],
+      "direction": "overstated",
+      "accounting_treatment": "Deteriorating cash conversion of earnings (OCF-to-NI ratio falling from ~1.97x in 2009 to ~1.05x in 2013) could indicate increasing reliance on accruals, receivables build, or revenue recognized ahead of cash collection (e.g., in the Acceptance Now segment) to sustain reported net income as core operating cash generation weakened.",
+      "rationale_evidence": [
+        {
+          "quote": "NetCashProvidedByUsedInOperatingActivities=330121000 (2009 annual) vs NetIncomeLoss=167855000 (2009 annual)",
+          "source_accession_no": "0001193125-12-173208",
+          "location": "10-K/A cash flow statement"
+        },
+        {
+          "quote": "NetCashProvidedByUsedInOperatingActivities=134342000 (2013 annual) vs NetIncomeLoss=128238000 (2013 annual)",
+          "source_accession_no": "0000933036-14-000007",
+          "location": "10-K FY2013 cash flow statement"
+        }
+      ]
+    }
+  ],
+  "overall": {
+    "risk_tier": "elevated",
+    "top_signals": [
+      "10-K/A restatement filed only ~7 weeks after the original FY2011 10-K, amending multiple prior-period balance sheet and income statement figures (accession 0001193125-12-173208)",
+      "Repeated SEC CORRESP/UPLOAD correspondence across 2008-2014 suggesting sustained regulatory scrutiny of filings",
+      "PropertyPlantAndEquipmentNet growth of ~65% (2009-2013) far outpacing revenue growth of ~13% over the same period",
+      "Narrowing operating cash flow-to-net income ratio (from ~1.97x in 2009 to ~1.05x in 2013), indicating weakening cash backing of reported earnings"
+    ]
+  }
+}
