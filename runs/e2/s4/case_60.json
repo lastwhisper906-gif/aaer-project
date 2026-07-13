@@ -1,0 +1,353 @@
+{
+  "case_id": "case_60",
+  "run_id": "perturbed-case_60-r1",
+  "model": "claude-sonnet-5",
+  "pipeline_version": "f6ccf7de4ba1f8f0f7e4c8d01744d01bc852cfe1",
+  "run_timestamp": "2026-07-13T03:15:54.532678+00:00",
+  "documents_used": [
+    {
+      "accession_no": "0001140361-11-039734",
+      "form_type": "10-Q",
+      "filing_date": "2011-08-04"
+    },
+    {
+      "accession_no": "0001140361-11-053502",
+      "form_type": "10-Q",
+      "filing_date": "2011-11-14"
+    },
+    {
+      "accession_no": "0001140361-12-017997",
+      "form_type": "10-K",
+      "filing_date": "2012-03-29"
+    },
+    {
+      "accession_no": "0001140361-12-024988",
+      "form_type": "10-Q",
+      "filing_date": "2012-05-14"
+    },
+    {
+      "accession_no": "0001140361-12-036885",
+      "form_type": "10-Q",
+      "filing_date": "2012-08-14"
+    },
+    {
+      "accession_no": "0001140361-12-046891",
+      "form_type": "10-Q",
+      "filing_date": "2012-11-13"
+    },
+    {
+      "accession_no": "0001140361-13-012765",
+      "form_type": "10-K",
+      "filing_date": "2013-03-15"
+    },
+    {
+      "accession_no": "0001140361-13-019946",
+      "form_type": "10-Q",
+      "filing_date": "2013-05-10"
+    },
+    {
+      "accession_no": "0001376339-13-000006",
+      "form_type": "10-Q",
+      "filing_date": "2013-08-08"
+    },
+    {
+      "accession_no": "0001376339-13-000010",
+      "form_type": "10-Q",
+      "filing_date": "2013-11-08"
+    },
+    {
+      "accession_no": "0001376339-14-000005",
+      "form_type": "10-K",
+      "filing_date": "2014-03-04"
+    },
+    {
+      "accession_no": "0001376339-14-000015",
+      "form_type": "10-Q",
+      "filing_date": "2014-05-12"
+    },
+    {
+      "accession_no": "0001376339-14-000032",
+      "form_type": "10-Q",
+      "filing_date": "2014-08-11"
+    },
+    {
+      "accession_no": "0001376339-14-000043",
+      "form_type": "10-Q",
+      "filing_date": "2014-11-10"
+    },
+    {
+      "accession_no": "0001376339-15-000040",
+      "form_type": "10-K",
+      "filing_date": "2015-03-13"
+    },
+    {
+      "accession_no": "0001376339-15-000054",
+      "form_type": "10-Q",
+      "filing_date": "2015-05-01"
+    },
+    {
+      "accession_no": "0001376339-15-000084",
+      "form_type": "10-Q",
+      "filing_date": "2015-08-07"
+    },
+    {
+      "accession_no": "0001376339-15-000100",
+      "form_type": "10-Q",
+      "filing_date": "2015-11-06"
+    },
+    {
+      "accession_no": "0001376339-16-000138",
+      "form_type": "10-K",
+      "filing_date": "2016-02-29"
+    }
+  ],
+  "checklist": [
+    {
+      "item_id": "CL1",
+      "question": "Did receivables grow materially faster than revenue across consecutive periods?",
+      "finding": "flag",
+      "confidence": "high",
+      "evidence": [
+        {
+          "quote": "AccountsReceivableNetCurrent=61,070,761.69 (2014-12-31)",
+          "source_accession_no": "0001376339-16-000138",
+          "location": "Balance Sheet, FY2014 comparative"
+        },
+        {
+          "quote": "AccountsReceivableNetCurrent=123,082,588.27 (2015-12-31)",
+          "source_accession_no": "0001376339-16-000138",
+          "location": "Balance Sheet, FY2015"
+        },
+        {
+          "quote": "SalesRevenueGoodsNet=90,610,124.93 (Q4 2014)",
+          "source_accession_no": "0001376339-16-000138",
+          "location": "Income Statement quarterly detail"
+        },
+        {
+          "quote": "SalesRevenueGoodsNet=118,686,372.68 (Q4 2015)",
+          "source_accession_no": "0001376339-16-000138",
+          "location": "Income Statement quarterly detail"
+        },
+        {
+          "quote": "AccountsReceivableNetCurrent=90,323,912.98 (2015-06-30) vs 70,982,854.04 (2015-03-31), +27.2% q/q, while SalesRevenueGoodsNet grew only from 93,344,021.51 (Q1 2015) to 104,591,006.41 (Q2 2015), +12.1%",
+          "source_accession_no": "0001376339-15-000084",
+          "location": "10-Q Q2 2015"
+        }
+      ]
+    },
+    {
+      "item_id": "CL2",
+      "question": "Did non-current 'soft' assets (intangibles, other assets, capitalized items) grow materially faster than the business overall?",
+      "finding": "no_flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "IntangibleAssetsNetExcludingGoodwill=34,552,617.47 (2011-12-31)",
+          "source_accession_no": "0001140361-13-012765",
+          "location": "10-K FY2012 comparative balance sheet"
+        },
+        {
+          "quote": "IntangibleAssetsNetExcludingGoodwill=24,643,994.00 (2015-12-31)",
+          "source_accession_no": "0001376339-16-000138",
+          "location": "10-K FY2015 balance sheet"
+        },
+        {
+          "quote": "Goodwill=9,250,370.32 (2015-12-31), unchanged since 2012-12-31 value of 9,251,384.66",
+          "source_accession_no": "0001376339-16-000138",
+          "location": "10-K FY2015 balance sheet"
+        }
+      ]
+    },
+    {
+      "item_id": "CL3",
+      "question": "Is there a persistent divergence between net income and operating cash flow?",
+      "finding": "flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "NetIncomeLoss=67,422,377.35 (FY2015 annual)",
+          "source_accession_no": "0001376339-16-000138",
+          "location": "Income Statement FY2015"
+        },
+        {
+          "quote": "NetCashProvidedByUsedInOperatingActivities=43,062,305.60 (FY2015 annual)",
+          "source_accession_no": "0001376339-16-000138",
+          "location": "Cash Flow Statement FY2015"
+        },
+        {
+          "quote": "NetIncomeLoss=14,241,906.78 (FY2014 annual) vs NetCashProvidedByUsedInOperatingActivities=38,471,465.88 (FY2014 annual)",
+          "source_accession_no": "0001376339-16-000138",
+          "location": "Cash Flow / Income Statement FY2014"
+        }
+      ]
+    },
+    {
+      "item_id": "CL4",
+      "question": "Do inventory levels or gross margins show trends inconsistent with revenue?",
+      "finding": "no_flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "InventoryNet=1,631,641.68 (2011-12-31)",
+          "source_accession_no": "0001140361-13-012765",
+          "location": "10-K FY2012 balance sheet"
+        },
+        {
+          "quote": "InventoryNet=17,081,129.36 (2015-12-31)",
+          "source_accession_no": "0001376339-16-000138",
+          "location": "10-K FY2015 balance sheet"
+        },
+        {
+          "quote": "GrossProfit=241,695,690.69 (FY2014) / SalesRevenueGoodsNet=270,694,685.77 (FY2014) = 89.3% margin; GrossProfit=382,594,400.61 (FY2015) / SalesRevenueGoodsNet=428,850,831.61 (FY2015) = 89.2% margin",
+          "source_accession_no": "0001376339-16-000138",
+          "location": "Income Statement FY2014-FY2015"
+        }
+      ]
+    },
+    {
+      "item_id": "CL5",
+      "question": "Is the earnings trajectory unusually smooth relative to the volatility of revenue and cash flow?",
+      "finding": "flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "NetIncomeLoss=14,999,796.03 (Q3 2015) vs NetIncomeLoss=30,631,548.06 (Q4 2015)",
+          "source_accession_no": "0001376339-16-000138",
+          "location": "Income Statement quarterly detail FY2015"
+        },
+        {
+          "quote": "OperatingIncomeLoss=15,373,016.42 (Q3 2015); OperatingIncomeLoss=55,786,144.19 (FY2015 annual) implying Q4 operating income of approximately 17,756,000, far below the ~105% q/q increase seen in net income",
+          "source_accession_no": "0001376339-16-000138",
+          "location": "Income Statement FY2015 annual and quarterly"
+        }
+      ]
+    },
+    {
+      "item_id": "CL6",
+      "question": "Did liability, allowance, or reserve balances decline (or fail to grow) despite growing business activity?",
+      "finding": "insufficient_data",
+      "confidence": "low",
+      "evidence": [
+        {
+          "quote": "AccountsPayableCurrent=8,382,575.68 (2014-12-31) growing to 16,586,555.10 (2015-09-30)",
+          "source_accession_no": "0001376339-15-000100",
+          "location": "10-Q Q3 2015 balance sheet"
+        },
+        {
+          "quote": "AccruedLiabilitiesCurrent=5,733,397.84 (2014-12-31) growing to 10,633,346.48 (2015-12-31)",
+          "source_accession_no": "0001376339-16-000138",
+          "location": "10-K FY2015 balance sheet"
+        }
+      ]
+    },
+    {
+      "item_id": "CL7",
+      "question": "Does the filing chronology show irregularities (late filings/NT forms, amendments, unusual 8-K frequency)?",
+      "finding": "flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "10-K/A filed 2011-05-02, 2012-04-27, 2012-06-21, 2014-04-30 (multiple annual report amendments)",
+          "source_accession_no": "N/A",
+          "location": "Filing chronology list"
+        },
+        {
+          "quote": "NT 10-Q filed 2009-02-18 (late filing notification)",
+          "source_accession_no": "N/A",
+          "location": "Filing chronology list"
+        },
+        {
+          "quote": "Multiple 8-K/A amendments filed 2009-09-30, 2011-03-14, 2011-03-16, 2011-03-23, 2011-04-01, 2013-07-02, 2014-07-29",
+          "source_accession_no": "N/A",
+          "location": "Filing chronology list"
+        }
+      ]
+    },
+    {
+      "item_id": "CL8",
+      "question": "Is the provided data sufficient in coverage and length for the above assessments?",
+      "finding": "no_flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "Quarterly and annual XBRL data available from 2010-01-01 through 2015-12-31 across Assets, Liabilities, Revenue, AR, Inventory, Cash Flow line items",
+          "source_accession_no": "0001376339-16-000138",
+          "location": "Aggregated financial_series_point_in_time"
+        }
+      ]
+    }
+  ],
+  "misstatement_probability": 55,
+  "mechanism_hypotheses": [
+    {
+      "affected_line_items": [
+        "AccountsReceivableNetCurrent",
+        "SalesRevenueGoodsNet"
+      ],
+      "direction": "overstated",
+      "accounting_treatment": "Possible premature revenue recognition or extension of customer credit terms to accelerate sales bookings, causing receivables to build up faster than cash collections; DSO implied by AR/quarterly revenue rose from roughly 61 days (Q4 2014) to roughly 94 days (Q4 2015), indicating slowing collections relative to reported sales growth.",
+      "rationale_evidence": [
+        {
+          "quote": "AccountsReceivableNetCurrent=61,070,761.69 (2014-12-31) vs SalesRevenueGoodsNet=90,610,124.93 (Q4 2014)",
+          "source_accession_no": "0001376339-16-000138",
+          "location": "10-K FY2015 comparative data"
+        },
+        {
+          "quote": "AccountsReceivableNetCurrent=123,082,588.27 (2015-12-31) vs SalesRevenueGoodsNet=118,686,372.68 (Q4 2015)",
+          "source_accession_no": "0001376339-16-000138",
+          "location": "10-K FY2015"
+        }
+      ]
+    },
+    {
+      "affected_line_items": [
+        "NetIncomeLoss",
+        "NetCashProvidedByUsedInOperatingActivities",
+        "AccountsReceivableNetCurrent"
+      ],
+      "direction": "overstated",
+      "accounting_treatment": "Reported net income growth in FY2015 was not matched by operating cash flow, consistent with earnings driven by non-cash revenue accruals (receivables) rather than cash-generating activity; working capital absorption (mainly AR) consumed cash that would otherwise support reported profitability.",
+      "rationale_evidence": [
+        {
+          "quote": "NetIncomeLoss=67,422,377.35 (FY2015) vs NetCashProvidedByUsedInOperatingActivities=43,062,305.60 (FY2015)",
+          "source_accession_no": "0001376339-16-000138",
+          "location": "10-K FY2015 Cash Flow Statement"
+        },
+        {
+          "quote": "NetIncomeLoss=14,241,906.78 (FY2014) vs NetCashProvidedByUsedInOperatingActivities=38,471,465.88 (FY2014)",
+          "source_accession_no": "0001376339-16-000138",
+          "location": "10-K FY2015 comparative Cash Flow Statement"
+        }
+      ]
+    },
+    {
+      "affected_line_items": [
+        "NetIncomeLoss",
+        "OperatingIncomeLoss"
+      ],
+      "direction": "overstated",
+      "accounting_treatment": "A disproportionately large non-operating or non-recurring item (e.g., tax benefit, valuation allowance release, gain) appears to have been recognized in Q4 2015, inflating quarterly and full-year net income well beyond the growth rate implied by operating income, which could mask a slower underlying operating earnings trend.",
+      "rationale_evidence": [
+        {
+          "quote": "NetIncomeLoss=14,999,796.03 (Q3 2015) increasing to NetIncomeLoss=30,631,548.06 (Q4 2015), more than double",
+          "source_accession_no": "0001376339-16-000138",
+          "location": "10-K FY2015 quarterly detail"
+        },
+        {
+          "quote": "OperatingIncomeLoss=55,786,144.19 (FY2015 annual) with Q1-Q3 sum of 38,038,713.41 implying Q4 operating income near 17.7 million, versus the much larger Q4 net income of 30,631,548.06",
+          "source_accession_no": "0001376339-16-000138",
+          "location": "10-K FY2015 annual and quarterly detail"
+        }
+      ]
+    }
+  ],
+  "overall": {
+    "risk_tier": "watch",
+    "top_signals": [
+      "Accounts receivable grew substantially faster than revenue throughout 2015, with implied DSO rising from ~61 days to ~94 days",
+      "Net income significantly exceeded operating cash flow in FY2015 ($67.4M vs $43.1M), a reversal from FY2014 when OCF exceeded NI",
+      "Q4 2015 net income nearly doubled versus Q3 2015 out of proportion to implied operating income growth, suggesting a large non-operating boost",
+      "History of multiple 10-K/A and 8-K/A amendments and one NT 10-Q, indicating recurring financial reporting corrections"
+    ]
+  }
+}

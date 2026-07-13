@@ -1,0 +1,377 @@
+{
+  "case_id": "case_12",
+  "run_id": "perturbed-case_12-r1",
+  "model": "claude-sonnet-5",
+  "pipeline_version": "f6ccf7de4ba1f8f0f7e4c8d01744d01bc852cfe1",
+  "run_timestamp": "2026-07-13T02:50:05.427683+00:00",
+  "documents_used": [
+    {
+      "accession_no": "0001637459-15-000021",
+      "form_type": "10-Q",
+      "filing_date": "2015-08-10"
+    },
+    {
+      "accession_no": "0001637459-15-000025",
+      "form_type": "8-K",
+      "filing_date": "2015-08-10"
+    },
+    {
+      "accession_no": "0001637459-15-000049",
+      "form_type": "10-Q",
+      "filing_date": "2015-11-06"
+    },
+    {
+      "accession_no": "0001637459-16-000100",
+      "form_type": "10-K",
+      "filing_date": "2016-03-03"
+    },
+    {
+      "accession_no": "0001637459-16-000147",
+      "form_type": "10-Q",
+      "filing_date": "2016-05-05"
+    },
+    {
+      "accession_no": "0001637459-16-000179",
+      "form_type": "10-Q",
+      "filing_date": "2016-08-05"
+    },
+    {
+      "accession_no": "0001637459-16-000207",
+      "form_type": "10-Q",
+      "filing_date": "2016-11-04"
+    },
+    {
+      "accession_no": "0001637459-17-000007",
+      "form_type": "10-K",
+      "filing_date": "2017-02-23"
+    },
+    {
+      "accession_no": "0001637459-17-000116",
+      "form_type": "10-Q/A",
+      "filing_date": "2017-11-07"
+    },
+    {
+      "accession_no": "0001637459-17-000117",
+      "form_type": "10-Q/A",
+      "filing_date": "2017-11-07"
+    },
+    {
+      "accession_no": "0001637459-17-000118",
+      "form_type": "10-Q",
+      "filing_date": "2017-11-07"
+    },
+    {
+      "accession_no": "0001637459-18-000015",
+      "form_type": "10-K",
+      "filing_date": "2018-02-16"
+    },
+    {
+      "accession_no": "0001637459-18-000099",
+      "form_type": "10-Q",
+      "filing_date": "2018-05-03"
+    },
+    {
+      "accession_no": "0001637459-18-000116",
+      "form_type": "10-Q",
+      "filing_date": "2018-08-03"
+    },
+    {
+      "accession_no": "0001637459-18-000124",
+      "form_type": "10-Q",
+      "filing_date": "2018-11-02"
+    }
+  ],
+  "checklist": [
+    {
+      "item_id": "CL1",
+      "question": "Did receivables grow materially faster than revenue across consecutive periods?",
+      "finding": "flag",
+      "confidence": "high",
+      "evidence": [
+        {
+          "quote": "AccountsReceivableNetCurrent=2024782503.44 (2018-03-31)",
+          "source_accession_no": "0001637459-18-000099",
+          "location": "10-Q balance sheet"
+        },
+        {
+          "quote": "AccountsReceivableNetCurrent=3781921342.64 (2018-06-30)",
+          "source_accession_no": "0001637459-18-000116",
+          "location": "10-Q balance sheet"
+        },
+        {
+          "quote": "AccountsReceivableNetCurrent=3940955983.72 (2018-09-29)",
+          "source_accession_no": "0001637459-18-000124",
+          "location": "10-Q balance sheet"
+        },
+        {
+          "quote": "SalesRevenueGoodsNet=12226272894.36 (2017-12-31 to 2018-03-31)",
+          "source_accession_no": "0001637459-18-000099",
+          "location": "10-Q income statement"
+        },
+        {
+          "quote": "SalesRevenueGoodsNet=12967141588.15 (2018-04-01 to 2018-06-30)",
+          "source_accession_no": "0001637459-18-000116",
+          "location": "10-Q income statement"
+        }
+      ]
+    },
+    {
+      "item_id": "CL2",
+      "question": "Did non-current 'soft' assets (intangibles, other assets, capitalized items) grow materially faster than the business overall?",
+      "finding": "flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "IntangibleAssetsNetExcludingGoodwill=4332724245.88 (2014-12-27)",
+          "source_accession_no": "0001637459-15-000025",
+          "location": "8-K balance sheet"
+        },
+        {
+          "quote": "IntangibleAssetsNetExcludingGoodwill=120478437848.62 (2016-01-03)",
+          "source_accession_no": "0001637459-17-000007",
+          "location": "10-K balance sheet"
+        },
+        {
+          "quote": "IntangibleAssetsNetExcludingGoodwill=113897894712.43 (2018-09-29)",
+          "source_accession_no": "0001637459-18-000124",
+          "location": "10-Q balance sheet"
+        },
+        {
+          "quote": "Goodwill=22117451790.5 (2014-12-27)",
+          "source_accession_no": "0001637459-15-000025",
+          "location": "8-K balance sheet"
+        },
+        {
+          "quote": "Goodwill=85578091920.0 (2016-12-31)",
+          "source_accession_no": "0001637459-18-000015",
+          "location": "10-K balance sheet"
+        },
+        {
+          "quote": "SalesRevenueGoodsNet annual = 51370128514.11 (2016), 50875569569.3 (2017) - essentially flat while Goodwill/Intangibles grew 20x+ from 2014 base",
+          "source_accession_no": "0001637459-18-000015",
+          "location": "10-K income statement"
+        }
+      ]
+    },
+    {
+      "item_id": "CL3",
+      "question": "Is there a persistent divergence between net income and operating cash flow?",
+      "finding": "flag",
+      "confidence": "high",
+      "evidence": [
+        {
+          "quote": "NetIncomeLoss=21331975819.33 (2017-01-01 to 2017-12-30)",
+          "source_accession_no": "0001637459-18-000015",
+          "location": "10-K income statement"
+        },
+        {
+          "quote": "NetCashProvidedByUsedInOperatingActivities=1022088485.93 (2017-01-01 to 2017-12-30)",
+          "source_accession_no": "0001637459-18-000015",
+          "location": "10-K cash flow statement"
+        },
+        {
+          "quote": "NetIncomeLoss=15521393079.56 (2017-10-01 to 2017-12-30, single quarter)",
+          "source_accession_no": "0001637459-18-000015",
+          "location": "10-K income statement"
+        }
+      ]
+    },
+    {
+      "item_id": "CL4",
+      "question": "Do inventory levels or gross margins show trends inconsistent with revenue?",
+      "finding": "flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "InventoryNet=5077471833.35 (2016-01-03)",
+          "source_accession_no": "0001637459-17-000007",
+          "location": "10-K balance sheet"
+        },
+        {
+          "quote": "InventoryNet=5459542861.3 (2017-12-30)",
+          "source_accession_no": "0001637459-18-000124",
+          "location": "10-Q balance sheet"
+        },
+        {
+          "quote": "InventoryNet=6374961770.9 (2018-09-29)",
+          "source_accession_no": "0001637459-18-000124",
+          "location": "10-Q balance sheet"
+        },
+        {
+          "quote": "SalesRevenueGoodsNet annual = 51370128514.11 (2016) vs 50875569569.3 (2017) - roughly flat/declining while inventory rose ~26% from 2016-01-03 to 2018-09-29",
+          "source_accession_no": "0001637459-18-000015",
+          "location": "10-K income statement"
+        }
+      ]
+    },
+    {
+      "item_id": "CL5",
+      "question": "Is the earnings trajectory unusually smooth relative to the volatility of revenue and cash flow?",
+      "finding": "no_flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "NetIncomeLoss=15521393079.56 (2017-10-01 to 2017-12-30) vs NetIncomeLoss=1830837819.21 (2017-07-02 to 2017-09-30)",
+          "source_accession_no": "0001637459-18-000015",
+          "location": "10-K income statement"
+        },
+        {
+          "quote": "NetCashProvidedByUsedInOperatingActivities=-1192759808.06 (2017-01-01 to 2017-04-01) vs 800991545.9 (2017-12-31 to 2018-03-31)",
+          "source_accession_no": "0001637459-18-000099",
+          "location": "10-Q cash flow statement"
+        }
+      ]
+    },
+    {
+      "item_id": "CL6",
+      "question": "Did liability, allowance, or reserve balances decline (or fail to grow) despite growing business activity?",
+      "finding": "flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "AllowanceForDoubtfulAccountsReceivableCurrent=62062298.96 (2016-07-03)",
+          "source_accession_no": "0001637459-16-000179",
+          "location": "10-Q notes"
+        },
+        {
+          "quote": "AllowanceForDoubtfulAccountsReceivableCurrent=38788936.85 (2016-12-31)",
+          "source_accession_no": "0001637459-17-000007",
+          "location": "10-K notes"
+        },
+        {
+          "quote": "AccountsReceivableNetCurrent=1689258199.71 (2016-01-03) vs 1491434621.79 (2016-12-31) - allowance coverage ratio fell from ~3.67% to ~2.60% of AR",
+          "source_accession_no": "0001637459-17-000007",
+          "location": "10-K balance sheet/notes"
+        }
+      ]
+    },
+    {
+      "item_id": "CL7",
+      "question": "Does the filing chronology show irregularities (late filings/NT forms, amendments, unusual 8-K frequency)?",
+      "finding": "flag",
+      "confidence": "high",
+      "evidence": [
+        {
+          "quote": "10-Q/A filed 2017-11-07 for period 2017-04-01 (Q1 2017), accession 0001637459-17-000116",
+          "source_accession_no": "0001637459-17-000116",
+          "location": "filing_chronology"
+        },
+        {
+          "quote": "10-Q/A filed 2017-11-07 for period 2017-07-01 (Q2 2017), accession 0001637459-17-000117",
+          "source_accession_no": "0001637459-17-000117",
+          "location": "filing_chronology"
+        },
+        {
+          "quote": "Original 10-Q for Q3 2017 (period 2017-09-30) also filed same day 2017-11-07, accession 0001637459-17-000118 - two prior quarters amended concurrently with current quarter filing",
+          "source_accession_no": "0001637459-17-000118",
+          "location": "filing_chronology"
+        },
+        {
+          "quote": "CostOfGoodsSold=25911009814.19 (2013-12-29 to 2014-12-27) reported in 8-K vs CostOfGoodsSold=14827071109.99 (2013-12-30 to 2014-12-28) reported in later 10-K for essentially the same fiscal year",
+          "source_accession_no": "0001637459-17-000007",
+          "location": "10-K vs 8-K comparison"
+        }
+      ]
+    },
+    {
+      "item_id": "CL8",
+      "question": "Is the provided data sufficient in coverage and length for the above assessments?",
+      "finding": "no_flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "Data spans annual and quarterly points from 2011-12-31 through 2018-09-29 across Revenues, NetIncomeLoss, CFO, Assets, Liabilities, Receivables, Inventory, Goodwill/Intangibles",
+          "source_accession_no": "0001637459-18-000124",
+          "location": "aggregated financial_series_point_in_time"
+        },
+        {
+          "quote": "AccountsPayableCurrent only has two data points (2013-12-28, 2014-12-27) and AllowanceForDoubtfulAccountsReceivableCurrent stops at 2016-12-31, limiting some trend analyses",
+          "source_accession_no": "0001637459-17-000007",
+          "location": "aggregated financial_series_point_in_time"
+        }
+      ]
+    }
+  ],
+  "misstatement_probability": 62,
+  "mechanism_hypotheses": [
+    {
+      "affected_line_items": [
+        "AccountsReceivableNetCurrent",
+        "Revenues/SalesRevenueGoodsNet"
+      ],
+      "direction": "overstated",
+      "accounting_treatment": "Potential premature revenue recognition, channel stuffing, or a receivables securitization/factoring facility being unwound onto the balance sheet, causing accounts receivable to nearly double quarter-over-quarter (87% growth) while reported product sales grew only ~6% in the same quarter, and cash also spiked and then partially reversed the following quarter - a pattern inconsistent with normal organic receivable build.",
+      "rationale_evidence": [
+        {
+          "quote": "AccountsReceivableNetCurrent=2024782503.44 (2018-03-31) -> 3781921342.64 (2018-06-30) -> 3940955983.72 (2018-09-29)",
+          "source_accession_no": "0001637459-18-000116",
+          "location": "10-Q balance sheet"
+        },
+        {
+          "quote": "SalesRevenueGoodsNet=12226272894.36 (Q1 2018) vs 12967141588.15 (Q2 2018)",
+          "source_accession_no": "0001637459-18-000116",
+          "location": "10-Q income statement"
+        },
+        {
+          "quote": "CashAndCashEquivalentsAtCarryingValue=3479367635.23 (2018-03-31) -> 6533996411.98 (2018-06-30) -> 2649284386.69 (2018-09-29)",
+          "source_accession_no": "0001637459-18-000124",
+          "location": "10-Q balance sheet"
+        }
+      ]
+    },
+    {
+      "affected_line_items": [
+        "Prior-period 10-Q financial statements (Q1 2017, Q2 2017)"
+      ],
+      "direction": "timing_shift",
+      "accounting_treatment": "Restatement/correction of previously filed interim financial statements, evidenced by simultaneous filing of 10-Q/A amendments for Q1 2017 and Q2 2017 alongside the original Q3 2017 10-Q on the same date - suggests a material error was identified in previously reported figures that required retroactive correction, a classic signal of prior misstatement.",
+      "rationale_evidence": [
+        {
+          "quote": "10-Q/A for period 2017-04-01 filed 2017-11-07, accession 0001637459-17-000116",
+          "source_accession_no": "0001637459-17-000116",
+          "location": "filing_chronology"
+        },
+        {
+          "quote": "10-Q/A for period 2017-07-01 filed 2017-11-07, accession 0001637459-17-000117",
+          "source_accession_no": "0001637459-17-000117",
+          "location": "filing_chronology"
+        },
+        {
+          "quote": "Original Q3 2017 10-Q also filed 2017-11-07, accession 0001637459-17-000118",
+          "source_accession_no": "0001637459-17-000118",
+          "location": "filing_chronology"
+        }
+      ]
+    },
+    {
+      "affected_line_items": [
+        "NetIncomeLoss",
+        "AllowanceForDoubtfulAccountsReceivableCurrent",
+        "AccountsReceivableNetCurrent"
+      ],
+      "direction": "overstated",
+      "accounting_treatment": "Large non-cash items (e.g., one-time deferred tax remeasurement) inflating FY2017 net income far beyond cash generated from operations, combined with a declining bad-debt allowance as a percentage of gross receivables in 2016 (reserve release), both of which can flatter reported earnings and net receivable/asset values relative to underlying cash economics and collectability risk.",
+      "rationale_evidence": [
+        {
+          "quote": "NetIncomeLoss=21331975819.33 (FY2017) vs NetCashProvidedByUsedInOperatingActivities=1022088485.93 (FY2017)",
+          "source_accession_no": "0001637459-18-000015",
+          "location": "10-K financial statements"
+        },
+        {
+          "quote": "AllowanceForDoubtfulAccountsReceivableCurrent=62062298.96 (2016-07-03) declining to 38788936.85 (2016-12-31) while AccountsReceivableNetCurrent stayed near $1.49B-$1.69B",
+          "source_accession_no": "0001637459-17-000007",
+          "location": "10-K notes/balance sheet"
+        }
+      ]
+    }
+  ],
+  "overall": {
+    "risk_tier": "elevated",
+    "top_signals": [
+      "Accounts receivable nearly doubled in a single quarter (Q2 2018) while revenue grew only ~6%, with cash also spiking and reversing - a pattern inconsistent with normal receivable/revenue dynamics",
+      "Two prior-quarter 10-Qs (Q1 and Q2 2017) were amended (10-Q/A) and filed on the same day as the subsequent quarter's original 10-Q, indicating a retroactive correction of previously issued financial statements",
+      "FY2017 net income ($21.3B) diverged enormously from operating cash flow ($1.0B), and bad-debt allowance coverage declined in 2016 even as receivables held steady, both consistent with earnings/asset quality concerns",
+      "Inconsistent COGS/Gross Profit figures reported for the same FY2014 period across different filings (8-K vs later 10-K), raising data reliability and comparability concerns"
+    ]
+  }
+}

@@ -1,0 +1,343 @@
+{
+  "case_id": "case_60",
+  "run_id": "perturbed-case_60-r1",
+  "model": "claude-sonnet-5",
+  "pipeline_version": "f6ccf7de4ba1f8f0f7e4c8d01744d01bc852cfe1",
+  "run_timestamp": "2026-07-13T03:18:11.442287+00:00",
+  "documents_used": [
+    {
+      "accession_no": "0001140361-11-039734",
+      "form_type": "10-Q",
+      "filing_date": "2011-08-04"
+    },
+    {
+      "accession_no": "0001140361-11-053502",
+      "form_type": "10-Q",
+      "filing_date": "2011-11-14"
+    },
+    {
+      "accession_no": "0001140361-12-017997",
+      "form_type": "10-K",
+      "filing_date": "2012-03-29"
+    },
+    {
+      "accession_no": "0001140361-12-024988",
+      "form_type": "10-Q",
+      "filing_date": "2012-05-14"
+    },
+    {
+      "accession_no": "0001140361-12-036885",
+      "form_type": "10-Q",
+      "filing_date": "2012-08-14"
+    },
+    {
+      "accession_no": "0001140361-12-046891",
+      "form_type": "10-Q",
+      "filing_date": "2012-11-13"
+    },
+    {
+      "accession_no": "0001140361-13-012765",
+      "form_type": "10-K",
+      "filing_date": "2013-03-15"
+    },
+    {
+      "accession_no": "0001140361-13-019946",
+      "form_type": "10-Q",
+      "filing_date": "2013-05-10"
+    },
+    {
+      "accession_no": "0001376339-13-000006",
+      "form_type": "10-Q",
+      "filing_date": "2013-08-08"
+    },
+    {
+      "accession_no": "0001376339-13-000010",
+      "form_type": "10-Q",
+      "filing_date": "2013-11-08"
+    },
+    {
+      "accession_no": "0001376339-14-000005",
+      "form_type": "10-K",
+      "filing_date": "2014-03-04"
+    },
+    {
+      "accession_no": "0001376339-14-000015",
+      "form_type": "10-Q",
+      "filing_date": "2014-05-12"
+    },
+    {
+      "accession_no": "0001376339-14-000032",
+      "form_type": "10-Q",
+      "filing_date": "2014-08-11"
+    },
+    {
+      "accession_no": "0001376339-14-000043",
+      "form_type": "10-Q",
+      "filing_date": "2014-11-10"
+    },
+    {
+      "accession_no": "0001376339-15-000040",
+      "form_type": "10-K",
+      "filing_date": "2015-03-13"
+    },
+    {
+      "accession_no": "0001376339-15-000054",
+      "form_type": "10-Q",
+      "filing_date": "2015-05-01"
+    },
+    {
+      "accession_no": "0001376339-15-000084",
+      "form_type": "10-Q",
+      "filing_date": "2015-08-07"
+    },
+    {
+      "accession_no": "0001376339-15-000100",
+      "form_type": "10-Q",
+      "filing_date": "2015-11-06"
+    }
+  ],
+  "checklist": [
+    {
+      "item_id": "CL1",
+      "question": "Did receivables grow materially faster than revenue across consecutive periods?",
+      "finding": "flag",
+      "confidence": "high",
+      "evidence": [
+        {
+          "quote": "AccountsReceivableNetCurrent=61,070,761.69 (2014-12-31)",
+          "source_accession_no": "0001376339-15-000100",
+          "location": "AccountsReceivableNetCurrent, instant 2014-12-31"
+        },
+        {
+          "quote": "SalesRevenueGoodsNet=90,610,124.93 (Q4 2014, 2014-10-01 to 2014-12-31)",
+          "source_accession_no": "0001376339-15-000040",
+          "location": "SalesRevenueGoodsNet, quarterly Q4 2014"
+        },
+        {
+          "quote": "AccountsReceivableNetCurrent=70,982,854.04 (2015-03-31)",
+          "source_accession_no": "0001376339-15-000054",
+          "location": "AccountsReceivableNetCurrent, instant 2015-03-31"
+        },
+        {
+          "quote": "SalesRevenueGoodsNet=93,344,021.51 (Q1 2015)",
+          "source_accession_no": "0001376339-15-000054",
+          "location": "SalesRevenueGoodsNet, quarterly Q1 2015"
+        },
+        {
+          "quote": "AccountsReceivableNetCurrent=90,323,912.98 (2015-06-30)",
+          "source_accession_no": "0001376339-15-000084",
+          "location": "AccountsReceivableNetCurrent, instant 2015-06-30"
+        },
+        {
+          "quote": "SalesRevenueGoodsNet=104,591,006.41 (Q2 2015)",
+          "source_accession_no": "0001376339-15-000084",
+          "location": "SalesRevenueGoodsNet, quarterly Q2 2015"
+        },
+        {
+          "quote": "AccountsReceivableNetCurrent=107,107,381.90 (2015-09-30)",
+          "source_accession_no": "0001376339-15-000100",
+          "location": "AccountsReceivableNetCurrent, instant 2015-09-30"
+        },
+        {
+          "quote": "SalesRevenueGoodsNet=112,229,431.02 (Q3 2015)",
+          "source_accession_no": "0001376339-15-000100",
+          "location": "SalesRevenueGoodsNet, quarterly Q3 2015"
+        }
+      ]
+    },
+    {
+      "item_id": "CL2",
+      "question": "Did non-current 'soft' assets (intangibles, other assets, capitalized items) grow materially faster than the business overall?",
+      "finding": "no_flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "Goodwill=9,251,384.66 (2011-12-31) vs Goodwill=9,250,370.32 (2015-09-30)",
+          "source_accession_no": "0001376339-15-000100",
+          "location": "Goodwill, instant 2015-09-30 (compare 0001140361-13-012765 for 2011-12-31)"
+        },
+        {
+          "quote": "IntangibleAssetsNetExcludingGoodwill=34,552,617.47 (2011-12-31) declining to 24,591,331.00 (2015-09-30)",
+          "source_accession_no": "0001376339-15-000100",
+          "location": "IntangibleAssetsNetExcludingGoodwill, instant 2015-09-30 (compare 0001140361-13-012765 for 2011-12-31)"
+        }
+      ]
+    },
+    {
+      "item_id": "CL3",
+      "question": "Is there a persistent divergence between net income and operating cash flow?",
+      "finding": "insufficient_data",
+      "confidence": "low",
+      "evidence": [
+        {
+          "quote": "NetIncomeLoss=14,241,906.78 (FY2014) vs NetCashProvidedByUsedInOperatingActivities=38,471,465.88 (FY2014)",
+          "source_accession_no": "0001376339-15-000040",
+          "location": "NetIncomeLoss and NetCashProvidedByUsedInOperatingActivities, annual 2014"
+        },
+        {
+          "quote": "AccountsReceivableNetCurrent grew from 36,848,071.68 (2013-12-31) to 61,070,761.69 (2014-12-31), a ~24.2M use of cash not fully reconciled against the OCF/NI gap in the provided series",
+          "source_accession_no": "0001376339-15-000040",
+          "location": "AccountsReceivableNetCurrent, instant 2013-12-31 and 2014-12-31 (0001376339-15-000100)"
+        }
+      ]
+    },
+    {
+      "item_id": "CL4",
+      "question": "Do inventory levels or gross margins show trends inconsistent with revenue?",
+      "finding": "flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "GrossProfit=10,080,469.70 / SalesRevenueGoodsNet=17,769,059.25 (FY2011) = 56.7% gross margin",
+          "source_accession_no": "0001376339-14-000005",
+          "location": "GrossProfit and SalesRevenueGoodsNet, annual 2011"
+        },
+        {
+          "quote": "GrossProfit=241,695,690.69 / SalesRevenueGoodsNet=270,694,685.77 (FY2014) = 89.3% gross margin",
+          "source_accession_no": "0001376339-15-000040",
+          "location": "GrossProfit and SalesRevenueGoodsNet, annual 2014"
+        },
+        {
+          "quote": "GrossProfit=100,829,036.50 / SalesRevenueGoodsNet=112,229,431.02 (Q3 2015) = 89.8% gross margin",
+          "source_accession_no": "0001376339-15-000100",
+          "location": "GrossProfit and SalesRevenueGoodsNet, quarterly Q3 2015"
+        }
+      ]
+    },
+    {
+      "item_id": "CL5",
+      "question": "Is the earnings trajectory unusually smooth relative to the volatility of revenue and cash flow?",
+      "finding": "no_flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "NetIncomeLoss=-2,111,099.37 (Q1 2014), -892,981.29 (Q2 2014), 8,471,873.81 (Q3 2014), 8,774,113.63 (Q4 2014 implied)",
+          "source_accession_no": "0001376339-15-000054",
+          "location": "NetIncomeLoss quarterly 2014 series"
+        },
+        {
+          "quote": "NetIncomeLoss=9,357,986.02 (Q1 2015), 12,433,047.24 (Q2 2015), 14,999,796.03 (Q3 2015)",
+          "source_accession_no": "0001376339-15-000100",
+          "location": "NetIncomeLoss quarterly 2015 series"
+        }
+      ]
+    },
+    {
+      "item_id": "CL6",
+      "question": "Did liability, allowance, or reserve balances decline (or fail to grow) despite growing business activity?",
+      "finding": "no_flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "AccountsPayableCurrent=8,382,575.68 (2014-12-31) growing to 16,586,555.10 (2015-09-30)",
+          "source_accession_no": "0001376339-15-000100",
+          "location": "AccountsPayableCurrent, instant 2014-12-31 and 2015-09-30"
+        },
+        {
+          "quote": "AccruedLiabilitiesCurrent=5,733,397.84 (2014-12-31) growing to 9,380,882.97 (2015-09-30)",
+          "source_accession_no": "0001376339-15-000100",
+          "location": "AccruedLiabilitiesCurrent, instant 2014-12-31 and 2015-09-30"
+        }
+      ]
+    },
+    {
+      "item_id": "CL7",
+      "question": "Does the filing chronology show irregularities (late filings/NT forms, amendments, unusual 8-K frequency)?",
+      "finding": "flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "NT 10-Q filed 2009-02-18 preceding a delayed 10-Q filed 2009-02-23",
+          "source_accession_no": "N/A",
+          "location": "filing_chronology, 2009-02-18 and 2009-02-23"
+        },
+        {
+          "quote": "Multiple 10-K/A amendments filed: 2008-07-29, 2008-09-30, 2009-07-29, 2011-05-02, 2012-04-27, 2012-06-21, 2014-04-30",
+          "source_accession_no": "N/A",
+          "location": "filing_chronology, 10-K/A entries"
+        },
+        {
+          "quote": "Revised definitive proxy statements (DEFR14A) filed 2013-04-04 and 2014-06-13",
+          "source_accession_no": "N/A",
+          "location": "filing_chronology, DEFR14A entries"
+        }
+      ]
+    },
+    {
+      "item_id": "CL8",
+      "question": "Is the provided data sufficient in coverage and length for the above assessments?",
+      "finding": "no_flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "Quarterly and annual data spanning FY2010 through Q3 2015 provided for Revenue, COGS, GrossProfit, AR, AP, Inventory, Cash, Assets, Liabilities, Equity, and cash flow statement items",
+          "source_accession_no": "0001376339-15-000100",
+          "location": "financial_series_point_in_time, multiple concepts 2010-2015"
+        }
+      ]
+    }
+  ],
+  "misstatement_probability": 58,
+  "mechanism_hypotheses": [
+    {
+      "affected_line_items": [
+        "AccountsReceivableNetCurrent",
+        "SalesRevenueGoodsNet/SalesRevenueNet",
+        "NetIncomeLoss"
+      ],
+      "direction": "overstated",
+      "accounting_treatment": "Potential premature revenue recognition or extension of unusually generous credit terms to distributors/customers (e.g., bill-and-hold or channel stuffing), inflating recorded revenue and receivables ahead of actual cash collection, evidenced by rapidly rising Days Sales Outstanding across three consecutive quarters in 2015.",
+      "rationale_evidence": [
+        {
+          "quote": "AccountsReceivableNetCurrent=61,070,761.69 (2014-12-31) vs SalesRevenueGoodsNet=90,610,124.93 (Q4 2014) implies DSO ~60.6 days; AccountsReceivableNetCurrent=107,107,381.90 (2015-09-30) vs SalesRevenueGoodsNet=112,229,431.02 (Q3 2015) implies DSO ~85.9 days, a 42% increase in DSO over three quarters",
+          "source_accession_no": "0001376339-15-000100",
+          "location": "AccountsReceivableNetCurrent and SalesRevenueGoodsNet, quarterly 2014Q4-2015Q3"
+        }
+      ]
+    },
+    {
+      "affected_line_items": [
+        "CostOfGoodsSold",
+        "GrossProfit",
+        "SellingGeneralAndAdministrativeExpense"
+      ],
+      "direction": "overstated",
+      "accounting_treatment": "Possible misclassification of distributor/commission costs (recorded in SG&A rather than COGS) or under-recognition of cost of goods sold, producing an implausibly high and continuously rising gross margin (56.7% FY2011 to 89.8% Q3 2015) inconsistent with a goods-based/COGS-bearing business model, which would overstate GrossProfit and understate true product cost.",
+      "rationale_evidence": [
+        {
+          "quote": "GrossProfit=10,080,469.70 / SalesRevenueGoodsNet=17,769,059.25 (FY2011) = 56.7%",
+          "source_accession_no": "0001376339-14-000005",
+          "location": "GrossProfit, SalesRevenueGoodsNet annual 2011"
+        },
+        {
+          "quote": "GrossProfit=241,695,690.69 / SalesRevenueGoodsNet=270,694,685.77 (FY2014) = 89.3%",
+          "source_accession_no": "0001376339-15-000040",
+          "location": "GrossProfit, SalesRevenueGoodsNet annual 2014"
+        }
+      ]
+    },
+    {
+      "affected_line_items": [
+        "Retained Earnings / prior-period financial statements (various)"
+      ],
+      "direction": "timing_shift",
+      "accounting_treatment": "Recurring restatements via multiple Form 10-K/A amendments across several fiscal years (2007, 2008, 2010, 2011, 2013) and a revised proxy (DEFR14A), suggesting recurring control weaknesses or corrections to previously issued financials that could mask or shift the timing of misstatements.",
+      "rationale_evidence": [
+        {
+          "quote": "10-K/A filed 2008-07-29, 2008-09-30, 2009-07-29, 2011-05-02, 2012-04-27, 2012-06-21, 2014-04-30",
+          "source_accession_no": "N/A",
+          "location": "filing_chronology, 10-K/A entries"
+        }
+      ]
+    }
+  ],
+  "overall": {
+    "risk_tier": "elevated",
+    "top_signals": [
+      "Accounts receivable growing significantly faster than revenue in 2015 with DSO rising from ~61 to ~86 days over three consecutive quarters",
+      "Gross margin implausibly high and continuously rising (57% to 90%) for a COGS-bearing goods business, suggesting possible cost misclassification",
+      "History of repeated 10-K/A amendments and a revised proxy statement indicating recurring financial reporting corrections",
+      "Unreconciled gap between reported operating cash flow and net income relative to visible working-capital movements in FY2014"
+    ]
+  }
+}

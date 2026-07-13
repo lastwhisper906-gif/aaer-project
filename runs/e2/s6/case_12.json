@@ -1,0 +1,351 @@
+{
+  "case_id": "case_12",
+  "run_id": "perturbed-case_12-r1",
+  "model": "claude-sonnet-5",
+  "pipeline_version": "f6ccf7de4ba1f8f0f7e4c8d01744d01bc852cfe1",
+  "run_timestamp": "2026-07-13T03:01:55.091175+00:00",
+  "documents_used": [
+    {
+      "accession_no": "0001637459-15-000021",
+      "form_type": "10-Q",
+      "filing_date": "2015-08-10"
+    },
+    {
+      "accession_no": "0001637459-15-000025",
+      "form_type": "8-K",
+      "filing_date": "2015-08-10"
+    },
+    {
+      "accession_no": "0001637459-15-000049",
+      "form_type": "10-Q",
+      "filing_date": "2015-11-06"
+    },
+    {
+      "accession_no": "0001637459-16-000100",
+      "form_type": "10-K",
+      "filing_date": "2016-03-03"
+    },
+    {
+      "accession_no": "0001637459-16-000147",
+      "form_type": "10-Q",
+      "filing_date": "2016-05-05"
+    },
+    {
+      "accession_no": "0001637459-16-000179",
+      "form_type": "10-Q",
+      "filing_date": "2016-08-05"
+    },
+    {
+      "accession_no": "0001637459-16-000207",
+      "form_type": "10-Q",
+      "filing_date": "2016-11-04"
+    },
+    {
+      "accession_no": "0001637459-17-000007",
+      "form_type": "10-K",
+      "filing_date": "2017-02-23"
+    },
+    {
+      "accession_no": "0001637459-17-000081",
+      "form_type": "10-Q",
+      "filing_date": "2017-05-04"
+    },
+    {
+      "accession_no": "0001637459-17-000101",
+      "form_type": "10-Q",
+      "filing_date": "2017-08-04"
+    }
+  ],
+  "checklist": [
+    {
+      "item_id": "CL1",
+      "question": "Did receivables grow materially faster than revenue across consecutive periods?",
+      "finding": "insufficient_data",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "AccountsReceivableNetCurrent=1338218321.24 (2014-12-28)",
+          "source_accession_no": "0001637459-16-000100",
+          "location": "AccountsReceivableNetCurrent, 2014-12-28"
+        },
+        {
+          "quote": "AccountsReceivableNetCurrent=3128327756.76 (2015-09-27)",
+          "source_accession_no": "0001637459-15-000049",
+          "location": "AccountsReceivableNetCurrent, 2015-09-27"
+        },
+        {
+          "quote": "AccountsReceivableNetCurrent=1689258199.71 (2016-01-03)",
+          "source_accession_no": "0001637459-17-000007",
+          "location": "AccountsReceivableNetCurrent, 2016-01-03"
+        }
+      ]
+    },
+    {
+      "item_id": "CL2",
+      "question": "Did non-current 'soft' assets (intangibles, other assets, capitalized items) grow materially faster than the business overall?",
+      "finding": "flag",
+      "confidence": "high",
+      "evidence": [
+        {
+          "quote": "Goodwill=22117451790.5 (2014-12-27)",
+          "source_accession_no": "0001637459-15-000025",
+          "location": "Goodwill, 2014-12-27"
+        },
+        {
+          "quote": "Goodwill=90669139881.25 (2015-09-27)",
+          "source_accession_no": "0001637459-15-000049",
+          "location": "Goodwill, 2015-09-27"
+        },
+        {
+          "quote": "IntangibleAssetsNetExcludingGoodwill=4332724245.88 (2014-12-27)",
+          "source_accession_no": "0001637459-15-000025",
+          "location": "IntangibleAssetsNetExcludingGoodwill, 2014-12-27"
+        },
+        {
+          "quote": "IntangibleAssetsNetExcludingGoodwill=109953059835.03 (2015-09-27)",
+          "source_accession_no": "0001637459-15-000049",
+          "location": "IntangibleAssetsNetExcludingGoodwill, 2015-09-27"
+        },
+        {
+          "quote": "Revenues=35307629765.52 (2013-12-29 to 2014-12-27)",
+          "source_accession_no": "0001637459-15-000025",
+          "location": "Revenues, FY2014"
+        },
+        {
+          "quote": "SalesRevenueGoodsNet=51370128514.11 (2016-01-04 to 2016-12-31)",
+          "source_accession_no": "0001637459-17-000007",
+          "location": "SalesRevenueGoodsNet, FY2016"
+        }
+      ]
+    },
+    {
+      "item_id": "CL3",
+      "question": "Is there a persistent divergence between net income and operating cash flow?",
+      "finding": "flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "NetIncomeLoss=1731926030.25 (2017-01-01 to 2017-04-01)",
+          "source_accession_no": "0001637459-17-000081",
+          "location": "NetIncomeLoss, Q1 2017"
+        },
+        {
+          "quote": "NetCashProvidedByUsedInOperatingActivities=-292856473.20 (2017-01-01 to 2017-04-01)",
+          "source_accession_no": "0001637459-17-000081",
+          "location": "NetCashProvidedByUsedInOperatingActivities, Q1 2017"
+        },
+        {
+          "quote": "NetIncomeLoss=535287328.50 (2014-12-29 to 2015-03-29)",
+          "source_accession_no": "0001637459-17-000007",
+          "location": "NetIncomeLoss, Q1 2015"
+        },
+        {
+          "quote": "NetCashProvidedByUsedInOperatingActivities=-160974087.92 (2014-12-29 to 2015-03-29)",
+          "source_accession_no": "0001637459-16-000147",
+          "location": "NetCashProvidedByUsedInOperatingActivities, Q1 2015"
+        }
+      ]
+    },
+    {
+      "item_id": "CL4",
+      "question": "Do inventory levels or gross margins show trends inconsistent with revenue?",
+      "finding": "no_flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "GrossProfit=4612004591.18 (2016-01-04 to 2016-04-03); SalesRevenueGoodsNet=12742165754.43 (2016-01-04 to 2016-04-03)",
+          "source_accession_no": "0001637459-17-000081",
+          "location": "GrossProfit & SalesRevenueGoodsNet, Q1 2016"
+        },
+        {
+          "quote": "GrossProfit=5199656984.42 (2017-04-02 to 2017-07-01); SalesRevenueGoodsNet=12949686566.57 (2017-04-02 to 2017-07-01)",
+          "source_accession_no": "0001637459-17-000101",
+          "location": "GrossProfit & SalesRevenueGoodsNet, Q2 2017"
+        },
+        {
+          "quote": "InventoryNet=5205475324.95 (2016-12-31)",
+          "source_accession_no": "0001637459-17-000101",
+          "location": "InventoryNet, 2016-12-31"
+        }
+      ]
+    },
+    {
+      "item_id": "CL5",
+      "question": "Is the earnings trajectory unusually smooth relative to the volatility of revenue and cash flow?",
+      "finding": "flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "NetIncomeLoss=1737744370.77 (Q1 2016); NetIncomeLoss=1842474500.26 (Q2 2016); NetIncomeLoss=1633014241.28 (Q3 2016); NetIncomeLoss=1830837819.21 (Q4 2016); NetIncomeLoss=1731926030.25 (Q1 2017); NetIncomeLoss=2247818890.32 (Q2 2017)",
+          "source_accession_no": "0001637459-17-000101",
+          "location": "NetIncomeLoss, quarterly FY2016-2017"
+        },
+        {
+          "quote": "NetCashProvidedByUsedInOperatingActivities=523650647.44 (Q1 2016) vs NetCashProvidedByUsedInOperatingActivities=-292856473.20 (Q1 2017)",
+          "source_accession_no": "0001637459-17-000081",
+          "location": "NetCashProvidedByUsedInOperatingActivities, Q1 2016 & Q1 2017"
+        }
+      ]
+    },
+    {
+      "item_id": "CL6",
+      "question": "Did liability, allowance, or reserve balances decline (or fail to grow) despite growing business activity?",
+      "finding": "flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "AllowanceForDoubtfulAccountsReceivableCurrent=62062298.96 (2016-07-03)",
+          "source_accession_no": "0001637459-16-000179",
+          "location": "AllowanceForDoubtfulAccountsReceivableCurrent, 2016-07-03"
+        },
+        {
+          "quote": "AllowanceForDoubtfulAccountsReceivableCurrent=38788936.85 (2016-12-31)",
+          "source_accession_no": "0001637459-17-000007",
+          "location": "AllowanceForDoubtfulAccountsReceivableCurrent, 2016-12-31"
+        },
+        {
+          "quote": "AccountsReceivableNetCurrent=1491434621.79 (2016-12-31)",
+          "source_accession_no": "0001637459-17-000101",
+          "location": "AccountsReceivableNetCurrent, 2016-12-31"
+        }
+      ]
+    },
+    {
+      "item_id": "CL7",
+      "question": "Does the filing chronology show irregularities (late filings/NT forms, amendments, unusual 8-K frequency)?",
+      "finding": "no_flag",
+      "confidence": "low",
+      "evidence": [
+        {
+          "quote": "S-4/A filings on 2015-05-18, 2015-05-27, 2015-05-28, 2015-05-29 with accompanying CORRESP/UPLOAD entries",
+          "source_accession_no": "filing_chronology",
+          "location": "filing_chronology, 2015-05"
+        },
+        {
+          "quote": "10-Q filed 2017-08-04 alongside 8-K filed 2017-08-03",
+          "source_accession_no": "filing_chronology",
+          "location": "filing_chronology, 2017-08"
+        }
+      ]
+    },
+    {
+      "item_id": "CL8",
+      "question": "Is the provided data sufficient in coverage and length for the above assessments?",
+      "finding": "flag",
+      "confidence": "high",
+      "evidence": [
+        {
+          "quote": "Assets=44504486692.09 (2014-12-27, filed 2015-08-10, 8-K)",
+          "source_accession_no": "0001637459-15-000025",
+          "location": "Assets, 2014-12-27"
+        },
+        {
+          "quote": "Assets=70927510472.67 (2014-12-28, filed 2016-03-03, 10-K)",
+          "source_accession_no": "0001637459-16-000100",
+          "location": "Assets, 2014-12-28"
+        },
+        {
+          "quote": "Revenues series ends at 2014-12-27 (FY2014); subsequent periods reported under SalesRevenueGoodsNet starting FY2014 restated",
+          "source_accession_no": "0001637459-16-000100",
+          "location": "Revenues vs SalesRevenueGoodsNet concept switch"
+        }
+      ]
+    }
+  ],
+  "misstatement_probability": 55,
+  "mechanism_hypotheses": [
+    {
+      "affected_line_items": [
+        "AllowanceForDoubtfulAccountsReceivableCurrent",
+        "Bad debt/credit loss expense (not separately reported)",
+        "NetIncomeLoss"
+      ],
+      "direction": "overstated",
+      "accounting_treatment": "Reduction of accounts-receivable allowance/reserve without a proportional decline in receivables, which lowers bad-debt expense and increases reported net income in the period of the reserve release.",
+      "rationale_evidence": [
+        {
+          "quote": "AllowanceForDoubtfulAccountsReceivableCurrent=62062298.96 (2016-07-03)",
+          "source_accession_no": "0001637459-16-000179",
+          "location": "AllowanceForDoubtfulAccountsReceivableCurrent, 2016-07-03"
+        },
+        {
+          "quote": "AllowanceForDoubtfulAccountsReceivableCurrent=38788936.85 (2016-12-31)",
+          "source_accession_no": "0001637459-17-000007",
+          "location": "AllowanceForDoubtfulAccountsReceivableCurrent, 2016-12-31"
+        },
+        {
+          "quote": "AccountsReceivableNetCurrent=1491434621.79 (2016-12-31)",
+          "source_accession_no": "0001637459-17-000101",
+          "location": "AccountsReceivableNetCurrent, 2016-12-31"
+        }
+      ]
+    },
+    {
+      "affected_line_items": [
+        "NetIncomeLoss",
+        "NetCashProvidedByUsedInOperatingActivities",
+        "Working capital accruals"
+      ],
+      "direction": "overstated",
+      "accounting_treatment": "Earnings smoothing via timing of accruals/working-capital items, producing a steady upward net-income trajectory that is decoupled from underlying operating cash generation, particularly evident in negative operating cash flow quarters coinciding with positive, stable net income.",
+      "rationale_evidence": [
+        {
+          "quote": "NetIncomeLoss=1731926030.25 (2017-01-01 to 2017-04-01)",
+          "source_accession_no": "0001637459-17-000081",
+          "location": "NetIncomeLoss, Q1 2017"
+        },
+        {
+          "quote": "NetCashProvidedByUsedInOperatingActivities=-292856473.20 (2017-01-01 to 2017-04-01)",
+          "source_accession_no": "0001637459-17-000081",
+          "location": "NetCashProvidedByUsedInOperatingActivities, Q1 2017"
+        },
+        {
+          "quote": "NetIncomeLoss=535287328.50 (2014-12-29 to 2015-03-29)",
+          "source_accession_no": "0001637459-17-000007",
+          "location": "NetIncomeLoss, Q1 2015"
+        },
+        {
+          "quote": "NetCashProvidedByUsedInOperatingActivities=-160974087.92 (2014-12-29 to 2015-03-29)",
+          "source_accession_no": "0001637459-16-000147",
+          "location": "NetCashProvidedByUsedInOperatingActivities, Q1 2015"
+        }
+      ]
+    },
+    {
+      "affected_line_items": [
+        "Goodwill",
+        "IntangibleAssetsNetExcludingGoodwill",
+        "Amortization expense",
+        "NetIncomeLoss (future periods)"
+      ],
+      "direction": "overstated",
+      "accounting_treatment": "Purchase price allocation from the 2015 merger may have allocated a disproportionate share of the acquisition price to indefinite-lived goodwill versus amortizable/definite-lived intangible assets, minimizing future amortization expense drag and inflating post-merger reported earnings; risk of eventual impairment is also elevated given the scale of the recorded intangibles.",
+      "rationale_evidence": [
+        {
+          "quote": "Goodwill=90669139881.25 (2015-09-27)",
+          "source_accession_no": "0001637459-15-000049",
+          "location": "Goodwill, 2015-09-27"
+        },
+        {
+          "quote": "IntangibleAssetsNetExcludingGoodwill=109953059835.03 (2015-09-27)",
+          "source_accession_no": "0001637459-15-000049",
+          "location": "IntangibleAssetsNetExcludingGoodwill, 2015-09-27"
+        },
+        {
+          "quote": "Assets=236209109827.1 (2015-09-27)",
+          "source_accession_no": "0001637459-15-000049",
+          "location": "Assets, 2015-09-27"
+        }
+      ]
+    }
+  ],
+  "overall": {
+    "risk_tier": "elevated",
+    "top_signals": [
+      "Net income trajectory unusually smooth (quarterly range ~$1.6B-$2.25B) despite operating cash flow swinging from positive to negative in the same relative quarters (e.g., NetCashProvidedByUsedInOperatingActivities=-292856473.20 in Q1 2017)",
+      "Allowance for doubtful accounts declined ~37% from mid-2016 to year-end 2016 (62,062,298.96 to 38,788,936.85) while receivables remained near prior levels",
+      "Massive merger-driven surge in goodwill (~4x) and intangible assets (~25x) around mid-2015 relative to revenue growth of only ~45%, raising purchase-accounting allocation risk",
+      "Structural data inconsistencies (same period-end reported with vastly different Assets figures across filings) that reduce comparability and could mask underlying issues"
+    ]
+  }
+}
