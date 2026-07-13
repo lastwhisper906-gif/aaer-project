@@ -1,0 +1,342 @@
+{
+  "case_id": "case_40",
+  "run_id": "perturbed-case_40-r1",
+  "model": "claude-sonnet-5",
+  "pipeline_version": "94228ca7f7177e6c48343e44f9a09f26f81b6845",
+  "run_timestamp": "2026-07-13T05:13:56.273654+00:00",
+  "documents_used": [
+    {
+      "accession_no": "0001047469-12-003496",
+      "form_type": "10-K",
+      "filing_date": "2012-03-29"
+    },
+    {
+      "accession_no": "0001047469-13-002963",
+      "form_type": "10-K",
+      "filing_date": "2013-03-18"
+    },
+    {
+      "accession_no": "0001047469-14-002521",
+      "form_type": "10-K",
+      "filing_date": "2014-03-17"
+    },
+    {
+      "accession_no": "0001047469-15-002289",
+      "form_type": "10-K",
+      "filing_date": "2015-03-16"
+    },
+    {
+      "accession_no": "0001104659-11-051152",
+      "form_type": "10-Q",
+      "filing_date": "2011-09-09"
+    },
+    {
+      "accession_no": "0001104659-11-063969",
+      "form_type": "10-Q",
+      "filing_date": "2011-11-14"
+    },
+    {
+      "accession_no": "0001104659-12-037557",
+      "form_type": "10-Q",
+      "filing_date": "2012-05-15"
+    },
+    {
+      "accession_no": "0001104659-12-057854",
+      "form_type": "10-Q",
+      "filing_date": "2012-08-14"
+    },
+    {
+      "accession_no": "0001104659-12-077974",
+      "form_type": "10-Q",
+      "filing_date": "2012-11-14"
+    },
+    {
+      "accession_no": "0001104659-13-040310",
+      "form_type": "10-Q",
+      "filing_date": "2013-05-10"
+    },
+    {
+      "accession_no": "0001104659-13-062346",
+      "form_type": "10-Q",
+      "filing_date": "2013-08-09"
+    },
+    {
+      "accession_no": "0001104659-13-083713",
+      "form_type": "10-Q",
+      "filing_date": "2013-11-12"
+    },
+    {
+      "accession_no": "0001104659-14-037638",
+      "form_type": "10-Q",
+      "filing_date": "2014-05-12"
+    },
+    {
+      "accession_no": "0001104659-14-059388",
+      "form_type": "10-Q",
+      "filing_date": "2014-08-11"
+    },
+    {
+      "accession_no": "0001104659-14-078972",
+      "form_type": "10-Q",
+      "filing_date": "2014-11-10"
+    },
+    {
+      "accession_no": "0001104659-15-036841",
+      "form_type": "10-Q",
+      "filing_date": "2015-05-11"
+    }
+  ],
+  "checklist": [
+    {
+      "item_id": "CL1",
+      "question": "Did receivables grow materially faster than revenue across consecutive periods?",
+      "finding": "flag",
+      "confidence": "high",
+      "evidence": [
+        {
+          "quote": "AccountsReceivableNetCurrent=103968885.07 (2013-12-31)",
+          "source_accession_no": "0001047469-15-002289",
+          "location": "10-K FY2013 balance sheet"
+        },
+        {
+          "quote": "AccountsReceivableNetCurrent=136824811.47 (2014-12-31)",
+          "source_accession_no": "0001104659-15-036841",
+          "location": "10-Q Q1 2015 (prior year balance sheet)"
+        },
+        {
+          "quote": "SalesRevenueServicesNet=453889907.19 (2013 annual)",
+          "source_accession_no": "0001047469-15-002289",
+          "location": "10-K FY2013 income statement"
+        },
+        {
+          "quote": "SalesRevenueServicesNet=510500608.32 (2014 annual)",
+          "source_accession_no": "0001047469-15-002289",
+          "location": "10-K FY2014 income statement"
+        },
+        {
+          "quote": "AccountsReceivableNetCurrent=141022201.12 (2015-03-31) vs AccountsReceivableNetCurrent=136824811.47 (2014-12-31) while SalesRevenueServicesNet=128466071.59 (Q1 2015) < SalesRevenueServicesNet=131969101.99 (Q4 2014)",
+          "source_accession_no": "0001104659-15-036841",
+          "location": "10-Q Q1 2015"
+        }
+      ]
+    },
+    {
+      "item_id": "CL2",
+      "question": "Did non-current 'soft' assets (intangibles, other assets, capitalized items) grow materially faster than the business overall?",
+      "finding": "no_flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "Goodwill=158484495.32 (2013-12-31)",
+          "source_accession_no": "0001047469-15-002289",
+          "location": "10-K FY2013 balance sheet"
+        },
+        {
+          "quote": "Goodwill=157006879.61 (2014-12-31)",
+          "source_accession_no": "0001104659-15-036841",
+          "location": "10-Q Q1 2015 (prior year balance sheet)"
+        },
+        {
+          "quote": "IntangibleAssetsNetExcludingGoodwill=88025051.24 (2013-12-31)",
+          "source_accession_no": "0001047469-15-002289",
+          "location": "10-K FY2013 balance sheet"
+        },
+        {
+          "quote": "IntangibleAssetsNetExcludingGoodwill=69082738.71 (2014-12-31)",
+          "source_accession_no": "0001104659-15-036841",
+          "location": "10-Q Q1 2015"
+        }
+      ]
+    },
+    {
+      "item_id": "CL3",
+      "question": "Is there a persistent divergence between net income and operating cash flow?",
+      "finding": "flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "NetIncomeLoss=7299181.31 (2012 annual); NetCashProvidedByUsedInOperatingActivitiesContinuingOperations=40095042.04 (2012 annual)",
+          "source_accession_no": "0001047469-15-002289",
+          "location": "10-K FY2012 cash flow statement"
+        },
+        {
+          "quote": "NetIncomeLoss=11921835.97 (2013 annual); NetCashProvidedByUsedInOperatingActivitiesContinuingOperations=51447455.36 (2013 annual)",
+          "source_accession_no": "0001047469-15-002289",
+          "location": "10-K FY2013 cash flow statement"
+        },
+        {
+          "quote": "NetIncomeLoss=7054113.34 (2014 annual); NetCashProvidedByUsedInOperatingActivitiesContinuingOperations=46961750.46 (2014 annual)",
+          "source_accession_no": "0001047469-15-002289",
+          "location": "10-K FY2014 cash flow statement"
+        }
+      ]
+    },
+    {
+      "item_id": "CL4",
+      "question": "Do inventory levels or gross margins show trends inconsistent with revenue?",
+      "finding": "insufficient_data",
+      "confidence": "low",
+      "evidence": [
+        {
+          "quote": "GrossProfit=276330954.86 (2014 annual); SalesRevenueServicesNet=510500608.32 (2014 annual) implies ~54.1% margin",
+          "source_accession_no": "0001047469-15-002289",
+          "location": "10-K FY2014 income statement"
+        },
+        {
+          "quote": "GrossProfit=249719456.44 (2013 annual); SalesRevenueServicesNet=453889907.19 (2013 annual) implies ~55.0% margin",
+          "source_accession_no": "0001047469-15-002289",
+          "location": "10-K FY2013 income statement"
+        }
+      ]
+    },
+    {
+      "item_id": "CL5",
+      "question": "Is the earnings trajectory unusually smooth relative to the volatility of revenue and cash flow?",
+      "finding": "no_flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "NetIncomeLoss=-641501.45 (Q1 2014)",
+          "source_accession_no": "0001104659-15-036841",
+          "location": "10-Q Q1 2015 (comparative)"
+        },
+        {
+          "quote": "NetIncomeLoss=6417417.14 (Q4 2014)",
+          "source_accession_no": "0001047469-15-002289",
+          "location": "10-K FY2014 quarterly data"
+        },
+        {
+          "quote": "NetIncomeLoss=-968258.75 (Q2 2014)",
+          "source_accession_no": "0001047469-15-002289",
+          "location": "10-K FY2014 quarterly data"
+        }
+      ]
+    },
+    {
+      "item_id": "CL6",
+      "question": "Did liability, allowance, or reserve balances decline (or fail to grow) despite growing business activity?",
+      "finding": "flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "AllowanceForDoubtfulAccountsReceivableCurrent=588643.65 (2010-12-31); AccountsReceivableNetCurrent=34345555.24 (2010-12-31) implies ratio ~1.71%",
+          "source_accession_no": "0001047469-12-003496",
+          "location": "10-K FY2011 balance sheet (prior year comparative)"
+        },
+        {
+          "quote": "AllowanceForDoubtfulAccountsReceivableCurrent=245067.97 (2011-06-30 through 2012-09-30); AccountsReceivableNetCurrent=60812896.03 (2011-12-31) implies ratio ~0.40%",
+          "source_accession_no": "0001104659-11-051152",
+          "location": "10-Q filings 2011-2012"
+        }
+      ]
+    },
+    {
+      "item_id": "CL7",
+      "question": "Does the filing chronology show irregularities (late filings/NT forms, amendments, unusual 8-K frequency)?",
+      "finding": "no_flag",
+      "confidence": "low",
+      "evidence": [
+        {
+          "quote": "10-K filed 2012-03-29, followed by 10-K/A filed 2012-04-26, with DEF 14A filed 2012-04-25",
+          "source_accession_no": "0001047469-12-003496",
+          "location": "Filing chronology"
+        }
+      ]
+    },
+    {
+      "item_id": "CL8",
+      "question": "Is the provided data sufficient in coverage and length for the above assessments?",
+      "finding": "no_flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "Quarterly and annual data available from 2009 through Q1 2015 across AR, AP, revenue, COGS, cash flow, allowance and balance sheet items",
+          "source_accession_no": "0001104659-15-036841",
+          "location": "Aggregated financial_series_point_in_time"
+        }
+      ]
+    }
+  ],
+  "misstatement_probability": 55,
+  "mechanism_hypotheses": [
+    {
+      "affected_line_items": [
+        "AccountsReceivableNetCurrent",
+        "SalesRevenueServicesNet"
+      ],
+      "direction": "overstated",
+      "accounting_treatment": "Possible premature revenue recognition or extension of customer credit terms to accelerate sales, causing receivables to grow faster than revenue (DSO expansion) - most pronounced in FY2014 (AR +31.6% YoY vs revenue +12.5% YoY) and in Q1 2015 where AR rose sequentially while revenue declined.",
+      "rationale_evidence": [
+        {
+          "quote": "AccountsReceivableNetCurrent=103968885.07 (2013-12-31) -> AccountsReceivableNetCurrent=136824811.47 (2014-12-31), a 31.6% increase",
+          "source_accession_no": "0001047469-15-002289",
+          "location": "10-K FY2013/FY2014 balance sheets"
+        },
+        {
+          "quote": "SalesRevenueServicesNet=453889907.19 (2013 annual) -> SalesRevenueServicesNet=510500608.32 (2014 annual), a 12.5% increase",
+          "source_accession_no": "0001047469-15-002289",
+          "location": "10-K FY2013/FY2014 income statements"
+        },
+        {
+          "quote": "AccountsReceivableNetCurrent=141022201.12 (2015-03-31) rose from 136824811.47 (2014-12-31) while SalesRevenueServicesNet=128466071.59 (Q1 2015) fell from 131969101.99 (Q4 2014)",
+          "source_accession_no": "0001104659-15-036841",
+          "location": "10-Q Q1 2015"
+        }
+      ]
+    },
+    {
+      "affected_line_items": [
+        "AllowanceForDoubtfulAccountsReceivableCurrent",
+        "AccountsReceivableNetCurrent",
+        "NetIncomeLoss"
+      ],
+      "direction": "overstated",
+      "accounting_treatment": "Understated bad-debt reserve relative to a rapidly expanding receivables base, especially in the 2011 period, which would understate bad debt expense and overstate both net receivables and net income; reserve coverage only partially recovered by 2014.",
+      "rationale_evidence": [
+        {
+          "quote": "AllowanceForDoubtfulAccountsReceivableCurrent=588643.65 (2010-12-31) vs AccountsReceivableNetCurrent=34345555.24 (2010-12-31) [~1.71% coverage]",
+          "source_accession_no": "0001047469-12-003496",
+          "location": "10-K FY2011 comparative balance sheet"
+        },
+        {
+          "quote": "AllowanceForDoubtfulAccountsReceivableCurrent=245067.97 (2011-12-31) vs AccountsReceivableNetCurrent=60812896.03 (2011-12-31) [~0.40% coverage]",
+          "source_accession_no": "0001047469-13-002963",
+          "location": "10-K FY2012 comparative balance sheet"
+        },
+        {
+          "quote": "AllowanceForDoubtfulAccountsReceivableCurrent=1412744.77 (2014-12-31) vs AccountsReceivableNetCurrent=136824811.47 (2014-12-31) [~1.03% coverage]",
+          "source_accession_no": "0001104659-15-036841",
+          "location": "10-Q Q1 2015"
+        }
+      ]
+    },
+    {
+      "affected_line_items": [
+        "NetCashProvidedByUsedInOperatingActivitiesContinuingOperations",
+        "NetIncomeLoss"
+      ],
+      "direction": "timing_shift",
+      "accounting_treatment": "Persistent large gap between operating cash flow and net income (OCF running 4-6x NI in 2012-2014) not fully explained by disclosed D&A add-backs and working-capital changes, suggesting reliance on non-cash items (e.g., stock-based compensation, not captured in this dataset) or timing shifts in expense/revenue recognition that merit further scrutiny given concurrent receivables build.",
+      "rationale_evidence": [
+        {
+          "quote": "NetIncomeLoss=7054113.34 (2014 annual) vs NetCashProvidedByUsedInOperatingActivitiesContinuingOperations=46961750.46 (2014 annual)",
+          "source_accession_no": "0001047469-15-002289",
+          "location": "10-K FY2014 cash flow statement"
+        },
+        {
+          "quote": "DepreciationAndAmortization=23495290.99 (2014 annual)",
+          "source_accession_no": "0001047469-15-002289",
+          "location": "10-K FY2014 cash flow statement"
+        }
+      ]
+    }
+  ],
+  "overall": {
+    "risk_tier": "elevated",
+    "top_signals": [
+      "Accounts receivable grew materially faster than revenue in FY2014 (AR +31.6% vs revenue +12.5%) and AR rose sequentially in Q1 2015 while revenue declined quarter-over-quarter, suggesting deteriorating collections or aggressive revenue recognition.",
+      "Allowance for doubtful accounts as a percentage of AR fell sharply from ~1.71% (2010) to ~0.40% (2011) even as AR nearly doubled, indicating under-reserving during a period of rapid receivables growth.",
+      "Operating cash flow persistently and substantially exceeds net income (e.g., 2014: OCF $46.96M vs NI $7.05M) by an amount not fully reconciled by disclosed D&A and working-capital items, warranting further review of non-cash adjustments."
+    ]
+  }
+}

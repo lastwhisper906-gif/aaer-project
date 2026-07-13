@@ -1,0 +1,59 @@
+{
+  "ts": "2026-07-13T03:25:44.691961+00:00",
+  "harness_pin": "2.1.201",
+  "flags": [
+    "claude",
+    "-p",
+    "--model",
+    "claude-sonnet-5",
+    "--output-format",
+    "json",
+    "--max-turns",
+    "2",
+    "--setting-sources",
+    "",
+    "--strict-mcp-config",
+    "--tools",
+    "",
+    "--disallowedTools",
+    "Bash,Read,Edit,Write,Glob,Grep,WebFetch,WebSearch,Task,NotebookEdit",
+    "--system-prompt",
+    "You are analyzing the financial reporting quality of Company CASE_60 (XX60) using only the structured data provided below, which reflects public filings available on or before 2015-03-14. Do not use a...[1721 chars]",
+    "--json-schema",
+    "{\"type\": \"object\", \"additionalProperties\": false, \"required\": [\"checklist\", \"misstatement_probability\", \"mechanism_hypotheses\", \"overall\"], \"properties\": {\"checklist\": {\"type\": \"array\", \"items\": {\"typ...[1821 chars]"
+  ],
+  "model_requested": "claude-sonnet-5",
+  "served_models": [
+    "claude-sonnet-5"
+  ],
+  "pin_ok": true,
+  "ok": true,
+  "fail_reason": null,
+  "session_id": "17819b5b-52b3-45b9-a70c-6efa2da4589a",
+  "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 42048,
+    "cache_read_input_tokens": 1116,
+    "output_tokens": 13528,
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 42048,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [],
+    "speed": "standard"
+  },
+  "total_cost_usd_reference_only": 0.4555488,
+  "attempts": 1,
+  "wall_seconds": 126.4,
+  "freeze": {
+    "head": "09455a02da192c126fcd94abd75c9c9b419fdc28",
+    "clean_tree": false
+  },
+  "raw_tail": null
+}

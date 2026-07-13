@@ -1,0 +1,333 @@
+{
+  "case_id": "case_13",
+  "run_id": "perturbed-case_13-r1",
+  "model": "claude-sonnet-5",
+  "pipeline_version": "082bc8638831bc9ae53d5c586c9c322ee227027c",
+  "run_timestamp": "2026-07-13T03:42:00.559289+00:00",
+  "documents_used": [
+    {
+      "accession_no": "0001193125-09-190034",
+      "form_type": "10-Q",
+      "filing_date": "2009-09-10"
+    },
+    {
+      "accession_no": "0001193125-09-249894",
+      "form_type": "10-Q",
+      "filing_date": "2009-12-09"
+    },
+    {
+      "accession_no": "0001193125-10-073247",
+      "form_type": "10-K",
+      "filing_date": "2010-03-31"
+    },
+    {
+      "accession_no": "0001193125-10-134950",
+      "form_type": "10-Q",
+      "filing_date": "2010-06-08"
+    },
+    {
+      "accession_no": "0001193125-10-204896",
+      "form_type": "10-Q",
+      "filing_date": "2010-09-03"
+    },
+    {
+      "accession_no": "0001193125-10-267436",
+      "form_type": "10-Q",
+      "filing_date": "2010-11-23"
+    },
+    {
+      "accession_no": "0001193125-11-078410",
+      "form_type": "10-K",
+      "filing_date": "2011-03-28"
+    },
+    {
+      "accession_no": "0001193125-11-161240",
+      "form_type": "10-Q",
+      "filing_date": "2011-06-08"
+    },
+    {
+      "accession_no": "0001193125-11-241217",
+      "form_type": "10-Q",
+      "filing_date": "2011-09-06"
+    },
+    {
+      "accession_no": "0001193125-11-327713",
+      "form_type": "10-Q",
+      "filing_date": "2011-12-02"
+    },
+    {
+      "accession_no": "0001193125-12-134488",
+      "form_type": "10-K",
+      "filing_date": "2012-03-27"
+    },
+    {
+      "accession_no": "0001193125-12-257291",
+      "form_type": "10-Q",
+      "filing_date": "2012-06-01"
+    },
+    {
+      "accession_no": "0001193125-12-378894",
+      "form_type": "10-Q",
+      "filing_date": "2012-09-04"
+    },
+    {
+      "accession_no": "0001193125-12-485900",
+      "form_type": "10-Q",
+      "filing_date": "2012-11-29"
+    },
+    {
+      "accession_no": "0001193125-13-134707",
+      "form_type": "10-K",
+      "filing_date": "2013-03-29"
+    },
+    {
+      "accession_no": "0001193125-13-250176",
+      "form_type": "10-Q",
+      "filing_date": "2013-06-06"
+    },
+    {
+      "accession_no": "0001193125-13-358404",
+      "form_type": "10-Q",
+      "filing_date": "2013-09-05"
+    },
+    {
+      "accession_no": "0001193125-13-465288",
+      "form_type": "10-Q",
+      "filing_date": "2013-12-06"
+    }
+  ],
+  "checklist": [
+    {
+      "item_id": "CL1",
+      "question": "Did receivables grow materially faster than revenue across consecutive periods?",
+      "finding": "flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "AccountsReceivableNetCurrent value 540557620.07 end 2009-01-31",
+          "source_accession_no": "0001193125-10-073247",
+          "location": "10-K balance sheet, FY2008 (end 2009-01-31)"
+        },
+        {
+          "quote": "AccountsReceivableNetCurrent value 868383287.83 end 2010-01-30",
+          "source_accession_no": "0001193125-11-078410",
+          "location": "10-K balance sheet, FY2009 (end 2010-01-30)"
+        },
+        {
+          "quote": "Revenues value 7181189247.85 for period 2008-02-03 to 2009-01-31",
+          "source_accession_no": "0001193125-11-078410",
+          "location": "10-K income statement, FY2008"
+        },
+        {
+          "quote": "Revenues value 6833452360.01 for period 2009-02-01 to 2010-01-30",
+          "source_accession_no": "0001193125-12-134488",
+          "location": "10-K income statement, FY2009"
+        }
+      ]
+    },
+    {
+      "item_id": "CL2",
+      "question": "Did non-current 'soft' assets (intangibles, other assets, capitalized items) grow materially faster than the business overall?",
+      "finding": "no_flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "Goodwill value 4861905703.14 end 2009-01-31",
+          "source_accession_no": "0001193125-10-073247",
+          "location": "10-K balance sheet"
+        },
+        {
+          "quote": "Goodwill value 4946866083.33 end 2013-08-03",
+          "source_accession_no": "0001193125-13-358404",
+          "location": "10-Q balance sheet"
+        },
+        {
+          "quote": "IntangibleAssetsNetExcludingGoodwill value 697377036.16 end 2009-01-31 declining to 148639290.11 end 2013-11-02",
+          "source_accession_no": "0001193125-13-465288",
+          "location": "10-Q balance sheet, trend of intangibles amortizing down over time"
+        }
+      ]
+    },
+    {
+      "item_id": "CL3",
+      "question": "Is there a persistent divergence between net income and operating cash flow?",
+      "finding": "no_flag",
+      "confidence": "high",
+      "evidence": [
+        {
+          "quote": "NetIncomeLoss value 746177900.81 for period 2012-01-29 to 2013-02-02",
+          "source_accession_no": "0001193125-13-134707",
+          "location": "10-K income statement, FY2012"
+        },
+        {
+          "quote": "NetCashProvidedByUsedInOperatingActivities value 1774357187.32 for period 2012-01-29 to 2013-02-02",
+          "source_accession_no": "0001193125-13-134707",
+          "location": "10-K cash flow statement, FY2012 - OCF consistently exceeds NI across all years, which is not the concerning direction for overstatement risk"
+        }
+      ]
+    },
+    {
+      "item_id": "CL4",
+      "question": "Do inventory levels or gross margins show trends inconsistent with revenue?",
+      "finding": "no_flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "GrossProfit value 1245136379.76 vs Revenues value 2082339782.44 (period 2010-01-31 to 2010-05-01), gross margin ~59.8%",
+          "source_accession_no": "0001193125-12-134488",
+          "location": "10-K quarterly gross profit table"
+        },
+        {
+          "quote": "Revenues value 2266452246.07 and CostOfGoodsSold value 1131687938.08 (period 2013-08-04 to 2013-11-02), implied gross margin ~50.1%",
+          "source_accession_no": "0001193125-13-465288",
+          "location": "10-Q income statement - margin decline tracks the concurrent revenue decline, not a divergence"
+        }
+      ]
+    },
+    {
+      "item_id": "CL5",
+      "question": "Is the earnings trajectory unusually smooth relative to the volatility of revenue and cash flow?",
+      "finding": "no_flag",
+      "confidence": "high",
+      "evidence": [
+        {
+          "quote": "NetIncomeLoss value -271268164.75 for quarter 2009-02-01 to 2009-05-02, then value 490659094.95 for quarter 2009-08-02 to 2009-10-31",
+          "source_accession_no": "0001193125-11-078410",
+          "location": "10-K quarterly net income table - shows large swings including a loss quarter, consistent with (not smoother than) revenue seasonality"
+        }
+      ]
+    },
+    {
+      "item_id": "CL6",
+      "question": "Did liability, allowance, or reserve balances decline (or fail to grow) despite growing business activity?",
+      "finding": "flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "AllowanceForDoubtfulAccountsReceivableCurrent value 17927642.96 end 2011-01-29",
+          "source_accession_no": "0001193125-12-134488",
+          "location": "10-K balance sheet note, FY2010 year-end allowance"
+        },
+        {
+          "quote": "AllowanceForDoubtfulAccountsReceivableCurrent value 6481307.79 end 2012-01-28",
+          "source_accession_no": "0001193125-12-134488",
+          "location": "10-K balance sheet note, FY2011 year-end allowance - a 64% decline"
+        },
+        {
+          "quote": "AccountsReceivableNetCurrent value 1118119297.10 end 2011-01-29 vs 991211737.10 end 2012-01-28 (only ~11% decline)",
+          "source_accession_no": "0001193125-12-134488",
+          "location": "10-K balance sheet - allowance fell far faster than the receivable base or revenue (which fell only ~6%)"
+        }
+      ]
+    },
+    {
+      "item_id": "CL7",
+      "question": "Does the filing chronology show irregularities (late filings/NT forms, amendments, unusual 8-K frequency)?",
+      "finding": "flag",
+      "confidence": "high",
+      "evidence": [
+        {
+          "quote": "NT 10-Q filing_date 2006-09-07",
+          "source_accession_no": "N/A",
+          "location": "filing_chronology"
+        },
+        {
+          "quote": "NT 10-Q/A filing_date 2006-09-28",
+          "source_accession_no": "N/A",
+          "location": "filing_chronology"
+        },
+        {
+          "quote": "NT 10-Q filing_date 2006-12-06",
+          "source_accession_no": "N/A",
+          "location": "filing_chronology"
+        },
+        {
+          "quote": "NT 10-K filing_date 2007-03-29",
+          "source_accession_no": "N/A",
+          "location": "filing_chronology"
+        },
+        {
+          "quote": "NT 10-Q filing_date 2007-06-08",
+          "source_accession_no": "N/A",
+          "location": "filing_chronology"
+        },
+        {
+          "quote": "10-K/A filing_date 2007-07-13 immediately following 10-K filing_date 2007-07-02 and 10-Q/A filing_date 2007-07-02",
+          "source_accession_no": "N/A",
+          "location": "filing_chronology - cluster of four separate non-timely (NT) notifications over ~9 months followed by amended 10-K and 10-Q, consistent with a restatement episode (e.g., stock-option expensing/backdating review common in 2006-2007)"
+        }
+      ]
+    },
+    {
+      "item_id": "CL8",
+      "question": "Is the provided data sufficient in coverage and length for the above assessments?",
+      "finding": "no_flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "Quarterly and annual XBRL data provided continuously from FY2008 (end 2009-01-31) through Q3 FY2013 (end 2013-11-02), spanning ~5 years across Revenues, AR, AP, Inventory, NetIncomeLoss, cash flow statement items, and allowance/reserve disclosures",
+          "source_accession_no": "0001193125-13-465288",
+          "location": "financial_series_point_in_time aggregate coverage"
+        }
+      ]
+    }
+  ],
+  "mechanism_hypotheses": [
+    {
+      "affected_line_items": [
+        "NetIncomeLoss",
+        "StockholdersEquity",
+        "GeneralAndAdministrativeExpense"
+      ],
+      "direction": "overstated",
+      "accounting_treatment": "Likely understatement of stock-based/options compensation expense in periods prior to 2007 (consistent with the industry-wide options backdating review wave), later corrected via restated financials. Evidenced by a cluster of NT 10-Q, NT 10-Q/A, NT 10-K, and NT 10-Q filings between Sept 2006 and June 2007, followed almost immediately by a 10-K/A and same-day 10-Q/A in July 2007.",
+      "rationale_evidence": [
+        {
+          "quote": "NT 10-Q filing_date 2006-09-07; NT 10-Q/A filing_date 2006-09-28; NT 10-Q filing_date 2006-12-06; NT 10-K filing_date 2007-03-29; NT 10-Q filing_date 2007-06-08; 10-K filing_date 2007-07-02; 10-Q/A filing_date 2007-07-02; 10-K/A filing_date 2007-07-13",
+          "source_accession_no": "N/A",
+          "location": "filing_chronology"
+        }
+      ]
+    },
+    {
+      "affected_line_items": [
+        "AllowanceForDoubtfulAccountsReceivableCurrent",
+        "AccountsReceivableNetCurrent",
+        "NetIncomeLoss (bad debt expense)"
+      ],
+      "direction": "understated",
+      "accounting_treatment": "Reduction of the bad-debt allowance/reserve by ~64% in FY2011 (from $17.9M to $6.5M) while gross receivables and revenue fell only modestly, potentially reflecting a reserve release that understates credit risk and modestly overstates net receivables/earnings quality.",
+      "rationale_evidence": [
+        {
+          "quote": "AllowanceForDoubtfulAccountsReceivableCurrent=17927642.96 (2011-01-29) declining to AllowanceForDoubtfulAccountsReceivableCurrent=6481307.79 (2012-01-28), while AccountsReceivableNetCurrent only fell from 1118119297.10 (2011-01-29) to 991211737.10 (2012-01-28)",
+          "source_accession_no": "0001193125-12-134488",
+          "location": "10-K balance sheet/notes"
+        }
+      ]
+    },
+    {
+      "affected_line_items": [
+        "AccountsReceivableNetCurrent",
+        "Revenues"
+      ],
+      "direction": "timing_shift",
+      "accounting_treatment": "Accounts receivable grew ~60.6% (from $540.6M to $868.4M) even as revenue declined ~4.8% (from $7,181.2M to $6,833.5M) between FY2008 and FY2009 year-ends, suggesting either a change in receivable composition (e.g., credit-card/other receivables reclassified onto the balance sheet) or a slowing of collections/timing shift in revenue recognition that outpaced actual sales activity.",
+      "rationale_evidence": [
+        {
+          "quote": "AccountsReceivableNetCurrent=540557620.07 (2009-01-31) vs AccountsReceivableNetCurrent=868383287.83 (2010-01-30); Revenues=7181189247.85 (FY2008) vs Revenues=6833452360.01 (FY2009)",
+          "source_accession_no": "0001193125-11-078410",
+          "location": "10-K balance sheet and income statement comparatives"
+        }
+      ]
+    }
+  ],
+  "misstatement_probability": 58,
+  "overall": {
+    "risk_tier": "elevated",
+    "top_signals": [
+      "Cluster of four NT (late-filing) notifications between Sept 2006 and June 2007 followed by a 10-K/A and same-day 10-Q/A in July 2007, indicating a likely historical restatement episode",
+      "Allowance for doubtful accounts fell ~64% (17.9M→6.5M) between FY2010 and FY2011 year-ends while receivables/revenue declined only modestly, inconsistent with normal reserve-to-receivable relationships",
+      "Accounts receivable grew ~60.6% while revenue declined ~4.8% between FY2008 and FY2009 year-ends, a marked divergence from the pattern seen in other years where AR tracked or fell faster than revenue"
+    ]
+  }
+}

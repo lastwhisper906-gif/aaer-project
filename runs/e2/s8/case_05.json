@@ -1,0 +1,267 @@
+{
+  "case_id": "case_05",
+  "run_id": "perturbed-case_05-r1",
+  "model": "claude-sonnet-5",
+  "pipeline_version": "7f6458ef561555ac0e264eeeda5c02763dd2b129",
+  "run_timestamp": "2026-07-13T04:37:35.593010+00:00",
+  "documents_used": [
+    {
+      "accession_no": "0001193125-11-242141",
+      "form_type": "10-Q",
+      "filing_date": "2011-09-07"
+    },
+    {
+      "accession_no": "0001193125-11-333362",
+      "form_type": "10-Q",
+      "filing_date": "2011-12-07"
+    },
+    {
+      "accession_no": "0001193125-12-160592",
+      "form_type": "10-K",
+      "filing_date": "2012-04-12"
+    },
+    {
+      "accession_no": "0001193125-12-261320",
+      "form_type": "10-Q",
+      "filing_date": "2012-06-06"
+    },
+    {
+      "accession_no": "0001193125-12-378601",
+      "form_type": "10-Q",
+      "filing_date": "2012-09-04"
+    },
+    {
+      "accession_no": "0001193125-12-490365",
+      "form_type": "10-Q",
+      "filing_date": "2012-12-04"
+    },
+    {
+      "accession_no": "0001193125-13-156951",
+      "form_type": "10-K",
+      "filing_date": "2013-04-16"
+    },
+    {
+      "accession_no": "0001193125-13-254278",
+      "form_type": "10-Q",
+      "filing_date": "2013-06-11"
+    },
+    {
+      "accession_no": "0001193125-13-359357",
+      "form_type": "10-Q",
+      "filing_date": "2013-09-06"
+    }
+  ],
+  "checklist": [
+    {
+      "item_id": "CL1",
+      "question": "Did receivables grow materially faster than revenue across consecutive periods?",
+      "finding": "flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "AccountsReceivableNetCurrent=58,597,844.50 (2012-01-28) -> 70,240,282.90 (2013-02-02), +19.9% while Revenues=384,665,826.57 (FY2011) -> 379,393,095.40 (FY2012), -1.4%",
+          "source_accession_no": "0001193125-13-156951",
+          "location": "10-K FY2012 balance sheet / income statement"
+        },
+        {
+          "quote": "AccountsReceivableNetCurrent=51,397,253.38 (2012-07-28) vs 44,360,504.20 (2011-07-30), +15.9%, while SalesRevenueNet quarterly declined from 83,972,410.37 (2011-05-01/2011-07-30) to 81,755,914.89 (2012-04-29/2012-07-28), -2.6%",
+          "source_accession_no": "0001193125-13-359357",
+          "location": "10-Q Q2 FY2013 comparative data"
+        }
+      ]
+    },
+    {
+      "item_id": "CL2",
+      "question": "Did non-current 'soft' assets (intangibles, other assets, capitalized items) grow materially faster than the business overall?",
+      "finding": "no_flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "IntangibleAssetsNetExcludingGoodwill=100,875,503.14 (2011-01-29) declined to 97,674,748.41 (2012-01-28) and roughly stable at 99,303,908.81 (2013-02-02)",
+          "source_accession_no": "0001193125-13-156951",
+          "location": "10-K FY2012 balance sheet"
+        },
+        {
+          "quote": "Goodwill=5,552,912.95 held constant across all reported periods (2011-01-29 through 2013-08-03)",
+          "source_accession_no": "0001193125-13-359357",
+          "location": "10-Q Q2 FY2013 balance sheet"
+        }
+      ]
+    },
+    {
+      "item_id": "CL3",
+      "question": "Is there a persistent divergence between net income and operating cash flow?",
+      "finding": "flag",
+      "confidence": "high",
+      "evidence": [
+        {
+          "quote": "NetIncomeLoss=10,272,124.08 (2011-01-30 to 2012-01-28) vs NetCashProvidedByUsedInOperatingActivities=286,622.74 (same period)",
+          "source_accession_no": "0001193125-13-156951",
+          "location": "10-K FY2012 (comparative FY2011 cash flow statement)"
+        },
+        {
+          "quote": "Q1 FY2013: NetIncomeLoss=4,556,979.45 (2013-02-03 to 2013-05-04) vs NetCashProvidedByUsedInOperatingActivities=-5,734,870.08 (same period)",
+          "source_accession_no": "0001193125-13-254278",
+          "location": "10-Q Q1 FY2013 cash flow statement"
+        },
+        {
+          "quote": "FY2012 NetIncomeLoss=5,958,290.89 vs NetCashProvidedByUsedInOperatingActivities=30,989,473.06 (2012-01-29 to 2013-02-02) - large positive reversal after prior year near-zero CFO",
+          "source_accession_no": "0001193125-13-156951",
+          "location": "10-K FY2012 cash flow statement"
+        }
+      ]
+    },
+    {
+      "item_id": "CL4",
+      "question": "Do inventory levels or gross margins show trends inconsistent with revenue?",
+      "finding": "no_flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "InventoryNet=70,751,936.69 (2011-01-29) -> 79,813,160.22 (2012-01-28) +12.8% vs Revenues +25.1% (FY2010->FY2011); InventoryNet=79,813,160.22 (2012-01-28) -> 73,719,609.17 (2013-02-02) -7.6% vs Revenues -1.4% (FY2011->FY2012)",
+          "source_accession_no": "0001193125-13-156951",
+          "location": "10-K FY2012 balance sheet"
+        },
+        {
+          "quote": "GrossProfit/Revenue margin compressed from ~36-37% (FY2010: GrossProfit=113,706,701.29 / SalesRevenueNet=307,509,159.93) to ~33-34% (FY2011: GrossProfit=130,325,586.68 / SalesRevenueNet=384,665,826.57), then stabilized in FY2012 (GrossProfit=127,692,441.57 / SalesRevenueNet=379,393,095.40)",
+          "source_accession_no": "0001193125-13-156951",
+          "location": "10-K FY2012 income statement"
+        }
+      ]
+    },
+    {
+      "item_id": "CL5",
+      "question": "Is the earnings trajectory unusually smooth relative to the volatility of revenue and cash flow?",
+      "finding": "no_flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "Quarterly NetIncomeLoss swings widely and turns negative in weak quarters: -983,051.57 (2012-04-29 to 2012-07-28) and -1,139,244.86 (2013-05-05 to 2013-08-03), tracking revenue seasonality (SalesRevenueNet quarterly ranges from ~62.6M to ~113.8M)",
+          "source_accession_no": "0001193125-13-359357",
+          "location": "10-Q Q2 FY2013 income statement"
+        }
+      ]
+    },
+    {
+      "item_id": "CL6",
+      "question": "Did liability, allowance, or reserve balances decline (or fail to grow) despite growing business activity?",
+      "finding": "flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "AllowanceForDoubtfulAccountsReceivableCurrent=11,171,845.73 (2012-01-28) declined to 10,403,358.65 (2013-02-02) and further to 8,046,772.28 (2013-08-03), while AccountsReceivableNetCurrent grew from 58,597,844.50 (2012-01-28) to 70,240,282.90 (2013-02-02)",
+          "source_accession_no": "0001193125-13-359357",
+          "location": "10-Q Q2 FY2013 balance sheet notes"
+        },
+        {
+          "quote": "Allowance-to-AR ratio fell from ~19.1% (11,171,845.73/58,597,844.50, 2012-01-28) to ~14.2% (8,046,772.28/56,558,877.99, 2013-08-03)",
+          "source_accession_no": "0001193125-13-359357",
+          "location": "derived from 10-Q Q2 FY2013 and 10-K FY2012 data"
+        }
+      ]
+    },
+    {
+      "item_id": "CL7",
+      "question": "Does the filing chronology show irregularities (late filings/NT forms, amendments, unusual 8-K frequency)?",
+      "finding": "flag",
+      "confidence": "low",
+      "evidence": [
+        {
+          "quote": "Extended sequence of SEC comment-letter correspondence (UPLOAD/CORRESP filings) in mid-2010: 2010-06-23, 2010-06-30, 2010-07-08, 2010-07-22, 2010-07-23, 2010-07-29, 2010-08-04, 2010-08-17, 2010-08-25",
+          "source_accession_no": "N/A",
+          "location": "filing_chronology 2010"
+        },
+        {
+          "quote": "A second round of SEC correspondence shortly before the cutoff: UPLOAD 2013-01-29, CORRESP 2013-02-01, CORRESP 2013-02-22, UPLOAD 2013-03-01, preceding the 10-K filed 2013-04-16",
+          "source_accession_no": "N/A",
+          "location": "filing_chronology 2013"
+        }
+      ]
+    },
+    {
+      "item_id": "CL8",
+      "question": "Is the provided data sufficient in coverage and length for the above assessments?",
+      "finding": "no_flag",
+      "confidence": "high",
+      "evidence": [
+        {
+          "quote": "Quarterly and annual data available continuously from FY2009 (period ending 2010-01-30) through Q2 FY2013 (period ending 2013-08-03), across Assets, Revenues, NetIncomeLoss, cash flow statement line items, and receivable/allowance detail",
+          "source_accession_no": "0001193125-13-359357",
+          "location": "aggregated financial_series_point_in_time coverage"
+        }
+      ]
+    }
+  ],
+  "misstatement_probability": 52,
+  "mechanism_hypotheses": [
+    {
+      "affected_line_items": [
+        "AccountsReceivableNetCurrent",
+        "Revenues",
+        "SalesRevenueNet",
+        "AllowanceForDoubtfulAccountsReceivableCurrent"
+      ],
+      "direction": "overstated",
+      "accounting_treatment": "Potential premature/aggressive revenue recognition or extended customer credit terms causing receivables to build faster than sales, combined with a shrinking bad-debt allowance ratio that would understate the contra-asset and overstate net receivables and income.",
+      "rationale_evidence": [
+        {
+          "quote": "AccountsReceivableNetCurrent=58,597,844.50 (2012-01-28) -> 70,240,282.90 (2013-02-02), +19.9% while Revenues declined -1.4% over the same fiscal year (384,665,826.57 -> 379,393,095.40)",
+          "source_accession_no": "0001193125-13-156951",
+          "location": "10-K FY2012"
+        },
+        {
+          "quote": "AllowanceForDoubtfulAccountsReceivableCurrent=11,171,845.73 (2012-01-28) fell to 10,403,358.65 (2013-02-02) and 8,046,772.28 (2013-08-03) even as gross AR balances grew",
+          "source_accession_no": "0001193125-13-359357",
+          "location": "10-Q Q2 FY2013"
+        }
+      ]
+    },
+    {
+      "affected_line_items": [
+        "NetIncomeLoss",
+        "NetCashProvidedByUsedInOperatingActivities",
+        "AccountsReceivableNetCurrent",
+        "InventoryNet"
+      ],
+      "direction": "overstated",
+      "accounting_treatment": "Reported net income for FY2011 was not corroborated by cash generation, consistent with earnings being propped up by non-cash accruals or working-capital build (receivables/inventory) rather than genuine cash-generating sales; the subsequent large CFO rebound in FY2012 suggests partial unwind of this build-up.",
+      "rationale_evidence": [
+        {
+          "quote": "NetIncomeLoss=10,272,124.08 (FY2011: 2011-01-30 to 2012-01-28) vs NetCashProvidedByUsedInOperatingActivities=286,622.74 for the same period",
+          "source_accession_no": "0001193125-13-156951",
+          "location": "10-K FY2012 (comparative cash flow statement)"
+        },
+        {
+          "quote": "FY2012 NetCashProvidedByUsedInOperatingActivities=30,989,473.06 vs NetIncomeLoss=5,958,290.89, a reversal following the prior year's near-zero operating cash flow",
+          "source_accession_no": "0001193125-13-156951",
+          "location": "10-K FY2012 cash flow statement"
+        }
+      ]
+    },
+    {
+      "affected_line_items": [
+        "AllowanceForDoubtfulAccountsReceivableCurrent",
+        "NetIncomeLoss",
+        "SellingGeneralAndAdministrativeExpense"
+      ],
+      "direction": "understated",
+      "accounting_treatment": "Reduction in bad-debt reserve as a percentage of receivables (from ~19% to ~14%) could reflect under-provisioning for doubtful accounts, artificially reducing bad-debt expense and boosting reported net income during a period of receivables growth outpacing revenue.",
+      "rationale_evidence": [
+        {
+          "quote": "Allowance-to-AR ratio fell from ~19.1% (2012-01-28) to ~14.2% (2013-08-03) despite AR growth",
+          "source_accession_no": "0001193125-13-359357",
+          "location": "derived from 10-Q/10-K receivable and allowance disclosures"
+        }
+      ]
+    }
+  ],
+  "overall": {
+    "risk_tier": "watch",
+    "top_signals": [
+      "Receivables grew ~20% while revenue declined ~1.4% in FY2012 (AR=70,240,282.90 vs Revenues=379,393,095.40)",
+      "FY2011 net income ($10.27M) was almost entirely uncorroborated by operating cash flow ($0.29M), followed by an outsized FY2012 CFO rebound ($30.99M)",
+      "Allowance for doubtful accounts declined both in dollar terms and as a percentage of receivables (19.1%→14.2%) even as gross receivables grew",
+      "Extended SEC comment-letter correspondence in 2010 and again in early 2013 shortly before the cutoff filing"
+    ]
+  }
+}

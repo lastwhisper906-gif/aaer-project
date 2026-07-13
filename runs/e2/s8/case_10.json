@@ -1,0 +1,246 @@
+{
+  "case_id": "case_10",
+  "run_id": "perturbed-case_10-r1",
+  "model": "claude-sonnet-5",
+  "pipeline_version": "94228ca7f7177e6c48343e44f9a09f26f81b6845",
+  "run_timestamp": "2026-07-13T04:52:52.701059+00:00",
+  "documents_used": [
+    {
+      "accession_no": "0000950123-10-067673",
+      "form_type": "10-Q",
+      "filing_date": "2010-07-23"
+    },
+    {
+      "accession_no": "0000950123-10-094963",
+      "form_type": "10-Q",
+      "filing_date": "2010-10-21"
+    },
+    {
+      "accession_no": "0000950123-11-013941",
+      "form_type": "10-K",
+      "filing_date": "2011-02-15"
+    },
+    {
+      "accession_no": "0000950123-11-039372",
+      "form_type": "10-Q",
+      "filing_date": "2011-04-26"
+    },
+    {
+      "accession_no": "0000950123-11-068853",
+      "form_type": "10-Q",
+      "filing_date": "2011-07-27"
+    },
+    {
+      "accession_no": "0001193125-11-280536",
+      "form_type": "10-Q",
+      "filing_date": "2011-10-26"
+    },
+    {
+      "accession_no": "0001193125-12-121535",
+      "form_type": "10-K/A",
+      "filing_date": "2012-03-19"
+    },
+    {
+      "accession_no": "0001445305-12-001152",
+      "form_type": "10-Q",
+      "filing_date": "2012-04-24"
+    },
+    {
+      "accession_no": "0001445305-12-002246",
+      "form_type": "10-Q",
+      "filing_date": "2012-07-24"
+    }
+  ],
+  "checklist": [
+    {
+      "item_id": "CL1",
+      "question": "Did receivables grow materially faster than revenue across consecutive periods?",
+      "finding": "flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "Revenues=4,058,626,779.00 (2010 annual) -> Revenues=4,780,915,035.36 (2011 annual), +17.8%; ReceivablesNetCurrent=485,953,320.73 (2010-12-31) -> ReceivablesNetCurrent=596,292,632.34 (2011-12-31), +22.7%",
+          "source_accession_no": "0001193125-12-121535",
+          "location": "10-K/A FY2011 restated financials"
+        },
+        {
+          "quote": "Revenues=1,126,281,010.81 (Q1 2011) -> Revenues=1,213,910,214.68 (Q1 2012), +7.8%; ReceivablesNetCurrent=536,786,950.78 (2011-03-31) -> ReceivablesNetCurrent=623,641,793.79 (2012-03-31), +16.2%",
+          "source_accession_no": "0001445305-12-001152",
+          "location": "10-Q Q1 2012"
+        }
+      ]
+    },
+    {
+      "item_id": "CL2",
+      "question": "Did non-current 'soft' assets (intangibles, other assets, capitalized items) grow materially faster than the business overall?",
+      "finding": "flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "Goodwill=171,626,813.33 (2010-09-30) -> Goodwill=281,173,590.30 (2010-12-31), +63.8% in one quarter",
+          "source_accession_no": "0001193125-12-121535",
+          "location": "10-K/A restated balance sheet"
+        },
+        {
+          "quote": "IntangibleAssetsNetExcludingGoodwill=29,517,371.87 (2010-09-30) -> IntangibleAssetsNetExcludingGoodwill=57,104,372.72 (2010-12-31), +93.5% in one quarter",
+          "source_accession_no": "0001193125-12-121535",
+          "location": "10-K/A restated balance sheet"
+        }
+      ]
+    },
+    {
+      "item_id": "CL3",
+      "question": "Is there a persistent divergence between net income and operating cash flow?",
+      "finding": "flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "NetIncomeLoss=48,946,718.07 (2009 annual) -> NetIncomeLoss=93,373,697.22 (2010 annual), +90.7% -> NetIncomeLoss=134,151,698.34 (2011 annual), +43.7%",
+          "source_accession_no": "0001193125-12-121535",
+          "location": "10-K/A restated income statement"
+        },
+        {
+          "quote": "NetCashProvidedByUsedInOperatingActivitiesContinuingOperations=778,276,917.31 (2009 annual) -> 812,315,608.42 (2010 annual), +4.4% -> 823,316,273.67 (2011 annual), +1.4%",
+          "source_accession_no": "0001193125-12-121535",
+          "location": "10-K/A restated cash flow statement"
+        }
+      ]
+    },
+    {
+      "item_id": "CL4",
+      "question": "Do inventory levels or gross margins show trends inconsistent with revenue?",
+      "finding": "no_flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "CostOfServices=1,313,492,231.60 (2009 annual) / Revenues=3,861,732,886.76 (2009 annual) = 34.0%; CostOfServices=1,727,577,752.69 (2011 annual) / Revenues=4,780,915,035.36 (2011 annual) = 36.1%",
+          "source_accession_no": "0001193125-12-121535",
+          "location": "10-K/A restated income statement"
+        },
+        {
+          "quote": "InventoryNet=39,623,571.30 (2009-12-31) -> InventoryNet=52,081,299.24 (2011-12-31), roughly proportionate to revenue growth of ~24% over same period",
+          "source_accession_no": "0001445305-12-002246",
+          "location": "10-Q Q4 2011 balance sheet data"
+        }
+      ]
+    },
+    {
+      "item_id": "CL5",
+      "question": "Is the earnings trajectory unusually smooth relative to the volatility of revenue and cash flow?",
+      "finding": "no_flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "NetIncomeLoss quarterly values range from 9,776,700.99 (Q1 2010) to 44,663,238.23 (Q3 2011), showing substantial quarter-to-quarter variability rather than unusual smoothness",
+          "source_accession_no": "0001193125-12-121535",
+          "location": "10-K/A restated quarterly income data"
+        }
+      ]
+    },
+    {
+      "item_id": "CL6",
+      "question": "Did liability, allowance, or reserve balances decline (or fail to grow) despite growing business activity?",
+      "finding": "flag",
+      "confidence": "high",
+      "evidence": [
+        {
+          "quote": "AllowanceForDoubtfulAccountsReceivableCurrent=10,910,586.54 (2009-12-31) -> 10,957,206.22 (2010-12-31), +0.4% -> 11,448,688.32 (2011-12-31), +4.5%, while ReceivablesNetCurrent grew +2.7% (2009-2010) and +22.7% (2010-2011); allowance/receivables ratio fell from 2.31% (2009) to 1.92% (2011)",
+          "source_accession_no": "0001193125-12-121535",
+          "location": "10-K/A restated balance sheet notes"
+        }
+      ]
+    },
+    {
+      "item_id": "CL7",
+      "question": "Does the filing chronology show irregularities (late filings/NT forms, amendments, unusual 8-K frequency)?",
+      "finding": "flag",
+      "confidence": "high",
+      "evidence": [
+        {
+          "quote": "10-K filed 2012-02-16, followed by 10-K/A filed 2012-03-19 restating multiple years (2008-2011) of Revenues, NetIncomeLoss, Goodwill, IntangibleAssetsNetExcludingGoodwill, AccountsPayableCurrent, Depreciation, InterestExpense, SellingGeneralAndAdministrativeExpense, and cash flow data",
+          "source_accession_no": "0001193125-12-121535",
+          "location": "filing_chronology / 10-K/A form"
+        },
+        {
+          "quote": "Multiple CORRESP and UPLOAD filings in 2011-2012 (e.g., CORRESP 2011-06-08, 2011-06-28, 2011-07-08, 2011-08-26, 2012-06-07; UPLOAD 2011-06-06, 2011-07-26, 2011-09-02, 2012-05-14, 2012-06-15) indicating an active SEC comment-letter review process around the time of the restatement",
+          "source_accession_no": "0001193125-12-121535",
+          "location": "filing_chronology"
+        }
+      ]
+    },
+    {
+      "item_id": "CL8",
+      "question": "Is the provided data sufficient in coverage and length for the above assessments?",
+      "finding": "no_flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "Quarterly and annual data spans from 2007-12-31 through 2012-06-30 across Revenues, NetIncomeLoss, ReceivablesNetCurrent, Goodwill, AllowanceForDoubtfulAccountsReceivableCurrent, and operating cash flow, providing roughly 4.5 years of trend data plus a full filing chronology back to 1994",
+          "source_accession_no": "0001445305-12-002246",
+          "location": "financial_series_point_in_time aggregate coverage"
+        }
+      ]
+    }
+  ],
+  "misstatement_probability": 65,
+  "mechanism_hypotheses": [
+    {
+      "affected_line_items": [
+        "ReceivablesNetCurrent",
+        "AllowanceForDoubtfulAccountsReceivableCurrent",
+        "NetIncomeLoss"
+      ],
+      "direction": "overstated",
+      "accounting_treatment": "Under-provisioning of bad debt allowance relative to rapidly growing receivables (allowance/receivables ratio fell from 2.31% in 2009 to 1.92% in 2011 while receivables grew 22.7% vs allowance growth of only 4.5%), combined with receivables outpacing revenue growth, suggests possible aggressive revenue recognition or insufficient reserve build that inflates reported receivables and net income.",
+      "rationale_evidence": [
+        {
+          "quote": "AllowanceForDoubtfulAccountsReceivableCurrent=10,957,206.22 (2010-12-31) -> 11,448,688.32 (2011-12-31), +4.5% vs ReceivablesNetCurrent=485,953,320.73 (2010-12-31) -> 596,292,632.34 (2011-12-31), +22.7%",
+          "source_accession_no": "0001193125-12-121535",
+          "location": "10-K/A restated balance sheet"
+        }
+      ]
+    },
+    {
+      "affected_line_items": [
+        "Goodwill",
+        "IntangibleAssetsNetExcludingGoodwill",
+        "AccountsPayableCurrent",
+        "Revenues",
+        "NetIncomeLoss"
+      ],
+      "direction": "understated",
+      "accounting_treatment": "Filing of a 10-K/A only ~1 month after the original 10-K, restating Goodwill (+64% in Q4 2010), Intangibles (+93% in Q4 2010), and multiple income statement/cash flow line items for FY2008-2011, indicates a prior material misstatement (likely related to acquisition purchase-price allocation or error correction) that was subsequently corrected.",
+      "rationale_evidence": [
+        {
+          "quote": "10-K filed 2012-02-16; 10-K/A filed 2012-03-19 restating Goodwill, IntangibleAssetsNetExcludingGoodwill, Revenues, NetIncomeLoss, AccountsPayableCurrent, Depreciation, InterestExpense for FY2008-2011",
+          "source_accession_no": "0001193125-12-121535",
+          "location": "filing_chronology"
+        }
+      ]
+    },
+    {
+      "affected_line_items": [
+        "NetIncomeLoss",
+        "NetCashProvidedByUsedInOperatingActivitiesContinuingOperations"
+      ],
+      "direction": "overstated",
+      "accounting_treatment": "Net income grew far faster than operating cash flow (NI +90.7% in 2010 and +43.7% in 2011 vs OCF growth of only +4.4% and +1.4%), suggesting increasing reliance on non-cash accruals (e.g., receivables growth, deferred cost recognition) to drive reported earnings growth rather than cash-backed profitability.",
+      "rationale_evidence": [
+        {
+          "quote": "NetIncomeLoss=93,373,697.22 (2010 annual) -> 134,151,698.34 (2011 annual); NetCashProvidedByUsedInOperatingActivitiesContinuingOperations=812,315,608.42 (2010 annual) -> 823,316,273.67 (2011 annual)",
+          "source_accession_no": "0001193125-12-121535",
+          "location": "10-K/A restated cash flow and income statement"
+        }
+      ]
+    }
+  ],
+  "overall": {
+    "risk_tier": "elevated",
+    "top_signals": [
+      "10-K/A filed 2012-03-19 restating multiple years (2008-2011) of Revenues, NetIncomeLoss, Goodwill, Intangibles, AP, and cash flow data just one month after the original 10-K, alongside repeated SEC CORRESP/UPLOAD correspondence in 2011-2012",
+      "Allowance for doubtful accounts grew only 4.5% (2010-2011) while receivables grew 22.7%, causing reserve coverage to decline from 2.31% to 1.92% of receivables",
+      "Net income growth (+90.7% in 2010, +43.7% in 2011) substantially outpaced operating cash flow growth (+4.4%, +1.4%), indicating rising accrual-based earnings",
+      "Goodwill and intangible assets jumped 64% and 93% respectively in a single quarter (Q4 2010) as later restated, indicating possible purchase accounting issues"
+    ]
+  }
+}

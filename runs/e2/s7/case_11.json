@@ -1,0 +1,299 @@
+{
+  "case_id": "case_11",
+  "run_id": "perturbed-case_11-r1",
+  "model": "claude-sonnet-5",
+  "pipeline_version": "1e7d22b94fca212bdd6f395fd6c58cc215d3e2c5",
+  "run_timestamp": "2026-07-13T03:57:21.985519+00:00",
+  "documents_used": [
+    {
+      "accession_no": "0000950123-10-074433",
+      "form_type": "10-Q",
+      "filing_date": "2010-08-06"
+    },
+    {
+      "accession_no": "0000950123-10-101359",
+      "form_type": "10-Q",
+      "filing_date": "2010-11-05"
+    },
+    {
+      "accession_no": "0000950123-11-018857",
+      "form_type": "10-K",
+      "filing_date": "2011-02-25"
+    },
+    {
+      "accession_no": "0000950123-11-046730",
+      "form_type": "10-Q",
+      "filing_date": "2011-05-06"
+    },
+    {
+      "accession_no": "0000950123-11-073729",
+      "form_type": "10-Q",
+      "filing_date": "2011-08-05"
+    },
+    {
+      "accession_no": "0001193125-11-297771",
+      "form_type": "10-Q",
+      "filing_date": "2011-11-04"
+    }
+  ],
+  "checklist": [
+    {
+      "item_id": "CL1",
+      "question": "Did receivables grow materially faster than revenue across consecutive periods?",
+      "finding": "no_flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "AccountsReceivableNetCurrent=34803829.32 (2009-12-31)",
+          "source_accession_no": "0000950123-11-018857",
+          "location": "10-K FY2009 balance sheet"
+        },
+        {
+          "quote": "AccountsReceivableNetCurrent=45620865.66 (2010-12-31)",
+          "source_accession_no": "0001193125-11-297771",
+          "location": "10-Q Q3 2011 comparative balance sheet"
+        },
+        {
+          "quote": "SalesRevenueGoodsNet=220472275.15 (2009 annual); SalesRevenueGoodsNet=284705944.40 (2010 annual)",
+          "source_accession_no": "0000950123-11-018857",
+          "location": "10-K FY2010 income statement"
+        }
+      ]
+    },
+    {
+      "item_id": "CL2",
+      "question": "Did non-current 'soft' assets (intangibles, other assets, capitalized items) grow materially faster than the business overall?",
+      "finding": "flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "OtherAssetsNoncurrent=4322051.95 (2009-12-31)",
+          "source_accession_no": "0000950123-11-018857",
+          "location": "10-K FY2009 balance sheet"
+        },
+        {
+          "quote": "OtherAssetsNoncurrent=11422480.81 (2011-09-30)",
+          "source_accession_no": "0001193125-11-297771",
+          "location": "10-Q Q3 2011 balance sheet"
+        },
+        {
+          "quote": "SalesRevenueGoodsNet=220472275.15 (2009 annual) vs SalesRevenueGoodsNet=79106647.73 (2011-07-01 to 2011-09-30)",
+          "source_accession_no": "0000950123-11-018857",
+          "location": "10-K / 10-Q revenue trend"
+        }
+      ]
+    },
+    {
+      "item_id": "CL3",
+      "question": "Is there a persistent divergence between net income and operating cash flow?",
+      "finding": "no_flag",
+      "confidence": "low",
+      "evidence": [
+        {
+          "quote": "NetIncomeLoss=3457641.56 (2009 annual); NetCashProvidedByUsedInOperatingActivities=27634342.87 (2009 annual)",
+          "source_accession_no": "0000950123-11-018857",
+          "location": "10-K FY2009 cash flow statement"
+        },
+        {
+          "quote": "NetIncomeLoss=46604936.17 (2010 annual); NetCashProvidedByUsedInOperatingActivities=39188390.28 (2010 annual)",
+          "source_accession_no": "0000950123-11-018857",
+          "location": "10-K FY2010 cash flow statement"
+        },
+        {
+          "quote": "Operating cash flow data for 2011-04-01 to 2011-09-30 (Q2/Q3 2011) not provided, limiting assessment of divergence during the period of the large Q3 2011 net loss",
+          "source_accession_no": "0000950123-11-046730",
+          "location": "10-Q Q1 2011 cash flow statement (last available OCF data point)"
+        }
+      ]
+    },
+    {
+      "item_id": "CL4",
+      "question": "Do inventory levels or gross margins show trends inconsistent with revenue?",
+      "finding": "no_flag",
+      "confidence": "low",
+      "evidence": [
+        {
+          "quote": "InventoryNet=53692863.23 (2009-12-31); InventoryNet=72979573.54 (2011-09-30)",
+          "source_accession_no": "0001193125-11-297771",
+          "location": "10-Q Q3 2011 balance sheet"
+        },
+        {
+          "quote": "GrossProfit=234020657.82 (2010 annual) on SalesRevenueGoodsNet=284705944.40 (2010 annual), ~82.2% margin; GrossProfit=63619294.93 (2011-07-01 to 2011-09-30) on SalesRevenueGoodsNet=79106647.73 (2011-07-01 to 2011-09-30), ~80.4% margin",
+          "source_accession_no": "0000950123-11-018857",
+          "location": "10-K FY2010 income statement; 10-Q Q3 2011 income statement"
+        }
+      ]
+    },
+    {
+      "item_id": "CL5",
+      "question": "Is the earnings trajectory unusually smooth relative to the volatility of revenue and cash flow?",
+      "finding": "no_flag",
+      "confidence": "high",
+      "evidence": [
+        {
+          "quote": "NetIncomeLoss=-16388077.96 (2008 annual); NetIncomeLoss=3457641.56 (2009 annual); NetIncomeLoss=46604936.17 (2010 annual)",
+          "source_accession_no": "0000950123-11-018857",
+          "location": "10-K annual net income series"
+        },
+        {
+          "quote": "NetIncomeLoss=3202842.90 (2011-04-01 to 2011-06-30); NetIncomeLoss=-40215324.11 (2011-07-01 to 2011-09-30)",
+          "source_accession_no": "0001193125-11-297771",
+          "location": "10-Q Q3 2011 income statement"
+        }
+      ]
+    },
+    {
+      "item_id": "CL6",
+      "question": "Did liability, allowance, or reserve balances decline (or fail to grow) despite growing business activity?",
+      "finding": "flag",
+      "confidence": "high",
+      "evidence": [
+        {
+          "quote": "AllowanceForDoubtfulAccountsReceivableCurrent=2478333.64 (2009-12-31)",
+          "source_accession_no": "0000950123-11-018857",
+          "location": "10-K FY2009 allowance disclosure"
+        },
+        {
+          "quote": "AllowanceForDoubtfulAccountsReceivableCurrent=1531768.55 (2010-12-31)",
+          "source_accession_no": "0000950123-11-018857",
+          "location": "10-K FY2010 allowance disclosure"
+        },
+        {
+          "quote": "AccountsReceivableNetCurrent=34803829.32 (2009-12-31) growing to AccountsReceivableNetCurrent=45620865.66 (2010-12-31)",
+          "source_accession_no": "0000950123-11-018857",
+          "location": "10-K balance sheet"
+        }
+      ]
+    },
+    {
+      "item_id": "CL7",
+      "question": "Does the filing chronology show irregularities (late filings/NT forms, amendments, unusual 8-K frequency)?",
+      "finding": "flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "10-K filed 2010-02-26 followed by 10-K/A filed 2010-05-26",
+          "source_accession_no": "n/a",
+          "location": "filing_chronology"
+        },
+        {
+          "quote": "Multiple SEC correspondence/UPLOAD filings: CORRESP 2010-08-11, UPLOAD 2010-08-30, CORRESP 2010-09-03, UPLOAD 2010-09-28, CORRESP 2010-10-12, UPLOAD 2010-10-28",
+          "source_accession_no": "n/a",
+          "location": "filing_chronology"
+        },
+        {
+          "quote": "2010-12-31 balance sheet figures (Assets=477467079.88, AccountsReceivableNetCurrent=45620865.66, LiabilitiesCurrent=64876023.81) are sourced from accession 0001193125-11-297771 (10-Q filed 2011-11-04) rather than the original FY2010 10-K accession 0000950123-11-018857",
+          "source_accession_no": "0001193125-11-297771",
+          "location": "10-Q Q3 2011 comparative balance sheet"
+        }
+      ]
+    },
+    {
+      "item_id": "CL8",
+      "question": "Is the provided data sufficient in coverage and length for the above assessments?",
+      "finding": "insufficient_data",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "NetCashProvidedByUsedInOperatingActivities data available through 2011-01-01 to 2011-03-31 only; no Q2/Q3 2011 operating cash flow figures provided",
+          "source_accession_no": "0000950123-11-046730",
+          "location": "10-Q Q1 2011 cash flow statement"
+        },
+        {
+          "quote": "No segment, footnote, or MD&A narrative text provided to explain the FY2011 asset/liability swings or the Q3 2011 net loss",
+          "source_accession_no": "0001193125-11-297771",
+          "location": "10-Q Q3 2011 filing (structured data only)"
+        }
+      ]
+    }
+  ],
+  "misstatement_probability": 55,
+  "mechanism_hypotheses": [
+    {
+      "affected_line_items": [
+        "AllowanceForDoubtfulAccountsReceivableCurrent",
+        "SellingGeneralAndAdministrativeExpense",
+        "NetIncomeLoss"
+      ],
+      "direction": "overstated",
+      "accounting_treatment": "Reduction of bad debt allowance/reserve as a percentage of receivables (from ~7.1% to ~3.4% of gross AR) despite growing receivables and revenue, which would reduce bad debt expense and inflate reported net income in FY2010, the same year net income jumped roughly 13x versus FY2009.",
+      "rationale_evidence": [
+        {
+          "quote": "AllowanceForDoubtfulAccountsReceivableCurrent=2478333.64 (2009-12-31)",
+          "source_accession_no": "0000950123-11-018857",
+          "location": "10-K FY2009 allowance disclosure"
+        },
+        {
+          "quote": "AllowanceForDoubtfulAccountsReceivableCurrent=1531768.55 (2010-12-31)",
+          "source_accession_no": "0000950123-11-018857",
+          "location": "10-K FY2010 allowance disclosure"
+        },
+        {
+          "quote": "NetIncomeLoss=3457641.56 (2009 annual) vs NetIncomeLoss=46604936.17 (2010 annual)",
+          "source_accession_no": "0000950123-11-018857",
+          "location": "10-K FY2010 income statement"
+        }
+      ]
+    },
+    {
+      "affected_line_items": [
+        "Assets",
+        "LiabilitiesCurrent",
+        "NetIncomeLoss",
+        "CashAndCashEquivalentsAtCarryingValue"
+      ],
+      "direction": "timing_shift",
+      "accounting_treatment": "Unexplained large swings in total assets and current liabilities around a large equity raise (424B5) and a subsequent ~$40M net loss quarter suggest possible acquisition-related purchase accounting, contingent consideration remeasurement, or impairment/write-off charges that were not smoothly reflected in prior quarters, raising risk that prior-period assets/goodwill were carried at values requiring later correction.",
+      "rationale_evidence": [
+        {
+          "quote": "Assets=480265697.82 (2011-03-31); Assets=757802751.10 (2011-06-30); Assets=663665959.36 (2011-09-30)",
+          "source_accession_no": "0001193125-11-297771",
+          "location": "10-Q Q3 2011 balance sheet trend"
+        },
+        {
+          "quote": "LiabilitiesCurrent=60578975.47 (2011-06-30); LiabilitiesCurrent=121976521.38 (2011-09-30)",
+          "source_accession_no": "0001193125-11-297771",
+          "location": "10-Q Q3 2011 balance sheet"
+        },
+        {
+          "quote": "NetIncomeLoss=-40215324.11 (2011-07-01 to 2011-09-30)",
+          "source_accession_no": "0001193125-11-297771",
+          "location": "10-Q Q3 2011 income statement"
+        }
+      ]
+    },
+    {
+      "affected_line_items": [
+        "Assets",
+        "AccountsReceivableNetCurrent",
+        "InventoryNet",
+        "PropertyPlantAndEquipmentNet",
+        "IntangibleAssetsNetExcludingGoodwill",
+        "LiabilitiesCurrent",
+        "StockholdersEquity"
+      ],
+      "direction": "timing_shift",
+      "accounting_treatment": "FY2010 year-end balance sheet figures reported in the Q3 2011 10-Q (filed 2011-11-04) differ in source accession from the original FY2010 10-K filing, suggesting a reclassification or restatement of prior-period comparative amounts that was not clearly disclosed as such in the provided data.",
+      "rationale_evidence": [
+        {
+          "quote": "Assets=477467079.88 (2010-12-31), filed 2011-11-04, accession 0001193125-11-297771",
+          "source_accession_no": "0001193125-11-297771",
+          "location": "10-Q Q3 2011 comparative balance sheet"
+        },
+        {
+          "quote": "10-K filed 2010-02-26 followed by 10-K/A filed 2010-05-26",
+          "source_accession_no": "n/a",
+          "location": "filing_chronology"
+        }
+      ]
+    }
+  ],
+  "overall": {
+    "risk_tier": "elevated",
+    "top_signals": [
+      "Allowance for doubtful accounts declined from ~7.1% to ~3.4% of accounts receivable (2009 to 2010) despite AR and revenue growth, coinciding with a 13x jump in net income in FY2010 (a classic reserve-release earnings-boost pattern)",
+      "Extreme balance-sheet volatility in 2011 (Assets swinging from ~$480M to ~$758M to ~$664M across three quarters, current liabilities nearly doubling in Q3) culminating in a sudden ~$40.2M net loss in Q3 2011 with no corroborating operating cash flow data available",
+      "FY2010 comparative balance sheet figures reported in the Q3 2011 10-Q differ in source accession from the original FY2010 10-K, and a 10-K/A amendment was filed roughly three months after the original FY2009 10-K, alongside multiple SEC CORRESP/UPLOAD filings in 2010"
+    ]
+  }
+}

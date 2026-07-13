@@ -1,0 +1,505 @@
+{
+  "case_id": "case_66",
+  "run_id": "perturbed-case_66-r1",
+  "model": "claude-sonnet-5",
+  "pipeline_version": "94228ca7f7177e6c48343e44f9a09f26f81b6845",
+  "run_timestamp": "2026-07-13T05:27:41.248775+00:00",
+  "documents_used": [
+    {
+      "accession_no": "0001193125-10-178579",
+      "form_type": "10-Q",
+      "filing_date": "2010-08-05"
+    },
+    {
+      "accession_no": "0001193125-10-245956",
+      "form_type": "10-Q",
+      "filing_date": "2010-11-03"
+    },
+    {
+      "accession_no": "0001193125-11-044799",
+      "form_type": "10-K",
+      "filing_date": "2011-02-24"
+    },
+    {
+      "accession_no": "0001193125-11-126229",
+      "form_type": "10-Q",
+      "filing_date": "2011-05-04"
+    },
+    {
+      "accession_no": "0001193125-11-210817",
+      "form_type": "10-Q",
+      "filing_date": "2011-08-05"
+    },
+    {
+      "accession_no": "0001193125-11-295787",
+      "form_type": "10-Q",
+      "filing_date": "2011-11-04"
+    },
+    {
+      "accession_no": "0001193125-12-078826",
+      "form_type": "10-K",
+      "filing_date": "2012-02-27"
+    },
+    {
+      "accession_no": "0001193125-12-211167",
+      "form_type": "10-Q",
+      "filing_date": "2012-05-04"
+    },
+    {
+      "accession_no": "0001193125-12-335302",
+      "form_type": "10-Q",
+      "filing_date": "2012-08-06"
+    },
+    {
+      "accession_no": "0001336917-12-000005",
+      "form_type": "10-Q",
+      "filing_date": "2012-11-08"
+    },
+    {
+      "accession_no": "0001336917-13-000013",
+      "form_type": "10-K/A",
+      "filing_date": "2013-02-26"
+    },
+    {
+      "accession_no": "0001336917-13-000017",
+      "form_type": "10-Q",
+      "filing_date": "2013-05-01"
+    },
+    {
+      "accession_no": "0001336917-13-000023",
+      "form_type": "10-Q",
+      "filing_date": "2013-08-06"
+    },
+    {
+      "accession_no": "0001336917-13-000030",
+      "form_type": "10-Q",
+      "filing_date": "2013-11-05"
+    },
+    {
+      "accession_no": "0001336917-14-000008",
+      "form_type": "10-K",
+      "filing_date": "2014-02-21"
+    },
+    {
+      "accession_no": "0001336917-14-000020",
+      "form_type": "10-Q",
+      "filing_date": "2014-05-07"
+    },
+    {
+      "accession_no": "0001336917-14-000035",
+      "form_type": "10-Q",
+      "filing_date": "2014-08-05"
+    },
+    {
+      "accession_no": "0001336917-14-000049",
+      "form_type": "10-Q",
+      "filing_date": "2014-11-05"
+    },
+    {
+      "accession_no": "0001336917-15-000006",
+      "form_type": "10-K",
+      "filing_date": "2015-02-20"
+    },
+    {
+      "accession_no": "0001336917-15-000022",
+      "form_type": "10-Q",
+      "filing_date": "2015-05-01"
+    },
+    {
+      "accession_no": "0001336917-15-000034",
+      "form_type": "10-Q",
+      "filing_date": "2015-08-04"
+    },
+    {
+      "accession_no": "0001336917-15-000050",
+      "form_type": "10-Q",
+      "filing_date": "2015-11-04"
+    },
+    {
+      "accession_no": "0001336917-16-000064",
+      "form_type": "10-K",
+      "filing_date": "2016-02-22"
+    },
+    {
+      "accession_no": "0001336917-16-000077",
+      "form_type": "10-Q",
+      "filing_date": "2016-04-29"
+    },
+    {
+      "accession_no": "0001336917-16-000099",
+      "form_type": "10-Q",
+      "filing_date": "2016-08-03"
+    },
+    {
+      "accession_no": "0001336917-16-000113",
+      "form_type": "10-Q",
+      "filing_date": "2016-11-02"
+    },
+    {
+      "accession_no": "0001336917-17-000017",
+      "form_type": "10-K",
+      "filing_date": "2017-02-23"
+    },
+    {
+      "accession_no": "0001336917-17-000029",
+      "form_type": "10-Q",
+      "filing_date": "2017-05-09"
+    },
+    {
+      "accession_no": "0001336917-17-000041",
+      "form_type": "10-Q",
+      "filing_date": "2017-08-08"
+    },
+    {
+      "accession_no": "0001336917-17-000049",
+      "form_type": "10-Q",
+      "filing_date": "2017-11-09"
+    },
+    {
+      "accession_no": "0001336917-18-000009",
+      "form_type": "10-K",
+      "filing_date": "2018-02-28"
+    },
+    {
+      "accession_no": "0001336917-18-000017",
+      "form_type": "10-Q",
+      "filing_date": "2018-05-10"
+    },
+    {
+      "accession_no": "0001336917-18-000040",
+      "form_type": "10-Q",
+      "filing_date": "2018-08-03"
+    },
+    {
+      "accession_no": "0001336917-18-000056",
+      "form_type": "10-Q",
+      "filing_date": "2018-11-05"
+    },
+    {
+      "accession_no": "0001336917-19-000011",
+      "form_type": "10-K",
+      "filing_date": "2019-02-25"
+    },
+    {
+      "accession_no": "0001336917-19-000037",
+      "form_type": "10-Q",
+      "filing_date": "2019-05-09"
+    }
+  ],
+  "checklist": [
+    {
+      "item_id": "CL1",
+      "question": "Did receivables grow materially faster than revenue across consecutive periods?",
+      "finding": "no_flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "AccountsReceivableNetCurrent=256592128.72 (2016-12-31)",
+          "source_accession_no": "0001336917-18-000009",
+          "location": "Balance Sheet"
+        },
+        {
+          "quote": "AccountsReceivableNetCurrent=268897062.28 (2018-12-31)",
+          "source_accession_no": "0001336917-19-000037",
+          "location": "Balance Sheet"
+        },
+        {
+          "quote": "Revenues=1991691603.7 (2016 annual)",
+          "source_accession_no": "0001336917-19-000011",
+          "location": "Income Statement"
+        },
+        {
+          "quote": "Revenues=2139975098.15 (2018 annual)",
+          "source_accession_no": "0001336917-19-000011",
+          "location": "Income Statement"
+        }
+      ]
+    },
+    {
+      "item_id": "CL2",
+      "question": "Did non-current 'soft' assets (intangibles, other assets, capitalized items) grow materially faster than the business overall?",
+      "finding": "flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "Goodwill=0.0 (2012-12-31)",
+          "source_accession_no": "0001336917-14-000008",
+          "location": "Balance Sheet"
+        },
+        {
+          "quote": "Goodwill=245386607.86 (2015-03-31)",
+          "source_accession_no": "0001336917-16-000077",
+          "location": "Balance Sheet"
+        },
+        {
+          "quote": "OtherAssetsNoncurrent=2090450.02 (2009-12-31)",
+          "source_accession_no": "0001193125-11-044799",
+          "location": "Balance Sheet"
+        },
+        {
+          "quote": "OtherAssetsNoncurrent=51245900.77 (2019-03-31)",
+          "source_accession_no": "0001336917-19-000037",
+          "location": "Balance Sheet"
+        }
+      ]
+    },
+    {
+      "item_id": "CL3",
+      "question": "Is there a persistent divergence between net income and operating cash flow?",
+      "finding": "flag",
+      "confidence": "high",
+      "evidence": [
+        {
+          "quote": "NetIncomeLoss=-19886678.07 (2017 annual)",
+          "source_accession_no": "0001336917-19-000011",
+          "location": "Income Statement"
+        },
+        {
+          "quote": "NetCashProvidedByUsedInOperatingActivities=97851027.22 (2017 annual)",
+          "source_accession_no": "0001336917-19-000011",
+          "location": "Cash Flow Statement"
+        },
+        {
+          "quote": "NetIncomeLoss=-19079837.71 (2018 annual)",
+          "source_accession_no": "0001336917-19-000011",
+          "location": "Income Statement"
+        },
+        {
+          "quote": "NetCashProvidedByUsedInOperatingActivities=258877077.54 (2018 annual)",
+          "source_accession_no": "0001336917-19-000011",
+          "location": "Cash Flow Statement"
+        },
+        {
+          "quote": "NetIncomeLoss=95837222.92 (2015 annual)",
+          "source_accession_no": "0001336917-18-000009",
+          "location": "Income Statement"
+        },
+        {
+          "quote": "NetCashProvidedByUsedInOperatingActivities=5991964.06 (2015 annual)",
+          "source_accession_no": "0001336917-18-000009",
+          "location": "Cash Flow Statement"
+        }
+      ]
+    },
+    {
+      "item_id": "CL4",
+      "question": "Do inventory levels or gross margins show trends inconsistent with revenue?",
+      "finding": "flag",
+      "confidence": "low",
+      "evidence": [
+        {
+          "quote": "InventoryNet=322666502.56 (2015-12-31)",
+          "source_accession_no": "0001336917-17-000017",
+          "location": "Balance Sheet"
+        },
+        {
+          "quote": "InventoryNet=477407192.31 (2017-12-31)",
+          "source_accession_no": "0001336917-19-000011",
+          "location": "Balance Sheet"
+        },
+        {
+          "quote": "InventoryNet=420107516.42 (2018-12-31)",
+          "source_accession_no": "0001336917-19-000037",
+          "location": "Balance Sheet"
+        },
+        {
+          "quote": "GrossProfit=926594751.65 (2016 annual)",
+          "source_accession_no": "0001336917-19-000011",
+          "location": "Income Statement"
+        },
+        {
+          "quote": "GrossProfit=964446607.99 (2018 annual)",
+          "source_accession_no": "0001336917-19-000011",
+          "location": "Income Statement"
+        }
+      ]
+    },
+    {
+      "item_id": "CL5",
+      "question": "Is the earnings trajectory unusually smooth relative to the volatility of revenue and cash flow?",
+      "finding": "no_flag",
+      "confidence": "high",
+      "evidence": [
+        {
+          "quote": "OperatingIncomeLoss=172028830.9 (2016 annual)",
+          "source_accession_no": "0001336917-19-000011",
+          "location": "Income Statement"
+        },
+        {
+          "quote": "OperatingIncomeLoss=11473368.78 (2017 annual)",
+          "source_accession_no": "0001336917-19-000011",
+          "location": "Income Statement"
+        },
+        {
+          "quote": "OperatingIncomeLoss=-10308848.43 (2018 annual)",
+          "source_accession_no": "0001336917-19-000011",
+          "location": "Income Statement"
+        },
+        {
+          "quote": "NetIncomeLoss=-36230346.23 (2017-10-01 to 2017-12-31)",
+          "source_accession_no": "0001336917-19-000011",
+          "location": "Income Statement"
+        }
+      ]
+    },
+    {
+      "item_id": "CL6",
+      "question": "Did liability, allowance, or reserve balances decline (or fail to grow) despite growing business activity?",
+      "finding": "flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "AccountsPayableCurrent=168817952.42 (2016-12-31)",
+          "source_accession_no": "0001336917-18-000009",
+          "location": "Balance Sheet"
+        },
+        {
+          "quote": "AccountsPayableCurrent=231217864.83 (2017-12-31)",
+          "source_accession_no": "0001336917-19-000011",
+          "location": "Balance Sheet"
+        },
+        {
+          "quote": "CostOfGoodsAndServicesSold=1065096852.05 (2016 annual)",
+          "source_accession_no": "0001336917-19-000011",
+          "location": "Income Statement"
+        },
+        {
+          "quote": "CostOfGoodsAndServicesSold=1128187812.1 (2017 annual)",
+          "source_accession_no": "0001336917-19-000011",
+          "location": "Income Statement"
+        }
+      ]
+    },
+    {
+      "item_id": "CL7",
+      "question": "Does the filing chronology show irregularities (late filings/NT forms, amendments, unusual 8-K frequency)?",
+      "finding": "flag",
+      "confidence": "low",
+      "evidence": [
+        {
+          "quote": "10-K filed 2013-02-25 followed one day later by 10-K/A filed 2013-02-26",
+          "source_accession_no": "0001336917-13-000013",
+          "location": "Filing chronology"
+        },
+        {
+          "quote": "8-K/A filed 2015-05-01",
+          "source_accession_no": "n/a",
+          "location": "Filing chronology"
+        },
+        {
+          "quote": "8-K/A filed 2017-10-31",
+          "source_accession_no": "n/a",
+          "location": "Filing chronology"
+        }
+      ]
+    },
+    {
+      "item_id": "CL8",
+      "question": "Is the provided data sufficient in coverage and length for the above assessments?",
+      "finding": "no_flag",
+      "confidence": "high",
+      "evidence": [
+        {
+          "quote": "Data series span from 2009-06-30 through 2019-03-31 across Assets, Revenues, NetIncomeLoss, operating/investing/financing cash flow, AR, AP, Inventory, Goodwill, and other line items.",
+          "source_accession_no": "0001336917-19-000037",
+          "location": "Aggregate financial_series_point_in_time"
+        }
+      ]
+    }
+  ],
+  "misstatement_probability": 55,
+  "mechanism_hypotheses": [
+    {
+      "affected_line_items": [
+        "NetCashProvidedByUsedInOperatingActivities",
+        "AccountsPayableCurrent",
+        "NetIncomeLoss",
+        "InventoryNet"
+      ],
+      "direction": "overstated",
+      "accounting_treatment": "Working-capital timing management: stretching accounts payable and drawing down inventory to generate strong operating cash flow even as net income turned negative, potentially masking underlying earnings deterioration and creating a non-sustainable cash flow profile.",
+      "rationale_evidence": [
+        {
+          "quote": "NetIncomeLoss=-19079837.71 (2018 annual) vs NetCashProvidedByUsedInOperatingActivities=258877077.54 (2018 annual)",
+          "source_accession_no": "0001336917-19-000011",
+          "location": "Income Statement / Cash Flow Statement"
+        },
+        {
+          "quote": "AccountsPayableCurrent=231217864.83 (2017-12-31) vs CostOfGoodsAndServicesSold=1128187812.1 (2017 annual) implies AP/COGS ratio rising from ~15.8% (2016) to ~20.5% (2017)",
+          "source_accession_no": "0001336917-19-000011",
+          "location": "Balance Sheet / Income Statement"
+        }
+      ]
+    },
+    {
+      "affected_line_items": [
+        "Goodwill",
+        "OperatingIncomeLoss"
+      ],
+      "direction": "overstated",
+      "accounting_treatment": "Potential goodwill impairment shortfall: operating income collapsed 93% from 2016 to 2017 and remained negative in 2018, yet the Goodwill balance stayed essentially flat (~$225-245M) with no evidence of a material impairment charge, raising the possibility that goodwill was not written down commensurate with declining underlying profitability of acquired businesses.",
+      "rationale_evidence": [
+        {
+          "quote": "OperatingIncomeLoss=172028830.9 (2016 annual)",
+          "source_accession_no": "0001336917-19-000011",
+          "location": "Income Statement"
+        },
+        {
+          "quote": "OperatingIncomeLoss=11473368.78 (2017 annual)",
+          "source_accession_no": "0001336917-19-000011",
+          "location": "Income Statement"
+        },
+        {
+          "quote": "OperatingIncomeLoss=-10308848.43 (2018 annual)",
+          "source_accession_no": "0001336917-19-000011",
+          "location": "Income Statement"
+        },
+        {
+          "quote": "Goodwill=232241043.9 (2016-12-31)",
+          "source_accession_no": "0001336917-19-000011",
+          "location": "Balance Sheet"
+        },
+        {
+          "quote": "Goodwill=225195819.38 (2018-12-31)",
+          "source_accession_no": "0001336917-19-000037",
+          "location": "Balance Sheet"
+        }
+      ]
+    },
+    {
+      "affected_line_items": [
+        "SellingGeneralAndAdministrativeExpense",
+        "OperatingIncomeLoss",
+        "NetIncomeLoss"
+      ],
+      "direction": "timing_shift",
+      "accounting_treatment": "Possible expense timing/classification issues: SG&A ratio jumped from ~38.0% of revenue (2016) to ~42.2% (2017) coincident with a sharp operating income decline; combined with a 10-K/A filed one day after the original 10-K (2013) and multiple 8-K/A amendments, this could indicate corrections to previously reported expense recognition or classification warranting further scrutiny.",
+      "rationale_evidence": [
+        {
+          "quote": "SellingGeneralAndAdministrativeExpense=754565920.75 (2016 annual)",
+          "source_accession_no": "0001336917-19-000011",
+          "location": "Income Statement"
+        },
+        {
+          "quote": "SellingGeneralAndAdministrativeExpense=865157855.54 (2017 annual)",
+          "source_accession_no": "0001336917-19-000011",
+          "location": "Income Statement"
+        },
+        {
+          "quote": "10-K filed 2013-02-25 followed by 10-K/A filed 2013-02-26",
+          "source_accession_no": "0001336917-13-000013",
+          "location": "Filing chronology"
+        }
+      ]
+    }
+  ],
+  "overall": {
+    "risk_tier": "elevated",
+    "top_signals": [
+      "Persistent and widening divergence between net income and operating cash flow, most pronounced in 2017-2018 (net losses of ~$19-20M each year alongside OCF of $97.9M and $258.9M respectively)",
+      "Sharp operating income collapse from $172.0M (2016) to $11.5M (2017) to -$10.3M (2018) despite continued revenue growth, with no corresponding goodwill impairment recorded against a ~$225-245M goodwill balance built via debt-financed acquisitions",
+      "Accounts payable growing faster than cost of goods sold (AP/COGS rising from ~15.8% to ~20.5% between 2016-2017), suggesting working-capital stretching that inflates operating cash flow while core profitability deteriorates",
+      "An unusually fast 10-K/A amendment filed one day after the original 10-K (2013), plus several 8-K/A amendments, indicating some filing/reporting instability"
+    ]
+  }
+}

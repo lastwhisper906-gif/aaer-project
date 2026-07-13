@@ -1,0 +1,315 @@
+{
+  "case_id": "case_07",
+  "run_id": "perturbed-case_07-r1",
+  "model": "claude-sonnet-5",
+  "pipeline_version": "94228ca7f7177e6c48343e44f9a09f26f81b6845",
+  "run_timestamp": "2026-07-13T05:59:04.591409+00:00",
+  "documents_used": [
+    {
+      "accession_no": "0000743988-12-000011",
+      "form_type": "10-Q",
+      "filing_date": "2012-11-02"
+    },
+    {
+      "accession_no": "0000743988-13-000005",
+      "form_type": "10-Q",
+      "filing_date": "2013-02-01"
+    },
+    {
+      "accession_no": "0000743988-13-000018",
+      "form_type": "10-K",
+      "filing_date": "2013-05-23"
+    },
+    {
+      "accession_no": "0000743988-13-000034",
+      "form_type": "10-Q",
+      "filing_date": "2013-07-31"
+    },
+    {
+      "accession_no": "0000743988-13-000043",
+      "form_type": "10-Q",
+      "filing_date": "2013-10-28"
+    },
+    {
+      "accession_no": "0000950123-10-075187",
+      "form_type": "10-Q",
+      "filing_date": "2010-08-09"
+    },
+    {
+      "accession_no": "0000950123-10-102488",
+      "form_type": "10-Q",
+      "filing_date": "2010-11-08"
+    },
+    {
+      "accession_no": "0000950123-11-009942",
+      "form_type": "10-Q",
+      "filing_date": "2011-02-08"
+    },
+    {
+      "accession_no": "0000950123-11-055454",
+      "form_type": "10-K",
+      "filing_date": "2011-05-31"
+    },
+    {
+      "accession_no": "0000950123-11-096537",
+      "form_type": "10-Q",
+      "filing_date": "2011-11-08"
+    },
+    {
+      "accession_no": "0001193125-11-216385",
+      "form_type": "10-Q",
+      "filing_date": "2011-08-09"
+    },
+    {
+      "accession_no": "0001193125-12-043685",
+      "form_type": "10-Q",
+      "filing_date": "2012-02-07"
+    },
+    {
+      "accession_no": "0001193125-12-249215",
+      "form_type": "10-K",
+      "filing_date": "2012-05-25"
+    },
+    {
+      "accession_no": "0001445305-12-002460",
+      "form_type": "10-Q",
+      "filing_date": "2012-08-03"
+    }
+  ],
+  "checklist": [
+    {
+      "item_id": "CL1",
+      "question": "Did receivables grow materially faster than revenue across consecutive periods?",
+      "finding": "no_flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "AccountsReceivableNetCurrent=279730959.99 (2010-04-03) vs SalesRevenueNet=1952164045.93 (FY2009-03-29 to 2010-04-03) => AR/Rev=14.3%",
+          "source_accession_no": "0000950123-11-055454",
+          "location": "10-K balance sheet / income statement"
+        },
+        {
+          "quote": "AccountsReceivableNetCurrent=228870785.44 (2012-03-31) vs Revenues=2385686080.49 (FY2011-04-03 to 2012-03-31) => AR/Rev=9.6%",
+          "source_accession_no": "0000743988-13-000018",
+          "location": "10-K balance sheet / income statement"
+        },
+        {
+          "quote": "AccountsReceivableNetCurrent=244000010.49 (2013-03-30) vs SalesRevenueNet=2308939067.26 (FY2012-04-01 to 2013-03-30) => AR/Rev=10.6%",
+          "source_accession_no": "0000743988-13-000018",
+          "location": "10-K balance sheet / income statement"
+        },
+        {
+          "quote": "Quarterly spike: AccountsReceivableNetCurrent=592782414.48 (2010-10-02) vs SalesRevenueNet=659751327.58 (2010-07-04 to 2010-10-02) implies a one-quarter DSO jump not sustained in subsequent quarters",
+          "source_accession_no": "0000950123-10-102488",
+          "location": "10-Q balance sheet / income statement"
+        }
+      ]
+    },
+    {
+      "item_id": "CL2",
+      "question": "Did non-current 'soft' assets (intangibles, other assets, capitalized items) grow materially faster than the business overall?",
+      "finding": "flag",
+      "confidence": "low",
+      "evidence": [
+        {
+          "quote": "Goodwill=125585344.11 (2010-04-03) growing to Goodwill=169274840.92 (2013-03-30), +34.8%, versus SalesRevenueNet=1952164045.93 (FY2010) to SalesRevenueNet=2308939067.26 (FY2013), +18.3%",
+          "source_accession_no": "0000743988-13-000018",
+          "location": "10-K balance sheet / income statement"
+        },
+        {
+          "quote": "OtherAssetsNoncurrent=224880332.56 (2010-04-03) essentially flat at OtherAssetsNoncurrent=234282597.61 (2013-03-30) while revenue mix shifted, not a strong divergence",
+          "source_accession_no": "0000743988-13-000043",
+          "location": "10-Q balance sheet"
+        }
+      ]
+    },
+    {
+      "item_id": "CL3",
+      "question": "Is there a persistent divergence between net income and operating cash flow?",
+      "finding": "no_flag",
+      "confidence": "high",
+      "evidence": [
+        {
+          "quote": "NetIncomeLoss=380609140.39 (FY2009-03-29 to 2010-04-03) vs NetCashProvidedByUsedInOperatingActivities=590147310.19 (same period)",
+          "source_accession_no": "0001193125-12-249215",
+          "location": "10-K cash flow statement"
+        },
+        {
+          "quote": "NetIncomeLoss=683396996.75 (FY2010-04-04 to 2011-04-02) vs NetCashProvidedByUsedInOperatingActivities=770996380.90 (same period)",
+          "source_accession_no": "0000743988-13-000018",
+          "location": "10-K cash flow statement"
+        },
+        {
+          "quote": "NetIncomeLoss=519074022.52 (FY2012-04-01 to 2013-03-30) vs NetCashProvidedByUsedInOperatingActivities=699007461.04 (same period)",
+          "source_accession_no": "0000743988-13-000018",
+          "location": "10-K cash flow statement"
+        }
+      ]
+    },
+    {
+      "item_id": "CL4",
+      "question": "Do inventory levels or gross margins show trends inconsistent with revenue?",
+      "finding": "flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "InventoryNet=139078142.77 (2010-04-03) grew to InventoryNet=281870984.08 (2011-04-02), +102.6%, while SalesRevenueNet=1952164045.93 (FY2010) grew to SalesRevenueNet=2522721085.83 (FY2011), only +29.2%",
+          "source_accession_no": "0001193125-12-249215",
+          "location": "10-K balance sheet / income statement"
+        },
+        {
+          "quote": "Inventory/Revenue ratio rose from 7.1% (FY2010) to 11.2% (FY2011) before partially normalizing to 9.3% by FY2013 (InventoryNet=214268581.26 (2013-03-30) / SalesRevenueNet=2308939067.26 (FY2013))",
+          "source_accession_no": "0000743988-13-000043",
+          "location": "10-Q balance sheet"
+        },
+        {
+          "quote": "Gross margin remained stable/improving (GrossProfit=1524044241.34 / SalesRevenueNet=2308939067.26 = 66.0% for FY2013 vs 63.4% FY2010), so margin trend does not corroborate an inventory-quality problem",
+          "source_accession_no": "0000743988-13-000018",
+          "location": "10-K income statement"
+        }
+      ]
+    },
+    {
+      "item_id": "CL5",
+      "question": "Is the earnings trajectory unusually smooth relative to the volatility of revenue and cash flow?",
+      "finding": "flag",
+      "confidence": "low",
+      "evidence": [
+        {
+          "quote": "Quarterly net margin held in a tight 26.7%-27.6% band in FY2011 (NetIncomeLoss=168845771.41, 181949958.73, 162195726.40, 170405540.21 against SalesRevenueNet=633209705.40, 659751327.58, 603880728.47, 625879324.38) despite revenue swinging roughly 4% quarter to quarter",
+          "source_accession_no": "0001193125-12-249215",
+          "location": "10-K quarterly financial data"
+        }
+      ]
+    },
+    {
+      "item_id": "CL6",
+      "question": "Did liability, allowance, or reserve balances decline (or fail to grow) despite growing business activity?",
+      "finding": "flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "AllowanceForDoubtfulAccountsReceivableCurrent=3668916.92 (2012-03-31) declined slightly to AllowanceForDoubtfulAccountsReceivableCurrent=3646558.46 (2013-03-30), -0.6%, while AccountsReceivableNetCurrent grew from 228870785.44 (2012-03-31) to 244000010.49 (2013-03-30), +6.6%",
+          "source_accession_no": "0000743988-13-000018",
+          "location": "10-K notes to financial statements"
+        },
+        {
+          "quote": "LiabilitiesCurrent=411808775.20 (2013-03-30) surged to LiabilitiesCurrent=1493200212.53 (2013-06-29) and LiabilitiesCurrent=1578049506.02 (2013-09-28), a ~3.8x increase in two quarters, without a matching rise in AssetsCurrent (2446270056.03 to 2506898748.51 to 2982412101.55)",
+          "source_accession_no": "0000743988-13-000043",
+          "location": "10-Q balance sheet"
+        }
+      ]
+    },
+    {
+      "item_id": "CL7",
+      "question": "Does the filing chronology show irregularities (late filings/NT forms, amendments, unusual 8-K frequency)?",
+      "finding": "flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "NT 10-K filed 2009-05-28 followed almost immediately by 10-K filed 2009-06-01 and 10-K/A filed 2009-06-03",
+          "source_accession_no": "n/a",
+          "location": "filing_chronology"
+        },
+        {
+          "quote": "Recurring SEC CORRESP/UPLOAD correspondence cycles across many years, e.g. 2010-07-29, 2010-08-02, 2010-08-17, 2010-09-07, 2010-09-13, 2011-07-21, 2011-08-22, 2011-09-06, 2011-09-16, 2011-09-29, 2011-10-07, 2011-10-13, 2013-07-16, 2013-07-30, 2013-07-31, indicating repeated SEC staff review activity",
+          "source_accession_no": "n/a",
+          "location": "filing_chronology"
+        }
+      ]
+    },
+    {
+      "item_id": "CL8",
+      "question": "Is the provided data sufficient in coverage and length for the above assessments?",
+      "finding": "insufficient_data",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "AllowanceForDoubtfulAccountsReceivableCurrent has only two data points (2012-03-31 and 2013-03-30), limiting multi-period reserve-adequacy analysis",
+          "source_accession_no": "0000743988-13-000018",
+          "location": "10-K notes"
+        },
+        {
+          "quote": "Revenues tag (as opposed to SalesRevenueNet) has only three annual data points (FY2010-FY2012) filed via 0001193125-12-249215, and quarterly NetCashProvidedByUsedInFinancingActivities/InvestingActivities/OperatingActivities are populated for only a subset of quarters (mostly Q1 of each fiscal year after FY2011), limiting full quarterly cash-flow volatility comparison",
+          "source_accession_no": "0001193125-12-249215",
+          "location": "10-K financial statement schedule"
+        }
+      ]
+    }
+  ],
+  "misstatement_probability": 55,
+  "mechanism_hypotheses": [
+    {
+      "affected_line_items": [
+        "LiabilitiesCurrent",
+        "StockholdersEquity",
+        "Long-term debt (not separately provided)"
+      ],
+      "direction": "understated",
+      "accounting_treatment": "Possible reclassification of long-term debt/obligations to current liabilities, or recognition of a previously unrecorded/underaccrued obligation (e.g., litigation, put/earn-out, maturing convertible notes), producing an abrupt ~$1.1-1.2B jump in current liabilities in FY2014 Q1-Q2 without a matching increase in current or total assets, suggesting prior-period current liabilities may have been understated or the current spike reflects a previously unrecognized obligation now being reported.",
+      "rationale_evidence": [
+        {
+          "quote": "LiabilitiesCurrent=411808775.20 (2013-03-30) rising to LiabilitiesCurrent=1493200212.53 (2013-06-29) and LiabilitiesCurrent=1578049506.02 (2013-09-28)",
+          "source_accession_no": "0000743988-13-000043",
+          "location": "10-Q balance sheet"
+        },
+        {
+          "quote": "AssetsCurrent only rose from 2446270056.03 (2013-03-30) to 2982412101.55 (2013-09-28), far short of the ~1.17B liability increase",
+          "source_accession_no": "0000743988-13-000043",
+          "location": "10-Q balance sheet"
+        },
+        {
+          "quote": "StockholdersEquity fell from 3154987477.13 (2013-03-30) to 2903403689.73 (2013-06-29) despite positive NetIncomeLoss=167180598.44 for the quarter, indicating a large offsetting equity reduction concurrent with the liability spike",
+          "source_accession_no": "0000743988-13-000034",
+          "location": "10-Q balance sheet / statement of stockholders equity"
+        }
+      ]
+    },
+    {
+      "affected_line_items": [
+        "InventoryNet",
+        "CostOfGoodsAndServicesSold"
+      ],
+      "direction": "overstated",
+      "accounting_treatment": "Rapid inventory build in FY2011 (inventory more than doubling while revenue grew only ~29%) raises the possibility that inventory reserves for excess/obsolete stock were insufficiently increased, potentially overstating InventoryNet and understating COGS/reserve expense in that period, with partial correction (write-down or reduced purchasing) evident in the subsequent decline in inventory levels in FY2012-2013.",
+      "rationale_evidence": [
+        {
+          "quote": "InventoryNet=139078142.77 (2010-04-03) to InventoryNet=281870984.08 (2011-04-02), +102.6%, vs SalesRevenueNet growth of +29.2% over the same period (1952164045.93 to 2522721085.83)",
+          "source_accession_no": "0001193125-12-249215",
+          "location": "10-K balance sheet / income statement"
+        },
+        {
+          "quote": "InventoryNet declined to 218118495.25 (2012-03-31) and 214268581.26 (2013-03-30) as revenue also declined, consistent with a partial unwind of the earlier buildup",
+          "source_accession_no": "0000743988-13-000018",
+          "location": "10-K balance sheet"
+        }
+      ]
+    },
+    {
+      "affected_line_items": [
+        "AllowanceForDoubtfulAccountsReceivableCurrent",
+        "AccountsReceivableNetCurrent",
+        "NetIncomeLoss"
+      ],
+      "direction": "overstated",
+      "accounting_treatment": "Allowance for doubtful accounts was held roughly flat (slightly down) while gross receivables grew, which could understate bad-debt reserve expense and modestly overstate net receivables and net income; magnitude is small but the trend runs counter to receivables growth.",
+      "rationale_evidence": [
+        {
+          "quote": "AllowanceForDoubtfulAccountsReceivableCurrent=3668916.92 (2012-03-31) vs AllowanceForDoubtfulAccountsReceivableCurrent=3646558.46 (2013-03-30), a slight decline, while AccountsReceivableNetCurrent grew from 228870785.44 to 244000010.49 over the same period",
+          "source_accession_no": "0000743988-13-000018",
+          "location": "10-K notes to financial statements"
+        }
+      ]
+    }
+  ],
+  "overall": {
+    "risk_tier": "elevated",
+    "top_signals": [
+      "Abrupt ~3.8x spike in LiabilitiesCurrent (411.8M to 1,578.0M) across FY2014 Q1-Q2 without matching growth in current/total assets, unexplained by data provided",
+      "Inventory more than doubled in FY2011 (+102.6%) while revenue grew only 29.2%, indicating a build-up disproportionate to sales activity",
+      "Allowance for doubtful accounts essentially flat/declining while receivables grew, a mild reserve-adequacy concern",
+      "Recurring multi-year SEC CORRESP/UPLOAD correspondence cycles (2006-2013) suggesting sustained SEC staff review of filings",
+      "Goodwill grew nearly 2x the rate of revenue over FY2010-FY2013, partly acquisition-driven but adding to soft-asset growth"
+    ]
+  }
+}
