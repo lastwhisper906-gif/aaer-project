@@ -1,0 +1,59 @@
+{
+  "ts": "2026-07-13T08:20:02.655505+00:00",
+  "harness_pin": "2.1.201",
+  "flags": [
+    "claude",
+    "-p",
+    "--model",
+    "claude-sonnet-5",
+    "--output-format",
+    "json",
+    "--max-turns",
+    "2",
+    "--setting-sources",
+    "",
+    "--strict-mcp-config",
+    "--tools",
+    "",
+    "--disallowedTools",
+    "Bash,Read,Edit,Write,Glob,Grep,WebFetch,WebSearch,Task,NotebookEdit",
+    "--system-prompt",
+    "You are analyzing the financial reporting quality of LIVEPERSON INC (LPSN, CIK 0001102993) using only the structured data provided below, which reflects public filings available on or before 2016-03-0...[1736 chars]",
+    "--json-schema",
+    "{\"type\": \"object\", \"additionalProperties\": false, \"required\": [\"checklist\", \"misstatement_probability\", \"mechanism_hypotheses\", \"overall\"], \"properties\": {\"checklist\": {\"type\": \"array\", \"items\": {\"typ...[1821 chars]"
+  ],
+  "model_requested": "claude-sonnet-5",
+  "served_models": [
+    "claude-sonnet-5"
+  ],
+  "pin_ok": true,
+  "ok": true,
+  "fail_reason": null,
+  "session_id": "c82b5dff-f753-4626-956e-8cbc7d4ce789",
+  "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 53696,
+    "cache_read_input_tokens": 1116,
+    "output_tokens": 10626,
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 53696,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [],
+    "speed": "standard"
+  },
+  "total_cost_usd_reference_only": 0.4819068,
+  "attempts": 1,
+  "wall_seconds": 97.3,
+  "freeze": {
+    "head": "f007e552ee6b52f677ef29e22162a35e2a3e889c",
+    "clean_tree": false
+  },
+  "raw_tail": null
+}

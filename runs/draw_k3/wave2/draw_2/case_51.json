@@ -1,0 +1,206 @@
+{
+  "case_id": "case_51",
+  "run_id": "original-case_51-r1",
+  "model": "claude-sonnet-5",
+  "pipeline_version": "f007e552ee6b52f677ef29e22162a35e2a3e889c",
+  "run_timestamp": "2026-07-13T08:43:08.792244+00:00",
+  "documents_used": [
+    {
+      "accession_no": "0000314808-09-000067",
+      "form_type": "10-Q",
+      "filing_date": "2009-07-23"
+    },
+    {
+      "accession_no": "0000314808-09-000093",
+      "form_type": "10-Q",
+      "filing_date": "2009-10-22"
+    },
+    {
+      "accession_no": "0000314808-10-000121",
+      "form_type": "8-K",
+      "filing_date": "2010-08-13"
+    },
+    {
+      "accession_no": "0000314808-10-000123",
+      "form_type": "8-K",
+      "filing_date": "2010-08-13"
+    },
+    {
+      "accession_no": "0000314808-10-000153",
+      "form_type": "10-Q",
+      "filing_date": "2010-10-21"
+    },
+    {
+      "accession_no": "0000314808-10-000165",
+      "form_type": "8-K",
+      "filing_date": "2010-11-29"
+    },
+    {
+      "accession_no": "0000314808-10-000167",
+      "form_type": "8-K",
+      "filing_date": "2010-11-29"
+    },
+    {
+      "accession_no": "0000314808-10-000170",
+      "form_type": "8-K",
+      "filing_date": "2010-11-29"
+    },
+    {
+      "accession_no": "0000314808-11-000016",
+      "form_type": "10-K",
+      "filing_date": "2011-02-24"
+    }
+  ],
+  "checklist": [
+    {
+      "item_id": "CL1",
+      "question": "Did receivables grow materially faster than revenue across consecutive periods?",
+      "finding": "insufficient_data",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "ReceivablesNetCurrent=482700000 (2008-12-31); ReceivablesNetCurrent=324600000 (2009-12-31); ReceivablesNetCurrent=214600000 (2010-12-31)",
+          "source_accession_no": "0000314808-11-000016",
+          "location": "10-K balance sheet, ReceivablesNetCurrent"
+        },
+        {
+          "quote": "OperatingIncomeLoss=1279900000 (FY2008); OperatingIncomeLoss=926400000 (FY2009); OperatingIncomeLoss=626300000 (FY2010)",
+          "source_accession_no": "0000314808-11-000016",
+          "location": "10-K income statement, OperatingIncomeLoss"
+        }
+      ]
+    },
+    {
+      "item_id": "CL2",
+      "question": "Did non-current 'soft' assets (intangibles, other assets, capitalized items) grow materially faster than the business overall?",
+      "finding": "flag",
+      "confidence": "low",
+      "evidence": [
+        {
+          "quote": "OtherAssetsNoncurrent=157500000 (2008-12-31); OtherAssetsNoncurrent=220400000 (2009-12-31)",
+          "source_accession_no": "0000314808-11-000016",
+          "location": "10-K balance sheet, OtherAssetsNoncurrent"
+        },
+        {
+          "quote": "Assets=5830100000 (2008-12-31); Assets=6747200000 (2009-12-31)",
+          "source_accession_no": "0000314808-11-000016",
+          "location": "10-K balance sheet, Assets"
+        }
+      ]
+    },
+    {
+      "item_id": "CL3",
+      "question": "Is there a persistent divergence between net income and operating cash flow?",
+      "finding": "no_flag",
+      "confidence": "high",
+      "evidence": [
+        {
+          "quote": "NetIncomeLoss=779400000 (FY2009); NetCashProvidedByUsedInOperatingActivitiesContinuingOperations=1185600000 (FY2009)",
+          "source_accession_no": "0000314808-11-000016",
+          "location": "10-K cash flow statement"
+        },
+        {
+          "quote": "NetIncomeLoss=579500000 (FY2010); NetCashProvidedByUsedInOperatingActivitiesContinuingOperations=816700000 (FY2010)",
+          "source_accession_no": "0000314808-11-000016",
+          "location": "10-K cash flow statement"
+        }
+      ]
+    },
+    {
+      "item_id": "CL4",
+      "question": "Do inventory levels or gross margins show trends inconsistent with revenue?",
+      "finding": "insufficient_data",
+      "confidence": "high",
+      "evidence": [
+        {
+          "quote": "InventoryNet=53100000 (2009-12-31); InventoryNet=56400000 (2010-12-31)",
+          "source_accession_no": "0000314808-11-000016",
+          "location": "10-K balance sheet, InventoryNet"
+        }
+      ]
+    },
+    {
+      "item_id": "CL5",
+      "question": "Is the earnings trajectory unusually smooth relative to the volatility of revenue and cash flow?",
+      "finding": "no_flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "NetIncomeLoss=296700000 (Q2 2008); NetIncomeLoss=220700000 (Q1 2009); NetIncomeLoss=149700000 (Q3 2009); NetIncomeLoss=126300000 (Q2 2010)",
+          "source_accession_no": "0000314808-11-000016",
+          "location": "10-K quarterly income statement data"
+        },
+        {
+          "quote": "NetCashProvidedByUsedInOperatingActivitiesContinuingOperations=309400000 (Q1 2009, quarterly); =159700000 (Q1 2010, quarterly)",
+          "source_accession_no": "0000314808-10-000167",
+          "location": "8-K cash flow data"
+        }
+      ]
+    },
+    {
+      "item_id": "CL6",
+      "question": "Did liability, allowance, or reserve balances decline (or fail to grow) despite growing business activity?",
+      "finding": "insufficient_data",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "AllowanceForDoubtfulAccountsReceivableCurrent=20600000 (2008-12-31); =26200000 (2009-06-30); =25100000 (2009-09-30)",
+          "source_accession_no": "0000314808-09-000093",
+          "location": "10-Q balance sheet notes"
+        },
+        {
+          "quote": "LiabilitiesCurrent=484900000 (2009-12-31); LiabilitiesCurrent=349000000 (2010-12-31)",
+          "source_accession_no": "0000314808-11-000016",
+          "location": "10-K balance sheet"
+        }
+      ]
+    },
+    {
+      "item_id": "CL7",
+      "question": "Does the filing chronology show irregularities (late filings/NT forms, amendments, unusual 8-K frequency)?",
+      "finding": "no_flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "8-K12B filing_date=2009-12-23; DEFM14A filing_date=2009-11-20; POSASR filing_date=2009-12-23",
+          "source_accession_no": "filing_chronology",
+          "location": "EDGAR filing chronology, Dec 2009 corporate redomiciliation events"
+        },
+        {
+          "quote": "10-K filing_date=2011-02-24 (accession 0000314808-11-000016) covering both FY2009 and FY2010 restated data",
+          "source_accession_no": "0000314808-11-000016",
+          "location": "10-K cover/filing metadata"
+        }
+      ]
+    },
+    {
+      "item_id": "CL8",
+      "question": "Is the provided data sufficient in coverage and length for the above assessments?",
+      "finding": "flag",
+      "confidence": "high",
+      "evidence": [
+        {
+          "quote": "No 'Revenues' or 'CostOfRevenue' concept is present anywhere in the financial_series_point_in_time dataset provided",
+          "source_accession_no": "0000314808-11-000016",
+          "location": "Overall dataset review - series list contains AccountsPayableCurrent, Assets, AssetsCurrent, Cash, DeferredRevenueCurrent, G&A, Goodwill, Inventory, Liabilities, LongTermDebt, NetIncomeLoss, OperatingIncomeLoss, PP&E, Receivables, StockholdersEquity, cash flow items - but no top-line revenue"
+        },
+        {
+          "quote": "AllowanceForDoubtfulAccountsReceivableCurrent series ends at 2009-09-30 with no FY2009/2010 year-end or 2010 quarterly values provided",
+          "source_accession_no": "0000314808-09-000093",
+          "location": "Series coverage gap"
+        }
+      ]
+    }
+  ],
+  "misstatement_probability": 20,
+  "mechanism_hypotheses": [],
+  "overall": {
+    "risk_tier": "watch",
+    "top_signals": [
+      "Operating cash flow exceeded net income in both FY2009 (OCF=1185.6M vs NI=779.4M) and FY2010 (OCF=816.7M vs NI=579.5M), which is a conservative/quality-supporting signal rather than a red flag, reducing overall risk.",
+      "OtherAssetsNoncurrent grew ~40% in FY2009 (157.5M->220.4M) versus total Assets growth of ~15.7% in the same period, a mild divergence that reversed in FY2010 (220.4M->184.2M), limiting its significance.",
+      "Material data gaps exist: no revenue/COGS series was provided at all, and the AllowanceForDoubtfulAccountsReceivable series stops after 2009-09-30, preventing several checklist items (CL1, CL4, part of CL6) from being properly evaluated - this drives the 'watch' tier primarily due to insufficient coverage rather than affirmative evidence of misstatement.",
+      "A December 2009 corporate redomiciliation (8-K12B, DEFM14A, POSASR filings) restructured the reporting entity, and the FY2011-filed 10-K reports restated FY2009/2010 comparative figures - a normal event for offshore drillers reincorporating for tax purposes during this era, not indicative of irregularity on the data available."
+    ]
+  }
+}

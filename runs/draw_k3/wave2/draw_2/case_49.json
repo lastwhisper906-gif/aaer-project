@@ -1,0 +1,388 @@
+{
+  "case_id": "case_49",
+  "run_id": "original-case_49-r1",
+  "model": "claude-sonnet-5",
+  "pipeline_version": "f007e552ee6b52f677ef29e22162a35e2a3e889c",
+  "run_timestamp": "2026-07-13T08:16:12.717069+00:00",
+  "documents_used": [
+    {
+      "accession_no": "0001144204-11-050977",
+      "form_type": "10-Q/A",
+      "filing_date": "2011-09-01"
+    },
+    {
+      "accession_no": "0001144204-11-066214",
+      "form_type": "10-Q",
+      "filing_date": "2011-11-21"
+    },
+    {
+      "accession_no": "0001144204-12-018611",
+      "form_type": "10-K",
+      "filing_date": "2012-03-30"
+    },
+    {
+      "accession_no": "0001144204-15-016315",
+      "form_type": "10-K",
+      "filing_date": "2015-03-16"
+    },
+    {
+      "accession_no": "0001144204-15-029130",
+      "form_type": "10-Q",
+      "filing_date": "2015-05-11"
+    },
+    {
+      "accession_no": "0001144204-15-047780",
+      "form_type": "10-Q",
+      "filing_date": "2015-08-10"
+    },
+    {
+      "accession_no": "0001354488-14-002559",
+      "form_type": "10-Q",
+      "filing_date": "2014-05-14"
+    },
+    {
+      "accession_no": "0001513160-12-000038",
+      "form_type": "10-Q",
+      "filing_date": "2012-05-15"
+    },
+    {
+      "accession_no": "0001513160-12-000063",
+      "form_type": "10-Q/A",
+      "filing_date": "2012-09-10"
+    },
+    {
+      "accession_no": "0001513160-13-000022",
+      "form_type": "10-Q",
+      "filing_date": "2013-01-25"
+    },
+    {
+      "accession_no": "0001513160-13-000055",
+      "form_type": "10-K",
+      "filing_date": "2013-09-23"
+    },
+    {
+      "accession_no": "0001513160-13-000061",
+      "form_type": "10-Q",
+      "filing_date": "2013-10-23"
+    },
+    {
+      "accession_no": "0001513160-13-000062",
+      "form_type": "10-Q",
+      "filing_date": "2013-10-23"
+    },
+    {
+      "accession_no": "0001513160-13-000069",
+      "form_type": "10-Q",
+      "filing_date": "2013-11-14"
+    },
+    {
+      "accession_no": "0001513160-14-000023",
+      "form_type": "10-K",
+      "filing_date": "2014-03-28"
+    },
+    {
+      "accession_no": "0001513160-14-000039",
+      "form_type": "10-Q",
+      "filing_date": "2014-08-08"
+    },
+    {
+      "accession_no": "0001513160-14-000060",
+      "form_type": "10-Q",
+      "filing_date": "2014-11-13"
+    }
+  ],
+  "checklist": [
+    {
+      "item_id": "CL1",
+      "question": "Did receivables grow materially faster than revenue across consecutive periods?",
+      "finding": "insufficient_data",
+      "confidence": "high",
+      "evidence": [
+        {
+          "quote": "Revenues=0 (2013-01-01/2013-12-31); Revenues=0 (2014-01-01/2014-12-31)",
+          "source_accession_no": "0001144204-15-016315",
+          "location": "10-K FY2014 - Revenues tag"
+        },
+        {
+          "quote": "No AccountsReceivable concept present in provided data series",
+          "source_accession_no": "0001144204-15-016315",
+          "location": "10-K FY2014 - financial_series_point_in_time (concept absent)"
+        }
+      ]
+    },
+    {
+      "item_id": "CL2",
+      "question": "Did non-current 'soft' assets (intangibles, other assets, capitalized items) grow materially faster than the business overall?",
+      "finding": "flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "PropertyPlantAndEquipmentNet=27756 (2013-12-31)",
+          "source_accession_no": "0001144204-15-016315",
+          "location": "10-K FY2014 balance sheet"
+        },
+        {
+          "quote": "PropertyPlantAndEquipmentNet=1531566 (2014-12-31)",
+          "source_accession_no": "0001144204-15-047780",
+          "location": "10-Q Q2 2015 balance sheet"
+        },
+        {
+          "quote": "Assets=19873649 (2013-12-31)",
+          "source_accession_no": "0001144204-15-016315",
+          "location": "10-K FY2014 balance sheet"
+        },
+        {
+          "quote": "Assets=46506847 (2014-12-31)",
+          "source_accession_no": "0001144204-15-047780",
+          "location": "10-Q Q2 2015 balance sheet"
+        }
+      ]
+    },
+    {
+      "item_id": "CL3",
+      "question": "Is there a persistent divergence between net income and operating cash flow?",
+      "finding": "flag",
+      "confidence": "high",
+      "evidence": [
+        {
+          "quote": "NetIncomeLoss=-12034709 (2014-01-01/2014-12-31)",
+          "source_accession_no": "0001144204-15-016315",
+          "location": "10-K FY2014 income statement"
+        },
+        {
+          "quote": "NetCashProvidedByUsedInOperatingActivities=8633247 (2014-01-01/2014-12-31)",
+          "source_accession_no": "0001144204-15-016315",
+          "location": "10-K FY2014 cash flow statement"
+        },
+        {
+          "quote": "NetCashProvidedByUsedInOperatingActivitiesContinuingOperations=-8633247 (2014-01-01/2014-12-31)",
+          "source_accession_no": "0001144204-15-016315",
+          "location": "10-K FY2014 cash flow statement - contradictory sign for same accession/period"
+        }
+      ]
+    },
+    {
+      "item_id": "CL4",
+      "question": "Do inventory levels or gross margins show trends inconsistent with revenue?",
+      "finding": "insufficient_data",
+      "confidence": "high",
+      "evidence": [
+        {
+          "quote": "SalesRevenueGoodsNet=0 across all reported periods (2009-2014)",
+          "source_accession_no": "0001144204-15-016315",
+          "location": "10-K FY2014 - SalesRevenueGoodsNet series"
+        },
+        {
+          "quote": "No Inventory or CostOfGoodsSold concept present in provided data series",
+          "source_accession_no": "0001144204-15-016315",
+          "location": "financial_series_point_in_time (concept absent)"
+        }
+      ]
+    },
+    {
+      "item_id": "CL5",
+      "question": "Is the earnings trajectory unusually smooth relative to the volatility of revenue and cash flow?",
+      "finding": "no_flag",
+      "confidence": "high",
+      "evidence": [
+        {
+          "quote": "NetIncomeLoss=-1607988 (2010-01-01/2010-12-31)",
+          "source_accession_no": "0001513160-14-000023",
+          "location": "10-K FY2013 comparative income statement"
+        },
+        {
+          "quote": "NetIncomeLoss=-25694100 (2011-01-01/2011-12-31)",
+          "source_accession_no": "0001513160-14-000023",
+          "location": "10-K FY2013 comparative income statement"
+        },
+        {
+          "quote": "NetIncomeLoss=-3307619 (2012-01-01/2012-12-31)",
+          "source_accession_no": "0001513160-14-000023",
+          "location": "10-K FY2013 comparative income statement"
+        },
+        {
+          "quote": "NetIncomeLoss=-25381363 (2013-01-01/2013-12-31)",
+          "source_accession_no": "0001144204-15-016315",
+          "location": "10-K FY2014 comparative income statement"
+        },
+        {
+          "quote": "NetIncomeLoss=-12034709 (2014-01-01/2014-12-31)",
+          "source_accession_no": "0001144204-15-016315",
+          "location": "10-K FY2014 income statement"
+        }
+      ]
+    },
+    {
+      "item_id": "CL6",
+      "question": "Did liability, allowance, or reserve balances decline (or fail to grow) despite growing business activity?",
+      "finding": "flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "AccruedLiabilitiesCurrent=1518225 (2013-12-31)",
+          "source_accession_no": "0001144204-15-016315",
+          "location": "10-K FY2014 balance sheet"
+        },
+        {
+          "quote": "AccruedLiabilitiesCurrent=327847 (2014-12-31)",
+          "source_accession_no": "0001144204-15-047780",
+          "location": "10-Q Q2 2015 balance sheet"
+        },
+        {
+          "quote": "ResearchAndDevelopmentExpense=1329367 (2013-01-01/2013-12-31)",
+          "source_accession_no": "0001144204-15-016315",
+          "location": "10-K FY2014 income statement"
+        },
+        {
+          "quote": "ResearchAndDevelopmentExpense=2704597 (2014-01-01/2014-12-31)",
+          "source_accession_no": "0001144204-15-016315",
+          "location": "10-K FY2014 income statement"
+        },
+        {
+          "quote": "LiabilitiesCurrent=2269932 (2013-12-31)",
+          "source_accession_no": "0001144204-15-016315",
+          "location": "10-K FY2014 balance sheet"
+        },
+        {
+          "quote": "LiabilitiesCurrent=1661760 (2014-12-31)",
+          "source_accession_no": "0001144204-15-047780",
+          "location": "10-Q Q2 2015 balance sheet"
+        }
+      ]
+    },
+    {
+      "item_id": "CL7",
+      "question": "Does the filing chronology show irregularities (late filings/NT forms, amendments, unusual 8-K frequency)?",
+      "finding": "flag",
+      "confidence": "high",
+      "evidence": [
+        {
+          "quote": "NT 10-Q filed 2010-11-16",
+          "source_accession_no": "n/a",
+          "location": "filing_chronology"
+        },
+        {
+          "quote": "NT 10-K filed 2011-04-01",
+          "source_accession_no": "n/a",
+          "location": "filing_chronology"
+        },
+        {
+          "quote": "NT 10-Q filed 2011-05-16; NT 10-Q filed 2011-08-16; NT 10-Q filed 2011-11-15",
+          "source_accession_no": "n/a",
+          "location": "filing_chronology"
+        },
+        {
+          "quote": "NT 10-K filed 2012-03-15; NT 10-Q filed 2012-05-11; NT 10-Q filed 2012-08-10; NT 10-Q filed 2012-11-13",
+          "source_accession_no": "n/a",
+          "location": "filing_chronology"
+        },
+        {
+          "quote": "NT 10-K filed 2013-04-01; NT 10-Q filed 2013-08-15",
+          "source_accession_no": "n/a",
+          "location": "filing_chronology"
+        },
+        {
+          "quote": "Multiple amendments: 10-K/A (2009-08-24, 2011-05-04, 2015-04-20), 10-Q/A (2008-10-20, 2011-09-01, 2012-09-10), and numerous 8-K/A filings (e.g., 2009-08-25, 2011-10-13, 2011-11-29, 2011-12-13, 2011-12-22, 2012-01-10, 2012-01-20, 2012-02-06, 2012-03-22, 2014-12-09)",
+          "source_accession_no": "n/a",
+          "location": "filing_chronology"
+        }
+      ]
+    },
+    {
+      "item_id": "CL8",
+      "question": "Is the provided data sufficient in coverage and length for the above assessments?",
+      "finding": "no_flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "Data series span 2008-01-01 through 2015-06-30 across Assets, Liabilities, NetIncomeLoss, cash flow, R&D expense, and PP&E concepts, filed across 10-K/10-Q/10-Q/A filings from 2012-03-30 through 2015-08-10",
+          "source_accession_no": "0001144204-15-016315",
+          "location": "aggregate financial_series_point_in_time"
+        },
+        {
+          "quote": "Revenue-related concepts (Revenues, SalesRevenueGoodsNet) are populated but equal 0 for all periods, and no receivables/inventory concepts are present, limiting coverage for revenue-quality checks",
+          "source_accession_no": "0001144204-15-016315",
+          "location": "financial_series_point_in_time"
+        }
+      ]
+    }
+  ],
+  "misstatement_probability": 48,
+  "mechanism_hypotheses": [
+    {
+      "affected_line_items": [
+        "AccruedLiabilitiesCurrent",
+        "LiabilitiesCurrent",
+        "ResearchAndDevelopmentExpense",
+        "NetIncomeLoss"
+      ],
+      "direction": "understated",
+      "accounting_treatment": "Potential under-accrual of clinical trial/CRO and R&D-related liabilities: accrued liabilities fell 78% (AccruedLiabilitiesCurrent=1518225 (2013-12-31) to 327847 (2014-12-31)) even as R&D expense more than doubled (ResearchAndDensityExpense=1329367 (2013) to 2704597 (2014)) and total assets/cash inflows grew substantially, which is inconsistent with normal expense-liability matching and could understate liabilities/expenses and overstate reported net loss reduction.",
+      "rationale_evidence": [
+        {
+          "quote": "AccruedLiabilitiesCurrent=1518225 (2013-12-31)",
+          "source_accession_no": "0001144204-15-016315",
+          "location": "10-K FY2014 balance sheet"
+        },
+        {
+          "quote": "AccruedLiabilitiesCurrent=327847 (2014-12-31)",
+          "source_accession_no": "0001144204-15-047780",
+          "location": "10-Q Q2 2015 balance sheet"
+        },
+        {
+          "quote": "ResearchAndDevelopmentExpense=2704597 (2014-01-01/2014-12-31)",
+          "source_accession_no": "0001144204-15-016315",
+          "location": "10-K FY2014 income statement"
+        }
+      ]
+    },
+    {
+      "affected_line_items": [
+        "NetCashProvidedByUsedInOperatingActivities",
+        "NetCashProvidedByUsedInOperatingActivitiesContinuingOperations"
+      ],
+      "direction": "timing_shift",
+      "accounting_treatment": "Cash flow statement misclassification or sign/tagging error for FY2014: the same reporting period (2014-01-01 to 2014-12-31) within the same 10-K accession shows operating cash flow reported as both +8,633,247 and -8,633,247 under related concepts, indicating either a XBRL tagging error or a genuine reclassification issue between continuing-operations cash flow and total cash flow that has not been reconciled.",
+      "rationale_evidence": [
+        {
+          "quote": "NetCashProvidedByUsedInOperatingActivities=8633247 (2014-01-01/2014-12-31)",
+          "source_accession_no": "0001144204-15-016315",
+          "location": "10-K FY2014 cash flow statement"
+        },
+        {
+          "quote": "NetCashProvidedByUsedInOperatingActivitiesContinuingOperations=-8633247 (2014-01-01/2014-12-31)",
+          "source_accession_no": "0001144204-15-016315",
+          "location": "10-K FY2014 cash flow statement"
+        }
+      ]
+    },
+    {
+      "affected_line_items": [
+        "All financial statement line items (broad control risk)"
+      ],
+      "direction": "timing_shift",
+      "accounting_treatment": "Chronic delayed filings (11 NT 10-Q/10-K notifications between 2010-2013) and repeated amendments (10-K/A, 10-Q/A, multiple 8-K/A) suggest historically weak internal controls over financial reporting during the company's shell-to-operating-company transition period, raising the risk that period-end balances and disclosures required subsequent correction and that similar undetected errors may persist in later periods.",
+      "rationale_evidence": [
+        {
+          "quote": "NT 10-Q filed 2010-11-16; NT 10-K filed 2011-04-01; NT 10-Q filed 2011-05-16, 2011-08-16, 2011-11-15; NT 10-K filed 2012-03-15; NT 10-Q filed 2012-05-11, 2012-08-10, 2012-11-13; NT 10-K filed 2013-04-01; NT 10-Q filed 2013-08-15",
+          "source_accession_no": "n/a",
+          "location": "filing_chronology"
+        },
+        {
+          "quote": "10-K/A filed 2009-08-24, 2011-05-04, 2015-04-20; 10-Q/A filed 2008-10-20, 2011-09-01, 2012-09-10",
+          "source_accession_no": "n/a",
+          "location": "filing_chronology"
+        }
+      ]
+    }
+  ],
+  "overall": {
+    "risk_tier": "elevated",
+    "top_signals": [
+      "Contradictory FY2014 operating cash flow figures within the same 10-K filing (+8,633,247 vs -8,633,247 for identical period)",
+      "Sharp 78% decline in accrued liabilities (2013-12-31 to 2014-12-31) despite R&D expense more than doubling in the same period",
+      "Extensive history of late-filing notices (11 NT 10-Q/10-K forms, 2010-2013) and numerous 10-K/A, 10-Q/A, and 8-K/A amendments indicating historically weak reporting infrastructure",
+      "Pre-revenue biotech status (Revenues=0 throughout) limits ability to test classic revenue-based misstatement indicators, but balance sheet and cash flow inconsistencies remain notable"
+    ]
+  }
+}

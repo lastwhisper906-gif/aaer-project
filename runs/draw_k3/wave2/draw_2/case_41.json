@@ -1,0 +1,340 @@
+{
+  "case_id": "case_41",
+  "run_id": "original-case_41-r1",
+  "model": "claude-sonnet-5",
+  "pipeline_version": "f007e552ee6b52f677ef29e22162a35e2a3e889c",
+  "run_timestamp": "2026-07-13T08:14:26.771998+00:00",
+  "documents_used": [
+    {
+      "accession_no": "0000950123-11-071060",
+      "form_type": "10-Q",
+      "filing_date": "2011-08-01"
+    },
+    {
+      "accession_no": "0000950123-11-093479",
+      "form_type": "10-Q",
+      "filing_date": "2011-10-31"
+    },
+    {
+      "accession_no": "0001193125-12-085082",
+      "form_type": "10-K",
+      "filing_date": "2012-02-28"
+    },
+    {
+      "accession_no": "0001193125-12-196241",
+      "form_type": "10-Q",
+      "filing_date": "2012-04-30"
+    },
+    {
+      "accession_no": "0001193125-12-320193",
+      "form_type": "10-Q",
+      "filing_date": "2012-07-30"
+    },
+    {
+      "accession_no": "0001193125-12-441686",
+      "form_type": "10-Q",
+      "filing_date": "2012-10-30"
+    },
+    {
+      "accession_no": "0001193125-13-086559",
+      "form_type": "10-K",
+      "filing_date": "2013-03-01"
+    },
+    {
+      "accession_no": "0001193125-13-187144",
+      "form_type": "10-Q",
+      "filing_date": "2013-04-30"
+    },
+    {
+      "accession_no": "0001193125-13-310143",
+      "form_type": "10-Q",
+      "filing_date": "2013-07-30"
+    },
+    {
+      "accession_no": "0001193125-13-416025",
+      "form_type": "10-Q",
+      "filing_date": "2013-10-29"
+    },
+    {
+      "accession_no": "0001193125-14-082130",
+      "form_type": "10-K",
+      "filing_date": "2014-03-04"
+    },
+    {
+      "accession_no": "0001193125-14-176008",
+      "form_type": "10-Q",
+      "filing_date": "2014-05-01"
+    },
+    {
+      "accession_no": "0001193125-14-289585",
+      "form_type": "10-Q",
+      "filing_date": "2014-07-31"
+    },
+    {
+      "accession_no": "0001193125-14-389583",
+      "form_type": "10-Q",
+      "filing_date": "2014-10-30"
+    },
+    {
+      "accession_no": "0001193125-15-166239",
+      "form_type": "10-Q",
+      "filing_date": "2015-05-01"
+    },
+    {
+      "accession_no": "0001193125-15-191885",
+      "form_type": "8-K",
+      "filing_date": "2015-05-18"
+    },
+    {
+      "accession_no": "0001193125-15-272918",
+      "form_type": "10-Q",
+      "filing_date": "2015-07-31"
+    },
+    {
+      "accession_no": "0001193125-15-360248",
+      "form_type": "10-Q",
+      "filing_date": "2015-10-30"
+    },
+    {
+      "accession_no": "0001193125-16-481909",
+      "form_type": "10-K",
+      "filing_date": "2016-02-26"
+    }
+  ],
+  "checklist": [
+    {
+      "item_id": "CL1",
+      "question": "Did receivables grow materially faster than revenue across consecutive periods?",
+      "finding": "flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "AccountsReceivableNetCurrent=11069000 (2010-12-31); SalesRevenueNet=65754000 (FY2010)",
+          "source_accession_no": "0001193125-12-085082",
+          "location": "10-K FY2011 comparative balance sheet / income statement"
+        },
+        {
+          "quote": "AccountsReceivableNetCurrent=16014000 (2011-12-31); SalesRevenueNet=82066000 (FY2011)",
+          "source_accession_no": "0001193125-13-086559",
+          "location": "10-K FY2012 comparative figures"
+        },
+        {
+          "quote": "AccountsReceivableNetCurrent=15348000 (2012-12-31); SalesRevenueNet=103732000 (FY2012)",
+          "source_accession_no": "0001193125-15-191885",
+          "location": "8-K recast financials"
+        },
+        {
+          "quote": "AccountsReceivableNetCurrent=25314000 (2013-12-31); SalesRevenueNet=132274000 (FY2013)",
+          "source_accession_no": "0001193125-16-481909",
+          "location": "10-K FY2015 comparative figures"
+        }
+      ]
+    },
+    {
+      "item_id": "CL2",
+      "question": "Did non-current 'soft' assets (intangibles, other assets, capitalized items) grow materially faster than the business overall?",
+      "finding": "flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "Goodwill=41914000 (2014-12-31)",
+          "source_accession_no": "0001193125-16-481909",
+          "location": "10-K FY2015 balance sheet"
+        },
+        {
+          "quote": "Goodwill=83073000 (2015-12-31)",
+          "source_accession_no": "0001193125-16-481909",
+          "location": "10-K FY2015 balance sheet"
+        },
+        {
+          "quote": "SalesRevenueNet=170690000 (FY2014); SalesRevenueNet=209002000 (FY2015)",
+          "source_accession_no": "0001193125-16-481909",
+          "location": "10-K FY2015 income statement"
+        }
+      ]
+    },
+    {
+      "item_id": "CL3",
+      "question": "Is there a persistent divergence between net income and operating cash flow?",
+      "finding": "no_flag",
+      "confidence": "high",
+      "evidence": [
+        {
+          "quote": "NetIncomeLoss=4154000 (FY2010); NetCashProvidedByUsedInOperatingActivities=16117000 (FY2010)",
+          "source_accession_no": "0001193125-13-086559",
+          "location": "10-K FY2012 cash flow statement"
+        },
+        {
+          "quote": "NetIncomeLoss=10394000 (FY2014); NetCashProvidedByUsedInOperatingActivitiesContinuingOperations=34256000 (FY2014)",
+          "source_accession_no": "0001193125-16-481909",
+          "location": "10-K FY2015 cash flow statement"
+        },
+        {
+          "quote": "NetIncomeLoss=8621000 (FY2015); NetCashProvidedByUsedInOperatingActivitiesContinuingOperations=34917000 (FY2015)",
+          "source_accession_no": "0001193125-16-481909",
+          "location": "10-K FY2015 cash flow statement"
+        }
+      ]
+    },
+    {
+      "item_id": "CL4",
+      "question": "Do inventory levels or gross margins show trends inconsistent with revenue?",
+      "finding": "insufficient_data",
+      "confidence": "low",
+      "evidence": [
+        {
+          "quote": "No InventoryNet concept provided; CostOfGoodsAndServicesSold data available only through 2013-Q2, no annual COGS for FY2014/FY2015 provided in dataset",
+          "source_accession_no": "0001193125-13-310143",
+          "location": "10-Q Q2 2013 income statement"
+        }
+      ]
+    },
+    {
+      "item_id": "CL5",
+      "question": "Is the earnings trajectory unusually smooth relative to the volatility of revenue and cash flow?",
+      "finding": "no_flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "NetIncomeLoss=13972000 (FY2009); NetIncomeLoss=4154000 (FY2010)",
+          "source_accession_no": "0001193125-13-086559",
+          "location": "10-K FY2012 comparative income statement"
+        },
+        {
+          "quote": "NetIncomeLoss=10394000 (FY2014); NetIncomeLoss=8621000 (FY2015)",
+          "source_accession_no": "0001193125-16-481909",
+          "location": "10-K FY2015 income statement"
+        }
+      ]
+    },
+    {
+      "item_id": "CL6",
+      "question": "Did liability, allowance, or reserve balances decline (or fail to grow) despite growing business activity?",
+      "finding": "flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "AllowanceForDoubtfulAccountsReceivableCurrent=157000 (2010-12-31); AccountsReceivableNetCurrent=11069000 (2010-12-31)",
+          "source_accession_no": "0001193125-12-085082",
+          "location": "10-K FY2011"
+        },
+        {
+          "quote": "AllowanceForDoubtfulAccountsReceivableCurrent=303000 (2015-12-31); AccountsReceivableNetCurrent=36348000 (2015-12-31)",
+          "source_accession_no": "0001193125-16-481909",
+          "location": "10-K FY2015 balance sheet / notes"
+        }
+      ]
+    },
+    {
+      "item_id": "CL7",
+      "question": "Does the filing chronology show irregularities (late filings/NT forms, amendments, unusual 8-K frequency)?",
+      "finding": "flag",
+      "confidence": "low",
+      "evidence": [
+        {
+          "quote": "10-K/A filed 2011-08-10 shortly after original 10-K filed 2011-03-23",
+          "source_accession_no": "N/A",
+          "location": "filing_chronology list"
+        },
+        {
+          "quote": "Financial data for FY2012-FY2013 (e.g., AccountsPayableCurrent 2013-12-31, NetIncomeLoss FY2012) reported via Form 8-K filed 2015-05-18 rather than in original periodic report",
+          "source_accession_no": "0001193125-15-191885",
+          "location": "8-K filed 2015-05-18 recast financial exhibits"
+        },
+        {
+          "quote": "Multiple 8-K/A filings present (2005-06-10, 2006-06-21, 2013-09-06, 2015-04-14, 2015-05-18)",
+          "source_accession_no": "N/A",
+          "location": "filing_chronology list"
+        }
+      ]
+    },
+    {
+      "item_id": "CL8",
+      "question": "Is the provided data sufficient in coverage and length for the above assessments?",
+      "finding": "no_flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "Quarterly and annual data spanning FY2009 through FY2015 provided for Assets, Revenue, NetIncomeLoss, OperatingCashFlow, AccountsReceivable, Goodwill, AccountsPayable, DeferredRevenue, etc.",
+          "source_accession_no": "0001193125-16-481909",
+          "location": "10-K FY2015 and prior filings comparative tables"
+        }
+      ]
+    }
+  ],
+  "misstatement_probability": 30,
+  "mechanism_hypotheses": [
+    {
+      "affected_line_items": [
+        "Goodwill",
+        "Other intangible assets",
+        "Amortization expense"
+      ],
+      "direction": "understated",
+      "accounting_treatment": "Aggressive purchase price allocation favoring goodwill over identifiable amortizable intangibles in multiple acquisitions (goodwill jumped from Goodwill=41914000 (2014-12-31) to Goodwill=83073000 (2015-12-31), a ~98% increase vs. revenue growth of ~22% (SalesRevenueNet=170690000 FY2014 to 209002000 FY2015, per 10-K accession 0001193125-16-481909)), which could delay expense recognition (via amortization) relative to a more balanced allocation, understating near-term amortization/impairment risk if goodwill is later found impaired.",
+      "rationale_evidence": [
+        {
+          "quote": "Goodwill=83073000 (2015-12-31)",
+          "source_accession_no": "0001193125-16-481909",
+          "location": "10-K FY2015 balance sheet"
+        },
+        {
+          "quote": "SalesRevenueNet=209002000 (FY2015)",
+          "source_accession_no": "0001193125-16-481909",
+          "location": "10-K FY2015 income statement"
+        }
+      ]
+    },
+    {
+      "affected_line_items": [
+        "Accounts Receivable, Net",
+        "Allowance for Doubtful Accounts",
+        "Bad debt expense"
+      ],
+      "direction": "overstated",
+      "accounting_treatment": "Allowance for doubtful accounts grew more slowly than accounts receivable (AllowanceForDoubtfulAccountsReceivableCurrent=157000 (2010-12-31) to 303000 (2015-12-31), a ~93% increase, versus AccountsReceivableNetCurrent growth from 11069000 (2010-12-31) to 36348000 (2015-12-31), a ~228% increase), potentially understating bad debt reserves and overstating net receivables/revenue quality.",
+      "rationale_evidence": [
+        {
+          "quote": "AllowanceForDoubtfulAccountsReceivableCurrent=157000 (2010-12-31)",
+          "source_accession_no": "0001193125-12-085082",
+          "location": "10-K FY2011"
+        },
+        {
+          "quote": "AllowanceForDoubtfulAccountsReceivableCurrent=303000 (2015-12-31); AccountsReceivableNetCurrent=36348000 (2015-12-31)",
+          "source_accession_no": "0001193125-16-481909",
+          "location": "10-K FY2015 balance sheet"
+        }
+      ]
+    },
+    {
+      "affected_line_items": [
+        "Accounts Receivable, Net",
+        "Revenue"
+      ],
+      "direction": "overstated",
+      "accounting_treatment": "Periods of receivables growth outpacing revenue growth (e.g., AccountsReceivableNetCurrent up ~65% in 2013 (from 15348000 to 25314000) vs SalesRevenueNet up ~27.5% (103732000 to 132274000)) could indicate revenue recognized ahead of cash collection, aggressive billing, or channel-stuffing-like timing shifts in a subscription/services business, though could also reflect legitimate mix shift or M&A-driven billing timing.",
+      "rationale_evidence": [
+        {
+          "quote": "AccountsReceivableNetCurrent=15348000 (2012-12-31)",
+          "source_accession_no": "0001193125-15-191885",
+          "location": "8-K recast financials"
+        },
+        {
+          "quote": "AccountsReceivableNetCurrent=25314000 (2013-12-31); SalesRevenueNet=132274000 (FY2013)",
+          "source_accession_no": "0001193125-16-481909",
+          "location": "10-K FY2015 comparative figures"
+        }
+      ]
+    }
+  ],
+  "overall": {
+    "risk_tier": "watch",
+    "top_signals": [
+      "Goodwill grew ~98% in FY2015 (41.9M to 83.1M) far outpacing revenue growth (~22%), reflecting heavy M&A activity that raises impairment and purchase-accounting risk",
+      "Allowance for doubtful accounts grew much slower (~93%) than accounts receivable (~228%) from 2010 to 2015, suggesting a declining reserve coverage ratio",
+      "Accounts receivable growth periodically outpaced revenue growth substantially (e.g., FY2013: AR +65% vs revenue +27.5%), a classic soft signal for aggressive revenue recognition or collection issues",
+      "Operating cash flow consistently and increasingly exceeded net income across all years (a reassuring sign against earnings management)",
+      "Some filing chronology irregularities (a 10-K/A shortly after the original 10-K in 2011, and recast historical figures appearing via an 8-K in 2015) warrant further review but are not conclusively indicative of restatement fraud"
+    ]
+  }
+}

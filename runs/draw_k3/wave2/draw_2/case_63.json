@@ -1,0 +1,336 @@
+{
+  "case_id": "case_63",
+  "run_id": "original-case_63-r1",
+  "model": "claude-sonnet-5",
+  "pipeline_version": "f007e552ee6b52f677ef29e22162a35e2a3e889c",
+  "run_timestamp": "2026-07-13T08:35:08.719448+00:00",
+  "documents_used": [
+    {
+      "accession_no": "0000950123-10-073930",
+      "form_type": "10-Q",
+      "filing_date": "2010-08-06"
+    },
+    {
+      "accession_no": "0000950123-10-102601",
+      "form_type": "10-Q",
+      "filing_date": "2010-11-08"
+    },
+    {
+      "accession_no": "0000950123-11-019812",
+      "form_type": "10-K",
+      "filing_date": "2011-02-28"
+    },
+    {
+      "accession_no": "0000950123-11-047088",
+      "form_type": "10-Q",
+      "filing_date": "2011-05-09"
+    },
+    {
+      "accession_no": "0000950123-11-074180",
+      "form_type": "10-Q",
+      "filing_date": "2011-08-08"
+    },
+    {
+      "accession_no": "0001193125-11-301547",
+      "form_type": "10-Q",
+      "filing_date": "2011-11-08"
+    },
+    {
+      "accession_no": "0001193125-12-220681",
+      "form_type": "10-Q",
+      "filing_date": "2012-05-09"
+    },
+    {
+      "accession_no": "0001193125-12-346854",
+      "form_type": "10-Q",
+      "filing_date": "2012-08-09"
+    },
+    {
+      "accession_no": "0001193125-12-411400",
+      "form_type": "8-K",
+      "filing_date": "2012-10-01"
+    },
+    {
+      "accession_no": "0001193125-12-461670",
+      "form_type": "10-Q",
+      "filing_date": "2012-11-09"
+    },
+    {
+      "accession_no": "0001193125-13-087320",
+      "form_type": "10-K",
+      "filing_date": "2013-03-01"
+    },
+    {
+      "accession_no": "0001193125-13-212597",
+      "form_type": "10-Q",
+      "filing_date": "2013-05-10"
+    },
+    {
+      "accession_no": "0001193125-13-326429",
+      "form_type": "10-Q",
+      "filing_date": "2013-08-08"
+    },
+    {
+      "accession_no": "0001193125-13-434276",
+      "form_type": "10-Q",
+      "filing_date": "2013-11-08"
+    },
+    {
+      "accession_no": "0001193125-14-073593",
+      "form_type": "10-K",
+      "filing_date": "2014-02-28"
+    },
+    {
+      "accession_no": "0001564590-14-001996",
+      "form_type": "10-Q",
+      "filing_date": "2014-05-09"
+    },
+    {
+      "accession_no": "0001564590-14-003378",
+      "form_type": "10-Q",
+      "filing_date": "2014-08-08"
+    },
+    {
+      "accession_no": "0001564590-14-005246",
+      "form_type": "10-Q",
+      "filing_date": "2014-11-07"
+    },
+    {
+      "accession_no": "0001564590-15-000995",
+      "form_type": "10-K",
+      "filing_date": "2015-02-26"
+    },
+    {
+      "accession_no": "0001564590-15-003681",
+      "form_type": "10-Q",
+      "filing_date": "2015-05-08"
+    },
+    {
+      "accession_no": "0001564590-15-006227",
+      "form_type": "10-Q",
+      "filing_date": "2015-08-05"
+    },
+    {
+      "accession_no": "0001564590-15-009262",
+      "form_type": "10-Q",
+      "filing_date": "2015-11-04"
+    }
+  ],
+  "checklist": [
+    {
+      "item_id": "CL1",
+      "question": "Did receivables grow materially faster than revenue across consecutive periods?",
+      "finding": "insufficient_data",
+      "confidence": "low",
+      "evidence": [
+        {
+          "quote": "AccountsReceivableNet ... end 2009-12-31 ... value 146809000",
+          "source_accession_no": "0000950123-11-019812",
+          "location": "10-K FY2009 balance sheet"
+        },
+        {
+          "quote": "AccountsReceivableNet ... end 2015-09-30 ... value 131209000",
+          "source_accession_no": "0001564590-15-009262",
+          "location": "10-Q Q3 2015 balance sheet"
+        }
+      ]
+    },
+    {
+      "item_id": "CL2",
+      "question": "Did non-current 'soft' assets (intangibles, other assets, capitalized items) grow materially faster than the business overall?",
+      "finding": "insufficient_data",
+      "confidence": "low",
+      "evidence": [
+        {
+          "quote": "Assets ... end 2011-12-31 ... value 7469425000",
+          "source_accession_no": "0001193125-13-087320",
+          "location": "10-K FY2011 balance sheet"
+        },
+        {
+          "quote": "Assets ... end 2013-12-31 ... value 9693073000",
+          "source_accession_no": "0001564590-15-000995",
+          "location": "10-K FY2013 (2014-filed) balance sheet"
+        }
+      ]
+    },
+    {
+      "item_id": "CL3",
+      "question": "Is there a persistent divergence between net income and operating cash flow?",
+      "finding": "flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "NetIncomeLoss ... 2009-01-01 to 2009-12-31 ... value -356593000",
+          "source_accession_no": "0001193125-12-411400",
+          "location": "8-K restated financials FY2009"
+        },
+        {
+          "quote": "NetCashProvidedByUsedInOperatingActivities ... 2009-01-01 to 2009-12-31 ... value 228935000",
+          "source_accession_no": "0001193125-12-411400",
+          "location": "8-K restated financials FY2009"
+        },
+        {
+          "quote": "NetIncomeLoss ... 2013-01-01 to 2013-12-31 ... value -10175000",
+          "source_accession_no": "0001564590-15-000995",
+          "location": "10-K FY2013"
+        },
+        {
+          "quote": "NetCashProvidedByUsedInOperatingActivities ... 2013-01-01 to 2013-12-31 ... value 373974000",
+          "source_accession_no": "0001564590-15-000995",
+          "location": "10-K FY2013"
+        }
+      ]
+    },
+    {
+      "item_id": "CL4",
+      "question": "Do inventory levels or gross margins show trends inconsistent with revenue?",
+      "finding": "insufficient_data",
+      "confidence": "low",
+      "evidence": [
+        {
+          "quote": "No InventoryNet, CostOfGoodsSold, or GrossProfit concepts present in the provided series (consistent with a real-estate/REIT business model where inventory is not a typical line item).",
+          "source_accession_no": "N/A",
+          "location": "Data coverage review"
+        }
+      ]
+    },
+    {
+      "item_id": "CL5",
+      "question": "Is the earnings trajectory unusually smooth relative to the volatility of revenue and cash flow?",
+      "finding": "no_flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "NetIncomeLoss ... 2015-01-01 to 2015-03-31 ... value -243787000",
+          "source_accession_no": "0001564590-15-003681",
+          "location": "10-Q Q1 2015"
+        },
+        {
+          "quote": "NetIncomeLoss ... 2015-04-01 to 2015-06-30 ... value 18598000",
+          "source_accession_no": "0001564590-15-006227",
+          "location": "10-Q Q2 2015"
+        },
+        {
+          "quote": "NetIncomeLoss ... 2015-07-01 to 2015-09-30 ... value 59555000",
+          "source_accession_no": "0001564590-15-009262",
+          "location": "10-Q Q3 2015"
+        },
+        {
+          "quote": "NetCashProvidedByUsedInOperatingActivities ... 2015-01-01 to 2015-03-31 ... value 62701000",
+          "source_accession_no": "0001564590-15-003681",
+          "location": "10-Q Q1 2015"
+        }
+      ]
+    },
+    {
+      "item_id": "CL6",
+      "question": "Did liability, allowance, or reserve balances decline (or fail to grow) despite growing business activity?",
+      "finding": "no_flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "Liabilities ... end 2011-12-31 ... value 4391533000",
+          "source_accession_no": "0001193125-13-087320",
+          "location": "10-K FY2011 balance sheet"
+        },
+        {
+          "quote": "Liabilities ... end 2015-09-30 ... value 5717143000",
+          "source_accession_no": "0001564590-15-009262",
+          "location": "10-Q Q3 2015 balance sheet"
+        },
+        {
+          "quote": "Assets ... end 2011-12-31 ... value 7469425000",
+          "source_accession_no": "0001193125-13-087320",
+          "location": "10-K FY2011 balance sheet"
+        },
+        {
+          "quote": "Assets ... end 2015-09-30 ... value 9155479000",
+          "source_accession_no": "0001564590-15-009262",
+          "location": "10-Q Q3 2015 balance sheet"
+        }
+      ]
+    },
+    {
+      "item_id": "CL7",
+      "question": "Does the filing chronology show irregularities (late filings/NT forms, amendments, unusual 8-K frequency)?",
+      "finding": "flag",
+      "confidence": "high",
+      "evidence": [
+        {
+          "quote": "10-K/A filing_date 2006-03-10",
+          "source_accession_no": "N/A",
+          "location": "filing_chronology"
+        },
+        {
+          "quote": "10-K/A filing_date 2007-03-06",
+          "source_accession_no": "N/A",
+          "location": "filing_chronology"
+        },
+        {
+          "quote": "10-K/A filing_date 2007-10-25",
+          "source_accession_no": "N/A",
+          "location": "filing_chronology"
+        },
+        {
+          "quote": "10-K/A filing_date 2009-04-29",
+          "source_accession_no": "N/A",
+          "location": "filing_chronology"
+        },
+        {
+          "quote": "10-K/A filing_date 2012-03-26",
+          "source_accession_no": "N/A",
+          "location": "filing_chronology"
+        },
+        {
+          "quote": "10-K/A filing_date 2013-03-19",
+          "source_accession_no": "N/A",
+          "location": "filing_chronology"
+        },
+        {
+          "quote": "10-K/A filing_date 2014-03-20",
+          "source_accession_no": "N/A",
+          "location": "filing_chronology"
+        },
+        {
+          "quote": "10-K/A filing_date 2015-03-12",
+          "source_accession_no": "N/A",
+          "location": "filing_chronology"
+        },
+        {
+          "quote": "10-Q/A filing_date 2003-06-24",
+          "source_accession_no": "N/A",
+          "location": "filing_chronology"
+        },
+        {
+          "quote": "CORRESP filing_date 2013-05-10, 2013-06-12, 2014-05-07, 2014-05-20, 2015-10-19",
+          "source_accession_no": "N/A",
+          "location": "filing_chronology"
+        }
+      ]
+    },
+    {
+      "item_id": "CL8",
+      "question": "Is the provided data sufficient in coverage and length for the above assessments?",
+      "finding": "flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "No Revenues, CostOfGoodsSold/GrossProfit, InventoryNet, AllowanceForDoubtfulAccounts, IntangibleAssetsNet, or OtherAssets concepts are present anywhere in the provided financial_series_point_in_time dataset.",
+          "source_accession_no": "N/A",
+          "location": "Data coverage review across all concepts"
+        }
+      ]
+    }
+  ],
+  "misstatement_probability": 35,
+  "mechanism_hypotheses": [],
+  "overall": {
+    "risk_tier": "watch",
+    "top_signals": [
+      "Repeated 10-K/A amendments across at least seven fiscal years (2006, 2007 x2, 2009, 2012, 2013, 2014, 2015) plus a 2003 10-Q/A, indicating recurring post-filing corrections or Part III supplements that warrant scrutiny of the underlying cause",
+      "Frequent SEC CORRESP/UPLOAD correspondence spanning 2005-2015, suggesting sustained SEC review/comment-letter activity on the registrant's filings",
+      "Persistent, large divergence between NetIncomeLoss and NetCashProvidedByUsedInOperatingActivities across nearly every year 2008-2013 (e.g., NetIncomeLoss=-356,593,000 vs OCF=228,935,000 in 2009), though this is largely explainable by REIT-typical non-cash depreciation/impairment/gain-on-sale items rather than clear evidence of manipulation",
+      "Data gaps (no Revenues, inventory/margin, intangible asset, or allowance-for-doubtful-accounts series) limit the ability to fully evaluate receivable-to-revenue and soft-asset growth checks, reducing overall confidence in a definitive conclusion"
+    ]
+  }
+}

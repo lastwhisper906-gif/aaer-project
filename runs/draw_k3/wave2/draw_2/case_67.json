@@ -1,0 +1,257 @@
+{
+  "case_id": "case_67",
+  "run_id": "original-case_67-r1",
+  "model": "claude-sonnet-5",
+  "pipeline_version": "f007e552ee6b52f677ef29e22162a35e2a3e889c",
+  "run_timestamp": "2026-07-13T07:58:03.073905+00:00",
+  "documents_used": [
+    {
+      "accession_no": "0001581068-13-000007",
+      "form_type": "10-Q",
+      "filing_date": "2013-12-03"
+    },
+    {
+      "accession_no": "0001581068-14-000028",
+      "form_type": "10-Q",
+      "filing_date": "2014-05-07"
+    },
+    {
+      "accession_no": "0001581068-14-000038",
+      "form_type": "8-K",
+      "filing_date": "2014-05-27"
+    },
+    {
+      "accession_no": "0001581068-14-000053",
+      "form_type": "10-Q",
+      "filing_date": "2014-08-05"
+    },
+    {
+      "accession_no": "0001581068-14-000070",
+      "form_type": "10-Q",
+      "filing_date": "2014-11-04"
+    },
+    {
+      "accession_no": "0001581068-15-000028",
+      "form_type": "10-K",
+      "filing_date": "2015-02-19"
+    },
+    {
+      "accession_no": "0001581068-15-000050",
+      "form_type": "10-Q",
+      "filing_date": "2015-04-27"
+    },
+    {
+      "accession_no": "0001581068-15-000073",
+      "form_type": "10-Q",
+      "filing_date": "2015-07-27"
+    },
+    {
+      "accession_no": "0001581068-15-000092",
+      "form_type": "10-Q",
+      "filing_date": "2015-10-26"
+    }
+  ],
+  "checklist": [
+    {
+      "item_id": "CL1",
+      "question": "Did receivables grow materially faster than revenue across consecutive periods?",
+      "finding": "insufficient_data",
+      "confidence": "low",
+      "evidence": [
+        {
+          "quote": "ReceivablesNetCurrent=156944000 (2012-12-31)",
+          "source_accession_no": "0001581068-13-000007",
+          "location": "10-Q filed 2013-12-03, balance sheet"
+        },
+        {
+          "quote": "ReceivablesNetCurrent=182424000 (2014-12-31)",
+          "source_accession_no": "0001581068-15-000092",
+          "location": "10-Q filed 2015-10-26, balance sheet"
+        },
+        {
+          "quote": "ReceivablesNetCurrent=171914000 (2015-09-30)",
+          "source_accession_no": "0001581068-15-000092",
+          "location": "10-Q filed 2015-10-26, balance sheet"
+        }
+      ]
+    },
+    {
+      "item_id": "CL2",
+      "question": "Did non-current 'soft' assets (intangibles, other assets, capitalized items) grow materially faster than the business overall?",
+      "finding": "insufficient_data",
+      "confidence": "low",
+      "evidence": [
+        {
+          "quote": "Assets=9603729000 (2012-12-31)",
+          "source_accession_no": "0001581068-13-000007",
+          "location": "10-Q filed 2013-12-03, balance sheet"
+        },
+        {
+          "quote": "Assets=9527623000 (2015-09-30)",
+          "source_accession_no": "0001581068-15-000092",
+          "location": "10-Q filed 2015-10-26, balance sheet"
+        }
+      ]
+    },
+    {
+      "item_id": "CL3",
+      "question": "Is there a persistent divergence between net income and operating cash flow?",
+      "finding": "flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "NetIncomeLoss=-160713000 (FY2012)",
+          "source_accession_no": "0001581068-15-000028",
+          "location": "10-K filed 2015-02-19, income statement"
+        },
+        {
+          "quote": "NetCashProvidedByUsedInOperatingActivities=268847000 (FY2012)",
+          "source_accession_no": "0001581068-15-000028",
+          "location": "10-K filed 2015-02-19, cash flow statement"
+        },
+        {
+          "quote": "NetIncomeLoss=-118883000 (FY2013)",
+          "source_accession_no": "0001581068-15-000028",
+          "location": "10-K filed 2015-02-19, income statement"
+        },
+        {
+          "quote": "NetCashProvidedByUsedInOperatingActivities=331990000 (FY2013)",
+          "source_accession_no": "0001581068-15-000028",
+          "location": "10-K filed 2015-02-19, cash flow statement"
+        },
+        {
+          "quote": "DepreciationAndAmortization=488524000 (FY2012)",
+          "source_accession_no": "0001581068-15-000028",
+          "location": "10-K filed 2015-02-19, cash flow statement (D&A add-back)"
+        }
+      ]
+    },
+    {
+      "item_id": "CL4",
+      "question": "Do inventory levels or gross margins show trends inconsistent with revenue?",
+      "finding": "insufficient_data",
+      "confidence": "low",
+      "evidence": [
+        {
+          "quote": "No InventoryNet or revenue concept provided in the dataset; Brixmor is a real estate investment trust (shopping center REIT) that does not carry inventory in the traditional sense.",
+          "source_accession_no": "0001581068-15-000028",
+          "location": "10-K filed 2015-02-19, general company description context"
+        }
+      ]
+    },
+    {
+      "item_id": "CL5",
+      "question": "Is the earnings trajectory unusually smooth relative to the volatility of revenue and cash flow?",
+      "finding": "no_flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "NetIncomeLoss=-160713000 (FY2012)",
+          "source_accession_no": "0001581068-15-000028",
+          "location": "10-K filed 2015-02-19"
+        },
+        {
+          "quote": "NetIncomeLoss=-118883000 (FY2013)",
+          "source_accession_no": "0001581068-15-000028",
+          "location": "10-K filed 2015-02-19"
+        },
+        {
+          "quote": "NetIncomeLoss=132851000 (FY2014)",
+          "source_accession_no": "0001581068-15-000028",
+          "location": "10-K filed 2015-02-19"
+        },
+        {
+          "quote": "ProfitLoss=41740000 (Q1 2014), 31298000 (Q2 2014), 33864000 (Q3 2014)",
+          "source_accession_no": "0001581068-15-000073",
+          "location": "10-Q filed 2015-07-27 / 0001581068-15-000092 filed 2015-10-26"
+        },
+        {
+          "quote": "InterestExpense=91871000 (Q1 2013) declining to InterestExpense=62564000 (Q1 2015)",
+          "source_accession_no": "0001581068-15-000050",
+          "location": "10-Q filed 2015-04-27, income statement"
+        }
+      ]
+    },
+    {
+      "item_id": "CL6",
+      "question": "Did liability, allowance, or reserve balances decline (or fail to grow) despite growing business activity?",
+      "finding": "no_flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "Liabilities=7305908000 (2012-12-31)",
+          "source_accession_no": "0001581068-13-000007",
+          "location": "10-Q filed 2013-12-03, balance sheet"
+        },
+        {
+          "quote": "Liabilities=6595936000 (2015-09-30)",
+          "source_accession_no": "0001581068-15-000092",
+          "location": "10-Q filed 2015-10-26, balance sheet"
+        },
+        {
+          "quote": "ProceedsFromIssuanceOfCommonStock=893860000 (FY2013)",
+          "source_accession_no": "0001581068-15-000028",
+          "location": "10-K filed 2015-02-19, cash flow statement (financing activities)"
+        },
+        {
+          "quote": "DebtAndCapitalLeaseObligations=6499356000 (2012-12-31) declining to DebtAndCapitalLeaseObligations=5969336000 (2015-09-30)",
+          "source_accession_no": "0001581068-15-000092",
+          "location": "10-Q filed 2015-10-26 / 8-K filed 2014-05-27"
+        }
+      ]
+    },
+    {
+      "item_id": "CL7",
+      "question": "Does the filing chronology show irregularities (late filings/NT forms, amendments, unusual 8-K frequency)?",
+      "finding": "no_flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "DEF 14A filed 2014-04-10; no NT 10-K or NT 10-Q forms appear in the chronology for any period through 2016-01-07.",
+          "source_accession_no": "N/A",
+          "location": "filing_chronology list"
+        },
+        {
+          "quote": "8-K filed 2014-05-07 followed by 8-K/A filed 2014-05-08 (one-day amendment, consistent with routine supplemental exhibit filing)",
+          "source_accession_no": "N/A",
+          "location": "filing_chronology list"
+        },
+        {
+          "quote": "DEF 14A filed 2015-04-14 followed by DEFR14A filed 2015-04-15 (revised proxy filed next day)",
+          "source_accession_no": "N/A",
+          "location": "filing_chronology list"
+        }
+      ]
+    },
+    {
+      "item_id": "CL8",
+      "question": "Is the provided data sufficient in coverage and length for the above assessments?",
+      "finding": "insufficient_data",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "No revenue/Revenues concept, no intangible asset or allowance for doubtful accounts concept, and no InventoryNet concept were provided in the financial_series_point_in_time dataset, limiting several checklist items.",
+          "source_accession_no": "N/A",
+          "location": "financial_series_point_in_time (dataset structure)"
+        },
+        {
+          "quote": "Balance sheet and cash flow data span FY2012 through Q3 2015 on a quarterly basis, providing reasonable length for trend analysis of the items that are covered (Assets, Liabilities, receivables, cash, debt, equity, NI, OCF).",
+          "source_accession_no": "0001581068-15-000092",
+          "location": "10-Q filed 2015-10-26 and prior filings"
+        }
+      ]
+    }
+  ],
+  "misstatement_probability": 15,
+  "mechanism_hypotheses": [],
+  "overall": {
+    "risk_tier": "watch",
+    "top_signals": [
+      "Persistent, large divergence between GAAP net income (e.g., NetIncomeLoss=-160713000 FY2012, -118883000 FY2013) and operating cash flow (NetCashProvidedByUsedInOperatingActivities=268847000 FY2012, 331990000 FY2013), though this gap is largely explained by heavy D&A charges typical of a REIT (DepreciationAndAmortization=488524000 FY2012) rather than indicating aggressive revenue recognition.",
+      "Data set lacks revenue, intangible asset, and allowance/reserve line items, limiting the ability to fully test receivables-vs-revenue growth (CL1) and soft-asset growth (CL2) hypotheses.",
+      "Balance sheet deleveraging (Liabilities=7305908000 in 2012-12-31 down to 6595936000 in 2015-09-30; Debt down from 6499356000 to 5969336000 over the same span) is well explained by a large 2013 equity raise (ProceedsFromIssuanceOfCommonStock=893860000 FY2013) consistent with Brixmor's October 2013 IPO and subsequent capital markets activity, not indicative of liability understatement.",
+      "Earnings trajectory shows genuine volatility and a plausible improving trend tied to declining InterestExpense (91871000 Q1 2013 to 62564000 Q1 2015) post-IPO, rather than suspiciously smooth income management.",
+      "Filing chronology shows heavy but routine capital-markets activity (multiple S-11/424B offerings, 8-K's) with no NT filings, no 10-K/A restatements, and only minor same-week amendments (8-K/A, DEFR14A), consistent with an actively growing/deleveraging newly public REIT rather than governance or reporting irregularities."
+    ]
+  }
+}
