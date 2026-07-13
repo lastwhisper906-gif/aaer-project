@@ -1,0 +1,303 @@
+{
+  "case_id": "case_44",
+  "run_id": "original-case_44-r1",
+  "model": "claude-opus-4-8",
+  "pipeline_version": "975e86d922d2a8e1c3d63f69dcaa619e61a9aa9d",
+  "run_timestamp": "2026-07-13T03:56:52.615873+00:00",
+  "documents_used": [
+    {
+      "accession_no": "0001273685-15-000007",
+      "form_type": "10-Q",
+      "filing_date": "2015-11-05"
+    },
+    {
+      "accession_no": "0001437749-11-005485",
+      "form_type": "10-Q",
+      "filing_date": "2011-08-04"
+    },
+    {
+      "accession_no": "0001437749-11-008081",
+      "form_type": "10-Q",
+      "filing_date": "2011-11-04"
+    },
+    {
+      "accession_no": "0001437749-12-002196",
+      "form_type": "10-K",
+      "filing_date": "2012-03-12"
+    },
+    {
+      "accession_no": "0001437749-12-004523",
+      "form_type": "10-Q",
+      "filing_date": "2012-05-04"
+    },
+    {
+      "accession_no": "0001437749-12-009201",
+      "form_type": "10-Q/A",
+      "filing_date": "2012-09-06"
+    },
+    {
+      "accession_no": "0001437749-12-011381",
+      "form_type": "10-Q",
+      "filing_date": "2012-11-09"
+    },
+    {
+      "accession_no": "0001437749-13-003120",
+      "form_type": "10-K",
+      "filing_date": "2013-03-18"
+    },
+    {
+      "accession_no": "0001437749-13-005756",
+      "form_type": "10-Q",
+      "filing_date": "2013-05-10"
+    },
+    {
+      "accession_no": "0001437749-13-010278",
+      "form_type": "10-Q",
+      "filing_date": "2013-08-08"
+    },
+    {
+      "accession_no": "0001437749-13-014330",
+      "form_type": "10-Q",
+      "filing_date": "2013-11-08"
+    },
+    {
+      "accession_no": "0001437749-14-003776",
+      "form_type": "10-K",
+      "filing_date": "2014-03-10"
+    },
+    {
+      "accession_no": "0001437749-14-008286",
+      "form_type": "10-Q",
+      "filing_date": "2014-05-08"
+    },
+    {
+      "accession_no": "0001437749-14-014487",
+      "form_type": "10-Q",
+      "filing_date": "2014-08-07"
+    },
+    {
+      "accession_no": "0001437749-14-019817",
+      "form_type": "10-Q",
+      "filing_date": "2014-11-06"
+    },
+    {
+      "accession_no": "0001437749-15-003681",
+      "form_type": "10-K",
+      "filing_date": "2015-02-27"
+    },
+    {
+      "accession_no": "0001437749-15-009279",
+      "form_type": "10-Q",
+      "filing_date": "2015-05-07"
+    },
+    {
+      "accession_no": "0001437749-15-015075",
+      "form_type": "10-Q",
+      "filing_date": "2015-08-06"
+    }
+  ],
+  "checklist": [
+    {
+      "item_id": "CL1",
+      "question": "Did receivables grow materially faster than revenue across consecutive periods?",
+      "finding": "insufficient_data",
+      "confidence": "high",
+      "evidence": [
+        {
+          "quote": "No revenue (Revenues) or receivables (AccountsReceivable/loans receivable) concepts are provided in the dataset; only Assets, cash, income and cash-flow tags exist.",
+          "source_accession_no": "0001437749-15-003681",
+          "location": "financial_series_point_in_time (concept coverage)"
+        }
+      ]
+    },
+    {
+      "item_id": "CL2",
+      "question": "Did non-current 'soft' assets (intangibles, other assets, capitalized items) grow materially faster than the business overall?",
+      "finding": "insufficient_data",
+      "confidence": "high",
+      "evidence": [
+        {
+          "quote": "Only total Assets is disclosed (e.g., Assets=10,540,005 at 2014-12-31); no intangibles, goodwill, deferred costs or 'other assets' breakdown is available to test soft-asset growth.",
+          "source_accession_no": "0001273685-15-000007",
+          "location": "Assets series"
+        }
+      ]
+    },
+    {
+      "item_id": "CL3",
+      "question": "Is there a persistent divergence between net income and operating cash flow?",
+      "finding": "flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "NetIncomeLoss=136,191 (FY2014) vs NetCashProvidedByUsedInOperatingActivities=37,551 (FY2014)",
+          "source_accession_no": "0001437749-15-003681",
+          "location": "NetIncomeLoss / OCF FY2014"
+        },
+        {
+          "quote": "ProfitLoss=68,955 (FY2013) vs NetCashProvidedByUsedInOperatingActivities=53,303 (FY2013)",
+          "source_accession_no": "0001437749-15-003681",
+          "location": "ProfitLoss / OCF FY2013"
+        },
+        {
+          "quote": "Net income roughly quadrupled 2012->2014 (28,182 to 136,191) while operating cash flow barely moved (29,089 to 37,551), a growing accrual-vs-cash divergence.",
+          "source_accession_no": "0001437749-15-003681",
+          "location": "NI vs OCF trend"
+        }
+      ]
+    },
+    {
+      "item_id": "CL4",
+      "question": "Do inventory levels or gross margins show trends inconsistent with revenue?",
+      "finding": "insufficient_data",
+      "confidence": "high",
+      "evidence": [
+        {
+          "quote": "No inventory, cost of goods sold, or gross margin concepts are provided; entity is a financial/investment vehicle with no such line items.",
+          "source_accession_no": "0001437749-15-003681",
+          "location": "concept coverage"
+        }
+      ]
+    },
+    {
+      "item_id": "CL5",
+      "question": "Is the earnings trajectory unusually smooth relative to the volatility of revenue and cash flow?",
+      "finding": "flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "NetIncomeLossAvailableToCommonStockholdersBasic 2015: Q1=22,090, Q2=21,544, Q3=22,407 — near-identical quarters despite total Assets falling from 9,584,793 (2015-03-31) to 9,361,810 (2015-09-30).",
+          "source_accession_no": "0001273685-15-000007",
+          "location": "NI-to-common 2015 quarters"
+        },
+        {
+          "quote": "FY2014 quarterly NI rose in an almost linear step (21,258 / 30,326 / 38,272 / 40,523) while operating cash flow and interest-expense tags were highly volatile.",
+          "source_accession_no": "0001437749-15-003681",
+          "location": "NI-to-common 2014 quarters"
+        }
+      ]
+    },
+    {
+      "item_id": "CL6",
+      "question": "Did liability, allowance, or reserve balances decline (or fail to grow) despite growing business activity?",
+      "finding": "insufficient_data",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "Only aggregate Liabilities is available (e.g., 9,722,078 at 2014-12-31); no loan-loss allowance, reserve, or valuation-allowance concept is provided to test reserve adequacy against the growing asset base.",
+          "source_accession_no": "0001273685-15-000007",
+          "location": "Liabilities series"
+        }
+      ]
+    },
+    {
+      "item_id": "CL7",
+      "question": "Does the filing chronology show irregularities (late filings/NT forms, amendments, unusual 8-K frequency)?",
+      "finding": "flag",
+      "confidence": "high",
+      "evidence": [
+        {
+          "quote": "form NT 10-K filing_date 2007-03-16 and multiple NT 10-Q (2007-05-09, 2007-08-10, 2007-11-09) indicate late filings.",
+          "source_accession_no": "0001437749-15-003681",
+          "location": "filing_chronology 2007"
+        },
+        {
+          "quote": "Restatement/amendment forms present: 10-Q/A (2004-08-17, 2009-11-12, 2012-09-06) and 10-K/A (2006-05-23, 2012-07-09).",
+          "source_accession_no": "0001437749-12-009201",
+          "location": "filing_chronology amendments"
+        },
+        {
+          "quote": "SEC comment-letter activity (UPLOAD/CORRESP in 2007, 2009, 2010, 2013) plus very high 8-K and 424B5 frequency consistent with continuous capital raising.",
+          "source_accession_no": "0001437749-15-003681",
+          "location": "filing_chronology UPLOAD/CORRESP"
+        }
+      ]
+    },
+    {
+      "item_id": "CL8",
+      "question": "Is the provided data sufficient in coverage and length for the above assessments?",
+      "finding": "flag",
+      "confidence": "high",
+      "evidence": [
+        {
+          "quote": "Time-series length is adequate (2009-2015), but core operating-company inputs (revenue, receivables, inventory, allowances) are absent, and internally inconsistent tags exist: InterestExpense annual 2013=6,655 vs the four 2013 quarters 46,145/54,917/61,532/68,584.",
+          "source_accession_no": "0001437749-15-003681",
+          "location": "InterestExpense 2013 annual vs quarterly"
+        },
+        {
+          "quote": "InterestExpense annual 2014=5,569 vs Q4 2014=74,315 — an inconsistency that undermines reliance on the expense series.",
+          "source_accession_no": "0001437749-15-003681",
+          "location": "InterestExpense 2014"
+        }
+      ]
+    }
+  ],
+  "misstatement_probability": 55,
+  "mechanism_hypotheses": [
+    {
+      "affected_line_items": [
+        "NetIncomeLoss",
+        "NetCashProvidedByUsedInOperatingActivities",
+        "accrued interest / accretion income on investments"
+      ],
+      "direction": "overstated",
+      "accounting_treatment": "Accrual-based interest/discount-accretion income recognized on mortgage/investment assets that does not convert to cash, producing net income far in excess of operating cash flow. Earnings quality is weak and potentially overstated relative to cash generation.",
+      "rationale_evidence": [
+        {
+          "quote": "NetIncomeLoss=136,191 (FY2014) vs NetCashProvidedByUsedInOperatingActivities=37,551 (FY2014) — a ~3.6x gap that widened from near-parity in FY2012 (28,182 vs 29,089).",
+          "source_accession_no": "0001437749-15-003681",
+          "location": "NI vs OCF FY2012-FY2014"
+        },
+        {
+          "quote": "Assets exploded from 374,294 (2010-12-31) to 10,540,005 (2014-12-31) while equity stayed thin (817,927 at 2014-12-31), implying accrual income on a large leveraged asset book.",
+          "source_accession_no": "0001273685-15-000007",
+          "location": "Assets / StockholdersEquity"
+        }
+      ]
+    },
+    {
+      "affected_line_items": [
+        "InterestExpense",
+        "NetIncomeLoss"
+      ],
+      "direction": "timing_shift",
+      "accounting_treatment": "Interest-expense recognition/classification appears inconsistent between interim and annual reporting, suggesting reclassification, restatement, or tagging-control weakness that could shift expense between periods and misstate net income.",
+      "rationale_evidence": [
+        {
+          "quote": "InterestExpense 2013 quarters (46,145/54,917/61,532/68,584) sum to ~231,178, but annual InterestExpense 2013=6,655; the same pattern appears in 2014 (Q4=74,315 vs annual 5,569).",
+          "source_accession_no": "0001437749-15-003681",
+          "location": "InterestExpense 2013-2014"
+        },
+        {
+          "quote": "Presence of 10-Q/A (2012-09-06) and 10-K/A amendments plus SEC CORRESP/UPLOAD correspondence corroborates prior reporting revisions around these periods.",
+          "source_accession_no": "0001437749-12-009201",
+          "location": "filing_chronology"
+        }
+      ]
+    },
+    {
+      "affected_line_items": [
+        "NetIncomeLossAvailableToCommonStockholdersBasic"
+      ],
+      "direction": "overstated",
+      "accounting_treatment": "Possible income smoothing via discretionary accruals/valuation estimates producing unusually stable quarterly earnings despite a shrinking and volatile asset base.",
+      "rationale_evidence": [
+        {
+          "quote": "2015 NI-to-common Q1/Q2/Q3 = 22,090 / 21,544 / 22,407 held flat while Assets declined from 9,584,793 to 9,361,810 over the same quarters.",
+          "source_accession_no": "0001273685-15-000007",
+          "location": "NI-to-common vs Assets 2015"
+        }
+      ]
+    }
+  ],
+  "overall": {
+    "risk_tier": "elevated",
+    "top_signals": [
+      "Net income persistently and increasingly exceeds operating cash flow (136,191 vs 37,551 in FY2014)",
+      "Interest-expense tags irreconcilable between quarterly and annual (2013 quarters ~231M vs annual 6,655), indicating restatement/control weakness",
+      "Unusually smooth 2015 quarterly earnings (~22,000 each) despite declining, volatile asset base",
+      "Filing-chronology irregularities: NT 10-K/10-Q, 10-Q/A, 10-K/A, SEC comment letters, heavy capital-raising 8-K/424B5 cadence",
+      "Very high leverage (Assets 10.5B vs equity 0.82B) amplifying estimation risk"
+    ]
+  }
+}
