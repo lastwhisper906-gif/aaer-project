@@ -1,0 +1,270 @@
+{
+  "case_id": "case_65",
+  "run_id": "original-case_65-r1",
+  "model": "claude-sonnet-5",
+  "pipeline_version": "19a050d829fb43871c665b458026b62f8140e1c9",
+  "run_timestamp": "2026-07-13T09:52:34.428019+00:00",
+  "documents_used": [
+    {
+      "accession_no": "0000950123-09-040151",
+      "form_type": "10-Q/A",
+      "filing_date": "2009-09-01"
+    },
+    {
+      "accession_no": "0000950123-09-055794",
+      "form_type": "10-Q",
+      "filing_date": "2009-11-02"
+    },
+    {
+      "accession_no": "0000950123-10-019083",
+      "form_type": "10-K",
+      "filing_date": "2010-03-01"
+    },
+    {
+      "accession_no": "0000950123-10-042821",
+      "form_type": "10-Q",
+      "filing_date": "2010-05-03"
+    },
+    {
+      "accession_no": "0000950123-10-083078",
+      "form_type": "10-Q/A",
+      "filing_date": "2010-09-01"
+    },
+    {
+      "accession_no": "0000950123-10-098982",
+      "form_type": "10-Q",
+      "filing_date": "2010-11-02"
+    }
+  ],
+  "checklist": [
+    {
+      "item_id": "CL1",
+      "question": "Did receivables grow materially faster than revenue across consecutive periods?",
+      "finding": "flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "ReceivablesNetCurrent=2,442,848,000 (2008-12-31)",
+          "source_accession_no": "0000950123-10-019083",
+          "location": "10-K FY2008 balance sheet"
+        },
+        {
+          "quote": "ReceivablesNetCurrent=2,504,876,000 (2009-12-31)",
+          "source_accession_no": "0000950123-10-098982",
+          "location": "10-Q Q3 2010 (comparative balance sheet)"
+        },
+        {
+          "quote": "Revenues=9,600,564,000 (2008 annual)",
+          "source_accession_no": "0000950123-10-019083",
+          "location": "10-K FY2008 income statement"
+        },
+        {
+          "quote": "Revenues=8,826,933,000 (2009 annual)",
+          "source_accession_no": "0000950123-10-019083",
+          "location": "10-K FY2009 income statement"
+        }
+      ]
+    },
+    {
+      "item_id": "CL2",
+      "question": "Did non-current 'soft' assets (intangibles, other assets, capitalized items) grow materially faster than the business overall?",
+      "finding": "flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "Goodwill=3,530,915,000 (2008-12-31)",
+          "source_accession_no": "0000950123-10-019083",
+          "location": "10-K FY2008 balance sheet"
+        },
+        {
+          "quote": "Goodwill=4,156,105,000 (2009-12-31)",
+          "source_accession_no": "0000950123-10-098982",
+          "location": "10-Q Q3 2010 comparative balance sheet"
+        },
+        {
+          "quote": "Revenues declined from 9,600,564,000 (2008) to 8,826,933,000 (2009) while Goodwill rose ~17.7%",
+          "source_accession_no": "0000950123-10-019083",
+          "location": "10-K FY2009 income statement / balance sheet"
+        }
+      ]
+    },
+    {
+      "item_id": "CL3",
+      "question": "Is there a persistent divergence between net income and operating cash flow?",
+      "finding": "flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "NetIncomeLoss=1,070,606,000 (2007) vs NetCashProvidedByUsedInOperatingActivities=872,506,000 (2007)",
+          "source_accession_no": "0000950123-10-019083",
+          "location": "10-K, income statement and cash flow statement, FY2007"
+        },
+        {
+          "quote": "NetIncomeLoss=1,393,153,000 (2008) vs NetCashProvidedByUsedInOperatingActivities=1,104,568,000 (2008)",
+          "source_accession_no": "0000950123-10-019083",
+          "location": "10-K, income statement and cash flow statement, FY2008"
+        }
+      ]
+    },
+    {
+      "item_id": "CL4",
+      "question": "Do inventory levels or gross margins show trends inconsistent with revenue?",
+      "finding": "flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "InventoryNet=2,088,342,000 (2008-12-31)",
+          "source_accession_no": "0000950123-10-019083",
+          "location": "10-K FY2008 balance sheet"
+        },
+        {
+          "quote": "InventoryNet=2,239,762,000 (2009-12-31)",
+          "source_accession_no": "0000950123-10-098982",
+          "location": "10-Q Q3 2010 comparative balance sheet"
+        },
+        {
+          "quote": "Revenues fell from 9,600,564,000 (2008) to 8,826,933,000 (2009) while inventory rose ~7.3%; CostOfRevenue=8,123,078,000 (2009) vs 7,622,015,000 (2008) implies gross margin compression from ~20.6% to ~8.0%",
+          "source_accession_no": "0000950123-10-019083",
+          "location": "10-K FY2009 income statement"
+        }
+      ]
+    },
+    {
+      "item_id": "CL5",
+      "question": "Is the earnings trajectory unusually smooth relative to the volatility of revenue and cash flow?",
+      "finding": "no_flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "NetIncomeLoss=164,802,000 (Q1 2009), 41,981,000 (Q2 2009), 77,374,000 (Q3 2009), then -40,009,000 (Q1 2010), -26,564,000 (Q2 2010), 144,846,000 (Q3 2010)",
+          "source_accession_no": "0000950123-10-042821",
+          "location": "10-Q quarterly income statements 2009-2010"
+        }
+      ]
+    },
+    {
+      "item_id": "CL6",
+      "question": "Did liability, allowance, or reserve balances decline (or fail to grow) despite growing business activity?",
+      "finding": "no_flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "AllowanceForDoubtfulAccountsReceivableCurrent=16,425,000 (2008-12-31) growing to 24,477,000 (2010-09-30)",
+          "source_accession_no": "0000950123-10-019083",
+          "location": "10-K FY2008 and 10-Q Q3 2010 balance sheets"
+        },
+        {
+          "quote": "ReceivablesNetCurrent grew from 2,442,848,000 (2008-12-31) to 2,535,625,000 (2010-09-30), a smaller percentage increase than the allowance growth",
+          "source_accession_no": "0000950123-10-098982",
+          "location": "10-Q Q3 2010 balance sheet"
+        }
+      ]
+    },
+    {
+      "item_id": "CL7",
+      "question": "Does the filing chronology show irregularities (late filings/NT forms, amendments, unusual 8-K frequency)?",
+      "finding": "flag",
+      "confidence": "high",
+      "evidence": [
+        {
+          "quote": "10-K/A filed 2010-04-30, less than two months after the original 10-K filed 2010-03-01",
+          "source_accession_no": "N/A",
+          "location": "filing_chronology entries: 10-K (2010-03-01), 10-K/A (2010-04-30)"
+        },
+        {
+          "quote": "10-Q/A filed 2009-09-01 (amending Q2 2009 10-Q) and 10-Q/A filed 2010-09-01 (amending Q2 2010 10-Q)",
+          "source_accession_no": "0000950123-09-040151",
+          "location": "filing_chronology / 10-Q/A form entries"
+        },
+        {
+          "quote": "Multiple CORRESP and UPLOAD (SEC comment letter) filings clustered in 2010-2011 (e.g., 2010-05-28, 2010-06-10, 2010-06-21, 2010-07-23, 2010-08-06, 2010-10-08, 2010-10-25, 2011-01-10, 2011-01-26, 2011-02-23)",
+          "source_accession_no": "N/A",
+          "location": "filing_chronology entries"
+        }
+      ]
+    },
+    {
+      "item_id": "CL8",
+      "question": "Is the provided data sufficient in coverage and length for the above assessments?",
+      "finding": "insufficient_data",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "Full-year 2010 cash flow statement items (NetCashProvidedByUsedInOperatingActivities etc.) are only provided through Q1 2010 (2010-01-01 to 2010-03-31); no FY2010 annual cash flow or FY2010 10-K data available given the 2011-02-28 cutoff",
+          "source_accession_no": "0000950123-10-042821",
+          "location": "cash flow series, quarterly 2010 entries only"
+        }
+      ]
+    }
+  ],
+  "mechanism_hypotheses": [
+    {
+      "affected_line_items": [
+        "IncomeTaxExpense (not directly reported)",
+        "NetIncomeLoss",
+        "StockholdersEquity"
+      ],
+      "direction": "overstated",
+      "accounting_treatment": "Likely deferred tax / income tax provision misstatement requiring restatement, inferred from the unusually fast follow-on 10-K/A (filed 2010-04-30, just after the original 10-K filed 2010-03-01) combined with a heavy, sustained cadence of SEC CORRESP/UPLOAD comment-letter correspondence through early 2011, consistent with an ongoing SEC review of tax or other accounting matters that could understate tax liabilities and overstate historical net income.",
+      "rationale_evidence": [
+        {
+          "quote": "10-K/A filed 2010-04-30 (form 10-K/A) shortly after 10-K filed 2010-03-01",
+          "source_accession_no": "N/A",
+          "location": "filing_chronology"
+        },
+        {
+          "quote": "CORRESP filed 2010-06-10, 2010-06-21, 2010-08-06, 2010-10-25, 2011-01-26; UPLOAD filed 2010-05-28, 2010-07-23, 2010-10-08, 2011-01-10, 2011-02-23",
+          "source_accession_no": "N/A",
+          "location": "filing_chronology"
+        }
+      ]
+    },
+    {
+      "affected_line_items": [
+        "ReceivablesNetCurrent",
+        "InventoryNet",
+        "Revenues"
+      ],
+      "direction": "overstated",
+      "accounting_treatment": "Potential slow-down in revenue recognition cutoff combined with delayed write-down of slow-moving inventory during the 2009 downturn: receivables and inventory continued to grow even as revenue and gross margin collapsed, suggesting assets were not being reduced/reserved in step with declining demand.",
+      "rationale_evidence": [
+        {
+          "quote": "ReceivablesNetCurrent=2,442,848,000 (2008-12-31) rising to 2,504,876,000 (2009-12-31) while Revenues fell from 9,600,564,000 (2008) to 8,826,933,000 (2009)",
+          "source_accession_no": "0000950123-10-019083",
+          "location": "10-K FY2009 balance sheet/income statement"
+        },
+        {
+          "quote": "InventoryNet=2,088,342,000 (2008-12-31) rising to 2,239,762,000 (2009-12-31) amid the revenue decline; CostOfRevenue=8,123,078,000 (2009) vs Revenues=8,826,933,000 (2009) implies gross margin compression to ~8.0% from ~20.6% in 2008",
+          "source_accession_no": "0000950123-10-019083",
+          "location": "10-K FY2009 balance sheet/income statement"
+        }
+      ]
+    },
+    {
+      "affected_line_items": [
+        "Goodwill",
+        "OperatingIncomeLoss"
+      ],
+      "direction": "overstated",
+      "accounting_treatment": "Goodwill was not impaired despite a severe revenue and margin downturn in 2009, and continued to grow (partly via acquisitions), raising the possibility that impairment testing understated required write-downs, overstating total assets/equity.",
+      "rationale_evidence": [
+        {
+          "quote": "Goodwill=3,530,915,000 (2008-12-31) increased to 4,156,105,000 (2009-12-31), a ~17.7% rise, while Revenues fell ~8.1% and OperatingIncomeLoss fell from 1,978,549,000 (2008) to 703,855,000 (2009)",
+          "source_accession_no": "0000950123-10-019083",
+          "location": "10-K FY2009 balance sheet and income statement"
+        }
+      ]
+    }
+  ],
+  "misstatement_probability": 65,
+  "overall": {
+    "risk_tier": "elevated",
+    "top_signals": [
+      "Rapid 10-K/A amendment (filed 2010-04-30) following the original FY2009 10-K (filed 2010-03-01), plus two separate 10-Q/A restatements (2009-09-01 and 2010-09-01), indicating recurring correction of previously issued financials",
+      "Unusually heavy and sustained SEC CORRESP/UPLOAD comment-letter cadence throughout 2010 into early 2011, suggesting active regulatory scrutiny of accounting practices around the cutoff date",
+      "Receivables and inventory both grew in 2009 even as revenue fell ~8% and gross margin compressed from ~20.6% to ~8.0%, an asset/working-capital trend inconsistent with a shrinking top line",
+      "Goodwill grew ~17.7% in 2009 while revenue and operating income fell sharply, with no evidence of impairment in the provided data",
+      "Net income exceeded operating cash flow by a material margin in both FY2007 and FY2008 (a persistent accrual-heavy earnings pattern), reversing only in the 2009 downturn year"
+    ]
+  }
+}

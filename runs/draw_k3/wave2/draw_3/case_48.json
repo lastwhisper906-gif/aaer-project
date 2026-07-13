@@ -1,0 +1,382 @@
+{
+  "case_id": "case_48",
+  "run_id": "original-case_48-r1",
+  "model": "claude-sonnet-5",
+  "pipeline_version": "24c9b112a80cfc3bb14dca110684d2b27bb7b092",
+  "run_timestamp": "2026-07-13T09:27:44.645460+00:00",
+  "documents_used": [
+    {
+      "accession_no": "0001144204-11-044497",
+      "form_type": "10-Q",
+      "filing_date": "2011-08-08"
+    },
+    {
+      "accession_no": "0001144204-11-061866",
+      "form_type": "10-Q",
+      "filing_date": "2011-11-08"
+    },
+    {
+      "accession_no": "0001144204-12-014539",
+      "form_type": "10-K",
+      "filing_date": "2012-03-13"
+    },
+    {
+      "accession_no": "0001144204-12-027056",
+      "form_type": "10-Q",
+      "filing_date": "2012-05-09"
+    },
+    {
+      "accession_no": "0001144204-12-043499",
+      "form_type": "10-Q",
+      "filing_date": "2012-08-08"
+    },
+    {
+      "accession_no": "0001144204-12-060711",
+      "form_type": "10-Q",
+      "filing_date": "2012-11-09"
+    },
+    {
+      "accession_no": "0001144204-13-012330",
+      "form_type": "10-K",
+      "filing_date": "2013-03-01"
+    },
+    {
+      "accession_no": "0001144204-13-027746",
+      "form_type": "10-Q",
+      "filing_date": "2013-05-10"
+    },
+    {
+      "accession_no": "0001144204-13-043891",
+      "form_type": "10-Q",
+      "filing_date": "2013-08-08"
+    },
+    {
+      "accession_no": "0001445305-13-002824",
+      "form_type": "10-Q",
+      "filing_date": "2013-11-07"
+    },
+    {
+      "accession_no": "0001445305-14-001030",
+      "form_type": "10-K",
+      "filing_date": "2014-03-14"
+    },
+    {
+      "accession_no": "0001445305-14-002062",
+      "form_type": "10-Q",
+      "filing_date": "2014-05-09"
+    },
+    {
+      "accession_no": "0001445305-14-003306",
+      "form_type": "10-Q",
+      "filing_date": "2014-08-01"
+    },
+    {
+      "accession_no": "0001445305-14-004934",
+      "form_type": "10-Q",
+      "filing_date": "2014-11-07"
+    },
+    {
+      "accession_no": "0001628280-15-001726",
+      "form_type": "10-K",
+      "filing_date": "2015-03-12"
+    },
+    {
+      "accession_no": "0001628280-15-004055",
+      "form_type": "10-Q",
+      "filing_date": "2015-05-11"
+    },
+    {
+      "accession_no": "0001628280-15-006283",
+      "form_type": "10-Q",
+      "filing_date": "2015-08-07"
+    },
+    {
+      "accession_no": "0001628280-15-008521",
+      "form_type": "10-Q",
+      "filing_date": "2015-11-09"
+    }
+  ],
+  "checklist": [
+    {
+      "item_id": "CL1",
+      "question": "Did receivables grow materially faster than revenue across consecutive periods?",
+      "finding": "flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "AccountsReceivableNetCurrent=23,830,000 (2012-12-31)",
+          "source_accession_no": "0001445305-14-001030",
+          "location": "10-K balance sheet"
+        },
+        {
+          "quote": "AccountsReceivableNetCurrent=29,489,000 (2013-12-31)",
+          "source_accession_no": "0001628280-15-001726",
+          "location": "10-K balance sheet"
+        },
+        {
+          "quote": "Revenues=157,409,000 (FY2012)",
+          "source_accession_no": "0001628280-15-001726",
+          "location": "10-K income statement, 3-yr comparison"
+        },
+        {
+          "quote": "Revenues=177,805,000 (FY2013)",
+          "source_accession_no": "0001628280-15-001726",
+          "location": "10-K income statement"
+        }
+      ]
+    },
+    {
+      "item_id": "CL2",
+      "question": "Did non-current 'soft' assets (intangibles, other assets, capitalized items) grow materially faster than the business overall?",
+      "finding": "flag",
+      "confidence": "high",
+      "evidence": [
+        {
+          "quote": "Goodwill=32,724,000 (2013-12-31)",
+          "source_accession_no": "0001628280-15-004055",
+          "location": "10-Q balance sheet, prior-period comparative"
+        },
+        {
+          "quote": "Goodwill=80,848,000 (2014-12-31)",
+          "source_accession_no": "0001628280-15-008521",
+          "location": "10-Q balance sheet, prior-period comparative"
+        },
+        {
+          "quote": "IntangibleAssetsNetExcludingGoodwill=13,088,000 (2013-12-31)",
+          "source_accession_no": "0001628280-15-001726",
+          "location": "10-K balance sheet"
+        },
+        {
+          "quote": "IntangibleAssetsNetExcludingGoodwill=32,620,000 (2014-12-31)",
+          "source_accession_no": "0001628280-15-008521",
+          "location": "10-Q balance sheet, prior-period comparative"
+        },
+        {
+          "quote": "Revenues=209,931,000 (FY2014) vs Revenues=177,805,000 (FY2013), ~18% growth",
+          "source_accession_no": "0001628280-15-001726",
+          "location": "10-K income statement"
+        }
+      ]
+    },
+    {
+      "item_id": "CL3",
+      "question": "Is there a persistent divergence between net income and operating cash flow?",
+      "finding": "flag",
+      "confidence": "high",
+      "evidence": [
+        {
+          "quote": "NetIncomeLoss=6,355,000 (FY2012) vs NetCashProvidedByUsedInOperatingActivities=28,009,000 (FY2012)",
+          "source_accession_no": "0001628280-15-001726",
+          "location": "10-K income statement / cash flow statement"
+        },
+        {
+          "quote": "NetIncomeLoss=-3,499,000 (FY2013) vs NetCashProvidedByUsedInOperatingActivities=16,958,000 (FY2013)",
+          "source_accession_no": "0001628280-15-001726",
+          "location": "10-K income statement / cash flow statement"
+        },
+        {
+          "quote": "NetIncomeLoss=-7,348,000 (FY2014) vs NetCashProvidedByUsedInOperatingActivities=15,673,000 (FY2014)",
+          "source_accession_no": "0001628280-15-001726",
+          "location": "10-K income statement / cash flow statement"
+        }
+      ]
+    },
+    {
+      "item_id": "CL4",
+      "question": "Do inventory levels or gross margins show trends inconsistent with revenue?",
+      "finding": "no_flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "CostOfRevenue=52,703,000 (FY2014) vs Revenues=209,931,000 (FY2014), gross margin ~74.9%",
+          "source_accession_no": "0001628280-15-001726",
+          "location": "10-K income statement"
+        },
+        {
+          "quote": "CostOfRevenue=16,937,000 (Q3 2015) vs Revenues=60,757,000 (Q3 2015), gross margin ~72.1%",
+          "source_accession_no": "0001628280-15-008521",
+          "location": "10-Q income statement"
+        }
+      ]
+    },
+    {
+      "item_id": "CL5",
+      "question": "Is the earnings trajectory unusually smooth relative to the volatility of revenue and cash flow?",
+      "finding": "no_flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "NetIncomeLoss=-2,058,000 (Q1 2015)",
+          "source_accession_no": "0001628280-15-004055",
+          "location": "10-Q income statement"
+        },
+        {
+          "quote": "NetIncomeLoss=-5,354,000 (Q2 2015)",
+          "source_accession_no": "0001628280-15-006283",
+          "location": "10-Q income statement"
+        },
+        {
+          "quote": "NetIncomeLoss=1,925,000 (Q3 2015)",
+          "source_accession_no": "0001628280-15-008521",
+          "location": "10-Q income statement"
+        }
+      ]
+    },
+    {
+      "item_id": "CL6",
+      "question": "Did liability, allowance, or reserve balances decline (or fail to grow) despite growing business activity?",
+      "finding": "no_flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "AllowanceForDoubtfulAccountsReceivableCurrent=708,000 (2012-12-31)",
+          "source_accession_no": "0001445305-14-001030",
+          "location": "10-K notes/schedule"
+        },
+        {
+          "quote": "AllowanceForDoubtfulAccountsReceivableCurrent=1,998,000 (2015-09-30)",
+          "source_accession_no": "0001628280-15-008521",
+          "location": "10-Q notes"
+        },
+        {
+          "quote": "AccruedLiabilitiesCurrent=17,911,000 (2012-12-31) growing to AccruedLiabilitiesCurrent=37,772,000 (2014-12-31)",
+          "source_accession_no": "0001628280-15-008521",
+          "location": "10-Q balance sheet, prior-period comparative"
+        }
+      ]
+    },
+    {
+      "item_id": "CL7",
+      "question": "Does the filing chronology show irregularities (late filings/NT forms, amendments, unusual 8-K frequency)?",
+      "finding": "flag",
+      "confidence": "high",
+      "evidence": [
+        {
+          "quote": "10-K/A filing_date=2016-01-22",
+          "source_accession_no": "n/a",
+          "location": "filing_chronology"
+        },
+        {
+          "quote": "CORRESP filing_date=2015-11-10; CORRESP filing_date=2015-12-02; CORRESP filing_date=2015-12-16; CORRESP filing_date=2016-01-08",
+          "source_accession_no": "n/a",
+          "location": "filing_chronology"
+        },
+        {
+          "quote": "UPLOAD filing_date=2015-11-04; UPLOAD filing_date=2015-12-10; UPLOAD filing_date=2016-01-26",
+          "source_accession_no": "n/a",
+          "location": "filing_chronology"
+        },
+        {
+          "quote": "NT 10-K filing_date=2007-03-19; 10-K/A filing_date=2005-05-02; 10-Q/A filing_date=2007-08-09",
+          "source_accession_no": "n/a",
+          "location": "filing_chronology"
+        }
+      ]
+    },
+    {
+      "item_id": "CL8",
+      "question": "Is the provided data sufficient in coverage and length for the above assessments?",
+      "finding": "no_flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "Revenues data spans FY2009 (87,490,000) through Q3 2015 (60,757,000), with quarterly granularity across 2010-2015",
+          "source_accession_no": "0001628280-15-001726",
+          "location": "aggregated Revenues series"
+        },
+        {
+          "quote": "Balance sheet items (Assets, Liabilities, AccountsReceivableNetCurrent, Goodwill, etc.) reported quarterly from 2010-12-31 through 2015-09-30",
+          "source_accession_no": "0001628280-15-008521",
+          "location": "aggregated balance sheet series"
+        }
+      ]
+    }
+  ],
+  "misstatement_probability": 62,
+  "mechanism_hypotheses": [
+    {
+      "affected_line_items": [
+        "Revenues",
+        "DeferredRevenueCurrent",
+        "NetIncomeLoss",
+        "Goodwill",
+        "IntangibleAssetsNetExcludingGoodwill"
+      ],
+      "direction": "overstated",
+      "accounting_treatment": "A 10-K/A was filed 2016-01-22, closely following a multi-month series of SEC CORRESP/UPLOAD exchanges (Nov 2015-Jan 2016), suggesting the SEC's Division of Corporation Finance identified an issue in the previously filed FY2014 10-K (filed 2015-03-12, accession 0001628280-15-001726) that required amendment. The specific line item(s) corrected are not disclosed in the provided data, but the timing and pattern (comment letters followed by an amended annual report just before the cutoff) is consistent with a revenue recognition, deferred revenue, or purchase-accounting (goodwill/intangibles from the large FY2014 acquisition) correction.",
+      "rationale_evidence": [
+        {
+          "quote": "10-K/A filing_date=2016-01-22",
+          "source_accession_no": "n/a",
+          "location": "filing_chronology"
+        },
+        {
+          "quote": "CORRESP filing_date=2015-11-10, 2015-12-02, 2015-12-16, 2016-01-08; UPLOAD filing_date=2015-11-04, 2015-12-10, 2016-01-26",
+          "source_accession_no": "n/a",
+          "location": "filing_chronology"
+        }
+      ]
+    },
+    {
+      "affected_line_items": [
+        "NetIncomeLoss",
+        "NetCashProvidedByUsedInOperatingActivities",
+        "AccruedLiabilitiesCurrent",
+        "DeferredRevenueCurrent"
+      ],
+      "direction": "overstated",
+      "accounting_treatment": "Operating cash flow remained strongly positive even as GAAP net income turned to sustained losses in FY2013-FY2014, a gap plausibly driven by growing non-cash stock-based compensation add-backs and/or timing benefits from rising accrued liabilities and deferred revenue, which can mask deteriorating core earnings quality and create risk that cash-flow-based metrics (and possibly related working-capital accruals) are being managed to offset reported losses.",
+      "rationale_evidence": [
+        {
+          "quote": "NetIncomeLoss=-3,499,000 (FY2013) vs NetCashProvidedByUsedInOperatingActivities=16,958,000 (FY2013)",
+          "source_accession_no": "0001628280-15-001726",
+          "location": "10-K"
+        },
+        {
+          "quote": "NetIncomeLoss=-7,348,000 (FY2014) vs NetCashProvidedByUsedInOperatingActivities=15,673,000 (FY2014)",
+          "source_accession_no": "0001628280-15-001726",
+          "location": "10-K"
+        },
+        {
+          "quote": "AccruedLiabilitiesCurrent=37,772,000 (2014-12-31) up from AccruedLiabilitiesCurrent=25,419,000 (2013-12-31)",
+          "source_accession_no": "0001628280-15-008521",
+          "location": "10-Q balance sheet comparative"
+        }
+      ]
+    },
+    {
+      "affected_line_items": [
+        "Goodwill",
+        "IntangibleAssetsNetExcludingGoodwill"
+      ],
+      "direction": "overstated",
+      "accounting_treatment": "Goodwill and acquired intangible assets nearly doubled during FY2014 (Goodwill from 32,724,000 to 80,848,000; intangibles from 13,088,000 to 32,620,000) while revenue grew only ~18%, indicating aggressive purchase-price allocation to goodwill/intangibles in recent acquisitions; if fair-value assumptions were optimistic, this creates forward impairment/overstatement risk for these non-current 'soft' assets.",
+      "rationale_evidence": [
+        {
+          "quote": "Goodwill=32,724,000 (2013-12-31)",
+          "source_accession_no": "0001628280-15-004055",
+          "location": "10-Q comparative balance sheet"
+        },
+        {
+          "quote": "Goodwill=80,848,000 (2014-12-31)",
+          "source_accession_no": "0001628280-15-008521",
+          "location": "10-Q comparative balance sheet"
+        },
+        {
+          "quote": "Revenues=209,931,000 (FY2014) vs Revenues=177,805,000 (FY2013)",
+          "source_accession_no": "0001628280-15-001726",
+          "location": "10-K income statement"
+        }
+      ]
+    }
+  ],
+  "overall": {
+    "risk_tier": "elevated",
+    "top_signals": [
+      "10-K/A filed 2016-01-22 immediately following an extended series of SEC CORRESP/UPLOAD filings (Nov 2015-Jan 2016), suggesting a regulator-driven correction to previously filed financial statements just before the analysis cutoff",
+      "Persistent, growing divergence between net income and operating cash flow, including two consecutive years (FY2013, FY2014) of GAAP net losses alongside strongly positive operating cash flow (16,958,000 and 15,673,000 respectively)",
+      "Goodwill and intangible assets roughly doubled in FY2014 (Goodwill 32,724,000→80,848,000; intangibles 13,088,000→32,620,000) far outpacing ~18% revenue growth, raising purchase-accounting and impairment risk",
+      "Accounts receivable grew faster than revenue in the FY2012→FY2013 period (AR +23.7% vs revenue +13.0%), a partial reversal of otherwise reasonable DSO trends"
+    ]
+  }
+}

@@ -1,0 +1,277 @@
+{
+  "case_id": "case_67",
+  "run_id": "original-case_67-r1",
+  "model": "claude-sonnet-5",
+  "pipeline_version": "988ee587863a17d41a0d40e6148b507147f3dc50",
+  "run_timestamp": "2026-07-13T09:03:24.244478+00:00",
+  "documents_used": [
+    {
+      "accession_no": "0001581068-13-000007",
+      "form_type": "10-Q",
+      "filing_date": "2013-12-03"
+    },
+    {
+      "accession_no": "0001581068-14-000028",
+      "form_type": "10-Q",
+      "filing_date": "2014-05-07"
+    },
+    {
+      "accession_no": "0001581068-14-000038",
+      "form_type": "8-K",
+      "filing_date": "2014-05-27"
+    },
+    {
+      "accession_no": "0001581068-14-000053",
+      "form_type": "10-Q",
+      "filing_date": "2014-08-05"
+    },
+    {
+      "accession_no": "0001581068-14-000070",
+      "form_type": "10-Q",
+      "filing_date": "2014-11-04"
+    },
+    {
+      "accession_no": "0001581068-15-000028",
+      "form_type": "10-K",
+      "filing_date": "2015-02-19"
+    },
+    {
+      "accession_no": "0001581068-15-000050",
+      "form_type": "10-Q",
+      "filing_date": "2015-04-27"
+    },
+    {
+      "accession_no": "0001581068-15-000073",
+      "form_type": "10-Q",
+      "filing_date": "2015-07-27"
+    },
+    {
+      "accession_no": "0001581068-15-000092",
+      "form_type": "10-Q",
+      "filing_date": "2015-10-26"
+    }
+  ],
+  "checklist": [
+    {
+      "item_id": "CL1",
+      "question": "Did receivables grow materially faster than revenue across consecutive periods?",
+      "finding": "insufficient_data",
+      "confidence": "low",
+      "evidence": [
+        {
+          "quote": "ReceivablesNetCurrent=156944000 (2012-12-31)",
+          "source_accession_no": "0001581068-13-000007",
+          "location": "10-Q balance sheet"
+        },
+        {
+          "quote": "ReceivablesNetCurrent=182424000 (2014-12-31)",
+          "source_accession_no": "0001581068-15-000092",
+          "location": "10-Q balance sheet"
+        },
+        {
+          "quote": "ReceivablesNetCurrent=171914000 (2015-09-30)",
+          "source_accession_no": "0001581068-15-000092",
+          "location": "10-Q balance sheet"
+        }
+      ]
+    },
+    {
+      "item_id": "CL2",
+      "question": "Did non-current 'soft' assets (intangibles, other assets, capitalized items) grow materially faster than the business overall?",
+      "finding": "insufficient_data",
+      "confidence": "low",
+      "evidence": [
+        {
+          "quote": "Assets=9603729000 (2012-12-31)",
+          "source_accession_no": "0001581068-13-000007",
+          "location": "10-Q balance sheet"
+        },
+        {
+          "quote": "Assets=9527623000 (2015-09-30)",
+          "source_accession_no": "0001581068-15-000092",
+          "location": "10-Q balance sheet"
+        }
+      ]
+    },
+    {
+      "item_id": "CL3",
+      "question": "Is there a persistent divergence between net income and operating cash flow?",
+      "finding": "flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "NetIncomeLoss=-160713000 (2012 annual) vs NetCashProvidedByUsedInOperatingActivities=268847000 (2012 annual)",
+          "source_accession_no": "0001581068-15-000028",
+          "location": "10-K income statement / cash flow statement"
+        },
+        {
+          "quote": "NetIncomeLoss=-118883000 (2013 annual) vs NetCashProvidedByUsedInOperatingActivities=331990000 (2013 annual)",
+          "source_accession_no": "0001581068-15-000028",
+          "location": "10-K income statement / cash flow statement"
+        },
+        {
+          "quote": "NetIncomeLoss=132851000 (2014 annual) vs NetCashProvidedByUsedInOperatingActivities=479210000 (2014 annual)",
+          "source_accession_no": "0001581068-15-000028",
+          "location": "10-K income statement / cash flow statement"
+        },
+        {
+          "quote": "DepreciationAndAmortization=488524000 (2012 annual)",
+          "source_accession_no": "0001581068-15-000028",
+          "location": "10-K cash flow statement, non-cash add-back"
+        }
+      ]
+    },
+    {
+      "item_id": "CL4",
+      "question": "Do inventory levels or gross margins show trends inconsistent with revenue?",
+      "finding": "insufficient_data",
+      "confidence": "low",
+      "evidence": []
+    },
+    {
+      "item_id": "CL5",
+      "question": "Is the earnings trajectory unusually smooth relative to the volatility of revenue and cash flow?",
+      "finding": "no_flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "ProfitLoss=-56845000 (Q2 2013) vs ProfitLoss=41740000 (Q1 2014) vs ProfitLoss=54819000 (Q3 2015)",
+          "source_accession_no": "0001581068-14-000053",
+          "location": "10-Q income statement (multiple quarters)"
+        },
+        {
+          "quote": "NetIncomeLossAvailableToCommonStockholdersBasic=-43262000 (Q2 2013) vs =27030000 (Q3 2014) vs =53773000 (Q3 2015)",
+          "source_accession_no": "0001581068-14-000053",
+          "location": "10-Q EPS reconciliation"
+        }
+      ]
+    },
+    {
+      "item_id": "CL6",
+      "question": "Did liability, allowance, or reserve balances decline (or fail to grow) despite growing business activity?",
+      "finding": "insufficient_data",
+      "confidence": "low",
+      "evidence": [
+        {
+          "quote": "Liabilities=7305908000 (2012-12-31) declining to Liabilities=6595936000 (2015-09-30)",
+          "source_accession_no": "0001581068-15-000092",
+          "location": "10-Q/10-K balance sheets"
+        },
+        {
+          "quote": "DebtAndCapitalLeaseObligations=6499356000 (2012-12-31) vs DebtAndCapitalLeaseObligations=5969336000 (2015-09-30)",
+          "source_accession_no": "0001581068-15-000092",
+          "location": "10-Q debt footnote"
+        }
+      ]
+    },
+    {
+      "item_id": "CL7",
+      "question": "Does the filing chronology show irregularities (late filings/NT forms, amendments, unusual 8-K frequency)?",
+      "finding": "flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "8-K filed 2014-05-07 followed one day later by 8-K/A filed 2014-05-08",
+          "source_accession_no": "filing_chronology",
+          "location": "SEC filing index"
+        },
+        {
+          "quote": "DEF 14A filed 2015-04-10... DEF 14A filed 2015-04-14 followed one day later by DEFR14A (revised) filed 2015-04-15",
+          "source_accession_no": "filing_chronology",
+          "location": "SEC filing index"
+        },
+        {
+          "quote": "Cluster of 8-K filings on 2015-06-09, 2015-07-27, 2015-08-04, 2015-08-10 within a roughly 9-week window, denser than the typical quarterly cadence seen earlier in the chronology",
+          "source_accession_no": "filing_chronology",
+          "location": "SEC filing index"
+        }
+      ]
+    },
+    {
+      "item_id": "CL8",
+      "question": "Is the provided data sufficient in coverage and length for the above assessments?",
+      "finding": "flag",
+      "confidence": "high",
+      "evidence": [
+        {
+          "quote": "No Revenues, CostOfGoodsSold, InventoryNet, IntangibleAssets, OtherAssets, or AllowanceForDoubtfulAccounts concepts are present in the provided data set, limiting CL1, CL2, CL4 and CL6 to insufficient_data.",
+          "source_accession_no": "N/A",
+          "location": "financial_series_point_in_time (concept list)"
+        }
+      ]
+    }
+  ],
+  "misstatement_probability": 58,
+  "mechanism_hypotheses": [
+    {
+      "affected_line_items": [
+        "Rental income / tenant reimbursement revenue",
+        "Same-property NOI (non-GAAP) disclosures",
+        "Property expense classification between 'same-property' and 'non-same-property' pools"
+      ],
+      "direction": "overstated",
+      "accounting_treatment": "Potential misclassification/timing of revenue and expense items between comparable ('same-property') and non-comparable real estate pools to inflate reported same-property NOI growth, a practice associated with the mid-2015 leadership turnover signaled by an unusually dense cluster of 8-K filings (2015-06-09 through 2015-08-10) not matched by an equivalent cluster in the prior year's chronology.",
+      "rationale_evidence": [
+        {
+          "quote": "Cluster of 8-K filings on 2015-06-09, 2015-07-27, 2015-08-04, 2015-08-10",
+          "source_accession_no": "filing_chronology",
+          "location": "SEC filing index"
+        },
+        {
+          "quote": "NetIncomeLossAvailableToCommonStockholdersBasic=53773000 (Q3 2015) vs =27030000 (Q3 2014)",
+          "source_accession_no": "0001581068-15-000092",
+          "location": "10-Q EPS reconciliation"
+        }
+      ]
+    },
+    {
+      "affected_line_items": [
+        "Proxy/governance disclosures (DEF 14A)",
+        "Executive compensation and control environment disclosures"
+      ],
+      "direction": "timing_shift",
+      "accounting_treatment": "A definitive proxy filed 2015-04-14 was revised one day later (DEFR14A, 2015-04-15), and an 8-K filed 2014-05-07 was amended the next day (8-K/A, 2014-05-08); while individually minor, the pattern of same/next-day corrective amendments alongside the 2015 8-K cluster is consistent with disclosure-control weaknesses that preceded/coincided with governance changes.",
+      "rationale_evidence": [
+        {
+          "quote": "DEF 14A filed 2015-04-14 followed by DEFR14A filed 2015-04-15",
+          "source_accession_no": "filing_chronology",
+          "location": "SEC filing index"
+        },
+        {
+          "quote": "8-K filed 2014-05-07 followed by 8-K/A filed 2014-05-08",
+          "source_accession_no": "filing_chronology",
+          "location": "SEC filing index"
+        }
+      ]
+    },
+    {
+      "affected_line_items": [
+        "Net income (loss)",
+        "Operating cash flow reconciliation (D&A add-back)"
+      ],
+      "direction": "timing_shift",
+      "accounting_treatment": "Large, persistent gap between reported net income/loss and operating cash flow driven mainly by heavy non-cash depreciation and amortization typical of a REIT; while largely explainable, the magnitude and multi-year negative-to-positive swing in net income (from -160.7M in 2012 to +132.9M in 2014) without a matching directional shift in the underlying D&A add-back leaves open the possibility of impairment/gain timing management around the equity raises and debt refinancing evidenced in the chronology.",
+      "rationale_evidence": [
+        {
+          "quote": "NetIncomeLoss=-160713000 (2012 annual) vs NetCashProvidedByUsedInOperatingActivities=268847000 (2012 annual); DepreciationAndAmortization=488524000 (2012 annual)",
+          "source_accession_no": "0001581068-15-000028",
+          "location": "10-K cash flow statement"
+        },
+        {
+          "quote": "NetIncomeLoss=132851000 (2014 annual) vs NetCashProvidedByUsedInOperatingActivities=479210000 (2014 annual)",
+          "source_accession_no": "0001581068-15-000028",
+          "location": "10-K cash flow statement"
+        }
+      ]
+    }
+  ],
+  "overall": {
+    "risk_tier": "elevated",
+    "top_signals": [
+      "Unusually dense 8-K filing cluster in mid-2015 (2015-06-09 through 2015-08-10) inconsistent with the prior periodic-only cadence, suggestive of unscheduled disclosure events / governance changes",
+      "Same/next-day corrective filings: DEF 14A (2015-04-14) -> DEFR14A (2015-04-15) and 8-K (2014-05-07) -> 8-K/A (2014-05-08), indicating disclosure-control friction",
+      "Large and volatile swings between net income/loss (-160.7M in 2012, -118.9M in 2013, +132.9M in 2014) and consistently strong, growing operating cash flow (268.8M, 332.0M, 479.2M), only partially explained by D&A add-backs",
+      "Critical data gaps (no Revenues, intangibles, inventory, or allowance-for-doubtful-accounts figures provided) prevent verification of several core misstatement checks (CL1, CL2, CL4, CL6), reducing overall confidence in a clean assessment"
+    ]
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "ts": "2026-07-13T09:44:35.307485+00:00",
+  "harness_pin": "2.1.201",
+  "flags": [
+    "claude",
+    "-p",
+    "--model",
+    "claude-sonnet-5",
+    "--output-format",
+    "json",
+    "--max-turns",
+    "2",
+    "--setting-sources",
+    "",
+    "--strict-mcp-config",
+    "--tools",
+    "",
+    "--disallowedTools",
+    "Bash,Read,Edit,Write,Glob,Grep,WebFetch,WebSearch,Task,NotebookEdit",
+    "--system-prompt",
+    "You are analyzing the financial reporting quality of Tangoe, Inc. (TNGO, CIK 0001182325) using only the structured data provided below, which reflects public filings available on or before 2016-03-06....[1734 chars]",
+    "--json-schema",
+    "{\"type\": \"object\", \"additionalProperties\": false, \"required\": [\"checklist\", \"misstatement_probability\", \"mechanism_hypotheses\", \"overall\"], \"properties\": {\"checklist\": {\"type\": \"array\", \"items\": {\"typ...[1821 chars]"
+  ],
+  "model_requested": "claude-sonnet-5",
+  "served_models": [
+    "claude-sonnet-5"
+  ],
+  "pin_ok": true,
+  "ok": true,
+  "fail_reason": null,
+  "session_id": "182e9143-028f-4997-8f93-eec891fe5414",
+  "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 53671,
+    "cache_read_input_tokens": 1116,
+    "output_tokens": 12383,
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 53671,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [],
+    "speed": "standard"
+  },
+  "total_cost_usd_reference_only": 0.5081118,
+  "attempts": 1,
+  "wall_seconds": 118.2,
+  "freeze": {
+    "head": "19a050d829fb43871c665b458026b62f8140e1c9",
+    "clean_tree": false
+  },
+  "raw_tail": null
+}

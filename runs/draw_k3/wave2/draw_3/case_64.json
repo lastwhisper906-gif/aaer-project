@@ -1,0 +1,291 @@
+{
+  "case_id": "case_64",
+  "run_id": "original-case_64-r1",
+  "model": "claude-sonnet-5",
+  "pipeline_version": "19a050d829fb43871c665b458026b62f8140e1c9",
+  "run_timestamp": "2026-07-13T09:40:48.796106+00:00",
+  "documents_used": [
+    {
+      "accession_no": "0000950123-11-072121",
+      "form_type": "10-Q",
+      "filing_date": "2011-08-03"
+    },
+    {
+      "accession_no": "0001193125-11-290967",
+      "form_type": "10-Q",
+      "filing_date": "2011-11-01"
+    },
+    {
+      "accession_no": "0001193125-12-094249",
+      "form_type": "10-K",
+      "filing_date": "2012-03-02"
+    },
+    {
+      "accession_no": "0001193125-12-208239",
+      "form_type": "10-Q",
+      "filing_date": "2012-05-03"
+    },
+    {
+      "accession_no": "0001193125-12-344330",
+      "form_type": "10-Q",
+      "filing_date": "2012-08-08"
+    },
+    {
+      "accession_no": "0001193125-12-457307",
+      "form_type": "10-Q",
+      "filing_date": "2012-11-07"
+    },
+    {
+      "accession_no": "0001193125-13-087830",
+      "form_type": "10-K",
+      "filing_date": "2013-03-01"
+    },
+    {
+      "accession_no": "0001193125-13-198421",
+      "form_type": "10-Q",
+      "filing_date": "2013-05-03"
+    },
+    {
+      "accession_no": "0001193125-13-324186",
+      "form_type": "10-Q",
+      "filing_date": "2013-08-07"
+    },
+    {
+      "accession_no": "0001193125-13-432992",
+      "form_type": "10-Q",
+      "filing_date": "2013-11-07"
+    },
+    {
+      "accession_no": "0001193125-14-077617",
+      "form_type": "10-K",
+      "filing_date": "2014-02-28"
+    },
+    {
+      "accession_no": "0001193125-14-172330",
+      "form_type": "10-Q",
+      "filing_date": "2014-04-30"
+    },
+    {
+      "accession_no": "0001193125-14-291564",
+      "form_type": "10-Q",
+      "filing_date": "2014-08-01"
+    },
+    {
+      "accession_no": "0001193125-14-389602",
+      "form_type": "10-Q",
+      "filing_date": "2014-10-30"
+    },
+    {
+      "accession_no": "0001193125-15-070371",
+      "form_type": "10-K",
+      "filing_date": "2015-02-27"
+    },
+    {
+      "accession_no": "0001193125-15-161921",
+      "form_type": "10-Q",
+      "filing_date": "2015-04-30"
+    },
+    {
+      "accession_no": "0001564590-15-005920",
+      "form_type": "10-Q",
+      "filing_date": "2015-07-31"
+    },
+    {
+      "accession_no": "0001564590-15-008886",
+      "form_type": "10-Q",
+      "filing_date": "2015-10-29"
+    },
+    {
+      "accession_no": "0001564590-16-013560",
+      "form_type": "10-K",
+      "filing_date": "2016-02-26"
+    },
+    {
+      "accession_no": "0001564590-16-017186",
+      "form_type": "10-Q",
+      "filing_date": "2016-04-29"
+    },
+    {
+      "accession_no": "0001564590-16-021800",
+      "form_type": "10-Q",
+      "filing_date": "2016-07-29"
+    },
+    {
+      "accession_no": "0001564590-16-026210",
+      "form_type": "10-Q",
+      "filing_date": "2016-10-26"
+    },
+    {
+      "accession_no": "0001564590-17-002318",
+      "form_type": "10-K",
+      "filing_date": "2017-02-24"
+    }
+  ],
+  "checklist": [
+    {
+      "item_id": "CL1",
+      "question": "Did receivables grow materially faster than revenue across consecutive periods?",
+      "finding": "flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "AccountsReceivableNetCurrent=135083000 (2016-12-31)",
+          "source_accession_no": "0001564590-17-002318",
+          "location": "10-K FY2016 Balance Sheet"
+        },
+        {
+          "quote": "AccountsReceivableNetCurrent=124222000 (2015-12-31)",
+          "source_accession_no": "0001564590-17-002318",
+          "location": "10-K FY2016 Balance Sheet (prior year comparative)"
+        },
+        {
+          "quote": "SalesRevenueServicesNet=1218481000 (2016 annual)",
+          "source_accession_no": "0001564590-17-002318",
+          "location": "10-K FY2016 Income Statement"
+        },
+        {
+          "quote": "SalesRevenueServicesNet=1221311000 (2015 annual)",
+          "source_accession_no": "0001564590-17-002318",
+          "location": "10-K FY2016 Income Statement (prior year comparative)"
+        }
+      ]
+    },
+    {
+      "item_id": "CL2",
+      "question": "Did non-current 'soft' assets (intangibles, other assets, capitalized items) grow materially faster than the business overall?",
+      "finding": "no_flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "Goodwill=5231000 (2012-12-31) growing to Goodwill=12105000 (2016-12-31)",
+          "source_accession_no": "0001564590-17-002318",
+          "location": "10-K FY2016 Balance Sheet / prior filings"
+        },
+        {
+          "quote": "OtherAssetsNoncurrent=5883000 (2010-12-31) vs OtherAssetsNoncurrent=4374000 (2016-12-31)",
+          "source_accession_no": "0001564590-17-002318",
+          "location": "10-K FY2016 Balance Sheet"
+        },
+        {
+          "quote": "PropertyPlantAndEquipmentNet=290938000 (2010-12-31) growing to PropertyPlantAndEquipmentNet=604119000 (2016-12-31), consistent with a capital-intensive LTL trucking business expanding terminal/fleet capacity",
+          "source_accession_no": "0001564590-17-002318",
+          "location": "10-K FY2016 Balance Sheet"
+        }
+      ]
+    },
+    {
+      "item_id": "CL3",
+      "question": "Is there a persistent divergence between net income and operating cash flow?",
+      "finding": "no_flag",
+      "confidence": "high",
+      "evidence": [
+        {
+          "quote": "NetIncomeLoss=48024000 (2016 annual) vs NetCashProvidedByUsedInOperatingActivitiesContinuingOperations=145776000 (2016 annual)",
+          "source_accession_no": "0001564590-17-002318",
+          "location": "10-K FY2016 Income Statement/Cash Flow Statement"
+        },
+        {
+          "quote": "NetIncomeLoss=55016000 (2015 annual) vs NetCashProvidedByUsedInOperatingActivitiesContinuingOperations=142714000 (2015 annual)",
+          "source_accession_no": "0001564590-17-002318",
+          "location": "10-K FY2016 Cash Flow Statement (prior year comparative)"
+        }
+      ]
+    },
+    {
+      "item_id": "CL4",
+      "question": "Do inventory levels or gross margins show trends inconsistent with revenue?",
+      "finding": "insufficient_data",
+      "confidence": "low",
+      "evidence": [
+        {
+          "quote": "No InventoryNet or CostOfGoodsSold concept provided in the dataset (trucking/LTL carrier, minimal inventory expected)",
+          "source_accession_no": "0001564590-17-002318",
+          "location": "10-K FY2016 filings - data not tagged/provided"
+        },
+        {
+          "quote": "As a proxy, OperatingIncomeLoss=79136000 (2016 annual) / SalesRevenueServicesNet=1218481000 (2016 annual) ~ 6.5% margin vs OperatingIncomeLoss=89975000 (2015 annual) / SalesRevenueServicesNet=1221311000 (2015 annual) ~ 7.4% margin, a modest margin compression consistent with a soft freight market, not an anomalous trend",
+          "source_accession_no": "0001564590-17-002318",
+          "location": "10-K FY2016 Income Statement"
+        }
+      ]
+    },
+    {
+      "item_id": "CL5",
+      "question": "Is the earnings trajectory unusually smooth relative to the volatility of revenue and cash flow?",
+      "finding": "no_flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "NetIncomeLoss declined from 55016000 (2015 annual) to 48024000 (2016 annual), a -12.7% decline, while SalesRevenueServicesNet was nearly flat, declining from 1221311000 (2015) to 1218481000 (2016), only -0.23%",
+          "source_accession_no": "0001564590-17-002318",
+          "location": "10-K FY2016 Income Statement"
+        },
+        {
+          "quote": "NetIncomeLoss grew from 1957000 (2010 annual) to 11373000 (2011 annual) to 32048000 (2012 annual) to 43627000 (2013 annual), tracking substantial swings in OperatingIncomeLoss (12100000 in 2010 to 58734000 in 2012)",
+          "source_accession_no": "0001193125-15-070371",
+          "location": "10-K FY2013 Income Statement"
+        }
+      ]
+    },
+    {
+      "item_id": "CL6",
+      "question": "Did liability, allowance, or reserve balances decline (or fail to grow) despite growing business activity?",
+      "finding": "flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "AccountsPayableCurrent=45149000 (2016-12-31) vs AccountsPayableCurrent=54754000 (2015-12-31), a decline of about 17.5%, while SalesRevenueServicesNet was roughly flat (1218481000 in 2016 vs 1221311000 in 2015)",
+          "source_accession_no": "0001564590-17-002318",
+          "location": "10-K FY2016 Balance Sheet"
+        }
+      ]
+    },
+    {
+      "item_id": "CL7",
+      "question": "Does the filing chronology show irregularities (late filings/NT forms, amendments, unusual 8-K frequency)?",
+      "finding": "flag",
+      "confidence": "low",
+      "evidence": [
+        {
+          "quote": "UPLOAD filing dated 2012-08-20, CORRESP filing dated 2012-08-31, UPLOAD filing dated 2012-09-10 (indicative of SEC comment letter correspondence)",
+          "source_accession_no": "n/a",
+          "location": "Filing chronology 2012"
+        },
+        {
+          "quote": "UPLOAD filing dated 2016-06-30, CORRESP filing dated 2016-07-14, UPLOAD filing dated 2016-08-02 (indicative of SEC comment letter correspondence)",
+          "source_accession_no": "n/a",
+          "location": "Filing chronology 2016"
+        }
+      ]
+    },
+    {
+      "item_id": "CL8",
+      "question": "Is the provided data sufficient in coverage and length for the above assessments?",
+      "finding": "no_flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "Quarterly and annual data spanning fiscal years 2008 through 2016 for Assets, AssetsCurrent, AccountsReceivableNetCurrent, AccountsPayableCurrent, NetIncomeLoss, OperatingIncomeLoss, NetCashProvidedByUsedInOperatingActivities, PropertyPlantAndEquipmentNet/Gross, Goodwill, StockholdersEquity and related concepts are provided",
+          "source_accession_no": "0001564590-17-002318",
+          "location": "Aggregated financial_series_point_in_time dataset"
+        },
+        {
+          "quote": "Data gaps exist for InventoryNet, CostOfGoodsSold, AllowanceForDoubtfulAccountsReceivable, and DeferredRevenue, limiting granularity for CL4 and reserve-specific analysis",
+          "source_accession_no": "n/a",
+          "location": "Aggregated financial_series_point_in_time dataset - missing concepts"
+        }
+      ]
+    }
+  ],
+  "misstatement_probability": 25,
+  "mechanism_hypotheses": [],
+  "overall": {
+    "risk_tier": "watch",
+    "top_signals": [
+      "Accounts receivable grew 8.7% (AccountsReceivableNetCurrent=135083000 in 2016 vs 124222000 in 2015) while revenue declined slightly (SalesRevenueServicesNet=1218481000 in 2016 vs 1221311000 in 2015), a modest but notable divergence in the most recent fiscal year",
+      "Accounts payable declined 17.5% (AccountsPayableCurrent=45149000 in 2016 vs 54754000 in 2015) despite roughly flat revenue, which could reflect faster vendor payment or understated liabilities",
+      "SEC CORRESP/UPLOAD filings appear in both 2012 and 2016, suggesting periods of SEC comment-letter review, though no resulting restatements, NT filings, or 10-K/A amendments are evident in the chronology",
+      "Operating cash flow consistently and substantially exceeds net income across all years (e.g., NetCashProvidedByUsedInOperatingActivitiesContinuingOperations=145776000 vs NetIncomeLoss=48024000 in 2016), a quality-supportive sign given the capital-intensive trucking business model with high depreciation (Depreciation=74500000 in 2016)"
+    ]
+  }
+}

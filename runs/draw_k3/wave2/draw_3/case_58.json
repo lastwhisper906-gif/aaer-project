@@ -1,0 +1,448 @@
+{
+  "case_id": "case_58",
+  "run_id": "original-case_58-r1",
+  "model": "claude-sonnet-5",
+  "pipeline_version": "24c9b112a80cfc3bb14dca110684d2b27bb7b092",
+  "run_timestamp": "2026-07-13T09:11:41.519275+00:00",
+  "documents_used": [
+    {
+      "accession_no": "0000723254-12-000004",
+      "form_type": "10-K",
+      "filing_date": "2012-07-30"
+    },
+    {
+      "accession_no": "0000723254-12-000009",
+      "form_type": "10-Q",
+      "filing_date": "2012-10-10"
+    },
+    {
+      "accession_no": "0000723254-13-000002",
+      "form_type": "10-Q",
+      "filing_date": "2013-01-09"
+    },
+    {
+      "accession_no": "0000723254-13-000006",
+      "form_type": "10-Q",
+      "filing_date": "2013-04-09"
+    },
+    {
+      "accession_no": "0000723254-13-000011",
+      "form_type": "10-K",
+      "filing_date": "2013-07-30"
+    },
+    {
+      "accession_no": "0000723254-13-000019",
+      "form_type": "10-Q",
+      "filing_date": "2013-10-10"
+    },
+    {
+      "accession_no": "0000723254-14-000002",
+      "form_type": "10-Q",
+      "filing_date": "2014-01-09"
+    },
+    {
+      "accession_no": "0000723254-14-000006",
+      "form_type": "10-Q",
+      "filing_date": "2014-04-09"
+    },
+    {
+      "accession_no": "0000723254-14-000020",
+      "form_type": "10-K",
+      "filing_date": "2014-07-30"
+    },
+    {
+      "accession_no": "0000723254-14-000033",
+      "form_type": "10-Q",
+      "filing_date": "2014-10-10"
+    },
+    {
+      "accession_no": "0000723254-15-000002",
+      "form_type": "10-Q",
+      "filing_date": "2015-01-09"
+    },
+    {
+      "accession_no": "0000723254-15-000006",
+      "form_type": "10-Q",
+      "filing_date": "2015-04-02"
+    },
+    {
+      "accession_no": "0000723254-15-000017",
+      "form_type": "10-K",
+      "filing_date": "2015-07-30"
+    },
+    {
+      "accession_no": "0000723254-15-000031",
+      "form_type": "10-Q",
+      "filing_date": "2015-10-09"
+    },
+    {
+      "accession_no": "0000723254-16-000037",
+      "form_type": "10-Q",
+      "filing_date": "2016-01-08"
+    },
+    {
+      "accession_no": "0000723254-16-000041",
+      "form_type": "10-Q",
+      "filing_date": "2016-04-08"
+    },
+    {
+      "accession_no": "0000723254-16-000050",
+      "form_type": "10-K",
+      "filing_date": "2016-07-29"
+    },
+    {
+      "accession_no": "0000723254-16-000065",
+      "form_type": "10-Q",
+      "filing_date": "2016-10-11"
+    },
+    {
+      "accession_no": "0000723254-17-000002",
+      "form_type": "10-Q",
+      "filing_date": "2017-01-06"
+    },
+    {
+      "accession_no": "0000723254-17-000014",
+      "form_type": "10-Q",
+      "filing_date": "2017-04-07"
+    },
+    {
+      "accession_no": "0000723254-17-000020",
+      "form_type": "10-K",
+      "filing_date": "2017-07-31"
+    },
+    {
+      "accession_no": "0000723254-17-000030",
+      "form_type": "10-Q",
+      "filing_date": "2017-10-06"
+    },
+    {
+      "accession_no": "0000723254-18-000002",
+      "form_type": "10-Q",
+      "filing_date": "2018-01-05"
+    },
+    {
+      "accession_no": "0000723254-18-000006",
+      "form_type": "10-Q",
+      "filing_date": "2018-04-06"
+    },
+    {
+      "accession_no": "0000723254-18-000015",
+      "form_type": "10-K",
+      "filing_date": "2018-07-27"
+    },
+    {
+      "accession_no": "0000723254-18-000030",
+      "form_type": "10-Q",
+      "filing_date": "2018-10-05"
+    },
+    {
+      "accession_no": "0000723254-19-000002",
+      "form_type": "10-Q",
+      "filing_date": "2019-01-08"
+    },
+    {
+      "accession_no": "0000723254-19-000008",
+      "form_type": "10-Q",
+      "filing_date": "2019-04-05"
+    },
+    {
+      "accession_no": "0000723254-19-000021",
+      "form_type": "10-K",
+      "filing_date": "2019-07-26"
+    },
+    {
+      "accession_no": "0000723254-19-000030",
+      "form_type": "10-Q",
+      "filing_date": "2019-10-08"
+    },
+    {
+      "accession_no": "0001047469-11-006745",
+      "form_type": "10-K",
+      "filing_date": "2011-07-29"
+    },
+    {
+      "accession_no": "0001104659-10-051814",
+      "form_type": "10-Q",
+      "filing_date": "2010-10-08"
+    },
+    {
+      "accession_no": "0001104659-11-000787",
+      "form_type": "10-Q",
+      "filing_date": "2011-01-07"
+    },
+    {
+      "accession_no": "0001104659-11-019252",
+      "form_type": "10-Q",
+      "filing_date": "2011-04-08"
+    },
+    {
+      "accession_no": "0001104659-11-055364",
+      "form_type": "10-Q",
+      "filing_date": "2011-10-07"
+    },
+    {
+      "accession_no": "0001104659-12-001090",
+      "form_type": "10-Q",
+      "filing_date": "2012-01-09"
+    },
+    {
+      "accession_no": "0001104659-12-024280",
+      "form_type": "10-Q",
+      "filing_date": "2012-04-09"
+    }
+  ],
+  "checklist": [
+    {
+      "item_id": "CL1",
+      "question": "Did receivables grow materially faster than revenue across consecutive periods?",
+      "finding": "no_flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "AccountsReceivableNetCurrent value 804583000 (2018-05-31)",
+          "source_accession_no": "0000723254-19-000021",
+          "location": "10-K FY2018 balance sheet"
+        },
+        {
+          "quote": "AccountsReceivableNetCurrent value 910120000 (2019-05-31)",
+          "source_accession_no": "0000723254-19-000030",
+          "location": "10-Q Q1 FY2020 balance sheet (comparative)"
+        },
+        {
+          "quote": "Revenues value 6476632000 (2017-06-01 to 2018-05-31)",
+          "source_accession_no": "0000723254-19-000021",
+          "location": "10-K FY2018 income statement"
+        },
+        {
+          "quote": "Revenues value 6892303000 (2018-06-01 to 2019-05-31)",
+          "source_accession_no": "0000723254-19-000021",
+          "location": "10-K FY2019 income statement"
+        }
+      ]
+    },
+    {
+      "item_id": "CL2",
+      "question": "Did non-current 'soft' assets (intangibles, other assets, capitalized items) grow materially faster than the business overall?",
+      "finding": "flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "Goodwill value 1276076000 (2016-05-31)",
+          "source_accession_no": "0000723254-18-000015",
+          "location": "10-K FY2017 balance sheet (prior year comparative)"
+        },
+        {
+          "quote": "Goodwill value 2782335000 (2017-05-31)",
+          "source_accession_no": "0000723254-19-000021",
+          "location": "10-K FY2019 balance sheet (comparative)"
+        },
+        {
+          "quote": "OtherAssetsNoncurrent value 29315000 (2018-05-31)",
+          "source_accession_no": "0000723254-19-000021",
+          "location": "10-K FY2019 balance sheet"
+        },
+        {
+          "quote": "OtherAssetsNoncurrent value 216818000 (2018-06-01)",
+          "source_accession_no": "0000723254-19-000021",
+          "location": "10-K FY2019 balance sheet, opening-of-year restated figure"
+        },
+        {
+          "quote": "Revenues value 5323381000 (2016-06-01 to 2017-05-31)",
+          "source_accession_no": "0000723254-19-000021",
+          "location": "10-K FY2019 income statement (prior year comparative)"
+        }
+      ]
+    },
+    {
+      "item_id": "CL3",
+      "question": "Is there a persistent divergence between net income and operating cash flow?",
+      "finding": "no_flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "NetIncomeLoss value 693520000 (2015-06-01 to 2016-05-31)",
+          "source_accession_no": "0000723254-18-000015",
+          "location": "10-K FY2017 5-yr selected data"
+        },
+        {
+          "quote": "NetCashProvidedByUsedInOperatingActivities value 465845000 (2015-06-01 to 2016-05-31)",
+          "source_accession_no": "0000723254-18-000015",
+          "location": "10-K FY2017 cash flow statement"
+        },
+        {
+          "quote": "NetCashProvidedByUsedInOperatingActivities value 964160000 (2017-06-01 to 2018-05-31)",
+          "source_accession_no": "0000723254-19-000021",
+          "location": "10-K FY2019 cash flow statement (comparative)"
+        },
+        {
+          "quote": "NetIncomeLoss value 842586000 (2017-06-01 to 2018-05-31)",
+          "source_accession_no": "0000723254-19-000021",
+          "location": "10-K FY2019 income statement (comparative)"
+        },
+        {
+          "quote": "NetCashProvidedByUsedInOperatingActivities value 1067862000 (2018-06-01 to 2019-05-31)",
+          "source_accession_no": "0000723254-19-000021",
+          "location": "10-K FY2019 cash flow statement"
+        },
+        {
+          "quote": "NetIncomeLoss value 884981000 (2018-06-01 to 2019-05-31)",
+          "source_accession_no": "0000723254-19-000021",
+          "location": "10-K FY2019 income statement"
+        }
+      ]
+    },
+    {
+      "item_id": "CL4",
+      "question": "Do inventory levels or gross margins show trends inconsistent with revenue?",
+      "finding": "flag",
+      "confidence": "low",
+      "evidence": [
+        {
+          "quote": "InventoryNet value 280347000 (2018-05-31)",
+          "source_accession_no": "0000723254-19-000021",
+          "location": "10-K FY2019 balance sheet"
+        },
+        {
+          "quote": "InventoryNet value 334589000 (2019-05-31)",
+          "source_accession_no": "0000723254-19-000030",
+          "location": "10-Q Q1 FY2020 balance sheet (comparative)"
+        },
+        {
+          "quote": "Revenues value 6892303000 (2018-06-01 to 2019-05-31)",
+          "source_accession_no": "0000723254-19-000021",
+          "location": "10-K FY2019 income statement"
+        },
+        {
+          "quote": "GrossProfit value 3128588000 (2018-06-01 to 2019-05-31)",
+          "source_accession_no": "0000723254-19-000021",
+          "location": "10-K FY2019 income statement"
+        }
+      ]
+    },
+    {
+      "item_id": "CL5",
+      "question": "Is the earnings trajectory unusually smooth relative to the volatility of revenue and cash flow?",
+      "finding": "no_flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "NetIncomeLoss value 693520000 (2015-06-01 to 2016-05-31)",
+          "source_accession_no": "0000723254-18-000015",
+          "location": "10-K FY2017 5-yr selected data"
+        },
+        {
+          "quote": "NetIncomeLoss value 480708000 (2016-06-01 to 2017-05-31)",
+          "source_accession_no": "0000723254-19-000021",
+          "location": "10-K FY2019 income statement (comparative)"
+        }
+      ]
+    },
+    {
+      "item_id": "CL6",
+      "question": "Did liability, allowance, or reserve balances decline (or fail to grow) despite growing business activity?",
+      "finding": "no_flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "AllowanceForDoubtfulAccountsReceivableCurrent value 20525000 (2017-05-31)",
+          "source_accession_no": "0000723254-18-000015",
+          "location": "10-K FY2018 notes"
+        },
+        {
+          "quote": "AllowanceForDoubtfulAccountsReceivableCurrent value 33510000 (2018-05-31)",
+          "source_accession_no": "0000723254-19-000021",
+          "location": "10-K FY2019 notes"
+        },
+        {
+          "quote": "AllowanceForDoubtfulAccountsReceivableCurrent value 37809000 (2019-05-31)",
+          "source_accession_no": "0000723254-19-000021",
+          "location": "10-K FY2019 notes"
+        }
+      ]
+    },
+    {
+      "item_id": "CL7",
+      "question": "Does the filing chronology show irregularities (late filings/NT forms, amendments, unusual 8-K frequency)?",
+      "finding": "no_flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "10-K, filing_date 2019-07-26",
+          "source_accession_no": "0000723254-19-000021",
+          "location": "filing_chronology"
+        },
+        {
+          "quote": "10-Q, filing_date 2019-10-08",
+          "source_accession_no": "0000723254-19-000030",
+          "location": "filing_chronology"
+        },
+        {
+          "quote": "10-K/A, filing_date 2011-05-18",
+          "source_accession_no": "n/a",
+          "location": "filing_chronology (pre-2015, low relevance to recent period)"
+        }
+      ]
+    },
+    {
+      "item_id": "CL8",
+      "question": "Is the provided data sufficient in coverage and length for the above assessments?",
+      "finding": "flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "Assets value 4271164000 (2017-02-28)",
+          "source_accession_no": "0000723254-18-000006",
+          "location": "10-Q Q3 FY2017"
+        },
+        {
+          "quote": "Assets value 6844057000 (2017-05-31)",
+          "source_accession_no": "0000723254-19-000021",
+          "location": "10-K FY2019 balance sheet (comparative for 2017-05-31)"
+        },
+        {
+          "quote": "Assets value 6958214000 (2018-05-31)",
+          "source_accession_no": "0000723254-19-000021",
+          "location": "10-K FY2019 balance sheet"
+        },
+        {
+          "quote": "Assets value 7211341000 (2018-06-01)",
+          "source_accession_no": "0000723254-19-000021",
+          "location": "10-K FY2019 balance sheet, restated opening figure"
+        }
+      ]
+    }
+  ],
+  "misstatement_probability": 20,
+  "mechanism_hypotheses": [
+    {
+      "affected_line_items": [
+        "InventoryNet",
+        "AccountsReceivableNetCurrent"
+      ],
+      "direction": "overstated",
+      "accounting_treatment": "Potential slower inventory turnover / DSO expansion post G&K Services acquisition and integration, or timing differences in uniform/garment inventory capitalization, and use of estimates in allowance for doubtful accounts on a larger, more heterogeneous customer base; not evidence of intentional overstatement but a working-capital efficiency watch item.",
+      "rationale_evidence": [
+        {
+          "quote": "InventoryNet value 334589000 (2019-05-31) vs InventoryNet value 280347000 (2018-05-31)",
+          "source_accession_no": "0000723254-19-000021",
+          "location": "10-K FY2019 balance sheet / 10-Q comparative"
+        },
+        {
+          "quote": "Revenues value 6892303000 (2018-06-01 to 2019-05-31) vs 6476632000 (2017-06-01 to 2018-05-31)",
+          "source_accession_no": "0000723254-19-000021",
+          "location": "10-K FY2019 income statement"
+        }
+      ]
+    }
+  ],
+  "overall": {
+    "risk_tier": "watch",
+    "top_signals": [
+      "FY2019 inventory grew ~19% versus ~6% revenue growth, a meaningful divergence worth monitoring (InventoryNet=334,589,000 (2019-05-31) vs 280,347,000 (2018-05-31); Revenues=6,892,303,000 (FY2019) vs 6,476,632,000 (FY2018))",
+      "Large, acquisition-driven jumps in goodwill and other non-current assets (Goodwill=2,782,335,000 (2017-05-31) vs 1,276,076,000 (2016-05-31); OtherAssetsNoncurrent=216,818,000 (2018-06-01) vs 29,315,000 (2018-05-31)) appear tied to the G&K Services acquisition and ASC 606/leasing-related reclassifications rather than organic soft-asset inflation",
+      "Data quality/labeling inconsistencies across filings for the same balance-sheet dates (e.g., Assets=6,844,057,000 (2017-05-31) reported in the FY2019 10-K appears inconsistent with contemporaneous FY2017 filings showing a much smaller pre-acquisition asset base) reduce confidence in precise period-over-period comparisons, though this looks like a reporting/labeling artifact rather than a deliberate misstatement",
+      "Operating cash flow has generally met or exceeded net income in most fiscal years (e.g., NetCashProvidedByUsedInOperatingActivities=1,067,862,000 vs NetIncomeLoss=884,981,000 for FY2019; 964,160,000 vs 842,586,000 for FY2018), a positive earnings-quality indicator that offsets the above concerns",
+      "No NT filings, restatement 8-Ks, or other irregular chronology were identified in the 2015-2019 window; filing cadence (10-K/10-Q/8-K/DEF 14A) is consistent with a large accelerated filer"
+    ]
+  }
+}

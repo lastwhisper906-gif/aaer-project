@@ -1,0 +1,59 @@
+{
+  "ts": "2026-07-13T09:52:34.322980+00:00",
+  "harness_pin": "2.1.201",
+  "flags": [
+    "claude",
+    "-p",
+    "--model",
+    "claude-sonnet-5",
+    "--output-format",
+    "json",
+    "--max-turns",
+    "2",
+    "--setting-sources",
+    "",
+    "--strict-mcp-config",
+    "--tools",
+    "",
+    "--disallowedTools",
+    "Bash,Read,Edit,Write,Glob,Grep,WebFetch,WebSearch,Task,NotebookEdit",
+    "--system-prompt",
+    "You are analyzing the financial reporting quality of Weatherford International Ltd. (Switzerland) (WFT, CIK 0001453090) using only the structured data provided below, which reflects public filings ava...[1765 chars]",
+    "--json-schema",
+    "{\"type\": \"object\", \"additionalProperties\": false, \"required\": [\"checklist\", \"misstatement_probability\", \"mechanism_hypotheses\", \"overall\"], \"properties\": {\"checklist\": {\"type\": \"array\", \"items\": {\"typ...[1821 chars]"
+  ],
+  "model_requested": "claude-sonnet-5",
+  "served_models": [
+    "claude-sonnet-5"
+  ],
+  "pin_ok": true,
+  "ok": true,
+  "fail_reason": null,
+  "session_id": "eaea896e-5ad1-43bb-831e-cc555851eb80",
+  "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 36754,
+    "cache_read_input_tokens": 1116,
+    "output_tokens": 9926,
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 36754,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [],
+    "speed": "standard"
+  },
+  "total_cost_usd_reference_only": 0.36975480000000005,
+  "attempts": 1,
+  "wall_seconds": 88.4,
+  "freeze": {
+    "head": "19a050d829fb43871c665b458026b62f8140e1c9",
+    "clean_tree": false
+  },
+  "raw_tail": null
+}
