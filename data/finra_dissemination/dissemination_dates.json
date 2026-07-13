@@ -1,0 +1,2237 @@
+{
+ "_discrepancies": [
+  {
+   "resolved_publication": "2021-12-27",
+   "rule": "revision_latest_wins",
+   "settlement": "2021-12-15",
+   "sources": [
+    "20210116_si.html",
+    "20220317_si.html"
+   ],
+   "superseded_publications": [
+    "2021-12-24"
+   ]
+  },
+  {
+   "resolved_publication": "2025-04-25",
+   "rule": "weekday_typo_outvoted",
+   "settlement": "2025-04-15",
+   "typo_publications": [
+    "2025-04-25"
+   ],
+   "typo_sources": [
+    "20250114_si.html"
+   ]
+  },
+  {
+   "resolved_publication": "2027-01-12",
+   "rule": "weekday_typo_all_sources_plus7",
+   "settlement": "2026-12-31",
+   "sources": [
+    "20260118_si.html",
+    "20260401_si.html",
+    "20260701_si.html"
+   ]
+  }
+ ],
+ "_provenance": {
+  "column_name_history": "Exchange Receipt Date (~2021) → Publication Date (2022~)",
+  "delay_days_observed": [
+   9,
+   10,
+   11,
+   12
+  ],
+  "lag14_conservative_in_sample": true,
+  "method": "Wayback 연도별 스냅샷 파싱 — 요일명 체크섬·중복 연도 cross-check·규칙 1~3 (모듈 docstring)·SI 아카이브 전수 대조",
+  "snapshots": {
+   "20180111_si.html": "https://web.archive.org/web/20180111063824/http://www.finra.org/industry/short-interest/short-interest-reporting-due-dates",
+   "20190121_si.html": "https://web.archive.org/web/20190121104853/http://www.finra.org/industry/short-interest/short-interest-reporting-due-dates",
+   "20200718_si.html": "https://web.archive.org/web/20200718232030/https://www.finra.org/filing-reporting/regulatory-filing-systems/short-interest",
+   "20210116_si.html": "https://web.archive.org/web/20210116171648/https://www.finra.org/filing-reporting/regulatory-filing-systems/short-interest",
+   "20220317_si.html": "https://web.archive.org/web/20220317120000/https://www.finra.org/filing-reporting/regulatory-filing-systems/short-interest",
+   "20230127_si.html": "https://web.archive.org/web/20230127120000/https://www.finra.org/filing-reporting/regulatory-filing-systems/short-interest",
+   "20240320_si.html": "https://web.archive.org/web/20240320120000/https://www.finra.org/filing-reporting/regulatory-filing-systems/short-interest",
+   "20250114_si.html": "https://web.archive.org/web/20250114120000/https://www.finra.org/filing-reporting/regulatory-filing-systems/short-interest",
+   "20250601_si.html": "https://web.archive.org/web/20250601120000/https://www.finra.org/filing-reporting/regulatory-filing-systems/short-interest",
+   "20251001_si.html": "https://web.archive.org/web/20251001120000/https://www.finra.org/filing-reporting/regulatory-filing-systems/short-interest",
+   "20260118_si.html": "https://web.archive.org/web/20260118120000/https://www.finra.org/filing-reporting/regulatory-filing-systems/short-interest",
+   "20260401_si.html": "https://web.archive.org/web/20260401120000/https://www.finra.org/filing-reporting/regulatory-filing-systems/short-interest",
+   "20260701_si.html": "https://web.archive.org/web/20260701120000/https://www.finra.org/filing-reporting/regulatory-filing-systems/short-interest"
+  },
+  "spec": "specs/B4_short_interest.md §2 개정 (D71) — LAG=14 상수의 실측 대체"
+ },
+ "settlement_to_publication": {
+  "2017-09-29": {
+   "cross_checked_by": [
+    "20180111_si.html"
+   ],
+   "delay_days": 11,
+   "due": "2017-10-03",
+   "publication": "2017-10-10",
+   "table_year": 2017
+  },
+  "2017-10-13": {
+   "cross_checked_by": [
+    "20180111_si.html"
+   ],
+   "delay_days": 11,
+   "due": "2017-10-17",
+   "publication": "2017-10-24",
+   "table_year": 2017
+  },
+  "2017-10-31": {
+   "cross_checked_by": [
+    "20180111_si.html"
+   ],
+   "delay_days": 9,
+   "due": "2017-11-02",
+   "publication": "2017-11-09",
+   "table_year": 2017
+  },
+  "2017-11-15": {
+   "cross_checked_by": [
+    "20180111_si.html"
+   ],
+   "delay_days": 12,
+   "due": "2017-11-17",
+   "publication": "2017-11-27",
+   "table_year": 2017
+  },
+  "2017-11-30": {
+   "cross_checked_by": [
+    "20180111_si.html"
+   ],
+   "delay_days": 11,
+   "due": "2017-12-04",
+   "publication": "2017-12-11",
+   "table_year": 2017
+  },
+  "2017-12-15": {
+   "cross_checked_by": [
+    "20180111_si.html"
+   ],
+   "delay_days": 12,
+   "due": "2017-12-19",
+   "publication": "2017-12-27",
+   "table_year": 2017
+  },
+  "2017-12-29": {
+   "cross_checked_by": [
+    "20180111_si.html"
+   ],
+   "delay_days": 12,
+   "due": "2018-01-03",
+   "publication": "2018-01-10",
+   "table_year": 2017
+  },
+  "2018-01-12": {
+   "cross_checked_by": [
+    "20180111_si.html"
+   ],
+   "delay_days": 12,
+   "due": "2018-01-17",
+   "publication": "2018-01-24",
+   "table_year": 2018
+  },
+  "2018-01-31": {
+   "cross_checked_by": [
+    "20180111_si.html"
+   ],
+   "delay_days": 9,
+   "due": "2018-02-02",
+   "publication": "2018-02-09",
+   "table_year": 2018
+  },
+  "2018-02-15": {
+   "cross_checked_by": [
+    "20180111_si.html"
+   ],
+   "delay_days": 12,
+   "due": "2018-02-20",
+   "publication": "2018-02-27",
+   "table_year": 2018
+  },
+  "2018-02-28": {
+   "cross_checked_by": [
+    "20180111_si.html"
+   ],
+   "delay_days": 9,
+   "due": "2018-03-02",
+   "publication": "2018-03-09",
+   "table_year": 2018
+  },
+  "2018-03-15": {
+   "cross_checked_by": [
+    "20180111_si.html"
+   ],
+   "delay_days": 11,
+   "due": "2018-03-19",
+   "publication": "2018-03-26",
+   "table_year": 2018
+  },
+  "2018-03-29": {
+   "cross_checked_by": [
+    "20180111_si.html"
+   ],
+   "delay_days": 12,
+   "due": "2018-04-03",
+   "publication": "2018-04-10",
+   "table_year": 2018
+  },
+  "2018-04-13": {
+   "cross_checked_by": [
+    "20180111_si.html"
+   ],
+   "delay_days": 11,
+   "due": "2018-04-17",
+   "publication": "2018-04-24",
+   "table_year": 2018
+  },
+  "2018-04-30": {
+   "cross_checked_by": [
+    "20180111_si.html"
+   ],
+   "delay_days": 9,
+   "due": "2018-05-02",
+   "publication": "2018-05-09",
+   "table_year": 2018
+  },
+  "2018-05-15": {
+   "cross_checked_by": [
+    "20180111_si.html"
+   ],
+   "delay_days": 9,
+   "due": "2018-05-17",
+   "publication": "2018-05-24",
+   "table_year": 2018
+  },
+  "2018-05-31": {
+   "cross_checked_by": [
+    "20180111_si.html"
+   ],
+   "delay_days": 11,
+   "due": "2018-06-04",
+   "publication": "2018-06-11",
+   "table_year": 2018
+  },
+  "2018-06-15": {
+   "cross_checked_by": [
+    "20180111_si.html"
+   ],
+   "delay_days": 11,
+   "due": "2018-06-19",
+   "publication": "2018-06-26",
+   "table_year": 2018
+  },
+  "2018-06-29": {
+   "cross_checked_by": [
+    "20180111_si.html"
+   ],
+   "delay_days": 12,
+   "due": "2018-07-03",
+   "publication": "2018-07-11",
+   "table_year": 2018
+  },
+  "2018-07-13": {
+   "cross_checked_by": [
+    "20180111_si.html"
+   ],
+   "delay_days": 11,
+   "due": "2018-07-17",
+   "publication": "2018-07-24",
+   "table_year": 2018
+  },
+  "2018-07-31": {
+   "cross_checked_by": [
+    "20180111_si.html"
+   ],
+   "delay_days": 9,
+   "due": "2018-08-02",
+   "publication": "2018-08-09",
+   "table_year": 2018
+  },
+  "2018-08-15": {
+   "cross_checked_by": [
+    "20180111_si.html"
+   ],
+   "delay_days": 9,
+   "due": "2018-08-17",
+   "publication": "2018-08-24",
+   "table_year": 2018
+  },
+  "2018-08-31": {
+   "cross_checked_by": [
+    "20180111_si.html"
+   ],
+   "delay_days": 12,
+   "due": "2018-09-05",
+   "publication": "2018-09-12",
+   "table_year": 2018
+  },
+  "2018-09-14": {
+   "cross_checked_by": [
+    "20180111_si.html"
+   ],
+   "delay_days": 11,
+   "due": "2018-09-18",
+   "publication": "2018-09-25",
+   "table_year": 2018
+  },
+  "2018-09-28": {
+   "cross_checked_by": [
+    "20180111_si.html"
+   ],
+   "delay_days": 11,
+   "due": "2018-10-02",
+   "publication": "2018-10-09",
+   "table_year": 2018
+  },
+  "2018-10-15": {
+   "cross_checked_by": [
+    "20180111_si.html"
+   ],
+   "delay_days": 9,
+   "due": "2018-10-17",
+   "publication": "2018-10-24",
+   "table_year": 2018
+  },
+  "2018-10-31": {
+   "cross_checked_by": [
+    "20180111_si.html",
+    "20190121_si.html"
+   ],
+   "delay_days": 9,
+   "due": "2018-11-02",
+   "publication": "2018-11-09",
+   "table_year": 2018
+  },
+  "2018-11-15": {
+   "cross_checked_by": [
+    "20180111_si.html",
+    "20190121_si.html"
+   ],
+   "delay_days": 12,
+   "due": "2018-11-19",
+   "publication": "2018-11-27",
+   "table_year": 2018
+  },
+  "2018-11-30": {
+   "cross_checked_by": [
+    "20180111_si.html",
+    "20190121_si.html"
+   ],
+   "delay_days": 11,
+   "due": "2018-12-04",
+   "publication": "2018-12-11",
+   "table_year": 2018
+  },
+  "2018-12-14": {
+   "cross_checked_by": [
+    "20180111_si.html",
+    "20190121_si.html"
+   ],
+   "delay_days": 12,
+   "due": "2018-12-18",
+   "publication": "2018-12-26",
+   "table_year": 2018
+  },
+  "2018-12-31": {
+   "cross_checked_by": [
+    "20180111_si.html",
+    "20190121_si.html"
+   ],
+   "delay_days": 10,
+   "due": "2019-01-03",
+   "publication": "2019-01-10",
+   "table_year": 2018
+  },
+  "2019-01-15": {
+   "cross_checked_by": [
+    "20190121_si.html"
+   ],
+   "delay_days": 10,
+   "due": "2019-01-17",
+   "publication": "2019-01-25",
+   "table_year": 2019
+  },
+  "2019-01-31": {
+   "cross_checked_by": [
+    "20190121_si.html"
+   ],
+   "delay_days": 11,
+   "due": "2019-02-04",
+   "publication": "2019-02-11",
+   "table_year": 2019
+  },
+  "2019-02-15": {
+   "cross_checked_by": [
+    "20190121_si.html"
+   ],
+   "delay_days": 12,
+   "due": "2019-02-20",
+   "publication": "2019-02-27",
+   "table_year": 2019
+  },
+  "2019-02-28": {
+   "cross_checked_by": [
+    "20190121_si.html"
+   ],
+   "delay_days": 11,
+   "due": "2019-03-04",
+   "publication": "2019-03-11",
+   "table_year": 2019
+  },
+  "2019-03-15": {
+   "cross_checked_by": [
+    "20190121_si.html"
+   ],
+   "delay_days": 11,
+   "due": "2019-03-19",
+   "publication": "2019-03-26",
+   "table_year": 2019
+  },
+  "2019-03-29": {
+   "cross_checked_by": [
+    "20190121_si.html"
+   ],
+   "delay_days": 11,
+   "due": "2019-04-02",
+   "publication": "2019-04-09",
+   "table_year": 2019
+  },
+  "2019-04-15": {
+   "cross_checked_by": [
+    "20190121_si.html"
+   ],
+   "delay_days": 10,
+   "due": "2019-04-17",
+   "publication": "2019-04-25",
+   "table_year": 2019
+  },
+  "2019-04-30": {
+   "cross_checked_by": [
+    "20190121_si.html"
+   ],
+   "delay_days": 9,
+   "due": "2019-05-02",
+   "publication": "2019-05-09",
+   "table_year": 2019
+  },
+  "2019-05-15": {
+   "cross_checked_by": [
+    "20190121_si.html"
+   ],
+   "delay_days": 9,
+   "due": "2019-05-17",
+   "publication": "2019-05-24",
+   "table_year": 2019
+  },
+  "2019-05-31": {
+   "cross_checked_by": [
+    "20190121_si.html"
+   ],
+   "delay_days": 11,
+   "due": "2019-06-04",
+   "publication": "2019-06-11",
+   "table_year": 2019
+  },
+  "2019-06-14": {
+   "cross_checked_by": [
+    "20190121_si.html"
+   ],
+   "delay_days": 11,
+   "due": "2019-06-18",
+   "publication": "2019-06-25",
+   "table_year": 2019
+  },
+  "2019-06-28": {
+   "cross_checked_by": [
+    "20190121_si.html"
+   ],
+   "delay_days": 12,
+   "due": "2019-07-02",
+   "publication": "2019-07-10",
+   "table_year": 2019
+  },
+  "2019-07-15": {
+   "cross_checked_by": [
+    "20190121_si.html"
+   ],
+   "delay_days": 9,
+   "due": "2019-07-17",
+   "publication": "2019-07-24",
+   "table_year": 2019
+  },
+  "2019-07-31": {
+   "cross_checked_by": [
+    "20190121_si.html"
+   ],
+   "delay_days": 9,
+   "due": "2019-08-02",
+   "publication": "2019-08-09",
+   "table_year": 2019
+  },
+  "2019-08-15": {
+   "cross_checked_by": [
+    "20190121_si.html"
+   ],
+   "delay_days": 11,
+   "due": "2019-08-19",
+   "publication": "2019-08-26",
+   "table_year": 2019
+  },
+  "2019-08-30": {
+   "cross_checked_by": [
+    "20190121_si.html"
+   ],
+   "delay_days": 12,
+   "due": "2019-09-04",
+   "publication": "2019-09-11",
+   "table_year": 2019
+  },
+  "2019-09-13": {
+   "cross_checked_by": [
+    "20190121_si.html"
+   ],
+   "delay_days": 11,
+   "due": "2019-09-17",
+   "publication": "2019-09-24",
+   "table_year": 2019
+  },
+  "2019-09-30": {
+   "cross_checked_by": [
+    "20190121_si.html"
+   ],
+   "delay_days": 9,
+   "due": "2019-10-02",
+   "publication": "2019-10-09",
+   "table_year": 2019
+  },
+  "2019-10-15": {
+   "cross_checked_by": [
+    "20190121_si.html"
+   ],
+   "delay_days": 9,
+   "due": "2019-10-17",
+   "publication": "2019-10-24",
+   "table_year": 2019
+  },
+  "2019-10-31": {
+   "cross_checked_by": [
+    "20190121_si.html"
+   ],
+   "delay_days": 11,
+   "due": "2019-11-04",
+   "publication": "2019-11-11",
+   "table_year": 2019
+  },
+  "2019-11-15": {
+   "cross_checked_by": [
+    "20190121_si.html"
+   ],
+   "delay_days": 11,
+   "due": "2019-11-19",
+   "publication": "2019-11-26",
+   "table_year": 2019
+  },
+  "2019-11-29": {
+   "cross_checked_by": [
+    "20190121_si.html"
+   ],
+   "delay_days": 11,
+   "due": "2019-12-03",
+   "publication": "2019-12-10",
+   "table_year": 2019
+  },
+  "2019-12-13": {
+   "cross_checked_by": [
+    "20190121_si.html"
+   ],
+   "delay_days": 11,
+   "due": "2019-12-17",
+   "publication": "2019-12-24",
+   "table_year": 2019
+  },
+  "2019-12-31": {
+   "cross_checked_by": [
+    "20190121_si.html"
+   ],
+   "delay_days": 10,
+   "due": "2020-01-03",
+   "publication": "2020-01-10",
+   "table_year": 2019
+  },
+  "2020-01-15": {
+   "cross_checked_by": [
+    "20200718_si.html"
+   ],
+   "delay_days": 12,
+   "due": "2020-01-17",
+   "publication": "2020-01-27",
+   "table_year": 2020
+  },
+  "2020-01-31": {
+   "cross_checked_by": [
+    "20200718_si.html"
+   ],
+   "delay_days": 11,
+   "due": "2020-02-04",
+   "publication": "2020-02-11",
+   "table_year": 2020
+  },
+  "2020-02-14": {
+   "cross_checked_by": [
+    "20200718_si.html"
+   ],
+   "delay_days": 12,
+   "due": "2020-02-19",
+   "publication": "2020-02-26",
+   "table_year": 2020
+  },
+  "2020-02-28": {
+   "cross_checked_by": [
+    "20200718_si.html"
+   ],
+   "delay_days": 11,
+   "due": "2020-03-03",
+   "publication": "2020-03-10",
+   "table_year": 2020
+  },
+  "2020-03-13": {
+   "cross_checked_by": [
+    "20200718_si.html"
+   ],
+   "delay_days": 11,
+   "due": "2020-03-17",
+   "publication": "2020-03-24",
+   "table_year": 2020
+  },
+  "2020-03-31": {
+   "cross_checked_by": [
+    "20200718_si.html"
+   ],
+   "delay_days": 9,
+   "due": "2020-04-02",
+   "publication": "2020-04-09",
+   "table_year": 2020
+  },
+  "2020-04-15": {
+   "cross_checked_by": [
+    "20200718_si.html"
+   ],
+   "delay_days": 9,
+   "due": "2020-04-17",
+   "publication": "2020-04-24",
+   "table_year": 2020
+  },
+  "2020-04-30": {
+   "cross_checked_by": [
+    "20200718_si.html"
+   ],
+   "delay_days": 11,
+   "due": "2020-05-04",
+   "publication": "2020-05-11",
+   "table_year": 2020
+  },
+  "2020-05-15": {
+   "cross_checked_by": [
+    "20200718_si.html"
+   ],
+   "delay_days": 12,
+   "due": "2020-05-19",
+   "publication": "2020-05-27",
+   "table_year": 2020
+  },
+  "2020-05-29": {
+   "cross_checked_by": [
+    "20200718_si.html"
+   ],
+   "delay_days": 11,
+   "due": "2020-06-02",
+   "publication": "2020-06-09",
+   "table_year": 2020
+  },
+  "2020-06-15": {
+   "cross_checked_by": [
+    "20200718_si.html"
+   ],
+   "delay_days": 9,
+   "due": "2020-06-17",
+   "publication": "2020-06-24",
+   "table_year": 2020
+  },
+  "2020-06-30": {
+   "cross_checked_by": [
+    "20200718_si.html"
+   ],
+   "delay_days": 10,
+   "due": "2020-07-02",
+   "publication": "2020-07-10",
+   "table_year": 2020
+  },
+  "2020-07-15": {
+   "cross_checked_by": [
+    "20200718_si.html"
+   ],
+   "delay_days": 9,
+   "due": "2020-07-17",
+   "publication": "2020-07-24",
+   "table_year": 2020
+  },
+  "2020-07-31": {
+   "cross_checked_by": [
+    "20200718_si.html"
+   ],
+   "delay_days": 11,
+   "due": "2020-08-04",
+   "publication": "2020-08-11",
+   "table_year": 2020
+  },
+  "2020-08-14": {
+   "cross_checked_by": [
+    "20200718_si.html"
+   ],
+   "delay_days": 11,
+   "due": "2020-08-18",
+   "publication": "2020-08-25",
+   "table_year": 2020
+  },
+  "2020-08-31": {
+   "cross_checked_by": [
+    "20200718_si.html"
+   ],
+   "delay_days": 10,
+   "due": "2020-09-02",
+   "publication": "2020-09-10",
+   "table_year": 2020
+  },
+  "2020-09-15": {
+   "cross_checked_by": [
+    "20200718_si.html"
+   ],
+   "delay_days": 9,
+   "due": "2020-09-17",
+   "publication": "2020-09-24",
+   "table_year": 2020
+  },
+  "2020-09-30": {
+   "cross_checked_by": [
+    "20200718_si.html"
+   ],
+   "delay_days": 9,
+   "due": "2020-10-02",
+   "publication": "2020-10-09",
+   "table_year": 2020
+  },
+  "2020-10-15": {
+   "cross_checked_by": [
+    "20200718_si.html"
+   ],
+   "delay_days": 11,
+   "due": "2020-10-19",
+   "publication": "2020-10-26",
+   "table_year": 2020
+  },
+  "2020-10-30": {
+   "cross_checked_by": [
+    "20200718_si.html",
+    "20210116_si.html"
+   ],
+   "delay_days": 11,
+   "due": "2020-11-03",
+   "publication": "2020-11-10",
+   "table_year": 2020
+  },
+  "2020-11-13": {
+   "cross_checked_by": [
+    "20200718_si.html",
+    "20210116_si.html"
+   ],
+   "delay_days": 11,
+   "due": "2020-11-17",
+   "publication": "2020-11-24",
+   "table_year": 2020
+  },
+  "2020-11-30": {
+   "cross_checked_by": [
+    "20200718_si.html",
+    "20210116_si.html"
+   ],
+   "delay_days": 9,
+   "due": "2020-12-02",
+   "publication": "2020-12-09",
+   "table_year": 2020
+  },
+  "2020-12-15": {
+   "cross_checked_by": [
+    "20200718_si.html",
+    "20210116_si.html"
+   ],
+   "delay_days": 9,
+   "due": "2020-12-17",
+   "publication": "2020-12-24",
+   "table_year": 2020
+  },
+  "2020-12-31": {
+   "cross_checked_by": [
+    "20200718_si.html",
+    "20210116_si.html"
+   ],
+   "delay_days": 12,
+   "due": "2021-01-05",
+   "publication": "2021-01-12",
+   "table_year": 2020
+  },
+  "2021-01-15": {
+   "cross_checked_by": [
+    "20210116_si.html",
+    "20220317_si.html"
+   ],
+   "delay_days": 12,
+   "due": "2021-01-20",
+   "publication": "2021-01-27",
+   "table_year": 2021
+  },
+  "2021-01-29": {
+   "cross_checked_by": [
+    "20210116_si.html",
+    "20220317_si.html"
+   ],
+   "delay_days": 11,
+   "due": "2021-02-02",
+   "publication": "2021-02-09",
+   "table_year": 2021
+  },
+  "2021-02-12": {
+   "cross_checked_by": [
+    "20210116_si.html",
+    "20220317_si.html"
+   ],
+   "delay_days": 12,
+   "due": "2021-02-17",
+   "publication": "2021-02-24",
+   "table_year": 2021
+  },
+  "2021-02-26": {
+   "cross_checked_by": [
+    "20210116_si.html",
+    "20220317_si.html"
+   ],
+   "delay_days": 11,
+   "due": "2021-03-02",
+   "publication": "2021-03-09",
+   "table_year": 2021
+  },
+  "2021-03-15": {
+   "cross_checked_by": [
+    "20210116_si.html",
+    "20220317_si.html"
+   ],
+   "delay_days": 9,
+   "due": "2021-03-17",
+   "publication": "2021-03-24",
+   "table_year": 2021
+  },
+  "2021-03-31": {
+   "cross_checked_by": [
+    "20210116_si.html",
+    "20220317_si.html"
+   ],
+   "delay_days": 12,
+   "due": "2021-04-05",
+   "publication": "2021-04-12",
+   "table_year": 2021
+  },
+  "2021-04-15": {
+   "cross_checked_by": [
+    "20210116_si.html",
+    "20220317_si.html"
+   ],
+   "delay_days": 11,
+   "due": "2021-04-19",
+   "publication": "2021-04-26",
+   "table_year": 2021
+  },
+  "2021-04-30": {
+   "cross_checked_by": [
+    "20210116_si.html",
+    "20220317_si.html"
+   ],
+   "delay_days": 11,
+   "due": "2021-05-04",
+   "publication": "2021-05-11",
+   "table_year": 2021
+  },
+  "2021-05-14": {
+   "cross_checked_by": [
+    "20210116_si.html",
+    "20220317_si.html"
+   ],
+   "delay_days": 11,
+   "due": "2021-05-18",
+   "publication": "2021-05-25",
+   "table_year": 2021
+  },
+  "2021-05-28": {
+   "cross_checked_by": [
+    "20210116_si.html",
+    "20220317_si.html"
+   ],
+   "delay_days": 12,
+   "due": "2021-06-02",
+   "publication": "2021-06-09",
+   "table_year": 2021
+  },
+  "2021-06-15": {
+   "cross_checked_by": [
+    "20210116_si.html",
+    "20220317_si.html"
+   ],
+   "delay_days": 9,
+   "due": "2021-06-17",
+   "publication": "2021-06-24",
+   "table_year": 2021
+  },
+  "2021-06-30": {
+   "cross_checked_by": [
+    "20210116_si.html",
+    "20220317_si.html"
+   ],
+   "delay_days": 12,
+   "due": "2021-07-02",
+   "publication": "2021-07-12",
+   "table_year": 2021
+  },
+  "2021-07-15": {
+   "cross_checked_by": [
+    "20210116_si.html",
+    "20220317_si.html"
+   ],
+   "delay_days": 11,
+   "due": "2021-07-19",
+   "publication": "2021-07-26",
+   "table_year": 2021
+  },
+  "2021-07-30": {
+   "cross_checked_by": [
+    "20210116_si.html",
+    "20220317_si.html"
+   ],
+   "delay_days": 11,
+   "due": "2021-08-03",
+   "publication": "2021-08-10",
+   "table_year": 2021
+  },
+  "2021-08-13": {
+   "cross_checked_by": [
+    "20210116_si.html",
+    "20220317_si.html"
+   ],
+   "delay_days": 11,
+   "due": "2021-08-17",
+   "publication": "2021-08-24",
+   "table_year": 2021
+  },
+  "2021-08-31": {
+   "cross_checked_by": [
+    "20210116_si.html",
+    "20220317_si.html"
+   ],
+   "delay_days": 10,
+   "due": "2021-09-02",
+   "publication": "2021-09-10",
+   "table_year": 2021
+  },
+  "2021-09-15": {
+   "cross_checked_by": [
+    "20210116_si.html",
+    "20220317_si.html"
+   ],
+   "delay_days": 9,
+   "due": "2021-09-17",
+   "publication": "2021-09-24",
+   "table_year": 2021
+  },
+  "2021-09-30": {
+   "cross_checked_by": [
+    "20210116_si.html",
+    "20220317_si.html"
+   ],
+   "delay_days": 11,
+   "due": "2021-10-04",
+   "publication": "2021-10-11",
+   "table_year": 2021
+  },
+  "2021-10-15": {
+   "cross_checked_by": [
+    "20210116_si.html",
+    "20220317_si.html"
+   ],
+   "delay_days": 11,
+   "due": "2021-10-19",
+   "publication": "2021-10-26",
+   "table_year": 2021
+  },
+  "2021-10-29": {
+   "cross_checked_by": [
+    "20210116_si.html",
+    "20220317_si.html"
+   ],
+   "delay_days": 11,
+   "due": "2021-11-02",
+   "publication": "2021-11-09",
+   "table_year": 2021
+  },
+  "2021-11-15": {
+   "cross_checked_by": [
+    "20210116_si.html",
+    "20220317_si.html"
+   ],
+   "delay_days": 9,
+   "due": "2021-11-17",
+   "publication": "2021-11-24",
+   "table_year": 2021
+  },
+  "2021-11-30": {
+   "cross_checked_by": [
+    "20210116_si.html",
+    "20220317_si.html"
+   ],
+   "delay_days": 9,
+   "due": "2021-12-02",
+   "publication": "2021-12-09",
+   "table_year": 2021
+  },
+  "2021-12-15": {
+   "cross_checked_by": [
+    "20220317_si.html"
+   ],
+   "delay_days": 12,
+   "due": "2021-12-17",
+   "publication": "2021-12-27",
+   "table_year": 2021
+  },
+  "2021-12-31": {
+   "cross_checked_by": [
+    "20210116_si.html",
+    "20220317_si.html"
+   ],
+   "delay_days": 11,
+   "due": "2022-01-04",
+   "publication": "2022-01-11",
+   "table_year": 2021
+  },
+  "2022-01-14": {
+   "cross_checked_by": [
+    "20220317_si.html"
+   ],
+   "delay_days": 12,
+   "due": "2022-01-19",
+   "publication": "2022-01-26",
+   "table_year": 2022
+  },
+  "2022-01-31": {
+   "cross_checked_by": [
+    "20220317_si.html"
+   ],
+   "delay_days": 9,
+   "due": "2022-02-02",
+   "publication": "2022-02-09",
+   "table_year": 2022
+  },
+  "2022-02-15": {
+   "cross_checked_by": [
+    "20220317_si.html"
+   ],
+   "delay_days": 10,
+   "due": "2022-02-17",
+   "publication": "2022-02-25",
+   "table_year": 2022
+  },
+  "2022-02-28": {
+   "cross_checked_by": [
+    "20220317_si.html"
+   ],
+   "delay_days": 9,
+   "due": "2022-03-02",
+   "publication": "2022-03-09",
+   "table_year": 2022
+  },
+  "2022-03-15": {
+   "cross_checked_by": [
+    "20220317_si.html"
+   ],
+   "delay_days": 9,
+   "due": "2022-03-17",
+   "publication": "2022-03-24",
+   "table_year": 2022
+  },
+  "2022-03-31": {
+   "cross_checked_by": [
+    "20220317_si.html"
+   ],
+   "delay_days": 11,
+   "due": "2022-04-04",
+   "publication": "2022-04-11",
+   "table_year": 2022
+  },
+  "2022-04-14": {
+   "cross_checked_by": [
+    "20220317_si.html"
+   ],
+   "delay_days": 12,
+   "due": "2022-04-19",
+   "publication": "2022-04-26",
+   "table_year": 2022
+  },
+  "2022-04-29": {
+   "cross_checked_by": [
+    "20220317_si.html"
+   ],
+   "delay_days": 11,
+   "due": "2022-05-03",
+   "publication": "2022-05-10",
+   "table_year": 2022
+  },
+  "2022-05-13": {
+   "cross_checked_by": [
+    "20220317_si.html"
+   ],
+   "delay_days": 11,
+   "due": "2022-05-17",
+   "publication": "2022-05-24",
+   "table_year": 2022
+  },
+  "2022-05-31": {
+   "cross_checked_by": [
+    "20220317_si.html"
+   ],
+   "delay_days": 9,
+   "due": "2022-06-02",
+   "publication": "2022-06-09",
+   "table_year": 2022
+  },
+  "2022-06-15": {
+   "cross_checked_by": [
+    "20220317_si.html"
+   ],
+   "delay_days": 12,
+   "due": "2022-06-17",
+   "publication": "2022-06-27",
+   "table_year": 2022
+  },
+  "2022-06-30": {
+   "cross_checked_by": [
+    "20220317_si.html"
+   ],
+   "delay_days": 12,
+   "due": "2022-07-05",
+   "publication": "2022-07-12",
+   "table_year": 2022
+  },
+  "2022-07-15": {
+   "cross_checked_by": [
+    "20220317_si.html"
+   ],
+   "delay_days": 11,
+   "due": "2022-07-19",
+   "publication": "2022-07-26",
+   "table_year": 2022
+  },
+  "2022-07-29": {
+   "cross_checked_by": [
+    "20220317_si.html"
+   ],
+   "delay_days": 11,
+   "due": "2022-08-02",
+   "publication": "2022-08-09",
+   "table_year": 2022
+  },
+  "2022-08-15": {
+   "cross_checked_by": [
+    "20220317_si.html"
+   ],
+   "delay_days": 9,
+   "due": "2022-08-17",
+   "publication": "2022-08-24",
+   "table_year": 2022
+  },
+  "2022-08-31": {
+   "cross_checked_by": [
+    "20220317_si.html"
+   ],
+   "delay_days": 12,
+   "due": "2022-09-02",
+   "publication": "2022-09-12",
+   "table_year": 2022
+  },
+  "2022-09-15": {
+   "cross_checked_by": [
+    "20220317_si.html"
+   ],
+   "delay_days": 11,
+   "due": "2022-09-19",
+   "publication": "2022-09-26",
+   "table_year": 2022
+  },
+  "2022-09-30": {
+   "cross_checked_by": [
+    "20220317_si.html"
+   ],
+   "delay_days": 11,
+   "due": "2022-10-04",
+   "publication": "2022-10-11",
+   "table_year": 2022
+  },
+  "2022-10-14": {
+   "cross_checked_by": [
+    "20220317_si.html"
+   ],
+   "delay_days": 11,
+   "due": "2022-10-18",
+   "publication": "2022-10-25",
+   "table_year": 2022
+  },
+  "2022-10-31": {
+   "cross_checked_by": [
+    "20220317_si.html"
+   ],
+   "delay_days": 9,
+   "due": "2022-11-02",
+   "publication": "2022-11-09",
+   "table_year": 2022
+  },
+  "2022-11-15": {
+   "cross_checked_by": [
+    "20220317_si.html"
+   ],
+   "delay_days": 10,
+   "due": "2022-11-17",
+   "publication": "2022-11-25",
+   "table_year": 2022
+  },
+  "2022-11-30": {
+   "cross_checked_by": [
+    "20220317_si.html"
+   ],
+   "delay_days": 9,
+   "due": "2022-12-02",
+   "publication": "2022-12-09",
+   "table_year": 2022
+  },
+  "2022-12-15": {
+   "cross_checked_by": [
+    "20220317_si.html"
+   ],
+   "delay_days": 12,
+   "due": "2022-12-19",
+   "publication": "2022-12-27",
+   "table_year": 2022
+  },
+  "2022-12-30": {
+   "cross_checked_by": [
+    "20220317_si.html"
+   ],
+   "delay_days": 12,
+   "due": "2023-01-04",
+   "publication": "2023-01-11",
+   "table_year": 2022
+  },
+  "2023-01-13": {
+   "cross_checked_by": [
+    "20230127_si.html"
+   ],
+   "delay_days": 12,
+   "due": "2023-01-18",
+   "publication": "2023-01-25",
+   "table_year": 2023
+  },
+  "2023-01-31": {
+   "cross_checked_by": [
+    "20230127_si.html"
+   ],
+   "delay_days": 9,
+   "due": "2023-02-02",
+   "publication": "2023-02-09",
+   "table_year": 2023
+  },
+  "2023-02-15": {
+   "cross_checked_by": [
+    "20230127_si.html"
+   ],
+   "delay_days": 12,
+   "due": "2023-02-17",
+   "publication": "2023-02-27",
+   "table_year": 2023
+  },
+  "2023-02-28": {
+   "cross_checked_by": [
+    "20230127_si.html"
+   ],
+   "delay_days": 9,
+   "due": "2023-03-02",
+   "publication": "2023-03-09",
+   "table_year": 2023
+  },
+  "2023-03-15": {
+   "cross_checked_by": [
+    "20230127_si.html"
+   ],
+   "delay_days": 9,
+   "due": "2023-03-17",
+   "publication": "2023-03-24",
+   "table_year": 2023
+  },
+  "2023-03-31": {
+   "cross_checked_by": [
+    "20230127_si.html"
+   ],
+   "delay_days": 12,
+   "due": "2023-04-04",
+   "publication": "2023-04-12",
+   "table_year": 2023
+  },
+  "2023-04-14": {
+   "cross_checked_by": [
+    "20230127_si.html"
+   ],
+   "delay_days": 11,
+   "due": "2023-04-18",
+   "publication": "2023-04-25",
+   "table_year": 2023
+  },
+  "2023-04-28": {
+   "cross_checked_by": [
+    "20230127_si.html"
+   ],
+   "delay_days": 11,
+   "due": "2023-05-02",
+   "publication": "2023-05-09",
+   "table_year": 2023
+  },
+  "2023-05-15": {
+   "cross_checked_by": [
+    "20230127_si.html"
+   ],
+   "delay_days": 9,
+   "due": "2023-05-17",
+   "publication": "2023-05-24",
+   "table_year": 2023
+  },
+  "2023-05-31": {
+   "cross_checked_by": [
+    "20230127_si.html"
+   ],
+   "delay_days": 9,
+   "due": "2023-06-02",
+   "publication": "2023-06-09",
+   "table_year": 2023
+  },
+  "2023-06-15": {
+   "cross_checked_by": [
+    "20230127_si.html"
+   ],
+   "delay_days": 12,
+   "due": "2023-06-20",
+   "publication": "2023-06-27",
+   "table_year": 2023
+  },
+  "2023-06-30": {
+   "cross_checked_by": [
+    "20230127_si.html"
+   ],
+   "delay_days": 12,
+   "due": "2023-07-05",
+   "publication": "2023-07-12",
+   "table_year": 2023
+  },
+  "2023-07-14": {
+   "cross_checked_by": [
+    "20230127_si.html"
+   ],
+   "delay_days": 11,
+   "due": "2023-07-18",
+   "publication": "2023-07-25",
+   "table_year": 2023
+  },
+  "2023-07-31": {
+   "cross_checked_by": [
+    "20230127_si.html"
+   ],
+   "delay_days": 9,
+   "due": "2023-08-02",
+   "publication": "2023-08-09",
+   "table_year": 2023
+  },
+  "2023-08-15": {
+   "cross_checked_by": [
+    "20230127_si.html"
+   ],
+   "delay_days": 9,
+   "due": "2023-08-17",
+   "publication": "2023-08-24",
+   "table_year": 2023
+  },
+  "2023-08-31": {
+   "cross_checked_by": [
+    "20230127_si.html"
+   ],
+   "delay_days": 12,
+   "due": "2023-09-05",
+   "publication": "2023-09-12",
+   "table_year": 2023
+  },
+  "2023-09-15": {
+   "cross_checked_by": [
+    "20230127_si.html"
+   ],
+   "delay_days": 11,
+   "due": "2023-09-19",
+   "publication": "2023-09-26",
+   "table_year": 2023
+  },
+  "2023-09-29": {
+   "cross_checked_by": [
+    "20230127_si.html"
+   ],
+   "delay_days": 11,
+   "due": "2023-10-03",
+   "publication": "2023-10-10",
+   "table_year": 2023
+  },
+  "2023-10-13": {
+   "cross_checked_by": [
+    "20230127_si.html"
+   ],
+   "delay_days": 11,
+   "due": "2023-10-17",
+   "publication": "2023-10-24",
+   "table_year": 2023
+  },
+  "2023-10-31": {
+   "cross_checked_by": [
+    "20230127_si.html",
+    "20240320_si.html"
+   ],
+   "delay_days": 9,
+   "due": "2023-11-02",
+   "publication": "2023-11-09",
+   "table_year": 2023
+  },
+  "2023-11-15": {
+   "cross_checked_by": [
+    "20230127_si.html",
+    "20240320_si.html"
+   ],
+   "delay_days": 12,
+   "due": "2023-11-17",
+   "publication": "2023-11-27",
+   "table_year": 2023
+  },
+  "2023-11-30": {
+   "cross_checked_by": [
+    "20230127_si.html",
+    "20240320_si.html"
+   ],
+   "delay_days": 11,
+   "due": "2023-12-04",
+   "publication": "2023-12-11",
+   "table_year": 2023
+  },
+  "2023-12-15": {
+   "cross_checked_by": [
+    "20230127_si.html",
+    "20240320_si.html"
+   ],
+   "delay_days": 12,
+   "due": "2023-12-19",
+   "publication": "2023-12-27",
+   "table_year": 2023
+  },
+  "2023-12-29": {
+   "cross_checked_by": [
+    "20230127_si.html",
+    "20240320_si.html"
+   ],
+   "delay_days": 12,
+   "due": "2024-01-03",
+   "publication": "2024-01-10",
+   "table_year": 2023
+  },
+  "2024-01-12": {
+   "cross_checked_by": [
+    "20240320_si.html"
+   ],
+   "delay_days": 12,
+   "due": "2024-01-17",
+   "publication": "2024-01-24",
+   "table_year": 2024
+  },
+  "2024-01-31": {
+   "cross_checked_by": [
+    "20240320_si.html"
+   ],
+   "delay_days": 9,
+   "due": "2024-02-02",
+   "publication": "2024-02-09",
+   "table_year": 2024
+  },
+  "2024-02-15": {
+   "cross_checked_by": [
+    "20240320_si.html"
+   ],
+   "delay_days": 12,
+   "due": "2024-02-20",
+   "publication": "2024-02-27",
+   "table_year": 2024
+  },
+  "2024-02-29": {
+   "cross_checked_by": [
+    "20240320_si.html"
+   ],
+   "delay_days": 11,
+   "due": "2024-03-04",
+   "publication": "2024-03-11",
+   "table_year": 2024
+  },
+  "2024-03-15": {
+   "cross_checked_by": [
+    "20240320_si.html"
+   ],
+   "delay_days": 11,
+   "due": "2024-03-19",
+   "publication": "2024-03-26",
+   "table_year": 2024
+  },
+  "2024-03-28": {
+   "cross_checked_by": [
+    "20240320_si.html"
+   ],
+   "delay_days": 12,
+   "due": "2024-04-02",
+   "publication": "2024-04-09",
+   "table_year": 2024
+  },
+  "2024-04-15": {
+   "cross_checked_by": [
+    "20240320_si.html"
+   ],
+   "delay_days": 9,
+   "due": "2024-04-17",
+   "publication": "2024-04-24",
+   "table_year": 2024
+  },
+  "2024-04-30": {
+   "cross_checked_by": [
+    "20240320_si.html"
+   ],
+   "delay_days": 9,
+   "due": "2024-05-02",
+   "publication": "2024-05-09",
+   "table_year": 2024
+  },
+  "2024-05-15": {
+   "cross_checked_by": [
+    "20240320_si.html"
+   ],
+   "delay_days": 9,
+   "due": "2024-05-17",
+   "publication": "2024-05-24",
+   "table_year": 2024
+  },
+  "2024-05-31": {
+   "cross_checked_by": [
+    "20240320_si.html"
+   ],
+   "delay_days": 11,
+   "due": "2024-06-04",
+   "publication": "2024-06-11",
+   "table_year": 2024
+  },
+  "2024-06-14": {
+   "cross_checked_by": [
+    "20240320_si.html"
+   ],
+   "delay_days": 12,
+   "due": "2024-06-18",
+   "publication": "2024-06-26",
+   "table_year": 2024
+  },
+  "2024-06-28": {
+   "cross_checked_by": [
+    "20240320_si.html"
+   ],
+   "delay_days": 12,
+   "due": "2024-07-02",
+   "publication": "2024-07-10",
+   "table_year": 2024
+  },
+  "2024-07-15": {
+   "cross_checked_by": [
+    "20240320_si.html"
+   ],
+   "delay_days": 9,
+   "due": "2024-07-17",
+   "publication": "2024-07-24",
+   "table_year": 2024
+  },
+  "2024-07-31": {
+   "cross_checked_by": [
+    "20240320_si.html"
+   ],
+   "delay_days": 9,
+   "due": "2024-08-02",
+   "publication": "2024-08-09",
+   "table_year": 2024
+  },
+  "2024-08-15": {
+   "cross_checked_by": [
+    "20240320_si.html"
+   ],
+   "delay_days": 11,
+   "due": "2024-08-19",
+   "publication": "2024-08-26",
+   "table_year": 2024
+  },
+  "2024-08-30": {
+   "cross_checked_by": [
+    "20240320_si.html"
+   ],
+   "delay_days": 12,
+   "due": "2024-09-04",
+   "publication": "2024-09-11",
+   "table_year": 2024
+  },
+  "2024-09-13": {
+   "cross_checked_by": [
+    "20240320_si.html"
+   ],
+   "delay_days": 11,
+   "due": "2024-09-17",
+   "publication": "2024-09-24",
+   "table_year": 2024
+  },
+  "2024-09-30": {
+   "cross_checked_by": [
+    "20240320_si.html"
+   ],
+   "delay_days": 9,
+   "due": "2024-10-02",
+   "publication": "2024-10-09",
+   "table_year": 2024
+  },
+  "2024-10-15": {
+   "cross_checked_by": [
+    "20240320_si.html"
+   ],
+   "delay_days": 9,
+   "due": "2024-10-17",
+   "publication": "2024-10-24",
+   "table_year": 2024
+  },
+  "2024-10-31": {
+   "cross_checked_by": [
+    "20240320_si.html",
+    "20250114_si.html",
+    "20250601_si.html",
+    "20251001_si.html"
+   ],
+   "delay_days": 11,
+   "due": "2024-11-04",
+   "publication": "2024-11-11",
+   "table_year": 2024
+  },
+  "2024-11-15": {
+   "cross_checked_by": [
+    "20240320_si.html",
+    "20250114_si.html",
+    "20250601_si.html",
+    "20251001_si.html"
+   ],
+   "delay_days": 11,
+   "due": "2024-11-19",
+   "publication": "2024-11-26",
+   "table_year": 2024
+  },
+  "2024-11-29": {
+   "cross_checked_by": [
+    "20240320_si.html",
+    "20250114_si.html",
+    "20250601_si.html",
+    "20251001_si.html"
+   ],
+   "delay_days": 11,
+   "due": "2024-12-03",
+   "publication": "2024-12-10",
+   "table_year": 2024
+  },
+  "2024-12-13": {
+   "cross_checked_by": [
+    "20240320_si.html",
+    "20250114_si.html",
+    "20250601_si.html",
+    "20251001_si.html"
+   ],
+   "delay_days": 11,
+   "due": "2024-12-17",
+   "publication": "2024-12-24",
+   "table_year": 2024
+  },
+  "2024-12-31": {
+   "cross_checked_by": [
+    "20240320_si.html",
+    "20250114_si.html",
+    "20250601_si.html",
+    "20251001_si.html"
+   ],
+   "delay_days": 10,
+   "due": "2025-01-03",
+   "publication": "2025-01-10",
+   "table_year": 2024
+  },
+  "2025-01-15": {
+   "cross_checked_by": [
+    "20250114_si.html",
+    "20250601_si.html",
+    "20251001_si.html"
+   ],
+   "delay_days": 12,
+   "due": "2025-01-17",
+   "publication": "2025-01-27",
+   "table_year": 2025
+  },
+  "2025-01-31": {
+   "cross_checked_by": [
+    "20250114_si.html",
+    "20250601_si.html",
+    "20251001_si.html"
+   ],
+   "delay_days": 11,
+   "due": "2025-02-04",
+   "publication": "2025-02-11",
+   "table_year": 2025
+  },
+  "2025-02-14": {
+   "cross_checked_by": [
+    "20250114_si.html",
+    "20250601_si.html",
+    "20251001_si.html"
+   ],
+   "delay_days": 12,
+   "due": "2025-02-19",
+   "publication": "2025-02-26",
+   "table_year": 2025
+  },
+  "2025-02-28": {
+   "cross_checked_by": [
+    "20250114_si.html",
+    "20250601_si.html",
+    "20251001_si.html"
+   ],
+   "delay_days": 11,
+   "due": "2025-03-04",
+   "publication": "2025-03-11",
+   "table_year": 2025
+  },
+  "2025-03-14": {
+   "cross_checked_by": [
+    "20250114_si.html",
+    "20250601_si.html",
+    "20251001_si.html"
+   ],
+   "delay_days": 11,
+   "due": "2025-03-18",
+   "publication": "2025-03-25",
+   "table_year": 2025
+  },
+  "2025-03-31": {
+   "cross_checked_by": [
+    "20250114_si.html",
+    "20250601_si.html",
+    "20251001_si.html"
+   ],
+   "delay_days": 9,
+   "due": "2025-04-02",
+   "publication": "2025-04-09",
+   "table_year": 2025
+  },
+  "2025-04-15": {
+   "cross_checked_by": [
+    "20250601_si.html",
+    "20251001_si.html"
+   ],
+   "delay_days": 10,
+   "due": "2025-04-17",
+   "publication": "2025-04-25",
+   "table_year": 2025,
+   "weekday_typo_in": [
+    "20250114_si.html"
+   ]
+  },
+  "2025-04-30": {
+   "cross_checked_by": [
+    "20250114_si.html",
+    "20250601_si.html",
+    "20251001_si.html"
+   ],
+   "delay_days": 9,
+   "due": "2025-05-02",
+   "publication": "2025-05-09",
+   "table_year": 2025
+  },
+  "2025-05-15": {
+   "cross_checked_by": [
+    "20250114_si.html",
+    "20250601_si.html",
+    "20251001_si.html"
+   ],
+   "delay_days": 12,
+   "due": "2025-05-19",
+   "publication": "2025-05-27",
+   "table_year": 2025
+  },
+  "2025-05-30": {
+   "cross_checked_by": [
+    "20250114_si.html",
+    "20250601_si.html",
+    "20251001_si.html"
+   ],
+   "delay_days": 11,
+   "due": "2025-06-03",
+   "publication": "2025-06-10",
+   "table_year": 2025
+  },
+  "2025-06-13": {
+   "cross_checked_by": [
+    "20250114_si.html",
+    "20250601_si.html",
+    "20251001_si.html"
+   ],
+   "delay_days": 12,
+   "due": "2025-06-17",
+   "publication": "2025-06-25",
+   "table_year": 2025
+  },
+  "2025-06-30": {
+   "cross_checked_by": [
+    "20250114_si.html",
+    "20250601_si.html",
+    "20251001_si.html"
+   ],
+   "delay_days": 10,
+   "due": "2025-07-02",
+   "publication": "2025-07-10",
+   "table_year": 2025
+  },
+  "2025-07-15": {
+   "cross_checked_by": [
+    "20250114_si.html",
+    "20250601_si.html",
+    "20251001_si.html"
+   ],
+   "delay_days": 9,
+   "due": "2025-07-17",
+   "publication": "2025-07-24",
+   "table_year": 2025
+  },
+  "2025-07-31": {
+   "cross_checked_by": [
+    "20250114_si.html",
+    "20250601_si.html",
+    "20251001_si.html"
+   ],
+   "delay_days": 11,
+   "due": "2025-08-04",
+   "publication": "2025-08-11",
+   "table_year": 2025
+  },
+  "2025-08-15": {
+   "cross_checked_by": [
+    "20250114_si.html",
+    "20250601_si.html",
+    "20251001_si.html"
+   ],
+   "delay_days": 11,
+   "due": "2025-08-19",
+   "publication": "2025-08-26",
+   "table_year": 2025
+  },
+  "2025-08-29": {
+   "cross_checked_by": [
+    "20250114_si.html",
+    "20250601_si.html",
+    "20251001_si.html"
+   ],
+   "delay_days": 12,
+   "due": "2025-09-03",
+   "publication": "2025-09-10",
+   "table_year": 2025
+  },
+  "2025-09-15": {
+   "cross_checked_by": [
+    "20250114_si.html",
+    "20250601_si.html",
+    "20251001_si.html"
+   ],
+   "delay_days": 9,
+   "due": "2025-09-17",
+   "publication": "2025-09-24",
+   "table_year": 2025
+  },
+  "2025-09-30": {
+   "cross_checked_by": [
+    "20250114_si.html",
+    "20250601_si.html",
+    "20251001_si.html"
+   ],
+   "delay_days": 9,
+   "due": "2025-10-02",
+   "publication": "2025-10-09",
+   "table_year": 2025
+  },
+  "2025-10-15": {
+   "cross_checked_by": [
+    "20250114_si.html",
+    "20250601_si.html",
+    "20251001_si.html"
+   ],
+   "delay_days": 9,
+   "due": "2025-10-17",
+   "publication": "2025-10-24",
+   "table_year": 2025
+  },
+  "2025-10-31": {
+   "cross_checked_by": [
+    "20250114_si.html",
+    "20250601_si.html",
+    "20251001_si.html"
+   ],
+   "delay_days": 11,
+   "due": "2025-11-04",
+   "publication": "2025-11-11",
+   "table_year": 2025
+  },
+  "2025-11-14": {
+   "cross_checked_by": [
+    "20250114_si.html",
+    "20250601_si.html",
+    "20251001_si.html",
+    "20260118_si.html",
+    "20260401_si.html",
+    "20260701_si.html"
+   ],
+   "delay_days": 11,
+   "due": "2025-11-18",
+   "publication": "2025-11-25",
+   "table_year": 2025
+  },
+  "2025-11-28": {
+   "cross_checked_by": [
+    "20250114_si.html",
+    "20250601_si.html",
+    "20251001_si.html",
+    "20260118_si.html",
+    "20260401_si.html",
+    "20260701_si.html"
+   ],
+   "delay_days": 11,
+   "due": "2025-12-02",
+   "publication": "2025-12-09",
+   "table_year": 2025
+  },
+  "2025-12-15": {
+   "cross_checked_by": [
+    "20250114_si.html",
+    "20250601_si.html",
+    "20251001_si.html",
+    "20260118_si.html",
+    "20260401_si.html",
+    "20260701_si.html"
+   ],
+   "delay_days": 9,
+   "due": "2025-12-17",
+   "publication": "2025-12-24",
+   "table_year": 2025
+  },
+  "2025-12-31": {
+   "cross_checked_by": [
+    "20250114_si.html",
+    "20250601_si.html",
+    "20251001_si.html",
+    "20260118_si.html",
+    "20260401_si.html",
+    "20260701_si.html"
+   ],
+   "delay_days": 12,
+   "due": "2026-01-05",
+   "publication": "2026-01-12",
+   "table_year": 2025
+  },
+  "2026-01-15": {
+   "cross_checked_by": [
+    "20260118_si.html",
+    "20260401_si.html",
+    "20260701_si.html"
+   ],
+   "delay_days": 12,
+   "due": "2026-01-20",
+   "publication": "2026-01-27",
+   "table_year": 2026
+  },
+  "2026-01-30": {
+   "cross_checked_by": [
+    "20260118_si.html",
+    "20260401_si.html",
+    "20260701_si.html"
+   ],
+   "delay_days": 11,
+   "due": "2026-02-03",
+   "publication": "2026-02-10",
+   "table_year": 2026
+  },
+  "2026-02-13": {
+   "cross_checked_by": [
+    "20260118_si.html",
+    "20260401_si.html",
+    "20260701_si.html"
+   ],
+   "delay_days": 12,
+   "due": "2026-02-18",
+   "publication": "2026-02-25",
+   "table_year": 2026
+  },
+  "2026-02-27": {
+   "cross_checked_by": [
+    "20260118_si.html",
+    "20260401_si.html",
+    "20260701_si.html"
+   ],
+   "delay_days": 11,
+   "due": "2026-03-03",
+   "publication": "2026-03-10",
+   "table_year": 2026
+  },
+  "2026-03-13": {
+   "cross_checked_by": [
+    "20260118_si.html",
+    "20260401_si.html",
+    "20260701_si.html"
+   ],
+   "delay_days": 11,
+   "due": "2026-03-17",
+   "publication": "2026-03-24",
+   "table_year": 2026
+  },
+  "2026-03-31": {
+   "cross_checked_by": [
+    "20260118_si.html",
+    "20260401_si.html",
+    "20260701_si.html"
+   ],
+   "delay_days": 10,
+   "due": "2026-04-02",
+   "publication": "2026-04-10",
+   "table_year": 2026
+  },
+  "2026-04-15": {
+   "cross_checked_by": [
+    "20260118_si.html",
+    "20260401_si.html",
+    "20260701_si.html"
+   ],
+   "delay_days": 9,
+   "due": "2026-04-17",
+   "publication": "2026-04-24",
+   "table_year": 2026
+  },
+  "2026-04-30": {
+   "cross_checked_by": [
+    "20260118_si.html",
+    "20260401_si.html",
+    "20260701_si.html"
+   ],
+   "delay_days": 11,
+   "due": "2026-05-04",
+   "publication": "2026-05-11",
+   "table_year": 2026
+  },
+  "2026-05-15": {
+   "cross_checked_by": [
+    "20260118_si.html",
+    "20260401_si.html",
+    "20260701_si.html"
+   ],
+   "delay_days": 12,
+   "due": "2026-05-19",
+   "publication": "2026-05-27",
+   "table_year": 2026
+  },
+  "2026-05-29": {
+   "cross_checked_by": [
+    "20260118_si.html",
+    "20260401_si.html",
+    "20260701_si.html"
+   ],
+   "delay_days": 11,
+   "due": "2026-06-02",
+   "publication": "2026-06-09",
+   "table_year": 2026
+  },
+  "2026-06-15": {
+   "cross_checked_by": [
+    "20260118_si.html",
+    "20260401_si.html",
+    "20260701_si.html"
+   ],
+   "delay_days": 10,
+   "due": "2026-06-17",
+   "publication": "2026-06-25",
+   "table_year": 2026
+  },
+  "2026-06-30": {
+   "cross_checked_by": [
+    "20260118_si.html",
+    "20260401_si.html",
+    "20260701_si.html"
+   ],
+   "delay_days": 10,
+   "due": "2026-07-02",
+   "publication": "2026-07-10",
+   "table_year": 2026
+  },
+  "2026-07-15": {
+   "cross_checked_by": [
+    "20260118_si.html",
+    "20260401_si.html",
+    "20260701_si.html"
+   ],
+   "delay_days": 9,
+   "due": "2026-07-17",
+   "publication": "2026-07-24",
+   "table_year": 2026
+  },
+  "2026-07-31": {
+   "cross_checked_by": [
+    "20260118_si.html",
+    "20260401_si.html",
+    "20260701_si.html"
+   ],
+   "delay_days": 11,
+   "due": "2026-08-04",
+   "publication": "2026-08-11",
+   "table_year": 2026
+  },
+  "2026-08-14": {
+   "cross_checked_by": [
+    "20260118_si.html",
+    "20260401_si.html",
+    "20260701_si.html"
+   ],
+   "delay_days": 11,
+   "due": "2026-08-18",
+   "publication": "2026-08-25",
+   "table_year": 2026
+  },
+  "2026-08-31": {
+   "cross_checked_by": [
+    "20260118_si.html",
+    "20260401_si.html",
+    "20260701_si.html"
+   ],
+   "delay_days": 10,
+   "due": "2026-09-02",
+   "publication": "2026-09-10",
+   "table_year": 2026
+  },
+  "2026-09-15": {
+   "cross_checked_by": [
+    "20260118_si.html",
+    "20260401_si.html",
+    "20260701_si.html"
+   ],
+   "delay_days": 9,
+   "due": "2026-09-17",
+   "publication": "2026-09-24",
+   "table_year": 2026
+  },
+  "2026-09-30": {
+   "cross_checked_by": [
+    "20260118_si.html",
+    "20260401_si.html",
+    "20260701_si.html"
+   ],
+   "delay_days": 9,
+   "due": "2026-10-02",
+   "publication": "2026-10-09",
+   "table_year": 2026
+  },
+  "2026-10-15": {
+   "cross_checked_by": [
+    "20260118_si.html",
+    "20260401_si.html",
+    "20260701_si.html"
+   ],
+   "delay_days": 11,
+   "due": "2026-10-19",
+   "publication": "2026-10-26",
+   "table_year": 2026
+  },
+  "2026-10-30": {
+   "cross_checked_by": [
+    "20260118_si.html",
+    "20260401_si.html",
+    "20260701_si.html"
+   ],
+   "delay_days": 11,
+   "due": "2026-11-03",
+   "publication": "2026-11-10",
+   "table_year": 2026
+  },
+  "2026-11-13": {
+   "cross_checked_by": [
+    "20260118_si.html",
+    "20260401_si.html",
+    "20260701_si.html"
+   ],
+   "delay_days": 11,
+   "due": "2026-11-17",
+   "publication": "2026-11-24",
+   "table_year": 2026
+  },
+  "2026-11-30": {
+   "cross_checked_by": [
+    "20260118_si.html",
+    "20260401_si.html",
+    "20260701_si.html"
+   ],
+   "delay_days": 9,
+   "due": "2026-12-02",
+   "publication": "2026-12-09",
+   "table_year": 2026
+  },
+  "2026-12-15": {
+   "cross_checked_by": [
+    "20260118_si.html",
+    "20260401_si.html",
+    "20260701_si.html"
+   ],
+   "delay_days": 9,
+   "due": "2026-12-17",
+   "publication": "2026-12-24",
+   "table_year": 2026
+  },
+  "2026-12-31": {
+   "cross_checked_by": [
+    "20260118_si.html",
+    "20260401_si.html",
+    "20260701_si.html"
+   ],
+   "delay_days": 12,
+   "due": "2027-01-05",
+   "publication": "2027-01-12",
+   "table_year": 2026,
+   "weekday_typo_all_sources": true
+  }
+ }
+}

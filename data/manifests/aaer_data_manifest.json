@@ -1,10 +1,10 @@
 {
   "manifest_version": 1,
   "root": "~/aaer-data",
-  "generated_at": "2026-07-12T17:45:37+00:00",
+  "generated_at": "2026-07-13T02:28:23+00:00",
   "generated_by": "tools/verify_manifest.py --write",
-  "file_count": 512,
-  "total_bytes": 577994268,
+  "file_count": 526,
+  "total_bytes": 579592432,
   "files": [
     {
       "path": "ADAM/edgar/CIK0001273685-submissions-001.json",
@@ -3069,6 +3069,105 @@
       "sha256": "e69fae2aca77a379697608d1741a5352a4f402256cd91d2934e4e92092b23969",
       "fetched_at": "2026-07-06T08:50:59+00:00",
       "source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000030554.json"
+    },
+    {
+      "path": "finra_schedules/20180111_si.html",
+      "size": 67432,
+      "sha256": "94adfacb5968a09296dae26e6961ff1d6b82cb164294018c8ce950603e7d154e",
+      "fetched_at": "2026-07-13T02:25:23+00:00",
+      "source_url": "https://web.archive.org/web/20180111063824/http://www.finra.org/industry/short-interest/short-interest-reporting-due-dates"
+    },
+    {
+      "path": "finra_schedules/20190121_si.html",
+      "size": 70426,
+      "sha256": "08aefbcb81ab076b2576b8b513da470f0d0165309343c8cec7e7649db5818543",
+      "fetched_at": "2026-07-13T02:25:24+00:00",
+      "source_url": "https://web.archive.org/web/20190121104853/http://www.finra.org/industry/short-interest/short-interest-reporting-due-dates"
+    },
+    {
+      "path": "finra_schedules/20200718_si.html",
+      "size": 124717,
+      "sha256": "623cacbbcecdd7540ce63d72a348c0969fd3eabd06aa2254c16c1f5df281bad4",
+      "fetched_at": "2026-07-13T02:25:26+00:00",
+      "source_url": "https://web.archive.org/web/20200718232030/https://www.finra.org/filing-reporting/regulatory-filing-systems/short-interest"
+    },
+    {
+      "path": "finra_schedules/20210116_si.html",
+      "size": 131587,
+      "sha256": "44790efc77c07773fdeb98ba790eb364509e0e129b9b50ff590f4c9605c47042",
+      "fetched_at": "2026-07-13T02:25:28+00:00",
+      "source_url": "https://web.archive.org/web/20210116171648/https://www.finra.org/filing-reporting/regulatory-filing-systems/short-interest"
+    },
+    {
+      "path": "finra_schedules/20220317_si.html",
+      "size": 120922,
+      "sha256": "3854e7d6e12a9aa243fdeb10cb99d7358e8adacd21509da8adaab4a6962ef8e0",
+      "fetched_at": "2026-07-13T02:25:38+00:00",
+      "source_url": "https://web.archive.org/web/20220317120000/https://www.finra.org/filing-reporting/regulatory-filing-systems/short-interest"
+    },
+    {
+      "path": "finra_schedules/20230127_si.html",
+      "size": 130348,
+      "sha256": "dcd3207cdf2c190f294aedf4c2b7670f05bcf3a3f4c0f1e95885365fa008980d",
+      "fetched_at": "2026-07-13T02:25:42+00:00",
+      "source_url": "https://web.archive.org/web/20230127120000/https://www.finra.org/filing-reporting/regulatory-filing-systems/short-interest"
+    },
+    {
+      "path": "finra_schedules/20240320_si.html",
+      "size": 146407,
+      "sha256": "cdd9b5e724881c2434f283a2c302a0995617aa5552d56e037b6e24df8f27751a",
+      "fetched_at": "2026-07-13T02:25:46+00:00",
+      "source_url": "https://web.archive.org/web/20240320120000/https://www.finra.org/filing-reporting/regulatory-filing-systems/short-interest"
+    },
+    {
+      "path": "finra_schedules/20250114_si.html",
+      "size": 153943,
+      "sha256": "f8173f81c8a39ad4b0be22e0f389ff015ba156302638b11704d1981a67ecc31b",
+      "fetched_at": "2026-07-13T02:25:51+00:00",
+      "source_url": "https://web.archive.org/web/20250114120000/https://www.finra.org/filing-reporting/regulatory-filing-systems/short-interest"
+    },
+    {
+      "path": "finra_schedules/20250601_si.html",
+      "size": 123614,
+      "sha256": "e85cdc7606c44af92cf492ac8117b775cd2cd7cc417d4cc0b40dbf30653197da",
+      "fetched_at": "2026-07-13T02:25:53+00:00",
+      "source_url": "https://web.archive.org/web/20250601120000/https://www.finra.org/filing-reporting/regulatory-filing-systems/short-interest"
+    },
+    {
+      "path": "finra_schedules/20251001_si.html",
+      "size": 142759,
+      "sha256": "c1058f48f44863f33422ef6e5d17893c19a1a3b8abfdb10775cbe34a46046985",
+      "fetched_at": "2026-07-13T02:25:55+00:00",
+      "source_url": "https://web.archive.org/web/20251001120000/https://www.finra.org/filing-reporting/regulatory-filing-systems/short-interest"
+    },
+    {
+      "path": "finra_schedules/20260118_si.html",
+      "size": 126235,
+      "sha256": "380258b56b464a2f16f967a6b86acb165268ab72468c7c721062fc44f900798c",
+      "fetched_at": "2026-07-13T02:25:57+00:00",
+      "source_url": "https://web.archive.org/web/20260118120000/https://www.finra.org/filing-reporting/regulatory-filing-systems/short-interest"
+    },
+    {
+      "path": "finra_schedules/20260401_si.html",
+      "size": 130018,
+      "sha256": "f7fd5c533e3eb7619cdb79ba52d5c0aea050847442c26c533e09045b1b98e1ae",
+      "fetched_at": "2026-07-13T02:25:59+00:00",
+      "source_url": "https://web.archive.org/web/20260401120000/https://www.finra.org/filing-reporting/regulatory-filing-systems/short-interest"
+    },
+    {
+      "path": "finra_schedules/20260701_si.html",
+      "size": 126429,
+      "sha256": "b1e2b5eb156075acbe3566a46145aec0783a6a62f5ab28f9b2c4e5243807a69b",
+      "fetched_at": "2026-07-13T02:26:51+00:00",
+      "source_url": "https://web.archive.org/web/20260701120000/https://www.finra.org/filing-reporting/regulatory-filing-systems/short-interest"
+    },
+    {
+      "path": "finra_schedules/checksums.log",
+      "size": 3327,
+      "sha256": "12dc2af94ae113170d97b63555a8ac7bcc50b39af7fb97acd4464d874ac7448f",
+      "fetched_at": "2026-07-13T02:26:51+00:00",
+      "source_url": null,
+      "derived_from": "finra_schedules/ (수집 로그)"
     },
     {
       "path": "reference/cik-lookup-data.txt",

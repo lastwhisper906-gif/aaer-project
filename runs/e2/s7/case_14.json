@@ -1,0 +1,278 @@
+{
+  "case_id": "case_14",
+  "run_id": "perturbed-case_14-r1",
+  "model": "claude-sonnet-5",
+  "pipeline_version": "a1c142b2ca0b3b29f3ed27c3f8a2381649da80fb",
+  "run_timestamp": "2026-07-12T21:22:23.340159+00:00",
+  "documents_used": [
+    {
+      "accession_no": "0001144204-09-046684",
+      "form_type": "10-Q/A",
+      "filing_date": "2009-09-01"
+    },
+    {
+      "accession_no": "0001144204-09-056412",
+      "form_type": "10-Q",
+      "filing_date": "2009-11-04"
+    },
+    {
+      "accession_no": "0001144204-10-009642",
+      "form_type": "10-K",
+      "filing_date": "2010-02-24"
+    },
+    {
+      "accession_no": "0001144204-10-024521",
+      "form_type": "10-Q",
+      "filing_date": "2010-05-05"
+    },
+    {
+      "accession_no": "0001144204-10-041076",
+      "form_type": "10-Q",
+      "filing_date": "2010-08-04"
+    },
+    {
+      "accession_no": "0001144204-10-057166",
+      "form_type": "10-Q",
+      "filing_date": "2010-11-03"
+    },
+    {
+      "accession_no": "0001144204-11-010358",
+      "form_type": "10-K",
+      "filing_date": "2011-02-23"
+    },
+    {
+      "accession_no": "0001144204-11-025965",
+      "form_type": "10-Q",
+      "filing_date": "2011-05-04"
+    },
+    {
+      "accession_no": "0001144204-11-050441",
+      "form_type": "10-Q/A",
+      "filing_date": "2011-08-30"
+    },
+    {
+      "accession_no": "0001144204-11-060744",
+      "form_type": "10-Q",
+      "filing_date": "2011-11-02"
+    }
+  ],
+  "checklist": [
+    {
+      "item_id": "CL1",
+      "question": "Did receivables grow materially faster than revenue across consecutive periods?",
+      "finding": "flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "AccountsReceivableNetCurrent=1,353,237,364.98 (2008-12-27) -> 1,595,635,781.40 (2009-12-26), a +17.9% increase",
+          "source_accession_no": "0001144204-11-010358",
+          "location": "10-K FY2009 balance sheet, AccountsReceivableNetCurrent"
+        },
+        {
+          "quote": "SalesRevenueNet=6,378,229,609.75 (FY2008, 2007-12-30 to 2008-12-27) -> 5,378,550,859.45 (FY2009, 2008-12-28 to 2009-12-26), a -15.7% decline",
+          "source_accession_no": "0001144204-11-010358",
+          "location": "10-K FY2009 income statement, SalesRevenueNet"
+        }
+      ]
+    },
+    {
+      "item_id": "CL2",
+      "question": "Did non-current 'soft' assets (intangibles, other assets, capitalized items) grow materially faster than the business overall?",
+      "finding": "insufficient_data",
+      "confidence": "low",
+      "evidence": [
+        {
+          "quote": "No IntangibleAssets, Goodwill, OtherAssetsNoncurrent, or CapitalizedSoftware concepts were provided in the dataset for any period.",
+          "source_accession_no": "N/A",
+          "location": "Series list - absence of intangible/other-asset concepts"
+        }
+      ]
+    },
+    {
+      "item_id": "CL3",
+      "question": "Is there a persistent divergence between net income and operating cash flow?",
+      "finding": "no_flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "NetCashProvidedByUsedInOperatingActivities=1,997,864,290.27 (FY2009) vs ProfitLoss=1,285,018,828.66 (FY2009)",
+          "source_accession_no": "0001144204-11-010358",
+          "location": "10-K FY2009 cash flow statement / income statement"
+        },
+        {
+          "quote": "NetCashProvidedByUsedInOperatingActivities=1,406,751,978.21 (FY2010) vs ProfitLoss=1,067,157,983.22 (FY2010)",
+          "source_accession_no": "0001144204-11-010358",
+          "location": "10-K FY2010 cash flow statement / income statement"
+        }
+      ]
+    },
+    {
+      "item_id": "CL4",
+      "question": "Do inventory levels or gross margins show trends inconsistent with revenue?",
+      "finding": "no_flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "GrossProfit=2,636,138,682.68 / SalesRevenueNet=5,378,550,859.45 = 49.0% gross margin (FY2009) vs GrossProfit=2,835,849,173.38 / SalesRevenueNet=6,378,229,609.75 = 44.5% (FY2008)",
+          "source_accession_no": "0001144204-11-010358",
+          "location": "10-K FY2009 income statement"
+        },
+        {
+          "quote": "InventoryNet=776,381,743.10 (2008-12-27) declined to 565,773,372.71 (2009-12-26), consistent with the revenue decline that year",
+          "source_accession_no": "0001144204-11-010358",
+          "location": "10-K FY2009 balance sheet, InventoryNet"
+        }
+      ]
+    },
+    {
+      "item_id": "CL5",
+      "question": "Is the earnings trajectory unusually smooth relative to the volatility of revenue and cash flow?",
+      "finding": "no_flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "SalesRevenueNet ranged from 786,887,153.08 (Q1 2010) to 1,330,317,134.27 (Q2 2010) and NetIncomeLoss/ProfitLoss ranged from 68,141,867.82 (Q1 2010) to 510,305,538.16 (Q2 2010 restated period Q3 2010)",
+          "source_accession_no": "0001144204-11-025965",
+          "location": "10-Q quarterly income statement figures"
+        }
+      ]
+    },
+    {
+      "item_id": "CL6",
+      "question": "Did liability, allowance, or reserve balances decline (or fail to grow) despite growing business activity?",
+      "finding": "flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "AllowanceForDoubtfulAccountsReceivableCurrent=77,415,105.48 (2008-12-27) -> 66,944,378.87 (2009-12-26) -> 58,089,167.08 (2010-12-25), a steadily declining allowance-to-receivables ratio (5.7% -> 4.2% -> 4.3%) even as AccountsReceivableNetCurrent rose to 1,595,635,781.40 in 2009",
+          "source_accession_no": "0001144204-11-010358",
+          "location": "10-K FY2010 allowance disclosure"
+        },
+        {
+          "quote": "ProductWarrantyAccrualClassifiedCurrent=159,587,308.87 (2009-12-26) fell to 91,062,098.54 (2010-12-25), a ~43% decline, while PropertyPlantAndEquipmentGross grew from 1,168,845,970.82 (2009-12-26) to 1,237,117,444.92 (2010-12-25) and InventoryNet grew from 565,773,372.71 to 707,498,746.44 over the same period",
+          "source_accession_no": "0001144204-11-060744",
+          "location": "10-Q warranty accrual and PP&E/inventory series"
+        }
+      ]
+    },
+    {
+      "item_id": "CL7",
+      "question": "Does the filing chronology show irregularities (late filings/NT forms, amendments, unusual 8-K frequency)?",
+      "finding": "flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "10-Q/A filed 2009-09-01 (accession 0001144204-09-046684) amending the original Q2 2009 10-Q",
+          "source_accession_no": "0001144204-09-046684",
+          "location": "Filing chronology"
+        },
+        {
+          "quote": "10-Q/A filed 2011-08-30 (accession 0001144204-11-050441) amending the Q2 2011 10-Q",
+          "source_accession_no": "0001144204-11-050441",
+          "location": "Filing chronology"
+        },
+        {
+          "quote": "15-12G deregistration filings on 2010-05-04 and 2010-06-28, plus a 25-NSE filing on 2010-06-25, occurring in close proximity to routine periodic filings",
+          "source_accession_no": "N/A",
+          "location": "Filing chronology list"
+        }
+      ]
+    },
+    {
+      "item_id": "CL8",
+      "question": "Is the provided data sufficient in coverage and length for the above assessments?",
+      "finding": "no_flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "Quarterly and annual data spans fiscal years 2006-2011 (e.g., SalesRevenueNet from FY2007 through Q3 2011, AccountsReceivableNetCurrent from 2008-12-27 through 2011-09-24) with corresponding cash flow and balance sheet items, sufficient for trend analysis, though intangible-asset and deferred-tax concepts are absent, limiting CL2 assessment.",
+          "source_accession_no": "0001144204-11-060744",
+          "location": "Full series compilation"
+        }
+      ]
+    }
+  ],
+  "misstatement_probability": 58,
+  "mechanism_hypotheses": [
+    {
+      "affected_line_items": [
+        "AccountsReceivableNetCurrent",
+        "SalesRevenueNet",
+        "AllowanceForDoubtfulAccountsReceivableCurrent"
+      ],
+      "direction": "overstated",
+      "accounting_treatment": "Potential aggressive revenue recognition or extended credit terms during the 2009 industry recovery, causing receivables to grow ~18% even as reported annual revenue fell ~16%, while the bad-debt allowance as a percentage of receivables simultaneously declined (5.7%->4.2%), suggesting insufficient reserving against a receivables base that outpaced the sales trend.",
+      "rationale_evidence": [
+        {
+          "quote": "AccountsReceivableNetCurrent=1,353,237,364.98 (2008-12-27) -> 1,595,635,781.40 (2009-12-26)",
+          "source_accession_no": "0001144204-11-010358",
+          "location": "10-K FY2009 balance sheet"
+        },
+        {
+          "quote": "SalesRevenueNet=6,378,229,609.75 (FY2008) -> 5,378,550,859.45 (FY2009)",
+          "source_accession_no": "0001144204-11-010358",
+          "location": "10-K FY2009 income statement"
+        },
+        {
+          "quote": "AllowanceForDoubtfulAccountsReceivableCurrent=77,415,105.48 (2008-12-27) -> 66,944,378.87 (2009-12-26)",
+          "source_accession_no": "0001144204-11-010358",
+          "location": "10-K FY2010 allowance disclosure"
+        }
+      ]
+    },
+    {
+      "affected_line_items": [
+        "ProductWarrantyAccrualClassifiedCurrent",
+        "AccruedLiabilitiesCurrent",
+        "OperatingIncomeLoss",
+        "NetIncomeLoss"
+      ],
+      "direction": "understated",
+      "accounting_treatment": "Reduction/release of warranty and accrued-liability reserves not proportionate to underlying business growth (inventory and PP&E continued to expand), which if driven by discretionary reserve reductions rather than genuine reductions in warranty exposure, would understate liabilities and overstate operating income/net income in the periods of release.",
+      "rationale_evidence": [
+        {
+          "quote": "ProductWarrantyAccrualClassifiedCurrent=159,587,308.87 (2009-12-26) -> 91,062,098.54 (2010-12-25)",
+          "source_accession_no": "0001144204-11-060744",
+          "location": "10-Q warranty accrual series"
+        },
+        {
+          "quote": "AccruedLiabilitiesCurrent=257,425,442.48 (2009-09-26) fell to 73,698,508.66 (2009-12-26), a 71% one-quarter drop",
+          "source_accession_no": "0001144204-11-010358",
+          "location": "10-K/10-Q accrued liabilities series"
+        },
+        {
+          "quote": "PropertyPlantAndEquipmentGross=1,168,845,970.82 (2009-12-26) -> 1,237,117,444.92 (2010-12-25)",
+          "source_accession_no": "0001144204-11-010358",
+          "location": "10-K FY2010 PP&E disclosure"
+        }
+      ]
+    },
+    {
+      "affected_line_items": [
+        "Multiple line items in previously filed 10-Q statements (unspecified)"
+      ],
+      "direction": "timing_shift",
+      "accounting_treatment": "Two quarterly reports were subsequently amended (10-Q/A), indicating that originally filed figures required correction; while the specific line items restated are not detailed in the provided series, the existence of restatements is a direct historical indicator that reported figures in at least two quarters were initially misstated and later revised.",
+      "rationale_evidence": [
+        {
+          "quote": "10-Q/A filed 2009-09-01 (accession 0001144204-09-046684) amending the Q2 2009 10-Q",
+          "source_accession_no": "0001144204-09-046684",
+          "location": "Filing chronology"
+        },
+        {
+          "quote": "10-Q/A filed 2011-08-30 (accession 0001144204-11-050441) amending the Q2 2011 10-Q",
+          "source_accession_no": "0001144204-11-050441",
+          "location": "Filing chronology"
+        }
+      ]
+    }
+  ],
+  "overall": {
+    "risk_tier": "elevated",
+    "top_signals": [
+      "Receivables grew ~18% in FY2009 while revenue declined ~16%, alongside a falling allowance-for-doubtful-accounts ratio (5.7%->4.2%->4.3%), suggesting possible aggressive revenue recognition or under-reserving.",
+      "Warranty accrual dropped ~43% (159.6M to 91.1M) between FY2009 and FY2010 even as inventory and gross PP&E continued to grow, and accrued liabilities swung wildly (257.4M to 73.7M in one quarter), suggesting possible reserve releases boosting reported earnings.",
+      "Two 10-Q/A restatements (2009-09-01 and 2011-08-30) indicate at least two quarters of previously filed financial statements required correction, a direct historical red flag for financial reporting reliability."
+    ]
+  }
+}

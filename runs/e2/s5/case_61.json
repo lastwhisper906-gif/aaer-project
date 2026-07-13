@@ -1,0 +1,364 @@
+{
+  "case_id": "case_61",
+  "run_id": "perturbed-case_61-r1",
+  "model": "claude-sonnet-5",
+  "pipeline_version": "e59fde6137e3228ee56410d459b9fe1ce1d673e2",
+  "run_timestamp": "2026-07-12T20:19:00.853254+00:00",
+  "documents_used": [
+    {
+      "accession_no": "0001008886-12-000071",
+      "form_type": "10-Q",
+      "filing_date": "2012-05-10"
+    },
+    {
+      "accession_no": "0001008886-12-000085",
+      "form_type": "10-Q/A",
+      "filing_date": "2012-05-25"
+    },
+    {
+      "accession_no": "0001008886-12-000086",
+      "form_type": "10-Q/A",
+      "filing_date": "2012-05-25"
+    },
+    {
+      "accession_no": "0001008886-12-000111",
+      "form_type": "10-K",
+      "filing_date": "2012-09-07"
+    },
+    {
+      "accession_no": "0001008886-12-000126",
+      "form_type": "10-Q",
+      "filing_date": "2012-11-05"
+    },
+    {
+      "accession_no": "0001008886-13-000015",
+      "form_type": "10-Q",
+      "filing_date": "2013-02-07"
+    },
+    {
+      "accession_no": "0001008886-13-000045",
+      "form_type": "10-Q",
+      "filing_date": "2013-05-09"
+    },
+    {
+      "accession_no": "0001008886-13-000085",
+      "form_type": "10-K",
+      "filing_date": "2013-09-13"
+    },
+    {
+      "accession_no": "0001008886-13-000123",
+      "form_type": "10-Q",
+      "filing_date": "2013-11-12"
+    },
+    {
+      "accession_no": "0001008886-14-000016",
+      "form_type": "10-Q",
+      "filing_date": "2014-02-10"
+    },
+    {
+      "accession_no": "0001008886-14-000064",
+      "form_type": "10-Q",
+      "filing_date": "2014-05-12"
+    },
+    {
+      "accession_no": "0001008886-14-000114",
+      "form_type": "10-K",
+      "filing_date": "2014-09-15"
+    },
+    {
+      "accession_no": "0001008886-14-000154",
+      "form_type": "10-Q",
+      "filing_date": "2014-11-10"
+    },
+    {
+      "accession_no": "0001008886-15-000017",
+      "form_type": "10-Q",
+      "filing_date": "2015-02-09"
+    },
+    {
+      "accession_no": "0001008886-15-000115",
+      "form_type": "10-Q",
+      "filing_date": "2015-05-11"
+    },
+    {
+      "accession_no": "0001008886-15-000210",
+      "form_type": "10-K",
+      "filing_date": "2015-09-10"
+    },
+    {
+      "accession_no": "0001008886-15-000248",
+      "form_type": "10-Q",
+      "filing_date": "2015-11-09"
+    },
+    {
+      "accession_no": "0001008886-16-000271",
+      "form_type": "10-Q",
+      "filing_date": "2016-02-09"
+    }
+  ],
+  "checklist": [
+    {
+      "item_id": "CL1",
+      "question": "Did receivables grow materially faster than revenue across consecutive periods?",
+      "finding": "flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "AccountsReceivableNetCurrent=50159530.24 (2011-06-30)",
+          "source_accession_no": "0001008886-12-000111",
+          "location": "10-K balance sheet"
+        },
+        {
+          "quote": "Revenues=440385997.23 (2010-07-01 to 2011-06-30)",
+          "source_accession_no": "0001008886-13-000085",
+          "location": "10-K income statement"
+        },
+        {
+          "quote": "AccountsReceivableNetCurrent=101439692.72 (2015-06-30)",
+          "source_accession_no": "0001008886-16-000271",
+          "location": "10-Q balance sheet"
+        },
+        {
+          "quote": "Revenues=698074839.24 (2014-07-01 to 2015-06-30)",
+          "source_accession_no": "0001008886-15-000210",
+          "location": "10-K income statement"
+        }
+      ]
+    },
+    {
+      "item_id": "CL2",
+      "question": "Did non-current 'soft' assets (intangibles, other assets, capitalized items) grow materially faster than the business overall?",
+      "finding": "flag",
+      "confidence": "high",
+      "evidence": [
+        {
+          "quote": "Goodwill=12943844.91 (2012-06-30)",
+          "source_accession_no": "0001008886-13-000085",
+          "location": "10-K balance sheet"
+        },
+        {
+          "quote": "Goodwill=45661501.51 (2015-12-31)",
+          "source_accession_no": "0001008886-16-000271",
+          "location": "10-Q balance sheet"
+        },
+        {
+          "quote": "OtherAssetsNoncurrent=1318254.11 (2011-06-30)",
+          "source_accession_no": "0001008886-12-000111",
+          "location": "10-K balance sheet"
+        },
+        {
+          "quote": "OtherAssetsNoncurrent=9261878.25 (2015-12-31)",
+          "source_accession_no": "0001008886-16-000271",
+          "location": "10-Q balance sheet"
+        },
+        {
+          "quote": "Revenues=698074839.24 (2014-07-01 to 2015-06-30) vs Revenues=464180445.21 (2011-07-01 to 2012-06-30)",
+          "source_accession_no": "0001008886-15-000210",
+          "location": "10-K income statement"
+        }
+      ]
+    },
+    {
+      "item_id": "CL3",
+      "question": "Is there a persistent divergence between net income and operating cash flow?",
+      "finding": "flag",
+      "confidence": "high",
+      "evidence": [
+        {
+          "quote": "NetIncomeLoss=8809285.42 (2015-07-01 to 2015-09-30)",
+          "source_accession_no": "0001008886-15-000248",
+          "location": "10-Q income statement"
+        },
+        {
+          "quote": "NetCashProvidedByUsedInOperatingActivities=-17675144.94 (2015-07-01 to 2015-09-30)",
+          "source_accession_no": "0001008886-15-000248",
+          "location": "10-Q cash flow statement"
+        },
+        {
+          "quote": "NetIncomeLoss=28842718.0 (2014-07-01 to 2015-06-30)",
+          "source_accession_no": "0001008886-15-000210",
+          "location": "10-K income statement"
+        },
+        {
+          "quote": "NetCashProvidedByUsedInOperatingActivities=34537327.77 (2014-07-01 to 2015-06-30) vs prior year NetCashProvidedByUsedInOperatingActivities=54494811.55 (2013-07-01 to 2014-06-30) with NetIncomeLoss=23777398.25 (2013-07-01 to 2014-06-30)",
+          "source_accession_no": "0001008886-15-000210",
+          "location": "10-K cash flow statement"
+        }
+      ]
+    },
+    {
+      "item_id": "CL4",
+      "question": "Do inventory levels or gross margins show trends inconsistent with revenue?",
+      "finding": "insufficient_data",
+      "confidence": "low",
+      "evidence": [
+        {
+          "quote": "CostOfGoodsAndServicesSold=2741131.57 (2010-07-01 to 2011-06-30)",
+          "source_accession_no": "0001008886-13-000085",
+          "location": "10-K income statement - last available COGS annual figure, no later COGS data provided"
+        },
+        {
+          "quote": "InventoryNet=5110269.03 (2011-06-30) declining to InventoryNet=1439152.2 (2015-06-30) while Revenues nearly tripled from 440385997.23 (FY2011) to 698074839.24 (FY2015)",
+          "source_accession_no": "0001008886-12-000111",
+          "location": "10-K/10-Q balance sheets"
+        }
+      ]
+    },
+    {
+      "item_id": "CL5",
+      "question": "Is the earnings trajectory unusually smooth relative to the volatility of revenue and cash flow?",
+      "finding": "flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "NetIncomeLoss quarterly progression: 5088569.37 (Jul-Sep2013), 3972587.06 (Oct-Dec2013), 2698507.24 (Jan-Mar2014), 12017734.58 (Apr-Jun2014), 6237101.18 (Jul-Sep2014), 6620720.10 (Oct-Dec2014), 6658694.50 (Jan-Mar2015), 9326977.22 (Apr-Jun2015), 8809285.42 (Jul-Sep2015), 5126543.77 (Oct-Dec2015)",
+          "source_accession_no": "0001008886-16-000271",
+          "location": "10-K/10-Q income statements, multiple filings"
+        },
+        {
+          "quote": "NetCashProvidedByUsedInOperatingActivities quarterly: 12309904.95 (Jul-Sep2013), 6857866.34 (Jul-Sep2014), -17675144.94 (Jul-Sep2015)",
+          "source_accession_no": "0001008886-15-000248",
+          "location": "10-Q cash flow statements"
+        }
+      ]
+    },
+    {
+      "item_id": "CL6",
+      "question": "Did liability, allowance, or reserve balances decline (or fail to grow) despite growing business activity?",
+      "finding": "flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "AllowanceForDoubtfulAccountsReceivableCurrent=809862.17 (2011-06-30) against AccountsReceivableNetCurrent=50159530.24 (2011-06-30) = ~1.61% ratio",
+          "source_accession_no": "0001008886-12-000111",
+          "location": "10-K balance sheet"
+        },
+        {
+          "quote": "AllowanceForDoubtfulAccountsReceivableCurrent=776537.70 (2015-06-30) against AccountsReceivableNetCurrent=101439692.72 (2015-06-30) = ~0.77% ratio",
+          "source_accession_no": "0001008886-16-000271",
+          "location": "10-Q balance sheet"
+        }
+      ]
+    },
+    {
+      "item_id": "CL7",
+      "question": "Does the filing chronology show irregularities (late filings/NT forms, amendments, unusual 8-K frequency)?",
+      "finding": "flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "10-K/A filing_date=2012-05-18",
+          "source_accession_no": "n/a",
+          "location": "filing_chronology"
+        },
+        {
+          "quote": "10-Q/A filing_date=2012-05-25 (two separate 10-Q/A filings for different periods filed same day)",
+          "source_accession_no": "0001008886-12-000085; 0001008886-12-000086",
+          "location": "filing_chronology"
+        },
+        {
+          "quote": "10-K/A filing_date=2015-03-30, roughly 6.5 months after the original 10-K filing_date=2014-09-15",
+          "source_accession_no": "n/a",
+          "location": "filing_chronology"
+        }
+      ]
+    },
+    {
+      "item_id": "CL8",
+      "question": "Is the provided data sufficient in coverage and length for the above assessments?",
+      "finding": "no_flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "Revenues series spans 2009-07-01 through 2015-12-31 across annual and quarterly periods with consistent filer accession 0001008886-xx",
+          "source_accession_no": "0001008886-16-000271",
+          "location": "financial_series_point_in_time.Revenues"
+        },
+        {
+          "quote": "CostOfGoodsAndServicesSold series only populated through 2011-03-31/2010-07-01-2011-06-30, with no data thereafter, limiting margin-trend analysis",
+          "source_accession_no": "0001008886-13-000085",
+          "location": "financial_series_point_in_time.CostOfGoodsAndServicesSold"
+        }
+      ]
+    }
+  ],
+  "misstatement_probability": 58,
+  "mechanism_hypotheses": [
+    {
+      "affected_line_items": [
+        "AccountsReceivableNetCurrent",
+        "AllowanceForDoubtfulAccountsReceivableCurrent",
+        "Revenues",
+        "NetCashProvidedByUsedInOperatingActivities"
+      ],
+      "direction": "overstated",
+      "accounting_treatment": "Accrual-basis revenue recognition combined with extended credit/collections allowed receivables to grow faster than revenue while the bad-debt allowance ratio shrank (from ~1.6% to ~0.77% of AR), and operating cash flow diverged sharply from net income, turning negative in the quarter ended 2015-09-30 despite positive reported earnings — consistent with revenue/receivables being recognized ahead of cash collectability or with an under-reserved allowance overstating net receivables and income.",
+      "rationale_evidence": [
+        {
+          "quote": "AccountsReceivableNetCurrent=101439692.72 (2015-06-30) vs AllowanceForDoubtfulAccountsReceivableCurrent=776537.70 (2015-06-30)",
+          "source_accession_no": "0001008886-16-000271",
+          "location": "10-Q balance sheet"
+        },
+        {
+          "quote": "NetIncomeLoss=8809285.42 (2015-07-01 to 2015-09-30) vs NetCashProvidedByUsedInOperatingActivities=-17675144.94 (2015-07-01 to 2015-09-30)",
+          "source_accession_no": "0001008886-15-000248",
+          "location": "10-Q cash flow statement"
+        }
+      ]
+    },
+    {
+      "affected_line_items": [
+        "Goodwill",
+        "OtherAssetsNoncurrent",
+        "Assets"
+      ],
+      "direction": "overstated",
+      "accounting_treatment": "Rapid accumulation of goodwill and other non-current 'soft' assets (goodwill roughly tripled from ~13.0M to ~45.7M, other assets grew ~7x from 1.3M to 9.3M) far outpacing revenue growth (~1.5x over the same window) suggests acquisition-driven purchase accounting with possible overpayment/insufficient subsequent impairment testing, risking overstated non-current assets.",
+      "rationale_evidence": [
+        {
+          "quote": "Goodwill=12943844.91 (2012-06-30)",
+          "source_accession_no": "0001008886-13-000085",
+          "location": "10-K balance sheet"
+        },
+        {
+          "quote": "Goodwill=45661501.51 (2015-12-31)",
+          "source_accession_no": "0001008886-16-000271",
+          "location": "10-Q balance sheet"
+        },
+        {
+          "quote": "OtherAssetsNoncurrent=1318254.11 (2011-06-30) to OtherAssetsNoncurrent=9261878.25 (2015-12-31)",
+          "source_accession_no": "0001008886-16-000271",
+          "location": "10-Q/10-K balance sheets"
+        }
+      ]
+    },
+    {
+      "affected_line_items": [
+        "Multiple prior-period financial statements (unspecified)"
+      ],
+      "direction": "timing_shift",
+      "accounting_treatment": "History of a 10-K/A and multiple 10-Q/A filings clustered in mid-2012, plus a further 10-K/A filed roughly 6.5 months after the original FY2014 10-K, indicates prior-period corrections/restatement activity outside the normal filing cycle, which raises the base-rate likelihood of recurring or unresolved misstatement risk in current filings.",
+      "rationale_evidence": [
+        {
+          "quote": "10-K/A filing_date=2012-05-18 and 10-Q/A filing_date=2012-05-25 (x2)",
+          "source_accession_no": "n/a",
+          "location": "filing_chronology"
+        },
+        {
+          "quote": "10-K/A filing_date=2015-03-30 following original 10-K filing_date=2014-09-15",
+          "source_accession_no": "n/a",
+          "location": "filing_chronology"
+        }
+      ]
+    }
+  ],
+  "overall": {
+    "risk_tier": "elevated",
+    "top_signals": [
+      "Operating cash flow turned sharply negative (-17.7M) in the quarter ended 2015-09-30 despite positive net income (8.8M), and the FY2015 OCF/NI ratio compressed markedly versus prior years",
+      "Allowance for doubtful accounts as a percentage of receivables declined from ~1.6% (2011) to ~0.77% (2015-06-30) even as gross receivables nearly doubled",
+      "Goodwill and other non-current assets grew 3x-7x while revenue grew only ~1.5x over the comparable window, raising impairment/overstatement risk",
+      "Filing history shows a cluster of 10-K/A and 10-Q/A amendments in 2012 and a further 10-K/A filed ~6.5 months after the original FY2014 10-K, indicating a history of restated/corrected financials"
+    ]
+  }
+}

@@ -124,6 +124,16 @@ def build_manifest() -> dict:
                 entry["derived_from"] = "short_interest/ (수집 로그)"
             else:
                 unattributed.append(str(rel))
+        elif ticker == "finra_schedules":
+            # 공표일 일정표 Wayback 아카이브 (Q-M02 구현) — 정본 URL 표는
+            # tools/dissemination_schedules.SNAPSHOTS (사전 등록 목록)
+            from dissemination_schedules import SNAPSHOTS
+            if path.name in SNAPSHOTS:
+                entry["source_url"] = SNAPSHOTS[path.name]
+            elif path.name == "checksums.log":
+                entry["derived_from"] = "finra_schedules/ (수집 로그)"
+            else:
+                unattributed.append(str(rel))
         elif path.suffix == ".txt":  # pdf/html에서 로컬 추출한 파생물
             entry["derived_from"] = str(rel)[: -len(".txt")]
         elif ticker == "_aaer_index":

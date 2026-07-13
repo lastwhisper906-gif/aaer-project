@@ -1,0 +1,310 @@
+{
+  "case_id": "case_14",
+  "run_id": "perturbed-case_14-r1",
+  "model": "claude-sonnet-5",
+  "pipeline_version": "a1c142b2ca0b3b29f3ed27c3f8a2381649da80fb",
+  "run_timestamp": "2026-07-12T21:19:01.063807+00:00",
+  "documents_used": [
+    {
+      "accession_no": "0001144204-09-046684",
+      "form_type": "10-Q/A",
+      "filing_date": "2009-09-01"
+    },
+    {
+      "accession_no": "0001144204-09-056412",
+      "form_type": "10-Q",
+      "filing_date": "2009-11-04"
+    },
+    {
+      "accession_no": "0001144204-10-009642",
+      "form_type": "10-K",
+      "filing_date": "2010-02-24"
+    },
+    {
+      "accession_no": "0001144204-10-024521",
+      "form_type": "10-Q",
+      "filing_date": "2010-05-05"
+    },
+    {
+      "accession_no": "0001144204-10-041076",
+      "form_type": "10-Q",
+      "filing_date": "2010-08-04"
+    },
+    {
+      "accession_no": "0001144204-10-057166",
+      "form_type": "10-Q",
+      "filing_date": "2010-11-03"
+    },
+    {
+      "accession_no": "0001144204-11-010358",
+      "form_type": "10-K",
+      "filing_date": "2011-02-23"
+    },
+    {
+      "accession_no": "0001144204-11-025965",
+      "form_type": "10-Q",
+      "filing_date": "2011-05-04"
+    },
+    {
+      "accession_no": "0001144204-11-050441",
+      "form_type": "10-Q/A",
+      "filing_date": "2011-08-30"
+    },
+    {
+      "accession_no": "0001144204-11-060744",
+      "form_type": "10-Q",
+      "filing_date": "2011-11-02"
+    },
+    {
+      "accession_no": "0001144204-12-012007",
+      "form_type": "10-K",
+      "filing_date": "2012-02-29"
+    },
+    {
+      "accession_no": "0001144204-12-027190",
+      "form_type": "10-Q",
+      "filing_date": "2012-05-09"
+    }
+  ],
+  "checklist": [
+    {
+      "item_id": "CL1",
+      "question": "Did receivables grow materially faster than revenue across consecutive periods?",
+      "finding": "flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "AccountsReceivableNetCurrent end 2008-12-27 = 1353237364.98",
+          "source_accession_no": "0001144204-10-009642",
+          "location": "10-K balance sheet, FY2008 comparative"
+        },
+        {
+          "quote": "AccountsReceivableNetCurrent end 2009-12-26 = 1595635781.40",
+          "source_accession_no": "0001144204-11-010358",
+          "location": "10-K balance sheet, FY2009 comparative"
+        },
+        {
+          "quote": "SalesRevenueNet FY2008 (2007-12-30 to 2008-12-27) = 6378229609.75",
+          "source_accession_no": "0001144204-11-010358",
+          "location": "10-K income statement"
+        },
+        {
+          "quote": "SalesRevenueNet FY2009 (2008-12-28 to 2009-12-26) = 5378550859.45",
+          "source_accession_no": "0001144204-12-012007",
+          "location": "10-K income statement, FY2009 comparative"
+        }
+      ]
+    },
+    {
+      "item_id": "CL2",
+      "question": "Did non-current 'soft' assets (intangibles, other assets, capitalized items) grow materially faster than the business overall?",
+      "finding": "flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "Goodwill end 2010-12-25 = 249260247.20",
+          "source_accession_no": "0001144204-12-012007",
+          "location": "10-K balance sheet"
+        },
+        {
+          "quote": "Goodwill end 2011-12-31 = 327620930.85 (+31.4% YoY)",
+          "source_accession_no": "0001144204-12-012007",
+          "location": "10-K balance sheet"
+        },
+        {
+          "quote": "SalesRevenueNet FY2010=4910272437.55; FY2011=5035603530.30 (+2.6% YoY)",
+          "source_accession_no": "0001144204-12-012007",
+          "location": "10-K income statement"
+        }
+      ]
+    },
+    {
+      "item_id": "CL3",
+      "question": "Is there a persistent divergence between net income and operating cash flow?",
+      "finding": "no_flag",
+      "confidence": "high",
+      "evidence": [
+        {
+          "quote": "NetIncomeLoss FY2011 = 950864646.31; NetCashProvidedByUsedInOperatingActivities FY2011 = 1501121774.91",
+          "source_accession_no": "0001144204-12-012007",
+          "location": "10-K income statement / cash flow statement"
+        },
+        {
+          "quote": "NetIncomeLoss FY2009 = 1285018828.66; NetCashProvidedByUsedInOperatingActivities FY2009 = 1997864290.27",
+          "source_accession_no": "0001144204-12-012007",
+          "location": "10-K cash flow statement, FY2009 comparative"
+        }
+      ]
+    },
+    {
+      "item_id": "CL4",
+      "question": "Do inventory levels or gross margins show trends inconsistent with revenue?",
+      "finding": "flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "InventoryNet end 2009-12-26 = 565773372.71",
+          "source_accession_no": "0001144204-11-010358",
+          "location": "10-K balance sheet"
+        },
+        {
+          "quote": "InventoryNet end 2010-12-25 = 707498746.44 (+25.1% YoY)",
+          "source_accession_no": "0001144204-12-012007",
+          "location": "10-K balance sheet"
+        },
+        {
+          "quote": "SalesRevenueNet FY2009=5378550859.45; FY2010=4910272437.55 (-8.7% YoY)",
+          "source_accession_no": "0001144204-12-012007",
+          "location": "10-K income statement"
+        }
+      ]
+    },
+    {
+      "item_id": "CL5",
+      "question": "Is the earnings trajectory unusually smooth relative to the volatility of revenue and cash flow?",
+      "finding": "flag",
+      "confidence": "low",
+      "evidence": [
+        {
+          "quote": "SalesRevenueNet FY2008=6378229609.75 -> FY2009=5378550859.45 (-15.7%)",
+          "source_accession_no": "0001144204-11-010358",
+          "location": "10-K income statement"
+        },
+        {
+          "quote": "ProfitLoss FY2008=1337770407.76 -> FY2009=1285018828.66 (only -3.9%)",
+          "source_accession_no": "0001144204-11-010358",
+          "location": "10-K income statement"
+        }
+      ]
+    },
+    {
+      "item_id": "CL6",
+      "question": "Did liability, allowance, or reserve balances decline (or fail to grow) despite growing business activity?",
+      "finding": "flag",
+      "confidence": "high",
+      "evidence": [
+        {
+          "quote": "AllowanceForDoubtfulAccountsReceivableCurrent end 2008-12-27=77415105.48 (5.7% of AR) -> end 2009-12-26=66944378.87 (4.2% of AR) while AccountsReceivableNetCurrent rose 1353237364.98 -> 1595635781.40",
+          "source_accession_no": "0001144204-11-010358",
+          "location": "10-K balance sheet / notes"
+        },
+        {
+          "quote": "ProductWarrantyAccrualClassifiedCurrent end 2009-12-26=159587308.87 -> end 2010-12-25=91062098.54 (-42.9%) while SalesRevenueNet fell only -8.7% (5378550859.45 -> 4910272437.55)",
+          "source_accession_no": "0001144204-12-027190",
+          "location": "10-Q/10-K warranty accrual disclosure"
+        }
+      ]
+    },
+    {
+      "item_id": "CL7",
+      "question": "Does the filing chronology show irregularities (late filings/NT forms, amendments, unusual 8-K frequency)?",
+      "finding": "flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "10-Q/A filed 2009-09-01 amending Q2 2009 (period end 2009-06-27)",
+          "source_accession_no": "0001144204-09-046684",
+          "location": "filing chronology"
+        },
+        {
+          "quote": "10-Q/A filed 2011-08-30 amending Q2 2011 (period end 2011-06-25)",
+          "source_accession_no": "0001144204-11-050441",
+          "location": "filing chronology"
+        }
+      ]
+    },
+    {
+      "item_id": "CL8",
+      "question": "Is the provided data sufficient in coverage and length for the above assessments?",
+      "finding": "no_flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "Data spans fiscal years 2006/2007 through Q1 2012 across Assets, Revenue, AR, Inventory, NI, OCF, allowance and warranty accruals, enabling multi-year trend analysis",
+          "source_accession_no": "0001144204-12-027190",
+          "location": "aggregated financial_series_point_in_time"
+        },
+        {
+          "quote": "Goodwill only reported for 3 period-ends (2009-12-26, 2010-12-25, 2011-12-31); AccruedLiabilitiesCurrent series stops at 2011-03-26, limiting some sub-analyses",
+          "source_accession_no": "0001144204-12-012007",
+          "location": "aggregated financial_series_point_in_time gaps"
+        }
+      ]
+    }
+  ],
+  "misstatement_probability": 52,
+  "mechanism_hypotheses": [
+    {
+      "affected_line_items": [
+        "AllowanceForDoubtfulAccountsReceivableCurrent",
+        "AccountsReceivableNetCurrent",
+        "BadDebtExpense/NetIncomeLoss"
+      ],
+      "direction": "overstated",
+      "accounting_treatment": "Reduction of bad-debt/allowance reserve coverage (allowance fell from 5.7% to 4.2% of gross receivables) even as receivables grew sharply during a revenue downturn, potentially understating bad-debt expense and overstating net receivables and net income.",
+      "rationale_evidence": [
+        {
+          "quote": "AllowanceForDoubtfulAccountsReceivableCurrent end 2008-12-27=77415105.48; end 2009-12-26=66944378.87",
+          "source_accession_no": "0001144204-11-010358",
+          "location": "10-K allowance disclosure"
+        },
+        {
+          "quote": "AccountsReceivableNetCurrent end 2008-12-27=1353237364.98; end 2009-12-26=1595635781.40",
+          "source_accession_no": "0001144204-11-010358",
+          "location": "10-K balance sheet"
+        }
+      ]
+    },
+    {
+      "affected_line_items": [
+        "ProductWarrantyAccrualClassifiedCurrent",
+        "CostOfGoodsSold",
+        "GrossProfit"
+      ],
+      "direction": "overstated",
+      "accounting_treatment": "Sharp release of warranty accrual (-42.9%) in FY2010 far exceeding the modest revenue decline (-8.7%), consistent with reversing/under-accruing warranty reserves to bolster reported gross margin (margin rose from 49.0% in FY2009 to 50.1% in FY2010).",
+      "rationale_evidence": [
+        {
+          "quote": "ProductWarrantyAccrualClassifiedCurrent end 2009-12-26=159587308.87; end 2010-12-25=91062098.54",
+          "source_accession_no": "0001144204-12-027190",
+          "location": "10-Q/10-K warranty disclosure"
+        },
+        {
+          "quote": "GrossProfit FY2009=2636138682.68 (Rev 5378550859.45, 49.0%); GrossProfit FY2010=2457725606.10 (Rev 4910272437.55, 50.1%)",
+          "source_accession_no": "0001144204-12-012007",
+          "location": "10-K income statement"
+        }
+      ]
+    },
+    {
+      "affected_line_items": [
+        "InventoryNet",
+        "CostOfGoodsSold"
+      ],
+      "direction": "overstated",
+      "accounting_treatment": "Inventory build-up (+25.1%) against a backdrop of declining revenue (-8.7%) in FY2010 raises risk of insufficient obsolescence/excess-inventory reserves, potentially deferring cost recognition and overstating current assets.",
+      "rationale_evidence": [
+        {
+          "quote": "InventoryNet end 2009-12-26=565773372.71; end 2010-12-25=707498746.44",
+          "source_accession_no": "0001144204-12-012007",
+          "location": "10-K balance sheet"
+        },
+        {
+          "quote": "SalesRevenueNet FY2009=5378550859.45; FY2010=4910272437.55",
+          "source_accession_no": "0001144204-12-012007",
+          "location": "10-K income statement"
+        }
+      ]
+    }
+  ],
+  "overall": {
+    "risk_tier": "watch",
+    "top_signals": [
+      "Allowance for doubtful accounts coverage fell from 5.7% to 4.2% of receivables (2008->2009) while receivables grew 17.9% and revenue fell 15.7%",
+      "Warranty accrual dropped 42.9% (2009->2010) far outpacing an 8.7% revenue decline, coinciding with a margin uptick",
+      "Inventory rose 25.1% in FY2010 while revenue fell 8.7%, and goodwill jumped 31.4% in FY2011 versus 2.6% revenue growth",
+      "Two 10-Q/A amendments (Q2 2009 and Q2 2011) indicate some restatement/correction activity",
+      "Operating cash flow consistently exceeded net income across all years, a mitigating quality signal"
+    ]
+  }
+}
