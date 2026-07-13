@@ -1,0 +1,251 @@
+{
+  "case_id": "hc_04",
+  "run_id": "original-hc_04-r1",
+  "model": "claude-opus-4-8",
+  "pipeline_version": "3de2ceecf86fea6cd6623e644e8a33804689fef9",
+  "run_timestamp": "2026-07-13T04:11:12.898637+00:00",
+  "documents_used": [
+    {
+      "accession_no": "0001929561-22-000022",
+      "form_type": "10-Q",
+      "filing_date": "2022-11-30"
+    },
+    {
+      "accession_no": "0001929561-23-000032",
+      "form_type": "10-K",
+      "filing_date": "2023-02-24"
+    },
+    {
+      "accession_no": "0001929561-23-000057",
+      "form_type": "10-Q",
+      "filing_date": "2023-05-03"
+    },
+    {
+      "accession_no": "0001929561-23-000074",
+      "form_type": "10-Q",
+      "filing_date": "2023-08-02"
+    },
+    {
+      "accession_no": "0001929561-23-000093",
+      "form_type": "10-Q",
+      "filing_date": "2023-11-07"
+    },
+    {
+      "accession_no": "0001929561-24-000032",
+      "form_type": "10-K",
+      "filing_date": "2024-02-13"
+    },
+    {
+      "accession_no": "0001929561-24-000082",
+      "form_type": "10-Q",
+      "filing_date": "2024-05-07"
+    },
+    {
+      "accession_no": "0001929561-24-000102",
+      "form_type": "10-Q",
+      "filing_date": "2024-08-07"
+    },
+    {
+      "accession_no": "0001929561-24-000127",
+      "form_type": "10-Q",
+      "filing_date": "2024-11-07"
+    },
+    {
+      "accession_no": "0001929561-25-000044",
+      "form_type": "10-K",
+      "filing_date": "2025-02-27"
+    },
+    {
+      "accession_no": "0001929561-25-000082",
+      "form_type": "10-Q",
+      "filing_date": "2025-05-07"
+    },
+    {
+      "accession_no": "0001929561-25-000102",
+      "form_type": "10-Q",
+      "filing_date": "2025-08-07"
+    },
+    {
+      "accession_no": "0001929561-25-000113",
+      "form_type": "10-Q",
+      "filing_date": "2025-11-06"
+    }
+  ],
+  "checklist": [
+    {
+      "item_id": "CL1",
+      "question": "Did receivables grow materially faster than revenue across consecutive periods?",
+      "finding": "no_flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "AccountsReceivableNetCurrent=725000000 (2024-06-30) then 1138000000 (2024-09-30)",
+          "source_accession_no": "0001929561-24-000127",
+          "location": "AccountsReceivableNetCurrent"
+        },
+        {
+          "quote": "RevenueFromContractWithCustomerExcludingAssessedTax=930000000 (2024-04-01/2024-06-30) then 1040000000 (2024-07-01/2024-09-30)",
+          "source_accession_no": "0001929561-25-000113",
+          "location": "RevenueFromContractWithCustomerExcludingAssessedTax"
+        },
+        {
+          "quote": "Goodwill=630000000 (2024-06-30) then 1027000000 (2024-09-30) - simultaneous acquisition step-up",
+          "source_accession_no": "0001929561-24-000127",
+          "location": "Goodwill"
+        },
+        {
+          "quote": "AccountsReceivableNetCurrent=1065000000 (2025-06-30) vs Revenue=1419000000 (2025-04-01/2025-06-30) - stable ratio post-acquisition",
+          "source_accession_no": "0001929561-25-000102",
+          "location": "AR vs Revenue"
+        }
+      ]
+    },
+    {
+      "item_id": "CL2",
+      "question": "Did non-current 'soft' assets (intangibles, other assets, capitalized items) grow materially faster than the business overall?",
+      "finding": "flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "IntangibleAssetsNetExcludingGoodwill=62000000 (2024-06-30) then 565000000 (2024-09-30)",
+          "source_accession_no": "0001929561-24-000127",
+          "location": "IntangibleAssetsNetExcludingGoodwill"
+        },
+        {
+          "quote": "Goodwill=630000000 (2024-06-30) then 1027000000 (2024-09-30) then 1123000000 (2024-12-31)",
+          "source_accession_no": "0001929561-25-000113",
+          "location": "Goodwill"
+        },
+        {
+          "quote": "StockholdersEquity=1580000000 (2025-09-30) - combined goodwill+intangibles ~1586M roughly equal to equity",
+          "source_accession_no": "0001929561-25-000113",
+          "location": "StockholdersEquity"
+        },
+        {
+          "quote": "OtherAssetsNoncurrent=17000000 (2024-06-30) then 37000000 (2024-09-30)",
+          "source_accession_no": "0001929561-24-000127",
+          "location": "OtherAssetsNoncurrent"
+        }
+      ]
+    },
+    {
+      "item_id": "CL3",
+      "question": "Is there a persistent divergence between net income and operating cash flow?",
+      "finding": "no_flag",
+      "confidence": "high",
+      "evidence": [
+        {
+          "quote": "NetIncomeLoss=4000000 vs NetCashProvidedByUsedInOperatingActivities=89000000 (2023-01-01/2023-12-31)",
+          "source_accession_no": "0001929561-25-000044",
+          "location": "NI vs OCF 2023"
+        },
+        {
+          "quote": "NetIncomeLoss=-290000000 vs NetCashProvidedByUsedInOperatingActivities=-12000000 (2024-01-01/2024-12-31)",
+          "source_accession_no": "0001929561-25-000044",
+          "location": "NI vs OCF 2024"
+        },
+        {
+          "quote": "NetIncomeLoss=92000000 vs NetCashProvidedByUsedInOperatingActivities=310000000 (2022-01-01/2022-12-31)",
+          "source_accession_no": "0001929561-25-000044",
+          "location": "NI vs OCF 2022"
+        }
+      ]
+    },
+    {
+      "item_id": "CL4",
+      "question": "Do inventory levels or gross margins show trends inconsistent with revenue?",
+      "finding": "insufficient_data",
+      "confidence": "high",
+      "evidence": [
+        {
+          "quote": "No inventory or cost-of-transportation/gross-margin concept provided; only SellingGeneralAndAdministrativeExpense=666000000 (2024-01-01/2024-12-31) available",
+          "source_accession_no": "0001929561-25-000044",
+          "location": "SellingGeneralAndAdministrativeExpense"
+        }
+      ]
+    },
+    {
+      "item_id": "CL5",
+      "question": "Is the earnings trajectory unusually smooth relative to the volatility of revenue and cash flow?",
+      "finding": "no_flag",
+      "confidence": "high",
+      "evidence": [
+        {
+          "quote": "NetIncomeLoss quarterly ranges from 44000000 (2022-04-01/2022-06-30) to -243000000 (2024-07-01/2024-09-30)",
+          "source_accession_no": "0001929561-25-000113",
+          "location": "NetIncomeLoss quarterly"
+        },
+        {
+          "quote": "OperatingIncomeLoss=-20000000 (2024-07-01/2024-09-30) vs 58000000 (2022-04-01/2022-06-30)",
+          "source_accession_no": "0001929561-25-000113",
+          "location": "OperatingIncomeLoss"
+        }
+      ]
+    },
+    {
+      "item_id": "CL6",
+      "question": "Did liability, allowance, or reserve balances decline (or fail to grow) despite growing business activity?",
+      "finding": "flag",
+      "confidence": "low",
+      "evidence": [
+        {
+          "quote": "AllowanceForDoubtfulAccountsReceivableCurrent=9000000 (2024-09-30) while AccountsReceivableNetCurrent=1138000000 (2024-09-30)",
+          "source_accession_no": "0001929561-24-000127",
+          "location": "Allowance vs AR 2024-09"
+        },
+        {
+          "quote": "AllowanceForDoubtfulAccountsReceivableCurrent=9000000 (2021-12-31) while AccountsReceivableNetCurrent=1010000000 (2021-12-31)",
+          "source_accession_no": "0001929561-23-000032",
+          "location": "Allowance vs AR 2021"
+        },
+        {
+          "quote": "AllowanceForDoubtfulAccountsReceivableCurrent=13000000 (2024-12-31), 16000000 (2025-06-30), 15000000 (2025-09-30) - reserve subsequently topped up",
+          "source_accession_no": "0001929561-25-000113",
+          "location": "Allowance later"
+        }
+      ]
+    },
+    {
+      "item_id": "CL7",
+      "question": "Does the filing chronology show irregularities (late filings/NT forms, amendments, unusual 8-K frequency)?",
+      "finding": "no_flag",
+      "confidence": "medium",
+      "evidence": [
+        {
+          "quote": "10-K filings 2023-02-24, 2024-02-13, 2025-02-27 and regular quarterly 10-Q cadence through 2025-11-06 with no NT 10-K/NT 10-Q forms",
+          "source_accession_no": "0001929561-25-000044",
+          "location": "filing_chronology"
+        },
+        {
+          "quote": "UPLOAD 2024-08-06, CORRESP 2024-08-20, UPLOAD 2024-08-28 (routine SEC comment-letter correspondence)",
+          "source_accession_no": "0001929561-24-000127",
+          "location": "filing_chronology"
+        }
+      ]
+    },
+    {
+      "item_id": "CL8",
+      "question": "Is the provided data sufficient in coverage and length for the above assessments?",
+      "finding": "no_flag",
+      "confidence": "high",
+      "evidence": [
+        {
+          "quote": "Quarterly and annual data span 2020-2025 (Revenue 3357000000 (2020) through 1421000000 (2025-07-01/2025-09-30))",
+          "source_accession_no": "0001929561-25-000113",
+          "location": "financial_series_point_in_time"
+        }
+      ]
+    }
+  ],
+  "misstatement_probability": 25,
+  "mechanism_hypotheses": [],
+  "overall": {
+    "risk_tier": "watch",
+    "top_signals": [
+      "Balance-sheet step-up from the Sept-2024 Coyote Logistics acquisition (Goodwill 630M->1,123M; Intangibles 62M->565M) leaves ~$1.6B soft assets against ~$1.58B equity amid recurring losses, creating goodwill/intangible impairment risk",
+      "Doubtful-account allowance stayed at 9M (0.8%) when receivables jumped to 1,138M at 2024-09-30 before being increased to 13-16M in later periods",
+      "Persistent operating and net losses through 2024-2025 (NetIncomeLoss -290M FY2024, negative each quarter of 2025) against a freight-recession backdrop",
+      "No filing-chronology red flags: no NT/late filings, no restatements, and operating cash flow tracks or exceeds net income - anomalies are largely explained by M&A and cyclicality"
+    ]
+  }
+}
