@@ -1,0 +1,59 @@
+{
+  "ts": "2026-07-13T04:14:09.356964+00:00",
+  "harness_pin": "2.1.201",
+  "flags": [
+    "claude",
+    "-p",
+    "--model",
+    "claude-opus-4-8",
+    "--output-format",
+    "json",
+    "--max-turns",
+    "2",
+    "--setting-sources",
+    "",
+    "--strict-mcp-config",
+    "--tools",
+    "",
+    "--disallowedTools",
+    "Bash,Read,Edit,Write,Glob,Grep,WebFetch,WebSearch,Task,NotebookEdit",
+    "--system-prompt",
+    "You are analyzing the financial reporting quality of UNITIL CORP (UTL, CIK 0000755001) using only the structured data provided below, which reflects public filings available on or before 2026-03-11. D...[1732 chars]",
+    "--json-schema",
+    "{\"type\": \"object\", \"additionalProperties\": false, \"required\": [\"checklist\", \"misstatement_probability\", \"mechanism_hypotheses\", \"overall\"], \"properties\": {\"checklist\": {\"type\": \"array\", \"items\": {\"typ...[1821 chars]"
+  ],
+  "model_requested": "claude-opus-4-8",
+  "served_models": [
+    "claude-opus-4-8"
+  ],
+  "pin_ok": true,
+  "ok": true,
+  "fail_reason": null,
+  "session_id": "6e7e6fa9-7fca-4a1e-addb-6f72e93486c1",
+  "usage": {
+    "input_tokens": 2,
+    "cache_creation_input_tokens": 115117,
+    "cache_read_input_tokens": 1052,
+    "output_tokens": 6669,
+    "server_tool_use": {
+      "web_search_requests": 0,
+      "web_fetch_requests": 0
+    },
+    "service_tier": "standard",
+    "cache_creation": {
+      "ephemeral_1h_input_tokens": 115117,
+      "ephemeral_5m_input_tokens": 0
+    },
+    "inference_geo": "not_available",
+    "iterations": [],
+    "speed": "standard"
+  },
+  "total_cost_usd_reference_only": 1.318431,
+  "attempts": 1,
+  "wall_seconds": 80.8,
+  "freeze": {
+    "head": "8429b4972baf6be0cb11694339ec8ed7094bd38a",
+    "clean_tree": false
+  },
+  "raw_tail": null
+}
