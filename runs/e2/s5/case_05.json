@@ -2,8 +2,8 @@
   "case_id": "case_05",
   "run_id": "perturbed-case_05-r1",
   "model": "claude-sonnet-5",
-  "pipeline_version": "7f6458ef561555ac0e264eeeda5c02763dd2b129",
-  "run_timestamp": "2026-07-13T04:31:52.946736+00:00",
+  "pipeline_version": "79b4c354391bcdff4f71edae9c7d440ba8876209",
+  "run_timestamp": "2026-07-13T06:22:26.902172+00:00",
   "documents_used": [
     {
       "accession_no": "0001193125-11-242141",
@@ -74,24 +74,24 @@
       "confidence": "medium",
       "evidence": [
         {
-          "quote": "AccountsReceivableNetCurrent end=2013-02-02, value=70240282.9",
-          "source_accession_no": "0001193125-14-143835",
-          "location": "10-K balance sheet, FY2013"
-        },
-        {
-          "quote": "AccountsReceivableNetCurrent end=2012-01-28, value=58597844.5",
+          "quote": "AccountsReceivableNetCurrent=58597844.50 (end 2012-01-28)",
           "source_accession_no": "0001193125-13-156951",
-          "location": "10-K balance sheet, FY2012"
+          "location": "Balance sheet, FY2011 10-K"
         },
         {
-          "quote": "Revenues start=2012-01-29 end=2013-02-02, value=390303277.12",
+          "quote": "AccountsReceivableNetCurrent=70240282.90 (end 2013-02-02)",
           "source_accession_no": "0001193125-14-143835",
-          "location": "10-K income statement, FY2013"
+          "location": "Balance sheet, FY2012 10-K"
         },
         {
-          "quote": "Revenues start=2011-01-30 end=2012-01-28, value=394747137.2",
+          "quote": "Revenues=394747137.20 (FY2011: 2011-01-30 to 2012-01-28)",
           "source_accession_no": "0001193125-14-143835",
-          "location": "10-K income statement, FY2012 (comparative)"
+          "location": "Income statement, FY2012 10-K comparative"
+        },
+        {
+          "quote": "Revenues=390303277.12 (FY2012: 2012-01-29 to 2013-02-02)",
+          "source_accession_no": "0001193125-14-143835",
+          "location": "Income statement, FY2012 10-K"
         }
       ]
     },
@@ -102,19 +102,19 @@
       "confidence": "medium",
       "evidence": [
         {
-          "quote": "IntangibleAssetsNetExcludingGoodwill end=2011-01-29, value=100875503.14",
+          "quote": "IntangibleAssetsNetExcludingGoodwill=100875503.14 (end 2011-01-29)",
           "source_accession_no": "0001193125-12-160592",
-          "location": "10-K balance sheet FY2011"
+          "location": "Balance sheet, FY2011 10-K"
         },
         {
-          "quote": "IntangibleAssetsNetExcludingGoodwill end=2013-11-02, value=99020909.12",
-          "source_accession_no": "0001193125-13-466081",
-          "location": "10-Q balance sheet Q3 FY2014"
-        },
-        {
-          "quote": "IntangibleAssetsNetExcludingGoodwill end=2014-02-01, value=85135406.28 / Goodwill end=2014-02-01, value=2424216.45 (down from 5552912.95)",
+          "quote": "IntangibleAssetsNetExcludingGoodwill=85135406.28 (end 2014-02-01)",
           "source_accession_no": "0001193125-14-231403",
-          "location": "10-Q balance sheet Q1 FY2015 (comparative FY2014 year-end)"
+          "location": "Balance sheet, Q1 FY2014 10-Q"
+        },
+        {
+          "quote": "Goodwill=5552912.95 (end 2013-11-02) declining to Goodwill=2424216.45 (end 2014-02-01)",
+          "source_accession_no": "0001193125-14-231403",
+          "location": "Balance sheet, Q1 FY2014 10-Q"
         }
       ]
     },
@@ -125,24 +125,24 @@
       "confidence": "medium",
       "evidence": [
         {
-          "quote": "NetIncomeLoss start=2011-01-30 end=2012-01-28, value=10272124.08",
+          "quote": "NetIncomeLoss=10272124.08 (FY2011: 2011-01-30 to 2012-01-28)",
           "source_accession_no": "0001193125-14-143835",
-          "location": "10-K income statement FY2012"
+          "location": "Income statement, FY2012 10-K comparative"
         },
         {
-          "quote": "NetCashProvidedByUsedInOperatingActivities start=2011-01-30 end=2012-01-28, value=286622.74",
+          "quote": "NetCashProvidedByUsedInOperatingActivities=286622.74 (FY2011: 2011-01-30 to 2012-01-28)",
           "source_accession_no": "0001193125-14-143835",
-          "location": "10-K cash flow statement FY2012"
+          "location": "Cash flow statement, FY2012 10-K comparative"
         },
         {
-          "quote": "NetIncomeLoss start=2013-02-03 end=2014-02-01, value=-9169914.74",
-          "source_accession_no": "0001193125-14-143835",
-          "location": "10-K income statement FY2014"
+          "quote": "NetIncomeLoss=3129904.17 (Q1 FY2014: 2014-02-02 to 2014-05-03)",
+          "source_accession_no": "0001193125-14-231403",
+          "location": "Income statement, Q1 FY2014 10-Q"
         },
         {
-          "quote": "NetCashProvidedByUsedInOperatingActivities start=2013-02-03 end=2014-02-01, value=88563.2",
-          "source_accession_no": "0001193125-14-143835",
-          "location": "10-K cash flow statement FY2014"
+          "quote": "NetCashProvidedByUsedInOperatingActivities=-19043906.97 (Q1 FY2014: 2014-02-02 to 2014-05-03)",
+          "source_accession_no": "0001193125-14-231403",
+          "location": "Cash flow statement, Q1 FY2014 10-Q"
         }
       ]
     },
@@ -153,24 +153,24 @@
       "confidence": "medium",
       "evidence": [
         {
-          "quote": "InventoryNet end=2013-02-02, value=73719609.17",
+          "quote": "InventoryNet=73719609.17 (end 2013-02-02)",
           "source_accession_no": "0001193125-14-143835",
-          "location": "10-K balance sheet FY2013"
+          "location": "Balance sheet, FY2012 10-K"
         },
         {
-          "quote": "InventoryNet end=2014-02-01, value=83169705.69",
+          "quote": "InventoryNet=83169705.69 (end 2014-02-01)",
           "source_accession_no": "0001193125-14-231403",
-          "location": "10-Q balance sheet, FY2014 year-end (comparative)"
+          "location": "Balance sheet, Q1 FY2014 10-Q (comparative FY end)"
         },
         {
-          "quote": "Revenues start=2013-02-03 end=2014-02-01, value=367224913.61 (vs prior year 390303277.12)",
+          "quote": "Revenues=390303277.12 (FY2012: 2012-01-29 to 2013-02-02)",
           "source_accession_no": "0001193125-14-143835",
-          "location": "10-K income statement FY2014"
+          "location": "Income statement, FY2012 10-K"
         },
         {
-          "quote": "GrossProfit start=2013-02-03 end=2014-02-01, value=121890343.98 (margin ~33.2%, stable vs FY2013 32.7%) despite inventory buildup amid revenue decline",
+          "quote": "Revenues=367224913.61 (FY2013: 2013-02-03 to 2014-02-01)",
           "source_accession_no": "0001193125-14-143835",
-          "location": "10-K income statement FY2014"
+          "location": "Income statement, FY2013 10-K"
         }
       ]
     },
@@ -178,22 +178,22 @@
       "item_id": "CL5",
       "question": "Is the earnings trajectory unusually smooth relative to the volatility of revenue and cash flow?",
       "finding": "no_flag",
-      "confidence": "high",
+      "confidence": "medium",
       "evidence": [
         {
-          "quote": "NetIncomeLoss start=2012-04-29 end=2012-07-28, value=-983051.57",
-          "source_accession_no": "0001193125-13-359357",
-          "location": "10-Q income statement Q2 FY2013"
-        },
-        {
-          "quote": "NetIncomeLoss start=2013-11-03 end=2014-02-01, value=-11371112.94",
+          "quote": "NetIncomeLoss=-11371112.94 (Q4 FY2013: 2013-11-03 to 2014-02-01)",
           "source_accession_no": "0001193125-14-143835",
-          "location": "10-K income statement Q4 FY2014"
+          "location": "Income statement, FY2013 10-K, Q4 detail"
         },
         {
-          "quote": "NetIncomeLoss start=2013-08-04 end=2013-11-02, value=-1216536.39",
-          "source_accession_no": "0001193125-13-466081",
-          "location": "10-Q income statement Q3 FY2014"
+          "quote": "NetIncomeLoss=4556979.45 (Q1 FY2013: 2013-02-03 to 2013-05-04)",
+          "source_accession_no": "0001193125-13-254278",
+          "location": "Income statement, Q1 FY2013 10-Q"
+        },
+        {
+          "quote": "NetIncomeLoss=-1139244.86 (Q2 FY2013: 2013-05-05 to 2013-08-03)",
+          "source_accession_no": "0001193125-13-359357",
+          "location": "Income statement, Q2 FY2013 10-Q"
         }
       ]
     },
@@ -201,17 +201,22 @@
       "item_id": "CL6",
       "question": "Did liability, allowance, or reserve balances decline (or fail to grow) despite growing business activity?",
       "finding": "flag",
-      "confidence": "high",
+      "confidence": "medium",
       "evidence": [
         {
-          "quote": "AllowanceForDoubtfulAccountsReceivableCurrent end=2012-01-28, value=11171845.73 vs AccountsReceivableNetCurrent end=2012-01-28, value=58597844.5 (ratio ~19.1%)",
+          "quote": "AllowanceForDoubtfulAccountsReceivableCurrent=11171845.73 (end 2012-01-28)",
           "source_accession_no": "0001193125-13-156951",
-          "location": "10-K balance sheet FY2012"
+          "location": "Notes, FY2011 10-K"
         },
         {
-          "quote": "AllowanceForDoubtfulAccountsReceivableCurrent end=2014-05-03, value=8891745.77 vs AccountsReceivableNetCurrent end=2014-05-03, value=73727257.81 (ratio ~12.1%)",
+          "quote": "AllowanceForDoubtfulAccountsReceivableCurrent=8891745.77 (end 2014-05-03)",
           "source_accession_no": "0001193125-14-231403",
-          "location": "10-Q balance sheet Q1 FY2015"
+          "location": "Notes, Q1 FY2014 10-Q"
+        },
+        {
+          "quote": "AccountsReceivableNetCurrent=58597844.50 (end 2012-01-28) vs AccountsReceivableNetCurrent=73727257.81 (end 2014-05-03)",
+          "source_accession_no": "0001193125-14-231403",
+          "location": "Balance sheet, Q1 FY2014 10-Q"
         }
       ]
     },
@@ -222,14 +227,19 @@
       "confidence": "medium",
       "evidence": [
         {
-          "quote": "No NT 10-K, NT 10-Q, 10-K/A, or 10-Q/A filings appear in the chronology between 2009 and the 2014-06-11 cutoff; most recent NT 10-K was filed 2008-04-16, well before the financial data window analyzed.",
-          "source_accession_no": "n/a",
-          "location": "filing_chronology list"
+          "quote": "10-K filed 2014-04-15 for period ended 2014-02-01 (form 10-K)",
+          "source_accession_no": "0001193125-14-143835",
+          "location": "Filing chronology"
         },
         {
-          "quote": "Multiple CORRESP/UPLOAD filings in 2010 (2010-06-30, 2010-07-22, 2010-07-23, 2010-08-17) and 2013 (2013-02-01, 2013-02-22) indicate SEC comment-letter correspondence, a routine review process rather than an enforcement flag.",
-          "source_accession_no": "n/a",
-          "location": "filing_chronology list"
+          "quote": "10-Q filed 2014-06-10 for period ended 2014-05-03 (form 10-Q)",
+          "source_accession_no": "0001193125-14-231403",
+          "location": "Filing chronology"
+        },
+        {
+          "quote": "No NT 10-K or NT 10-Q filings appear in the filing chronology between 2011-01-01 and 2014-06-11; prior NT filings occurred in 1996, 1997, 2004 and 2008, well before the analysis window",
+          "source_accession_no": "N/A",
+          "location": "Filing chronology list"
         }
       ]
     },
@@ -240,59 +250,59 @@
       "confidence": "high",
       "evidence": [
         {
-          "quote": "Financial series provide quarterly and annual data points from FY2010 (period ended 2010-01-30) through Q1 FY2015 (period ended 2014-05-03), spanning ~13 quarterly/annual filings across balance sheet, income statement, and cash flow concepts.",
-          "source_accession_no": "0001193125-14-231403",
-          "location": "financial_series_point_in_time, multiple concepts"
+          "quote": "Revenues=303611573.80 (FY ended 2010-01-30) through Revenues=355288606.40 (FY ended 2014-02-01), with quarterly granularity throughout",
+          "source_accession_no": "0001193125-14-143835",
+          "location": "Multi-year income statement series"
         },
         {
-          "quote": "AllowanceForDoubtfulAccountsReceivableCurrent data only begins at 2012-01-28, limiting pre-2012 reserve-trend analysis.",
-          "source_accession_no": "0001193125-13-156951",
-          "location": "financial_series_point_in_time.AllowanceForDoubtfulAccountsReceivableCurrent"
+          "quote": "AccountsReceivableNetCurrent series spans 2011-01-29 through 2014-05-03 across 13 data points",
+          "source_accession_no": "0001193125-14-231403",
+          "location": "Balance sheet series"
         }
       ]
     }
   ],
-  "misstatement_probability": 48,
+  "misstatement_probability": 52,
   "mechanism_hypotheses": [
     {
       "affected_line_items": [
         "AllowanceForDoubtfulAccountsReceivableCurrent",
         "AccountsReceivableNetCurrent",
-        "NetIncomeLoss",
-        "SellingGeneralAndAdministrativeExpense (bad debt expense component)"
+        "NetIncomeLoss"
       ],
       "direction": "overstated",
-      "accounting_treatment": "Reduction of the allowance for doubtful accounts (and its coverage ratio relative to gross receivables) while accounts receivable balances grew to a multi-year high, implying understated bad-debt expense/reserve, which would overstate net receivables and net income.",
+      "accounting_treatment": "Under-provisioning of the allowance for doubtful accounts as receivables grew, reducing bad debt expense and overstating net receivables and net income. The allowance-to-AR coverage ratio fell from roughly 19% (AllowanceForDoubtfulAccountsReceivableCurrent=11171845.73 / AccountsReceivableNetCurrent=58597844.50 at 2012-01-28) to roughly 12% (AllowanceForDoubtfulAccountsReceivableCurrent=8891745.77 / AccountsReceivableNetCurrent=73727257.81 at 2014-05-03) even as gross receivables grew and revenue was declining, which would normally warrant higher, not lower, reserve coverage.",
       "rationale_evidence": [
         {
-          "quote": "AllowanceForDoubtfulAccountsReceivableCurrent end=2012-01-28, value=11171845.73 vs AccountsReceivableNetCurrent end=2012-01-28, value=58597844.5 (ratio ~19.1%)",
+          "quote": "AllowanceForDoubtfulAccountsReceivableCurrent=11171845.73 (end 2012-01-28)",
           "source_accession_no": "0001193125-13-156951",
-          "location": "10-K balance sheet FY2012"
+          "location": "Notes, FY2011 10-K"
         },
         {
-          "quote": "AllowanceForDoubtfulAccountsReceivableCurrent end=2014-05-03, value=8891745.77 vs AccountsReceivableNetCurrent end=2014-05-03, value=73727257.81 (ratio ~12.1%)",
+          "quote": "AllowanceForDoubtfulAccountsReceivableCurrent=8891745.77 (end 2014-05-03); AccountsReceivableNetCurrent=73727257.81 (end 2014-05-03)",
           "source_accession_no": "0001193125-14-231403",
-          "location": "10-Q balance sheet Q1 FY2015"
+          "location": "Balance sheet/Notes, Q1 FY2014 10-Q"
         }
       ]
     },
     {
       "affected_line_items": [
         "AccountsReceivableNetCurrent",
-        "Revenues"
+        "Revenues",
+        "SalesRevenueNet"
       ],
       "direction": "overstated",
-      "accounting_treatment": "Receivables grew ~19.9% (2012-01-28 to 2013-02-02) while revenue actually declined ~1.1% over the same comparative period, consistent with extended credit terms, channel stuffing, or delayed collections inflating reported receivables/revenue recognition timing; partially reversed the following year.",
+      "accounting_treatment": "Possible aggressive revenue recognition or extension of customer credit terms in FY2012, evidenced by receivables growing +19.9% (AccountsReceivableNetCurrent 58597844.50 at 2012-01-28 to 70240282.90 at 2013-02-02) while reported revenue actually declined -1.1% (Revenues 394747137.20 FY2011 to 390303277.12 FY2012). The subsequent sharp AR contraction of -16.1% in FY2013 (to 58931566.76 at 2014-02-01) while revenue fell -5.9% is consistent with a reversal/normalization of previously accelerated recognition or channel push.",
       "rationale_evidence": [
         {
-          "quote": "AccountsReceivableNetCurrent end=2013-02-02, value=70240282.9 (vs 58597844.5 at 2012-01-28, +19.9%)",
+          "quote": "AccountsReceivableNetCurrent=70240282.90 (end 2013-02-02)",
           "source_accession_no": "0001193125-14-143835",
-          "location": "10-K balance sheet FY2013"
+          "location": "Balance sheet, FY2012 10-K"
         },
         {
-          "quote": "Revenues start=2012-01-29 end=2013-02-02, value=390303277.12 (vs 394747137.2 prior year, -1.1%)",
+          "quote": "Revenues=390303277.12 (FY2012: 2012-01-29 to 2013-02-02) vs Revenues=394747137.20 (FY2011)",
           "source_accession_no": "0001193125-14-143835",
-          "location": "10-K income statement FY2013"
+          "location": "Income statement, FY2012 10-K"
         }
       ]
     },
@@ -303,30 +313,29 @@
         "GrossProfit"
       ],
       "direction": "overstated",
-      "accounting_treatment": "Inventory increased ~12.8% (2013-02-02 to 2014-02-01) despite a ~5.9% revenue decline over the same period, while gross margin remained essentially flat (~32.7% to ~33.2%); this pattern is consistent with insufficient markdown/obsolescence reserves against slower-moving inventory rather than the margin deterioration one would expect if inventory were being appropriately written down.",
+      "accounting_treatment": "Inventory build-up (InventoryNet +12.8%, from 73719609.17 at 2013-02-02 to 83169705.69 at 2014-02-01) occurring alongside a revenue decline of -5.9% (Revenues 390303277.12 FY2012 to 367224913.61 FY2013) suggests slowing inventory turnover; if obsolete/slow-moving inventory was not adequately written down, InventoryNet and GrossProfit would be overstated and CostOfGoodsSold understated relative to economic reality.",
       "rationale_evidence": [
         {
-          "quote": "InventoryNet end=2014-02-01, value=83169705.69 (vs 73719609.17 at 2013-02-02, +12.8%)",
+          "quote": "InventoryNet=83169705.69 (end 2014-02-01)",
           "source_accession_no": "0001193125-14-231403",
-          "location": "10-Q balance sheet, FY2014 year-end comparative"
+          "location": "Balance sheet, Q1 FY2014 10-Q"
         },
         {
-          "quote": "Revenues start=2013-02-03 end=2014-02-01, value=367224913.61 (vs 390303277.12 prior year, -5.9%)",
+          "quote": "Revenues=367224913.61 (FY2013: 2013-02-03 to 2014-02-01)",
           "source_accession_no": "0001193125-14-143835",
-          "location": "10-K income statement FY2014"
+          "location": "Income statement, FY2013 10-K"
         }
       ]
     }
   ],
   "overall": {
-    "risk_tier": "watch",
+    "risk_tier": "elevated",
     "top_signals": [
-      "Allowance for doubtful accounts coverage ratio fell from ~19% (FY2012) to ~12% (Q1 FY2015) even as accounts receivable hit a multi-year high, suggesting under-reserving that could inflate net receivables and earnings.",
-      "Accounts receivable grew ~19.9% in FY2013 while revenue declined ~1.1% over the same period, a divergence later partially reversed.",
-      "Large net income vs. operating cash flow gap in FY2012 (NI=$10.27M vs OCF=$0.29M) and a swing to net loss with near-zero OCF in FY2014 (NI=-$9.17M vs OCF=$0.09M), indicating earnings quality concerns tied to working-capital/non-cash items.",
-      "Inventory grew ~12.8% in FY2014 while revenue fell ~5.9%, with gross margin holding flat, raising obsolescence/reserve-adequacy questions.",
-      "A sudden, large goodwill and intangible asset write-down occurred in Q4 FY2014 (Goodwill $5.55M→$2.42M; Intangibles $99.02M→$85.14M) coincident with an $11.37M quarterly net loss, consistent with correction of previously overstated soft assets.",
-      "No late filings, NT forms, or restatements (10-K/A, 10-Q/A) appear within the FY2010–2014 window covered by the financial data, reducing (but not eliminating) procedural red flags."
+      "Receivables grew +19.9% in FY2012 while revenue declined -1.1%, followed by a sharp -16.1% AR contraction in FY2013 as revenue fell further -5.9%, suggesting a possible temporary acceleration/reversal in receivables recognition",
+      "Allowance for doubtful accounts coverage ratio declined from ~19% to ~12% of gross receivables between FY2011 and Q1 FY2014 despite AR growth and a weakening revenue environment",
+      "Inventory grew +12.8% in FY2013 while revenue fell -5.9%, indicating slowing turnover and potential inventory valuation risk",
+      "Large net income/operating cash flow divergence in FY2011 (NI=10.27M vs OCF=0.29M) and again in Q1 FY2014 (NI=3.13M vs OCF=-19.04M), indicating earnings not well supported by cash generation",
+      "Large Q4 FY2013 net loss (-11.37M) coincident with a goodwill write-down (5.55M to 2.42M), reflecting real business deterioration consistent with the broader multi-year revenue decline (FY2011 peak 394.7M down to FY2013 367.2M)"
     ]
   }
 }
