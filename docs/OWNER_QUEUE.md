@@ -324,7 +324,12 @@
   문서 (발행 표면 아님).
 - **상태**: OPEN
 
-## Q-M02 — FINRA 과거 공표일(dissemination date) 실측 입수 가능성 — **CONVERTED (D63: 입수 가능 확인, 구현 GO 게이트로 전환)**
+## Q-M02 — FINRA 과거 공표일(dissemination date) 실측 입수 가능성 — **RESOLVED (D72/D77~D79, 2026-07-13 — 구현 완결)**
+
+> 구현 완결: D72(도구+데이터 223행+아카이브) → D77(스펙 §14, 재실행 전 커밋
+> 7a12bb8) → D78(소비자 배선·E2 관할 핀) → D79(재실행 — holdout 경계 3건 편입,
+> 헤드라인 불변). GO 인용 = (owner, 2026-07-13, written overnight authorization
+> — this mission's prompt, §A-8).
 
 > 조사 완료 (analysis/DISSEMINATION_DATES_MEMO.md): Wayback 연도별 스냅샷에서
 > 3열 일정표 복원 가능 (2020 표본 파싱 검증 — 관측 지연 11–12일 ≤ LAG 14).
