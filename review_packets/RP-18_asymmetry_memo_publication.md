@@ -81,3 +81,14 @@ gh issue create --repo lastwhisper906-gif/aaer-evals \
 - 이 판단에서 알아야 할 것: EXPLORATORY를 발행 표면으로 옮기는 비용의
   대부분은 글쓰기가 아니라 "가설이 결론으로 굳는 문장"을 걸러내는 일이다 —
   게시본이 원 메모보다 단정적이면 그 diff가 바로 위반이다.
+
+---
+
+## 서명 블록
+
+**결정: 발행 승인 — 배치 (A) Issue #2 부록 코멘트** (owner, 2026-07-16,
+this session's structured decision responses). 게시 텍스트는 §2 그대로
+`review_packets/RP-18_body.md`로 추출 (D92). 게시 명령(소유자 실행):
+`gh issue comment 2 --repo lastwhisper906-gif/aaer-evals --body-file review_packets/RP-18_body.md`
+게시 후: URL을 D-엔트리로 기록. 추가 근거 (결정 시점): 배치 B는 GitHub #4를
+점유해 GIL 메모 Issue와 번호 충돌.

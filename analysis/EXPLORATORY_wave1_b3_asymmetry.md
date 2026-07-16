@@ -1,7 +1,10 @@
 # EXPLORATORY — wave-1 B3 귀속비 비대칭의 산술 분해 (D53)
 
-> **EXPLORATORY / OWNER-REVIEW-REQUIRED / NOT-FOR-PUBLICATION.**
-> 이 메모는 어떤 발행 표면에도 실리지 않는다. 원인 서술은 사전 등록 문장 밖이며
+> **EXPLORATORY / 발행 승인됨 (RP-18, owner 2026-07-16 — 배치 A: Issue #2
+> 부록 코멘트, 게시 텍스트는 `review_packets/RP-18_body.md` 한정).** 게시
+> 전까지 이 원본 메모 자체는 발행 표면이 아니다. 게시 후 URL은 D-엔트리로
+> 기록한다. (원 표식 NOT-FOR-PUBLICATION은 RP-18 §2 게시 텍스트로만 대체
+> 발행 — 본 메모 전문 게시 불가 원칙 유지.) 원인 서술은 사전 등록 문장 밖이며
 > (specs/B3_metasignal.md §7 판독 노트), **아래의 어떤 문장도 인과 주장이 아니다** —
 > 커밋된 산출물(`analysis/results_b3.json`)의 산술 재배열과, 질문형으로만 적은
 > 가설 후보다. 공개 여부·형태는 전적으로 소유자 결정.

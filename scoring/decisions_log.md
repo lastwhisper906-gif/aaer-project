@@ -1026,3 +1026,7 @@ c44bd59a…)는 **서명 없이 superseded** (채점 미진입 상태 폐기). v
 ## D91 — RP-15·RP-16 소유자 수용: 라벨 정밀화 + 서수 언어 diff 적용 (2026-07-16, 서명, JSON 1줄)
 
 {"decision":"D91","date":"2026-07-16","action":"Q-F03(RP-15 DIFF-4/5)·Q-F04(RP-16 DIFF-6/7) 수용 — (owner, 2026-07-16, this session's structured decision responses). 적용: ISSUE_2 §7 첫 불릿(전건 Big R·기저율 ~2.2%·4년 모니터링 창·창 만료=라벨 노이즈 데이터 보고 약속)·README 양어 Big R 병기·ISSUE_0 §5(0–100 서수, 재보정 비실시 근거)·ISSUE_2 §2 표 헤더(LLM p → LLM score (0–100, ordinal))","invariants":"스키마 필드 misstatement_probability 무변경(Cycle-2 개명 등록)·동결 수치 무접촉·발행된 GitHub Issue 본문 편집은 소유자 잔여(edited 표시+사유 코멘트 규약)","metered":"0호출","learning_note":"이 판단에서 알아야 할 것: 라벨 정밀화 diff의 가치는 주장 강화가 아니라 한정 강화다 — Big R 병기와 기저율 2.2%는 같은 문장 안에서 서로를 견제하고, 그 긴장을 그대로 두는 것이 정직한 명명이다"}
+
+## D92 — RP-18 소유자 승인: B3 비대칭 메모 발행 (배치 A, 게시 대기) (2026-07-16, 서명, JSON 1줄)
+
+{"decision":"D92","date":"2026-07-16","action":"RP-18 발행 승인 — (owner, 2026-07-16, this session's structured decision responses). 배치 (A) Issue #2 부록 코멘트. 게시 텍스트 = 패킷 §2 그대로 review_packets/RP-18_body.md 추출(수정 0), 원본 EXPLORATORY 메모 헤더에 승인 표기(전문 게시 불가 원칙 유지). 게시는 소유자 실행 — URL 후속 D-엔트리","rationale":"N=8/9 산술을 독립 Issue로 띄우면 과대 포장 + 배치 B는 GitHub #4 점유로 GIL 메모 Issue 번호와 충돌","metered":"0호출","learning_note":"이 판단에서 알아야 할 것: EXPLORATORY의 발행 형태 선택은 내용 검열이 아니라 지위 표시다 — 같은 텍스트라도 독립 Issue는 '발견'으로, 부록 코멘트는 '산술 메모'로 읽히고, N=8/9가 감당할 수 있는 지위는 후자다"}
