@@ -68,7 +68,7 @@ Each admitted case was scored identity-visible (memorization of the revelation i
 impossible by construction; the gate proved non-recognition) on pre-revelation
 point-in-time data (cutoff = day before the 8-K). Results (`analysis/holdout_summary.md`):
 
-| company (G2) | cutoff | LLM p | 5-draw band (k=5) | flagged (≥50)? | grade d1/d2 | Beneish M / Dechow F |
+| company (G2) | cutoff | LLM score (0–100, ordinal) | 5-draw band (k=5) | flagged (≥50)? | grade d1/d2 | Beneish M / Dechow F |
 |---|---|---|---|---|---|---|
 | **Hub Group** (unrecorded payables, exec terminations) | 2026-02-04 | **70** | [58–76], ≥50 in **5/5** | **yes** | 2 / 1 | uncomputable / uncomputable |
 | Weis Markets (inventory overstatement, whistleblower) | 2026-02-19 | 32 | [28–42], 0/5 | no | 0 / 0 | uncomputable / 0.25 |
@@ -131,10 +131,16 @@ cutoffs (`analysis/holdout_controls_results.json`):
 
 ## 4. Labeling honesty and limitations
 
-- **All three are G2 provisional** (8-K Item 4.02). Item 4.02 is a company's own
-  non-reliance determination, not an SEC finding. Monthly re-scan retro-upgrades
-  tiers (G1 AAER > G2 4.02 > G3 SEC complaint > G4 DOJ). Until then: "restatement /
-  non-reliance event", never "fraud".
+- **All three are G2 provisional — and all three are Big R restatements** (an
+  8-K Item 4.02 non-reliance determination accompanies each event; mechanically
+  verified with accession-level evidence in `analysis/label_tags_holdout.json`).
+  Item 4.02 is a company's own non-reliance determination, not an SEC finding —
+  and base rates cut against over-reading it: only ~2.2% of restatements are
+  linked to SEC enforcement (Karpoff et al., TAR 2017). Monthly re-scan
+  retro-upgrades tiers (G1 AAER > G2 4.02 > G3 SEC complaint > G4 DOJ), with a
+  pre-registered 4-year monitoring window per case (to 2030-02/02/03); window
+  expiry without enforcement will itself be reported as label-noise data. Until
+  then: "restatement / non-reliance event", never "fraud".
 - Scheme-type honesty (recorded, not used to exclude): WMK (inventory overstatement
   + whistleblower) and HUBG (unrecorded payable / expense understatement + executive
   terminations) read misstatement-like (aggressive-accounting profile); GNE

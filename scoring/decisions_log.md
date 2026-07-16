@@ -1022,3 +1022,7 @@ c44bd59a…)는 **서명 없이 superseded** (채점 미진입 상태 폐기). v
 ## D90 — RP-17 소유자 수용: B4 분모 사슬 개정 = 기계적 커버리지 수리 (2026-07-16, 서명, JSON 1줄)
 
 {"decision":"D90","date":"2026-07-16","action":"RP-17 수용 — (owner, 2026-07-16, this session's structured decision responses). D56/D57 분모 폴백 사슬 개정을 '기계적 커버리지 결함 수리'로 분류 확정, D57 결과(holdout 10/12) 정본. 원복 경로(287a92a checkout) 소멸. 패킷 §4 거버넌스 라인 3종(사후 스펙 개정 한계·5게이트 규율·단일 작성자 규율) CLAUDE.md 방법론 규율 6·7·8로 발효","rationale_adopted":"편입 기준 기계성(태그 존재=자동 편입)·against-interest 방향(경쟁 기준선 강화)·선커밋 절차 증거·헤드라인 무변화(비교 성립 tier 전후 부재)","dissent_preserved":"패킷 §3 최강 반론(결과 열람 후 설계·사다리 4지 재량 공간) 원문 보존 — 수용은 반론의 소거가 아니라 분류 판단","metered":"0호출","learning_note":"이 판단에서 알아야 할 것: 사후 개정 수용의 근거는 '결과가 좋아서'가 아니라 '편입이 기계적이고 방향이 역이해관계이며 순서가 증명되어서'다 — 같은 개정이라도 이 셋 중 하나가 없으면 분류가 뒤집힌다"}
+
+## D91 — RP-15·RP-16 소유자 수용: 라벨 정밀화 + 서수 언어 diff 적용 (2026-07-16, 서명, JSON 1줄)
+
+{"decision":"D91","date":"2026-07-16","action":"Q-F03(RP-15 DIFF-4/5)·Q-F04(RP-16 DIFF-6/7) 수용 — (owner, 2026-07-16, this session's structured decision responses). 적용: ISSUE_2 §7 첫 불릿(전건 Big R·기저율 ~2.2%·4년 모니터링 창·창 만료=라벨 노이즈 데이터 보고 약속)·README 양어 Big R 병기·ISSUE_0 §5(0–100 서수, 재보정 비실시 근거)·ISSUE_2 §2 표 헤더(LLM p → LLM score (0–100, ordinal))","invariants":"스키마 필드 misstatement_probability 무변경(Cycle-2 개명 등록)·동결 수치 무접촉·발행된 GitHub Issue 본문 편집은 소유자 잔여(edited 표시+사유 코멘트 규약)","metered":"0호출","learning_note":"이 판단에서 알아야 할 것: 라벨 정밀화 diff의 가치는 주장 강화가 아니라 한정 강화다 — Big R 병기와 기저율 2.2%는 같은 문장 안에서 서로를 견제하고, 그 긴장을 그대로 두는 것이 정직한 명명이다"}

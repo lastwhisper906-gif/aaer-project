@@ -49,3 +49,11 @@
 
 - 소유자 Q-F04 서명 후에만. GitHub Issue 본문 수정은 edited 표시 + 사유
   코멘트 병행 권장 (RP-15와 동일 규약). 적용 시 서명 블록 + decisions_log 기록.
+
+---
+
+## 서명 블록
+
+**결정: 수용 — DIFF-6/DIFF-7 적용** (owner, 2026-07-16, this session's
+structured decision responses). repo 표면 반영: ISSUE_0 §5 보정 불릿·ISSUE_2
+§2 표 헤더 (D91). 스키마 필드 무변경. GitHub Issue #1/#3 편집 = 소유자 잔여.

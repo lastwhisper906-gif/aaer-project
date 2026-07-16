@@ -103,7 +103,9 @@ disclosure events; draw-1). **Gate elevated to k=5 (run 2026-07-10, rules
 pre-committed): knows_event 0/5 for each of HUBG·WMK·GNE — holdout eligibility
 robust to draw noise under the pre-committed ≤1/5 rule; positive control HTZ
 re-verified True.** The signal **weakens but does not collapse**. All three
-companies carry provisional (G2) restatement labels, not confirmed enforcement:
+companies carry provisional (G2) restatement labels — all three Big R (Item 4.02
+non-reliance), mechanically verified (`analysis/label_tags_holdout.json`) — not
+confirmed enforcement:
 - Per-case: **HUBG p=70 (flagged)** · GNE 42 · WMK 32 — all G2-provisional
   restatement events, labels pending any 4.02/AAER upgrade.
 - **k=5 redraw band (E5 §7, run 2026-07-09; published values remain draw-1):

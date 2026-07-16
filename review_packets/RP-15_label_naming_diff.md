@@ -72,3 +72,11 @@ Item 4.02 비신뢰 선언 동반, 기계 검증").
 
 - 소유자 Q-F03 서명 후에만. 적용 시 이 파일 하단에 서명 블록 추가 +
   decisions_log 기록 (RP-14 선례).
+
+---
+
+## 서명 블록
+
+**결정: 수용 — DIFF-4/DIFF-5 적용** (owner, 2026-07-16, this session's
+structured decision responses). repo 표면 반영: ISSUE_2_HOLDOUT_DRAFT §7 첫
+불릿·README 양어 (D91). GitHub Issue #3 편집 + 사유 코멘트 = 소유자 잔여.

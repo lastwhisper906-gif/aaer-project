@@ -215,7 +215,10 @@
 - **옵션**: (A) 적용 (GitHub Issue #3은 edited 표시 + 사유 코멘트 병행) ·
   (B) 문구 수정 후 적용 · (C) 기각 (사유 → overrides.md).
 - **세션 기본 조치**: 미적용 유지 (diff-only).
-- **상태**: OPEN
+- **상태**: **RESOLVED (owner, 2026-07-16, this session's structured decision
+  responses)** — **(A) 적용.** repo 표면(ISSUE_2 초안·README 양어) 반영 완료
+  (D91). GitHub Issue #3 본문 편집 + 사유 코멘트는 소유자 잔여 작업
+  (명령은 HANDOFF §게시 절차).
 
 ---
 
@@ -230,7 +233,10 @@
 - **옵션**: (A) 적용 (Issue #1/#3 edited 표시 + 사유 코멘트) · (B) 문구 수정
   후 적용 · (C) 기각 (사유 → overrides.md).
 - **세션 기본 조치**: 미적용 유지 (diff-only).
-- **상태**: OPEN
+- **상태**: **RESOLVED (owner, 2026-07-16, this session's structured decision
+  responses)** — **(A) 적용.** repo 표면(ISSUE_0 §5·ISSUE_2 표 헤더) 반영
+  완료 (D91). 스키마 필드 무변경(Cycle-2 개명 등록 유지). GitHub Issue
+  #1/#3 편집은 소유자 잔여 작업 (HANDOFF §게시 절차).
 
 ---
 

@@ -160,8 +160,14 @@ Full per-case taxonomy with filing citations: `analysis/error_analysis.md`.
   `docs/EARLINESS_DESIGN.md`.
 - **Calibration**: ECE (10-bin) = 0.209 against a 26.7% base rate; confidence
   (distance from the flag threshold) predicts correctness only weakly
-  (AUROC 0.656). Reported as a finding: these probabilities are rankings, not
-  calibrated risk estimates.
+  (AUROC 0.656). Reported as a finding: the 0–100 output is an ordinal score —
+  it ranks and flags (threshold 50), but does not function as a probability
+  ("70" is not "70% risk"). We do not recalibrate at this N: Platt/isotonic
+  fitting at N≈30–60 is dominated by binning noise, and small-N ECE is itself
+  an unstable estimate — ECE is retained as a diagnostic co-report only.
+  Verbalized-confidence research finds LLM-stated confidence systematically
+  overconfident, so this miscalibration is expected model behavior, not a
+  pipeline artifact.
 
 ## 6. Positioning against the literature (read the caveats)
 
