@@ -6,18 +6,18 @@
 > Response deadline = send date + 10 days. Log answers verbatim (the Tier 3
 > success metric counts specific responses, not sentiment).
 
-| # | Name | Type (Acct/Evals/Fin) | Why this reader | Contact path (email/LinkedIn/intro-via) | Warm or cold | Sent (date) | Deadline (+10d) | Responded? | Key quote |
-|---|------|----------------------|-----------------|------------------------------------------|--------------|-------------|-----------------|------------|-----------|
-| 1 |      | Acct/Audit           |                 |                                          |              |             |                 |            |           |
-| 2 |      | Acct/Audit           |                 |                                          |              |             |                 |            |           |
-| 3 |      | AI/ML Evals          |                 |                                          |              |             |                 |            |           |
-| 4 |      | AI/ML Evals          |                 |                                          |              |             |                 |            |           |
-| 5 |      | Finance practice     |                 |                                          |              |             |                 |            |           |
-| 6 |      |                      |                 |                                          |              |             |                 |            |           |
-| 7 |      |                      |                 |                                          |              |             |                 |            |           |
-| 8 |      |                      |                 |                                          |              |             |                 |            |           |
-| 9 |      |                      |                 |                                          |              |             |                 |            |           |
-| 10 |     |                      |                 |                                          |              |             |                 |            |           |
+| # | Name | Type (Acct/Evals/Fin) | Why this reader | Contact path (email/LinkedIn/intro-via) | Warm or cold | Sent (date) | Deadline (+10d) | Responded? | Q1 didn't know (verbatim) | Q2 would do differently (verbatim) | Q3 missing/overclaimed (verbatim) | Key quote |
+|---|------|----------------------|-----------------|------------------------------------------|--------------|-------------|-----------------|------------|---------------------------|-------------------------------------|-----------------------------------|-----------|
+| 1 |      | Acct/Audit           |                 |                                          |              |             |                 |            |                           |                                     |                                   |           |
+| 2 |      | Acct/Audit           |                 |                                          |              |             |                 |            |                           |                                     |                                   |           |
+| 3 |      | AI/ML Evals          |                 |                                          |              |             |                 |            |                           |                                     |                                   |           |
+| 4 |      | AI/ML Evals          |                 |                                          |              |             |                 |            |                           |                                     |                                   |           |
+| 5 |      | Finance practice     |                 |                                          |              |             |                 |            |                           |                                     |                                   |           |
+| 6 |      |                      |                 |                                          |              |             |                 |            |                           |                                     |                                   |           |
+| 7 |      |                      |                 |                                          |              |             |                 |            |                           |                                     |                                   |           |
+| 8 |      |                      |                 |                                          |              |             |                 |            |                           |                                     |                                   |           |
+| 9 |      |                      |                 |                                          |              |             |                 |            |                           |                                     |                                   |           |
+| 10 |     |                      |                 |                                          |              |             |                 |            |                           |                                     |                                   |           |
 
 Success bar (PROJECT.md §9): "learned something I didn't know" ≥ 2/5 ·
 "would change a judgment/action" ≥ 1 (0 with concrete "what's missing"

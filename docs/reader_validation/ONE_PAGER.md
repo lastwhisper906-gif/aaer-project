@@ -50,8 +50,19 @@ through the Claude Code harness, single-model, with an intra-family grader
 (3) Holdout N=3 with one robust case; the 3-arm c-arm is design-confounded
 (L-7) — full text in `docs/methodology_limitations.md` (L-1–L-7).
 
+**What's new (2026-07-16).** First **Tier 2 live output**: an
+earnings-quality memo on Gildan (GIL) built solely from filings submitted
+before the 2026-06-16 short report (input cutoff code-enforced at 06-15;
+selection background disclosed — a sealed pre-report replication, not a
+random screening hit; 19 quotes machine-verified): **{ISSUE_URL}**.
+Plus a threshold decision table: **no dominant single-threshold LLM strategy
+on the trajectory layer — CP95 intervals on every cell** (detection, false
+positives, and cost per detection at $0.53/screen measured;
+`analysis/DECISION_TABLE.md`).
+
 **Verify it yourself.** Repo: <https://github.com/lastwhisper906-gif/aaer-evals>
 · Release (citable freeze):
 <https://github.com/lastwhisper906-gif/aaer-evals/releases/tag/v1.0.0> ·
-Issues 0/1/2 = GitHub issues 1/2/3. `python tools/reproduce_analysis.py`
-recomputes every published number (PASS 100/100).
+Issues 0/1/2 = GitHub issues 1/2/3 · EQ Memo #1 = {ISSUE_URL}.
+`python tools/reproduce_analysis.py` recomputes every published number
+(PASS 100/100).
