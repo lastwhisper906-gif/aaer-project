@@ -314,7 +314,10 @@
   아님, 로컬+무료 인덱스 범위 확인 필요 — 네트워크 필요 시 소유자 감독) ·
   (B) 한계 절(L-8 후보)로만 기입 · (C) 기각.
 - **세션 기본 조치**: 등록만 (열린 소유자 항목).
-- **상태**: OPEN
+- **상태**: **RESOLVED (owner, 2026-07-16, this session's structured decision
+  responses)** — **감사 계획만 사전 등록** (`docs/SURVIVORSHIP_AUDIT_PLAN.md`,
+  판독 규칙 §3 사전 고정, D96). 실행은 차기 감독 세션 (RESUME.md 2번 작업,
+  네트워크 필요분 Q-E03 선례).
 
 ---
 
@@ -386,7 +389,10 @@
   aaer-evals 질문으로 등록. 이 세션은 등록만, 설계·구축 없음
   (docs/FUTURE_CYCLE_PROTOCOL.md 절차를 따를 것).
 
-- **상태**: OPEN
+- **상태**: **HOLD (owner, 2026-07-16, this session's structured decision
+  responses)** — 정당 보류: "Cycle-2 개시 시점에 일괄 설계 — 현재 어떤
+  하류 작업도 이에 막혀 있지 않다 (첫 seal 2026-11-15)." 발행·발송 크리티컬
+  패스 우선 (D96).
 
 ---
 

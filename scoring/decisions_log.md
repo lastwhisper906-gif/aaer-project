@@ -1042,3 +1042,7 @@ c44bd59a…)는 **서명 없이 superseded** (채점 미진입 상태 폐기). v
 ## D95 — Q-O04 소유자 서명: 유니버스 선정 프로토콜 발효 (A·12·$1B) (2026-07-16, 서명, JSON 1줄)
 
 {"decision":"D95","date":"2026-07-16","action":"Q-O04 서명 발효 — (owner, 2026-07-16, this session's structured decision responses). 확정: 섹터 (A) 하드웨어·전력 사슬 협의 SIC 집합 · 선정 수 12 · dei:EntityPublicFloat ≥$1B. UNIVERSE_SELECTION.md §6 확정 절 기입 + FREEZE 조항 재확인(열거 후 개정은 FREEZE_REV 전용)","rationale":"(A)>(B): 백테스트 실측 — 소프트웨어 유니버스는 CL4(재고·마진 축)가 insufficient_data로 빠짐(대조군 17/45); (A)>(C): 4911 제외는 전력 사슬 논지 훼손 + 사후 재편입이 체리피킹으로 읽힘(사후 제외는 FREEZE_REV로 저렴)","enumeration":"본 세션 미실행 (네트워크 = Q-E03 선례, 감독 전용) — RESUME.md 차기 감독 세션 1번 작업 등재","metered":"0호출","learning_note":"이 판단에서 알아야 할 것: 유니버스 확정의 힘은 목록이 아니라 순서에서 나온다 — 어떤 후보도 조회되기 전에 SIC 집합·수·하한이 커밋되었다는 타임스탬프가, 이후 나올 모든 메모의 '왜 이 회사였나' 질문에 대한 유일하게 검증 가능한 답이다"}
+
+## D96 — Q-F08 감사 계획 사전 등록 + Q-M04 정당 보류 (2026-07-16, 서명, JSON 1줄)
+
+{"decision":"D96","date":"2026-07-16","action":"Q-F08 — (owner, 2026-07-16, this session's structured decision responses) 'draft audit plan only': docs/SURVIVORSHIP_AUDIT_PLAN.md 사전 등록 (방법 §2 결정론·판독 규칙 §3 결과 열람 전 고정·동결 결과 무접촉 원칙). 실행은 차기 감독 세션. Q-M04 — HOLD: Cycle-2 개시 시점 일괄 설계, 하류 비차단 (첫 seal 2026-11-15)","forcing_context":"RP-18 게시문이 생존 편향을 'registered audit item'으로 공표 — 계획 커밋이 그 문장을 강한 의미에서 참으로 만든다","metered":"0호출","learning_note":"이 판단에서 알아야 할 것: 한계 항목의 감사 계획은 결과가 나오기 전에 판독 규칙까지 고정해야 감사가 된다 — 규칙 없이 재면 그 측정치는 유리한 쪽으로 해석될 자유도를 남긴다"}

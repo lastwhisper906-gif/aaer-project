@@ -725,3 +725,41 @@ runs/hardening/ 커밋. 발행 수치 재현·블라인드·매니페스트는 C
   `python tools/verify_blindness.py --write-manifest` 를 포함**해야 한다 —
   verify_blindness (d)가 runs/ 전체를 전역 MANIFEST와 대조하므로, 하위
   디렉토리 전용 매니페스트(_rp08 등)만 갱신하면 CI가 깨진다 (위 실측의 원인).
+
+---
+
+# 2026-07-16 서명 일괄 세션 (D90~D96, 미터링 0)
+
+**전 서명 인용**: (owner, 2026-07-16, this session's structured decision
+responses). 결정 12건 전부 해소 — OWNER_QUEUE에 서명 전 OPEN 항목은
+Q-F02(소유자 원문 대조)·Q-F07(교차 채점자)·Q-M01(FINRA ToS)·Q-M05(§5 절단)·
+Q-M06(7호출 옵션)·Q-M07(P5 32호출)만 남음 (전부 종전 지위 그대로).
+
+- D90 RP-17 수용 — CLAUDE.md 방법론 규율 6·7·8 발효 (사후 개정 한계·5게이트·단일 작성자)
+- D91 RP-15/16 적용 — Big R 정밀화·서수 언어 (repo 표면 완료; GH Issue 편집은 아래)
+- D92 RP-18 승인 — 배치 A, 게시 텍스트 `review_packets/RP-18_body.md`
+- D93 Q-O01/Q-O03 서명 — GIL 메모 확정 (제목 1안), access_log 해시 핀
+  (스냅샷 sha256 856d50f3984d, hash-only, 원본 미커밋 + .gitignore)
+- D94 Q-O02 서명 — DECISION_TABLE README 양어 등재
+- D95 Q-O04 발효 — (A) 협의 SIC·12개·float ≥$1B; 열거는 차기 감독 세션
+- D96 Q-F08 감사 계획 사전 등록(실행 보류)·Q-M04 정당 보류
+
+## 게시 절차 (소유자 실행 — 세션 게시 금지 계약)
+
+1. **Issue #4 (GIL 메모)**: `analysis/ISSUE_4_GIL_MEMO_DRAFT.md`의
+   "Proposed issue body" 절을 그대로 게시:
+   `gh issue create --repo lastwhisper906-gif/aaer-evals --title "EQ Memo #1 — Gildan Activewear (GIL): what pre-report filings alone reconstruct" --body-file <본문 추출본>`
+   → 게시 후: README 양어 Publication 절에 URL 추가 · ISSUE_4 헤더 PUBLISHED
+   갱신 · URL D-엔트리 (차기 세션 가능).
+2. **RP-18 코멘트**: `gh issue comment 2 --repo lastwhisper906-gif/aaer-evals --body-file review_packets/RP-18_body.md` → URL D-엔트리.
+3. **Issue #1/#3 편집 (RP-15/16 반영)**: GitHub 웹 또는 `gh issue edit` —
+   ISSUE_0_DRAFT §5 보정 불릿·ISSUE_2 §7 첫 불릿·§2 표 헤더의 현재 repo
+   텍스트를 각 이슈 본문에 반영. **edited 표시 + 사유 코멘트** ("RP-15/16
+   owner-signed 2026-07-16 — label precision + ordinal language; frozen
+   source texts in analysis/ISSUE_*_DRAFT.md, ledger D91").
+4. **독자 발송 5–10명**: `docs/reader_validation/OUTREACH_MESSAGE.md`의
+   {ISSUE_URL}을 1의 게시 URL로 치환 → 발송 → TARGET_LIST 기입 (Q1/Q2/Q3
+   verbatim 열). **미발송 시 Tier 3 검증 0점.**
+
+차기 감독 세션(네트워크): RESUME.md 말미 — ① 유니버스 열거 (Q-O04 발효분)
+② 생존 편향 감사 (SURVIVORSHIP_AUDIT_PLAN) ③ 게시 잔여 확인.
