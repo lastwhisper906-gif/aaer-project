@@ -1,15 +1,13 @@
-# Issue #4 (draft) — EQ Memo #1: Gildan Activewear (GIL), a sealed pre-report replication on pre-2026-06-16 filings only
+# Issue #4 — EQ Memo #1: Gildan Activewear (GIL)
 
-> **UNSIGNED DRAFT — do not post before owner signature (Q-O01/Q-O03).**
-> This file is the frozen source text for the GitHub Issue; the posted issue is
-> the publication surface. Format follows ISSUE_2 conventions (an "ISSUE_3_DRAFT"
-> file does not exist in the repo — Issue #3 was posted from ISSUE_2_HOLDOUT_DRAFT.md;
-> noted for the record). Posting and signing are owner actions — the session
-> prepares text only.
+> **FINAL — owner-signed 2026-07-16 (Q-O01·Q-O03, this session's structured
+> decision responses; ledger D93). This is the copy-paste text for posting;
+> the posting act itself is the owner's.** Format follows ISSUE_2 conventions
+> (an "ISSUE_3_DRAFT" file does not exist in the repo — Issue #3 was posted
+> from ISSUE_2_HOLDOUT_DRAFT.md; noted for the record).
 >
-> **Title proposal (pick one):**
-> 1. `EQ Memo #1 — Gildan Activewear (GIL): what pre-report filings alone reconstruct` *(recommended)*
-> 2. `EQ Memo #1 — GIL: a sealed pre-report replication (five flags, citations machine-verified)`
+> **Confirmed title (owner choice: proposal 1):**
+> `EQ Memo #1 — Gildan Activewear (GIL): what pre-report filings alone reconstruct`
 
 ---
 
@@ -82,10 +80,17 @@ didn't know? ② What would you now do differently? ③ What is missing?
 | §5-5 범위 한정 문구 | **PASS** | 양판 명시 ("limited to a single Claude-based pipeline") |
 | "채점: Claude 보조 + 인간 최종 확정" | **PASS** | 양판 명시 — 단 **서명 자체가 아직 없다** (Q-O01). 서명 전 게시 금지 |
 
-**게시 전 소유자 체크리스트**
-- [ ] Q-O01 서명: `citation_adjudication.md` 5건 + $201.6M 파생값 판정 + memo 승인
-- [ ] 본 Issue 텍스트(Q-O03) 승인 — 제목 선택 포함
-- [ ] 게시 후: README 'Publication' 절에 링크, 본 파일 헤더를 PUBLISHED로 갱신
-- [ ] 독자 발송 5–10명: `docs/reader_validation/` (ONE_PAGER · OUTREACH_MESSAGE ·
-      FEEDBACK_FORM) — **발송은 소유자만 할 수 있는 작업이며, 미발송 시 Tier 3
-      가치 검증은 0점이다**
+**게시 전 소유자 체크리스트 (2026-07-16 갱신)**
+- [x] Q-O01 서명: `citation_adjudication.md` 5건 + $201.6M 파생값 확인 + memo 승인 (D93)
+- [x] 본 Issue 텍스트(Q-O03) 승인 — 제목 proposal 1 확정 (D93)
+- [x] §6 자가 감사 재실행 (2026-07-16): 금지 어휘 grep 양판 0 히트 유지 ·
+      선정 배경·포지션 없음·면책·§5-5 문구 전부 존치 — 7/7 PASS
+- [x] access_log 해시 핀 반영: 양판 선정 배경 절에 스냅샷 sha256 `856d50f3984d`
+      기재 (hash-only 규약, 원본 로그 미커밋)
+- [ ] **게시 (소유자)**: `gh issue create --repo lastwhisper906-gif/aaer-evals
+      --title "EQ Memo #1 — Gildan Activewear (GIL): what pre-report filings alone reconstruct"
+      --body-file <본 파일의 'Proposed issue body' 절>` → 게시 후 README
+      'Publication' 절 링크 + 본 파일 헤더 PUBLISHED 갱신 + URL D-엔트리
+- [ ] **독자 발송 5–10명 (소유자)**: `docs/reader_validation/` — OUTREACH의
+      {ISSUE_URL}을 게시 URL로 치환 후 발송. **미발송 시 Tier 3 가치 검증은
+      0점이다**

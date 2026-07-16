@@ -25,4 +25,6 @@
 
 ## 서명
 
-- [ ] 위 5건 수기 판정 및 memo 반영 승인 — 사용자: ______ 날짜: ______
+- [x] 위 5건 수기 판정 및 memo 반영 승인 — 사용자: (owner, 2026-07-16,
+  this session's structured decision responses — Q-O01, $201.6M 파생값
+  assembly note 확인 포함, 원장 D93) 날짜: 2026-07-16
