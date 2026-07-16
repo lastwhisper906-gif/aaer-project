@@ -5,30 +5,32 @@
 > 결정 가능하도록 옵션·근거·기본값(default if no answer)을 명시한다.
 > 형식: Q-NNN — 질문 / 옵션 / 근거 / 세션 기본 조치 / 상태.
 
-## ⚡ 레버리지 순 요약 (2026-07-13 재작성 — 상세는 아래 개별 항목)
+## ⚡ 레버리지 순 요약 (2026-07-16 재작성 — 상세는 아래 개별 항목·docs/HANDOFF.md §게시 절차)
 
-1. **RP-17 서명** (수용/기각 — 기각 = 커밋 1 원복, 재실행 0; 수용 시 CLAUDE.md 3줄 diff 동반).
-2. **RP-15 서명** (Q-F03) — 라벨 명명 diff. (+ RP-16/Q-F04 보정 언어 diff 동병렬.)
-3. **screener 원격(S-03)+UA(S-01)** — seal 앵커 사슬 전제, 명령 준비됨.
-4. **`make smoke`** (~30호출) — E2 래치 (§6-3).
-5. **E2 발사** — 스모크 뒤 명령 한 줄 (D66/D67 완비):
-   `AAER_RAW_API_APPROVED=1 .venv/bin/python tools/e2_runner.py --execute`
-   146 evaluatee·0 grader (D65 기록 예산 — §5 문구 드리프트는 주석으로 확정,
-   별도 확인 불요)·**D60/D61: E2는 B4 대결을 해소하지 않는다 (커버 2/13) —
-   사는 것은 LLM vs B3 리드타임뿐.** 후처리(판정·요약) 자동.
-6. **RP-18 yes/no** — D53 비대칭 메모 발행 (완성 텍스트·명령 1줄, 비용 0).
-7. **변호사 2종** (screener S-10 증권 · S-13 이민/whistleblower).
-8. **Zenodo vs release** (Q-R03 + screener S-02 — 채널 단일화).
-9. **WS-6/7 예산** (Q-F06 124/108 · Q-F07 ~20호출, E4 동배치 권장).
-- 해소 반영: Q-F01 **RESOLVED**(D62) · Q-M02 **CONVERTED**(D63, 구현 GO 게이트)
-  · Q-M03 RESOLVED(D56/D57, RP-17이 상급 심급) · Q-E01/E02/E03·Q-R01/R02 RESOLVED.
-- 2026-07-13 야간 서면 승인 반영: **Q-F05 RESOLVED**(A-변형: 금야 창 발사) ·
-  **Q-F06 RESOLVED**(옵션 B: 108호출) · Q-M02 구현 **GO**(A-8) — 전부 인용
-  "(owner, 2026-07-13, written overnight authorization — this mission's prompt)".
-  freeze 개정 #4(docs/FREEZE_REV4_HARNESS_E2.md)가 금야 발사 경로를 지배.
-- 잔여 OPEN 상세: Q-F02(원문 대조)·Q-F07(교차 채점자 — grader 0 계약이라 금야
-  스코프 밖)·Q-F08(생존 편향 감사)·Q-M01(FINRA ToS)·Q-M04(Cycle-2 등록)·
-  **Q-M05(신규 — 야간 미션 프롬프트 §5 절단)**.
+1. **소유자 수동 게시 4종** (HANDOFF §게시 절차의 명령 그대로):
+   ① Issue #4 게시 (GIL 메모 — `analysis/ISSUE_4_GIL_MEMO_DRAFT.md` FINAL, 제목 확정본)
+   ② RP-18 코멘트 (Issue #2 — `review_packets/RP-18_body.md`)
+   ③ Issue #1/#3 편집 (RP-15/16 반영분 — edited 표시 + 사유 코멘트)
+   ④ 독자 발송 5–10명 ({ISSUE_URL} 치환 — 미발송 시 Tier 3 검증 0점).
+2. **차기 소유자 감독 세션 1번 작업**: 유니버스 열거 — Q-O04 발효분
+   (`docs/UNIVERSE_SELECTION.md` §6 확정 · `docs/RESUME.md` 재개 순서).
+3. **Q-F02** — Chu et al. 원문 대조 (소유자 직접 — 옵션은 아래 항목).
+4. **Q-F07** — 교차 패밀리 채점자 (~20호출 종량 — 옵션은 아래 항목).
+5. **Q-F08 실행** — 계획은 사전 등록 완료(D96), 실행은 감독 세션 편승.
+6. **Q-M01** — FINRA ToS/라이선스 확인.
+7. **Q-M04** — HOLD (Cycle-2 개시 시점 일괄 설계, D96).
+8. **Q-M05** — 야간 프롬프트 §5 절단 (재전송/폐기/부분 재지시 선택).
+9. **변호사 2종** (screener S-10 증권 · S-13 이민/whistleblower).
+10. **Zenodo vs release** (Q-R03 — 경로 확정, 소유자 계정 실행 대기).
+- 잔여 launch-ready 지출 옵션 (소유자 임의 시점, 본 재작성 시점 OPEN):
+  **Q-M06**(7호출 — E2 j=0 AUC 가능화) · **Q-M07**(P5 32호출 — E5 wave-2 재추첨).
+- **2026-07-16 서명 일괄 해소** (owner, 2026-07-16, this session's structured
+  decision responses): RP-17 수용(D90) · RP-15/Q-F03·RP-16/Q-F04 적용(D91) ·
+  RP-18 발행 승인(D92 — 게시 대기) · Q-O01·Q-O03 서명(D93) · Q-O02 서명(D94) ·
+  Q-O04 발효(D95) · Q-F08 계획 등록·Q-M04 HOLD(D96).
+- 종전 해소 (요약 이관): Q-F01(D62) · Q-M02(D72/D77~D79) · Q-M03(D56/D57 —
+  RP-17 서명 D90으로 원복 경로 소멸) · Q-F05(D84) · Q-F06(D85) · E2 발사
+  사슬 완결(D82) · Q-E01/E02/E03 · Q-R01/R02 · Q-R03(경로 확정, 실행 대기).
 
 ---
 
@@ -187,7 +189,6 @@
   fetch 후 `verify_manifest.py --write` + README "(N 파일)" 갱신 → payload-v2
   재실행 · (B) 방치 (진단 계열 영향 0 문서화로 충분).
 - **세션 기본 조치**: 없음 (fetch 금지 — 계약 9).
-- **상태**: OPEN
 
 ---
 
@@ -204,7 +205,7 @@
 
 ---
 
-## Q-F03 — RP-15 라벨 명명 diff (DIFF-4/DIFF-5) 서명 — OPEN
+## Q-F03 — RP-15 라벨 명명 diff (DIFF-4/DIFF-5) 서명 — **RESOLVED (2026-07-16)**
 
 - **질문**: 발행 표면의 홀드아웃 라벨 서술에 "Big R (Item 4.02 non-reliance)"
   정밀화 + 기저율 한정 + 4년 모니터링 윈도를 반영할까?
@@ -222,7 +223,7 @@
 
 ---
 
-## Q-F04 — RP-16 보정 언어 diff (DIFF-6/DIFF-7) 서명 — OPEN
+## Q-F04 — RP-16 보정 언어 diff (DIFF-6/DIFF-7) 서명 — **RESOLVED (2026-07-16)**
 
 - **질문**: 발행 표면의 확률 함의 언어 2건을 서수(ordinal) 규약으로 교체할까?
   (ISSUE_0 §5 "these probabilities are rankings" 문장 강화 + ISSUE_2 표 헤더
@@ -240,7 +241,7 @@
 
 ---
 
-## Q-F05 — perturbation-v2 name-ID 프로브 런 (launch-ready, 미터링 62호출) — OPEN
+## Q-F05 — perturbation-v2 name-ID 프로브 런 (launch-ready, 미터링 62호출) — **RESOLVED (2026-07-13)**
 
 - **질문**: v2 날짜 이동 페이로드로 name-ID 프로브를 재실행할까?
   (specs/perturb_v2.md §5 — 사전 등록 엔드포인트: v2 rate vs 동결 v1
@@ -266,7 +267,7 @@
 
 ---
 
-## Q-F06 — WS-6 median-of-3 발사 예산 게이트 (launch-ready) — OPEN
+## Q-F06 — WS-6 median-of-3 발사 예산 게이트 (launch-ready) — **RESOLVED (2026-07-13)**
 
 - **질문**: specs/draw_k3.md의 k=3 median 병기 1차값 런을 발사할까?
 - **예산 (repo 계수 산술)**: (A) 전량 신규 = (30 wave-1 + 32 wave-2) × 2draw
@@ -300,7 +301,7 @@
 
 ---
 
-## Q-F08 — 대조군 풀 생존 편향(survivorship) 감사 — OPEN (등록)
+## Q-F08 — 대조군 풀 생존 편향(survivorship) 감사 — **RESOLVED (2026-07-16, 계획 등록)**
 
 - **발견 (WS 외 등록 — 미션 지시)**: 대조군 풀이 **현재 시점** EDGAR SIC
   browse에서 열거되었다면, 상장폐지·등록취소(deregistered) 제출자가 풀에서
@@ -351,7 +352,6 @@
   §2 — 사후 완화 금지 조항).
 - **옵션**: (A) 과거 일정표 수집 지시 (무-미터링 세션 작업 가능) · (B) LAG=14 유지.
 - **세션 기본 조치**: 등록만.
-- **상태**: OPEN
 
 ---
 
@@ -380,7 +380,7 @@
 
 ---
 
-## Q-M04 — Cycle-2 등록: 설명가능성(explainability) 채점 설계 — OPEN (등록만, 원번호 Q-M03 재부여)
+## Q-M04 — Cycle-2 등록: 설명가능성(explainability) 채점 설계 — **HOLD (2026-07-16)** (원번호 Q-M03 재부여)
 
 - **맥락**: screener stage-2 출력 계약이 계정 수준 가설 스키마로 고정됨
   (screener/schemas/flag_explanation.json + validate_explanation.py 기계
@@ -443,7 +443,7 @@
 
 ---
 
-## Q-O01 — OUT-GIL-V1 소비 가능 산출물 서명 게이트 (GIL 블라인드 메모 v1) — OPEN (2026-07-15)
+## Q-O01 — OUT-GIL-V1 소비 가능 산출물 서명 게이트 (GIL 블라인드 메모 v1) — **RESOLVED (2026-07-16)**
 
 - **대상**: (1) `runs/gil_memo_v1/citation_adjudication.md` — 비-VERIFIED 인용 5건
   수기 판정(전부 "…" 병합 인용, 날조 0) 서명; (2) 메모 승인 —
@@ -459,11 +459,10 @@
   memo 서명 블록 기입, 원장 D93.
 - **병렬 세션 병합 기록**: 08be4ee(20:38, 데이터·평가 2호출·검증·한글 초안 커밋)
   + 본 커밋(과제 규격 memo·원장·큐) — 동일 실험의 분업, 수치 충돌 없음.
-- **상태**: OPEN (사용자 확정 사항 — 세션은 자료 제공까지)
 
 ---
 
-## Q-O02 — DECISION_TABLE 서명 게이트 (임계·비용 결정 표, README 링크 전제) — OPEN (2026-07-16)
+## Q-O02 — DECISION_TABLE 서명 게이트 (임계·비용 결정 표, README 링크 전제) — **RESOLVED (2026-07-16)**
 
 - **대상**: `analysis/DECISION_TABLE.md` (서명 전 초안) + 수치 원본
   `analysis/decision_table.json`. 사전 등록 `analysis/DECISION_TABLE_PLAN.md`
@@ -484,7 +483,7 @@
 
 ---
 
-## Q-O03 — GIL 메모 발행 패키지 서명 (Issue #4 텍스트 + 보강 2건 — Q-O01 연동) — OPEN (2026-07-16)
+## Q-O03 — GIL 메모 발행 패키지 서명 (Issue #4 텍스트 + 보강 2건 — Q-O01 연동) — **RESOLVED (2026-07-16)**
 
 - **대상 (Q-O01의 서명 대상이 이번 세션에서 보강됨 — 서명은 보강본 기준)**:
   1. **선정 배경 공개 절 추가** — `runs/gil_memo_v1/memo_draft.md`(한글)·
@@ -511,7 +510,7 @@
 
 ---
 
-## Q-O04 — UNIVERSE_SELECTION 발효 서명 (SIC 집합 확정 — 열거 개시 게이트) — OPEN (2026-07-16, 원번호 Q-O03 병렬 랜딩 재부여)
+## Q-O04 — UNIVERSE_SELECTION 발효 서명 (SIC 집합 확정 — 열거 개시 게이트) — **RESOLVED (2026-07-16)** (원번호 Q-O03 병렬 랜딩 재부여)
 
 - **대상**: `docs/UNIVERSE_SELECTION.md` (D89 사전 등록). EQ 모니터 유니버스의
   기계 선정 기준 — 서명 + §6 SIC 집합 선택 전에는 어떤 세션도 후보 기업을
