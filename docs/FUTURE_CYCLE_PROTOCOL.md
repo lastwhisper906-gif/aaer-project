@@ -55,3 +55,29 @@
 - 이 프로토콜은 Cycle 2 개시 결정(소유자)과 함께 발효한다. Cycle 1 잔여 작업
   (E2·E4·E5 wave-2 arm 등 launch-ready 동결분)은 Cycle 1 규약대로 실행한다.
 - 변경은 §5-6 이력 공개 조건 하에서만.
+
+## 부록 A — Cycle 2 사전 등록 후보 대장 (등록만 — 발효는 Cycle 2 개시 시)
+
+> 2026-07-16 기입. 이 부록은 Cycle 2 개시 시점에 sealed 사전 등록으로 승격할
+> 후보를 **소급 성능 주장 없이** 쌓아두는 대장이다. 여기 등록되었다는 사실은
+> 어떤 검증도 아니다.
+
+### A-1. 결합 규칙: B3 게이트(W8 score ≥ 2) AND LLM(score ≥ T)
+
+- **유래**: D87 결정 표 워크스트림의 EXPLORATORY 산출 (`analysis/decision_table.json`,
+  사전 등록 `analysis/DECISION_TABLE_PLAN.md` §5). 동결 데이터를 열람한 뒤 구성한
+  **사후(post-hoc) 규칙**이므로, Cycle 1 데이터 위의 어떤 수치도 이 규칙의 성능
+  근거로 인용할 수 없다 (D87 산출물의 라벨이 그 금지를 명문화).
+- **검증 무대 (유일)**: 분기 봉인 전향 예측 (본 문서 §1(b) 해시 봉인 방식,
+  첫 봉인 2026-11-15 — `docs/MONTHLY_RITUAL.md` §B). 봉인 시점에 임계 T·판정
+  규칙·성공 지표를 sealed 문서 안에 사전 등록하고, 폭로·AAER 발생 후 개봉
+  대조한다. 그때부터의 실적만이 이 규칙의 실적이다.
+- **상태**: 후보 등록 (소유자 서명 불요 — 등록 자체는 주장이 아님. 봉인 편입
+  여부는 seal 작성 시점의 소유자 결정).
+
+### A-2. 기존 등록 질문 포인터
+
+- 설명가능성(explainability) 채점 설계 — OWNER_QUEUE **Q-M04** (등록만 상태
+  유지, 설계는 Cycle 2 개시 후).
+- 점수 필드 개명(`misstatement_probability` → 서수 명칭) — Q-F04 근거 문서
+  `specs/calibration_scope.md`의 Cycle-2 개명 등록.
