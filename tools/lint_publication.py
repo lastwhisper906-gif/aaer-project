@@ -104,6 +104,64 @@ LOWER_BOUND_ALLOW = re.compile(
     r"|structural lower bound|구조적 하한", re.I)
 
 
+# (J) D100 (RISK_SCORE_SEMANTICS §4): 서수 점수의 확률화 서술 금지.
+#     대상 = README 양어·ONE_PAGER + forward 사이클 문서(존재 시). 동결 ISSUE
+#     초안 3종은 게시된 역사 텍스트이므로 제외 (수정은 소유자 서명 diff 전용
+#     — RP-15/16 선례). 통계 p-값(p=0.0021, p=3.0e-05)은 소수점/지수로 구별.
+ORDINAL_DOCS = ["README.md", "README.ko.md", "docs/reader_validation/ONE_PAGER.md"]
+P_INT_SCORE = re.compile(r"\bp\s*=\s*\d{1,3}(?![\d.%eE])")
+PCT_PROB = re.compile(
+    r"\d{1,3}\s*%\s*(?:probability|likelihood|chance|확률|가능성)"
+    r"|(?:확률|가능성)\s*[:=약]?\s*\d{1,3}\s*%"
+    r"|(?:probability|likelihood|chance)\s+of\s+\d{1,3}\s*%", re.I)
+PROB_ALLOW = re.compile(r"not a|does not mean|≠|아니다|아니라|않는다|금지", re.I)
+
+# (K) D100 (CLAIM_HIERARCHY §L4): 현 증거 수준에서 무자격 사용 금지 문구.
+CLAIM_FORBIDDEN = [
+    (r"predicts\s+fraud\s+in\s+public\s+compan", "predicts fraud in public companies"),
+    (r"estimates?\s+real-?world\s+fraud\s+probabilit", "estimates real-world fraud probability"),
+    (r"validated\s+fraud[- ]detection\s+system", "validated fraud detection system"),
+    (r"population-?level\s+performance", "population-level performance"),
+    (r"검증된\s*사기\s*탐지\s*시스템", "검증된 사기 탐지 시스템"),
+    (r"모집단\s*수준\s*성능", "모집단 수준 성능"),
+]
+CLAIM_ALLOW = re.compile(r"\bnot\b|cannot|do(es)? not|없|않|금지|아니|Level 4|지원하지", re.I)
+
+
+def ordinal_claim_docs():
+    """규칙 (J)/(K) 대상 문서 — 고정 3종 + forward 사이클 마크다운(존재 시)."""
+    paths = [p for p in ORDINAL_DOCS if (REPO / p).exists()]
+    paths += sorted(str(p.relative_to(REPO)) for p in REPO.glob("forward/**/*.md"))
+    return paths
+
+
+def check_ordinal_and_claims():
+    viols = []
+    for path in ordinal_claim_docs():
+        text = (REPO / path).read_text(encoding="utf-8")
+        lines = text.splitlines()
+        for m in P_INT_SCORE.finditer(text):
+            ln = text[:m.start()].count("\n") + 1
+            viols.append((path, ln, f"(J) 정수형 p=NN 케이스 점수 인용 금지 (→ 'score NN', "
+                                    f"RP-16/D91): {lines[ln-1].strip()[:70]}"))
+        for m in PCT_PROB.finditer(text):
+            win = text[max(0, m.start() - 120):m.end() + 120]
+            if PROB_ALLOW.search(win):
+                continue  # 교정 서술("≠ 70% 확률" 등)은 허용
+            ln = text[:m.start()].count("\n") + 1
+            viols.append((path, ln, f"(J) 서수 점수의 %확률화 서술 금지 "
+                                    f"(RISK_SCORE_SEMANTICS §2): {lines[ln-1].strip()[:70]}"))
+        for pat, label in CLAIM_FORBIDDEN:
+            for m in re.finditer(pat, text, re.I):
+                win = text[max(0, m.start() - 120):m.end() + 120]
+                if CLAIM_ALLOW.search(win):
+                    continue  # 부정·한정 문맥("does not support …")은 허용
+                ln = text[:m.start()].count("\n") + 1
+                viols.append((path, ln, f"(K) 무자격 주장 문구 금지 '{label}' "
+                                        f"(CLAIM_HIERARCHY): {lines[ln-1].strip()[:70]}"))
+    return viols
+
+
 STALE = [
     (r"316\s*파일", "stale manifest count (→ 402)"),
     (r"0%\s*FPR", "0% FPR 금지"),
@@ -189,11 +247,14 @@ def main():
     for path, ln, msg in check_canon():
         print(f"  {path}:{ln}: {msg}")
         total += 1
+    for path, ln, msg in check_ordinal_and_claims():
+        print(f"  {path}:{ln}: {msg}")
+        total += 1
     if total:
         print(f"\nFAIL — 발행 정합 위반 {total}건")
         return 1
     print("PASS — 발행 정합 (0% 오탐·G2-fraud·대조군주어·pooled·EXPLORATORY·stale"
-          "·canon 무위반)")
+          "·canon·서수확률화(J)·주장위계(K) 무위반)")
     return 0
 
 

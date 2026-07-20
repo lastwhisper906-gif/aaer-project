@@ -36,6 +36,18 @@ GitHub numbers 1/2/3). The posted issues are the publication surface; the
   [v1.0.0](https://github.com/lastwhisper906-gif/aaer-evals/releases/tag/v1.0.0)
   (annotated tag; frozen numbers as published).
 
+### Post-publication notice (2026-07-20) — partial de-identification of the v1 perturbed frame
+
+v1 remains frozen and no original result is recomputed. A dated audit
+confirmed the v1 perturbed frame removed company names, tickers, and CIK and
+rescaled monetary values, but **retained original SEC accession numbers and
+the real filing chronology**. The perturbed arm is therefore **partially
+de-identified**, not fully identity-masked: recognition may have occurred
+through accession metadata, filing chronology, financial structure, or
+memorized financial patterns, and the published recognition rates cannot be
+attributed solely to financial-pattern reconstruction. Details:
+[`docs/V1_PARTIAL_DEIDENTIFICATION_NOTE.md`](docs/V1_PARTIAL_DEIDENTIFICATION_NOTE.md).
+
 ## Headline — three layers, peeling along the memorization axis
 
 Conclusions fire by **pre-committed** machine rules R1–R4 / H1–H3, committed
@@ -110,10 +122,10 @@ re-verified True.** The signal **weakens but does not collapse**. All three
 companies carry provisional (G2) restatement labels — all three Big R (Item 4.02
 non-reliance), mechanically verified (`analysis/label_tags_holdout.json`) — not
 confirmed enforcement:
-- Per-case: **HUBG p=70 (flagged)** · GNE 42 · WMK 32 — all G2-provisional
+- Per-case: **HUBG score 70 (0–100 ordinal; flagged)** · GNE 42 · WMK 32 — all G2-provisional
   restatement events, labels pending any 4.02/AAER upgrade.
 - **k=5 redraw band (E5 §7, run 2026-07-09; published values remain draw-1):
-  HUBG p=70 [5-draw range 58–76, ≥50 in 5/5 → robust under the pre-committed
+  HUBG score 70 [5-draw range 58–76, ≥50 in 5/5 → robust under the pre-committed
   ≥4/5 rule]** · WMK 32 [28–42, 0/5] · GNE 42 [30–42, 0/5] — zero flips.
 - **Matched controls (E1, run 2026-07-09 under supervision, D26)**: HUBG's 70
   sits **above all three of its matched controls** (RXO 42 · Brink's 30 ·

@@ -5,7 +5,11 @@
 > 결정 가능하도록 옵션·근거·기본값(default if no answer)을 명시한다.
 > 형식: Q-NNN — 질문 / 옵션 / 근거 / 세션 기본 조치 / 상태.
 
-## ⚡ 레버리지 순 요약 (2026-07-16 재작성 — 상세는 아래 개별 항목·docs/HANDOFF.md §게시 절차)
+## ⚡ 레버리지 순 요약 (2026-07-20 재작성 — 상세는 아래 개별 항목·docs/HANDOFF.md §게시 절차)
+
+> 재작성 근거: 2026-07-20 소유자 계획 (lean hardening + 첫 forward seal
+> 2026-11-15). 계획 §6 명령: 인프라 작업이 아래 발송·게시 항목을 대체하거나
+> 뒤로 미루지 않는다. 순서 = 크리티컬 패스 순.
 
 1. **소유자 수동 게시 4종** (HANDOFF §게시 절차의 명령 그대로):
    ① Issue #4 게시 (GIL 메모 — `analysis/ISSUE_4_GIL_MEMO_DRAFT.md` FINAL, 제목 확정본)
@@ -15,16 +19,25 @@
 2. **screener SEC User-Agent (S-01) + GitHub 원격 생성/push (S-03)** —
    seal 타임스탬프 앵커 사슬의 전제 (첫 seal 2026-11-15); 명령 준비됨
    (HANDOFF §게시 절차 / LAUNCH_SEQUENCE).
-3. **차기 소유자 감독 세션 1번 작업**: 유니버스 열거 — Q-O04 발효분
-   (`docs/UNIVERSE_SELECTION.md` §6 확정 · `docs/RESUME.md` 재개 순서).
-4. **Q-F02** — Chu et al. 원문 대조 (소유자 직접 — 옵션은 아래 항목).
-5. **Q-F07** — 교차 패밀리 채점자 (~20호출 종량 — 옵션은 아래 항목).
-6. **Q-F08 실행** — 계획은 사전 등록 완료(D96), 실행은 감독 세션 편승.
-7. **Q-M01** — FINRA ToS/라이선스 확인.
-8. **Q-M04** — HOLD (Cycle-2 개시 시점 일괄 설계, D96).
-9. **Q-M05** — 야간 프롬프트 §5 절단 (재전송/폐기/부분 재지시 선택).
-10. **변호사 2종** (screener S-10 증권 · S-13 이민/whistleblower).
-11. **Zenodo vs release** (Q-R03 — 경로 확정, 소유자 계정 실행 대기).
+3. **첫 forward seal 발사 게이트** — `forward/cycle_001/OWNER_LAUNCH_GATE.md`
+   (2026-07-20 세션 신설): 유니버스·프로토콜·호출 수·구독 quota 계획·seal
+   명령 일체가 한 문서. 소유자 승인 전 어떤 모델 런도 발사되지 않는다.
+4. **Q-O08 (신규)** — FREEZE_REV3/Q-R02 raw-API(종량) GO 결정 vs 2026-07-20
+   zero-metered 명령의 충돌 정리 (아래 항목 — 기본값: REV3 발효 무기 정지).
+5. **Q-O05·Q-O06·Q-O07 서명 3건** (메모 파이프라인 일반화 · MODEL_TRANSITION
+   발효 · Tier-3 RESPONSES 구조).
+6. **Q-F02** — Chu et al. 원문 대조 (소유자 직접 — 옵션은 아래 항목).
+7. **Q-F07** — 교차 패밀리 채점자 (~20호출 — 2026-07-20 계획에 따라 실행 시
+   Codex CLI 구독 인증 경유, 종량 API 키 금지; P1 백로그).
+8. **Q-F08 실행** — 계획은 사전 등록 완료(D96), 실행은 감독 세션 편승.
+9. **Q-M01** — FINRA ToS/라이선스 확인.
+10. **Q-M05** — 야간 프롬프트 §5 절단 (재전송/폐기/부분 재지시 선택).
+11. **변호사 2종** (screener S-10 증권 · S-13 이민/whistleblower).
+12. **Zenodo vs release** (Q-R03 — 경로 확정, 소유자 계정 실행 대기).
+- 유니버스 열거 (Q-O04 발효분): 2026-07-20 세션이 소유자 계획 §4.4/§8 위임에
+  따라 수행 상태를 `governance/DECISION_FORWARD_UNIVERSE.md`에 기록 — 결과
+  확인은 소유자 몫.
+- **Q-M04** — HOLD (Cycle-2 개시 시점 일괄 설계, D96).
 - 잔여 launch-ready 지출 옵션 (소유자 임의 시점, 본 재작성 시점 OPEN):
   **Q-M06**(7호출 — E2 j=0 AUC 가능화) · **Q-M07**(P5 32호출 — E5 wave-2 재추첨).
 - **2026-07-16 서명 일괄 해소** (owner, 2026-07-16, this session's structured
@@ -582,4 +595,24 @@
 - **옵션**: (A) 서명 — 발송 개시 시 이 구조로 기록 · (B) 열 구성 수정 후
   서명 · (C) 기각.
 - **세션 기본 조치**: 구조만 커밋 (응답 데이터 0 — 발송은 P0 소유자 작업).
+- **상태**: OPEN (사용자 확정 사항 — 세션은 자료 제공까지)
+
+---
+
+## Q-O08 — FREEZE_REV3(raw-API 종량 이행) GO vs zero-metered 명령 충돌 정리 — OPEN (2026-07-20)
+
+- **충돌**: Q-R02는 **RESOLVED (D40) — (A) GO, 다음 실행 배치부터 발효**로
+  피평가자 호출의 순수 Anthropic SDK(종량 API 키) 이행을 승인했다. 그러나
+  2026-07-20 소유자 계획 §0.4는 **zero-metered 명령**을 발효했다: 모든 모델
+  호출은 구독 OAuth(`claude -p`) 전용, `ANTHROPIC_API_KEY` 사용·요청·설정
+  전면 금지, 신규 종량 경로 추가 금지. 두 소유자 결정이 정면 충돌한다.
+- **현재 상태 (안전)**: INVARIANT 4 가드(`pipeline/cli_client.py`)는 유지
+  중이며, `api_client.py`는 이중 래치(AAER_RAW_API_APPROVED=1 + API 키)로
+  실행 불가. 이 세션은 코드를 삭제하지 않았다 (이력 보존).
+- **옵션**: (A 기본) FREEZE_REV3 발효를 **무기 정지(suspended)** 로 기록 —
+  D40의 GO는 이력으로 보존하되 zero-metered 명령이 우선함을 D-엔트리로 명시
+  · (B) FREEZE_REV3 기각으로 격하 (Q-R02 (C) 소급) · (C) zero-metered 명령에
+  예외 조항 신설 (소유자 서면 필요).
+- **세션 기본 조치**: (A) 해석으로 forward 스펙·게이트 문서를 작성 (스펙은
+  구독 OAuth를 동결 경로로 명기). D-엔트리 서명은 소유자 몫.
 - **상태**: OPEN (사용자 확정 사항 — 세션은 자료 제공까지)

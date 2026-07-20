@@ -114,12 +114,14 @@ Q-M02/Q-F05/Q-F06 RESOLVED · D68~D85 (18 엔트리). 5게이트 최종 green.
 
 ## 2026-07-16 서명 일괄 세션 이후 — 차기 소유자 감독 세션의 재개 순서
 
-1. **유니버스 열거 (Q-O04 발효분 — 최우선)**: `docs/UNIVERSE_SELECTION.md`
-   §6 확정(옵션 A · 12개 · float ≥$1B) 기준으로 EDGAR SIC browse +
-   companyfacts fetch — **감독 하 1회** (Q-E03 선례: 무인 네트워크 fetch
-   금지). 절차는 UNIVERSE_SELECTION §2~5 그대로 (모집단 → 기계 선별 →
-   tie-breaker → PROPOSED 커밋 → 컷오프 검증). 열거 이후 기준 개정은
-   FREEZE_REV 전용.
+1. **유니버스 열거 — 완료 (2026-07-20, D100)**: owner plan 2026-07-20
+   §4.4/§8 서면 위임으로 실행됨 (`governance/DECISION_FORWARD_UNIVERSE.md`
+   §5 권한 기록). 산출: `forward/cycle_001/universe.json` (12사 + 대기
+   103사) · 스냅샷 `data/candidates/universe/` + SNAPSHOT_MANIFEST 핀 ·
+   결정론 재계산 `tools/forward_enumerate.py --offline` 일치 확인. **소유자
+   확인 항목 2건** (4911 라운드로빈 무배정 · TTMI float 스케일 이상):
+   `forward/cycle_001/OWNER_LAUNCH_GATE.md` §1. 이후 기준 개정은 FREEZE_REV
+   전용 (열거 실행됨).
 2. Q-F08 생존 편향 감사 실행 (사전 등록 계획: `docs/SURVIVORSHIP_AUDIT_PLAN.md`
    — 네트워크 필요분은 동일 감독 세션에 편승).
 3. 게시 잔여 확인: Issue #4 게시·RP-18 코멘트·Issue #1/#3 편집이 완료됐는지

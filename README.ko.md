@@ -27,6 +27,16 @@
   전 셀 CP95 병기**. [`analysis/DECISION_TABLE.md`](analysis/DECISION_TABLE.md)
 - **인용 가능한 동결점**: 릴리스 [v1.0.0](https://github.com/lastwhisper906-gif/aaer-evals/releases/tag/v1.0.0) (annotated tag, 발행 동결값 그대로).
 
+### 발행 후 고지 (2026-07-20) — v1 교란 프레임의 부분 탈익명화
+
+v1은 동결 유지, 원 결과 재계산 없음. 일자 기입 감사에서 v1 교란 프레임이
+회사명·티커·CIK를 제거하고 금액을 재척도했으나 **원본 SEC accession 번호와
+실제 제출 연대기를 그대로 유지**했음을 확인했다. 따라서 교란 arm은 완전
+정체 가림이 아니라 **부분 탈익명화**다: 정체 인지는 accession 메타데이터·
+제출 연대기·재무 구조·암기된 재무 패턴 어느 경로로든 일어날 수 있었고,
+발행된 인지율을 재무 패턴 복원만의 결과로 귀속할 수 없다. 상세:
+[`docs/V1_PARTIAL_DEIDENTIFICATION_NOTE.md`](docs/V1_PARTIAL_DEIDENTIFICATION_NOTE.md).
+
 ## 헤드라인 — 3층 서사 (암기 축을 따라 벗겨내기)
 
 발동 결론 규칙은 **사전 커밋**된 R1–R4 / H1–H3의 기계 판정이다(점수 존재 전 커밋 —
@@ -75,7 +85,7 @@ recognition gate 3/3 비인지(폭로 미암기 실증, draw-1). **게이트 k=5
 세 회사 라벨은 전건 G2 잠정 — 그리고 **전건 Big R**(Item 4.02 비신뢰 선언 동반,
 기계 검증 `analysis/label_tags_holdout.json`), 확정 집행 아님.
 신호는 **약화하나 붕괴하지 않는다**:
-- per-case: **HUBG p=70(플래그)** · GNE 42 · WMK 32. **HUBG는 기계 스크린(Beneish
+- per-case: **HUBG 점수 70 (0–100 서수; 플래그)** · GNE 42 · WMK 32. **HUBG는 기계 스크린(Beneish
   M·Dechow F)이 결측으로 계산조차 못 한 곳에서 탐지** → LLM 신호는 M/F 복제가 아니다.
 - 단 정직 단서(오류해부 P1): HUBG의 적중은 **tier 적중 / 기제 빗나감**(dim2=1 — 과거
   2018 정정 클러스터에 정박, 2026 사건 기제 미상). 리스크 스크리닝 ≠ forensic 기제 탐지.
