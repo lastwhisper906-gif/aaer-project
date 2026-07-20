@@ -60,10 +60,10 @@ forward/·specs/·governance/ 전 파일 바이트 동일 — 실측).
 
 | # | 파일 | 줄 |
 |---|---|---|
-| 1 | `governance/RATIFY_UNIVERSE_RULE.md` | `RATIFICATION: RATIFIED (owner, date: …)` |
-| 2 | `docs/FREEZE_REV5_SIC4911_SLOT.md` | `FREEZE_REV5: SIGNED (owner, choice: A\|B, date: …)` |
-| 3 | `docs/FREEZE_REV6_TTMI_FLOAT.md` | `FREEZE_REV6: ACKNOWLEDGED (owner, date: …)` |
-| 4 | (차단 해제는 1–3 완료가 조건 — 별도 서명 없음) | — |
+| 1 | `governance/RATIFY_UNIVERSE_RULE.md` | ✅ **RATIFIED (owner, 2026-07-20)** — D101 |
+| 2 | `docs/FREEZE_REV5_SIC4911_SLOT.md` | ✅ **SIGNED choice (A) (owner, 2026-07-20)** — D101 |
+| 3 | `docs/FREEZE_REV6_TTMI_FLOAT.md` | ✅ **ACKNOWLEDGED (owner, 2026-07-20)** — D101 |
+| 4 | 차단 해소 (1–3 서명 완료, D101) — 게이트 서명은 11월 실행 창 | — |
 | 5 | GIL 게시·독자 발송 — 저장소 밖 소유자 행동 | — |
 
 서명 후 후속(임의 세션 가능): 각 서명에 대응하는 D-엔트리를
