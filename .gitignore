@@ -5,3 +5,5 @@ __pycache__/
 .venv/
 logs/*.jsonl
 logs/*.jsonl.gz
+harness/logs/
+.harness.lock/
