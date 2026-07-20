@@ -1,7 +1,6 @@
 # FREEZE_REV6_TTMI_FLOAT.md — freeze 개정 #6: TTMI float 단위 이상(원자료 결함)의 기록
 
-> 2026-07-20 작성. status: **awaiting-owner-signature — 초안, 자체 승인
-> 없음.** 발효는 아래 서명란으로만. **이것은 데이터 수정이 아니라 알려진
+> 2026-07-20 작성. status: **ACKNOWLEDGED (owner, 2026-07-20).** 발효는 아래 서명란으로만. **이것은 데이터 수정이 아니라 알려진
 > 데이터 결함의 문서화다** — 원 제출값은 스냅샷에 무변경 보존된다.
 > **본 엔트리는 cycle_001의 어떤 모델 점수도 존재하기 전에 기록되었다**
 > (2026-07-20 실측: `forward/cycle_001/scores.json` 부재).
@@ -38,7 +37,7 @@
 아래 `PENDING`을 `ACKNOWLEDGED`로 바꾸고 날짜를 기입하면 발효한다:
 
 ```
-FREEZE_REV6: PENDING   (owner, date: __________)
+FREEZE_REV6: ACKNOWLEDGED   (owner, 2026-07-20, this session's structured decision responses)
 ```
 
 - 전제 재확인: **cycle_001 모델 점수 부재 상태에서 기록·서명됨.**
