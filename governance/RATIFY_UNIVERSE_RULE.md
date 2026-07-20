@@ -21,7 +21,7 @@ float ≥$1B·폼/XBRL 요건·오염 제외·버킷 내 정렬)은 열거에서
   구현했다 (`# 버킷 라운드로빈 (SIC 오름차순 고정)`).
 - 기계적 귀결: 비어있지 않은 버킷 13개 > 슬롯 12 → 마지막 버킷
   4911(전력 유틸리티)이 무배정, 그 최상위 NEE가 1순위 대기(alternate).
-- 상세·서명: `governance/FREEZE_REV_DRAFTS.md` **FREEZE_REV-001**.
+- 상세·서명: `docs/FREEZE_REV5_SIC4911_SLOT.md` (freeze 개정 #5 초안).
 
 ### 확장 2 — 열거 실행 권한 (절차)
 
