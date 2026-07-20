@@ -1066,3 +1066,7 @@ c44bd59a…)는 **서명 없이 superseded** (채점 미진입 상태 폐기). v
 ## D101 — 소유자 서명 3건 발효: 유니버스 추인 + FREEZE_REV5(A) + FREEZE_REV6 (2026-07-20, 무호출, JSON 1줄)
 
 {"decision":"D101","date":"2026-07-20","action":"OWNER_DECISION_PACKET_2026-07-20 항목 1–3 소유자 서명 발효 — ① RATIFY_UNIVERSE_RULE: RATIFIED (D95 확장 2건 추인 — SIC 오름차순 버킷 순회 + 서면 위임 열거; universe.json 12사+대기 103사를 D95 유효 적용으로 확정) ② FREEZE_REV5: SIGNED choice (A) 규칙 유지 — 4911 무배정·NEE 1순위 대기는 라운드로빈 기계 결과로 승인 ③ FREEZE_REV6: ACKNOWLEDGED — TTMI dei:EntityPublicFloat 제출값 ~×1000 과대 기록(포함 무영향·원자료 무수정)","authority":"owner, 2026-07-20, this session's structured decision responses (D95 서명 형식 선례)","precondition":"cycle_001 모델 점수 부재 재확인 (scores.json 없음) — 3건 전부 점수 전 서명","effect":"OWNER_LAUNCH_GATE(D100) 차단 항목 1–3 해소 — 게이트 서명은 11월 실행 창에서 별도","metered":"0호출","learning_note":"이 판단에서 알아야 할 것: 추인의 치유력은 시점에서 나온다 — 같은 서명이라도 점수 관측 후라면 사후 합리화가 되고, 점수 부재 상태의 동일자 서명이라 사전 등록 서사가 보존된다"}
+
+## D102 — Q-O08 소유자 서명: FREEZE_REV3 무기 정지 — zero-metered 우선 (2026-07-20, 무호출, JSON 1줄)
+
+{"decision":"D102","date":"2026-07-20","action":"Q-O08 해소 — 옵션 (A): FREEZE_REV3(피평가자 raw Anthropic SDK 종량 이행, D40 GO)를 무기 정지(suspended)로 기록. D40의 GO는 이력 보존(소급 격하 없음), 2026-07-20 소유자 계획 §0.4 zero-metered 명령(구독 OAuth 전용·ANTHROPIC_API_KEY 전면 금지)이 우선. api_client.py/runner_api.py 스캐폴드는 무변경 동결 유지, 이중 래치 유효. 재활성화는 정지 해제가 아니라 신규 소유자 결정 전용","authority":"owner, 2026-07-20, this session's structured decision responses","metered":"0호출","learning_note":"이 판단에서 알아야 할 것: 정면 충돌하는 두 소유자 결정은 암묵 우선순위로 두면 안 된다 — 어느 쪽이 이기는지 명시 서명으로 박아야 미래 세션이 D40을 근거로 종량 경로를 되살리는 사고를 막는다"}

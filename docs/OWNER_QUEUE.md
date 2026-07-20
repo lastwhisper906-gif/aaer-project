@@ -599,7 +599,7 @@
 
 ---
 
-## Q-O08 — FREEZE_REV3(raw-API 종량 이행) GO vs zero-metered 명령 충돌 정리 — OPEN (2026-07-20)
+## Q-O08 — FREEZE_REV3(raw-API 종량 이행) GO vs zero-metered 명령 충돌 정리 — **RESOLVED (2026-07-20, D102)**
 
 - **충돌**: Q-R02는 **RESOLVED (D40) — (A) GO, 다음 실행 배치부터 발효**로
   피평가자 호출의 순수 Anthropic SDK(종량 API 키) 이행을 승인했다. 그러나
@@ -615,4 +615,7 @@
   예외 조항 신설 (소유자 서면 필요).
 - **세션 기본 조치**: (A) 해석으로 forward 스펙·게이트 문서를 작성 (스펙은
   구독 OAuth를 동결 경로로 명기). D-엔트리 서명은 소유자 몫.
-- **상태**: OPEN (사용자 확정 사항 — 세션은 자료 제공까지)
+- **해소 (2026-07-20)**: 소유자 서명 — **(A) FREEZE_REV3 무기 정지(suspended)**.
+  D40 GO는 이력 보존, zero-metered 명령 우선. 재활성화는 신규 소유자 결정
+  전용. 원장 D102.
+- **상태**: RESOLVED (owner, 2026-07-20, this session's structured decision responses)
