@@ -1,6 +1,7 @@
 # AAER Evals — 이해상충 없는 회계 품질 신호의 백테스트
 
 > Authored by Claude Code, pending human audit (GA-001 (b), D15).
+> 기여 분담: [CONTRIBUTIONS.md](CONTRIBUTIONS.md) (AI-인간 기여 표, D106 ⑤).
 > 본 결과는 Claude 기반 단일 파이프라인(피평가자 claude-sonnet-5 핀)에 한정된다
 > (PROJECT.md §5-5). **These controls BOUND memorization risk; they do not eliminate it.**
 

@@ -1,6 +1,7 @@
 # AAER Evals — Backtesting a Conflict-Free Accounting-Quality Signal
 
 > Authored by Claude Code, pending human audit (GA-001 (b), D15).
+> Who did what: [CONTRIBUTIONS.md](CONTRIBUTIONS.md) (AI-vs-human table, D106 ⑤).
 > All results are scoped to a single Claude-based pipeline (evaluatee pinned to
 > claude-sonnet-5; PROJECT.md §5-5). **These controls BOUND memorization risk;
 > they do not eliminate it.** 한국어 원문: [README.ko.md](README.ko.md).

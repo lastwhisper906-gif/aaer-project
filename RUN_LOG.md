@@ -56,3 +56,4 @@
 | 46 | tools/lint_publication.py | C3 | rule (L) added — results-language paragraph without task-tier token fails; governance phrase "task separation" exempt; frozen ISSUE drafts exempt (RP-15/16) |
 | 47 | docs/reader_validation/ONE_PAGER.md | C2/C3 | 2 tier tags added ([TASK 1] Question / [TASK 3] GIL memo) to clear new rule L — OWNER: re-approve before reader dispatch (pre-dispatch surface, D92 queue) |
 | — | NOTE | C2 | Frozen memo audit (report-only, no edits): ISSUE_0 7 untagged results-blocks — all single-cohort wave-1 statements, no cross-task pooling; ISSUE_1/2 0; GIL memo 1 spurious (disclaimer). Owner may add tags via signed diff; not required |
+| 48 | CONTRIBUTIONS.md | D1 | created — 9-row AI/owner table, 1 [OWNER CONFIRM] (pre-GA-001 commit trailers), accountability model; linked from both README headers; 28 lines |
