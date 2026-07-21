@@ -4,7 +4,7 @@
 - Branch: remediation/external-review
 - Worktree: ~/work/worktrees/forensic-project-remediation
 - Invocation scope: Phase 0 + Phase 1 (Tasks 1–11)
-- Harness model-call budget: 40 | **consumed: 27 FINAL** (T03: 2b+1r; T02: 3b+2r; T06: 1b+1r; T07: 2b+1b+1r; T08: 3b+1r STOPPED; T09: 3b+2r STOPPED; T10: 1b+1r; T11: 1b+1r)
+- Harness model-call budget: 40 | **consumed: 29** (was 27 at Phase-1 exit; +T08v2 1b+1r) (T03: 2b+1r; T02: 3b+2r; T06: 1b+1r; T07: 2b+1b+1r; T08: 3b+1r STOPPED; T09: 3b+2r STOPPED; T10: 1b+1r; T11: 1b+1r)
 
 ## Preflight (2026-07-21)
 
@@ -28,8 +28,8 @@
 | Task 5 (wave2 rev2 rerun) | DIRECT | QUARANTINED (rule 1): verdict R4 UNCHANGED, primary stats identical, but tie-aware Spearman shifts published rho_M 0.337→0.333, rho_F 0.265→0.293 → E-002 held as DRAFT in final packet; rev2 artifact committed (deterministic, v1 untouched) | – | (this commit) |
 | Task 6 (schema unification) | HARNESS | COMMITTED (APPROVED cycle 1/3) | ~/tools/harness/logs/T06_schema_unification_20260721_152549 | see log |
 | Task 7 (fingerprinted idempotency) | HARNESS | COMMITTED (run 1 killed mid-cycle-2 → reset+relaunched once per protocol; relaunch APPROVED cycle 1) | ~/tools/harness/logs/T07_fingerprint_idempotency_20260721_153703 | see log |
-| Task 8 (dynamic blindness scanner) | HARNESS | STOPPED (max-cycles 3, QUARANTINE rule 3 — root cause: orchestrator-supplied registry omitted scoring/probe_results_v2*/v2ds_* surfaces; discovery guarantee worked and caught it; c2 review also flagged fail-open carve-outs + name-variant weakening; worktree reverted, diffs preserved in run dir; RECOMMEND accepted — owner D3) → RELAUNCH IN_PROGRESS: ~/work/remediation-tasks/T08v2_blindness_scanner.md (registry v2 pre-validated: 940 files, 0 uncovered) | ~/tools/harness/logs/T08_blindness_scanner_20260721_154259 | – |
-| Task 9 (cutoff loader contract) | HARNESS Option B | STOPPED (max-cycles 3, rule 3 — c3 review: registry-weakening guard needed for fixture mode; un-editable caller scoring/probe_verdict.py:62 breaks on signature change; coverage-metadata regression; fixture-mode writes to DEFAULT access log. Worktree reverted, diffs in run dir. RECOMMEND: relaunch with sharpened spec covering string-ticker compat + fixture-mode logging isolation) | ~/tools/harness/logs/T09_cutoff_loader_contract_20260721_155721 | – |
+| Task 8 (dynamic blindness scanner) | HARNESS | STOPPED (max-cycles 3, QUARANTINE rule 3 — root cause: orchestrator-supplied registry omitted scoring/probe_results_v2*/v2ds_* surfaces; discovery guarantee worked and caught it; c2 review also flagged fail-open carve-outs + name-variant weakening; worktree reverted, diffs preserved in run dir; owner D3) → v2 relaunch COMMITTED (APPROVED cycle 1/3; run T08v2_blindness_scanner_20260721_213051) | ~/tools/harness/logs/T08_blindness_scanner_20260721_154259 | – |
+| Task 9 (cutoff loader contract) | HARNESS Option B | STOPPED (max-cycles 3, rule 3 — c3 review: registry-weakening guard needed for fixture mode; un-editable caller scoring/probe_verdict.py:62 breaks on signature change; coverage-metadata regression; fixture-mode writes to DEFAULT access log. Worktree reverted, diffs in run dir. owner D4) → v2 relaunch IN_PROGRESS: ~/work/remediation-tasks/T09v2_cutoff_loader_contract.md | ~/tools/harness/logs/T09_cutoff_loader_contract_20260721_155721 | – |
 | Task 10 (exception swallowing) | HARNESS | COMMITTED (APPROVED cycle 1/3) | ~/tools/harness/logs/T10_exception_swallowing_20260721_162559 | see log |
 | Task 11 (synthetic fixtures) | HARNESS | COMMITTED (APPROVED cycle 1/3; synthetic tier runs corpus-free, real tier iterates ALL cases) | ~/tools/harness/logs/T11_synthetic_fixtures_20260721_163048 | see log |
 
