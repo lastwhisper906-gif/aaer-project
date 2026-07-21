@@ -1,0 +1,297 @@
+# make verify-public — clean-HOME sandbox transcript (Phase B2, 2026-07-22)
+# HOME redirected to empty temp dir; contents of $HOME at start:
+# (empty)
+
+.venv/bin/python tools/reproduce_analysis.py
+
+PASS — 100/100 항목 일치 (발행 수치 ↔ 커밋 산출물 재계산)
+.venv/bin/python tools/lint_publication.py
+PASS — 발행 정합 (0% 오탐·G2-fraud·대조군주어·pooled·EXPLORATORY·stale·canon·서수확률화(J)·주장위계(K)·태스크층위(L) 무위반)
+.venv/bin/python tools/lint_doc_counts.py
+PASS — 문서 수치 정합 (manifest 538 · pytest 275 · 명령 목록 일치)
+.venv/bin/python -m pytest pipeline tools scoring analysis -q
+[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[33ms[0m[33ms[0m[33ms[0m[33ms[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[33ms[0m[33ms[0m[33ms[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[33m [ 26%]
+[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[33m [ 52%]
+[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[33ms[0m[33ms[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[33m [ 78%]
+[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[32m.[0m[33m              [100%][0m
+[33m=============================== warnings summary ===============================[0m
+pipeline/test_build_payload.py:17
+  /Users/chaeryeollee/Documents/aaer-evals/pipeline/test_build_payload.py:17: PytestUnknownMarkWarning: Unknown pytest.mark.real_cache - is this a typo?  You can register custom marks to avoid this warning - for details, see https://docs.pytest.org/en/stable/how-to/mark.html
+    pytest.mark.real_cache,
+
+analysis/test_synthesis_integrity.py::test_main_writes_exclusion_artifact
+  /Users/chaeryeollee/Documents/aaer-evals/analysis/synthesis.py:255: UserWarning: Glyph 45230 (\N{HANGUL SYLLABLE NAJ}) missing from font(s) DejaVu Sans.
+    fig.tight_layout()
+
+analysis/test_synthesis_integrity.py::test_main_writes_exclusion_artifact
+  /Users/chaeryeollee/Documents/aaer-evals/analysis/synthesis.py:255: UserWarning: Glyph 51012 (\N{HANGUL SYLLABLE EUL}) missing from font(s) DejaVu Sans.
+    fig.tight_layout()
+
+analysis/test_synthesis_integrity.py::test_main_writes_exclusion_artifact
+  /Users/chaeryeollee/Documents/aaer-evals/analysis/synthesis.py:255: UserWarning: Glyph 49688 (\N{HANGUL SYLLABLE SU}) missing from font(s) DejaVu Sans.
+    fig.tight_layout()
+
+analysis/test_synthesis_integrity.py::test_main_writes_exclusion_artifact
+  /Users/chaeryeollee/Documents/aaer-evals/analysis/synthesis.py:255: UserWarning: Glyph 47197 (\N{HANGUL SYLLABLE ROG}) missing from font(s) DejaVu Sans.
+    fig.tight_layout()
+
+analysis/test_synthesis_integrity.py::test_main_writes_exclusion_artifact
+  /Users/chaeryeollee/Documents/aaer-evals/analysis/synthesis.py:255: UserWarning: Glyph 50516 (\N{HANGUL SYLLABLE AM}) missing from font(s) DejaVu Sans.
+    fig.tight_layout()
+
+analysis/test_synthesis_integrity.py::test_main_writes_exclusion_artifact
+  /Users/chaeryeollee/Documents/aaer-evals/analysis/synthesis.py:255: UserWarning: Glyph 44592 (\N{HANGUL SYLLABLE GI}) missing from font(s) DejaVu Sans.
+    fig.tight_layout()
+
+analysis/test_synthesis_integrity.py::test_main_writes_exclusion_artifact
+  /Users/chaeryeollee/Documents/aaer-evals/analysis/synthesis.py:255: UserWarning: Glyph 50557 (\N{HANGUL SYLLABLE YAG}) missing from font(s) DejaVu Sans.
+    fig.tight_layout()
+
+analysis/test_synthesis_integrity.py::test_main_writes_exclusion_artifact
+  /Users/chaeryeollee/Documents/aaer-evals/analysis/synthesis.py:255: UserWarning: Glyph 54632 (\N{HANGUL SYLLABLE HAM}) missing from font(s) DejaVu Sans.
+    fig.tight_layout()
+
+analysis/test_synthesis_integrity.py::test_main_writes_exclusion_artifact
+  /Users/chaeryeollee/Documents/aaer-evals/analysis/synthesis.py:255: UserWarning: Glyph 54616 (\N{HANGUL SYLLABLE HA}) missing from font(s) DejaVu Sans.
+    fig.tight_layout()
+
+analysis/test_synthesis_integrity.py::test_main_writes_exclusion_artifact
+  /Users/chaeryeollee/Documents/aaer-evals/analysis/synthesis.py:255: UserWarning: Glyph 46973 (\N{HANGUL SYLLABLE RAG}) missing from font(s) DejaVu Sans.
+    fig.tight_layout()
+
+analysis/test_synthesis_integrity.py::test_main_writes_exclusion_artifact
+  /Users/chaeryeollee/Documents/aaer-evals/analysis/synthesis.py:255: UserWarning: Glyph 50640 (\N{HANGUL SYLLABLE E}) missing from font(s) DejaVu Sans.
+    fig.tight_layout()
+
+analysis/test_synthesis_integrity.py::test_main_writes_exclusion_artifact
+  /Users/chaeryeollee/Documents/aaer-evals/analysis/synthesis.py:255: UserWarning: Glyph 46020 (\N{HANGUL SYLLABLE DO}) missing from font(s) DejaVu Sans.
+    fig.tight_layout()
+
+analysis/test_synthesis_integrity.py::test_main_writes_exclusion_artifact
+  /Users/chaeryeollee/Documents/aaer-evals/analysis/synthesis.py:255: UserWarning: Glyph 48516 (\N{HANGUL SYLLABLE BUN}) missing from font(s) DejaVu Sans.
+    fig.tight_layout()
+
+analysis/test_synthesis_integrity.py::test_main_writes_exclusion_artifact
+  /Users/chaeryeollee/Documents/aaer-evals/analysis/synthesis.py:255: UserWarning: Glyph 47532 (\N{HANGUL SYLLABLE RI}) missing from font(s) DejaVu Sans.
+    fig.tight_layout()
+
+analysis/test_synthesis_integrity.py::test_main_writes_exclusion_artifact
+  /Users/chaeryeollee/Documents/aaer-evals/analysis/synthesis.py:255: UserWarning: Glyph 50976 (\N{HANGUL SYLLABLE YU}) missing from font(s) DejaVu Sans.
+    fig.tight_layout()
+
+analysis/test_synthesis_integrity.py::test_main_writes_exclusion_artifact
+  /Users/chaeryeollee/Documents/aaer-evals/analysis/synthesis.py:255: UserWarning: Glyph 51648 (\N{HANGUL SYLLABLE JI}) missing from font(s) DejaVu Sans.
+    fig.tight_layout()
+
+analysis/test_synthesis_integrity.py::test_main_writes_exclusion_artifact
+  /Users/chaeryeollee/Documents/aaer-evals/analysis/synthesis.py:255: UserWarning: Glyph 53685 (\N{HANGUL SYLLABLE TONG}) missing from font(s) DejaVu Sans.
+    fig.tight_layout()
+
+analysis/test_synthesis_integrity.py::test_main_writes_exclusion_artifact
+  /Users/chaeryeollee/Documents/aaer-evals/analysis/synthesis.py:255: UserWarning: Glyph 51228 (\N{HANGUL SYLLABLE JE}) missing from font(s) DejaVu Sans.
+    fig.tight_layout()
+
+analysis/test_synthesis_integrity.py::test_main_writes_exclusion_artifact
+  /Users/chaeryeollee/Documents/aaer-evals/analysis/synthesis.py:255: UserWarning: Glyph 49892 (\N{HANGUL SYLLABLE SIL}) missing from font(s) DejaVu Sans.
+    fig.tight_layout()
+
+analysis/test_synthesis_integrity.py::test_main_writes_exclusion_artifact
+  /Users/chaeryeollee/Documents/aaer-evals/analysis/synthesis.py:255: UserWarning: Glyph 54744 (\N{HANGUL SYLLABLE HEOM}) missing from font(s) DejaVu Sans.
+    fig.tight_layout()
+
+analysis/test_synthesis_integrity.py::test_main_writes_exclusion_artifact
+  /Users/chaeryeollee/Documents/aaer-evals/analysis/synthesis.py:255: UserWarning: Glyph 50500 (\N{HANGUL SYLLABLE A}) missing from font(s) DejaVu Sans.
+    fig.tight_layout()
+
+analysis/test_synthesis_integrity.py::test_main_writes_exclusion_artifact
+  /Users/chaeryeollee/Documents/aaer-evals/analysis/synthesis.py:255: UserWarning: Glyph 45784 (\N{HANGUL SYLLABLE NIM}) missing from font(s) DejaVu Sans.
+    fig.tight_layout()
+
+analysis/test_synthesis_integrity.py::test_main_writes_exclusion_artifact
+  /Users/chaeryeollee/Documents/aaer-evals/analysis/synthesis.py:255: UserWarning: Glyph 48520 (\N{HANGUL SYLLABLE BUL}) missing from font(s) DejaVu Sans.
+    fig.tight_layout()
+
+analysis/test_synthesis_integrity.py::test_main_writes_exclusion_artifact
+  /Users/chaeryeollee/Documents/aaer-evals/analysis/synthesis.py:255: UserWarning: Glyph 44032 (\N{HANGUL SYLLABLE GA}) missing from font(s) DejaVu Sans.
+    fig.tight_layout()
+
+analysis/test_synthesis_integrity.py::test_main_writes_exclusion_artifact
+  /Users/chaeryeollee/Documents/aaer-evals/analysis/synthesis.py:256: UserWarning: Glyph 50516 (\N{HANGUL SYLLABLE AM}) missing from font(s) DejaVu Sans.
+    fig.savefig(out_dir / "fig_memorization_doseresponse.png", dpi=140)
+
+analysis/test_synthesis_integrity.py::test_main_writes_exclusion_artifact
+  /Users/chaeryeollee/Documents/aaer-evals/analysis/synthesis.py:256: UserWarning: Glyph 44592 (\N{HANGUL SYLLABLE GI}) missing from font(s) DejaVu Sans.
+    fig.savefig(out_dir / "fig_memorization_doseresponse.png", dpi=140)
+
+analysis/test_synthesis_integrity.py::test_main_writes_exclusion_artifact
+  /Users/chaeryeollee/Documents/aaer-evals/analysis/synthesis.py:256: UserWarning: Glyph 54616 (\N{HANGUL SYLLABLE HA}) missing from font(s) DejaVu Sans.
+    fig.savefig(out_dir / "fig_memorization_doseresponse.png", dpi=140)
+
+analysis/test_synthesis_integrity.py::test_main_writes_exclusion_artifact
+  /Users/chaeryeollee/Documents/aaer-evals/analysis/synthesis.py:256: UserWarning: Glyph 46973 (\N{HANGUL SYLLABLE RAG}) missing from font(s) DejaVu Sans.
+    fig.savefig(out_dir / "fig_memorization_doseresponse.png", dpi=140)
+
+analysis/test_synthesis_integrity.py::test_main_writes_exclusion_artifact
+  /Users/chaeryeollee/Documents/aaer-evals/analysis/synthesis.py:256: UserWarning: Glyph 50640 (\N{HANGUL SYLLABLE E}) missing from font(s) DejaVu Sans.
+    fig.savefig(out_dir / "fig_memorization_doseresponse.png", dpi=140)
+
+analysis/test_synthesis_integrity.py::test_main_writes_exclusion_artifact
+  /Users/chaeryeollee/Documents/aaer-evals/analysis/synthesis.py:256: UserWarning: Glyph 46020 (\N{HANGUL SYLLABLE DO}) missing from font(s) DejaVu Sans.
+    fig.savefig(out_dir / "fig_memorization_doseresponse.png", dpi=140)
+
+analysis/test_synthesis_integrity.py::test_main_writes_exclusion_artifact
+  /Users/chaeryeollee/Documents/aaer-evals/analysis/synthesis.py:256: UserWarning: Glyph 48516 (\N{HANGUL SYLLABLE BUN}) missing from font(s) DejaVu Sans.
+    fig.savefig(out_dir / "fig_memorization_doseresponse.png", dpi=140)
+
+analysis/test_synthesis_integrity.py::test_main_writes_exclusion_artifact
+  /Users/chaeryeollee/Documents/aaer-evals/analysis/synthesis.py:256: UserWarning: Glyph 47532 (\N{HANGUL SYLLABLE RI}) missing from font(s) DejaVu Sans.
+    fig.savefig(out_dir / "fig_memorization_doseresponse.png", dpi=140)
+
+analysis/test_synthesis_integrity.py::test_main_writes_exclusion_artifact
+  /Users/chaeryeollee/Documents/aaer-evals/analysis/synthesis.py:256: UserWarning: Glyph 50976 (\N{HANGUL SYLLABLE YU}) missing from font(s) DejaVu Sans.
+    fig.savefig(out_dir / "fig_memorization_doseresponse.png", dpi=140)
+
+analysis/test_synthesis_integrity.py::test_main_writes_exclusion_artifact
+  /Users/chaeryeollee/Documents/aaer-evals/analysis/synthesis.py:256: UserWarning: Glyph 51648 (\N{HANGUL SYLLABLE JI}) missing from font(s) DejaVu Sans.
+    fig.savefig(out_dir / "fig_memorization_doseresponse.png", dpi=140)
+
+analysis/test_synthesis_integrity.py::test_main_writes_exclusion_artifact
+  /Users/chaeryeollee/Documents/aaer-evals/analysis/synthesis.py:256: UserWarning: Glyph 53685 (\N{HANGUL SYLLABLE TONG}) missing from font(s) DejaVu Sans.
+    fig.savefig(out_dir / "fig_memorization_doseresponse.png", dpi=140)
+
+analysis/test_synthesis_integrity.py::test_main_writes_exclusion_artifact
+  /Users/chaeryeollee/Documents/aaer-evals/analysis/synthesis.py:256: UserWarning: Glyph 51228 (\N{HANGUL SYLLABLE JE}) missing from font(s) DejaVu Sans.
+    fig.savefig(out_dir / "fig_memorization_doseresponse.png", dpi=140)
+
+analysis/test_synthesis_integrity.py::test_main_writes_exclusion_artifact
+  /Users/chaeryeollee/Documents/aaer-evals/analysis/synthesis.py:256: UserWarning: Glyph 49892 (\N{HANGUL SYLLABLE SIL}) missing from font(s) DejaVu Sans.
+    fig.savefig(out_dir / "fig_memorization_doseresponse.png", dpi=140)
+
+analysis/test_synthesis_integrity.py::test_main_writes_exclusion_artifact
+  /Users/chaeryeollee/Documents/aaer-evals/analysis/synthesis.py:256: UserWarning: Glyph 54744 (\N{HANGUL SYLLABLE HEOM}) missing from font(s) DejaVu Sans.
+    fig.savefig(out_dir / "fig_memorization_doseresponse.png", dpi=140)
+
+analysis/test_synthesis_integrity.py::test_main_writes_exclusion_artifact
+  /Users/chaeryeollee/Documents/aaer-evals/analysis/synthesis.py:256: UserWarning: Glyph 50500 (\N{HANGUL SYLLABLE A}) missing from font(s) DejaVu Sans.
+    fig.savefig(out_dir / "fig_memorization_doseresponse.png", dpi=140)
+
+analysis/test_synthesis_integrity.py::test_main_writes_exclusion_artifact
+  /Users/chaeryeollee/Documents/aaer-evals/analysis/synthesis.py:256: UserWarning: Glyph 45784 (\N{HANGUL SYLLABLE NIM}) missing from font(s) DejaVu Sans.
+    fig.savefig(out_dir / "fig_memorization_doseresponse.png", dpi=140)
+
+analysis/test_synthesis_integrity.py::test_main_writes_exclusion_artifact
+  /Users/chaeryeollee/Documents/aaer-evals/analysis/synthesis.py:256: UserWarning: Glyph 45230 (\N{HANGUL SYLLABLE NAJ}) missing from font(s) DejaVu Sans.
+    fig.savefig(out_dir / "fig_memorization_doseresponse.png", dpi=140)
+
+analysis/test_synthesis_integrity.py::test_main_writes_exclusion_artifact
+  /Users/chaeryeollee/Documents/aaer-evals/analysis/synthesis.py:256: UserWarning: Glyph 51012 (\N{HANGUL SYLLABLE EUL}) missing from font(s) DejaVu Sans.
+    fig.savefig(out_dir / "fig_memorization_doseresponse.png", dpi=140)
+
+analysis/test_synthesis_integrity.py::test_main_writes_exclusion_artifact
+  /Users/chaeryeollee/Documents/aaer-evals/analysis/synthesis.py:256: UserWarning: Glyph 49688 (\N{HANGUL SYLLABLE SU}) missing from font(s) DejaVu Sans.
+    fig.savefig(out_dir / "fig_memorization_doseresponse.png", dpi=140)
+
+analysis/test_synthesis_integrity.py::test_main_writes_exclusion_artifact
+  /Users/chaeryeollee/Documents/aaer-evals/analysis/synthesis.py:256: UserWarning: Glyph 47197 (\N{HANGUL SYLLABLE ROG}) missing from font(s) DejaVu Sans.
+    fig.savefig(out_dir / "fig_memorization_doseresponse.png", dpi=140)
+
+analysis/test_synthesis_integrity.py::test_main_writes_exclusion_artifact
+  /Users/chaeryeollee/Documents/aaer-evals/analysis/synthesis.py:256: UserWarning: Glyph 50557 (\N{HANGUL SYLLABLE YAG}) missing from font(s) DejaVu Sans.
+    fig.savefig(out_dir / "fig_memorization_doseresponse.png", dpi=140)
+
+analysis/test_synthesis_integrity.py::test_main_writes_exclusion_artifact
+  /Users/chaeryeollee/Documents/aaer-evals/analysis/synthesis.py:256: UserWarning: Glyph 54632 (\N{HANGUL SYLLABLE HAM}) missing from font(s) DejaVu Sans.
+    fig.savefig(out_dir / "fig_memorization_doseresponse.png", dpi=140)
+
+analysis/test_synthesis_integrity.py::test_main_writes_exclusion_artifact
+  /Users/chaeryeollee/Documents/aaer-evals/analysis/synthesis.py:256: UserWarning: Glyph 48520 (\N{HANGUL SYLLABLE BUL}) missing from font(s) DejaVu Sans.
+    fig.savefig(out_dir / "fig_memorization_doseresponse.png", dpi=140)
+
+analysis/test_synthesis_integrity.py::test_main_writes_exclusion_artifact
+  /Users/chaeryeollee/Documents/aaer-evals/analysis/synthesis.py:256: UserWarning: Glyph 44032 (\N{HANGUL SYLLABLE GA}) missing from font(s) DejaVu Sans.
+    fig.savefig(out_dir / "fig_memorization_doseresponse.png", dpi=140)
+
+-- Docs: https://docs.pytest.org/en/stable/how-to/capture-warnings.html
+[33m[32m266 passed[0m, [33m[1m9 skipped[0m, [33m[1m49 warnings[0m[33m in 8.26s[0m[0m
+.venv/bin/python tools/verify_manifest.py --schema-only
+PASS (schema-only): 538 files, 585,654,364 bytes
+.venv/bin/python tools/verify_blindness.py
+WARN (b) 모델 어휘 'manipulat' — runs/draw_k3/w1_controls/draw_2/case_18.json (누출 증거 아님)
+WARN (b) 모델 어휘 'manipulat' — runs/draw_k3/w1_controls/draw_2/case_19.json (누출 증거 아님)
+WARN (b) 모델 어휘 'manipulat' — runs/draw_k3/w1_controls/draw_2/case_26.json (누출 증거 아님)
+WARN (b) 모델 어휘 'fraud' — runs/draw_k3/w1_controls/draw_2/case_31.json (누출 증거 아님)
+WARN (b) 모델 어휘 'manipulat' — runs/draw_k3/w1_controls/draw_2/case_36.json (누출 증거 아님)
+WARN (b) 모델 어휘 'fraud' — runs/draw_k3/w1_controls/draw_3/case_22.json (누출 증거 아님)
+WARN (b) 모델 어휘 'manipulat' — runs/draw_k3/w1_controls/draw_3/case_22.json (누출 증거 아님)
+WARN (b) 모델 어휘 'manipulat' — runs/draw_k3/w1_controls/draw_3/case_33.json (누출 증거 아님)
+WARN (b) 모델 어휘 'fraud' — runs/draw_k3/wave2/draw_2/case_41.json (누출 증거 아님)
+WARN (b) 모델 어휘 'fraud' — runs/draw_k3/wave2/draw_2/case_42.json (누출 증거 아님)
+WARN (b) 모델 어휘 'manipulat' — runs/draw_k3/wave2/draw_2/case_43.json (누출 증거 아님)
+WARN (b) 모델 어휘 'manipulat' — runs/draw_k3/wave2/draw_2/case_50.json (누출 증거 아님)
+WARN (b) 모델 어휘 'fraud' — runs/draw_k3/wave2/draw_2/case_60.json (누출 증거 아님)
+WARN (b) 모델 어휘 'manipulat' — runs/draw_k3/wave2/draw_2/case_63.json (누출 증거 아님)
+WARN (b) 모델 어휘 'manipulat' — runs/draw_k3/wave2/draw_3/case_45.json (누출 증거 아님)
+WARN (b) 모델 어휘 'manipulat' — runs/draw_k3/wave2/draw_3/case_46.json (누출 증거 아님)
+WARN (b) 모델 어휘 'manipulat' — runs/draw_k3/wave2/draw_3/case_47.json (누출 증거 아님)
+WARN (b) 모델 어휘 'fraud' — runs/draw_k3/wave2/draw_3/case_49.json (누출 증거 아님)
+WARN (b) 모델 어휘 'manipulat' — runs/draw_k3/wave2/draw_3/case_52.json (누출 증거 아님)
+WARN (b) 모델 어휘 'fraud' — runs/draw_k3/wave2/draw_3/case_54.json (누출 증거 아님)
+WARN (b) 모델 어휘 'fraud' — runs/draw_k3/wave2/draw_3/case_55.json (누출 증거 아님)
+WARN (b) 모델 어휘 'fraud' — runs/draw_k3/wave2/draw_3/case_57.json (누출 증거 아님)
+WARN (b) 모델 어휘 'manipulat' — runs/draw_k3/wave2/draw_3/case_63.json (누출 증거 아님)
+WARN (b) 모델 어휘 'manipulat' — runs/e2/s1/case_10.json (누출 증거 아님)
+WARN (b) 모델 어휘 'fraud' — runs/e2/s1/case_15.json (누출 증거 아님)
+WARN (b) 모델 어휘 'manipulat' — runs/e2/s1/case_15.json (누출 증거 아님)
+WARN (b) 모델 어휘 'manipulat' — runs/e2/s2/case_01.json (누출 증거 아님)
+WARN (b) 모델 어휘 'manipulat' — runs/e2/s3/case_07.json (누출 증거 아님)
+WARN (b) 모델 어휘 'manipulat' — runs/e2/s4/case_01.json (누출 증거 아님)
+WARN (b) 모델 어휘 'fraud' — runs/e2/s4/case_14.json (누출 증거 아님)
+WARN (b) 모델 어휘 'manipulat' — runs/e2/s5/case_10.json (누출 증거 아님)
+WARN (b) 모델 어휘 'manipulat' — runs/e2/s5/case_15.json (누출 증거 아님)
+WARN (b) 모델 어휘 'manipulat' — runs/e2/s6/case_01.json (누출 증거 아님)
+WARN (b) 모델 어휘 'manipulat' — runs/e2/s6/case_04.json (누출 증거 아님)
+WARN (b) 모델 어휘 'manipulat' — runs/e2/s7/case_05.json (누출 증거 아님)
+WARN (b) 모델 어휘 'fraud' — runs/e2/s8/case_15.json (누출 증거 아님)
+WARN (b) 모델 어휘 'manipulat' — runs/e2/s8/case_40.json (누출 증거 아님)
+WARN (b) 모델 어휘 'manipulat' — runs/e2/s8/case_66.json (누출 증거 아님)
+WARN (b) 모델 어휘 'fraud' — runs/e4/scores/case_71.json (누출 증거 아님)
+WARN (b) 모델 어휘 'manipulat' — runs/hardening/draws/draw_2/case_04.json (누출 증거 아님)
+WARN (b) 모델 어휘 'manipulat' — runs/hardening/draws/draw_2/case_07.json (누출 증거 아님)
+WARN (b) 모델 어휘 'manipulat' — runs/hardening/draws/draw_2/case_11.json (누출 증거 아님)
+WARN (b) 모델 어휘 'manipulat' — runs/hardening/draws/draw_2/case_13.json (누출 증거 아님)
+WARN (b) 모델 어휘 'manipulat' — runs/hardening/draws/draw_3/case_04.json (누출 증거 아님)
+WARN (b) 모델 어휘 'manipulat' — runs/hardening/draws/draw_3/case_13.json (누출 증거 아님)
+WARN (b) 모델 어휘 'manipulat' — runs/hardening/draws/draw_4/case_03.json (누출 증거 아님)
+WARN (b) 모델 어휘 'manipulat' — runs/hardening/draws/draw_5/case_04.json (누출 증거 아님)
+WARN (b) 모델 어휘 'fraud' — runs/hardening/draws/draw_5/case_10.json (누출 증거 아님)
+WARN (b) 모델 어휘 'manipulat' — runs/hardening/draws/draw_5/case_12.json (누출 증거 아님)
+WARN (b) 모델 어휘 'fraud' — runs/hardening/draws/draw_5/case_13.json (누출 증거 아님)
+WARN (b) 모델 어휘 'fraud' — runs/hardening/draws/draw_5/case_15.json (누출 증거 아님)
+WARN (b) 모델 어휘 'manipulat' — runs/holdout/controls/scores/hc_02.json (누출 증거 아님)
+WARN (b) 모델 어휘 'fraud' — runs/holdout/controls/scores/hc_09.json (누출 증거 아님)
+WARN (b) 모델 어휘 'manipulat' — runs/holdout/controls/scores/hc_09.json (누출 증거 아님)
+WARN (b) 모델 어휘 'manipulat' — runs/holdout/mainscore_redraw/draw_5/case_72.json (누출 증거 아님)
+WARN (b) 모델 어휘 'manipulat' — runs/perturbed/case_03.json (누출 증거 아님)
+WARN (b) 모델 어휘 'manipulat' — runs/rp07/draws/draw_2/case_12.json (누출 증거 아님)
+WARN (b) 모델 어휘 'manipulat' — runs/rp07/draws/draw_4/case_06.json (누출 증거 아님)
+WARN (b) 모델 어휘 'manipulat' — runs/rp09/scores/case_19.json (누출 증거 아님)
+WARN (b) 모델 어휘 'manipulat' — runs/rp09/scores/case_22.json (누출 증거 아님)
+WARN (b) 모델 어휘 'manipulat' — runs/rp09/scores/case_23.json (누출 증거 아님)
+WARN (b) 모델 어휘 'fraud' — runs/rp09/scores/case_28.json (누출 증거 아님)
+WARN (b) 모델 어휘 'manipulat' — runs/rp09/scores/case_34.json (누출 증거 아님)
+WARN (b) 모델 어휘 'manipulat' — runs/wave2/perturbed/case_67.json (누출 증거 아님)
+WARN (b) 모델 어휘 'manipulat' — runs/wave2/perturbed_redraw/draw_2/case_52.json (누출 증거 아님)
+WARN (b) 모델 어휘 'fraud' — runs/wave2/perturbed_redraw/draw_2/case_67.json (누출 증거 아님)
+WARN (b) 모델 어휘 'manipulat' — runs/wave2/perturbed_redraw/draw_2/case_67.json (누출 증거 아님)
+WARN (b) 모델 어휘 'manipulat' — runs/wave2/perturbed_redraw/draw_3/case_52.json (누출 증거 아님)
+WARN (b) 모델 어휘 'fraud' — runs/wave2/perturbed_redraw/draw_3/case_67.json (누출 증거 아님)
+WARN (b) 모델 어휘 'fraud' — runs/wave2/scores/case_41.json (누출 증거 아님)
+WARN (b) 모델 어휘 'manipulat' — runs/wave2/scores/case_42.json (누출 증거 아님)
+WARN (b) 모델 어휘 'manipulat' — runs/wave2/scores/case_49.json (누출 증거 아님)
+WARN (b) 모델 어휘 'manipulat' — runs/wave2/scores/case_50.json (누출 증거 아님)
+WARN (b) 모델 어휘 'manipulat' — runs/wave2/scores/case_61.json (누출 증거 아님)
+WARN (b) 모델 어휘 'manipulat' — runs/wave2/scores/case_70.json (누출 증거 아님)
+
+PASS — 이력 증명 + 실명/마커/카나리 스캔 + 매니페스트 대조
+
+# exit code: 0

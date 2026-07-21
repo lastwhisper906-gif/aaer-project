@@ -230,16 +230,44 @@ published without the owner gate.**
 
 ## Reproducing the numbers (third-party verification)
 
+Reproduction is a **two-tier interface** (tiers assigned by actual code
+behavior — audit: `analysis/REVIEW_CLAIMS_AUDIT.md`):
+
 ```bash
 pip install -r requirements.txt
-python tools/reproduce_analysis.py   # recompute every published number → PASS/FAIL (100/100)
-python tools/verify_blindness.py     # grading-precedence proof · name/canary scan · runs/ sha256
-python tools/verify_manifest.py      # data manifest check (429 files)
-python analysis/synthesis.py         # cross-wave synthesis (deterministic, seed 20260708)
+make verify-public   # tier 1 — strictly zero external data: committed artifacts only
+make verify-full     # tier 2 — adds raw-corpus recomputation (~/aaer-data required)
 ```
 
-All four use committed artifacts only (0 API calls, no source corpus needed) —
-CI verifies every push. Raw: `runs/` (sha256 manifest) · `scoring/grades*/` ·
+**`verify-public`** recomputes every published number from committed
+artifacts (0 API calls, no source corpus needed) — proven by executing in a
+sandbox with `HOME` redirected to an empty temp dir
+(`audit/verify_public_sandbox_transcript_20260722.txt`); CI runs it on every
+push. **`verify-full`** additionally recomputes the deterministic baselines
+(`analysis/synthesis.py` calls `screens.run_case` over the raw XBRL cache)
+and checks the full corpus manifest; prerequisites and corpus layout:
+`REPRODUCING.md` §2 — absent the corpus it fails closed with instructions.
+
+<!-- BEGIN-GENERATED: repro-facts (refresh: make docs-refresh; CI: tools/lint_doc_counts.py) -->
+- data manifest: **538 files** (`data/manifests/aaer_data_manifest.json` · `file_count`)
+- pytest: **275 tests collected** (`pipeline tools scoring analysis`)
+- `make verify-public` (zero external data):
+  - `.venv/bin/python tools/reproduce_analysis.py`
+  - `.venv/bin/python tools/lint_publication.py`
+  - `.venv/bin/python tools/lint_doc_counts.py`
+  - `.venv/bin/python -m pytest pipeline tools scoring analysis -q`
+  - `.venv/bin/python tools/verify_manifest.py --schema-only`
+  - `.venv/bin/python tools/verify_blindness.py`
+- `make verify-full` (requires `~/aaer-data` corpus; see REPRODUCING.md §2):
+  - `.venv/bin/python analysis/baselines.py`
+  - `.venv/bin/python analysis/stats.py`
+  - `.venv/bin/python analysis/synthesis.py`
+  - `.venv/bin/python analysis/calibration_wave2.py`
+  - `.venv/bin/python tools/verify_manifest.py`
+  - `$(MAKE) verify-public`
+<!-- END-GENERATED: repro-facts -->
+
+Raw: `runs/` (sha256 manifest) · `scoring/grades*/` ·
 `scoring/probe_results*/` · `logs/run_*/` (per-call served model, isolation
 flags, freeze hashes).
 

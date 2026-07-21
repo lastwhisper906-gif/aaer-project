@@ -167,16 +167,43 @@ URL은 상단 '발행' 절).
 
 ## 수치 재현 (제3자 검증)
 
+재현은 **2계층 인터페이스**다 (계층 배정 기준 = 실제 코드 동작 —
+감사: `analysis/REVIEW_CLAIMS_AUDIT.md`):
+
 ```bash
 pip install -r requirements.txt
-python tools/reproduce_analysis.py   # 발행 수치 전건 재계산 → PASS/FAIL (100/100)
-python tools/verify_blindness.py     # 채점 선행 이력 증명 · 실명/카나리 스캔 · runs/ sha256
-python tools/verify_manifest.py      # 데이터 매니페스트 대조 (429 파일)
-python analysis/synthesis.py         # 교차-웨이브 종합 (결정론, seed 20260708)
+make verify-public   # 1계층 — 외부 데이터 엄격 0: 커밋 산출물만
+make verify-full     # 2계층 — 원시 코퍼스 재계산 추가 (~/aaer-data 필요)
 ```
 
-셋 다 커밋 산출물만 사용한다 (API 호출 0, 원문 코퍼스 불요) — CI가 매 push 검증. 원시:
-`runs/`(sha256) · `scoring/grades*/` · `scoring/probe_results*/` · `logs/run_*/`(호출별 서빙 모델·격리 플래그·freeze 해시).
+**`verify-public`**은 발행 수치 전건을 커밋 산출물만으로 재계산한다 (API
+호출 0, 원문 코퍼스 불요) — HOME을 빈 임시 디렉토리로 돌린 샌드박스 실측으로
+증명(`audit/verify_public_sandbox_transcript_20260722.txt`), CI가 매 push
+실행. **`verify-full`**은 결정론 기준선 재계산(`analysis/synthesis.py`가
+원시 XBRL 캐시 위에서 `screens.run_case` 호출)과 전체 코퍼스 매니페스트
+대조를 추가한다 — 전제 조건·레이아웃은 `REPRODUCING.md` §2, 코퍼스 부재 시
+안내와 함께 fail-closed.
+
+<!-- BEGIN-GENERATED: repro-facts (refresh: make docs-refresh; CI: tools/lint_doc_counts.py) -->
+- data manifest: **538 files** (`data/manifests/aaer_data_manifest.json` · `file_count`)
+- pytest: **275 tests collected** (`pipeline tools scoring analysis`)
+- `make verify-public` (zero external data):
+  - `.venv/bin/python tools/reproduce_analysis.py`
+  - `.venv/bin/python tools/lint_publication.py`
+  - `.venv/bin/python tools/lint_doc_counts.py`
+  - `.venv/bin/python -m pytest pipeline tools scoring analysis -q`
+  - `.venv/bin/python tools/verify_manifest.py --schema-only`
+  - `.venv/bin/python tools/verify_blindness.py`
+- `make verify-full` (requires `~/aaer-data` corpus; see REPRODUCING.md §2):
+  - `.venv/bin/python analysis/baselines.py`
+  - `.venv/bin/python analysis/stats.py`
+  - `.venv/bin/python analysis/synthesis.py`
+  - `.venv/bin/python analysis/calibration_wave2.py`
+  - `.venv/bin/python tools/verify_manifest.py`
+  - `$(MAKE) verify-public`
+<!-- END-GENERATED: repro-facts -->
+
+원시: `runs/`(sha256) · `scoring/grades*/` · `scoring/probe_results*/` · `logs/run_*/`(호출별 서빙 모델·격리 플래그·freeze 해시).
 
 ## 한계 (전문: docs/methodology_limitations.md)
 
