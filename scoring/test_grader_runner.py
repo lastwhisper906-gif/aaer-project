@@ -11,10 +11,15 @@ REPO = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(REPO / "pipeline"))
 sys.path.insert(0, str(REPO / "scoring"))
 
+import cli_client  # noqa: E402
 import grader_runner as gr  # noqa: E402
 
 STUB = r'''#!/usr/bin/env python3
 import json, os, sys
+if sys.argv[1:] == ["--version"]:
+    # 하네스 핀 강제 경로 (C3, D109) — call_ 기록 없이 버전만 응답
+    sys.stdout.write(os.environ.get("STUB_VERSION", "STUB-VERSION-UNSET"))
+    sys.exit(0)
 stub_dir = os.environ["STUB_DIR"]
 payload = sys.stdin.read()
 n = len([f for f in os.listdir(stub_dir) if f.startswith("call_")])
@@ -53,6 +58,9 @@ def stub(tmp_path, monkeypatch):
     monkeypatch.setenv("PATH", f"{bin_dir}{os.pathsep}{os.environ['PATH']}")
     monkeypatch.setenv("STUB_DIR", str(stub_dir))
     monkeypatch.delenv("ANTHROPIC_API_KEY", raising=False)
+    # 하네스 핀 강제 (C3, D109): 핀 일치 버전 응답 + 프로세스 캐시 리셋
+    monkeypatch.setenv("STUB_VERSION", f"{cli_client.HARNESS_PIN} (Claude Code)")
+    monkeypatch.setattr(cli_client, "_harness_version_actual", None)
     monkeypatch.setattr(gr, "answer_key", lambda oid, *a, **k: {"group": "treatment",
                                                        "scheme_summary": "s",
                                                        "scheme_type": ["x"],
