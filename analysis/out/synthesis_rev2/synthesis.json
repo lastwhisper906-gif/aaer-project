@@ -1,0 +1,91 @@
+{
+  "seed": 20260708,
+  "generated_by": "analysis/synthesis.py (deterministic)",
+  "separation_by_wave": {
+    "wave1": {
+      "n_fraud": 8,
+      "n_control": 22,
+      "fraud_median": 60.0,
+      "control_median": 33.0,
+      "auc": 0.824,
+      "auc_ci": [
+        0.599,
+        0.983
+      ]
+    },
+    "wave2": {
+      "n_fraud": 9,
+      "n_control": 23,
+      "fraud_median": 58,
+      "control_median": 30,
+      "auc": 0.829,
+      "auc_ci": [
+        0.616,
+        0.983
+      ]
+    },
+    "holdout": {
+      "n_fraud": 3,
+      "n_control": 0,
+      "fraud_median": 42,
+      "control_median": null,
+      "auc": null,
+      "auc_ci": null,
+      "per_case_fraud_scores": [
+        70,
+        42,
+        32
+      ]
+    }
+  },
+  "memorization_dose_response": [
+    {
+      "tier": "wave1 (famous)",
+      "name_id_pct": 50.0,
+      "auc": 0.824,
+      "auc_ci": [
+        0.599,
+        0.983
+      ],
+      "rule": "R3 (memorization-entangled)"
+    },
+    {
+      "tier": "wave2 (less-famous)",
+      "name_id_pct": 21.9,
+      "auc": 0.829,
+      "auc_ci": [
+        0.616,
+        0.983
+      ],
+      "rule": "R4 (residual capability)"
+    },
+    {
+      "tier": "holdout (post-cutoff, unmemorizable)",
+      "name_id_pct": 0.0,
+      "auc": null,
+      "auc_ci": null,
+      "per_case": {
+        "HUBG": 70,
+        "WMK": 32,
+        "GNE": 42
+      },
+      "rule": "H2 (per-case, N=3)"
+    }
+  ],
+  "dose_response_reading": "name-ID(암기 대리지표) 50%→25%→~0%로 하락해도 분리 AUC는 0.824→0.829로 사실상 불변(wave1→wave2), 홀드아웃은 HUBG=70으로 탐지 잔존 → 분리는 암기로 설명되지 않음(R4/H2 residual). 단 세 표본은 시대·유명도·라벨 tier 상이 = gradient 판독, 통제실험 아님.",
+  "per_wave_rule": {
+    "wave1": "R3",
+    "wave2": "R4 (E3 재추첨 확증)",
+    "holdout": "H2 (N=3, per-case)"
+  },
+  "note": "E3(wave-2 교란 재추첨, 2026-07-08) 완료: median-delta dominance 4/9 < 5 → R4 유지(R3 미발동), per-case σ 3.2pp. e3_results.json 참조. wave2 rule 확정 R4.",
+  "wave2_name_id_reconcile": {
+    "frozen_rule_pct": 21.9,
+    "frozen_rule_count": "7/32 (fraud 3/9, control 4/23)",
+    "human_read_pct": 25.0,
+    "human_read_count": "8/32 (fraud 3/9, control 5/23)",
+    "single_boundary_case": "DAR (Darling Ingredients): probe guess 'Darling International Inc. (now Darling Ingredients Inc.)' — 명백한 정체 인식이나 동결 name_match는 구명(舊名 'Darling International') 미처리로 False. wave2_summary.md 산문 '25%'는 DAR를 사람이 인식으로 계수(8/32); 동결 규칙은 21.9%(7/32).",
+    "resolution": "본 synthesis는 방법론(동결 판정 규칙 재해석 금지, name_probes.py 헤더)에 따라 frozen_rule 21.9%를 1차값으로 보고하고 human_read 25%를 병기. 산문 25% 무단 수정 안 함(재채점 금지) — 발행 규약 선택은 OWNER_QUEUE Q-E02.",
+    "qualitative_invariant": "어느 쪽이든 50%→~22–25%→0%의 반감 서사는 불변."
+  }
+}

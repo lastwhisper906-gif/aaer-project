@@ -1,0 +1,119 @@
+{
+  "original": {
+    "perm_p": 0.0011599884001159987,
+    "mean_diff": 20.570048309178745,
+    "cliff": 0.6570048309178744,
+    "auc": 0.8285024154589372,
+    "auc_ci": [
+      0.6159420289855072,
+      0.9830917874396136
+    ],
+    "fraud_median": 58,
+    "control_median": 30
+  },
+  "perturbed_frame": {
+    "n_perturbed": 9,
+    "available": true,
+    "perm_p": 0.004269957300426995,
+    "mean_diff": 15.792270531400966,
+    "auc": 0.7898550724637681
+  },
+  "fisher_2x2": {
+    "tp": 7,
+    "fn": 2,
+    "fp": 5,
+    "tn": 18,
+    "one_sided_p": 0.0057257351473146804
+  },
+  "fpr": {
+    "fp": 5,
+    "n": 23,
+    "rule": "Clopper-Pearson 95%",
+    "lo_pct": 7.5,
+    "upper95_pct": 43.7
+  },
+  "worst_case_substitution": {
+    "n_incomplete": 0,
+    "perm_p": 0.0011599884001159987,
+    "mean_diff": 20.570048309178745
+  },
+  "baselines": {
+    "beneish_m": {
+      "rho": 0.3334647196204404,
+      "residual_perm_p": 0.0034899651003489963,
+      "n": 20
+    },
+    "dechow_f": {
+      "rho": 0.2927827556344863,
+      "residual_perm_p": 0.0022599774002259976,
+      "n": 17
+    }
+  },
+  "R3_memorization": {
+    "cases": [
+      {
+        "case_id": "T23",
+        "delta_mean": 13,
+        "counts": false
+      },
+      {
+        "case_id": "T19",
+        "delta_mean": -7,
+        "counts": false
+      },
+      {
+        "case_id": "T04",
+        "delta_mean": 19,
+        "counts": false
+      },
+      {
+        "case_id": "T02",
+        "delta_mean": -15,
+        "counts": true
+      },
+      {
+        "case_id": "T20",
+        "delta_mean": 0,
+        "counts": true
+      },
+      {
+        "case_id": "T29",
+        "delta_mean": 13,
+        "counts": true
+      },
+      {
+        "case_id": "T24",
+        "delta_mean": 10,
+        "counts": false
+      },
+      {
+        "case_id": "T26",
+        "delta_mean": 7,
+        "counts": false
+      },
+      {
+        "case_id": "T22",
+        "delta_mean": 3,
+        "counts": false
+      }
+    ],
+    "n_counting": 3,
+    "n_treatment": 9,
+    "fires": false
+  },
+  "conclusion_rule_standalone": {
+    "r1": false,
+    "r2": false,
+    "r3": false,
+    "fired": "R4"
+  },
+  "pooled_secondary": {
+    "n_fraud": 17,
+    "n_control": 45,
+    "mean_diff": 20.186928104575166,
+    "perm_p": 2.999970000299997e-05,
+    "auc": 0.8313725490196079,
+    "note": "SECONDARY ONLY; frozen wave-1 scores reused unchanged"
+  },
+  "exclusions": []
+}

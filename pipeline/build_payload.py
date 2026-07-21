@@ -1,6 +1,6 @@
 """피평가자 페이로드 빌더 (Phase 3 — 피평가자 쪽 코드, 결정론·오프라인).
 
-입력: data/evaluatee/cases.json (유일 허용 케이스 메타) + ~/aaer-data/{ticker}/
+입력: data/evaluatee/cases.json (유일 허용 케이스 메타) + 로컬 corpus의 {ticker}/
   {edgar,xbrl}/ 로컬 사본. 후보 레지스트리(정답지)·scoring/ 접근 금지 (정적 스캔 강제).
 출력: 케이스당 페이로드 dict —
   1. case fields (evaluatee_input v1.1의 5필드)
@@ -10,8 +10,9 @@
 교란 변형(D8): perturb=True — 사명/티커 익명화 + 화폐값 상수배 재스케일 (케이스별
   결정론 k, 날짜 불변).
 
-look-ahead 통제: 모든 시간 필터는 이 모듈의 cutoff 비교 한 곳으로 수렴하며,
-test_build_payload.py가 컷오프 후 항목의 부재를 기계 검증한다.
+look-ahead 통제: 모든 corpus 읽기는 cutoff_guard 벌크 로더를 경유해 레지스트리
+컷오프, accession filingDate 대조, 접근 로그를 적용한다. 두 정적 강제 테스트가
+우회를 검출하며 fixture 레지스트리는 실제 corpus에 사용할 수 없다.
 """
 from __future__ import annotations
 
@@ -21,9 +22,11 @@ import json
 import math
 from pathlib import Path
 
+import cutoff_guard
+
 REPO_ROOT = Path(__file__).resolve().parent.parent
 EVALUATEE_CASES = REPO_ROOT / "data" / "evaluatee" / "cases.json"
-DATA_DIR = Path.home() / "aaer-data"
+DATA_DIR = cutoff_guard.DEFAULT_EDGAR_DATA
 
 # 페이로드에 싣는 us-gaap 태그 (원시 값 — 파생 지표·스크린 점수 금지).
 PAYLOAD_TAGS = [
@@ -76,19 +79,44 @@ def perturb_factor(case_id: str) -> float:
     return math.exp(lo + u * (hi - lo))
 
 
-def load_pit_series(ticker: str, cutoff: datetime.date) -> dict:
+def _case_and_registry(case_or_ticker, cutoff):
+    if isinstance(case_or_ticker, dict):
+        matches = []
+        for path in sorted(EVALUATEE_CASES.parent.glob("cases*.json")):
+            cases = json.loads(path.read_text(encoding="utf-8")).get("cases", [])
+            if any(case == case_or_ticker for case in cases):
+                matches.append(path)
+        if len(matches) != 1:
+            raise cutoff_guard.CutoffGuardError(
+                f"case={case_or_ticker.get('case_id')!r}: 정확히 한 레지스트리에 속하지 않음")
+        return case_or_ticker, matches[0]
+    raw = json.loads(EVALUATEE_CASES.read_text(encoding="utf-8"))["cases"]
+    matches = [case for case in raw if case.get("ticker") == case_or_ticker]
+    if len(matches) != 1:
+        raise cutoff_guard.CutoffGuardError(f"ticker={case_or_ticker!r}: 정확히 한 케이스가 아님")
+    case = matches[0]
+    if _iso(case["cutoff_date"]) != _iso(cutoff):
+        raise cutoff_guard.CutoffGuardError("호출자 cutoff_date가 레지스트리와 불일치")
+    return case, EVALUATEE_CASES
+
+
+def load_pit_series(case_or_ticker, cutoff: datetime.date, *, data_dir=None,
+                    registry_path=None) -> dict:
     """point-in-time XBRL 시계열: filed <= cutoff, (태그, 기간) 최신 filed 승리."""
-    xbrl_dir = DATA_DIR / ticker / "xbrl"
-    files = sorted(xbrl_dir.glob("*CIK*.json"))
-    if not files:
-        raise FileNotFoundError(f"{xbrl_dir}: companyfacts 없음")
+    data_dir = DATA_DIR if data_dir is None else data_dir
+    if isinstance(case_or_ticker, dict) and Path(data_dir).resolve() != cutoff_guard.DEFAULT_EDGAR_DATA.resolve():
+        case, default_registry = case_or_ticker, {"cases": [case_or_ticker]}
+    else:
+        case, default_registry = _case_and_registry(case_or_ticker, cutoff)
+    registry_path = ({"cases": [case]} if registry_path is None and
+                     Path(data_dir).resolve() != cutoff_guard.DEFAULT_EDGAR_DATA.resolve()
+                     else default_registry if registry_path is None else registry_path)
     table: dict[str, dict] = {}
-    for path in files:
-        gaap = json.loads(path.read_text(encoding="utf-8")).get("facts", {}).get("us-gaap", {})
-        for tag in PAYLOAD_TAGS:
-            for f in gaap.get(tag, {}).get("units", {}).get(MONEY_UNIT, []):
-                if _iso(f["filed"]) > cutoff:
-                    continue  # 유일한 look-ahead 필터 지점
+    facts, _ = cutoff_guard.load_xbrl_facts(case["case_id"], case["ticker"], cutoff,
+                                             data_dir=data_dir, registry_path=registry_path)
+    for row in facts:
+        if row["namespace"] == "us-gaap" and row["tag"] in PAYLOAD_TAGS and row["unit"] == MONEY_UNIT:
+                tag, f = row["tag"], row["fact"]
                 start = f.get("start")
                 if start:
                     span = (_iso(f["end"]) - _iso(start)).days
@@ -112,20 +140,20 @@ def load_pit_series(ticker: str, cutoff: datetime.date) -> dict:
             for tag, vals in sorted(table.items())}
 
 
-def load_filing_chronology(ticker: str, cutoff: datetime.date) -> list[dict]:
+def load_filing_chronology(case_or_ticker, cutoff: datetime.date, *, data_dir=None,
+                           registry_path=None) -> list[dict]:
     """컷오프 전 EDGAR 제출 인덱스 (form, filingDate) — T2 메타신호 채널."""
-    edgar_dir = DATA_DIR / ticker / "edgar"
-    chunks = sorted(edgar_dir.glob("CIK*.json"))
-    if not chunks:
-        raise FileNotFoundError(f"{edgar_dir}: submissions 없음")
-    rows = []
-    for chunk in chunks:
-        j = json.loads(chunk.read_text(encoding="utf-8"))
-        blocks = [j["filings"]["recent"]] if "filings" in j else [j]
-        for b in blocks:
-            for form, date in zip(b.get("form", []), b.get("filingDate", [])):
-                if _iso(date) <= cutoff:
-                    rows.append({"form": form, "filing_date": date})
+    data_dir = DATA_DIR if data_dir is None else data_dir
+    if isinstance(case_or_ticker, dict) and Path(data_dir).resolve() != cutoff_guard.DEFAULT_EDGAR_DATA.resolve():
+        case, default_registry = case_or_ticker, {"cases": [case_or_ticker]}
+    else:
+        case, default_registry = _case_and_registry(case_or_ticker, cutoff)
+    registry_path = ({"cases": [case]} if registry_path is None and
+                     Path(data_dir).resolve() != cutoff_guard.DEFAULT_EDGAR_DATA.resolve()
+                     else default_registry if registry_path is None else registry_path)
+    loaded, _ = cutoff_guard.load_edgar_chronology(case["case_id"], case["ticker"], cutoff,
+                                                     data_dir=data_dir, registry_path=registry_path)
+    rows = [{"form": r["form"], "filing_date": r["filingDate"]} for r in loaded]
     rows.sort(key=lambda r: (r["filing_date"], r["form"]))
     # 동일 (form, date) 중복 제거 (다중 CIK 청크 병합 시)
     dedup, seen = [], set()
@@ -139,8 +167,8 @@ def load_filing_chronology(ticker: str, cutoff: datetime.date) -> list[dict]:
 
 def build_payload(case: dict, perturb: bool = False) -> dict:
     cutoff = _iso(case["cutoff_date"])
-    series = load_pit_series(case["ticker"], cutoff)
-    chronology = load_filing_chronology(case["ticker"], cutoff)
+    series = load_pit_series(case, cutoff)
+    chronology = load_filing_chronology(case, cutoff)
     fields = dict(case)
     k = 1.0
     if perturb:

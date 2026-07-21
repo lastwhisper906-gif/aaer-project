@@ -26,6 +26,7 @@ FORBIDDEN_PATTERNS = {
     # V7 (threat model): 피평가자 쪽 코드는 채점 모듈을 import할 수 없다 — 채점 자료
     # (정답 키·루브릭)의 역류 차단. 경로 문자열 언급(출력 저장 등)은 허용, import만 금지.
     "scoring import": re.compile(r"^\s*(import\s+scoring|from\s+scoring)\b", re.M),
+    "raw aaer-data read": re.compile(r"aaer-data"),
 }
 
 

@@ -1,120 +1,226 @@
-"""Wave-2 analysis per ANALYSIS_PLAN_WAVE2 — standalone primary + pooled secondary.
-Writes analysis/wave2_results.json + analysis/wave2_summary.md. Deterministic (seed 20260707).
-Run AFTER pipeline completes (uses scores, perturbed, grades, probes, baselines)."""
-import json, glob, random, math, sys, statistics as st
+"""Wave-2 rev2 analysis, writing a new JSON artifact only."""
+
+import glob
+import json
+import random
+import statistics
+import sys
 from pathlib import Path
-sys.path.insert(0, 'scoring/baselines')
+
+from aaer_eval.statistics import (
+    auc,
+    boot_auc_ci,
+    cliffs_delta,
+    fisher_one_sided,
+    fpr_bound,
+    perm_test_mean,
+    residuals,
+    spearman,
+)
+from aaer_eval.verdict import fired_rule, r1_fires, r2_fires, r3_case_counts, r3_fires
+
+sys.path.insert(0, "scoring/baselines")
 from screens import run_case
-REPO = Path('.')
-SEED = 20260707
 
-def load_scores(d, mapping):
-    m = json.load(open(mapping))['mapping']
-    out = {}
-    for f in glob.glob(f'{d}/*.json'):
-        j = json.load(open(f)); out[m[j['case_id']]] = j['misstatement_probability']
-    return out
 
-# wave-2 labels
-w2c = {c['case_id']: c for c in json.load(open('data/candidates/candidates_wave2.json'))['candidates']}
-sc2 = load_scores('runs/wave2/scores', 'scoring/id_mapping_wave2.json')
-pt2 = load_scores('runs/wave2/perturbed', 'scoring/id_mapping_wave2.json')
-fr = {s: p for s, p in sc2.items() if w2c[s]['group'] == 'treatment'}
-co = {s: p for s, p in sc2.items() if w2c[s]['group'] == 'control'}
-frv, cov = list(fr.values()), list(co.values())
+def _items(values, prefix):
+    if isinstance(values, dict):
+        return list(values.items())
+    return [(f"{prefix}{i}", value) for i, value in enumerate(values)]
 
-def perm(a, b, seed=SEED, N=100000):
-    obs = st.mean(a) - st.mean(b); pool = a + b; n = len(a); rng = random.Random(seed); ge = 0
-    for _ in range(N):
-        rng.shuffle(pool)
-        if st.mean(pool[:n]) - st.mean(pool[n:]) >= obs - 1e-9: ge += 1
-    return obs, (ge + 1) / (N + 1)
-def cliff(a, b):
-    g = sum(x > y for x in a for y in b); l = sum(x < y for x in a for y in b)
-    return (g - l) / (len(a) * len(b))
-def auc(a, b):
-    return sum((1 if x > y else .5 if x == y else 0) for x in a for y in b) / (len(a) * len(b))
-def boot_auc_ci(a, b, seed=SEED, N=10000):
-    rng = random.Random(seed); vals = []
-    for _ in range(N):
-        ra = [rng.choice(a) for _ in a]; rb = [rng.choice(b) for _ in b]; vals.append(auc(ra, rb))
-    vals.sort(); return vals[int(.025 * N)], vals[int(.975 * N)]
-def spearman(a, b):
-    def rank(x):
-        idx = sorted(range(len(x)), key=lambda i: x[i]); r = [0] * len(x)
-        for pos, i in enumerate(idx): r[i] = pos
-        return r
-    ra, rb = rank(a), rank(b); n = len(a); ma, mb = st.mean(ra), st.mean(rb)
-    num = sum((ra[i]-ma)*(rb[i]-mb) for i in range(n))
-    den = (sum((x-ma)**2 for x in ra)*sum((x-mb)**2 for x in rb))**.5
-    return num/den if den else 0.0
 
-R = {}
-obs, p = perm(frv, cov); R['original'] = {'mean_diff': round(obs, 2), 'perm_p': p,
-    'cliff': round(cliff(frv, cov), 3), 'auc': round(auc(frv, cov), 3),
-    'auc_ci': [round(x, 3) for x in boot_auc_ci(frv, cov)],
-    'fraud_mean': round(st.mean(frv), 1), 'control_mean': round(st.mean(cov), 1),
-    'fraud_median': st.median(frv), 'control_median': st.median(cov),
-    'fraud_scores': sorted(frv), 'control_scores': sorted(cov)}
-if len(pt2) >= len(fr):
-    ptv = [pt2[s] for s in fr if s in pt2]
-    obs2, p2 = perm(ptv, cov); R['perturbed'] = {'mean_diff': round(obs2, 2), 'perm_p': p2,
-        'auc': round(auc(ptv, cov), 3)}
-# Fisher flags p>=50
-ff = sum(x >= 50 for x in frv); cf = sum(x >= 50 for x in cov)
-R['flags'] = {'fraud': f'{ff}/{len(frv)}', 'control_fp': f'{cf}/{len(cov)}',
-    'fpr_pct': round(100*cf/len(cov), 1)}
+def _baseline_result(pairs, seed, n_perm):
+    usable = [(llm, baseline, group) for llm, baseline, group in pairs
+              if llm is not None and baseline is not None]
+    rho = spearman([x[0] for x in usable], [x[1] for x in usable]) if len(usable) >= 2 else None
+    resid_p = None
+    fraud_groups = {"fraud", "treatment"}
+    if (usable and any(x[2] in fraud_groups for x in usable)
+            and any(x[2] == "control" for x in usable)):
+        values = residuals([x[0] for x in usable], [x[1] for x in usable])
+        fraud_resid = [v for v, x in zip(values, usable) if x[2] in fraud_groups]
+        control_resid = [v for v, x in zip(values, usable) if x[2] == "control"]
+        resid_p, _ = perm_test_mean(
+            fraud_resid, control_resid, random.Random(seed), n=n_perm
+        )
+    return {"rho": rho, "residual_perm_p": resid_p, "n": len(usable)}
 
-# baselines M/F + R2
-firms = [dict(json.load(open('data/candidates/candidates.json'))['candidates'][0], _x=1)]  # placeholder replaced below
-cand = {c['case_id']: c for c in json.load(open('data/candidates/candidates.json'))['candidates']}
-firms = [dict(cand[t], group='fraud') for t in ['T02','T04','T19','T20','T22','T23','T24','T26','T29']]
-firms += [dict(c, group='control') for c in w2c.values() if c['group'] == 'control']
-pm, pf = [], []
-for c in firms:
-    L = sc2.get(c['case_id'])
-    if L is None: continue
-    try: r = run_case(c)
-    except Exception: continue
-    m = r.get('beneish', {}).get('m_score'); f = r.get('dechow_f', {}).get('f_score')
-    if m is not None: pm.append((L, m))
-    if f is not None: pf.append((L, f))
-rho_m = spearman([x[0] for x in pm], [x[1] for x in pm]) if pm else None
-rho_f = spearman([x[0] for x in pf], [x[1] for x in pf]) if pf else None
-R['baselines'] = {'rho_llm_m': round(rho_m, 3) if rho_m is not None else None,
-    'rho_llm_f': round(rho_f, 3) if rho_f is not None else None,
-    'm_computable': len(pm), 'f_computable': len(pf)}
 
-# R3 memorization
-cmed = st.median(cov); cross = []
-for s in fr:
-    if s in pt2:
-        delta = fr[s] - pt2[s]; contrib = 0.5 * (fr[s] - cmed)
-        if abs(delta) >= contrib or contrib <= 0: cross.append(s)
-R['R3_memorization'] = {'crossed': len(cross), 'n': len(fr), 'cases': cross,
-    'fires': len(cross) >= math.ceil(len(fr)/2 + 0.5) if len(fr)%2 else len(cross) > len(fr)/2}
-# majority = >=5 of 9
-R['R3_memorization']['fires'] = len(cross) >= 5
+def compute_results(fraud, control, perturbed, m_pairs, f_pairs,
+                    seed=20260707, n_perm=100_000, n_boot=10_000,
+                    wave1_fraud=(), wave1_control=()):
+    fraud_items = _items(fraud, "fraud-")
+    control_items = _items(control, "control-")
+    fraud_complete = [v for _, v in fraud_items if v is not None]
+    control_complete = [v for _, v in control_items if v is not None]
+    perm_p, mean_diff = perm_test_mean(
+        fraud_complete, control_complete, random.Random(seed), n=n_perm
+    )
+    original = {
+        "perm_p": perm_p,
+        "mean_diff": mean_diff,
+        "cliff": cliffs_delta(fraud_complete, control_complete),
+        "auc": auc(fraud_complete, control_complete),
+        "auc_ci": list(boot_auc_ci(
+            fraud_complete, control_complete, random.Random(seed), n=n_boot
+        )),
+        "fraud_median": statistics.median(fraud_complete),
+        "control_median": statistics.median(control_complete),
+    }
 
-# R-rule determination (standalone)
-r1 = R['original']['perm_p'] >= 0.05
-r2 = (rho_m is not None and abs(rho_m) >= 0.7) or (rho_f is not None and abs(rho_f) >= 0.7)
-r3 = R['R3_memorization']['fires']
-fired = 'R1' if r1 else ('R3' if r3 else ('R2' if r2 else 'R4'))
-R['conclusion_rule_standalone'] = {'R1_null': r1, 'R2_baseline': r2, 'R3_memorization': r3,
-    'fired': fired}
+    perturbed_items = dict(_items(perturbed, "fraud-"))
+    perturbed_complete = [
+        perturbed_items[case_id]
+        for case_id, _ in fraud_items
+        if case_id in perturbed_items and perturbed_items[case_id] is not None
+    ]
+    perturbed_frame = {"n_perturbed": len(perturbed_complete), "available": False}
+    if perturbed_complete:
+        perturbed_p, perturbed_diff = perm_test_mean(
+            perturbed_complete, control_complete, random.Random(seed), n=n_perm
+        )
+        perturbed_frame.update({
+            "available": True,
+            "perm_p": perturbed_p,
+            "mean_diff": perturbed_diff,
+            "auc": auc(perturbed_complete, control_complete),
+        })
 
-# pooled secondary (wave1 8v22 + wave2 9v23) — frozen wave-1 scores reused, not re-scored
-m1 = json.load(open('scoring/id_mapping.json'))['mapping']
-w1fr = [json.load(open(p))['misstatement_probability'] for p in glob.glob('runs/main/case_*.json')
-        if m1[json.load(open(p))['case_id']] in ['T07','T11','T12','T13','T16','T17','T21','T28']]
-m1v2 = json.load(open('scoring/id_mapping_v2.json'))['mapping']
-w1co = [json.load(open(p))['misstatement_probability'] for p in glob.glob('runs/rp09/scores/case_*.json')]
-pool_fr = frv + w1fr; pool_co = cov + w1co
-obsp, pp = perm(pool_fr, pool_co)
-R['pooled_secondary'] = {'n_fraud': len(pool_fr), 'n_control': len(pool_co),
-    'mean_diff': round(obsp, 2), 'perm_p': pp, 'auc': round(auc(pool_fr, pool_co), 3),
-    'note': 'SECONDARY ONLY — never standalone headline (DO NOT). wave-1 frozen scores reused, not re-scored.'}
+    tp = sum(v >= 50 for v in fraud_complete)
+    fn = len(fraud_complete) - tp
+    fp = sum(v >= 50 for v in control_complete)
+    tn = len(control_complete) - fp
+    fisher = {"tp": tp, "fn": fn, "fp": fp, "tn": tn,
+              "one_sided_p": fisher_one_sided(tp, fn, fp, tn)}
 
-Path('analysis/wave2_results.json').write_text(json.dumps(R, indent=2, ensure_ascii=False))
-print(json.dumps(R, indent=1, ensure_ascii=False))
+    incomplete = sum(v is None for _, v in fraud_items + control_items)
+    worst_fraud = [0 if v is None else v for _, v in fraud_items]
+    worst_control = [100 if v is None else v for _, v in control_items]
+    worst_p, worst_diff = perm_test_mean(
+        worst_fraud, worst_control, random.Random(seed), n=n_perm
+    )
+    baseline_results = {
+        "beneish_m": _baseline_result(m_pairs, seed, n_perm),
+        "dechow_f": _baseline_result(f_pairs, seed, n_perm),
+    }
+
+    case_results = []
+    for case_id, score in fraud_items:
+        if score is None or case_id not in perturbed_items or perturbed_items[case_id] is None:
+            continue
+        delta = score - perturbed_items[case_id]
+        case_results.append({
+            "case_id": case_id,
+            "delta_mean": delta,
+            "counts": r3_case_counts(delta, score, original["control_median"]),
+        })
+    n_counting = sum(case["counts"] for case in case_results)
+    r3 = r3_fires(n_counting, len(fraud_items))
+    r2 = any(r2_fires(v["rho"], v["residual_perm_p"])
+             for v in baseline_results.values())
+    r1 = r1_fires(perm_p)
+
+    pooled_fraud = fraud_complete + list(wave1_fraud)
+    pooled_control = control_complete + list(wave1_control)
+    pooled_p, pooled_diff = perm_test_mean(
+        pooled_fraud, pooled_control, random.Random(seed), n=n_perm
+    )
+
+    return {
+        "original": original,
+        "perturbed_frame": perturbed_frame,
+        "fisher_2x2": fisher,
+        "fpr": fpr_bound(fp, len(control_complete)),
+        "worst_case_substitution": {
+            "n_incomplete": incomplete, "perm_p": worst_p, "mean_diff": worst_diff
+        },
+        "baselines": baseline_results,
+        "R3_memorization": {
+            "cases": case_results, "n_counting": n_counting,
+            "n_treatment": len(fraud_items), "fires": r3,
+        },
+        "conclusion_rule_standalone": {
+            "r1": r1, "r2": r2, "r3": r3,
+            "fired": fired_rule(r1, r2, r3),
+        },
+        "pooled_secondary": {
+            "n_fraud": len(pooled_fraud), "n_control": len(pooled_control),
+            "mean_diff": pooled_diff, "perm_p": pooled_p,
+            "auc": auc(pooled_fraud, pooled_control),
+            "note": "SECONDARY ONLY; frozen wave-1 scores reused unchanged",
+        },
+    }
+
+
+def load_scores(directory, mapping_path):
+    mapping = json.loads(Path(mapping_path).read_text())["mapping"]
+    scores = {}
+    for filename in glob.glob(f"{directory}/*.json"):
+        record = json.loads(Path(filename).read_text())
+        scores[mapping[record["case_id"]]] = record.get("misstatement_probability")
+    return scores
+
+
+def load_wave1_scores():
+    mapping = json.loads(Path("scoring/id_mapping.json").read_text())["mapping"]
+    fraud_ids = {"T07", "T11", "T12", "T13", "T16", "T17", "T21", "T28"}
+    fraud = []
+    for filename in glob.glob("runs/main/case_*.json"):
+        record = json.loads(Path(filename).read_text())
+        if mapping[record["case_id"]] in fraud_ids:
+            fraud.append(record["misstatement_probability"])
+    control = [
+        json.loads(Path(filename).read_text())["misstatement_probability"]
+        for filename in glob.glob("runs/rp09/scores/case_*.json")
+    ]
+    return fraud, control
+
+
+def main():
+    candidates_w2 = {
+        c["case_id"]: c
+        for c in json.loads(Path("data/candidates/candidates_wave2.json").read_text())["candidates"]
+    }
+    scores = load_scores("runs/wave2/scores", "scoring/id_mapping_wave2.json")
+    perturbed = load_scores("runs/wave2/perturbed", "scoring/id_mapping_wave2.json")
+    fraud = {case_id: score for case_id, score in scores.items()
+             if candidates_w2[case_id]["group"] == "treatment"}
+    control = {case_id: score for case_id, score in scores.items()
+               if candidates_w2[case_id]["group"] == "control"}
+
+    candidates_w1 = {
+        c["case_id"]: c
+        for c in json.loads(Path("data/candidates/candidates.json").read_text())["candidates"]
+    }
+    firms = [dict(candidates_w1[t], group="fraud")
+             for t in ["T02", "T04", "T19", "T20", "T22", "T23", "T24", "T26", "T29"]]
+    firms += [dict(c, group="control") for c in candidates_w2.values()
+              if c["group"] == "control"]
+    m_pairs, f_pairs, exclusions = [], [], []
+    for firm in firms:
+        llm = scores.get(firm["case_id"])
+        if llm is None:
+            continue
+        try:
+            baseline = run_case(firm)
+        except Exception as exc:
+            exclusions.append({"case_id": firm["case_id"],
+                               "exception_class": type(exc).__name__, "message": str(exc)})
+            continue
+        group = firm["group"]
+        m_pairs.append((llm, baseline.get("beneish", {}).get("m_score"), group))
+        f_pairs.append((llm, baseline.get("dechow_f", {}).get("f_score"), group))
+
+    wave1_fraud, wave1_control = load_wave1_scores()
+    results = compute_results(
+        fraud, control, perturbed, m_pairs, f_pairs,
+        wave1_fraud=wave1_fraud, wave1_control=wave1_control,
+    )
+    results["exclusions"] = exclusions
+    output = Path("analysis/out/wave2_rev2/wave2_results_rev2.json")
+    output.parent.mkdir(parents=True, exist_ok=True)
+    output.write_text(json.dumps(results, indent=2, ensure_ascii=False) + "\n")
+
+
+if __name__ == "__main__":
+    main()

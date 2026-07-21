@@ -1,35 +1,10 @@
-"""블라인드·무결성 기계 검증기 (RP-06 B3) — 결정론, API 호출 0, CI 상시 실행.
+"""레지스트리 기반 블라인드·무결성 기계 검증기 (결정론, API 호출 0).
 
-커밋 산출물만으로 다음을 검증한다 (전 항목 커밋 산출물 의존 — f4f8f73
-schema-only 관행의 skip 대상 아님):
-
-(a) **git 이력 증명**: 채점 커밋 03b91aa의 트리에 라벨 결합 산출물
-    (scoring/rp05_stats.json, review_packets/RP-05_results.md)이 없고, 채점
-    원시 파일(runs/·scoring/grades/)은 있으며, 03b91aa가 라벨 결합 산출물
-    도입 커밋의 조상임을 확인 — "채점 커밋이 id_mapping 개봉에 선행"
-    (RP-05 §11)의 기계 증명. 주: 채점 파일 _meta의 original_id는 채점자
-    정답 키 결합의 정당한 일부(mapping_access_note로 문서화)이며 검증
-    대상 블라인드 주장은 '분석 시점 라벨 결합'이다.
-
-(b) **교란 변형 기록의 실명 부재**: 교란 변형 피평가자 출력 전건
-    (runs/perturbed/ + runs/hardening/draws/*/실험군 파일)에서 실험군 8사
-    실명·티커 부재. 인지 프로브 출력은 제외 — company_guess에 실명이
-    등장하는 것이 측정 그 자체다. 원본 변형 출력도 제외 — 페이로드에
-    실명이 정당하게 포함됐다.
-    **frozen 금지 마커** (cli_client.EVALUATEE_FORBIDDEN_MARKERS): 페이로드
-    수준 강제는 송출 시점 guard_payload(frozen·테스트 존재)가 수행한다.
-    커밋 산출물에서 검증 가능한 부분: 정답지 유래 마커(aaer·scheme_summary·
-    matched_case·m_score·beneish·dechow·montier·sloan·piotroski)가 피평가자
-    출력 전건에 부재. 'fraud'/'manipulat'은 모델 자체 어휘로 등장 가능 —
-    WARN 전용 (누출 증거 아님, 건수만 보고).
-
-(c) **카나리 GUID 부재**: 두 GUID(9FA11F98-…, A2D69CFE-…)가 모델 출력
-    전건(runs/ 전체 — hardening 포함, scoring/grades/, scoring/probe_results/,
-    pilot/{runs,grades})에 부재.
-
-(d) **runs/ 변조 증거 매니페스트**: runs/ 이하 전 파일의 sha256 ↔
-    runs/MANIFEST.sha256 대조 (누락·초과·불일치 전부 FAIL).
-    갱신은 --write-manifest (신규 실행 산출물 커밋 시에만).
+커밋 산출물만으로 (a) 각 실험의 채점 커밋이 라벨 결합보다 앞선다는 git
+이력 증명, (b) 레지스트리 클래스별 실명·티커·정답지 마커 스캔,
+(c) 등록된 모든 출력 표면의 카나리 GUID 스캔, (d) runs/ 전체와
+runs/MANIFEST.sha256의 대조를 수행한다. perturbed > output > aux 우선순위와
+스캔 표면은 scoring/experiment_registry.json만을 기준으로 한다.
 
 사용: python tools/verify_blindness.py [--write-manifest]   (실패 시 exit 1)
 """
@@ -43,159 +18,214 @@ import sys
 from pathlib import Path
 
 REPO = Path(__file__).resolve().parents[1]
-GRADING_COMMIT = "03b91aa"
-LABEL_JOIN_ARTIFACTS = ["scoring/rp05_stats.json", "review_packets/RP-05_results.md"]
-BLIND_STATE_REQUIRED = ["runs/main/case_01.json", "scoring/grades/main/case_01.json"]
-
-# 실험군 8 (교란 대상) — 실명·티커. 검증 목적상 이 파일에 상수로 전사
-# (scoring/perturbed_cases.json과의 정합도 아래에서 대조).
-TREATMENT_NAMES = ["comscore", "orthofix", "logitech", "monsanto", "hertz",
-                   "iconix", "kraft heinz", "marvell"]
-TREATMENT_TICKERS = ["SCOR", "OFIX", "LOGI", "MON", "HTZ", "ICON", "KHC", "MRVL"]
-
+REGISTRY_PATH = REPO / "scoring/experiment_registry.json"
 ANSWER_KEY_MARKERS = ["aaer", "scheme_summary", "matched_case", "m_score",
                       "beneish", "dechow", "montier", "sloan", "piotroski"]
 VOCAB_WARN_MARKERS = ["fraud", "manipulat"]
 CANARIES = ["9fa11f98", "a2d69cfe"]
+SUFFIXES = {"inc", "inc.", "corp", "corp.", "corporation", "company", "co",
+            "co.", "ltd", "ltd.", "n.v.", "s.a.", "plc", "group", "holdings",
+            "international", "technology", "technologies", "brands"}
 
 FAILS: list[str] = []
 WARNS: list[str] = []
 
 
-def fail(msg):
+def fail(msg: str) -> None:
     FAILS.append(msg)
 
 
-def git(*args) -> str:
-    return subprocess.run(["git", *args], cwd=REPO, capture_output=True,
+def load_registry(root: Path = REPO) -> dict:
+    return json.loads((root / "scoring/experiment_registry.json").read_text(encoding="utf-8"))
+
+
+def git(root: Path, *args: str) -> str:
+    return subprocess.run(["git", *args], cwd=root, capture_output=True,
                           text=True, check=True).stdout
 
 
-def check_history():
-    tree = set(git("ls-tree", "-r", GRADING_COMMIT, "--name-only").splitlines())
-    for p in LABEL_JOIN_ARTIFACTS:
-        if p in tree:
-            fail(f"(a) 라벨 결합 산출물 {p}이 채점 커밋 {GRADING_COMMIT} 트리에 존재")
-    for p in BLIND_STATE_REQUIRED:
-        if p not in tree:
-            fail(f"(a) 채점 커밋 {GRADING_COMMIT} 트리에 {p} 부재 — 블라인드 스냅샷 주장 불성립")
-    for p in LABEL_JOIN_ARTIFACTS:
-        intro = git("log", "--diff-filter=A", "--format=%H", "--reverse", "--", p).splitlines()
-        if not intro:
-            fail(f"(a) {p} 도입 커밋을 이력에서 찾지 못함")
+def check_history(root: Path = REPO, registry: dict | None = None) -> None:
+    registry = registry or load_registry(root)
+    for exp in registry["experiments"]:
+        score, joined = exp["score_commit"], exp["label_join_commit"]
+        if score != "UNKNOWN" and joined != "UNKNOWN":
+            rc = subprocess.run(["git", "merge-base", "--is-ancestor", score, joined],
+                                cwd=root, capture_output=True).returncode
+            if rc:
+                fail(f"(a) {exp['name']}: 채점 커밋 {score}이 라벨 결합 {joined}의 조상이 아님")
+        artifacts = exp.get("label_join_artifacts", [])
+        required = exp.get("blind_state_required", [])
+        if not artifacts and not required:
             continue
-        rc = subprocess.run(["git", "merge-base", "--is-ancestor", GRADING_COMMIT, intro[0]],
-                            cwd=REPO).returncode
-        if rc != 0:
-            fail(f"(a) 채점 커밋이 {p} 도입 커밋({intro[0][:7]})의 조상이 아님")
+        try:
+            tree = set(git(root, "ls-tree", "-r", score, "--name-only").splitlines())
+        except subprocess.CalledProcessError:
+            fail(f"(a) {exp['name']}: 채점 커밋 {score} 트리를 읽지 못함")
+            continue
+        for path in artifacts:
+            if path in tree:
+                fail(f"(a) 라벨 결합 산출물 {path}이 채점 커밋 {score} 트리에 존재")
+            intro = git(root, "log", "--diff-filter=A", "--format=%H", "--reverse", "--", path).splitlines()
+            if not intro:
+                fail(f"(a) {path} 도입 커밋을 이력에서 찾지 못함")
+            elif subprocess.run(["git", "merge-base", "--is-ancestor", score, intro[0]],
+                                cwd=root, capture_output=True).returncode:
+                fail(f"(a) 채점 커밋이 {path} 도입 커밋({intro[0][:7]})의 조상이 아님")
+        for path in required:
+            if path not in tree:
+                fail(f"(a) 채점 커밋 {score} 트리에 {path} 부재 — 블라인드 스냅샷 주장 불성립")
 
 
-def perturbed_record_paths():
-    """교란 변형 피평가자 출력 전건 (인지 프로브 출력 제외 — 문서 상단 사유)."""
-    treat_ids = {c["case_id"] for c in json.loads(
-        (REPO / "scoring/perturbed_cases.json").read_text(encoding="utf-8"))["cases"]}
-    if len(treat_ids) != 8:
-        fail(f"(b) perturbed_cases.json 실험군 수 {len(treat_ids)} ≠ 8")
-    paths = sorted((REPO / "runs/perturbed").glob("case_*.json"))
-    draws = REPO / "runs/hardening/draws"
-    if draws.is_dir():
-        for d in sorted(draws.iterdir()):
-            paths += sorted(p for p in d.glob("case_*.json") if p.stem in treat_ids)
-    return paths
+def _registered_paths(root: Path, registry: dict) -> dict[str, set[Path]]:
+    matched = {kind: set() for kind in ("perturbed", "output", "aux")}
+    for exp in registry["experiments"]:
+        for kind in matched:
+            for pattern in exp.get(f"{kind}_globs", []):
+                matched[kind].update(p for p in root.glob(pattern) if p.is_file())
+    return matched
 
 
-def evaluatee_output_paths():
-    roots = ["runs/main", "runs/perturbed", "pilot/runs"]
-    paths = []
-    for r in roots:
-        paths += sorted((REPO / r).glob("case_*.json"))
-    draws = REPO / "runs/hardening/draws"
-    if draws.is_dir():
-        for d in sorted(draws.iterdir()):
-            paths += sorted(d.glob("case_*.json"))
-    return paths
+def _discovered_paths(root: Path) -> set[Path]:
+    paths = set((root / "runs").rglob("*.json")) if (root / "runs").is_dir() else set()
+    for relative in ("pilot/runs", "pilot/grades", "scoring/grades"):
+        base = root / relative
+        if base.is_dir():
+            paths.update(base.rglob("*.json"))
+    scoring = root / "scoring"
+    if scoring.is_dir():
+        for base in scoring.glob("probe_results*"):
+            if base.is_dir():
+                paths.update(base.rglob("*.json"))
+    return {p for p in paths if p.name != "MANIFEST.sha256"}
 
 
-def all_model_output_paths():
-    extra = []
-    for r in ["scoring/grades/main", "scoring/grades/perturbed", "pilot/grades",
-              "scoring/probe_results/recognition", "scoring/probe_results/verbatim",
-              "runs/hardening/probe_recognition", "runs/hardening/regrade_opus"]:
-        p = REPO / r
-        if p.is_dir():
-            extra += sorted(p.glob("case_*.json"))
-    return evaluatee_output_paths() + extra
+def _variant(name: str) -> str:
+    value = name.lower().strip()
+    if value.startswith("the "):
+        value = value[4:]
+    tokens = value.split()
+    while tokens and tokens[-1].strip(",") in SUFFIXES:
+        tokens.pop()
+    value = " ".join(tokens).rstrip(",")
+    # These singular/scope descriptors become trailing only after stripping the
+    # registered suffix chain; unlike "Kraft Heinz", neither is a brand phrase.
+    for descriptor in (" global", " brand"):
+        if value.endswith(descriptor):
+            value = value[:-len(descriptor)]
+    return value
 
 
-def check_blindness():
-    name_re = re.compile("|".join(re.escape(n) for n in TREATMENT_NAMES))
-    ticker_re = re.compile(r"\b(" + "|".join(TREATMENT_TICKERS) + r")\b")
-    for p in perturbed_record_paths():
-        text = p.read_text(encoding="utf-8")
-        m = name_re.search(text.lower())
-        if m:
-            fail(f"(b) 교란 기록 {p.relative_to(REPO)}에 실명 '{m.group(0)}'")
-        m = ticker_re.search(text)
-        if m:
-            fail(f"(b) 교란 기록 {p.relative_to(REPO)}에 티커 '{m.group(0)}'")
-    for p in evaluatee_output_paths():
-        low = p.read_text(encoding="utf-8").lower()
-        for mk in ANSWER_KEY_MARKERS:
-            if mk in low:
-                fail(f"(b) 피평가자 출력 {p.relative_to(REPO)}에 정답지 마커 '{mk}'")
-        for mk in VOCAB_WARN_MARKERS:
-            if mk in low:
-                WARNS.append(f"(b) 모델 어휘 '{mk}' — {p.relative_to(REPO)} (누출 증거 아님)")
+def derive_treatment_patterns(root: Path, exp: dict) -> tuple[re.Pattern, re.Pattern] | None:
+    try:
+        ids_doc = json.loads((root / exp["perturbed_treatment_ids"]).read_text(encoding="utf-8"))
+        ids = [x["case_id"] for x in ids_doc["cases"]] if isinstance(ids_doc, dict) else ids_doc
+        mapping_doc = json.loads((root / exp["names_mapping"]).read_text(encoding="utf-8"))
+        mapping = mapping_doc["mapping"]
+        candidates_doc = json.loads((root / exp["names_candidates"]).read_text(encoding="utf-8"))
+        candidates = {x["case_id"]: x for x in candidates_doc["candidates"]}
+        selected = []
+        for case_id in ids:
+            candidate_id = mapping[case_id]
+            candidate = candidates[candidate_id]
+            if not candidate.get("company_name") or not candidate.get("ticker"):
+                raise KeyError(f"{case_id} 후보의 company_name/ticker")
+            selected.append(candidate)
+    except (OSError, json.JSONDecodeError, KeyError, TypeError) as exc:
+        fail(f"(b) {exp.get('name', '<unnamed>')} 실험군 이름 파생 실패: {exc}")
+        return None
+    names = {str(c.get("company_name", "")).lower().strip() for c in selected}
+    names.discard("")
+    variants = {_variant(name) for name in names}
+    variants.discard("")
+    tickers = {str(c.get("ticker", "")).strip() for c in selected}
+    tickers.discard("")
+    if not names or not variants or not tickers:
+        fail(f"(b) {exp.get('name', '<unnamed>')} 실험군 이름 또는 티커 집합이 비어 있음")
+        return None
+    name_re = re.compile("|".join(re.escape(x) for x in sorted(names | variants, key=len, reverse=True)))
+    ticker_re = re.compile(r"\b(?:" + "|".join(re.escape(x) for x in sorted(tickers)) + r")\b")
+    return name_re, ticker_re
 
 
-def check_canary():
-    for p in all_model_output_paths():
-        low = p.read_text(encoding="utf-8").lower()
-        for c in CANARIES:
-            if c in low:
-                fail(f"(c) 카나리 {c} 출현 — {p.relative_to(REPO)}")
+def check_semantic_scans(root: Path = REPO, registry: dict | None = None) -> None:
+    registry = registry or load_registry(root)
+    registered = _registered_paths(root, registry)
+    all_registered = set().union(*registered.values())
+    for path in sorted(_discovered_paths(root) - all_registered):
+        fail(f"unregistered output surface: {path.relative_to(root)}")
+
+    patterns: dict[str, tuple[re.Pattern, re.Pattern] | None] = {}
+    for exp in registry["experiments"]:
+        if exp.get("perturbed_globs"):
+            patterns[exp["name"]] = derive_treatment_patterns(root, exp)
+
+    for path in sorted(all_registered):
+        kind = next(k for k in ("perturbed", "output", "aux") if path in registered[k])
+        text = path.read_text(encoding="utf-8")
+        low = text.lower()
+        relative = path.relative_to(root)
+        if kind == "perturbed":
+            for exp in registry["experiments"]:
+                if path not in {p for pattern in exp.get("perturbed_globs", []) for p in root.glob(pattern) if p.is_file()}:
+                    continue
+                pair = patterns.get(exp["name"])
+                if pair:
+                    name_match = pair[0].search(low)
+                    ticker_match = pair[1].search(text)
+                    if name_match:
+                        fail(f"(b) 교란 기록 {relative}에 실명 '{name_match.group(0)}'")
+                    if ticker_match:
+                        fail(f"(b) 교란 기록 {relative}에 티커 '{ticker_match.group(0)}'")
+        if kind in ("perturbed", "output"):
+            for marker in ANSWER_KEY_MARKERS:
+                if marker in low:
+                    fail(f"(b) 피평가자 출력 {relative}에 정답지 마커 '{marker}'")
+            for marker in VOCAB_WARN_MARKERS:
+                if marker in low:
+                    WARNS.append(f"(b) 모델 어휘 '{marker}' — {relative} (누출 증거 아님)")
+        for canary in CANARIES:
+            if canary in low:
+                fail(f"(c) 카나리 {canary} 출현 — {relative}")
 
 
-def manifest_lines():
+def manifest_lines(root: Path = REPO) -> list[str]:
     lines = []
-    for p in sorted((REPO / "runs").rglob("*")):
-        if p.is_file() and p.name != "MANIFEST.sha256" and p.name != ".DS_Store":
-            h = hashlib.sha256(p.read_bytes()).hexdigest()
-            lines.append(f"{h}  {p.relative_to(REPO).as_posix()}")
+    for path in sorted((root / "runs").rglob("*")):
+        if path.is_file() and path.name not in {"MANIFEST.sha256", ".DS_Store"}:
+            lines.append(f"{hashlib.sha256(path.read_bytes()).hexdigest()}  {path.relative_to(root).as_posix()}")
     return lines
 
 
-def check_manifest(write: bool):
-    mf = REPO / "runs/MANIFEST.sha256"
-    current = manifest_lines()
+def check_manifest(write: bool, root: Path = REPO) -> None:
+    manifest = root / "runs/MANIFEST.sha256"
+    current = manifest_lines(root)
     if write:
-        mf.write_text("\n".join(current) + "\n", encoding="utf-8")
-        print(f"매니페스트 기록: {len(current)}파일 → {mf.relative_to(REPO)}")
+        manifest.write_text("\n".join(current) + "\n", encoding="utf-8")
+        print(f"매니페스트 기록: {len(current)}파일 → {manifest.relative_to(root)}")
         return
-    if not mf.is_file():
+    if not manifest.is_file():
         fail("(d) runs/MANIFEST.sha256 부재 — --write-manifest로 생성 후 커밋")
         return
-    recorded = [ln for ln in mf.read_text(encoding="utf-8").splitlines() if ln.strip()]
+    recorded = [line for line in manifest.read_text(encoding="utf-8").splitlines() if line.strip()]
     rec_set, cur_set = set(recorded), set(current)
-    for ln in sorted(rec_set - cur_set):
-        fail(f"(d) 매니페스트 기재 파일 누락/변조: {ln.split('  ')[1]}")
-    for ln in sorted(cur_set - rec_set):
-        fail(f"(d) 매니페스트 미기재 파일 존재: {ln.split('  ')[1]}")
+    for line in sorted(rec_set - cur_set):
+        fail(f"(d) 매니페스트 기재 파일 누락/변조: {line.split('  ')[1]}")
+    for line in sorted(cur_set - rec_set):
+        fail(f"(d) 매니페스트 미기재 파일 존재: {line.split('  ')[1]}")
 
 
 def main() -> int:
-    write = "--write-manifest" in sys.argv
-    check_history()
-    check_blindness()
-    check_canary()
-    check_manifest(write)
-    for w in WARNS:
-        print(f"WARN {w}")
-    for f_ in FAILS:
-        print(f"FAIL {f_}")
-    n_files = len(all_model_output_paths())
-    print(f"\n{'PASS' if not FAILS else 'FAIL'} — 이력 증명 + 실명/마커/카나리 스캔"
-          f" ({n_files}개 모델 출력 파일) + 매니페스트 대조")
+    FAILS.clear()
+    WARNS.clear()
+    registry = load_registry(REPO)
+    check_history(REPO, registry)
+    check_semantic_scans(REPO, registry)
+    check_manifest("--write-manifest" in sys.argv, REPO)
+    for warning in WARNS:
+        print(f"WARN {warning}")
+    for failure in FAILS:
+        print(f"FAIL {failure}")
+    print(f"\n{'PASS' if not FAILS else 'FAIL'} — 이력 증명 + 실명/마커/카나리 스캔 + 매니페스트 대조")
     return 0 if not FAILS else 1
 
 

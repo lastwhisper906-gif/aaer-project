@@ -3,24 +3,55 @@
   "title": "llm_output",
   "description": "피평가자 파이프라인의 케이스당 출력. §5-4 강제: 체크리스트 + 제공 데이터 인용. 이 스키마 파싱 실패 = 파이프라인 오류로 귀속. status: v1.2 (2026-07-06 GA-001 하 개정, red-team 발견 #1/#2/#5/#6/#10/#12 반영: misstatement_probability + mechanism_hypotheses(maxItems 3, 순위=배열 순서, p>=40이면 minItems 1) 추가, evidence 의미를 '제공된 구조화 데이터 포인트 참조'로 재정의 — D10: 이번 사이클 입력은 서사 텍스트 없음. v1.1: 2026-07-05 documents_used required 승격)",
   "type": "object",
+  "additionalProperties": false,
   "required": ["case_id", "run_id", "model", "pipeline_version", "run_timestamp", "documents_used", "checklist", "misstatement_probability", "mechanism_hypotheses", "overall"],
-  "allOf": [
-    {
-      "if": { "properties": { "misstatement_probability": { "minimum": 40 } } },
-      "then": { "properties": { "mechanism_hypotheses": { "minItems": 1 } } }
-    }
-  ],
   "properties": {
+    "case_id": { "$ref": "#/$defs/pipeline_meta/properties/case_id" },
+    "run_id": { "$ref": "#/$defs/pipeline_meta/properties/run_id" },
+    "model": { "$ref": "#/$defs/pipeline_meta/properties/model" },
+    "pipeline_version": { "$ref": "#/$defs/pipeline_meta/properties/pipeline_version" },
+    "run_timestamp": { "$ref": "#/$defs/pipeline_meta/properties/run_timestamp" },
+    "documents_used": { "$ref": "#/$defs/pipeline_meta/properties/documents_used" },
+    "fingerprint": { "$ref": "#/$defs/pipeline_meta/properties/fingerprint" },
+    "checklist": { "$ref": "#/$defs/model_output/properties/checklist" },
+    "misstatement_probability": { "$ref": "#/$defs/model_output/properties/misstatement_probability" },
+    "mechanism_hypotheses": { "$ref": "#/$defs/model_output/properties/mechanism_hypotheses" },
+    "overall": { "$ref": "#/$defs/model_output/properties/overall" }
+  },
+  "allOf": [
+    { "$ref": "#/$defs/model_output/allOf/0" }
+  ],
+  "$defs": {
+    "pipeline_meta": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["case_id", "run_id", "model", "pipeline_version", "run_timestamp", "documents_used"],
+      "properties": {
     "case_id": { "type": "string" },
     "run_id": { "type": "string", "description": "재현용 실행 식별자" },
     "model": { "type": "string", "description": "pinned model string, 예: claude-sonnet-4-6" },
     "pipeline_version": { "type": "string", "description": "git commit hash" },
     "run_timestamp": { "type": "string", "format": "date-time" },
+    "fingerprint": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["case_input_sha256", "payload_sha256", "system_prompt_sha256", "schema_sha256", "model_requested", "harness_version_actual", "pipeline_commit"],
+      "properties": {
+        "case_input_sha256": { "type": "string" },
+        "payload_sha256": { "type": "string" },
+        "system_prompt_sha256": { "type": "string" },
+        "schema_sha256": { "type": "string" },
+        "model_requested": { "type": "string" },
+        "harness_version_actual": { "type": "string" },
+        "pipeline_commit": { "type": "string" }
+      }
+    },
     "documents_used": {
       "type": "array",
       "minItems": 1,
       "items": {
         "type": "object",
+        "additionalProperties": false,
         "required": ["accession_no", "form_type", "filing_date"],
         "properties": {
           "accession_no": { "type": "string" },
@@ -28,12 +59,26 @@
           "filing_date": { "type": "string", "format": "date", "description": "cutoff_guard 통과 증적. filing_date > cutoff_date인 항목이 있으면 실행 무효" }
         }
       }
+    }
+      }
     },
+    "model_output": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["checklist", "misstatement_probability", "mechanism_hypotheses", "overall"],
+      "allOf": [
+        {
+          "if": { "properties": { "misstatement_probability": { "minimum": 40 } } },
+          "then": { "properties": { "mechanism_hypotheses": { "minItems": 1 } } }
+        }
+      ],
+      "properties": {
     "checklist": {
       "type": "array",
       "minItems": 1,
       "items": {
         "type": "object",
+        "additionalProperties": false,
         "required": ["item_id", "question", "finding", "confidence", "evidence"],
         "properties": {
           "item_id": { "type": "string", "description": "채점 프로토콜의 항목 ID와 1:1 대응" },
@@ -44,6 +89,7 @@
             "type": "array", "minItems": 1,
             "items": {
               "type": "object",
+              "additionalProperties": false,
               "required": ["quote", "source_accession_no", "location"],
               "properties": {
                 "quote": { "type": "string", "description": "v1.2: 제공된 구조화 데이터 포인트의 참조 — '개념=값 (기간)' 형식 (예: 'AccountsReceivableNetCurrent=1,234M (FY2012)') 또는 Python 계산 결과 참조. 이번 사이클 입력에 서사 텍스트 없음(D10) — 문장 인용을 쓰면 날조로 채점(차원 4=0)" },
@@ -66,6 +112,7 @@
       "description": "왜곡표시 기제 가설 — 배열 순서 = 확신 순위, 채점은 최상위 가설 기준 (red-team #5/#8). misstatement_probability >= 40이면 최소 1개 필수 (#10)",
       "items": {
         "type": "object",
+        "additionalProperties": false,
         "required": ["affected_line_items", "direction", "accounting_treatment", "rationale_evidence"],
         "properties": {
           "affected_line_items": { "type": "array", "minItems": 1, "items": { "type": "string" } },
@@ -75,6 +122,7 @@
             "type": "array", "minItems": 1,
             "items": {
               "type": "object",
+              "additionalProperties": false,
               "required": ["quote", "source_accession_no", "location"],
               "properties": {
                 "quote": { "type": "string" },
@@ -89,10 +137,13 @@
     },
     "overall": {
       "type": "object",
+      "additionalProperties": false,
       "required": ["risk_tier", "top_signals"],
       "properties": {
         "risk_tier": { "type": "string", "enum": ["elevated", "watch", "clear"], "description": "열린 서술 금지, 3단계 강제. 정합 규칙(red-team #12): p>=70 ⇒ elevated / 40<=p<70 ⇒ watch 또는 elevated / p<40 ⇒ clear 또는 watch — 위반은 차원 4 상한 1로 채점" },
         "top_signals": { "type": "array", "items": { "type": "string" }, "maxItems": 5, "description": "checklist item_id 참조만 허용" }
+      }
+    }
       }
     }
   }

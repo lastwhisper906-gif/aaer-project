@@ -1,0 +1,32 @@
+{
+  "_doc": "실험 레지스트리 — verify_blindness 스캔 표면 + git ancestry 선언. 클래스 우선순위 perturbed > output > aux (겹치는 파일은 강한 클래스로 스캔). perturbed=마스킹 변형(실명+티커+마커+카나리), output=원본 변형 케이스 출력(마커+카나리), aux=프로브/채점/메타(카나리만 — 프로브 출력의 실명은 측정 그 자체, 메타 파일의 마커성 어휘는 정당). UNKNOWN = git 이력 미확정(추정 금지).",
+  "experiments": [
+    {"name": "wave1", "score_commit": "03b91aa", "label_join_commit": "79e30c3", "analysis_commit": "79e30c3",
+     "label_join_artifacts": ["scoring/rp05_stats.json", "review_packets/RP-05_results.md"],
+     "blind_state_required": ["runs/main/case_01.json", "scoring/grades/main/case_01.json"],
+     "output_globs": ["runs/main/case_*.json", "pilot/runs/case_*.json", "runs/rp07/draws/**/case_*.json", "runs/draw_k3/w1_controls/**/case_*.json"],
+     "perturbed_globs": ["runs/perturbed/case_*.json", "runs/hardening/draws/*/case_*.json"],
+     "aux_globs": ["scoring/grades/**/*.json", "pilot/grades/*.json", "scoring/probe_results/**/*.json", "scoring/probe_results_v2/**/*.json", "scoring/probe_results_v2ds_wave1/**/*.json", "runs/hardening/**/*.json", "runs/rp07/**/*.json", "runs/main/**/*.json", "runs/perturbed/**/*.json", "pilot/runs/*.json"],
+     "perturbed_treatment_ids": "scoring/perturbed_cases.json",
+     "names_candidates": "data/candidates/candidates.json",
+     "names_mapping": "scoring/id_mapping.json"},
+    {"name": "wave2", "score_commit": "040f790", "label_join_commit": "78d0c75", "analysis_commit": "78d0c75",
+     "output_globs": ["runs/wave2/scores/case_*.json", "runs/draw_k3/wave2/**/case_*.json", "runs/rp09/scores/case_*.json"],
+     "perturbed_globs": ["runs/wave2/perturbed/case_*.json", "runs/wave2/perturbed_redraw/**/case_*.json", "runs/wave2/identity_arm_b/case_*.json"],
+     "aux_globs": ["runs/wave2/**/*.json", "scoring/probe_results_wave2/**/*.json", "scoring/probe_results_v2ds_wave2/**/*.json", "runs/rp09/**/*.json", "runs/draw_k3/**/*.json"],
+     "perturbed_treatment_ids": "runs/wave2/fraud_case_ids.json",
+     "names_candidates": "data/candidates/candidates_wave2.json",
+     "names_mapping": "scoring/id_mapping_wave2.json"},
+    {"name": "holdout", "score_commit": "7948de4", "label_join_commit": "9af2559", "analysis_commit": "9af2559",
+     "output_globs": ["runs/holdout/scores/*.json", "runs/holdout/mainscore_redraw/**/case_*.json", "runs/holdout/controls/scores/hc_*.json"],
+     "perturbed_globs": [],
+     "aux_globs": ["runs/holdout/**/*.json"]},
+    {"name": "e2", "score_commit": "ace1e77", "label_join_commit": "9b51133", "analysis_commit": "9b51133",
+     "output_globs": ["runs/e2/**/case_*.json"], "perturbed_globs": [], "aux_globs": ["runs/e2/**/*.json"]},
+    {"name": "e4", "score_commit": "ba213f4", "label_join_commit": "7f6458e", "analysis_commit": "7f6458e",
+     "output_globs": ["runs/e4/**/case_*.json"], "perturbed_globs": [], "aux_globs": ["runs/e4/**/*.json"]},
+    {"name": "aux_nonexperiment", "score_commit": "UNKNOWN", "label_join_commit": "UNKNOWN", "analysis_commit": "UNKNOWN",
+     "output_globs": [], "perturbed_globs": [],
+     "aux_globs": ["runs/rp08/**/*.json", "runs/smoke_rev3/**/*.json", "runs/gil_memo_v1/**/*.json", "runs/diagnostics/**/*.json"]}
+  ]
+}

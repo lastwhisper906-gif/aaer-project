@@ -1,6 +1,8 @@
 """cutoff_guard.py — 유일한 데이터 로딩 게이트웨이 (PROJECT.md §5-1, CLAUDE.md 방법론 규율 1).
 
-모든 파이프라인 데이터 로딩은 load_document()를 경유한다. 컷오프 위반은
+모든 파이프라인 데이터 로딩은 load_document(), load_xbrl_facts(),
+load_edgar_chronology()를 경유한다. 벌크 로더는 레지스트리 컷오프와 accession
+filingDate를 대조하고 접근 로그를 남긴다. 컷오프 위반은
 예외로 즉시 중단시킨다 — 조용한 필터가 아니다. 필터는 "위반이 일어났다는
 사실"을 지우지만, 예외는 위반 시도를 로그와 함께 증거로 남긴다.
 doc_date == cutoff_date는 허용 (cutoff_date 자체가 폭로 '전일'로 정의됨).
@@ -14,10 +16,12 @@ from __future__ import annotations
 import datetime
 import json
 import re
+import tempfile
 from pathlib import Path
 
 REPO_ROOT = Path(__file__).resolve().parent.parent
 DEFAULT_REGISTRY = REPO_ROOT / "data" / "candidates" / "candidates.json"
+DEFAULT_BULK_REGISTRY = REPO_ROOT / "data" / "evaluatee" / "cases.json"
 DEFAULT_LOG = REPO_ROOT / "logs" / "access_log.jsonl"
 DEFAULT_EDGAR_DATA = Path.home() / "aaer-data"  # data/README.md 경로 규약
 
@@ -50,8 +54,10 @@ def _parse_date(value, field: str) -> datetime.date:
 def _load_cases(registry_path=DEFAULT_REGISTRY) -> dict:
     """candidates.json → {case_id: case dict}. 중복 case_id는 조용한 last-wins가
     아니라 예외 — 어느 컷오프가 적용됐는지 모호해지는 순간 가드 전체가 무효."""
-    raw = json.loads(Path(registry_path).read_text(encoding="utf-8"))
-    cases = raw.get("candidates", raw) if isinstance(raw, dict) else raw
+    raw = (registry_path if isinstance(registry_path, (dict, list)) else
+           json.loads(Path(registry_path).read_text(encoding="utf-8")))
+    cases = (raw.get("candidates", raw.get("cases", raw))
+             if isinstance(raw, dict) else raw)
     by_id = {}
     for case in cases:
         cid = case["case_id"]
@@ -109,6 +115,132 @@ def _log(log_path, record: dict) -> None:
     record = {"timestamp": datetime.datetime.now(datetime.timezone.utc).isoformat(), **record}
     with path.open("a", encoding="utf-8") as f:
         f.write(json.dumps(record, ensure_ascii=False) + "\n")
+
+
+def _fixture_settings(data_dir, registry_path, log_path, allow_unindexed_accessions=False):
+    data_dir = Path(data_dir)
+    corpus = DEFAULT_EDGAR_DATA.resolve()
+    resolved = data_dir.resolve()
+    registry = None if isinstance(registry_path, (dict, list)) else Path(registry_path).resolve()
+    evaluatee_dir = (REPO_ROOT / "data" / "evaluatee").resolve()
+    trusted_registry = (registry in {DEFAULT_REGISTRY.resolve(), DEFAULT_BULK_REGISTRY.resolve()} or
+                        (registry is not None and registry.parent == evaluatee_dir and
+                         registry.name.startswith("cases") and registry.suffix == ".json"))
+    custom_registry = not trusted_registry
+    if (custom_registry or allow_unindexed_accessions) and (resolved == corpus or corpus in resolved.parents):
+        raise CutoffGuardError("비기본 레지스트리로 실제 corpus 접근 불가 — fail-closed")
+    if resolved != corpus and Path(log_path) == DEFAULT_LOG:
+        candidate = data_dir / "access_log.jsonl"
+        log_path = (Path(tempfile.gettempdir()) / "aaer_fixture_access_log.jsonl"
+                    if candidate.resolve() == REPO_ROOT.resolve() or
+                    REPO_ROOT.resolve() in candidate.resolve().parents else candidate)
+    return data_dir, log_path
+
+
+def _registered_case(case_id, ticker, cutoff_date, registry_path, log_path):
+    cases = _load_cases(registry_path)
+    case = cases.get(case_id)
+    if case is None:
+        _log(log_path, {"case_id": case_id, "verdict": "blocked", "reason": "unknown_case_id"})
+        raise CutoffGuardError(f"미등록 case_id={case_id!r}: fail-closed")
+    if case.get("ticker") != ticker:
+        raise CutoffGuardError(f"case={case_id}: ticker 불일치 — fail-closed")
+    cutoff = _parse_date(case.get("cutoff_date"), "cutoff_date")
+    if _parse_date(cutoff_date, "cutoff_date") != cutoff:
+        raise CutoffGuardError(f"case={case_id}: 호출자 cutoff_date가 레지스트리와 불일치")
+    return case, cutoff
+
+
+def _submissions(data_dir: Path, ticker: str):
+    edgar_dir = data_dir / ticker / "edgar"
+    paths = sorted(edgar_dir.glob("CIK*.json"))
+    if not paths:
+        raise CutoffGuardError(f"{edgar_dir}: submissions JSON 없음 — fail-closed")
+    parsed, accession_dates = [], {}
+    for path in paths:
+        doc = json.loads(path.read_text(encoding="utf-8"))
+        parsed.append((path, doc))
+        blocks = [doc["filings"]["recent"]] if "filings" in doc else [doc]
+        for block in blocks:
+            for acc, filed in zip(block.get("accessionNumber", []), block.get("filingDate", [])):
+                accession_dates[_normalize_accession(acc)] = _parse_date(filed, "filingDate")
+    return parsed, accession_dates
+
+
+def load_xbrl_facts(case_id: str, ticker: str, cutoff_date, *,
+                    data_dir=DEFAULT_EDGAR_DATA, registry_path=DEFAULT_REGISTRY,
+                    log_path=DEFAULT_LOG, allow_unindexed_accessions=False) -> tuple[list[dict], dict]:
+    """검증·필터된 companyfacts 행과 필터 전 namespace 메타데이터."""
+    data_dir, log_path = _fixture_settings(data_dir, registry_path, log_path,
+                                           allow_unindexed_accessions)
+    _, cutoff = _registered_case(case_id, ticker, cutoff_date, registry_path, log_path)
+    xbrl_dir = data_dir / ticker / "xbrl"
+    paths = sorted(xbrl_dir.glob("*CIK*.json"))
+    if not paths:
+        raise CutoffGuardError(f"{xbrl_dir}: companyfacts 없음 — fail-closed")
+    submissions, accession_dates = _submissions(data_dir, ticker)
+    for path, _ in submissions:
+        _log(log_path, {"case_id": case_id, "doc": str(path), "verdict": "allowed",
+                        "reason": "xbrl_accession_index"})
+    rows, total, namespaces = [], 0, set()
+    for path in paths:
+        doc = json.loads(path.read_text(encoding="utf-8"))
+        for namespace, facts in doc.get("facts", {}).items():
+            namespaces.add(namespace)
+            for tag, concept in facts.items():
+                for unit, unit_rows in concept.get("units", {}).items():
+                    for fact in unit_rows:
+                        total += 1
+                        filed = _parse_date(fact.get("filed"), "filed")
+                        acc = fact.get("accn")
+                        if acc:
+                            registered = accession_dates.get(_normalize_accession(acc))
+                            if registered is None:
+                                if not allow_unindexed_accessions:
+                                    raise CutoffGuardError(f"accession_no={acc}: submissions에서 미발견 — fail-closed")
+                                _log(log_path, {"case_id": case_id, "doc": str(path),
+                                                "verdict": "allowed",
+                                                "reason": "legacy_fixture_mode"})
+                                registered = filed
+                            if registered != filed:
+                                raise CutoffGuardError(f"accession={acc}: fact filed와 filingDate 불일치")
+                        if filed <= cutoff:
+                            rows.append({"namespace": namespace, "tag": tag, "unit": unit, "fact": fact})
+        _log(log_path, {"case_id": case_id, "doc": str(path), "verdict": "allowed",
+                        "reason": "bulk_xbrl_crosschecked"})
+    _log(log_path, {"case_id": case_id, "verdict": "summary", "reason": "bulk_xbrl",
+                    "facts_total": total, "facts_after_cutoff": len(rows),
+                    "facts_dropped": total - len(rows)})
+    return rows, {"namespaces": sorted(namespaces)}
+
+
+def load_edgar_chronology(case_id: str, ticker: str, cutoff_date, *,
+                          data_dir=DEFAULT_EDGAR_DATA, registry_path=DEFAULT_REGISTRY,
+                          log_path=DEFAULT_LOG) -> tuple[list[dict], dict]:
+    """검증·필터된 submissions 행과 필터 전 파일 coverage 메타데이터."""
+    data_dir, log_path = _fixture_settings(data_dir, registry_path, log_path)
+    _, cutoff = _registered_case(case_id, ticker, cutoff_date, registry_path, log_path)
+    parsed, _ = _submissions(data_dir, ticker)
+    cached = {path.name for path, _ in parsed}
+    rows, listed = [], []
+    for path, doc in parsed:
+        for item in doc.get("filings", {}).get("files", []):
+            name = item.get("name")
+            if name and name not in cached:
+                listed.append(name)
+        blocks = [doc["filings"]["recent"]] if "filings" in doc else [doc]
+        for block in blocks:
+            forms, dates = block.get("form", []), block.get("filingDate", [])
+            accs, items = block.get("accessionNumber", []), block.get("items", [])
+            for i, (form, date) in enumerate(zip(forms, dates)):
+                if _parse_date(date, "filingDate") <= cutoff:
+                    rows.append({"form": form, "filingDate": date,
+                                 "accessionNumber": accs[i] if i < len(accs) else None,
+                                 "items": items[i] if i < len(items) else ""})
+        _log(log_path, {"case_id": case_id, "doc": str(path), "verdict": "allowed",
+                        "reason": "bulk_edgar_filtered"})
+    return rows, {"files_read": [str(path) for path, _ in parsed],
+                  "listed_subfiles": sorted(set(listed))}
 
 
 def load_document(case_id: str, path_or_url: str, doc_date, *,
