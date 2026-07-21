@@ -7,11 +7,10 @@
   (a) 8-K item 코드 — submissions JSON `items` 병렬 배열 (스펙 §3.2)
   (b) 주식수·EPS 사실 — companyfacts dei/us-gaap, shares·USD/shares 단위 (스펙 §2.2)
 
-PIT 의미론은 동결 빌더(build_payload.py)와 동일: filed <= cutoff (등호 포함),
-(tag, period) 최신 filed 승리(accession tie-break), 기간 밴드 동일. look-ahead
-필터는 이 모듈의 cutoff 비교 두 지점(_iso_leq — 채널당 1개)으로 수렴하며
-test_payload_v2.py 가 기계 검증한다. cutoff_guard.load_document() 비경유 사유는
-스펙 §3.4 (동결 빌더의 피평가자측 벌크 패턴 선례 — 정답지 무접근, fail-closed 미러).
+PIT 의미론은 동결 빌더(build_payload.py)와 동일하다. corpus 읽기는 cutoff_guard
+벌크 로더를 경유해 레지스트리 컷오프, accession filingDate 대조, 접근 로그를
+적용하며 정적 강제 테스트가 우회를 검출한다. fixture 레지스트리는 실제 corpus에
+사용할 수 없다.
 
 fail-closed: 파싱 불가 날짜 → 예외 (조용한 skip 금지). 파일 부재 → 코어 함수
 예외, CLI 만 케이스 단위 포착·coverage 기록 (네트워크 fetch 금지).
@@ -25,8 +24,11 @@ import datetime
 import json
 from pathlib import Path
 
+import cutoff_guard
+
 REPO_ROOT = Path(__file__).resolve().parent.parent
-DATA_DIR = Path.home() / "aaer-data"
+DATA_DIR = cutoff_guard.DEFAULT_EDGAR_DATA
+EVALUATEE_CASES = REPO_ROOT / "data" / "evaluatee" / "cases.json"
 CASE_FILES = ["cases.json", "cases_v2.json", "cases_wave2.json",
               "cases_holdout.json", "cases_holdout_controls.json"]
 OUT_DIR = REPO_ROOT / "runs" / "diagnostics" / "payload_v2"
@@ -63,42 +65,60 @@ def parse_items(items_raw: str) -> list[str]:
     return [tok.strip() for tok in (items_raw or "").split(",") if tok.strip()]
 
 
-def _submissions_paths(ticker: str) -> list[Path]:
-    edgar_dir = DATA_DIR / ticker / "edgar"
-    paths = sorted(edgar_dir.glob("CIK*.json"))
-    if not paths:
-        raise PayloadV2Error(f"{edgar_dir}: submissions JSON 없음 — fail-closed (fetch 금지)")
-    return paths
+def _case_and_registry(case_or_ticker, cutoff, data_dir, registry_path=None):
+    if registry_path is not None:
+        registries = [registry_path]
+    else:
+        registries = [EVALUATEE_CASES.parent / name for name in CASE_FILES]
+    if isinstance(case_or_ticker, dict):
+        matches = []
+        for path in registries:
+            cases = cutoff_guard._load_cases(path)
+            if cases.get(case_or_ticker.get("case_id")) == case_or_ticker:
+                matches.append(path)
+        if len(matches) != 1:
+            raise cutoff_guard.CutoffGuardError(
+                f"case={case_or_ticker.get('case_id')!r}: 정확히 한 레지스트리에 속하지 않음")
+        return case_or_ticker, matches[0]
+    matches = []
+    for path in registries:
+        for case in cutoff_guard._load_cases(path).values():
+            if case.get("ticker") == case_or_ticker:
+                matches.append((case, path))
+    distinct = {}
+    for case, path in matches:
+        key = (case.get("ticker"), case.get("cutoff_date"), case.get("cik"))
+        distinct.setdefault(key, (case, path))
+    if not distinct and Path(data_dir).resolve() != DATA_DIR.resolve():
+        case = {"case_id": f"FIXTURE-{case_or_ticker}", "ticker": case_or_ticker,
+                "cutoff_date": str(cutoff)}
+        return case, registry_path or {"cases": [case]}
+    if len(distinct) != 1:
+        raise cutoff_guard.CutoffGuardError(
+            f"ticker={case_or_ticker!r}, cutoff={cutoff}: 정확히 한 케이스가 아님")
+    case, path = next(iter(distinct.values()))
+    if _iso(case.get("cutoff_date"), "cutoff_date") != _iso(cutoff, "cutoff_date"):
+        raise cutoff_guard.CutoffGuardError("호출자 cutoff_date가 레지스트리와 불일치")
+    return case, path
 
 
-def extract_8k_items(ticker: str, cutoff: datetime.date,
-                     data_dir: Path = DATA_DIR) -> tuple[list[dict], dict]:
+def extract_8k_items(case_or_ticker, cutoff: datetime.date,
+                     data_dir: Path = DATA_DIR, registry_path=None) -> tuple[list[dict], dict]:
     """컷오프 전(포함) 8-K/8-K/A 행의 item 코드. 반환: (rows, coverage)."""
-    edgar_dir = data_dir / ticker / "edgar"
-    paths = sorted(edgar_dir.glob("CIK*.json"))
-    if not paths:
-        raise PayloadV2Error(f"{edgar_dir}: submissions JSON 없음 — fail-closed (fetch 금지)")
-    rows, missing_subfiles = [], []
-    cached = {p.name for p in paths}
-    for path in paths:
-        j = json.loads(path.read_text(encoding="utf-8"))
-        blocks = [j["filings"]["recent"]] if "filings" in j else [j]
-        for sub in (j.get("filings", {}).get("files", []) if "filings" in j else []):
-            if sub.get("name") and sub["name"] not in cached:
-                missing_subfiles.append(sub["name"])
-        for b in blocks:
-            forms = b.get("form", [])
-            dates = b.get("filingDate", [])
-            accs = b.get("accessionNumber", [])
-            items = b.get("items", [""] * len(forms))
-            for i, form in enumerate(forms):
-                if form not in EIGHTK_FORMS:
-                    continue
-                if _iso(dates[i], "filingDate") > cutoff:
-                    continue  # (a)채널 유일 look-ahead 필터 지점
-                raw = items[i] if i < len(items) else ""
-                rows.append({"accession": accs[i], "form": form, "filing_date": dates[i],
-                             "items_raw": raw, "items": parse_items(raw)})
+    try:
+        case, registry_path = _case_and_registry(case_or_ticker, cutoff, data_dir, registry_path)
+        loaded, metadata = cutoff_guard.load_edgar_chronology(
+            case["case_id"], case["ticker"], cutoff, data_dir=data_dir,
+            registry_path=registry_path)
+    except cutoff_guard.CutoffGuardError as e:
+        raise PayloadV2Error(str(e)) from e
+    rows = []
+    for row in loaded:
+        if row["form"] in EIGHTK_FORMS:
+            raw = row["items"]
+            rows.append({"accession": row["accessionNumber"], "form": row["form"],
+                         "filing_date": row["filingDate"], "items_raw": raw,
+                         "items": parse_items(raw)})
     rows.sort(key=lambda r: (r["filing_date"], r["accession"]))
     # 다중 청크 병합 중복 제거 (accession 기준)
     dedup, seen = [], set()
@@ -106,27 +126,27 @@ def extract_8k_items(ticker: str, cutoff: datetime.date,
         if r["accession"] not in seen:
             seen.add(r["accession"])
             dedup.append(r)
-    coverage = {"submissions_files_read": len(paths),
-                "paginated_subfiles_listed_not_cached": sorted(set(missing_subfiles))}
+    coverage = {"submissions_files_read": len(metadata["files_read"]),
+                "paginated_subfiles_listed_not_cached": metadata["listed_subfiles"]}
     return dedup, coverage
 
 
-def extract_share_facts(ticker: str, cutoff: datetime.date,
-                        data_dir: Path = DATA_DIR) -> tuple[dict, dict]:
+def extract_share_facts(case_or_ticker, cutoff: datetime.date,
+                        data_dir: Path = DATA_DIR, registry_path=None) -> tuple[dict, dict]:
     """컷오프 전(포함) 주식수·EPS PIT 시계열. 반환: (facts, coverage)."""
-    xbrl_dir = data_dir / ticker / "xbrl"
-    files = sorted(xbrl_dir.glob("*CIK*.json"))
-    if not files:
-        raise PayloadV2Error(f"{xbrl_dir}: companyfacts 없음 — fail-closed (fetch 금지)")
+    try:
+        case, registry_path = _case_and_registry(case_or_ticker, cutoff, data_dir, registry_path)
+        loaded, metadata = cutoff_guard.load_xbrl_facts(
+            case["case_id"], case["ticker"], cutoff, data_dir=data_dir,
+            registry_path=registry_path,
+            allow_unindexed_accessions=isinstance(registry_path, dict))
+    except cutoff_guard.CutoffGuardError as e:
+        raise PayloadV2Error(str(e)) from e
     table: dict[str, dict] = {}
-    namespaces = set()
-    for path in files:
-        facts = json.loads(path.read_text(encoding="utf-8")).get("facts", {})
-        namespaces.update(facts.keys())
-        for ns, tag, unit in SHARE_TAGS:
-            for f in facts.get(ns, {}).get(tag, {}).get("units", {}).get(unit, []):
-                if _iso(f["filed"], "filed") > cutoff:
-                    continue  # (b)채널 유일 look-ahead 필터 지점
+    wanted = set(SHARE_TAGS)
+    for row in loaded:
+        ns, tag, unit, f = row["namespace"], row["tag"], row["unit"], row["fact"]
+        if (ns, tag, unit) in wanted:
                 start = f.get("start")
                 if start:
                     span = (_iso(f["end"], "end") - _iso(start, "start")).days
@@ -148,15 +168,16 @@ def extract_share_facts(ticker: str, cutoff: datetime.date,
                     slot[key] = cand
     facts_out = {tag: sorted(vals.values(), key=lambda v: (v["end"], v["start"] or ""))
                  for tag, vals in sorted(table.items())}
-    coverage = {"facts_namespaces_present": sorted(namespaces),
+    coverage = {"facts_namespaces_present": metadata["namespaces"],
                 "tags_found": {tag: len(vals) for tag, vals in facts_out.items()}}
     return facts_out, coverage
 
 
 def extract_case(case: dict, source_file: str, data_dir: Path = DATA_DIR) -> dict:
     cutoff = _iso(case["cutoff_date"], "cutoff_date")
-    eightk, cov_e = extract_8k_items(case["ticker"], cutoff, data_dir)
-    shares, cov_x = extract_share_facts(case["ticker"], cutoff, data_dir)
+    registry = REPO_ROOT / "data" / "evaluatee" / source_file
+    eightk, cov_e = extract_8k_items(case, cutoff, data_dir, registry)
+    shares, cov_x = extract_share_facts(case, cutoff, data_dir, registry)
     return {
         "spec": "specs/payload_v2.md",
         "diagnostic_only": True,

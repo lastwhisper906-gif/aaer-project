@@ -4,7 +4,7 @@
 - Branch: remediation/external-review
 - Worktree: ~/work/worktrees/forensic-project-remediation
 - Invocation scope: Phase 0 + Phase 1 (Tasks 1–11)
-- Harness model-call budget: 40 | **consumed: 35 FINAL** (Phase-1 27; T08v2 1b+1r; T09v2 3b+3r) (T03: 2b+1r; T02: 3b+2r; T06: 1b+1r; T07: 2b+1b+1r; T08: 3b+1r STOPPED; T09: 3b+2r STOPPED; T10: 1b+1r; T11: 1b+1r)
+- Harness model-call budget: 40 | **consumed: 37 FINAL** (Phase-1 27; T08v2 1b+1r; T09v2 3b+3r; T09v3 1b+1r) (T03: 2b+1r; T02: 3b+2r; T06: 1b+1r; T07: 2b+1b+1r; T08: 3b+1r STOPPED; T09: 3b+2r STOPPED; T10: 1b+1r; T11: 1b+1r)
 
 ## Preflight (2026-07-21)
 
@@ -29,7 +29,7 @@
 | Task 6 (schema unification) | HARNESS | COMMITTED (APPROVED cycle 1/3) | ~/tools/harness/logs/T06_schema_unification_20260721_152549 | see log |
 | Task 7 (fingerprinted idempotency) | HARNESS | COMMITTED (run 1 killed mid-cycle-2 → reset+relaunched once per protocol; relaunch APPROVED cycle 1) | ~/tools/harness/logs/T07_fingerprint_idempotency_20260721_153703 | see log |
 | Task 8 (dynamic blindness scanner) | HARNESS | STOPPED (max-cycles 3, QUARANTINE rule 3 — root cause: orchestrator-supplied registry omitted scoring/probe_results_v2*/v2ds_* surfaces; discovery guarantee worked and caught it; c2 review also flagged fail-open carve-outs + name-variant weakening; worktree reverted, diffs preserved in run dir; owner D3) → v2 relaunch COMMITTED (APPROVED cycle 1/3; run T08v2_blindness_scanner_20260721_213051) | ~/tools/harness/logs/T08_blindness_scanner_20260721_154259 | – |
-| Task 9 (cutoff loader contract) | HARNESS Option B | STOPPED (max-cycles 3, rule 3 — c3 review: registry-weakening guard needed for fixture mode; un-editable caller scoring/probe_verdict.py:62 breaks on signature change; coverage-metadata regression; fixture-mode writes to DEFAULT access log. Worktree reverted, diffs in run dir. owner D4) → v2 relaunch STOPPED-FINAL (max-cycles 3, three REVISE; residue is 4 mechanical items: sibling-import convention x3 + multi-match fabrication edge — see T09v2 run feedback_latest.md; owner-authorized single relaunch exhausted) → owner authorized v3 (verbatim 4-fix spec): IN_PROGRESS ~/work/remediation-tasks/T09v3_cutoff_loader_contract.md | ~/tools/harness/logs/T09_cutoff_loader_contract_20260721_155721 | – |
+| Task 9 (cutoff loader contract) | HARNESS Option B | STOPPED (max-cycles 3, rule 3 — c3 review: registry-weakening guard needed for fixture mode; un-editable caller scoring/probe_verdict.py:62 breaks on signature change; coverage-metadata regression; fixture-mode writes to DEFAULT access log. Worktree reverted, diffs in run dir. owner D4) → v2 relaunch STOPPED-FINAL (max-cycles 3, three REVISE; residue is 4 mechanical items: sibling-import convention x3 + multi-match fabrication edge — see T09v2 run feedback_latest.md; owner-authorized single relaunch exhausted) → v3 COMMITTED (APPROVED cycle 1/3; run T09v3_cutoff_loader_contract_20260722_023517) — F2 REMEDIATED | ~/tools/harness/logs/T09_cutoff_loader_contract_20260721_155721 | – |
 | Task 10 (exception swallowing) | HARNESS | COMMITTED (APPROVED cycle 1/3) | ~/tools/harness/logs/T10_exception_swallowing_20260721_162559 | see log |
 | Task 11 (synthetic fixtures) | HARNESS | COMMITTED (APPROVED cycle 1/3; synthetic tier runs corpus-free, real tier iterates ALL cases) | ~/tools/harness/logs/T11_synthetic_fixtures_20260721_163048 | see log |
 
