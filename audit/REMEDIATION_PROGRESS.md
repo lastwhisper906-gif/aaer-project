@@ -26,7 +26,7 @@
 | Task 3 (statistics module) | HARNESS | COMMITTED (APPROVED cycle 2/3) | ~/tools/harness/logs/T03_statistics_module_20260721_150457 | see log |
 | Task 4 (CI covers analysis/) | DIRECT+1 harness max | COMMITTED (pytest now covers analysis/; 0 failures; coverage floor DEFERRED — pytest-cov vs 5-dep invariant → batched decision) | – | (this commit) |
 | Task 5 (wave2 rev2 rerun) | DIRECT | QUARANTINED (rule 1): verdict R4 UNCHANGED, primary stats identical, but tie-aware Spearman shifts published rho_M 0.337→0.333, rho_F 0.265→0.293 → E-002 held as DRAFT in final packet; rev2 artifact committed (deterministic, v1 untouched) | – | (this commit) |
-| Task 6 (schema unification) | HARNESS | PENDING | – | – |
+| Task 6 (schema unification) | HARNESS | IN_PROGRESS | task: ~/work/remediation-tasks/T06_schema_unification.md | – |
 | Task 7 (fingerprinted idempotency) | HARNESS | PENDING | – | – |
 | Task 8 (dynamic blindness scanner) | HARNESS | PENDING | – | – |
 | Task 9 (cutoff loader contract) | HARNESS (option chosen by orchestrator) | PENDING | – | – |
