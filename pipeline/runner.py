@@ -10,7 +10,7 @@
     다른 케이스·채점 자료 일절 미포함 — cli_client가 격리 임시 디렉토리에서
     `claude -p` (도구 차단, CLAUDE_CONFIG_DIR 격리)로 강제.
   - 이 모듈은 scoring/ 를 import하지 않는다 (정적 스캔).
-  - 멱등: 출력 파일이 존재하고 llm_output 스키마를 통과하면 skip — 재개 = 동일 명령.
+  - 멱등: legacy 유효 출력 또는 현재 실행 fingerprint와 일치하는 출력만 skip.
   - 실행 순서 = 케이스 파일의 셔플된 중립 ID 순서 고정, 동시성 3.
   - 2연속 실패 = 해당 케이스 FAIL 기록 후 계속. 레이트 리밋 = 재개 명령 출력 후 중단.
   - 모델 핀: 피평가자 = claude-sonnet-5 (D6) — 폴백 없음. 서빙 모델 핀 불일치 = FAIL.
@@ -20,8 +20,10 @@ from __future__ import annotations
 import argparse
 import concurrent.futures
 import datetime
+import hashlib
 import json
 import shlex
+import subprocess
 import sys
 from copy import deepcopy
 from pathlib import Path
@@ -36,6 +38,35 @@ EVALUATEE_MODEL = "claude-sonnet-5"  # D6 pin (사유는 채점 쪽 문서)
 FULL_OUTPUT_SCHEMA = json.loads(
     (REPO_ROOT / "schemas" / "llm_output.json").read_text(encoding="utf-8"))
 CANARY_MARKERS = ("9fa11f98", "a2d69cfe")
+_HARNESS_VERSION: str | None = None
+
+
+def get_harness_version() -> str:
+    """Return the CLI version once per runner process."""
+    global _HARNESS_VERSION
+    if _HARNESS_VERSION is None:
+        try:
+            result = subprocess.run(
+                ["claude", "--version"], capture_output=True, text=True, check=True)
+            _HARNESS_VERSION = result.stdout.splitlines()[0] if result.stdout else "UNAVAILABLE"
+        except (FileNotFoundError, OSError):
+            _HARNESS_VERSION = "UNAVAILABLE"
+    return _HARNESS_VERSION
+
+
+def compute_fingerprint(case: dict, task: str, user_payload: str) -> dict:
+    """Compute the complete configuration identity before a model call."""
+    schema_bytes = (REPO_ROOT / "schemas" / "llm_output.json").read_bytes()
+    case_json = json.dumps(case, sort_keys=True, ensure_ascii=False)
+    return {
+        "case_input_sha256": hashlib.sha256(case_json.encode("utf-8")).hexdigest(),
+        "payload_sha256": hashlib.sha256(user_payload.encode("utf-8")).hexdigest(),
+        "system_prompt_sha256": hashlib.sha256(task.encode("utf-8")).hexdigest(),
+        "schema_sha256": hashlib.sha256(schema_bytes).hexdigest(),
+        "model_requested": EVALUATEE_MODEL,
+        "harness_version_actual": get_harness_version(),
+        "pipeline_commit": freeze_state()["head"],
+    }
 
 
 def derive_model_schema(full_schema: dict) -> dict:
@@ -72,8 +103,16 @@ def run_case(case: dict, perturb: bool, out_dir: Path, log_dir: Path) -> dict:
     """케이스 1건 실행 — 반환: 상태 요약 dict (FAIL 포함, 예외는 레이트 리밋만)."""
     cid = case["case_id"]
     out_path = out_dir / f"{cid}.json"
-    if cli_client.output_is_valid(out_path, FULL_OUTPUT_SCHEMA):
-        return {"case_id": cid, "status": "skip (멱등 — 기존 출력 유효)"}
+    existing = None
+    if out_path.exists():
+        try:
+            existing = json.loads(out_path.read_text(encoding="utf-8"))
+        except (json.JSONDecodeError, OSError):
+            pass
+        if (cli_client.output_is_valid(out_path, FULL_OUTPUT_SCHEMA)
+                and isinstance(existing, dict) and "fingerprint" not in existing):
+            return {"case_id": cid,
+                    "status": "skip (legacy output — fingerprint 없음, 재실행 안 함)"}
 
     payload = bp.build_payload(case, perturb=perturb)
     k = payload.pop("_k_internal")
@@ -83,6 +122,17 @@ def run_case(case: dict, perturb: bool, out_dir: Path, log_dir: Path) -> dict:
                        cutoff_date=case["cutoff_date"])
     user_payload = json.dumps({k2: v for k2, v in payload.items() if not k2.startswith("_")},
                               ensure_ascii=False)
+    fingerprint = compute_fingerprint(case, task, user_payload)
+    write_path = out_path
+    stale_superseding = False
+    if out_path.exists():
+        if isinstance(existing, dict) and existing.get("fingerprint") == fingerprint:
+            return {"case_id": cid, "status": "skip (멱등 — fingerprint 일치)"}
+        canonical = json.dumps(fingerprint, sort_keys=True, ensure_ascii=False)
+        suffix = hashlib.sha256(canonical.encode("utf-8")).hexdigest()[:8]
+        write_path = out_dir / f"{cid}.fp-{suffix}.json"
+        stale_superseding = True
+
     variant = "perturbed" if perturb else "original"
     r = cli_client.call_model(
         EVALUATEE_MODEL, task, user_payload, MODEL_SCHEMA,
@@ -113,6 +163,7 @@ def run_case(case: dict, perturb: bool, out_dir: Path, log_dir: Path) -> dict:
         "pipeline_version": freeze_state()["head"],
         "run_timestamp": datetime.datetime.now(datetime.timezone.utc).isoformat(),
         "documents_used": sorted(accessions.values(), key=lambda d: d["accession_no"]),
+        "fingerprint": fingerprint,
         **r.structured,
     }
     errors = list(jsonschema.Draft7Validator(FULL_OUTPUT_SCHEMA).iter_errors(full))
@@ -125,8 +176,9 @@ def run_case(case: dict, perturb: bool, out_dir: Path, log_dir: Path) -> dict:
             json.dumps(meta, ensure_ascii=False, indent=2), encoding="utf-8")
         return {"case_id": cid, "status": f"FAIL ({reason})"}
     out_dir.mkdir(parents=True, exist_ok=True)
-    out_path.write_text(json.dumps(full, ensure_ascii=False, indent=2), encoding="utf-8")
-    return {"case_id": cid, "status": f"OK p={full['misstatement_probability']} "
+    write_path.write_text(json.dumps(full, ensure_ascii=False, indent=2), encoding="utf-8")
+    status_prefix = "OK stale-superseding" if stale_superseding else "OK"
+    return {"case_id": cid, "status": f"{status_prefix} p={full['misstatement_probability']} "
             f"tier={full['overall']['risk_tier']} hyps={len(full['mechanism_hypotheses'])}"}
 
 

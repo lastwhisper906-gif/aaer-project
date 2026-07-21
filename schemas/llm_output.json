@@ -12,6 +12,7 @@
     "pipeline_version": { "$ref": "#/$defs/pipeline_meta/properties/pipeline_version" },
     "run_timestamp": { "$ref": "#/$defs/pipeline_meta/properties/run_timestamp" },
     "documents_used": { "$ref": "#/$defs/pipeline_meta/properties/documents_used" },
+    "fingerprint": { "$ref": "#/$defs/pipeline_meta/properties/fingerprint" },
     "checklist": { "$ref": "#/$defs/model_output/properties/checklist" },
     "misstatement_probability": { "$ref": "#/$defs/model_output/properties/misstatement_probability" },
     "mechanism_hypotheses": { "$ref": "#/$defs/model_output/properties/mechanism_hypotheses" },
@@ -31,6 +32,20 @@
     "model": { "type": "string", "description": "pinned model string, 예: claude-sonnet-4-6" },
     "pipeline_version": { "type": "string", "description": "git commit hash" },
     "run_timestamp": { "type": "string", "format": "date-time" },
+    "fingerprint": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["case_input_sha256", "payload_sha256", "system_prompt_sha256", "schema_sha256", "model_requested", "harness_version_actual", "pipeline_commit"],
+      "properties": {
+        "case_input_sha256": { "type": "string" },
+        "payload_sha256": { "type": "string" },
+        "system_prompt_sha256": { "type": "string" },
+        "schema_sha256": { "type": "string" },
+        "model_requested": { "type": "string" },
+        "harness_version_actual": { "type": "string" },
+        "pipeline_commit": { "type": "string" }
+      }
+    },
     "documents_used": {
       "type": "array",
       "minItems": 1,
