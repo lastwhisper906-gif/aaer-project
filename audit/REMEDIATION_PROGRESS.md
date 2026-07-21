@@ -4,7 +4,7 @@
 - Branch: remediation/external-review
 - Worktree: ~/work/worktrees/forensic-project-remediation
 - Invocation scope: Phase 0 + Phase 1 (Tasks 1–11)
-- Harness model-call budget: 40 | **consumed: 25** (T03: 2b+1r; T02: 3b+2r; T06: 1b+1r; T07: 2b+1b+1r; T08: 3b+1r STOPPED; T09: 3b+2r STOPPED; T10: 1b+1r)
+- Harness model-call budget: 40 | **consumed: 27 FINAL** (T03: 2b+1r; T02: 3b+2r; T06: 1b+1r; T07: 2b+1b+1r; T08: 3b+1r STOPPED; T09: 3b+2r STOPPED; T10: 1b+1r; T11: 1b+1r)
 
 ## Preflight (2026-07-21)
 
@@ -31,6 +31,14 @@
 | Task 8 (dynamic blindness scanner) | HARNESS | STOPPED (max-cycles 3, QUARANTINE rule 3 — root cause: orchestrator-supplied registry omitted scoring/probe_results_v2*/v2ds_* surfaces; discovery guarantee worked and caught it; c2 review also flagged fail-open carve-outs + name-variant weakening; worktree reverted, diffs preserved in run dir; RECOMMEND: one relaunch with corrected registry) | ~/tools/harness/logs/T08_blindness_scanner_20260721_154259 | – |
 | Task 9 (cutoff loader contract) | HARNESS Option B | STOPPED (max-cycles 3, rule 3 — c3 review: registry-weakening guard needed for fixture mode; un-editable caller scoring/probe_verdict.py:62 breaks on signature change; coverage-metadata regression; fixture-mode writes to DEFAULT access log. Worktree reverted, diffs in run dir. RECOMMEND: relaunch with sharpened spec covering string-ticker compat + fixture-mode logging isolation) | ~/tools/harness/logs/T09_cutoff_loader_contract_20260721_155721 | – |
 | Task 10 (exception swallowing) | HARNESS | COMMITTED (APPROVED cycle 1/3) | ~/tools/harness/logs/T10_exception_swallowing_20260721_162559 | see log |
-| Task 11 (synthetic fixtures) | HARNESS | IN_PROGRESS (task file amended for T09-STOPPED premise: DATA_DIR monkeypatch is the injection point) | task: ~/work/remediation-tasks/T11_synthetic_fixtures.md | – |
+| Task 11 (synthetic fixtures) | HARNESS | COMMITTED (APPROVED cycle 1/3; synthetic tier runs corpus-free, real tier iterates ALL cases) | ~/tools/harness/logs/T11_synthetic_fixtures_20260721_163048 | see log |
 
 Tasks 12–18: NOT in this invocation (Phase 2/3 — owner re-invokes).
+
+## Phase 1 exit (2026-07-21)
+
+- Suite at exit: 255 passed (pipeline tools scoring analysis).
+- COMMITTED: Phase 0, T1, T2, T3, T4(partial — coverage floor deferred), T5(artifact only — presentation QUARANTINED), T6, T7, T10, T11.
+- STOPPED: T8, T9 (max-cycles, rule 3; relaunch recommendations in final packet).
+- QUARANTINED: T5 presentation (E-002 DRAFT in final packet).
+- Owner-queue (NOT done, per spec): reader dispatch, human graders, draw re-runs, sealed cycle arming, synthesis.py real-data rerun, forward cycle_001 hash re-pin decision.
