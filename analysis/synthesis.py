@@ -33,22 +33,32 @@ M_FLAG, F_FLAG = -1.78, 1.0
 FRAUD_W2 = ["T02", "T04", "T19", "T20", "T22", "T23", "T24", "T26", "T29"]
 
 
-def load(p):
-    return json.load(open(REPO / p, encoding="utf-8"))
+def load(p, repo=REPO):
+    return json.load(open(repo / p, encoding="utf-8"))
 
 
-def baseline_mf(cand_rec):
+def baseline_mf(cand_rec, exclusions):
     try:
         r = run_case(cand_rec)
-    except Exception:
+    except (FileNotFoundError, KeyError, ValueError, ZeroDivisionError) as exc:
+        exclusions.append({
+            "case_id": cand_rec.get("case_id"),
+            "ticker": cand_rec.get("ticker"),
+            "stage": "baseline_mf",
+            "exception_class": type(exc).__name__,
+            "message": str(exc),
+            "classification": (
+                "data_missing" if isinstance(exc, (FileNotFoundError, KeyError)) else "code_error"
+            ),
+        })
         return None, None
     return r.get("beneish", {}).get("m_score"), r.get("dechow_f", {}).get("f_score")
 
 
-def rows_wave1():
-    npr = {r["truth_ticker"]: r["recognized"] for r in load("analysis/name_probe_results.json")["rows"]}
+def rows_wave1(exclusions, repo=REPO):
+    npr = {r["truth_ticker"]: r["recognized"] for r in load("analysis/name_probe_results.json", repo)["rows"]}
     out = []
-    for r in csv.DictReader(open(REPO / "analysis/baseline_table.csv", encoding="utf-8")):
+    for r in csv.DictReader(open(repo / "analysis/baseline_table.csv", encoding="utf-8")):
         p = float(r["llm_score"]) if r["llm_score"] not in ("", "None") else None
         pert = float(r["llm_perturbed"]) if r["llm_perturbed"] not in ("", "None") else None
         m = float(r["m_score"]) if r["m_score"] not in ("", "None") else None
@@ -63,13 +73,13 @@ def rows_wave1():
     return out
 
 
-def rows_wave2():
-    idmap = load("scoring/id_mapping_wave2.json")["mapping"]
-    frauds = set(load("runs/wave2/fraud_case_ids.json"))
-    cw = {c["case_id"]: c for c in load("data/candidates/candidates_wave2.json")["candidates"]}
+def rows_wave2(exclusions, repo=REPO):
+    idmap = load("scoring/id_mapping_wave2.json", repo)["mapping"]
+    frauds = set(load("runs/wave2/fraud_case_ids.json", repo))
+    cw = {c["case_id"]: c for c in load("data/candidates/candidates_wave2.json", repo)["candidates"]}
     out = []
     for case, code in sorted(idmap.items()):
-        sp = REPO / f"runs/wave2/scores/{case}.json"
+        sp = repo / f"runs/wave2/scores/{case}.json"
         if not sp.exists():
             continue
         s = json.load(open(sp, encoding="utf-8"))
@@ -77,15 +87,15 @@ def rows_wave2():
         grp = "fraud" if case in frauds else "control"
         c = cw[code]
         pert = None
-        pp = REPO / f"runs/wave2/perturbed/{case}.json"
+        pp = repo / f"runs/wave2/perturbed/{case}.json"
         if pp.exists():
             pert = json.load(open(pp, encoding="utf-8")).get("misstatement_probability")
         rec = None
-        rp = REPO / f"scoring/probe_results_wave2/recognition/{case}.json"
+        rp = repo / f"scoring/probe_results_wave2/recognition/{case}.json"
         if rp.exists():
             g = json.load(open(rp, encoding="utf-8")).get("company_guess", "")
             rec = bool(name_match(g, c["company_name"]))
-        m, f = baseline_mf(dict(c, group=grp))
+        m, f = baseline_mf(dict(c, group=grp), exclusions)
         out.append(dict(wave="wave2", case_id=case, ticker=c["ticker"], group=grp,
                         llm_score=p, flag=int((p or 0) >= 50),
                         llm_perturbed=pert,
@@ -98,20 +108,33 @@ def rows_wave2():
     return out
 
 
-def rows_holdout():
-    ch = {c["case_id"]: c for c in load("data/candidates/candidates_holdout.json")["candidates"]}
+def rows_holdout(exclusions, repo=REPO):
+    ch = {c["case_id"]: c for c in load("data/candidates/candidates_holdout.json", repo)["candidates"]}
     out = []
     for case in sorted(ch):
-        sp = REPO / f"runs/holdout/scores/{case}.json"
+        sp = repo / f"runs/holdout/scores/{case}.json"
         if not sp.exists():
             continue
         p = json.load(open(sp, encoding="utf-8")).get("misstatement_probability")
         c = ch[case]
-        m, f = baseline_mf(dict(c, group="fraud"))
+        m, f = baseline_mf(dict(c, group="fraud"), exclusions)
+        rp = repo / f"runs/holdout/recognition/{c['ticker']}.json"
+        if rp.exists():
+            recognized = bool(json.load(open(rp, encoding="utf-8"))["knows_event"])
+        else:
+            recognized = None
+            exclusions.append({
+                "case_id": case,
+                "ticker": c["ticker"],
+                "stage": "holdout_recognition",
+                "exception_class": "FileNotFoundError",
+                "message": str(rp),
+                "classification": "data_missing",
+            })
         out.append(dict(wave="holdout", case_id=case, ticker=c["ticker"], group="fraud",
                         llm_score=p, flag=int((p or 0) >= 50), llm_perturbed=None,
                         perturb_delta=None,
-                        recognized=False,  # recognition gate: knows_event=False 3/3 (기동결)
+                        recognized=recognized,
                         m_score=round(m, 3) if m is not None else None,
                         m_flag=int(m <= M_FLAG) if m is not None else None,
                         f_score=round(f, 3) if f is not None else None,
@@ -142,14 +165,19 @@ def name_id_rate(rows):
     return round(100 * sum(rec) / len(rec), 1) if rec else None
 
 
-def main():
+def main(repo=REPO, out_dir=None):
+    if out_dir is None:
+        out_dir = repo / "analysis"
     rng = random.Random(SEED)
-    w1, w2, ho = rows_wave1(), rows_wave2(), rows_holdout()
+    exclusions = []
+    w1 = rows_wave1(exclusions, repo)
+    w2 = rows_wave2(exclusions, repo)
+    ho = rows_holdout(exclusions, repo)
     allrows = w1 + w2 + ho
 
     cols = ["wave", "case_id", "ticker", "group", "llm_score", "flag", "llm_perturbed",
             "perturb_delta", "recognized", "m_score", "m_flag", "f_score", "f_flag"]
-    with open(REPO / "analysis/unified_table.csv", "w", newline="", encoding="utf-8") as fh:
+    with open(out_dir / "unified_table.csv", "w", newline="", encoding="utf-8") as fh:
         w = csv.DictWriter(fh, fieldnames=cols)
         w.writeheader()
         for r in allrows:
@@ -192,8 +220,15 @@ def main():
             "qualitative_invariant": "어느 쪽이든 50%→~22–25%→0%의 반감 서사는 불변.",
         },
     }
-    (REPO / "analysis/synthesis.json").write_text(
+    (out_dir / "synthesis.json").write_text(
         json.dumps(out, ensure_ascii=False, indent=2), encoding="utf-8")
+    exclusion_path = out_dir / "out/synthesis_exclusions.json"
+    exclusion_path.parent.mkdir(parents=True, exist_ok=True)
+    exclusion_path.write_text(json.dumps({
+        "generated_by": "analysis/synthesis.py",
+        "excluded_n": len(exclusions),
+        "records": exclusions,
+    }, ensure_ascii=False, indent=2), encoding="utf-8")
 
     # dose-response figure
     xs = [d["name_id_pct"] for d in dose]
@@ -218,7 +253,7 @@ def main():
     ax.axhline(0.5, ls=":", c="#9ca3af", lw=1)
     ax.grid(True, alpha=0.3)
     fig.tight_layout()
-    fig.savefig(REPO / "analysis/fig_memorization_doseresponse.png", dpi=140)
+    fig.savefig(out_dir / "fig_memorization_doseresponse.png", dpi=140)
 
     print(f"unified_table.csv: {len(allrows)} rows (w1={len(w1)} w2={len(w2)} ho={len(ho)})")
     print(f"dose-response name-ID: w1={xs[0]}% w2={xs[1]}% ho={xs[2]}% | AUC w1={ys[0]} w2={ys[1]}")
