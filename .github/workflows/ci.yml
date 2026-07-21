@@ -27,3 +27,5 @@ jobs:
         run: python tools/verify_blindness.py
       - name: 발행 정합 린트 (0% 오탐·G2-fraud·대조군주어·pooled·EXPLORATORY·stale — P4)
         run: python tools/lint_publication.py
+      - name: 문서-저장소 수치 정합 린트 (매니페스트 수·pytest 수·재현 명령 목록 — B3, D108)
+        run: python tools/lint_doc_counts.py
