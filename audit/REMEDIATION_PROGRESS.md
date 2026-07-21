@@ -4,7 +4,7 @@
 - Branch: remediation/external-review
 - Worktree: ~/work/worktrees/forensic-project-remediation
 - Invocation scope: Phase 0 + Phase 1 (Tasks 1–11)
-- Harness model-call budget: 40 | **consumed: 18** (T03: 2b+1r; T02: 3b+2r; T06: 1b+1r; T07: 2b killed + 1b+1r; T08: 3b+1r STOPPED)
+- Harness model-call budget: 40 | **consumed: 23** (T03: 2b+1r; T02: 3b+2r; T06: 1b+1r; T07: 2b+1b+1r; T08: 3b+1r STOPPED; T09: 3b+2r STOPPED)
 
 ## Preflight (2026-07-21)
 
@@ -29,8 +29,8 @@
 | Task 6 (schema unification) | HARNESS | COMMITTED (APPROVED cycle 1/3) | ~/tools/harness/logs/T06_schema_unification_20260721_152549 | see log |
 | Task 7 (fingerprinted idempotency) | HARNESS | COMMITTED (run 1 killed mid-cycle-2 → reset+relaunched once per protocol; relaunch APPROVED cycle 1) | ~/tools/harness/logs/T07_fingerprint_idempotency_20260721_153703 | see log |
 | Task 8 (dynamic blindness scanner) | HARNESS | STOPPED (max-cycles 3, QUARANTINE rule 3 — root cause: orchestrator-supplied registry omitted scoring/probe_results_v2*/v2ds_* surfaces; discovery guarantee worked and caught it; c2 review also flagged fail-open carve-outs + name-variant weakening; worktree reverted, diffs preserved in run dir; RECOMMEND: one relaunch with corrected registry) | ~/tools/harness/logs/T08_blindness_scanner_20260721_154259 | – |
-| Task 9 (cutoff loader contract) | HARNESS Option B (4 sites > ~3; fact-granular corpus vs doc-granular load_document) | IN_PROGRESS | task: ~/work/remediation-tasks/T09_cutoff_loader_contract.md | – |
-| Task 10 (exception swallowing) | HARNESS | PENDING | – | – |
+| Task 9 (cutoff loader contract) | HARNESS Option B | STOPPED (max-cycles 3, rule 3 — c3 review: registry-weakening guard needed for fixture mode; un-editable caller scoring/probe_verdict.py:62 breaks on signature change; coverage-metadata regression; fixture-mode writes to DEFAULT access log. Worktree reverted, diffs in run dir. RECOMMEND: relaunch with sharpened spec covering string-ticker compat + fixture-mode logging isolation) | ~/tools/harness/logs/T09_cutoff_loader_contract_20260721_155721 | – |
+| Task 10 (exception swallowing) | HARNESS | IN_PROGRESS | task: ~/work/remediation-tasks/T10_exception_swallowing.md | – |
 | Task 11 (synthetic fixtures) | HARNESS | PENDING | – | – |
 
 Tasks 12–18: NOT in this invocation (Phase 2/3 — owner re-invokes).
