@@ -22,7 +22,7 @@
 |---|---|---|---|---|
 | Phase 0 (V1–V11 verification) | DIRECT | COMMITTED (all 11 CONFIRMED) | – | 80e5290 |
 | Task 1 (ERRATA entry) | DIRECT | COMMITTED (E-001) | – | c3a396c |
-| Task 2 (verdict module) | HARNESS | PENDING (runs after Task 3 — imports statistics module) | – | – |
+| Task 2 (verdict module) | HARNESS | IN_PROGRESS | task: ~/work/remediation-tasks/T02_verdict_module.md | – |
 | Task 3 (statistics module) | HARNESS | COMMITTED (APPROVED cycle 2/3) | ~/tools/harness/logs/T03_statistics_module_20260721_150457 | see log |
 | Task 4 (CI covers analysis/) | DIRECT+1 harness max | PENDING | – | – |
 | Task 5 (wave2 rev2 rerun) | DIRECT | PENDING | – | – |
