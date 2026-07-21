@@ -25,7 +25,7 @@
 | Task 2 (verdict module) | HARNESS | COMMITTED (APPROVED cycle 3/3; c2 caught dropped perturbed-frame + sealed-runs test dep) | ~/tools/harness/logs/T02_verdict_module_20260721_150952 | see log |
 | Task 3 (statistics module) | HARNESS | COMMITTED (APPROVED cycle 2/3) | ~/tools/harness/logs/T03_statistics_module_20260721_150457 | see log |
 | Task 4 (CI covers analysis/) | DIRECT+1 harness max | TRIAGED (expanded suite 235 passed, 0 fail — no harness task needed; coverage floor deferred: pytest-cov vs 5-dep invariant → batched decision) | – | – |
-| Task 5 (wave2 rev2 rerun) | DIRECT | PENDING | – | – |
+| Task 5 (wave2 rev2 rerun) | DIRECT | QUARANTINED (rule 1): verdict R4 UNCHANGED, primary stats identical, but tie-aware Spearman shifts published rho_M 0.337→0.333, rho_F 0.265→0.293 → E-002 held as DRAFT in final packet; rev2 artifact committed (deterministic, v1 untouched) | – | (this commit) |
 | Task 6 (schema unification) | HARNESS | PENDING | – | – |
 | Task 7 (fingerprinted idempotency) | HARNESS | PENDING | – | – |
 | Task 8 (dynamic blindness scanner) | HARNESS | PENDING | – | – |
