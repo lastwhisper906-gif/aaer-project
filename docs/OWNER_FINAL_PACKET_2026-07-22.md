@@ -118,6 +118,13 @@ dispatch·서명·릴리스 전부 미실행). 종전부터 대기 중인 소유
    diff는 해당 run 디렉토리에 보존.
 4. 그 외 게이트 실패 없음 — Phase B~F 전 구간 pytest·lint·blindness·
    manifest green (각 페이즈 D-엔트리에 실측 기록).
+5. **C5 매트릭스 finding (설계대로 가시 기록됨)**: 최종 tip CI (run
+   29857684266) — 3.12 success · 3.13 success · **3.11 failure
+   (allowed-to-fail)**. 원인: requirements.lock이 3.12에서 해석되어
+   `numpy==2.5.1`(Requires-Python ≥3.12)을 핀 — 3.11은 의존성 설치
+   단계에서 불충족 (코드 레벨 비호환 아님). 처리 옵션: 매트릭스에서 3.11
+   제거(정직 축소) 또는 lock을 3.11 호환 상한으로 재해석 — 소유자 임의,
+   현상 유지도 무해 (워크플로는 green, 실패는 가시 주석).
 
 ## §7. 하네스 회계
 
