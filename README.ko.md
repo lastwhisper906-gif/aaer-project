@@ -3,6 +3,9 @@
 [![ci](https://github.com/lastwhisper906-gif/aaer-evals/actions/workflows/ci.yml/badge.svg)](https://github.com/lastwhisper906-gif/aaer-evals/actions/workflows/ci.yml)
 
 > Authored by Claude Code, pending human audit (GA-001 (b), D15).
+> **5분 진입점(영문)은 [README.md](README.md)** — 방법 [METHOD.md](METHOD.md) ·
+> 수치 표 [RESULTS.md](RESULTS.md) · 감사 안내 [AUDIT_INDEX.md](AUDIT_INDEX.md) (D110).
+> 이 문서는 한국어 전체 서사를 유지한다.
 > 기여 분담: [CONTRIBUTIONS.md](CONTRIBUTIONS.md) (AI-인간 기여 표, D106 ⑤).
 > 본 결과는 Claude 기반 단일 파이프라인(피평가자 claude-sonnet-5 핀)에 한정된다
 > (PROJECT.md §5-5). **These controls BOUND memorization risk; they do not eliminate it.**
