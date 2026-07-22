@@ -629,7 +629,7 @@
 
 ---
 
-## Q-O09 — 병합 추인: remediation/external-review → main (0269b63) — OPEN (신규, 2026-07-22 야간)
+## Q-O09 — 병합 추인: remediation/external-review → main (0269b63) — **RESOLVED (2026-07-22, D113)**
 
 - **대상**: 병합 커밋 `0269b63` (--no-ff). 조건 (a)–(d) 실측 충족 기록은 D107.
   E-002 전문 바이트 동일 사본은 최종 패킷 §1.
@@ -638,11 +638,12 @@
 - **근거**: 소유자 결정 블록(2026-07-22 야간 프롬프트)이 "I ratify or revert
   in the morning"으로 사후 확정을 유보 — 병합은 조건부 집행이었다.
 - **세션 기본 조치**: 병합 유지 상태로 후속 Phase 진행 (프롬프트 지시).
-- **상태**: OPEN
+- **해소 (2026-07-22)**: 소유자 서명 — **(A) 추인.** 병합 유지, revert 경로 소멸. (owner, 2026-07-22, this session's structured decision responses; 원장 D113)
+- **상태**: RESOLVED
 
 ---
 
-## Q-O10 — 라이선스·저작권 결정 (C1/C2 전제 — 결정 블록 미기입분) — OPEN (신규, 2026-07-22 야간)
+## Q-O10 — 라이선스·저작권 결정 (C1/C2 전제 — 결정 블록 미기입분) — **RESOLVED (2026-07-22, D113)**
 
 - **발견**: 2026-07-22 야간 프롬프트의 소유자 결정 블록에서 코드 라이선스
   `[Apache-2.0 / MIT / ___]`, 문서 라이선스 `[CC-BY-4.0 / same as code]`,
@@ -656,11 +657,12 @@
 - **후속 (서명 시 세션 몫)**: LICENSE(+LICENSE-docs) 생성, README
   "Licensing" 절, CITATION.cff author/license 필드 확정.
 - **세션 기본 조치**: 없음 (파일 미생성 — 라이선스 선언은 외부 법적 효력).
-- **상태**: OPEN
+- **해소 (2026-07-22)**: 소유자 서명 — **(A) 코드 Apache-2.0 + 문서 CC-BY-4.0 분리.** 저작권 라인 = © 2026 lastwhisper906-gif (GitHub 핸들 — 법적 성명 승격은 향후 문서 커밋으로 가능). LICENSE·LICENSE-docs·README Licensing 절·CITATION.cff 반영 완료. (owner, 2026-07-22; 원장 D113)
+- **상태**: RESOLVED
 
 ---
 
-## Q-O11 — 하네스 핀(2.1.201) vs 실측 CLI(2.1.216) — 강제 개시로 다음 실 호출 차단됨 — OPEN (신규, 2026-07-22 야간)
+## Q-O11 — 하네스 핀(2.1.201) vs 실측 CLI(2.1.216) — 강제 개시로 다음 실 호출 차단됨 — **RESOLVED (2026-07-22, D113 — (C) 실행 창 결정)**
 
 - **발견**: C3 강제(D109)로 `cli_client.enforce_harness_pin()`이 첫 호출 전
   fail-closed. 현 머신 `claude --version` = **2.1.216**, `HARNESS_PIN` =
@@ -673,11 +675,12 @@
 - **근거**: 핀 개정은 "사후 완화 금지"가 아니라 실행 전 freeze 개정 대상
   (FREEZE_REV4_HARNESS_E2 선례). 강제 자체는 검토 지정 형상 그대로.
 - **세션 기본 조치**: 강제 코드 유지 (이번 세션 실 호출 0 — 영향 없음).
-- **상태**: OPEN
+- **해소 (2026-07-22)**: 소유자 서명 — **(C) 다음 실행 창에서 결정.** 실 호출 없는 동안 차단 무해; 실행 창에서 그 시점 CLI로 FREEZE_REV 핀 개정(FREEZE_REV4 플래그 재검증 절차) + cycle_001 재핀 1회. (owner, 2026-07-22; 원장 D113)
+- **상태**: RESOLVED (실행 창 발동 항목)
 
 ---
 
-## Q-O12 — 견고성 인벤토리 후속 수리 승인 (C6 — config-inject 5건 + 규약 문서화) — OPEN (신규, 2026-07-22 야간)
+## Q-O12 — 견고성 인벤토리 후속 수리 승인 (C6 — config-inject 5건 + 규약 문서화) — **RESOLVED (2026-07-22, D113 — (A) 일괄 승인, 저순위)**
 
 - **대상**: `analysis/ROBUSTNESS_INVENTORY.md` 판정 중 config-inject 권고분 —
   ① verify_manifest root env 오버라이드 ② dissemination_schedules /
@@ -689,4 +692,5 @@
 - **근거**: fix-now 기준(live+테스트 커버+결함) 충족 0건 — 나머지는 개선이되
   동작 변경이라 소유자 게이트.
 - **세션 기본 조치**: 감사 문서만 커밋, 코드 무변경.
-- **상태**: OPEN
+- **해소 (2026-07-22)**: 소유자 서명 — **(A) 일괄 승인, 저순위.** 5건을 테스트 동반 1커밋으로 — 크리티컬 패스(게시·seal) 비차단이므로 차기 작업 세션 편승 실행. (owner, 2026-07-22; 원장 D113)
+- **상태**: RESOLVED (실행 대기 — 차기 작업 세션)
